@@ -1,0 +1,3 @@
+'PricingIntegration.SparseCounter.sparseCounter_satisfying_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

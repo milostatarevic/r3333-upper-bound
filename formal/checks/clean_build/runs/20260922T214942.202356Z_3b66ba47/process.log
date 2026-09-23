@@ -1,0 +1,7 @@
+PricingG.UUQExactNative.actual_UU_native {c : Ramsey61.Host} {five : Bool} (q : Bool)
+  (b :
+    CompletionC.CommonBlocks.Blocks c { profile := PricingABD.ABLayout.Profile.D, five := five }
+      { left := false, right := false, marked := q })
+  (hc : Ramsey61.NoMonochromaticTriangle c) : ∃ i w, Ramsey61.DenseCounter.FormulaSat w (native q i)
+'PricingG.UUQExactNative.actual_UU_native' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.UUQExactNative.actual_UU_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]

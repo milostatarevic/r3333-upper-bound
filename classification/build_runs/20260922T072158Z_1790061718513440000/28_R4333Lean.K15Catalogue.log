@@ -1,0 +1,20 @@
+'R4333.everyThreeColoringExtends_15_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k15CriticalCatalogue_complete_of_k16' depends on axioms: [propext, Classical.choice, Quot.sound]
+        2.75 real         0.98 user         1.19 sys
+          2884845568  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              227919  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                6259  voluntary context switches
+                3475  involuntary context switches
+         18571640463  instructions retired
+          7591187096  cycles elapsed
+           480105880  peak memory footprint

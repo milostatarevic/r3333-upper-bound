@@ -1,0 +1,1 @@
+'PricingG.D10SeedSatisfaction.branch_supplies_seed' depends on axioms: [propext, Classical.choice, Quot.sound]

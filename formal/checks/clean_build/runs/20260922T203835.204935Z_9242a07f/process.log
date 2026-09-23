@@ -1,0 +1,10 @@
+'R4333.k15SelectedPositionMap_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k15SelectedPositionMap_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k15SelectedPositionMap_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.exists_k16SelectedPositionNormalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDSelectedPositionTransport.transportDegreeFlooredByTailPerm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDSelectedPositionTransport.exists_normalizedCommonExtension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

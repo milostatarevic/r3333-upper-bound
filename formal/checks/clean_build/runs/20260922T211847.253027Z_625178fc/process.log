@@ -1,0 +1,7 @@
+'R4333.ProfileDUUUDegreeTenCatalogLeafConnector61.exists_leaf_of_representative' depends on axioms: [propext,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogLeafConnector61.catalogRepresentativeRow_eq_packedCatalogRow' depends on axioms: [propext,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogLeafConnector61.catalogMatrixColor_eq_leafMatrix_of_cross_group' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

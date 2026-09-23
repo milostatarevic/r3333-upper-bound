@@ -1,0 +1,3 @@
+'PricingABD.Rooted455Lookup.all_rooted_choices_in_exact_catalogue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

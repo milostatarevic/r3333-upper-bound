@@ -1,0 +1,5 @@
+'R4333.OutsideCoreCNF.coloring_satisfies_restrictionClauses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.OutsideCoreCNF.goodColoringFmla_41_4_length' does not depend on any axioms
+'R4333.OutsideCoreCNF.coloring_satisfies_outsideCoreFmla' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.OutsideCoreCNF.coreUnsatisfiable_of_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.OutsideCoreCNF.outsideListBendersClause_of_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]

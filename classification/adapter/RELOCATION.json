@@ -1,0 +1,8 @@
+{
+  "scope": "Source relocation only after fresh accepted adapter compile; exact bytes preserved",
+  "from": "formal/Ramsey61/ClassificationAdapter.lean",
+  "to": "classification/adapter/Ramsey61/ClassificationAdapter.lean",
+  "sha256": "ba4fc9343574e607478103599de47d45f176ba2dfef6cfcea9535f96ab165356",
+  "accepted_receipt": "../build_runs/ADAPTER_FRESH_20260922T073615Z/receipt.json",
+  "accepted_log": "../build_runs/ADAPTER_FRESH_20260922T073615Z/lean.log"
+}

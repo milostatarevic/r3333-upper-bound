@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingG.DecompositionColoring",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203714.705317Z_81f9fc1b/output.olean",
+    "sha256": "722efc2d9a8a2c53d20d3d2858450b62090ddfc91df3b2fc54289a6d0a399e80"
+  },
+  {
+    "module": "PricingC.AdjacentAutomorphisms",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203659.963129Z_39e5490b/output.olean",
+    "sha256": "671a394434d7d7ae7e1460afb4eaa8e5b379241b5b7efef5fe86cec0432b5208"
+  }
+]

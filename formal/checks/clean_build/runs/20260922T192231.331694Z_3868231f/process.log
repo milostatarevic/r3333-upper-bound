@@ -1,0 +1,12 @@
+'R4333.canonicalExposedOutside_disjoint' depends on axioms: [propext]
+'R4333.canonicalOutsideVertex_card_15_16_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.canonicalExposedVertex_card_15_16_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.canonicalOutside_edge_ne_of_collision' depends on axioms: [propext]
+'R4333.canonicalOutsideListBendersClause_of_coreUnsatisfiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.canonicalOutsideListBendersClause_of_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.canonicalK41OutsideListBendersClause_of_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.FiniteObstructionInterface.canonicalOutsideListBendersClause' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

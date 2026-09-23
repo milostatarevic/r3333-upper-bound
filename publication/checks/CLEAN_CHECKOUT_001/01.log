@@ -1,0 +1,15 @@
+test_actual_shape_suffix_rejected (__main__.ABDTests) ... ok
+test_bad_digest (__main__.ABDTests) ... ok
+test_bad_size (__main__.ABDTests) ... ok
+test_formula_hash_rejected (__main__.ABDTests) ... ok
+test_formula_size_rejected (__main__.ABDTests) ... ok
+test_invalid_units (__main__.ABDTests) ... ok
+test_output_inside_snapshot (__main__.ABDTests) ... ok
+test_pinned_bytes (__main__.ABDTests) ... ok
+test_symlink (__main__.ABDTests) ... ok
+test_traversal (__main__.ABDTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.009s
+
+OK

@@ -1,0 +1,1 @@
+'PricingC.GIsomorphic.all_isomorphic_cores_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]

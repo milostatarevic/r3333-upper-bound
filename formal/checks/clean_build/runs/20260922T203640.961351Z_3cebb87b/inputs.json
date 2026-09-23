@@ -1,0 +1,17 @@
+[
+  {
+    "module": "R4333Lean.ProfileDRowSupportBounds61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203632.016598Z_ff77bdb1/output.olean",
+    "sha256": "86fd33ca5f812a69c2e055521f84c8a0b94ef62967fa497b56cd1f29a3c63ea6"
+  },
+  {
+    "module": "R4333Lean.ProfileDThresholdCappedCNF",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203638.229858Z_506d21f2/output.olean",
+    "sha256": "beba19ccf97600afae5b2dacaf3a3c8d30b364511077fc3ce9fe1a8796192412"
+  },
+  {
+    "module": "R4333Lean.SequentialAtMostManyCNF",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192218.525255Z_b59008e6/output.olean",
+    "sha256": "6ecf919dd5e2508ca44d2a41ae2a51bcbfc4fc8e2bd25d32802d575993a65d47"
+  }
+]

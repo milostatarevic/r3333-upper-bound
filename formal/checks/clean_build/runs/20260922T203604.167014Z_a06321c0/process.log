@@ -1,0 +1,2 @@
+'PricingC.AnchorTables.cycleOrder_color' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.AnchorTables.anchored_exhaustive' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,7 @@
+'PricingC.DegreeFourPath.actual_high_four_support_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingC.DegreeFourPath.actual_high_four_support_path (c : Host) (hc : NoMonochromaticTriangle c) (r mark : Vertex)
+  (hm : mark ∈ colorNeighborhood c (palette 3) r) (hh : 15 ≤ colorDegree c (palette 3) mark) (q : Bool)
+  (hs : #(attachingSupport c r (palette 3) mark (palette (localColor q).castSucc)) = 4) :
+  ∃ e,
+    image (⇑e) univ = attachingSupport c r (palette 3) mark (palette (localColor q).castSucc) ∧
+      ∀ (i j : Fin 4), i ≠ j → (c.color (e i) (e j) = palette 0 ↔ PathAdjacent i j)

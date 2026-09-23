@@ -1,0 +1,19 @@
+{
+  "supplemental_binding_modules": [
+    "PricingG.D10ArraySuffix",
+    "PricingG.D10ArrayWord",
+    "PricingG.D10CachedSuffix",
+    "PricingG.D10SuffixRepresentation",
+    "PricingG.D9Root12Fast",
+    "PricingG.D9Root1Fast",
+    "PricingG.D9Root4Fast",
+    "PricingG.D9StrongFast",
+    "PricingG.P15FastUnits",
+    "PricingG.UUQEmissionIdentity",
+    "PricingABD.CommonSuffixCache"
+  ],
+  "supplemental_bytes": 94030,
+  "mathematical_core_modules": 1798,
+  "total_source_modules": 1809,
+  "source_only": true
+}

@@ -1,0 +1,1 @@
+'PricingC.GParity.residual_not_small' depends on axioms: [propext, Classical.choice, Quot.sound]

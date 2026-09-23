@@ -1,0 +1,2 @@
+'R4333.UUTFivePosition.normalizeSupportBlockTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTFivePosition.swapDegreeFlooredUUT' depends on axioms: [propext, Classical.choice, Quot.sound]

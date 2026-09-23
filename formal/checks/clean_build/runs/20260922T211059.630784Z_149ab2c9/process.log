@@ -1,0 +1,6 @@
+'R4333.ProfileDUUUDegreeTenCatalogLocalMaps61.canonicalPartVertex_position_of_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogLocalMaps61.compatibleMap_isCompatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

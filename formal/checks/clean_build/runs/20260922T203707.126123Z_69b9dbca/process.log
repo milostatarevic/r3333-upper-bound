@@ -1,0 +1,9 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/GraphEndpoints.lean:125:22: warning: 'omega' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/GraphEndpoints.lean:125:22: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'PricingG.zero_defects_graph_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.full_defects_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.full_defects_image_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,6 @@
+'PricingC.U16SupportCover.four_support_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingC.U16SupportCover.four_support_cover (s : Finset V) (hc : #s = 4) (hp : ProperFour s) :
+  ∃ r ∈ representatives4, ∃ e, (∀ (a b : V), a ≠ b → T (e a) (e b) = T a b) ∧ image (⇑e) s = r
+'PricingC.U16SupportCover.five_support_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingC.U16SupportCover.five_support_cover (s : Finset V) (hc : #s = 5) (hp : ProperFive s) :
+  ∃ r ∈ representatives5, ∃ e, (∀ (a b : V), a ≠ b → T (e a) (e b) = T a b) ∧ image (⇑e) s = r

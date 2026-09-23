@@ -1,0 +1,22 @@
+[
+  {
+    "module": "Ramsey61.ClassificationAdapter",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192222.017592Z_df068c74/output.olean",
+    "sha256": "821aa74c74f7ac0d1c40365bc7b15b1ae160c8e3556991263d153263fbf41f8d"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplatePaletteSymmetry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191825.699600Z_c6b9b5a6/output.olean",
+    "sha256": "a0fa6931680e1f13c7b01284a9b76a399c1cf5c621ba0639d41886c1451a845d"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplateShadowLaws",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192231.591565Z_fa0b2296/output.olean",
+    "sha256": "8d5fe28aaf512ec9e74e4c6c50af39867df115ec1d3cde41c251ef06ea6962bf"
+  },
+  {
+    "module": "Ramsey61.CAnchorGeometry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203551.694336Z_0e561eeb/output.olean",
+    "sha256": "33f1ab7c9141333e4a8905b05843720d6abdc095a1e2eb67cad4f259bb912c36"
+  }
+]

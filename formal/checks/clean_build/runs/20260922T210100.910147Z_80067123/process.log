@@ -1,0 +1,3 @@
+'PricingIntegration.RemainingGWitnesses.all_remaining_cores_excluded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

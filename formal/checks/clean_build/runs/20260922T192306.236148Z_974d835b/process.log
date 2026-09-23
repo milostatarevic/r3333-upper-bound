@@ -1,0 +1,2 @@
+'PricingG.Completion72.reference_row_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.Completion72.reference_exhaustive' depends on axioms: [propext, Classical.choice, Quot.sound]

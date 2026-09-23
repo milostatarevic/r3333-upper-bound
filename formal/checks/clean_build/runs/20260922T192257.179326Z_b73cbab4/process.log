@@ -1,0 +1,3 @@
+'PricingIntegration.IndependentFive.good_K16_independent_five_unique_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

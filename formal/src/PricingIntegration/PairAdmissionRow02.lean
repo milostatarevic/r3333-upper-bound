@@ -1,0 +1,7 @@
+import PricingIntegration.PairAdmissionData
+namespace PricingIntegration.PairAdmission
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+theorem row02_ok : RowOK 2 := by decide +kernel
+#print axioms row02_ok
+end PricingIntegration.PairAdmission

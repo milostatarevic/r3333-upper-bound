@@ -1,0 +1,22 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/OrthogonalTriples.lean:56:31: warning: This simp argument is unused:
+  or_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [or_l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵ ̵o̵r̵_̵assoc, or_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/OrthogonalTriples.lean:56:45: warning: This simp argument is unused:
+  or_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [or_left_comm, o̵r̵_̵a̵s̵s̵o̵c̵,̵ ̵or_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/OrthogonalTriples.lean:78:45: warning: This simp argument is unused:
+  or_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [or_left_comm, o̵r̵_̵a̵s̵s̵o̵c̵,̵ ̵or_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingG.orthogonal_triples_contains_four_block' depends on axioms: [propext, Classical.choice, Quot.sound]

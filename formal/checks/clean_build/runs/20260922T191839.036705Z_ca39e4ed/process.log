@@ -1,0 +1,9 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingIntegration/NativePrimaryCore.lean:109:49: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'PricingIntegration.NativePrimaryCore.orderedEdgeVar_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.NativePrimaryCore.physicalValuation_edge' depends on axioms: [propext, Classical.choice, Quot.sound]

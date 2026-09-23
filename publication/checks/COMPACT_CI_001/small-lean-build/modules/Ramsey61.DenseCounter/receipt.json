@@ -1,0 +1,77 @@
+{
+  "CPU_seconds": 2.723506,
+  "LEAN_PATH": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.build/runs/20260922T220645.854505Z_665d55bc/lib:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/plausible/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/importGraph/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/aesop/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/Qq/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/batteries/.lake/build/lib/lean:/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/lib/lean",
+  "artifact_bytes": 747704,
+  "artifact_sha256": "887176c73ce35da13c30574a3c94795db4306add0107017646a1d69dc8eab994",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j1",
+    "-o",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.build/runs/20260922T220645.854505Z_665d55bc/modules/Ramsey61.DenseCounter/output.olean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/src/Ramsey61/DenseCounter.lean"
+  ],
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "cpu_threads": 1,
+  "elapsed_seconds": 3.267925209365785,
+  "exit_code": 0,
+  "finished_utc": "2026-09-22T22:06:57.009697+00:00",
+  "import_artifacts": [
+    {
+      "bytes": 26752,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/List/Count.olean",
+      "sha256": "33fa71b9854317d42d18bcf8d241bfb8cdef104419157c0bc83bf854655e3000"
+    },
+    {
+      "bytes": 126896,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/List/Count.olean.private",
+      "sha256": "8365ce6cc55a2a4bec8c7eb642e6e748162b35650a2d500436b30ae59ca0375e"
+    },
+    {
+      "bytes": 2504,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/List/Count.olean.server",
+      "sha256": "f1c5fa21fd9badab96e9e7b3a7a49365390e5dc27eb53e680bc6a33346d0666b"
+    },
+    {
+      "bytes": 1944,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/List/Count.ir",
+      "sha256": "71759fa7f84d5e44959c9d966b0db9276c42feae820ce02177d2b6adb356637c"
+    },
+    {
+      "bytes": 39360,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean",
+      "sha256": "0534ef12e7aaf8ffbb6e520a91f922da4469d0dca2b54c87b4458e1faa28a6a2"
+    },
+    {
+      "bytes": 96,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean.private",
+      "sha256": "3b91a0e7aa1a6c14f056ebdb465fd91bcdff62a113eb1fe7b63bf5a9fc1a446b"
+    },
+    {
+      "bytes": 96,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean.server",
+      "sha256": "a1865b38a217f71f156593282ceee05cc9392ae0e5ae8a0498ebb8aa1a45facb"
+    },
+    {
+      "bytes": 39248,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.ir",
+      "sha256": "73f318b1abdc9756fedf89b546c414584860be63cdeb739f58d5c5d275d7912b"
+    }
+  ],
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "module": "Ramsey61.DenseCounter",
+  "peak_RSS_bytes": 2899034112,
+  "pid": 56348,
+  "resource_caps": null,
+  "source": {
+    "bytes": 15349,
+    "classification_source": false,
+    "imports": [
+      "Mathlib.Data.List.Count",
+      "Mathlib.Tactic"
+    ],
+    "path": "src/Ramsey61/DenseCounter.lean",
+    "sha256": "d75295d0a3633dcca00c08cfef853ff96d93374fb6c77ad025861e3081bb8cbe"
+  },
+  "started_utc": "2026-09-22T22:06:53.741933+00:00",
+  "status": "PASS"
+}

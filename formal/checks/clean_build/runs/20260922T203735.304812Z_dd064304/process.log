@@ -1,0 +1,9 @@
+'R4333.ProfileDDegreeTenNeighborhoodPartition61.template_partition_unique_pairwiseColors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenNeighborhoodPartition61.catalogued_supports_eq_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenNeighborhoodPartition61.exists_exactPartitionNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

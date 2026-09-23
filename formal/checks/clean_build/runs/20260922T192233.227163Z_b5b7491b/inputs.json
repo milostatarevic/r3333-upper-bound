@@ -1,0 +1,17 @@
+[
+  {
+    "module": "R4333Lean.FourColorPairNormalization",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192212.333635Z_233788a9/output.olean",
+    "sha256": "5d3a421fe65b32710d6410f4946e6a390f2d1d0736e7a8f0df0a4e8fb6367861"
+  },
+  {
+    "module": "R4333Lean.CanonicalAttachingHost",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192223.718035Z_d55ee279/output.olean",
+    "sha256": "0cb3940ff55432ada28979555808dcfeb1c1d60ed0088e1bfcca9189afc21653"
+  },
+  {
+    "module": "R4333Lean.CriticalCatalogues",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CriticalCatalogues.olean",
+    "sha256": "fb3909abe0d4f0d93d5ecbe4c655a0f3f820908f7e68e6038dba296732984ecc"
+  }
+]

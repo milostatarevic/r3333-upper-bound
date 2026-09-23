@@ -1,0 +1,3 @@
+'R4333.ProfileDUUUDegreeTenCatalogCandidateEquation61.candidateCatalogEquation_support7_chunk1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

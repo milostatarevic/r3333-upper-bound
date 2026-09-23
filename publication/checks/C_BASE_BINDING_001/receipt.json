@@ -1,0 +1,136 @@
+{
+  "status": "EMITTED_PENDING_COMPARISON",
+  "exit_code": 0,
+  "user_CPU_seconds": 5.82,
+  "system_CPU_seconds": 0.88,
+  "peak_RSS_bytes_macos": 3228139520,
+  "elapsed_seconds": 6.741919125,
+  "inputs": {
+    "emitter": {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_hybrid_preflight_20260922_001/c_base_binding_003/EmitBase.lean",
+      "bytes": 1554,
+      "sha256": "ba4d084b9f9c8e4005740d6ec309538555b665f54488f0005779796faff1b1f1"
+    },
+    "controller": {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_hybrid_preflight_20260922_001/c_base_binding_003/run_emitter.py",
+      "bytes": 3161,
+      "sha256": "f7efe2905168e204994d86912235feddd084b49757a0708c8009470aba1f2062"
+    },
+    "lean": {
+      "path": "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+      "bytes": 49968,
+      "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554"
+    },
+    "imports": [
+      {
+        "source": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/CEncodingBase.lean",
+          "bytes": 27189,
+          "sha256": "70973cf905034f9294e793b3f1932bfa18ea5d12759c088a263d16e7183ccf86"
+        },
+        "olean": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/build/lib/lean/Ramsey61/CEncodingBase.olean",
+          "bytes": 2397656,
+          "sha256": "8f599f22cc1a6e7a5f32b5dbd80a3765c7307151f639475ebcaf9fcabd3595a6"
+        }
+      },
+      {
+        "source": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/CEncodingCore.lean",
+          "bytes": 19493,
+          "sha256": "4b14f5276bd033aad4942d66507666f502e1e0db37b70554da1aef004ec8f48e"
+        },
+        "olean": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/build/lib/lean/Ramsey61/CEncodingCore.olean",
+          "bytes": 1208744,
+          "sha256": "36ded338b476566f450f7ccba8dbb63ef7572ddce815b3679fab143a59fd04b1"
+        }
+      },
+      {
+        "source": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/DenseCounter.lean",
+          "bytes": 15349,
+          "sha256": "d75295d0a3633dcca00c08cfef853ff96d93374fb6c77ad025861e3081bb8cbe"
+        },
+        "olean": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/build/lib/lean/Ramsey61/DenseCounter.olean",
+          "bytes": 747704,
+          "sha256": "887176c73ce35da13c30574a3c94795db4306add0107017646a1d69dc8eab994"
+        }
+      },
+      {
+        "source": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/Selector.lean",
+          "bytes": 9129,
+          "sha256": "f143934c11a36769886baa2a94c005405047e011bbabf6970220025f144db4d3"
+        },
+        "olean": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/build/lib/lean/Ramsey61/Selector.olean",
+          "bytes": 2658248,
+          "sha256": "85015375b28d136c97521258cf41279d2eb406953941e8736907eedf3b2b137d"
+        }
+      },
+      {
+        "source": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/Incidence.lean",
+          "bytes": 3862,
+          "sha256": "b2261f8d5ac1677a1dfd304b114d8e615aac76295dfd0fd6107f16e086bf2320"
+        },
+        "olean": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/build/lib/lean/Ramsey61/Incidence.olean",
+          "bytes": 150120,
+          "sha256": "dfd0716891fd331d594314ccf43017454e4ecaf493a397f5f6840abecb23e747"
+        }
+      },
+      {
+        "source": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/Profiles.lean",
+          "bytes": 4029,
+          "sha256": "309cca6aa5649824c69c8199f0467bce457e50b0c1e2f0db842c75cf8eae3e16"
+        },
+        "olean": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/build/lib/lean/Ramsey61/Profiles.olean",
+          "bytes": 487344,
+          "sha256": "dd562c45f8dc0e7e9a20c386d1ce9779d9b1751418f059ec8e486a94766f59f4"
+        }
+      },
+      {
+        "source": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/Foundations.lean",
+          "bytes": 18955,
+          "sha256": "ca05aa3e88b048c9b313cf645dfe7dd397e226661c780daeb81578c917bc904f"
+        },
+        "olean": {
+          "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/build/lib/lean/Ramsey61/Foundations.olean",
+          "bytes": 664616,
+          "sha256": "878cd681c457d250091d888972b07e9ea84b5b5f3704db9a9309daa446faacb9"
+        }
+      }
+    ]
+  },
+  "output": {
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_hybrid_preflight_20260922_001/c_base_binding_003/BROAD_BASE_FROM_LEAN.cnf",
+    "bytes": 39604154,
+    "sha256": "58478e3641d3ea52639566683daaea5f7a1d4112de5809f4af73ce1dfebf164f"
+  },
+  "log": {
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_hybrid_preflight_20260922_001/c_base_binding_003/lean.log",
+    "bytes": 1280,
+    "sha256": "8e979b9a041012055134bef559b7c75bc41d6a254e97d2dac65deb097edeb998"
+  },
+  "host_before": {
+    "memory_free_percent": 83,
+    "disk_free_bytes": 1994595323904,
+    "pressure_report": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 83%\n"
+  },
+  "host_after": {
+    "memory_free_percent": 83,
+    "disk_free_bytes": 1994554335232,
+    "pressure_report": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 83%\n"
+  },
+  "CPU_limit": null,
+  "RSS_kill_limit": null,
+  "file_size_limit": null,
+  "cache_writes_requested": false,
+  "new_solver_calls": 0
+}

@@ -1,0 +1,9 @@
+'PricingIntegration.SeedBinding.partial_geometry_supplies_concrete_case' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.SeedBinding.compatible_physical_census_implies_normalized_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.SeedBinding.three_anchor_census_implies_normalized_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

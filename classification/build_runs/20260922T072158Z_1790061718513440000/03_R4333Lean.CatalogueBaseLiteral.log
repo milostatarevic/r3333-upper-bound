@@ -1,0 +1,20 @@
+'R4333.CatalogueBaseCNF.k16BaseLiteral_eq' does not depend on any axioms
+'R4333.CatalogueBaseCNF.k15BaseLiteral_eq' does not depend on any axioms
+        6.25 real         7.97 user         1.10 sys
+          3468853248  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              263200  page reclaims
+                   3  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+               12256  involuntary context switches
+         93887862273  instructions retired
+         35120452375  cycles elapsed
+          1083199984  peak memory footprint

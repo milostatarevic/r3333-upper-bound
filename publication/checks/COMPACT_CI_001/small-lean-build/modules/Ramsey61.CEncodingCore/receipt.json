@@ -1,0 +1,47 @@
+{
+  "CPU_seconds": 4.5189509999999995,
+  "LEAN_PATH": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.build/runs/20260922T220645.854505Z_665d55bc/lib:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/plausible/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/importGraph/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/aesop/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/Qq/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/batteries/.lake/build/lib/lean:/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/lib/lean",
+  "artifact_bytes": 1208744,
+  "artifact_sha256": "36ded338b476566f450f7ccba8dbb63ef7572ddce815b3679fab143a59fd04b1",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j1",
+    "-o",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.build/runs/20260922T220645.854505Z_665d55bc/modules/Ramsey61.CEncodingCore/output.olean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/src/Ramsey61/CEncodingCore.lean"
+  ],
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "cpu_threads": 1,
+  "elapsed_seconds": 4.562889291904867,
+  "exit_code": 0,
+  "finished_utc": "2026-09-22T22:07:04.305847+00:00",
+  "import_artifacts": [
+    {
+      "bytes": 664616,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.build/runs/20260922T220645.854505Z_665d55bc/lib/Ramsey61/Foundations.olean",
+      "sha256": "878cd681c457d250091d888972b07e9ea84b5b5f3704db9a9309daa446faacb9"
+    },
+    {
+      "bytes": 747704,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.build/runs/20260922T220645.854505Z_665d55bc/lib/Ramsey61/DenseCounter.olean",
+      "sha256": "887176c73ce35da13c30574a3c94795db4306add0107017646a1d69dc8eab994"
+    }
+  ],
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "module": "Ramsey61.CEncodingCore",
+  "peak_RSS_bytes": 3040575488,
+  "pid": 56379,
+  "resource_caps": null,
+  "source": {
+    "bytes": 19493,
+    "classification_source": false,
+    "imports": [
+      "Ramsey61.Foundations",
+      "Ramsey61.DenseCounter"
+    ],
+    "path": "src/Ramsey61/CEncodingCore.lean",
+    "sha256": "4b14f5276bd033aad4942d66507666f502e1e0db37b70554da1aef004ec8f48e"
+  },
+  "started_utc": "2026-09-22T22:06:59.743033+00:00",
+  "status": "PASS"
+}

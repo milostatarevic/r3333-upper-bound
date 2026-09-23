@@ -1,0 +1,2 @@
+'PricingC.automorphisms_equal_on_anchor' depends on axioms: [propext, Quot.sound]
+'PricingC.automorphism_anchor_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]

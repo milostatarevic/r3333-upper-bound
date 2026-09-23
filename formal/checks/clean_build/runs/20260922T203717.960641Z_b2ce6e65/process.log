@@ -1,0 +1,6 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/IsomorphismEndpoint.lean:41:4: warning: 'change (m.X.graph q hpq.symm).Adj (m.f x) y ↔ c (m.Y.map.vertex x) (m.X.map.vertex y) = q' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'PricingG.GuardedGraphModel.reverse_has_zero_defects' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.GuardedGraphModel.firstCenterIso' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.GuardedGraphModel.zero_defects_exact25' depends on axioms: [propext, Classical.choice, Quot.sound]

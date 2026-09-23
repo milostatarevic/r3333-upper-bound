@@ -1,0 +1,33 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP0SelectorBridge61.lean:257:6: warning: This simp argument is unused:
+  selectedVertex
+
+Hint: Omit it from the simp argument list.
+  simp [ProfileDFourRowCNF.totalColoring, pullbackColoring,
+  ̵  ̵ ̵ ̵ ̵ ̵ProfileDFourRowCNF.freeVertex,
+  ̲  ̲ ̲ ̲ ̲ ̲ProfileDFourRowCNF.tailVertex,
+  ̵  ̵ ̵ ̵ ̵ ̵ProfileDFourRowCNF.splitVertex, fourExtension,
+        ProfileDUUUFourSupportP0SupportPair61.SelectedPosition,
+  ̵  ̵ ̵ ̵ ̵ ̵s̵e̵l̵e̵c̵t̵e̵d̵V̵e̵r̵t̵e̵x̵,̵ ̵joinColoring]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'R4333.ProfileDUUUFourSupportP0SelectorBridge61.fourExtension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SelectorBridge61.orderedEdgeAtom_lt_firstSelector' depends on axioms: [propext,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SelectorBridge61.baseFmla_atomsBelow' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SelectorBridge61.exact_satisfies_baseFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SelectorBridge61.exact_satisfies_supportGuardClauses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SelectorBridge61.exact_satisfies_matrixGuardClauses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SelectorBridge61.exact_satisfies_selectorFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SelectorBridge61.exact_satisfies_fmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,1 @@
+'PricingC.GIsomorphic.fastSkeleton_exact' depends on axioms: [propext, Quot.sound]

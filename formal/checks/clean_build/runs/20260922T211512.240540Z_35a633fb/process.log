@@ -1,0 +1,13 @@
+'R4333.ProfileDUUUDegreeNineCaseRealization61.caseRoot_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDUUUDegreeNineCaseRealization61.DegreeNineCaseRealization.smallDecodedColor_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineCaseRealization61.exists_degreeNineCaseRealization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineCaseRealization61.DegreeNineResidualObstructionAssembly.no_exactDegreeNine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineCaseRealization61.no_exactDegreeNine_of_indexedObstructionAssembly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

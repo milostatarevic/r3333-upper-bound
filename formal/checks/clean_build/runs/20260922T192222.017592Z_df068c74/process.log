@@ -1,0 +1,7 @@
+'Ramsey61.ClassificationAdapter.k16_catalogued' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.k15_catalogued' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.k15_extends_to_k16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.k16_colorGraph_srg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.physical_neighborhood_k15' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.physical_neighborhood_k16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.physical_high_neighborhood' depends on axioms: [propext, Classical.choice, Quot.sound]

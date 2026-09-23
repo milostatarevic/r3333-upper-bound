@@ -1,0 +1,7 @@
+'R4333.ProfileDDegreeTenMatrixLeafUUU0S0M25.k15SupportIndexZeroEmbedding_strictMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenMatrixLeafUUU0S0M25.catalogMatrixIndex25Table_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenMatrixLeafUUU0S0M25.formula_length' depends on axioms: [propext, Classical.choice, Quot.sound]

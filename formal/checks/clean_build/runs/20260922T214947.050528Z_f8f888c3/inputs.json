@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingIntegration.NativeWholeProof",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T214944.366644Z_03c17f01/output.olean",
+    "sha256": "adb4efd890c6e61dd790801b85ee280a17c3f61b13f49f9edb8a343a4ff87563"
+  },
+  {
+    "module": "CompletionC.CommonCaseCount",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T214804.876242Z_4186c4c7/output.olean",
+    "sha256": "2ae800466c5c4fd939a54a17536e88aafdf96e9803e7b86d7702402719ce3f67"
+  }
+]

@@ -1,0 +1,306 @@
+import PricingABD.Schedules.BTUU5Chunk00
+import PricingABD.Schedules.BTUU5Chunk01
+import PricingABD.Schedules.BTUU5Chunk02
+import PricingABD.Schedules.BTUU5Chunk03
+import PricingABD.Schedules.BTUU5Chunk04
+import PricingABD.Schedules.BTUU5Chunk05
+import PricingABD.Schedules.BTUU5Chunk06
+import PricingABD.Schedules.BTUU5Chunk07
+import PricingABD.Schedules.BTUU5Chunk08
+import PricingABD.Schedules.BTUU5Chunk09
+import PricingABD.Schedules.BTUU5Chunk10
+import PricingABD.Schedules.BTUU5Chunk11
+import PricingABD.Schedules.BTUU5Chunk12
+import PricingABD.Schedules.BTUU5Chunk13
+import PricingABD.Schedules.BTUU5Chunk14
+import PricingABD.Schedules.BTUU5Chunk15
+namespace PricingABD.Schedules.BTUU5Complete
+open Ramsey61 Ramsey61.DenseCounter PricingABD.ABLayout PricingABD.ABGeometry PricingABD.ABProgram PricingABD.Schedules.BTUU5
+open PricingIntegration.NativePrimary
+set_option maxRecDepth 1000000
+set_option maxHeartbeats 0
+ theorem fold_all : ∀i:Fin 504,FoldOK program types i := by
+  intro i
+  by_cases h0:i.val<32
+  ·
+    let j:Fin 32:=⟨i.val-0,by omega⟩
+    have he:(⟨0+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+    simpa only [he] using PricingABD.Schedules.BTUU5Chunk00.fold j
+  ·
+    by_cases h1:i.val<64
+    ·
+      let j:Fin 32:=⟨i.val-32,by omega⟩
+      have he:(⟨32+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+      simpa only [he] using PricingABD.Schedules.BTUU5Chunk01.fold j
+    ·
+      by_cases h2:i.val<96
+      ·
+        let j:Fin 32:=⟨i.val-64,by omega⟩
+        have he:(⟨64+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+        simpa only [he] using PricingABD.Schedules.BTUU5Chunk02.fold j
+      ·
+        by_cases h3:i.val<128
+        ·
+          let j:Fin 32:=⟨i.val-96,by omega⟩
+          have he:(⟨96+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+          simpa only [he] using PricingABD.Schedules.BTUU5Chunk03.fold j
+        ·
+          by_cases h4:i.val<160
+          ·
+            let j:Fin 32:=⟨i.val-128,by omega⟩
+            have he:(⟨128+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+            simpa only [he] using PricingABD.Schedules.BTUU5Chunk04.fold j
+          ·
+            by_cases h5:i.val<192
+            ·
+              let j:Fin 32:=⟨i.val-160,by omega⟩
+              have he:(⟨160+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+              simpa only [he] using PricingABD.Schedules.BTUU5Chunk05.fold j
+            ·
+              by_cases h6:i.val<224
+              ·
+                let j:Fin 32:=⟨i.val-192,by omega⟩
+                have he:(⟨192+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                simpa only [he] using PricingABD.Schedules.BTUU5Chunk06.fold j
+              ·
+                by_cases h7:i.val<256
+                ·
+                  let j:Fin 32:=⟨i.val-224,by omega⟩
+                  have he:(⟨224+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                  simpa only [he] using PricingABD.Schedules.BTUU5Chunk07.fold j
+                ·
+                  by_cases h8:i.val<288
+                  ·
+                    let j:Fin 32:=⟨i.val-256,by omega⟩
+                    have he:(⟨256+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                    simpa only [he] using PricingABD.Schedules.BTUU5Chunk08.fold j
+                  ·
+                    by_cases h9:i.val<320
+                    ·
+                      let j:Fin 32:=⟨i.val-288,by omega⟩
+                      have he:(⟨288+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                      simpa only [he] using PricingABD.Schedules.BTUU5Chunk09.fold j
+                    ·
+                      by_cases h10:i.val<352
+                      ·
+                        let j:Fin 32:=⟨i.val-320,by omega⟩
+                        have he:(⟨320+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                        simpa only [he] using PricingABD.Schedules.BTUU5Chunk10.fold j
+                      ·
+                        by_cases h11:i.val<384
+                        ·
+                          let j:Fin 32:=⟨i.val-352,by omega⟩
+                          have he:(⟨352+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                          simpa only [he] using PricingABD.Schedules.BTUU5Chunk11.fold j
+                        ·
+                          by_cases h12:i.val<416
+                          ·
+                            let j:Fin 32:=⟨i.val-384,by omega⟩
+                            have he:(⟨384+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                            simpa only [he] using PricingABD.Schedules.BTUU5Chunk12.fold j
+                          ·
+                            by_cases h13:i.val<448
+                            ·
+                              let j:Fin 32:=⟨i.val-416,by omega⟩
+                              have he:(⟨416+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                              simpa only [he] using PricingABD.Schedules.BTUU5Chunk13.fold j
+                            ·
+                              by_cases h14:i.val<480
+                              ·
+                                let j:Fin 32:=⟨i.val-448,by omega⟩
+                                have he:(⟨448+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                                simpa only [he] using PricingABD.Schedules.BTUU5Chunk14.fold j
+                              ·
+                                let j:Fin 24:=⟨i.val-480,by omega⟩
+                                have he:(⟨480+j.val,by have hh:=j.isLt;omega⟩:Fin 504)=i := by apply Fin.ext;dsimp [j];omega
+                                simpa only [he] using PricingABD.Schedules.BTUU5Chunk15.fold j
+ theorem input_all : ∀i:Fin 442,InputOK program i := by
+  intro i
+  by_cases h0:i.val<32
+  ·
+    let j:Fin 32:=⟨i.val-0,by omega⟩
+    have he:(⟨0+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+    simpa only [he] using PricingABD.Schedules.BTUU5Chunk00.input j
+  ·
+    by_cases h1:i.val<64
+    ·
+      let j:Fin 32:=⟨i.val-32,by omega⟩
+      have he:(⟨32+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+      simpa only [he] using PricingABD.Schedules.BTUU5Chunk01.input j
+    ·
+      by_cases h2:i.val<96
+      ·
+        let j:Fin 32:=⟨i.val-64,by omega⟩
+        have he:(⟨64+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+        simpa only [he] using PricingABD.Schedules.BTUU5Chunk02.input j
+      ·
+        by_cases h3:i.val<128
+        ·
+          let j:Fin 32:=⟨i.val-96,by omega⟩
+          have he:(⟨96+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+          simpa only [he] using PricingABD.Schedules.BTUU5Chunk03.input j
+        ·
+          by_cases h4:i.val<160
+          ·
+            let j:Fin 32:=⟨i.val-128,by omega⟩
+            have he:(⟨128+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+            simpa only [he] using PricingABD.Schedules.BTUU5Chunk04.input j
+          ·
+            by_cases h5:i.val<192
+            ·
+              let j:Fin 32:=⟨i.val-160,by omega⟩
+              have he:(⟨160+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+              simpa only [he] using PricingABD.Schedules.BTUU5Chunk05.input j
+            ·
+              by_cases h6:i.val<224
+              ·
+                let j:Fin 32:=⟨i.val-192,by omega⟩
+                have he:(⟨192+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+                simpa only [he] using PricingABD.Schedules.BTUU5Chunk06.input j
+              ·
+                by_cases h7:i.val<256
+                ·
+                  let j:Fin 32:=⟨i.val-224,by omega⟩
+                  have he:(⟨224+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+                  simpa only [he] using PricingABD.Schedules.BTUU5Chunk07.input j
+                ·
+                  by_cases h8:i.val<288
+                  ·
+                    let j:Fin 32:=⟨i.val-256,by omega⟩
+                    have he:(⟨256+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+                    simpa only [he] using PricingABD.Schedules.BTUU5Chunk08.input j
+                  ·
+                    by_cases h9:i.val<320
+                    ·
+                      let j:Fin 32:=⟨i.val-288,by omega⟩
+                      have he:(⟨288+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+                      simpa only [he] using PricingABD.Schedules.BTUU5Chunk09.input j
+                    ·
+                      by_cases h10:i.val<352
+                      ·
+                        let j:Fin 32:=⟨i.val-320,by omega⟩
+                        have he:(⟨320+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+                        simpa only [he] using PricingABD.Schedules.BTUU5Chunk10.input j
+                      ·
+                        by_cases h11:i.val<384
+                        ·
+                          let j:Fin 32:=⟨i.val-352,by omega⟩
+                          have he:(⟨352+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+                          simpa only [he] using PricingABD.Schedules.BTUU5Chunk11.input j
+                        ·
+                          by_cases h12:i.val<416
+                          ·
+                            let j:Fin 32:=⟨i.val-384,by omega⟩
+                            have he:(⟨384+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+                            simpa only [he] using PricingABD.Schedules.BTUU5Chunk12.input j
+                          ·
+                            let j:Fin 26:=⟨i.val-416,by omega⟩
+                            have he:(⟨416+j.val,by have hh:=j.isLt;omega⟩:Fin 442)=i := by apply Fin.ext;dsimp [j];omega
+                            simpa only [he] using PricingABD.Schedules.BTUU5Chunk13.input j
+def Adjacent (i:Fin 441) : Prop := actualStart i.succ=actualStart i.castSucc+PricingIntegration.SparseCounter.offset (height i.castSucc) (inputs i.castSucc).length
+ theorem adjacent_all : ∀i:Fin 441,Adjacent i := by
+  intro i
+  by_cases h0:i.val<32
+  ·
+    let j:Fin 32:=⟨i.val-0,by omega⟩
+    have he:(⟨0+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+    have hj:Adjacent (⟨0+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk00.adjacent j
+    simpa only [he] using hj
+  ·
+    by_cases h1:i.val<64
+    ·
+      let j:Fin 32:=⟨i.val-32,by omega⟩
+      have he:(⟨32+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+      have hj:Adjacent (⟨32+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk01.adjacent j
+      simpa only [he] using hj
+    ·
+      by_cases h2:i.val<96
+      ·
+        let j:Fin 32:=⟨i.val-64,by omega⟩
+        have he:(⟨64+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+        have hj:Adjacent (⟨64+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk02.adjacent j
+        simpa only [he] using hj
+      ·
+        by_cases h3:i.val<128
+        ·
+          let j:Fin 32:=⟨i.val-96,by omega⟩
+          have he:(⟨96+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+          have hj:Adjacent (⟨96+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk03.adjacent j
+          simpa only [he] using hj
+        ·
+          by_cases h4:i.val<160
+          ·
+            let j:Fin 32:=⟨i.val-128,by omega⟩
+            have he:(⟨128+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+            have hj:Adjacent (⟨128+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk04.adjacent j
+            simpa only [he] using hj
+          ·
+            by_cases h5:i.val<192
+            ·
+              let j:Fin 32:=⟨i.val-160,by omega⟩
+              have he:(⟨160+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+              have hj:Adjacent (⟨160+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk05.adjacent j
+              simpa only [he] using hj
+            ·
+              by_cases h6:i.val<224
+              ·
+                let j:Fin 32:=⟨i.val-192,by omega⟩
+                have he:(⟨192+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+                have hj:Adjacent (⟨192+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk06.adjacent j
+                simpa only [he] using hj
+              ·
+                by_cases h7:i.val<256
+                ·
+                  let j:Fin 32:=⟨i.val-224,by omega⟩
+                  have he:(⟨224+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+                  have hj:Adjacent (⟨224+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk07.adjacent j
+                  simpa only [he] using hj
+                ·
+                  by_cases h8:i.val<288
+                  ·
+                    let j:Fin 32:=⟨i.val-256,by omega⟩
+                    have he:(⟨256+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+                    have hj:Adjacent (⟨256+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk08.adjacent j
+                    simpa only [he] using hj
+                  ·
+                    by_cases h9:i.val<320
+                    ·
+                      let j:Fin 32:=⟨i.val-288,by omega⟩
+                      have he:(⟨288+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+                      have hj:Adjacent (⟨288+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk09.adjacent j
+                      simpa only [he] using hj
+                    ·
+                      by_cases h10:i.val<352
+                      ·
+                        let j:Fin 32:=⟨i.val-320,by omega⟩
+                        have he:(⟨320+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+                        have hj:Adjacent (⟨320+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk10.adjacent j
+                        simpa only [he] using hj
+                      ·
+                        by_cases h11:i.val<384
+                        ·
+                          let j:Fin 32:=⟨i.val-352,by omega⟩
+                          have he:(⟨352+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+                          have hj:Adjacent (⟨352+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk11.adjacent j
+                          simpa only [he] using hj
+                        ·
+                          by_cases h12:i.val<416
+                          ·
+                            let j:Fin 32:=⟨i.val-384,by omega⟩
+                            have he:(⟨384+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+                            have hj:Adjacent (⟨384+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk12.adjacent j
+                            simpa only [he] using hj
+                          ·
+                            let j:Fin 25:=⟨i.val-416,by omega⟩
+                            have he:(⟨416+j.val,by have hh:=j.isLt;omega⟩:Fin 441)=i := by apply Fin.ext;dsimp [j];omega
+                            have hj:Adjacent (⟨416+j.val,by have hh:=j.isLt;omega⟩) := PricingABD.Schedules.BTUU5Chunk13.adjacent j
+                            simpa only [he] using hj
+ theorem starts_all : ∀j,actualStart j=PricingIntegration.MultiSparseCounter.start (primaryLimit layout)
+     (PricingIntegration.MultiSparseCounter.size inputs height) j := by
+  exact PricingIntegration.MultiSparseCounter.starts_eq_of_adjacent (N:=441) _ _ _ (by decide +kernel) adjacent_all
+ theorem native_program {c : Host} (t:Types) (hs:PricingABD.ABScheduleTypes.SameSchedule layout t types)
+     (f:Frame c layout) (hc:NoMonochromaticTriangle c) (hg:Geometry t f) :
+     ∃w:Valuation,(∀a<primaryLimit layout,w a=primary f a) ∧ FormulaSat w (formula program) :=
+   satisfying_extension program types t hs fold_all input_all starts_all f hc hg
+#print axioms native_program
+end PricingABD.Schedules.BTUU5Complete

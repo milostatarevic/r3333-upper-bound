@@ -1,0 +1,8 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/SixStarCanonical.lean:38:52: warning: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [̵s̵u̵m̵_̵c̵o̵n̵s̵t̵,̵c̵a̵r̵d̵_̵u̵n̵i̵v̵,̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵]̵[̲s̲u̲m̲_̲c̲o̲n̲s̲t̲,̲ ̲c̲a̲r̲d̲_̲u̲n̲i̲v̲,̲ ̲F̲i̲n̲t̲y̲p̲e̲.̲c̲a̲r̲d̲_̲f̲i̲n̲]̲ at hh
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingG.SignDesign.no_six_stars_canonical' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'PricingABD.P15PairOrbit.complete_pair000_orbit_map' depends on axioms: [propext]
+'PricingABD.P15PairOrbit.every_candidate_has_retained_matrix' depends on axioms: [propext]
+PricingABD.P15PairOrbit.every_candidate_has_retained_matrix (i : Fin 600) :
+  ∃ j reverse, (if reverse = true then reverseFreeWord (candidate i) else candidate i) = representative j

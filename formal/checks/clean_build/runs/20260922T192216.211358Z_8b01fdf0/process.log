@@ -1,0 +1,4 @@
+'R4333.commonNeighborhoodVertex_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.commonNeighborhoodTemplateOverlap' depends on axioms: [propext, Quot.sound]
+'R4333.commonNeighborhoodVertexEquivFin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.labeledCommonNeighborhoodTemplateOverlap_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]

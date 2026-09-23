@@ -1,0 +1,2 @@
+'PricingG.UUQPhysicalCover.uuu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.UUQPhysicalCover.uut' depends on axioms: [propext, Classical.choice, Quot.sound]

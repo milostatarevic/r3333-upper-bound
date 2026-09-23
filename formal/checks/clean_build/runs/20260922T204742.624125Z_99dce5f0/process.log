@@ -1,0 +1,1 @@
+'PricingIntegration.RemainingGCore.base_refines_skeleton' depends on axioms: [propext, Classical.choice, Quot.sound]

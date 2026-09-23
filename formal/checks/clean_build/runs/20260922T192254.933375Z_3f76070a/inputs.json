@@ -1,0 +1,17 @@
+[
+  {
+    "module": "R4333Lean.ClebschUniqueness",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/ClebschUniqueness.olean",
+    "sha256": "2a0893756379b3bc1f77dc54f96c499a86b1d89bf0f05463e192a7c5c92857f8"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplateShadowLaws",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192231.591565Z_fa0b2296/output.olean",
+    "sha256": "8d5fe28aaf512ec9e74e4c6c50af39867df115ec1d3cde41c251ef06ea6962bf"
+  },
+  {
+    "module": "R4333Lean.CriticalCatalogues",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CriticalCatalogues.olean",
+    "sha256": "fb3909abe0d4f0d93d5ecbe4c655a0f3f820908f7e68e6038dba296732984ecc"
+  }
+]

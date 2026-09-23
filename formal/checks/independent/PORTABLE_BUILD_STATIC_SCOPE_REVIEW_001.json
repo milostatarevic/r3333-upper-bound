@@ -1,0 +1,23 @@
+{
+  "status": "PASS_STATIC_SCOPE",
+  "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_build/build.py",
+  "source_sha256": "ef371a2e38b33139444bc31d414b3f46d9929a254889cb1b7c54ab6d935b9d91",
+  "reviewer": "dependency_audit",
+  "scope": "Bounded independent read-only driver review; no compile, certificate execution, or fault injection.",
+  "findings": [
+    "All package control files, module sources and declared include_str payloads are hash-pinned; canonical module paths and resolved containment reject paths escaping the package.",
+    "Literal import declarations are compared to the manifest after nested-comment removal; dependency closure scheduling rejects cycles and requires project imports from the new run output only.",
+    "Lean4.32.1 and pinned Mathlib revision are required; lake-manifest dependency revisions and tracked clean state are checked. Direct imported artifacts, including private/server/IR companions, are hashed before and after each compilation.",
+    "Each invocation creates a fresh UUID output namespace. Inherited project LEAN_PATH is replaced by this output plus pinned dependency caches and Lean standard library; no prior project output fallback is supplied.",
+    "One Lean process uses -j1; the per-build controller admits at most requested jobs with range1..8. A failed compiler stops new admissions, preserves its log/receipt, drains active work, and causes nonzero final status.",
+    "The driver launches Lean and read-only toolchain/Git inspection only, with no SAT solver command. Compile-time #eval is rejected; --no-certificate-replay rejects selected LRAT command modules before starting compilers.",
+    "Source/data/import/compiler identities are rechecked after compilation; final source/configuration/manifest checks precede PASS."
+  ],
+  "boundaries": [
+    "Pinned dependency source and recorded cached artifact hashes constitute the external Lean/Mathlib library boundary; the driver does not independently rebuild those libraries.",
+    "Without --no-certificate-replay, selected declared classification proof commands may run in Lean. This is explicit source compilation, not hidden native SAT solving.",
+    "Concurrency bound is per invocation; independent simultaneous builds require external host scheduling."
+  ],
+  "issues": [],
+  "utc": "2026-09-22T19:51:55.702914+00:00"
+}

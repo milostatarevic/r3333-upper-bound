@@ -1,0 +1,13 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/Rooted455Entrance.lean:9:5: warning: Variable name `ha` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'PricingABD.Rooted455Entrance.rooted_isomorphism_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingABD.Rooted455Entrance.rooted_isomorphism_cover (c : EdgeColoring (Fin 15) ThreeColor)
+  (hc : NoMonochromaticTriangle c) (h : CanonicalRooted455 c) :
+  ∃ r e a b d,
+    e (rootVertex r) = 14 ∧
+      (∀ (u v : Fin 15), u ≠ v → c.color (e u) (e v) = (k15Template (rootTwisted r)).color u v) ∧
+        (∀ (i : Fin 4), e.symm (label0 i) = iso0 r a i) ∧
+          (∀ (i : Fin 5), e.symm (label1 i) = iso1 r b i) ∧ ∀ (i : Fin 5), e.symm (label2 i) = iso2 r d i

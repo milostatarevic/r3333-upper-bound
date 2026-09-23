@@ -1,0 +1,36 @@
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.twistedRoot1LargeSupportCandidates_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.twistedRoot1SmallSupportCandidates_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.twistedRoot1CompatibleSmallSupportCandidates_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.twistedRoot1PhysicalSupportPair_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.TwistedRoot1Realization.largeSupport_mem_candidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.TwistedRoot1Realization.smallSupport_mem_candidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.TwistedRoot1Realization.smallSupport_mem_compatibleCandidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.TwistedRoot1Realization.small_small_edge_physical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.TwistedRoot1Realization.free_large_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.TwistedRoot1Realization.free_small_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.TwistedRoot1Realization.large_small_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1Case61.twistedRoot1CaseFiniteBoundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

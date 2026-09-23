@@ -1,0 +1,9 @@
+'R4333.exists_colorDegree_eq_sixteen_at_61' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.singleRootProfileTuple_injective' depends on axioms: [propext]
+'R4333.exists_unique_singleRootProfile_after_palette' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.rootColorNeighborhoodPartition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.rootColorNeighborhoodUnion_card_eq_sixty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.SingleRootStarReduction61.activeDegree_eq_templateOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.exists_singleRootStarReduction61' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,7 @@
+'R4333.ProfileBRowExtension.tailWitnessOfStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileBRowExtension.joinedColoring_noMono' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileBRowExtension.insideColoring_rootForbidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileBRowExtension.extensionOfStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileBRowExtension.no_profileB_star_of_no_rowExtensions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

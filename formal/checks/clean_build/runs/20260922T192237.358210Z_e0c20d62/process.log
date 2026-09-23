@@ -1,0 +1,15 @@
+'R4333.ThresholdDegreeCapsCNF.ownDegreeCounterSpecs_wellFormed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ThresholdDegreeCapsCNF.allDegreeCounterSpecs_wellFormed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ThresholdDegreeCapsCNF.allCaps_of_thresholdDegreeBounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ThresholdDegreeCapsCNF.coloring_satisfies_withAllDegreeCapsFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ThresholdDegreeCapsCNF.no_coloring_of_allDegreeCaps_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

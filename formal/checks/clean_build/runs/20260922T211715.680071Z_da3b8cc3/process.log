@@ -1,0 +1,23 @@
+'R4333.UUTD9StrongOrbit.largeCatalogue_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.smallCatalogue_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.largeCatalogueChoice_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.smallCatalogueChoice_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.explicitLargeCompatible_covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.explicitSmallCompatible_covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.exists_largeCatalogueIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.exists_smallCatalogueIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.largeNormalizerEquationExplicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.smallNormalizerEquationExplicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.largeNormalizerEquation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.smallNormalizerEquation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.exists_independentPhysicalNormalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongOrbit.rootLargeNormalizerEquationExplicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.rootSmallNormalizerEquationExplicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.rootPhysicalNormalizationWitness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongOrbit.quotientRepresentativePair_coverage' depends on axioms: [propext, Quot.sound]
+'R4333.UUTD9StrongOrbit.factorAssignmentRealization_reduces_to_72' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongOrbit.strongRealization_reduces_to_72' depends on axioms: [propext, Classical.choice, Quot.sound]

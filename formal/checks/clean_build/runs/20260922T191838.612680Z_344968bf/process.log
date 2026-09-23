@@ -1,0 +1,13 @@
+'PricingIntegration.ThresholdCompile.threshold_compiler_preserves_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingIntegration/ThresholdCompile.lean:104:17: warning: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [B̵o̵o̵l̵.̵t̵r̵u̵e̵_̵e̵q̵,̵ ̵↓reduceIte] at ht
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingIntegration.ThresholdCompile.bound_compiler_satisfies_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,9 @@
+'R4333.ProfileDRowExtensionConstruction.splitEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDRowExtensionConstruction.fullColoring_noMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDRowExtensionConstruction.starOfExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDRowExtensionConstruction.nonempty_profileD_star_iff_exists_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDRowExtensionConstruction.no_profileD_star_iff_all_extensions_empty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

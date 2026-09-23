@@ -1,0 +1,9 @@
+'R4333.ProfileDUUUDegreeTenCatalogCandidateEquation61.candidateCatalogEquation_chunk' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogCandidateEquation61.candidateCatalogEquation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogCandidateEquation61.candidateCatalogEquation_selected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.SingleRootStarReduction61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192233.752832Z_e177eaca/output.olean",
+    "sha256": "d6abee9c473173d24bc423da338bf366c2adcf5aa891e07123474b6003b35f74"
+  },
+  {
+    "module": "R4333Lean.DegreeTargets61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192212.317303Z_1070ca9b/output.olean",
+    "sha256": "15b8337e43ed052c68383b6ceac7ebcaca7367185838e7a9aec0ec448852613b"
+  }
+]

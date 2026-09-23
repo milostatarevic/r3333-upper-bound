@@ -1,0 +1,6 @@
+'R4333.ProfileDRowExtension.joinedColoring_noMono' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileDRowExtension.insideColoring_rootForbidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDRowExtension.extensionOfStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDRowExtension.no_profileD_star_of_no_rowExtensions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,50 @@
+{
+  "census_pin": {
+    "bytes": 920722,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/census.json",
+    "sha256": "1f0fad0daf300ba33d3942f8ef7fee4fb6eb9504b1f3bddcca23f004d56a298e"
+  },
+  "control_count": 19,
+  "controls": [
+    "accepted_literal_compatible_K10_positive",
+    "corrupt_J_transport_rejected",
+    "corrupt_known_root_color_rejected",
+    "false_empty_scope_witness_rejected",
+    "false_diagonal_pattern_witness_rejected",
+    "false_shared_edge_witness_rejected",
+    "real_forced_diagonal_conflict_positive",
+    "false_forced_diagonal_conflict_rejected",
+    "complete_four_branch_structural_ledger_positive",
+    "missing_branch_rejected",
+    "duplicate_branch_rejected",
+    "incomplete_coverage_mask_rejected",
+    "physical_free_coordinate_bit_order",
+    "corrupt_core_payload_binding_rejected",
+    "false_full_LOCAL_CORE_claim_rejected",
+    "duplicate_JSON_key_rejected",
+    "nonfinite_JSON_rejected",
+    "overflowing_JSON_number_rejected",
+    "actual_first_producer_record_positive"
+  ],
+  "cpu_seconds": 0.13080199999999997,
+  "full_census_replayed": false,
+  "reference_pin": {
+    "bytes": 117800,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/parent_local_reference.json",
+    "sha256": "2a7a1bf3f4128caaffefc0c8dbde13177e572e4f9b21ec8135f9ecd87b66f8b2"
+  },
+  "results_pin": {
+    "bytes": 1149252,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/producer/results.jsonl",
+    "sha256": "9d472a88e328ab05ffc7567b8f06ab6d6b338c23decefb5bd982a769f27c0c3d"
+  },
+  "schema": "C61_G_CHECKER_CONTROLS_1",
+  "source_pin": {
+    "bytes": 41424,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/tools/checker.py",
+    "sha256": "1ebf555cf5f0bb268b5412735747c361c6a43e2e36173a2d6f073b4f41347192"
+  },
+  "status": "PASS",
+  "structural_ledger_control_note": "Synthetic four-index ledger tests only coverage and bit-order validation; no mathematical branch claim.",
+  "wall_seconds": 0.13231195799999995
+}

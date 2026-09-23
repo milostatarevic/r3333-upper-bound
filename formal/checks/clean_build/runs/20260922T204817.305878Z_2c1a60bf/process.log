@@ -1,0 +1,8 @@
+PricingIntegration.CComplete.normalized_seed_cover : NormalizedSeedCover
+PricingIntegration.CComplete.physical_C_to_exact_family (c : Host) (hc : NoMonochromaticTriangle c)
+  (selectors : SelectorX c) (witness : CExteriorWitness c) : ∃ i, Satisfiable (concreteFamily i)
+PricingIntegration.CComplete.C_exterior_excluded (all456_unsat : ∀ (i : Fin 456), ¬Satisfiable (concreteFamily i))
+  (c : Host) (hc : NoMonochromaticTriangle c) (selectors : SelectorX c) (witness : CExteriorWitness c) : False
+'PricingIntegration.CComplete.normalized_seed_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.CComplete.physical_C_to_exact_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.CComplete.C_exterior_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]

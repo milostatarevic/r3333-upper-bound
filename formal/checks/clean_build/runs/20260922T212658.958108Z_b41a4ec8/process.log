@@ -1,0 +1,8 @@
+'R4333.UUTD10Complete.blockTwoCatalogMatrix_eq_leafMatrix_of_cross_group' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD10Complete.catalogRepresentativeExactToLeaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD10Complete.exists_representativeExactBranch_of_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD10Complete.representative_satisfies_formula' depends on axioms: [propext, Classical.choice, Quot.sound]

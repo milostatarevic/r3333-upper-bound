@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingABD.ABSourceDomain",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192402.784999Z_ce077b7a/output.olean",
+    "sha256": "de2ac541f633cd57666ef75da523461cd31d18f58a9396bfbfb5823ecfa8d548"
+  },
+  {
+    "module": "PricingABD.ABTemplateCounts",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192252.669928Z_85aa480a/output.olean",
+    "sha256": "057f0bfbbbe923427bd30bbef6500adee30b9cc51106f2fb306dade97600b20f"
+  }
+]

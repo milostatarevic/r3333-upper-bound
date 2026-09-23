@@ -1,0 +1,2 @@
+'PricingG.UUTD9Restricted.slot_three_supplies_leaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.UUTD9Restricted.positioned_branch_supplies_leaf' depends on axioms: [propext, Classical.choice, Quot.sound]

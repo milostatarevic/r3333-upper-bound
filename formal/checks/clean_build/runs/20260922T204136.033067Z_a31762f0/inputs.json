@@ -1,0 +1,12 @@
+[
+  {
+    "module": "CompletionC.NativePairShapes",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T204132.736268Z_7b4b9c24/output.olean",
+    "sha256": "d2cfb5c3c7e87148b561cc3fb82f9faf9aee0f5f0cc6a21a2ebfbe54ddc11f2c"
+  },
+  {
+    "module": "CompletionC.NativeFactorBounds",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T201155.203980Z_40441874/output.olean",
+    "sha256": "3618239a6154135749f88fb173a4617831d84fc991ea80bcfe96426774785420"
+  }
+]

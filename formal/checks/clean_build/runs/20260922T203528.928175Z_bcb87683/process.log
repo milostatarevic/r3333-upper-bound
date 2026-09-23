@@ -1,0 +1,7 @@
+'R4333.ProfileBFourRowCNF.totalColoring_noMono' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileBFourRowCNF.fourExtension_satisfies_fmla' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileBFourRowCNF.noFourExtension_of_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileBFourRowCNF.LRATRefutations.universalFourRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileBFourRowCNF.no_profileB_star_of_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]

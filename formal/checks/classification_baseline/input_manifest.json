@@ -1,0 +1,1070 @@
+{
+  "schema": "RAMSEY61_CLASSIFICATION_SOURCE_PACKAGE_1",
+  "scope": "Local K15/K16 completeness derivation and exact included CNF/LRAT data; excludes K61 profile search certificates",
+  "copy_validation": "All copied files byte-compared and hashed against original workspace; all 32 Lean modules also byte-identical to authenticated evidence-v1 source snapshot. No solver, certificate checker, or Lean replay was executed in this packaging pass.",
+  "local_source_modules": 32,
+  "included_cnf_files": 55,
+  "included_lrat_files": 55,
+  "included_payload_bytes": 5081743,
+  "topological_module_order": [
+    "R4333Lean.CheckedLRAT",
+    "R4333Lean.Basic",
+    "R4333Lean.FiniteColorCNF",
+    "R4333Lean.CatalogueBaseLiteral",
+    "R4333Lean.CatalogueBaseCNF",
+    "R4333Lean.CatalogueBaseCNFLeavesK16Refined",
+    "R4333Lean.CatalogueBaseCNFSemantics",
+    "R4333Lean.JoinC5",
+    "R4333Lean.Obstruction",
+    "R4333Lean.Attaching61Arithmetic",
+    "R4333Lean.Attaching61",
+    "R4333Lean.ThreeColorCatalogue",
+    "R4333Lean.ColorRelabel",
+    "R4333Lean.K16CommonCertificate",
+    "R4333Lean.ClebschCompletionData",
+    "R4333Lean.ClebschCompletionCNF",
+    "R4333Lean.ClebschCompletionSemantics",
+    "R4333Lean.CriticalTemplates",
+    "R4333Lean.ClebschCompletionClassification",
+    "R4333Lean.ClebschUniqueness",
+    "R4333Lean.K16CatalogueFromSRG",
+    "R4333Lean.NeighborhoodThreeColor",
+    "R4333Lean.CriticalTemplateDeletionData",
+    "R4333Lean.CriticalTemplateDeletion",
+    "R4333Lean.K15Extension",
+    "R4333Lean.CriticalTemplateRestriction",
+    "R4333Lean.CatalogueBaseCNFLeavesK15Refined",
+    "R4333Lean.K15DeficientCertificate",
+    "R4333Lean.K15Catalogue",
+    "R4333Lean.CataloguedNeighborhood",
+    "R4333Lean.Attaching61Reduction",
+    "R4333Lean.CriticalCatalogues"
+  ],
+  "files": [
+    {
+      "path": "R4333Lean/CheckedLRAT.lean",
+      "source_workspace_relative_path": "R4333Lean/CheckedLRAT.lean",
+      "bytes": 3275,
+      "sha256": "0dc50a516ce88c897aa9c1b71baedb1f693b010cdd644886f83dd09fd677edc5",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/Basic.lean",
+      "source_workspace_relative_path": "R4333Lean/Basic.lean",
+      "bytes": 7917,
+      "sha256": "fcd74524b310ec23478aa266e037dc2c10085cec4630f273ee8c36d05229005a",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/FiniteColorCNF.lean",
+      "source_workspace_relative_path": "R4333Lean/FiniteColorCNF.lean",
+      "bytes": 12360,
+      "sha256": "c3133add39777f1a2ab97399c0627f309d3655bb73a928244e3c1a270b096a35",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CatalogueBaseLiteral.lean",
+      "source_workspace_relative_path": "R4333Lean/CatalogueBaseLiteral.lean",
+      "bytes": 270568,
+      "sha256": "dcc123f33d87cac0b89f1c5f5704913cd6699da036f3790ab83f00f5f9135edb",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CatalogueBaseCNF.lean",
+      "source_workspace_relative_path": "R4333Lean/CatalogueBaseCNF.lean",
+      "bytes": 3632,
+      "sha256": "18d88eb96423cb5cb65c57f3213559757cb4e9afeb977d5dcb179d9825844e93",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CatalogueBaseCNFLeavesK16Refined.lean",
+      "source_workspace_relative_path": "R4333Lean/CatalogueBaseCNFLeavesK16Refined.lean",
+      "bytes": 6042,
+      "sha256": "6418d34dc182db54972d2209422dda5d0ea9da0ea29a3a922268aef4670dcb60",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CatalogueBaseCNFSemantics.lean",
+      "source_workspace_relative_path": "R4333Lean/CatalogueBaseCNFSemantics.lean",
+      "bytes": 5031,
+      "sha256": "e13d49fd91be92534149fc3235ce037d84382c92661ac7ec15e8e7c0cbcd11d6",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/JoinC5.lean",
+      "source_workspace_relative_path": "R4333Lean/JoinC5.lean",
+      "bytes": 8714,
+      "sha256": "2bdbb82ce0dd32a0d294762f84711d6685ee6d31d9acbd05885a16792311a2c6",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/Obstruction.lean",
+      "source_workspace_relative_path": "R4333Lean/Obstruction.lean",
+      "bytes": 4033,
+      "sha256": "af8e26f25771b31250ea8a30a68fb9a4d478ad42ffe61937c6479db858020a98",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/Attaching61Arithmetic.lean",
+      "source_workspace_relative_path": "R4333Lean/Attaching61Arithmetic.lean",
+      "bytes": 5071,
+      "sha256": "d8ddcff40a969f27d9b3fef228c3019ec46a42eec696c2a32435d2ddb4435a02",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/Attaching61.lean",
+      "source_workspace_relative_path": "R4333Lean/Attaching61.lean",
+      "bytes": 55874,
+      "sha256": "8222c41c93547e51f5f9811e90fd793eebaf563ab85c169328350e6340f69772",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/ThreeColorCatalogue.lean",
+      "source_workspace_relative_path": "R4333Lean/ThreeColorCatalogue.lean",
+      "bytes": 9492,
+      "sha256": "7c0ed4b8f8ff970cb93a75cd27e766b6818622638a4c0c3cf5243c30b02404f8",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/ColorRelabel.lean",
+      "source_workspace_relative_path": "R4333Lean/ColorRelabel.lean",
+      "bytes": 2497,
+      "sha256": "5bec5bec783cab94377df3c3b9fb10930577fdb18844ef18dd2d1dcd55f27a0f",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/K16CommonCertificate.lean",
+      "source_workspace_relative_path": "R4333Lean/K16CommonCertificate.lean",
+      "bytes": 60391,
+      "sha256": "eefd65106ac0f8ad6c3d8d598de1ee0d89f5921e78fb33cdaa6fede1a056e402",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/ClebschCompletionData.lean",
+      "source_workspace_relative_path": "R4333Lean/ClebschCompletionData.lean",
+      "bytes": 50126,
+      "sha256": "7f1c847dd612fe50d4614682cd2d3f7586e5d6d26acd1d7ca003b4ec0301b3d4",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/ClebschCompletionCNF.lean",
+      "source_workspace_relative_path": "R4333Lean/ClebschCompletionCNF.lean",
+      "bytes": 2331,
+      "sha256": "cedcdcf1c4512417db480d1d299a6c6b079dfdc6b8fe3b08617f55776b836b01",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/ClebschCompletionSemantics.lean",
+      "source_workspace_relative_path": "R4333Lean/ClebschCompletionSemantics.lean",
+      "bytes": 12767,
+      "sha256": "b1fd00f31662e60bd0e4eb36609aea5c23836249bc5423b3c913529cf3cbb62c",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CriticalTemplates.lean",
+      "source_workspace_relative_path": "R4333Lean/CriticalTemplates.lean",
+      "bytes": 3546,
+      "sha256": "56c170b6e6d74889c0b3f848829e783e7983185e7bb79755050ecba28c808de0",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/ClebschCompletionClassification.lean",
+      "source_workspace_relative_path": "R4333Lean/ClebschCompletionClassification.lean",
+      "bytes": 14165,
+      "sha256": "b4e3936c34b3c75850638024d0414bb819c04cfa2ca8bc5122e07f8db9885787",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/ClebschUniqueness.lean",
+      "source_workspace_relative_path": "R4333Lean/ClebschUniqueness.lean",
+      "bytes": 26496,
+      "sha256": "1d7cc6fab67681157b116ed3439101db672a5431ae06a322c82e3751a05d922f",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/K16CatalogueFromSRG.lean",
+      "source_workspace_relative_path": "R4333Lean/K16CatalogueFromSRG.lean",
+      "bytes": 2173,
+      "sha256": "e3bc639081251387fc19757040f0f40ac67c195df514703fa38cd0b99549130d",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/NeighborhoodThreeColor.lean",
+      "source_workspace_relative_path": "R4333Lean/NeighborhoodThreeColor.lean",
+      "bytes": 10303,
+      "sha256": "4a2a6a5d5861594578e0610672ced01c22fe1b5fc0fa9572bf39d704d7a2e4ea",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CriticalTemplateDeletionData.lean",
+      "source_workspace_relative_path": "R4333Lean/CriticalTemplateDeletionData.lean",
+      "bytes": 2173,
+      "sha256": "2c9a7cdd52e0319017314bf3244164a3b6b154c43d43eebd773699d8500282ae",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CriticalTemplateDeletion.lean",
+      "source_workspace_relative_path": "R4333Lean/CriticalTemplateDeletion.lean",
+      "bytes": 2288,
+      "sha256": "8831e3f3bf5c868d9208c5fc27e1eefc832cdbb8048549066938947b785b901f",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/K15Extension.lean",
+      "source_workspace_relative_path": "R4333Lean/K15Extension.lean",
+      "bytes": 12200,
+      "sha256": "bd1daf9c58bc4f3e17369584d3902e3628b241021acd38294b68b305f2a8a06e",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CriticalTemplateRestriction.lean",
+      "source_workspace_relative_path": "R4333Lean/CriticalTemplateRestriction.lean",
+      "bytes": 4362,
+      "sha256": "a81511e646d5d91b8bbf9d3c63266a5f984806fa7c56b41a5858fbd0cc96e0c3",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CatalogueBaseCNFLeavesK15Refined.lean",
+      "source_workspace_relative_path": "R4333Lean/CatalogueBaseCNFLeavesK15Refined.lean",
+      "bytes": 7763,
+      "sha256": "8e4b7166f2b32c40e224e7a24069935c038b11a3d80f4c66d0d85490ca3fad75",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/K15DeficientCertificate.lean",
+      "source_workspace_relative_path": "R4333Lean/K15DeficientCertificate.lean",
+      "bytes": 47872,
+      "sha256": "14394ce19a150f2fd5ca6f12a9939810f32da48ceb51094a11519f19690844de",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/K15Catalogue.lean",
+      "source_workspace_relative_path": "R4333Lean/K15Catalogue.lean",
+      "bytes": 2329,
+      "sha256": "cb06bd235c0fee3fb608797de60ad0daf4b8532f57084c66d637404c1e9d3a81",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CataloguedNeighborhood.lean",
+      "source_workspace_relative_path": "R4333Lean/CataloguedNeighborhood.lean",
+      "bytes": 5582,
+      "sha256": "767a500b984c9dc65838bfdc69820a6292cd0cade73a8323b3d52b743ee450f4",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/Attaching61Reduction.lean",
+      "source_workspace_relative_path": "R4333Lean/Attaching61Reduction.lean",
+      "bytes": 3323,
+      "sha256": "cea2031fbc9ea0fd22693f87e2fe7a761c696879f7529238153a207e1cfddda9",
+      "kind": "lean_source"
+    },
+    {
+      "path": "R4333Lean/CriticalCatalogues.lean",
+      "source_workspace_relative_path": "R4333Lean/CriticalCatalogues.lean",
+      "bytes": 2095,
+      "sha256": "b652c8bc79277144f6cf247dca3f7e021c8e9414be13c308a99747131ea279b8",
+      "kind": "lean_source"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_2_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_2_3.cnf",
+      "bytes": 35696,
+      "sha256": "b25387135fec0b06381568f4424e3a8c5dc69c3476f40506370068614c5aa3d0",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_2_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_2_3.lrat",
+      "bytes": 1967,
+      "sha256": "a8ae0257e7c7a78bcd4deca60948a9664af4a4ae438ae5107c86ee933721d47f",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_3_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_3_2.cnf",
+      "bytes": 35696,
+      "sha256": "111277a30553bd8d4514a2e7b129d196737ff728f34a5ffa840ab9605c74b0af",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_3_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_3_2.lrat",
+      "bytes": 1967,
+      "sha256": "a8ae0257e7c7a78bcd4deca60948a9664af4a4ae438ae5107c86ee933721d47f",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_4_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_4_1.cnf",
+      "bytes": 35696,
+      "sha256": "419a9a3f6db314dcd79a8342158feb5bfad2129de8484b6ac4866d7343f31252",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_4_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_0_4_1.lrat",
+      "bytes": 1967,
+      "sha256": "a8ae0257e7c7a78bcd4deca60948a9664af4a4ae438ae5107c86ee933721d47f",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_1_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_1_3.cnf",
+      "bytes": 35696,
+      "sha256": "9923e7d1882102697d0cb19da66ad57fc785298385525bd417b9fcaf76e4852f",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_1_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_1_3.lrat",
+      "bytes": 2327,
+      "sha256": "8b92428397f3019e3b04cc7a479b8f01ca017df6645f0e469833d7d11e1c670d",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_2_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_2_2.cnf",
+      "bytes": 35696,
+      "sha256": "47064c0118a23d88912376ce545f042f557c0a40c68546807bcb05d9265f262c",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_2_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_2_2.lrat",
+      "bytes": 6420,
+      "sha256": "aae6c711974bd45e05e771ad1af9889446d525f637f49da1f74b2d2eacab06e9",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_3_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_3_1.cnf",
+      "bytes": 35696,
+      "sha256": "530fec9cc1aafeb684063ecd6f996dc2fb40a02143fb64f93494d5148f440e3f",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_3_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_3_1.lrat",
+      "bytes": 181339,
+      "sha256": "01a04ba68a27c204da27bf2f154564e2c3cc9a8c1942de30db19113c14800f5a",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_4_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_4_0.cnf",
+      "bytes": 35696,
+      "sha256": "c8af4a47851f3e78bb2167ccf8ccd2c4f15f3db34ac5c261da3e25c9089a99c1",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_4_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_1_4_0.lrat",
+      "bytes": 708566,
+      "sha256": "bb3cce2a73ff5a9ad43d3a79c2ec06f3ac625953733fa33d609b9153e62125a8",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_0_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_0_3.cnf",
+      "bytes": 35696,
+      "sha256": "2d89b160756a02e67a7a3bb032ff3e709b5763c2c559b65397233a535c00d996",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_0_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_0_3.lrat",
+      "bytes": 2187,
+      "sha256": "bd29dbfcbb2bb8d6a8f4c3bd968b69bd299ef51ee489ef8955ac19e141ae14e4",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_1_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_1_2.cnf",
+      "bytes": 35696,
+      "sha256": "367fd0972c8fe2504dc35be03ac652d5cc3d2680ee842b8a33f609c95c3f7822",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_1_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_1_2.lrat",
+      "bytes": 2269,
+      "sha256": "18db60f4f97d69f8caa73ac0b62ecc504c02f31c18f77c5293ed7dae7f56d340",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_2_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_2_1.cnf",
+      "bytes": 35696,
+      "sha256": "77c1f61d3257bcf545dbcaaeda741915771e648f90ea8a647bf6f882ce51d6ad",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_2_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_2_1.lrat",
+      "bytes": 11616,
+      "sha256": "7e7def3ad002043224747df62a0bfab8c76f855e29ebd48dae87cf714f9f7877",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_3_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_3_0.cnf",
+      "bytes": 35696,
+      "sha256": "bb48fbaa299ec0bc921cf406c60b988522f6bcb5a6b338ac832393c264360091",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_3_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_2_3_0.lrat",
+      "bytes": 119595,
+      "sha256": "c34dab7ddfb27fe6d17576c55c076cf02b5cea61d8a8027b926db7e9bcdb18c4",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_0_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_0_2.cnf",
+      "bytes": 35696,
+      "sha256": "7f69f13374b42790e40ce19e2e738c414d685001c939b5080033e3478785422b",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_0_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_0_2.lrat",
+      "bytes": 1967,
+      "sha256": "eed24a6868b204ee8afc563601f46548f8c0eb532dc2112e176a54b9a85bc79c",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_1_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_1_1.cnf",
+      "bytes": 35696,
+      "sha256": "41d6cf49f80c37ae1e3802c1a2d9c0e6662570816e3938e1d09a7a280a18fd31",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_1_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_1_1.lrat",
+      "bytes": 1967,
+      "sha256": "eed24a6868b204ee8afc563601f46548f8c0eb532dc2112e176a54b9a85bc79c",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_2_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_2_0.cnf",
+      "bytes": 35696,
+      "sha256": "5991d4178bb8214433974a07260fcd616e3f743476791358d67bb0b129ca9598",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_2_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_1_blue_3_2_0.lrat",
+      "bytes": 1967,
+      "sha256": "eed24a6868b204ee8afc563601f46548f8c0eb532dc2112e176a54b9a85bc79c",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_1_4.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_1_4.cnf",
+      "bytes": 35697,
+      "sha256": "291ffa7eef4ece4125d9b7fa75a304c3b7d6bdf77e283ba82322e791de5ee702",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_1_4.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_1_4.lrat",
+      "bytes": 1963,
+      "sha256": "b3c38a11df62a95d0efade51c1c416bfa419d013d25db6ecdb9899ed1b580747",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_2_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_2_3.cnf",
+      "bytes": 35697,
+      "sha256": "95b7dac4fac64aea0a228bfc431e268e8b0c374ca00d1d63ef82af5c8247c174",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_2_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_2_3.lrat",
+      "bytes": 1963,
+      "sha256": "b3c38a11df62a95d0efade51c1c416bfa419d013d25db6ecdb9899ed1b580747",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_3_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_3_2.cnf",
+      "bytes": 35697,
+      "sha256": "6d07f0c23219a135b77aa00ed9bf3edb56d62a2085b62e440c76fd37398349a7",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_3_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_0_3_2.lrat",
+      "bytes": 1963,
+      "sha256": "b3c38a11df62a95d0efade51c1c416bfa419d013d25db6ecdb9899ed1b580747",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_0_4.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_0_4.cnf",
+      "bytes": 35697,
+      "sha256": "089a8d6bdba3af9f0cdd476148c7a7e0879873c009700c93a800b9121027aacd",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_0_4.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_0_4.lrat",
+      "bytes": 2270,
+      "sha256": "af93760616298390bb755ede901639ba2ab080fe5aa89534bb350237f8dc9dc3",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_1_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_1_3.cnf",
+      "bytes": 35697,
+      "sha256": "0d312843741f4a5f92d008df16bb214c75a59be57ee7d4eca3778626fb3a16c6",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_1_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_1_3.lrat",
+      "bytes": 2561,
+      "sha256": "7c136ebf88f12488a51fcdc01383e165e14013b2c3deef66347823e548da5a0d",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_2_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_2_2.cnf",
+      "bytes": 35697,
+      "sha256": "a365c25cc9857dc4666b98c8ae30e1c4d667d995aef12eb9c793a1470dd28447",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_2_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_2_2.lrat",
+      "bytes": 14693,
+      "sha256": "1f4be28662571bccabc9d1cf9ddc5d13be0017fc063e98815da0a646edba75e1",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_3_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_3_1.cnf",
+      "bytes": 35697,
+      "sha256": "ba8ae0d5a35c9110adb75724c422cb2a9f9ef42d7c4aa430e319232775bf0eb2",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_3_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_1_3_1.lrat",
+      "bytes": 101428,
+      "sha256": "487c6f4fa1075422164a0420dfc0c87dff66278716184b60b246dc30497aa957",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_0_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_0_3.cnf",
+      "bytes": 35697,
+      "sha256": "b788f58064ae02c281069b074ddc4d109ad42783119632a5423101edf08d87ab",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_0_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_0_3.lrat",
+      "bytes": 2183,
+      "sha256": "cefc70320654c6c2cfcd90d3a027df369676604a51a4ee887a9f81cd5b36be4e",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_1_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_1_2.cnf",
+      "bytes": 35697,
+      "sha256": "ef36fd081d7caec679d6f1a7091bd8077743b824883767b757ec9be51c354f4c",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_1_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_1_2.lrat",
+      "bytes": 8275,
+      "sha256": "d33f39484ea1c5b3483f82a9788056c9c00347934d7c8d276a81e68fcf256311",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_2_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_2_1.cnf",
+      "bytes": 35697,
+      "sha256": "5da6b075979c0ebd44a698a3bd5ae41d767c70bc6978d2f6169026ea843d4bde",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_2_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_2_1.lrat",
+      "bytes": 167904,
+      "sha256": "83d81cd272aaf5f9e959f7ca1e130afb19f4cd645a1cf9a606048785c449b13b",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_3_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_3_0.cnf",
+      "bytes": 35697,
+      "sha256": "5374a9f96fffe3d7f75166da423f5c7b76baf4c7485827ef681b6e7fd9647c66",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_3_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_2_3_0.lrat",
+      "bytes": 950104,
+      "sha256": "75ca04c10a31fb7dc7c3fb70937bcafc25b30b008c5b8f280da6d9f7190d0a7b",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_0_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_0_2.cnf",
+      "bytes": 35697,
+      "sha256": "f65edb314ba000d5e29f662e36f7ae3fe83ce8e141616dfdab8f659f4d19504e",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_0_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_0_2.lrat",
+      "bytes": 1963,
+      "sha256": "f8d7d1ddea6ce9cee68193b842c1891c000146224337625a5e978a4ea101bf61",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_1_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_1_1.cnf",
+      "bytes": 35697,
+      "sha256": "c47aa2d0ce60a9093f8d009a953afa50168bc7f7757bee179fc5378599cb3cc6",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_1_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_1_1.lrat",
+      "bytes": 1963,
+      "sha256": "f8d7d1ddea6ce9cee68193b842c1891c000146224337625a5e978a4ea101bf61",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_2_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_2_0.cnf",
+      "bytes": 35697,
+      "sha256": "da570b8b036213ff2272bca796e547a8b001bcdb014a9f697c2c1b6febcff8bf",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_2_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_2_blue_3_2_0.lrat",
+      "bytes": 1963,
+      "sha256": "f8d7d1ddea6ce9cee68193b842c1891c000146224337625a5e978a4ea101bf61",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_split_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_split_0.cnf",
+      "bytes": 35627,
+      "sha256": "9722c491f42d73c468282f8095969034eca7cd61567787e51e2a11dc613d0a7b",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_split_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_split_0.lrat",
+      "bytes": 1799,
+      "sha256": "801803baf1339be9ea64534919dd6b6d579d607722cfb00567b689a273c8fb52",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_split_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_split_3.cnf",
+      "bytes": 35627,
+      "sha256": "ff368873fb1f7b8b5af98dc8e561ff8524ac2ca500a2672f1f63b89a52c7151a",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k15_deficient_split_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k15_deficient_split_3.lrat",
+      "bytes": 1784,
+      "sha256": "91efab8a2e763007309eb82e5a28358cd7dde8c3db09ce400d4103dfe6a7fdf8",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_0.cnf",
+      "bytes": 43712,
+      "sha256": "103abafcf4018a5955748b824e86e15aa23228d95188df10a954d6db23177065",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_0.lrat",
+      "bytes": 1870,
+      "sha256": "158a4a1124e660c37bc09d8b733c04ef79e58494bc0e9855c1aa9b3f7b783e9a",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_1.cnf",
+      "bytes": 43712,
+      "sha256": "30c009e6f814fd8902f6e32a0bf4c26eb6a6322d0599e8de16404ff5e65acec9",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_1.lrat",
+      "bytes": 1901,
+      "sha256": "9699ea0ea4e267a0c00406bc6f9c150d40366266688cc16d50e4654b8f1035fa",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_2.cnf",
+      "bytes": 43712,
+      "sha256": "86efb2e240ca22c4bd133c0d6d77f8513017ddc2e7d93ddcb570d00dcc13a542",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_2.lrat",
+      "bytes": 2350,
+      "sha256": "8202b763cbf9b53819ed02ab895bceb8da48e739a6ed07bcc207449126567c48",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_3.cnf",
+      "bytes": 43712,
+      "sha256": "87a8553ec4fa0dac2531d1f2fd3fe1c0c1410b8d556a46bedd2eee655f127004",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_3.lrat",
+      "bytes": 1861,
+      "sha256": "659614496b17b130cf6407d891e0f9e44361750613019de6b1a046d70f899dea",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_4.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_4.cnf",
+      "bytes": 43712,
+      "sha256": "e83bb8ff32463ec6fc67b2a7edc3092c5f13e3213994a3c5bb1de17c7bb149b4",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_4.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_0_split_4.lrat",
+      "bytes": 1861,
+      "sha256": "659614496b17b130cf6407d891e0f9e44361750613019de6b1a046d70f899dea",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_0.cnf",
+      "bytes": 43712,
+      "sha256": "bb83b8d17c55e17ad9dcac563bbb0ee721b850089ff6470e041e965d9d29ceeb",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_0.lrat",
+      "bytes": 1914,
+      "sha256": "d8a8e120cf60cc8449c958c609fa59dafa61d1d37ced126088709cea43786f83",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_1.cnf",
+      "bytes": 43712,
+      "sha256": "be920fd554b56083a373ab820a9353bc9ccfeaff1c61f96f5eb9270648497e44",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_1.lrat",
+      "bytes": 1974,
+      "sha256": "de280e5ea3de2f6608bfc8ec1e52ea652c0293199b6fb76ab6aa9c32f9a11b14",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_2.cnf",
+      "bytes": 43712,
+      "sha256": "e14cfe1c89e1fdab27153a831a4d196d4fcbbea106593f404a00d09458c4547a",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_2.lrat",
+      "bytes": 119469,
+      "sha256": "f8c8c41e5dc3ee642ff08e1873437d9914915798680ab0df06bdda590ad652c8",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_3.cnf",
+      "bytes": 43712,
+      "sha256": "465a168015c8717cad1c9fe2e87cb6313a173a0133d0f8edbbdac8112b5c5119",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_3.lrat",
+      "bytes": 1992,
+      "sha256": "102484ef93845feccbf4973ea1b7bdb400c72137e6f57662434b827125a36528",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_4.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_4.cnf",
+      "bytes": 43712,
+      "sha256": "8d221daffccd5643ba887ed470e1f25a831daebf7061f9ac2b875a531b66d2ec",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_4.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_1_split_4.lrat",
+      "bytes": 1992,
+      "sha256": "102484ef93845feccbf4973ea1b7bdb400c72137e6f57662434b827125a36528",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_0.cnf",
+      "bytes": 43712,
+      "sha256": "eae622a061c284ee77f00b5901dba79767f6d0ac5a0d43782ea42bd53ea6a50c",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_0.lrat",
+      "bytes": 2006,
+      "sha256": "a5e02ce3487fd069e140a29dbb1f0cdad4e2cebd45036f0006d8e149f1df44b3",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_1.cnf",
+      "bytes": 43712,
+      "sha256": "b003c8903bafb54e6ca04e6c4b305f1b669c471ed4a9a9c021c366b7bd477395",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_1.lrat",
+      "bytes": 2124,
+      "sha256": "2073cc80015fd6e9a33b87009e1f928920a49fe7ad5db853e2f657cd74cc97b4",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_0_4.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_0_4.cnf",
+      "bytes": 43780,
+      "sha256": "a879464bf76ab58fee0219b49450f3d63f26fdc7cb0a5fdb083763630887c197",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_0_4.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_0_4.lrat",
+      "bytes": 2645,
+      "sha256": "473e25d91d2b425a2102d474593f83b10c5e49689e110bebd16eeba8c7cb3b36",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_1_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_1_3.cnf",
+      "bytes": 43780,
+      "sha256": "53865523880fd37718b48c154522a9ee2bf9a94c48fd15f5d9bf23ccf4016a1b",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_1_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_1_3.lrat",
+      "bytes": 2361,
+      "sha256": "030cb7a73741894064cc77d63dd3a4948874bf2276c5c9656926c39df3b7a29f",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_2_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_2_2.cnf",
+      "bytes": 43780,
+      "sha256": "b80aa372fd9db086555b38e662c0589baa867301e2e14fc3f995b85522df669e",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_2_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_0_2_2.lrat",
+      "bytes": 2361,
+      "sha256": "030cb7a73741894064cc77d63dd3a4948874bf2276c5c9656926c39df3b7a29f",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_0_3.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_0_3.cnf",
+      "bytes": 43780,
+      "sha256": "321e0fabb7e70f332a46bfdf26cb60087c35cbff29e6200d6a76818c2be38b6a",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_0_3.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_0_3.lrat",
+      "bytes": 2620,
+      "sha256": "9be58041f07dff0ca86d46389b1efdfe34f3021d2fbe1c9ba8ace4dfe4338993",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_1_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_1_2.cnf",
+      "bytes": 43780,
+      "sha256": "2fbffe3452150bc5767ebd0cc204d5f6abf4b041027b0468455fea652af7de0d",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_1_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_1_2.lrat",
+      "bytes": 2246,
+      "sha256": "2416c199afe887a4986fced707f0d3fe491bfaa1f5fbaf00a753a63113db0221",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_2_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_2_1.cnf",
+      "bytes": 43780,
+      "sha256": "63731fd58093eb8a144497298633da076ff9816ad709e25f6f79bd8438cb859f",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_2_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_1_2_1.lrat",
+      "bytes": 2246,
+      "sha256": "2416c199afe887a4986fced707f0d3fe491bfaa1f5fbaf00a753a63113db0221",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_0_2.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_0_2.cnf",
+      "bytes": 43780,
+      "sha256": "80053525bb89540aff41e44060bf163b7c250e18b4439974ada3cafcd256c340",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_0_2.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_0_2.lrat",
+      "bytes": 416723,
+      "sha256": "c9955c26621e88373d1af98685164a064e2f2852d61df25606940cf84d068efb",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_1_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_1_1.cnf",
+      "bytes": 43780,
+      "sha256": "0059c279e2101a028508fbef1642831d775ab8b4d2fc14cfa2462b22e1168a6c",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_1_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_1_1.lrat",
+      "bytes": 2243,
+      "sha256": "eabc27a177f823289024e9369db2a1e47c6ec2d41ac8711d20c53c74a5f731fd",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_2_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_2_0.cnf",
+      "bytes": 43780,
+      "sha256": "ddfa33ea901eab0d009685c7693625f3a469f2d991521737088cb4b82517cfd1",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_2_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_3_split_2_blue_2_2_0.lrat",
+      "bytes": 2243,
+      "sha256": "eabc27a177f823289024e9369db2a1e47c6ec2d41ac8711d20c53c74a5f731fd",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_4_split_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_4_split_0.cnf",
+      "bytes": 43712,
+      "sha256": "7bf201ccbd589dd29902a8c894747b9c7c55f238f0d5240d3be8f36bcaf8f066",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_4_split_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_4_split_0.lrat",
+      "bytes": 2052,
+      "sha256": "2bb34cf79661cee4479251e86eff184e86b4783b978244d916af3327f36f03f2",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_4_split_1.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_4_split_1.cnf",
+      "bytes": 43712,
+      "sha256": "e400830e2fe988638c09a090a6a82b5034eaafb1d3fa81420a6b755e6662d55f",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_4_split_1.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_4_split_1.lrat",
+      "bytes": 2199,
+      "sha256": "458a347f62b1a4d2734163ddb13e44e9974138fc2d3ad2d9d10cb018e796dbd6",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_5_split_0.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_5_split_0.cnf",
+      "bytes": 43712,
+      "sha256": "573a870fd0d9f893f171ac4a9bb45ce40e202ff0d8164081b1b17cad107a3e96",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_base_cnf/k16_common_5_split_0.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_base_cnf/k16_common_5_split_0.lrat",
+      "bytes": 2100,
+      "sha256": "19a8d3753d722cb61fb9620c6f7746798feb348ac339d705dcf8788b28f6649e",
+      "kind": "lrat"
+    },
+    {
+      "path": "r4333_upper/catalogue_work_certificate/leaves/clebsch_complement_72_exhaustive.cnf",
+      "source_workspace_relative_path": "r4333_upper/catalogue_work_certificate/leaves/clebsch_complement_72_exhaustive.cnf",
+      "bytes": 23561,
+      "sha256": "fd56814b2df59c1dfdcd31ad8d6e5b080d264fc9bca6659789736e2dded2210b",
+      "kind": "cnf"
+    },
+    {
+      "path": "r4333_upper/catalogue_work_certificate/leaves/clebsch_complement_72_exhaustive.lrat",
+      "source_workspace_relative_path": "r4333_upper/catalogue_work_certificate/leaves/clebsch_complement_72_exhaustive.lrat",
+      "bytes": 43473,
+      "sha256": "634f26149f4ec77c7f79dc2579a07457093ba14f547a5d057baadc8589f3d62a",
+      "kind": "lrat"
+    },
+    {
+      "path": "historical/CriticalCatalogues.compile.log",
+      "source_workspace_relative_path": "research_handoffs/ramsey61_original_uut_feasibility_20260912_001/new_c_pro_packet_20260914_000/evidence/native_results/lc/continuation/todo/RESULT_PROFILE_CD_ORBIT612_STRICT_REFREEZE_CORRECTIVE_2026-08-10/compile_logs/R4333Lean.CriticalCatalogues.log",
+      "bytes": 1204,
+      "sha256": "4c3f90945ff7fad3d2c51f1932281cee40d0a63b4f4589e4200300d135f878a0",
+      "kind": "historical_compile_log"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+      "kind": "new_build_configuration"
+    },
+    {
+      "path": "lakefile.toml",
+      "bytes": 223,
+      "sha256": "1b994af689cd174652562fcebab75b17788452cfefeaa30dc4c85e1c7056222a",
+      "kind": "new_build_configuration"
+    },
+    {
+      "path": "build_serial.sh",
+      "bytes": 3931,
+      "sha256": "ff2d3e92f2b20452ac031ec8cd5cb4cb3bb0cdee373e8dfee2f4ac273811c178",
+      "kind": "new_build_configuration"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3656,
+      "sha256": "f0eb791dfe01827abb06b3d85f1a86ddac72f4707aa038cc3daa25edacfe9d7f",
+      "kind": "new_package_documentation"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingG.GuardedGraphModel",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203614.042991Z_4974c772/output.olean",
+    "sha256": "ddfc2b26ea142002d9cfb26886f9ab4d6d51c7c6a18f7401f9414ea9dcc396ca"
+  },
+  {
+    "module": "Mathlib.LinearAlgebra.Matrix.Trace",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/Matrix/Trace.olean",
+    "sha256": "7fb98156993abb046c8833c82564f78c7a11c4f7b840d96b9e3dbed874ee60bc"
+  }
+]

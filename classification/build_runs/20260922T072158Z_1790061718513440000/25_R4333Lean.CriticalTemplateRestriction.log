@@ -1,0 +1,20 @@
+'R4333.restrictLastMap_injective' depends on axioms: [Quot.sound]
+'R4333.restrictCriticalK15WeakEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+        2.36 real         1.18 user         1.10 sys
+          2886942720  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              228011  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   4  voluntary context switches
+                4020  involuntary context switches
+         19430358725  instructions retired
+          7542811914  cycles elapsed
+           482383040  peak memory footprint

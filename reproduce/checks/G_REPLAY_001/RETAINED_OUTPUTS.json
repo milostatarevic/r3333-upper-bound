@@ -1,0 +1,117 @@
+{
+  "schema": "RAMSEY61_G_REPLAY_OUTPUT_SELECTION_1",
+  "scope": "Fresh checker outputs and receipt retained; unchanged copied parent inputs remain in authenticated evidence-v1 archive. No source inputs deleted.",
+  "source_directory": "/private/tmp/ramsey61-public-G-replay-001",
+  "files": [
+    {
+      "path": "REPLAY_RECEIPT.json",
+      "bytes": 12944,
+      "sha256": "23ea573358654e2cca3f444aade091105aa469bfb4d8ff222fdf442d5abddf88"
+    },
+    {
+      "path": "g_isomorphism/checker/CENSUS_RESULTS.json",
+      "bytes": 1213639,
+      "sha256": "8de4bf07266927d7d424c3e8cce286d95cbeb6889b72d811e758a4a95aa4df31"
+    },
+    {
+      "path": "g_isomorphism/checker/CENSUS_SUMMARY.json",
+      "bytes": 2028,
+      "sha256": "3dd7fca4b43b9eb77f40592609b9ef45c0558fd2a3c4fbd356b0da02e9c6acf5"
+    },
+    {
+      "path": "g_isomorphism/checker/CONTROLS.json",
+      "bytes": 1585,
+      "sha256": "583da6bf3765f1344f665b52c91570093e501031382b7b07ea946a5654160c5f"
+    },
+    {
+      "path": "g_isomorphism/checker/LOCAL_SUMMARY.json",
+      "bytes": 1228,
+      "sha256": "981b51cdb231e77f1c9a59eb922fb25816de9d03be6889d571a6d9808cc8ff46"
+    },
+    {
+      "path": "g_isomorphism/checker/local_reference.json",
+      "bytes": 117800,
+      "sha256": "2a7a1bf3f4128caaffefc0c8dbde13177e572e4f9b21ec8135f9ecd87b66f8b2"
+    },
+    {
+      "path": "g_remaining/checker/CENSUS_RESULTS.jsonl",
+      "bytes": 2146176,
+      "sha256": "53b3f63521d87b4d2bc4f5af6def6503683c0c8e49e7430ee77b4af7d427c93f"
+    },
+    {
+      "path": "g_remaining/checker/CENSUS_SUMMARY.json",
+      "bytes": 2610,
+      "sha256": "7eb20ad6de0ecc0dbe3b3ca792ee7e361d61819d8cc82b1da1065d17398b5327"
+    },
+    {
+      "path": "g_remaining/checker/CONTROLS.json",
+      "bytes": 2024,
+      "sha256": "867ce62d73c03890cb26648491f8fb5b89244f356440b4000671004d1b6bf449"
+    },
+    {
+      "path": "g_remaining/checker/PREPARE_SUMMARY.json",
+      "bytes": 1450,
+      "sha256": "3ce658303cfdf303d407aa695d5777b0158148e758cdde681d413bf96ef620cc"
+    },
+    {
+      "path": "logs/g_isomorphism_census.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/g_isomorphism_census.stdout.log",
+      "bytes": 6424,
+      "sha256": "c8dac51b61d1a91078f84b6ee6a488e26769c0fa45f4866a6f79012dc88ecc84"
+    },
+    {
+      "path": "logs/g_isomorphism_controls.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/g_isomorphism_controls.stdout.log",
+      "bytes": 1449,
+      "sha256": "a16e72178703b8303902465c44143d72090467542e34b74fa37ca1be063cfab0"
+    },
+    {
+      "path": "logs/g_isomorphism_local.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/g_isomorphism_local.stdout.log",
+      "bytes": 1120,
+      "sha256": "bbbdb0007787f504c5c38095d47d9bf5c00e138ea04cd659f0bbe48d58449a60"
+    },
+    {
+      "path": "logs/g_remaining_census.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/g_remaining_census.stdout.log",
+      "bytes": 8759,
+      "sha256": "569b719dbb4b8cbd646fb6f2f9e6903b5a4edd89baa689eaf802c7ecd0d25a94"
+    },
+    {
+      "path": "logs/g_remaining_controls.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/g_remaining_controls.stdout.log",
+      "bytes": 1854,
+      "sha256": "65c6502581486503018401cb4296eac59d2166496eac874ee416b938d00649bf"
+    },
+    {
+      "path": "logs/g_remaining_prepare.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/g_remaining_prepare.stdout.log",
+      "bytes": 1320,
+      "sha256": "6d0cc3c67c40ac5cc80fbcc25c149cb0cbde28dba6c7df31ebfc5e6d2bb99db5"
+    }
+  ]
+}

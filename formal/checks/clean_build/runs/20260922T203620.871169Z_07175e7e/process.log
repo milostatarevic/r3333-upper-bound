@@ -1,0 +1,2 @@
+'PricingC.completed_anchor_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.completed_anchor_to_six' depends on axioms: [propext, Classical.choice, Quot.sound]

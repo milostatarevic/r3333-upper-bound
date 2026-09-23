@@ -1,0 +1,18 @@
+'R4333.ContinuationDegreeNineTwistedRoot4CaseFactorCNF61.indexedLargeMask_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot4CaseFactorCNF61.indexedSmallMask_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot4CaseFactorCNF61.indexedLargeSupport_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot4CaseFactorCNF61.indexedSmallSupport_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot4CaseFactorCNF61.twistedRoot4Realization_satisfies_factorFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot4CaseFactorCNF61.noStrongRealization_of_factor_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

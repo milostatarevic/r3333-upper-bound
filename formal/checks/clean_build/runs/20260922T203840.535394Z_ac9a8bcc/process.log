@@ -1,0 +1,2 @@
+'CompletionC.CommonShapes.support_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.CommonShapes.normalized_shape' depends on axioms: [propext, Classical.choice, Quot.sound]

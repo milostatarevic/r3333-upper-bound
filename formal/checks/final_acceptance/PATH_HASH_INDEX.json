@@ -1,0 +1,47 @@
+{
+  "records": [
+    {
+      "original": "g/FINAL_ACCEPTANCE_REVIEW_001.json",
+      "path": "checks/final_acceptance/FINAL_ACCEPTANCE_REVIEW_001.json",
+      "sha256": "d53d4c47b252958639e8ad7d7f4ae05bc42b29a4b9023fcf3aa1cc012d09abdb",
+      "bytes": 7404
+    },
+    {
+      "original": "g/FINAL_ACCEPTANCE_REVIEW_001.md",
+      "path": "checks/final_acceptance/FINAL_ACCEPTANCE_REVIEW_001.md",
+      "sha256": "ccc6992b5d66f781400efacd713e69a69f147168203283fa866cf3d8c03a3f95",
+      "bytes": 2098
+    },
+    {
+      "original": "g/FINAL_CLEAN_CUSTODY_FAST_AUDIT_001.json",
+      "path": "checks/final_acceptance/FINAL_CLEAN_CUSTODY_FAST_AUDIT_001.json",
+      "sha256": "c8c77b61151a389608cdb2aa47cc4c75128647ff71315f9d4f4d3d41a375dfa7",
+      "bytes": 964
+    },
+    {
+      "original": "abd/COMPLETION_COST_SNAPSHOT_FINAL_001.json",
+      "path": "checks/final_acceptance/COMPLETION_COST_SNAPSHOT_FINAL_001.json",
+      "sha256": "63f77c4f03dc4cd5121d979b1f50822a3cd74c1e6f59213cd0c9136bcb4c1cf1",
+      "bytes": 8433193
+    },
+    {
+      "original": "abd/COMPLETION_COST_FINAL_ADJUSTMENT_001.json",
+      "path": "checks/final_acceptance/COMPLETION_COST_FINAL_ADJUSTMENT_001.json",
+      "sha256": "d050a3ebab53a7fd335a26d45ec54d4fca9f054f11b6496db3806b5431893cd0",
+      "bytes": 4051
+    },
+    {
+      "original": "abd/FORMALIZATION_MEASUREMENTS_FINAL_001.md",
+      "path": "checks/final_acceptance/FORMALIZATION_MEASUREMENTS_FINAL_001.md",
+      "sha256": "0ec07a152a0428cfbc70e6458694a727998d925c8f9b91533fea6c459483eadb",
+      "bytes": 3557
+    },
+    {
+      "original": "SHARED_LIBRARY_FOOTPRINT_001.json",
+      "path": "checks/final_acceptance/SHARED_LIBRARY_FOOTPRINT_001.json",
+      "sha256": "de19b64f0ef82ce1d0d9d91dda10cfe18ea5a4df7c1656da989d72c3a76e984e",
+      "bytes": 390
+    }
+  ],
+  "originals_preserved_byte_for_byte": true
+}

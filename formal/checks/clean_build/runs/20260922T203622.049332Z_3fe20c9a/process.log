@@ -1,0 +1,2 @@
+'PricingC.FourAnchorTables.star_path_completes_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.FourAnchorTables.nonstar_exhaustive' depends on axioms: [propext, Classical.choice, Quot.sound]

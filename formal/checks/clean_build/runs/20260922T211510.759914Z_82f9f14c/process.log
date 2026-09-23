@@ -1,0 +1,6 @@
+'R4333.UUTD9Realization.DegreeNineCaseRealization.smallDecodedColor_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Realization.exists_templateRootCase_for_positioned_degreeNine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

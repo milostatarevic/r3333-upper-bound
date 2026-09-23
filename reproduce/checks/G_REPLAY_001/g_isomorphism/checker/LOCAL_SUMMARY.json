@@ -1,0 +1,36 @@
+{
+  "all_local_triangles_checked": true,
+  "census_pin": {
+    "bytes": 290525,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/inputs/census.json",
+    "sha256": "f6f7e9e3c18969663ce0ad4fd94b584a340a70b9f929a433458aa3415d69f17a"
+  },
+  "cpu_seconds": 0.12954100000000002,
+  "free_assignments_checked": 32768,
+  "independent_states": 72,
+  "kind_counts": {
+    "T": 60,
+    "U": 12
+  },
+  "nullity": 15,
+  "rank": 65,
+  "reference_pin": {
+    "bytes": 117800,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/checker/local_reference.json",
+    "sha256": "2a7a1bf3f4128caaffefc0c8dbde13177e572e4f9b21ec8135f9ecd87b66f8b2"
+  },
+  "schema": "C61_CORE_LOCAL_CHECK_1",
+  "source_U_T_bound": true,
+  "source_matrices_pin": {
+    "bytes": 2258,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/inputs/source_matrices.json",
+    "sha256": "d278b344d4fbcaf892c41cd3c843b302844d54766d9489427e3a89fcd24f4d13"
+  },
+  "source_pin": {
+    "bytes": 35715,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/tools/checker.py",
+    "sha256": "6944bd1ed614d7db9e31bce5cbed9520190ba96507ae106cec2bef0683986ac5"
+  },
+  "status": "PASS",
+  "wall_seconds": 0.132569375
+}

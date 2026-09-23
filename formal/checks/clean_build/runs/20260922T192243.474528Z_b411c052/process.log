@@ -1,0 +1,6 @@
+'PricingABD.FiniteSupportsFast.five_support_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.FiniteSupportsFast.four_support_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingABD.FiniteSupportsFast.five_support_cover (s : Finset V) (hcard : #s = 5) (hs : ProperFive s) :
+  ∃ r ∈ representatives5, ∃ e, (∀ (a b : V), a ≠ b → T (e a) (e b) = T a b) ∧ image (⇑e) s = r
+PricingABD.FiniteSupportsFast.four_support_cover (s : Finset V) (hcard : #s = 4) (hs : ProperFour s) :
+  ∃ r ∈ representatives4, ∃ e, (∀ (a b : V), a ≠ b → T (e a) (e b) = T a b) ∧ image (⇑e) s = r

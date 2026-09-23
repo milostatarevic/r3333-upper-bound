@@ -1,0 +1,33 @@
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.swapSupportBlockTwo_tailOwnDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.foreignOwnSupport_swap_blockZero_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.foreignOwnSupport_swap_blockOne_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.swapNormalizeSupportBlockTwo_tailOwnDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.foreignOwnSupport_swapNormalize_blockZero_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.foreignOwnSupport_swapNormalize_blockOne_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.swapNormalizeSupportBlockTwo_firstLarge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.exists_opposite_blockTwo_caseRealization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.degreeNineSwapReducedCase_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.swapReducedObstructionAssembly_toResidual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineBlockTwoSwap61.no_exactDegreeNine_of_swapReducedObstructionAssembly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,24 @@
+'R4333.ProfileDUUUFourSupportP0SemanticOrbit61.restoredRootHostK15_root_degree_free' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SemanticOrbit61.rootCase_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SemanticOrbit61.freeLabelPermutation_complete_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SemanticOrbit61.freeLabelPermutation_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SemanticOrbit61.firstCompatiblePerm_complete_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SemanticOrbit61.firstCompatiblePerm_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SemanticOrbit61.secondCompatiblePerm_complete_at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0SemanticOrbit61.secondCompatiblePerm_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

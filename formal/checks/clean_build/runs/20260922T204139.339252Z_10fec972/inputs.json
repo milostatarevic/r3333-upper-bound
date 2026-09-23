@@ -1,0 +1,22 @@
+[
+  {
+    "module": "CompletionC.NativeRoleGeometry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203943.124064Z_e01f61f3/output.olean",
+    "sha256": "290026745479c362b2c84dadde2730a84e00dd701be8d0a4167f35ce0969bf78"
+  },
+  {
+    "module": "CompletionC.NativeSelectedCoordinates",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T204136.033067Z_a31762f0/output.olean",
+    "sha256": "7fd4b2f1721a7a40bf40e9d4d752d75bcc2ee440067bd11a05fb25415e084a09"
+  },
+  {
+    "module": "CompletionC.CommonPairAdmission",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T204104.937567Z_df5ac5fb/output.olean",
+    "sha256": "4d03dc19f0ef829c6b077d744b6363a034774f1889271d7629c117fe55e63018"
+  },
+  {
+    "module": "PricingC.ThreeSupportUnbalanced",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203436.744209Z_aba91377/output.olean",
+    "sha256": "1f1218f7c053709a5641aa1482a9e902820ad55442565a7cd5ce0a66fb732dad"
+  }
+]

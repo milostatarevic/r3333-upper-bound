@@ -1,0 +1,23 @@
+'R4333.eq_canonicalClebschCompletion_of_bits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.clebschCompletionTemplateMap_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.canonicalClebschIsoUntwisted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.canonicalClebschZero_classified' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.classified_of_zeroGraph_iso_canonical' depends on axioms: [propext, Classical.choice, Quot.sound]
+       94.10 real        96.39 user         3.83 sys
+         14793555968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              955116  page reclaims
+                  25  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+              126672  involuntary context switches
+        701193782537  instructions retired
+        369728270882  cycles elapsed
+         12386006824  peak memory footprint

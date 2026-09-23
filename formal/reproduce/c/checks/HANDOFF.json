@@ -1,0 +1,69 @@
+{
+  "status": "PASS_PORTABLE_C456_REPRODUCTION",
+  "created_utc": "2026-09-22T20:07:42.476883+00:00",
+  "scope": "Fresh Lean emission of all456 exact unit suffixes; exact complete input identities compared against existing pinned base and929records. No base re-emission, solver or certificate replay.",
+  "cases": 456,
+  "units": 197544,
+  "solver_record_counts": {
+    "UNSAT": 912,
+    "UNKNOWN_CPU_CAP": 17
+  },
+  "every_case_has_two_UNSAT_records": true,
+  "new_emission_CPU_seconds": 3.909901,
+  "comparison_job_CPU_seconds": 0.5307799999999999,
+  "emitter_peak_RSS_bytes": 2890006528,
+  "source_pins": [
+    {
+      "path": "Emit.lean",
+      "sha256": "2db86d61028096c9396d02951751da5dc9e2b803718023b55b6fb82e0ef12bff",
+      "bytes": 852
+    },
+    {
+      "path": "EmitBase.lean",
+      "sha256": "ba4d084b9f9c8e4005740d6ec309538555b665f54488f0005779796faff1b1f1",
+      "bytes": 1554
+    },
+    {
+      "path": "README.md",
+      "sha256": "ac140acdf031c259b380cf9fb591a07a15933f4118044348d597d23bb33b0594",
+      "bytes": 2113
+    },
+    {
+      "path": "checks/comparison_job.json",
+      "sha256": "778c6769815d8dc8ecd6b5b9b7d523298d4e7567936c365c73d8ae3a562d1a8f",
+      "bytes": 1961
+    },
+    {
+      "path": "checks/emission_job.json",
+      "sha256": "aaadf27f090d4f7a150186fe128db49819c6fb1123d5198c562cf318d8facedd",
+      "bytes": 1448
+    },
+    {
+      "path": "checks/negative_control.json",
+      "sha256": "72692196c6157fd880e6b419d2a5d6fe2e82235c83ffa51a3b6bbea235ca3806",
+      "bytes": 1875
+    },
+    {
+      "path": "checks/original_base_comparison.json",
+      "sha256": "cceb5504bf74b5131fc6fbef7af057aff01e1fe712807f75726d737c53016eb8",
+      "bytes": 5287
+    },
+    {
+      "path": "checks/positive_comparison.json",
+      "sha256": "8f1c02ffd9e304743164267e38ab79cd4248f06b37d0d0b6c502b9e15f63b9a0",
+      "bytes": 802260
+    },
+    {
+      "path": "path_index.json",
+      "sha256": "87fa31124d334fccde4e44d6950f76fca76bac013ea0c9e94ffe92838920e974",
+      "bytes": 418753
+    },
+    {
+      "path": "verify.py",
+      "sha256": "f5af1046ef57a3ed856b8a628c9b97c1398b997946657674978b3d22dfa58f27",
+      "bytes": 5905
+    }
+  ],
+  "control_scope": "Corrupted copy rejected; original456outputs unchanged; Python-O refused.",
+  "prior_failed_invocation": "c/jobs/20260922T200619.063570Z_ddbe6010/receipt.json preserved: wrong relative CLI path, no verifier or mathematical work executed."
+}

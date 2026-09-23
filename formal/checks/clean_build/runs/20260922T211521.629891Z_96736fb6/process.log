@@ -1,0 +1,3 @@
+'PricingG.DKindReduction.swapFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.DKindReduction.swapFive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.DKindReduction.selected_branch_native' depends on axioms: [propext, Classical.choice, Quot.sound]

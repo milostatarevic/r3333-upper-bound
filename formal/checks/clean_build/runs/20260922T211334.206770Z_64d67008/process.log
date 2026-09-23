@@ -1,0 +1,6 @@
+'R4333.ProfileDUUUDegreeTenCatalogLocalMaps61.compatiblePerm_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogLocalMaps61.compatibleMap_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

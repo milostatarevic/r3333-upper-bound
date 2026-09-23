@@ -1,0 +1,9 @@
+'R4333.ColoringJoinRows.noMono_joinColoring_iff' depends on axioms: [propext]
+'R4333.ColoringJoinRows.rowPairCompatible_iff_edge_mem_availableColors' does not depend on any axioms
+'R4333.ColoringJoinRows.extension_rows_share_allowed' depends on axioms: [propext]
+'R4333.ColoringJoinRows.extension_card_le_of_row_clique_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ColoringJoinRows.subsingleton_of_no_allowed_compatible_admissible_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

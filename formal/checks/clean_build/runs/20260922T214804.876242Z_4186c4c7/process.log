@@ -1,0 +1,1 @@
+'CompletionC.CommonCaseCount.native_case_count' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,25 @@
+'R4333.ProfileDHighOwnFiveSupportC5CNF.exists_canonicalTransport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveSupportC5CNF.mem_counterContexts' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileDHighOwnFiveSupportC5CNF.trueInputCount_selectedTailOtherColorAtoms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveSupportC5CounterNamespace.counterSpecs_wellFormed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveSupportC5AllCaps.allCaps_of_canonicalBranch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveSupportC5Formula.canonicalBranch_satisfies_fmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveSupportC5Formula.fiveSupport_yields_satisfying_branch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveSupportC5CheckedBoundary.noCanonicalBranch_of_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveSupportC5CheckedBoundary.noFiveSupport_of_allBranch_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

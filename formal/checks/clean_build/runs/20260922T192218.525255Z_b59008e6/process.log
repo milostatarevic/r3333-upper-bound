@@ -1,0 +1,10 @@
+'R4333.SequentialAtMostManyCNF.manySequentialAtMostFmla_eq_append_flatMap' depends on axioms: [propext, Quot.sound]
+'R4333.SequentialAtMostManyCNF.iteratedExtension_satisfies_manySequentialAtMostFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.SequentialAtMostManyCNF.allCaps_of_satisfies_manySequentialAtMostFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.SequentialAtMostManyCNF.no_base_valuation_allCaps_of_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

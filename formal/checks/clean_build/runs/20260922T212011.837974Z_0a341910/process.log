@@ -1,0 +1,24 @@
+'R4333.ProfileDUUUDegreeNinePhysicalSymmetry61.degreeNineTailPerm_templateCanonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNinePhysicalSymmetry61.transportBranchByPhysicalK15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNinePhysicalSymmetry61.totalColoring_transportBranchByPhysicalK15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNinePhysicalSymmetry61.transportBranchByPhysicalAndFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNinePhysicalSymmetry61.totalColoring_transportBranchByPhysicalAndFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNinePhysicalSymmetry61.semantic_factorAssignmentRealization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNinePhysicalSymmetry61.FactorAssignmentRealization.rootFlip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNinePhysicalSymmetry61.FactorAssignmentRealization.normalize' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

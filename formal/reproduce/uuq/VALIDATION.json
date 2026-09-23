@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "UTC": "2026-09-22T19:57:13.120592+00:00",
+  "cases": 1358,
+  "owners": {
+    "UUU": 679,
+    "UUT": 679
+  },
+  "mathematical_source_declarations_changed": false,
+  "purity_repair": "Removed only unused DNativeBaseEmit import/open; rechecked pure helper chain and reproduced identical input hashes.",
+  "helper_rebuild_CPU_seconds": 70.887571,
+  "tools": {
+    "EmitUUQ.lean": {
+      "sha256": "aa9102b34899640e514f727e7fdb5f5965e616ea8406260e33824916da2f6fa8",
+      "bytes": 2384
+    },
+    "compare.py": {
+      "sha256": "760bbf3ff1ac14360af2db81280f65a3c3d23712fbd0a35443b08997926c50a5",
+      "bytes": 12642
+    },
+    "reference_index.json": {
+      "sha256": "eb472d445fd14fca548c10947a7850e988e8883b06a9208a2ee0e7d963304b61",
+      "bytes": 799241
+    },
+    "source_inventory.json": {
+      "sha256": "6e1a77c7cd8046001ffca837e250dc2c668f4913457043caa1ff0af4cc24c7e6",
+      "bytes": 299223
+    },
+    "README.md": {
+      "sha256": "0a91bc1839169e21e362f63c709dadfd4304890cd4f61bcdb32e4e665eb9a47b",
+      "bytes": 2934
+    }
+  },
+  "smoke_jobs": [
+    {
+      "label": "PortableUUQPureEmission",
+      "receipt_reference": "g/jobs/20260922T195346.370213Z_624f3ea2/receipt.json",
+      "sha256": "fe83e928906446e3d0e8954c38b5728a9f9949a9579eee25035e30e3eb408951",
+      "bytes": 3096,
+      "CPU_seconds": 18.253386000000003,
+      "peak_polled_RSS_bytes": 3042983936
+    },
+    {
+      "label": "PortableUUQOuterArchive",
+      "receipt_reference": "g/jobs/20260922T195455.482859Z_805eeac5/receipt.json",
+      "sha256": "e2a98ef3e1f903201c85c8ef6ed5b164358d31fa1415c663874c292398025b7c",
+      "bytes": 1945,
+      "CPU_seconds": 9.429123,
+      "peak_polled_RSS_bytes": 200507392
+    },
+    {
+      "label": "PortableUUQFinalNegativeControls",
+      "receipt_reference": "g/jobs/20260922T195537.368797Z_989ac8cf/receipt.json",
+      "sha256": "7323139fe55a025cd1f7e3d48bee9e0e752bb0b093512919cd65cf24efeb9e49",
+      "bytes": 1253,
+      "CPU_seconds": 3.302918,
+      "peak_polled_RSS_bytes": 17793024
+    },
+    {
+      "label": "PortableUUQRefusal",
+      "receipt_reference": "g/jobs/20260922T195612.494908Z_ea4b85cc/receipt.json",
+      "sha256": "2200ab4995184eecb08fe89b0a40f9b1733c61e0dcc7b975ac3e675d3413143c",
+      "bytes": 1223,
+      "CPU_seconds": 2.12099,
+      "peak_polled_RSS_bytes": 17547264
+    }
+  ],
+  "negative_controls": [
+    "Modified copied native suffix rejected without BINDING.json",
+    "python -O rejected",
+    "Existing emitter output directory refused with all existing file hashes unchanged"
+  ],
+  "binding_summary": {
+    "path_hash_index": {
+      "sha256": "f71c0536cbd66f06ab2a1c1bf6f761e775cdd6ba1d20c9117d9e42d607b353d1",
+      "bytes": 289098
+    },
+    "binding": {
+      "sha256": "4435b06ddaca5f16772af3eb2a5b46fb026a9ce9600a2654eafc37e717433f2e",
+      "bytes": 576874
+    }
+  },
+  "independent_review": {
+    "sha256": "0b57ebc9aa4d9ab71bea198fc972c4e149c8e28c733f1ad71248e31dc8b29c7a",
+    "bytes": 4241
+  },
+  "new_native_solver_runs": 0,
+  "certificate_replays": 0
+}

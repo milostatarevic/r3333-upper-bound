@@ -1,0 +1,6 @@
+'R4333.ProfileDUUUFourSupportP15SemanticCatalogueResidualCoverage61.residualExact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SemanticCatalogueResidualCoverage61.reducedLeaf_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

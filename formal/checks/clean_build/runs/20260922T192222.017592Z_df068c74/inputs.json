@@ -1,0 +1,12 @@
+[
+  {
+    "module": "Ramsey61.Selector",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191838.654098Z_7bae8a34/output.olean",
+    "sha256": "85015375b28d136c97521258cf41279d2eb406953941e8736907eedf3b2b137d"
+  },
+  {
+    "module": "R4333Lean.CriticalCatalogues",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CriticalCatalogues.olean",
+    "sha256": "fb3909abe0d4f0d93d5ecbe4c655a0f3f820908f7e68e6038dba296732984ecc"
+  }
+]

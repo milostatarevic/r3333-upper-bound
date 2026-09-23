@@ -1,0 +1,7 @@
+{"stage": "g_isomorphism/local", "CPU_seconds": 0.148761}
+{"stage": "g_isomorphism/controls", "CPU_seconds": 0.05537600000000001}
+{"stage": "g_isomorphism/census", "CPU_seconds": 0.34771799999999997}
+{"stage": "g_remaining/prepare", "CPU_seconds": 0.06573200000000001}
+{"stage": "g_remaining/controls", "CPU_seconds": 0.158887}
+{"stage": "g_remaining/census", "CPU_seconds": 1.5878140000000003}
+{"status": "PASS", "receipt": "/private/tmp/ramsey61-clean-checkout-results-001/G_REPLAY/REPLAY_RECEIPT.json", "CPU_seconds": 2.44473, "peak_RSS_bytes": 40812544}

@@ -1,0 +1,6 @@
+'R4333.ProfileDUUUFourSupportP15SemanticCatalogueData61.reducedLeafTable_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SemanticCatalogueData61.residualNormalizerWordTable_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

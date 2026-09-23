@@ -1,0 +1,10 @@
+'PricingABD.TTExchange.markedQMap_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.TTExchange.physical_TT_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingABD.TTExchange.physical_TT_exchange {c : Host} {k : ℕ} {qtype : Bool} (f : Frame c k qtype)
+  (hc : NoMonochromaticTriangle c) :
+  NoMonochromaticTriangle (swappedHost c) ∧
+    H (swappedHost c) f.root = H c f.root ∧
+      W (swappedHost c) f.root = W c f.root ∧
+        f.exchange.root = f.root ∧
+          f.exchange.marked 15 = f.marked 15 ∧
+            leftSupport f.exchange = rightSupport f ∧ rightSupport f.exchange = leftSupport f

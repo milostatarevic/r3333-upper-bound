@@ -1,0 +1,22 @@
+'R4333.clebschCompletionValuation_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.valuation_satisfies_completionBlocker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.coloring_satisfies_clebschCompletionTriangles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.clebschCompletionBits_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+        3.76 real         2.45 user         1.17 sys
+          3048751104  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              238344  page reclaims
+                 151  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                5890  voluntary context switches
+                8717  involuntary context switches
+         35024066405  instructions retired
+         13811285299  cycles elapsed
+           636409264  peak memory footprint

@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingG.MixedEdgeCount",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203616.762937Z_38e01d0c/output.olean",
+    "sha256": "6c9047c7c33c890267603826072cd7f7070be32d7aa72fdff460a6a584f214db"
+  },
+  {
+    "module": "Mathlib.Data.ZMod.Basic",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/ZMod/Basic.olean",
+    "sha256": "83b89200bb5555e75fc9ca46561399d181a607d16944c547796c3b56dd6093b7"
+  }
+]

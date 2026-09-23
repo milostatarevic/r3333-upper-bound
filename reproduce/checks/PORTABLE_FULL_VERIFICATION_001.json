@@ -1,0 +1,41 @@
+{
+  "archive": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/archives/evidence-v1.tar.gz",
+  "archive_pin": {
+    "bytes": 375104364,
+    "sha256": "2b85cac94df0317a532aa823cfea93ac83738093fc854805896943f90d468757"
+  },
+  "driver_CPU_seconds": 114.7097,
+  "extraction": {
+    "files": 455928,
+    "members": 514771,
+    "uncompressed_bytes": 2285636411
+  },
+  "formal_certificate_verified": false,
+  "new_solver_calls": 0,
+  "original_source_reads": 0,
+  "schema": "RAMSEY61_PORTABLE_REPRODUCTION_1",
+  "scope": "Byte preservation and recorded C/final custody; no solver or certificate rerun",
+  "snapshot": "/private/tmp/ramsey61-public-release-check-20260921-001",
+  "status": "PASS_PORTABLE_ARCHIVE_AND_CUSTODY",
+  "verification": {
+    "CPU_seconds": 98.052079,
+    "custody": {
+      "effective_dual_native_owners": 456,
+      "formal_certificate_verified": false,
+      "native_logs": 1843,
+      "result_counts": {
+        "first_tail": 13,
+        "original_broad": 912,
+        "restricted": 914,
+        "second_tail": 4
+      },
+      "status": "PASS_STAGED_C_AND_FINAL_CUSTODY"
+    },
+    "manifest_index_sha256": "0371c357740e6cce262a055d3f998637f8f218f1d492864be2fcff78e46b222e",
+    "new_solver_calls": 0,
+    "original_source_reads": 0,
+    "status": "PASS_STAGING_BYTES_AND_CUSTODY",
+    "total_bytes": 2078952544,
+    "total_files": 455901
+  }
+}

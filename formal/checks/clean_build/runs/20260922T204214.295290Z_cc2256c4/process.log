@@ -1,0 +1,2 @@
+'CompletionC.NativeSignedSupport.left_native_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.NativeSignedSupport.right_native_membership' depends on axioms: [propext, Classical.choice, Quot.sound]

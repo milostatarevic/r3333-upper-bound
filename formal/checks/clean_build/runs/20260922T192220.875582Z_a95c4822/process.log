@@ -1,0 +1,5 @@
+'R4333.exists_degreeTargetAt61_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.exists_degreeTargetSelection61' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.finiteObstructionInterface_of_config' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.exists_finiteObstructionInterface61' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.exists_finiteObstructionInterface61_checked' depends on axioms: [propext, Classical.choice, Quot.sound]

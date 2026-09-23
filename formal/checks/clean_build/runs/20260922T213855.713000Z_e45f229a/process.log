@@ -1,0 +1,17 @@
+'R4333.UUTP15Rooted.exists_rootedHostNormalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Rooted.RootedHostNormalization.freePositionEquiv_group' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTP15Rooted.RootedHostNormalization.firstPositionEquiv_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTP15Rooted.RootedHostNormalization.secondPositionEquiv_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTP15Rooted.exists_rootedCandidateParameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Rooted.RootedCandidateParameters.candidateVertex_eq_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTP15Rooted.RootedCandidateParameters.matrix_eq_candidateColor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,2 @@
+'CompletionC.NativeWholeReindex.reindexBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.NativeWholeReindex.modelAuto_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]

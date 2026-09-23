@@ -1,0 +1,16 @@
+'R4333.UUTD9StrongFormula.quotientRepresentativeClauses_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongFormula.quotientRepresentativeClause_eq_guarded_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongFormula.quotientRepresentativeClauses_eq_guarded_units' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongFormula.quotientRepresentativeUnitClauses_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongFormula.quotientRepresentativeUnitClauses_are_units' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongFormula.quotientSelectorFmla_length' depends on axioms: [propext, Classical.choice, Quot.sound]

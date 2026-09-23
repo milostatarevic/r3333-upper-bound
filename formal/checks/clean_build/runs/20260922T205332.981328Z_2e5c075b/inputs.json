@@ -1,0 +1,32 @@
+[
+  {
+    "module": "PricingIntegration.RemainingGLayouts019",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T204919.394188Z_c2fa8674/output.olean",
+    "sha256": "fceb8b4f6a56bbca5b9ce7cfa0557975ca98ecd9297d3fe6ccad25043e9c7bc9"
+  },
+  {
+    "module": "PricingIntegration.RemainingGRejectType",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T204814.799235Z_fb14f647/output.olean",
+    "sha256": "831ef182b8b4c27747255631c4f078f7f46e03bfb42cb791106f4b7266b98cbe"
+  },
+  {
+    "module": "PricingIntegration.RemainingGScopeChecks005",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T204938.628442Z_5c277889/output.olean",
+    "sha256": "40bae69ea19b1b5873559f18fb94b7c9ab10f7a146f784fa604a3f20d160eb97"
+  },
+  {
+    "module": "PricingIntegration.RemainingGScopeChecks006",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T204946.904923Z_e08b6f2e/output.olean",
+    "sha256": "9f30769178f85917b25e3e3663f7638bf46c95bc2c3597fa2cc77c32485a0f03"
+  },
+  {
+    "module": "PricingIntegration.RemainingGScopeChecks010",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T205015.200255Z_97f53417/output.olean",
+    "sha256": "21f83d58dc7a962f9c65c5df9449e1104c814884cc1a4dbec9720b883f5a9a66"
+  },
+  {
+    "module": "PricingIntegration.RemainingGScopeChecks026",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T205316.503564Z_80acba30/output.olean",
+    "sha256": "c0bcbe9d7567e06dc28d0b148e7b5f7df06969dfc21803ecca7d0f6b94ea1426"
+  }
+]

@@ -1,0 +1,2 @@
+'CompletionC.CommonSupportNormalization.normalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.CommonSupportNormalization.normalize_foreign' depends on axioms: [propext, Classical.choice, Quot.sound]

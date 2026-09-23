@@ -1,0 +1,5 @@
+'R4333.criticalPaletteColorEquiv_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k15PaletteVertexMap_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16PaletteVertexMap_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k15Template_fullPaletteSymmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16Template_fullPaletteSymmetry' depends on axioms: [propext, Classical.choice, Quot.sound]

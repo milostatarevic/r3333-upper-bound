@@ -1,0 +1,6 @@
+'R4333.ProfileDUUUDegreeTenCatalogOrbits61.catalog_normalizer_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogOrbits61.exists_catalog_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

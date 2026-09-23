@@ -1,0 +1,9 @@
+'R4333.ProfileDFourSupportInside61.firstFourInsideColoring_ne_own' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourSupportInside61.firstFourInsideColoring_is_remaining' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourSupportInside61.firstFourInsideBoolColoring_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

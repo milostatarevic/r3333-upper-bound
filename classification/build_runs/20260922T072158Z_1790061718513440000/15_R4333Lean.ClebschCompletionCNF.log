@@ -1,0 +1,19 @@
+'R4333.clebschCompletion_unsat' depends on axioms: [propext, Quot.sound]
+      159.30 real       157.74 user         2.21 sys
+          6122242048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              425439  page reclaims
+                   5  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   4  voluntary context switches
+              136434  involuntary context switches
+       1784691117579  instructions retired
+        617301326730  cycles elapsed
+          3736312272  peak memory footprint

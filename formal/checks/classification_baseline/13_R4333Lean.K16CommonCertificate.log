@@ -1,0 +1,21 @@
+'R4333.k16_color_one_pair_common_zero_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16_noncolor_pair_common_neighbors_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16_colorGraph_isSRG' depends on axioms: [propext, Classical.choice, Quot.sound]
+       26.96 real        49.18 user         1.41 sys
+          3155787776  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              245272  page reclaims
+                 361  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  54  voluntary context switches
+               81224  involuntary context switches
+        437723262902  instructions retired
+        180809882006  cycles elapsed
+           725243816  peak memory footprint

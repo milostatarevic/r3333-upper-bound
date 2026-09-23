@@ -1,0 +1,2 @@
+'CompletionC.NativePairCoordinates.role_left_vertex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.NativePairCoordinates.role_right_vertex' depends on axioms: [propext, Classical.choice, Quot.sound]

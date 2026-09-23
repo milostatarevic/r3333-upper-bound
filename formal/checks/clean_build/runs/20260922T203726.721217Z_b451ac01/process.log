@@ -1,0 +1,16 @@
+'R4333.ProfileDHighOwnForeignC5Skeleton61.foreignOwnSupport_card_le_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnForeignC5Skeleton61.selectedTailOwnDegree_eq_foreignSum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnForeignC5Skeleton61.foreignSupport_size_cases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnForeignC5Skeleton61.exists_saturatedForeignC5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnForeignC5Skeleton61.localC5Skeleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDHighOwnForeignC5Skeleton61.exists_threeC5Skeleton_of_tailOwnDegree_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

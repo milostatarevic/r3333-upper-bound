@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.ColoringJoinRows",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191825.703466Z_04630eef/output.olean",
+    "sha256": "64b374a436d0671fbbbb9afc4d9f1891df414c3ec74844335e3d68baefcb485f"
+  },
+  {
+    "module": "R4333Lean.ProfileDTripleJoinReduction",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203550.972949Z_233b1062/output.olean",
+    "sha256": "f8d7c7a6c5faabd772cfc93239462c7490c7d5d6bd83d96898b5b3eff234bd7c"
+  }
+]

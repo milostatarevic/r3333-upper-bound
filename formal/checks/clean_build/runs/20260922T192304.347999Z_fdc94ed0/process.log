@@ -1,0 +1,20 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/SignOverlap.lean:21:30: warning: This simp argument is unused:
+  ← mul_sum
+
+Hint: Omit it from the simp argument list.
+  simp [̵A̵,̵s̵u̵m̵_̵s̵u̵b̵_̵d̵i̵s̵t̵r̵i̵b̵,̵←̵ ̵m̵u̵l̵_̵s̵u̵m̵,̵←̵ ̵s̵u̵m̵_̵f̵i̵l̵t̵e̵r̵,̵m̵u̵l̵_̵c̵o̵m̵m̵]̵[̲A̲,̲ ̲s̲u̲m̲_̲s̲u̲b̲_̲d̲i̲s̲t̲r̲i̲b̲,̲ ̲←̲ ̲s̲u̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲m̲u̲l̲_̲c̲o̲m̲m̲]̲
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/SignOverlap.lean:31:30: warning: This simp argument is unused:
+  ← mul_sum
+
+Hint: Omit it from the simp argument list.
+  simp [̵B̵,̵s̵u̵m̵_̵s̵u̵b̵_̵d̵i̵s̵t̵r̵i̵b̵,̵←̵ ̵m̵u̵l̵_̵s̵u̵m̵,̵←̵ ̵s̵u̵m̵_̵f̵i̵l̵t̵e̵r̵,̵m̵u̵l̵_̵c̵o̵m̵m̵]̵[̲B̲,̲ ̲s̲u̲m̲_̲s̲u̲b̲_̲d̲i̲s̲t̲r̲i̲b̲,̲ ̲←̲ ̲s̲u̲m̲_̲f̲i̲l̲t̲e̲r̲,̲ ̲m̲u̲l̲_̲c̲o̲m̲m̲]̲
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingG.SignDesign.overlap_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.SignDesign.column_l1_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

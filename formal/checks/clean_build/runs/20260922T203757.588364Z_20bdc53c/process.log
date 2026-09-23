@@ -1,0 +1,3 @@
+'PricingIntegration.BActualGeometry.actual_TTT_five_supplies_fixed_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

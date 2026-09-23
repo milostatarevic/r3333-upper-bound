@@ -1,0 +1,7 @@
+PricingIntegration.DNativePrefix.satisfying_extension {c : Host} (five : Bool) (f : Frame c (layout five)) (t : Types)
+  (hg : Geometry t f) (hc : NoMonochromaticTriangle c) :
+  ∃ v,
+    FormulaSat v (base five t) ∧
+      ∀ (u w : Fin (vertexCount (layout five))) (q : Fin 4),
+        u ≠ w → (v (edgeVar u w q) = true ↔ c.color (f.vertex u) (f.vertex w) = palette q)
+'PricingIntegration.DNativePrefix.satisfying_extension' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,120 @@
+'PricingC.RemainingOrbit00.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit01.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit02.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit03.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit04.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit05.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit06.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit07.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit08.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit09.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit10.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit11.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit12.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit13.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit14.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit15.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit16.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit17.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit18.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit19.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit20.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit21.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit22.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit23.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit24.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit25.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit26.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit27.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit28.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit29.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit30.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit31.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit32.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit33.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit34.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit35.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit36.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit37.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit38.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit39.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit40.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit41.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit42.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit43.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit44.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit45.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit46.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit47.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit48.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit49.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit50.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit51.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit52.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit53.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit54.complete_matrix_cover' depends on axioms: [propext]
+'PricingC.RemainingOrbit55.complete_matrix_cover' depends on axioms: [propext]
+PricingC.ThreeSupportFrame.actual_455_to_catalogue {c : Ramsey61.Host} (f : PricingC.ThreeSupportFrame.Frame c 4 5 5)
+  (hc : Ramsey61.NoMonochromaticTriangle c) :
+  ∃ p i,
+    ∀ (a b : Fin 14),
+      a ≠ b →
+        c.color ((PricingC.ThreeSupportFrame.physical f) ((PricingABD.Rooted455Free.freeLift p) a.castSucc))
+            ((PricingC.ThreeSupportFrame.physical f) ((PricingABD.Rooted455Free.freeLift p) b.castSucc)) =
+          Ramsey61.CEncodingCore.palette
+            (PricingABD.P15MatrixTransport.matrix
+              (PricingABD.P15MatrixTransport.word (PricingABD.P15PairOrbit.candidate i)) a b)
+'PricingC.ThreeSupportFrame.actual_455_to_catalogue' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingC.ThreeSupportFrame.actual_545_to_catalogue {c : Ramsey61.Host} (f : PricingC.ThreeSupportFrame.Frame c 5 4 5)
+  (hc : Ramsey61.NoMonochromaticTriangle c) :
+  ∃ p i,
+    ∀ (a b : Fin 14),
+      a ≠ b →
+        c.color ((PricingC.ThreeSupportFrame.physical f) ((PricingC.OwnFive15.freeLift p) a.castSucc))
+            ((PricingC.ThreeSupportFrame.physical f) ((PricingC.OwnFive15.freeLift p) b.castSucc)) =
+          Ramsey61.CEncodingCore.palette
+            (PricingC.Rooted45Orientation.matrix false
+              (PricingC.Rooted45Orientation.word (PricingC.Rooted45Orientation.candidate false i)) a b)
+'PricingC.ThreeSupportFrame.actual_545_to_catalogue' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingC.ThreeSupportFrame.actual_554_to_catalogue {c : Ramsey61.Host} (f : PricingC.ThreeSupportFrame.Frame c 5 5 4)
+  (hc : Ramsey61.NoMonochromaticTriangle c) :
+  ∃ p i,
+    ∀ (a b : Fin 14),
+      a ≠ b →
+        c.color ((PricingC.ThreeSupportFrame.physical f) ((PricingC.OwnFive15.freeLift p) a.castSucc))
+            ((PricingC.ThreeSupportFrame.physical f) ((PricingC.OwnFive15.freeLift p) b.castSucc)) =
+          Ramsey61.CEncodingCore.palette
+            (PricingC.Rooted45Orientation.matrix true
+              (PricingC.Rooted45Orientation.word (PricingC.Rooted45Orientation.candidate true i)) a b)
+'PricingC.ThreeSupportFrame.actual_554_to_catalogue' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingC.ThreeSupportFrame.actual_555_to_catalogue {c : Ramsey61.Host} (f : PricingC.ThreeSupportFrame.Frame c 5 5 5)
+  (hc : Ramsey61.NoMonochromaticTriangle c) :
+  ∃ p i,
+    ∀ (a b : Fin 15),
+      a ≠ b →
+        c.color ((PricingC.ThreeSupportFrame.physical f) ((PricingC.Rooted555.freeLift p) a.castSucc))
+            ((PricingC.ThreeSupportFrame.physical f) ((PricingC.Rooted555.freeLift p) b.castSucc)) =
+          Ramsey61.CEncodingCore.palette
+            (PricingC.Rooted555.matrix (PricingC.Rooted555.word (PricingC.Rooted555.candidate i)) a b)
+'PricingC.ThreeSupportFrame.actual_555_to_catalogue' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingC.NativeActionPhysical.physical_edge_transport {V C : Type} (f : Fin 27280)
+  (hf : PricingC.NativeActionFactors.Valid f) (free : ℕ → V)
+  (l :
+    Fin
+        (PricingC.NativeBlockAutomorphisms.order
+          (PricingC.NativeBlockActions.kind (PricingC.NativeActionFactors.left f))) ↪
+      V)
+  (r :
+    Fin
+        (PricingC.NativeBlockAutomorphisms.order
+          (PricingC.NativeBlockActions.kind (PricingC.NativeActionFactors.right f))) ↪
+      V)
+  (host : V → V → C) (a b : Fin 15) (ha : ↑a < PricingC.NativeActionFactors.count f)
+  (hb : ↑b < PricingC.NativeActionFactors.count f) :
+  host (PricingC.NativeActionPhysical.after f free l r ↑a) (PricingC.NativeActionPhysical.after f free l r ↑b) =
+    host
+      (PricingC.NativeActionPhysical.before f free l r
+        (PricingC.NativeBlockActions.digit (PricingC.NativeActionFactors.coordinateCode f) ↑a))
+      (PricingC.NativeActionPhysical.before f free l r
+        (PricingC.NativeBlockActions.digit (PricingC.NativeActionFactors.coordinateCode f) ↑b))
+'PricingC.NativeActionPhysical.physical_edge_transport' depends on axioms: [propext, Classical.choice, Quot.sound]

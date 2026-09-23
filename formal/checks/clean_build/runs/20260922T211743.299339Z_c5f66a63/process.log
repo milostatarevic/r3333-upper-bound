@@ -1,0 +1,21 @@
+'R4333.ContinuationDegreeNineTwistedRoot12RootStabilizer61.rootFlipMap_preserves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot12RootStabilizer61.rootFlipFreeChoice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot12RootStabilizer61.rootFlipLargeChoice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot12RootStabilizer61.rootFlipSmallChoice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot12RootStabilizer61.rootFlip_freeLarge_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot12RootStabilizer61.rootFlip_freeSmall_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot12RootStabilizer61.rootFlip_largeSmall_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

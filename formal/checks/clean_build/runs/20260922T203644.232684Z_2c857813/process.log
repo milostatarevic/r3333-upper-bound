@@ -1,0 +1,59 @@
+'R4333.ProfileDCompactDegreeFlooredCNF.complementValuation_satisfies_definitions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.trueInputCount_compactLowerInputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.compactCounterSpecs_wellFormed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.degreeFlooredFourExtension_satisfies_fmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.compactCounterClauseContribution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.fmla_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.RepresentativeLRATRefutations.obstructions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.no_profileD_star_of_compactDegreeFloored_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.secondVertex_has_blocking_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.satisfies_bidirectionalCompletionClauses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.fourExtension_satisfies_rawBidirectionalConditionalFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.noFourExtension_of_C_obstruction_rawBidirectional_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.rawBidirectionalConditionalFmla_length' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.RawBidirectionalConditionalRepresentativeLRATRefutations.obstructions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.RawBidirectionalConditionalRepresentativeLRATRefutations.universalFourRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.no_profileD_star_of_rawBidirectionalConditional_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.conditionalCompactCounterSpecs_wellFormed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.conditionalDegreeFlooredFourExtension_satisfies_fmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.conditionalFmla_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.ConditionalRepresentativeLRATRefutations.obstructions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactDegreeFlooredCNF.no_profileD_star_of_conditionalCompactDegreeFloored_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

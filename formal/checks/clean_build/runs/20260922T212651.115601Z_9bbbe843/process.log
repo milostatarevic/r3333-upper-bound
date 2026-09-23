@@ -1,0 +1,12 @@
+'R4333.ProfileDUUUDegreeTenCatalogOrbitTransportUUU2P15.q2Stabilizer_canonicalEmbedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogOrbitTransportUUU2P15.q2TailStabilizer_templateCanonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogOrbitTransportUUU2P15.normalizeCatalogExactToRepresentative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogOrbitTransportUUU2P15.exists_representativeCatalogExactBranch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

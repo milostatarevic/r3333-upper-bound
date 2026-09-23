@@ -1,0 +1,6 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/CompletionC/NativeSupportIndex.lean:29:41: warning: Variable name `ha` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'CompletionC.NativeSupportIndex.supportIndex_injective' depends on axioms: [propext, Classical.choice, Quot.sound]

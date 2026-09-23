@@ -1,0 +1,22 @@
+'R4333.neighborhoodThreeColoring_good' depends on axioms: [propext, Quot.sound]
+'R4333.labeledNeighborhoodThreeColoring_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.labeledNeighborhoodThreeColoringOfCard_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.labeledNeighborhoodThreeColoringOfDegree_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+        2.15 real         1.27 user         1.03 sys
+          2896199680  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              228776  page reclaims
+                   6  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                5205  involuntary context switches
+         21129445242  instructions retired
+          8201979731  cycles elapsed
+           489329712  peak memory footprint

@@ -1,0 +1,2 @@
+'PricingG.DHostAdapter.orderedD_has_high_last_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.DHostAdapter.orderedD_supplies_high_row_split' depends on axioms: [propext, Classical.choice, Quot.sound]

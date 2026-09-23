@@ -1,0 +1,2 @@
+'PricingC.Rooted555.host_to_exact600' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.Rooted555.host_to_exact600_reordering_free' depends on axioms: [propext, Classical.choice, Quot.sound]

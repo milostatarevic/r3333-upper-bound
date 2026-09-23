@@ -1,0 +1,5 @@
+'PricingG.UUTSelectedSatisfaction.selected_branch_supplies_leaf' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingG.UUTSelectedSatisfaction.four_support_supplies_leaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.UUTSelectedSatisfaction.five_support_supplies_leaf' depends on axioms: [propext, Classical.choice, Quot.sound]

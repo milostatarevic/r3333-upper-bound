@@ -1,0 +1,3 @@
+'PricingABD.BPhysicalBounds.free_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.BPhysicalBounds.surviving_high_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.BPhysicalBounds.high_tail_proxy' depends on axioms: [propext, Classical.choice, Quot.sound]

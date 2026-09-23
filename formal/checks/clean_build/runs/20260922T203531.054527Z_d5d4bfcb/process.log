@@ -1,0 +1,27 @@
+'R4333.CriticalK15PartitionClassification.untwisted_candidate_triple_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CriticalK15PartitionClassification.twisted_candidate_triple_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CriticalK15PartitionClassification.untwisted_partition_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CriticalK15PartitionClassification.twisted_partition_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CriticalK15PartitionClassification.untwistedPartitionWord_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CriticalK15PartitionClassification.twistedPartitionWord_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CriticalK15PartitionClassification.WeakColorEquiv.partition_images_eq_canonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CriticalK15PartitionClassification.exists_colorPreservingWeakEquiv_to_k15Template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CriticalK15PartitionClassification.exists_partition_normalization_of_good' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

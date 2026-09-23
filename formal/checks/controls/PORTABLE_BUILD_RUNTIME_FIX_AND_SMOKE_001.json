@@ -1,0 +1,26 @@
+{
+  "status": "PASS_PORTABLE_FIVE_MODULE_SOURCE_ONLY_SMOKE",
+  "created_utc": "2026-09-22T20:00:52.428146+00:00",
+  "change": "Verify all Git revisions as before; omit missing unused package library directories. Required imports must still exist and match recorded hashes.",
+  "source_sha256": "5adf09e50fdcc22fc2645094a1bc31905f57b826504478e0a3e7cb63d54a2756",
+  "README_change": "Certificate-free target corrected to PricingIntegration.NativeColoringClauses. NativeRenaming imports classification transitively and must be rejected with the no-replay flag.",
+  "build_result": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/package_001/.build/runs/20260922T195935.853499Z_ed400647/BUILD_RESULT.json",
+  "build_result_sha256": "a10ed965ae248e7834b26442ad341dda37c8b0ac64248d3219c6280dcd15162d",
+  "gate_receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/jobs/20260922T195935.689924Z_05248227/receipt.json",
+  "modules": [
+    "PricingIntegration.NativeColoringClauses",
+    "PricingIntegration.NativePrimaryCore",
+    "Ramsey61.CEncodingCore",
+    "Ramsey61.DenseCounter",
+    "Ramsey61.Foundations"
+  ],
+  "module_CPU_seconds": 16.206063,
+  "max_module_peak_RSS_bytes": 3220652032,
+  "total_driver_and_children_CPU_seconds": 40.971081,
+  "elapsed_seconds": 42.605998083,
+  "prior_project_artifacts_reused": false,
+  "classification_modules": 0,
+  "certificate_replays": 0,
+  "solver_calls": 0,
+  "scope": "Five-module runtime smoke only. This is not a full portable source rebuild or a whole-proof timing estimate."
+}

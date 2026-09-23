@@ -1,0 +1,12 @@
+'R4333.HighOwnSingleRootReduction61.highOwnNeighborSupport_mapEdgeColors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.HighOwnSingleRootReduction61.highOwnNeighborCount_mapEdgeColors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.HighOwnSingleRootReduction61.singleRootStarReduction61At' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.HighOwnSingleRootReduction61.exists_highOwn_singleRootStarReduction61' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

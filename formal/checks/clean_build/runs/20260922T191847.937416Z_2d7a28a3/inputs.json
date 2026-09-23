@@ -1,0 +1,12 @@
+[
+  {
+    "module": "Ramsey61.Selector",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191838.654098Z_7bae8a34/output.olean",
+    "sha256": "85015375b28d136c97521258cf41279d2eb406953941e8736907eedf3b2b137d"
+  },
+  {
+    "module": "Mathlib.Combinatorics.SimpleGraph.DegreeSum",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Combinatorics/SimpleGraph/DegreeSum.olean",
+    "sha256": "0946f03afdfb9cc8115ab1e48a77d378af4d053403531391ba4678daeebf4b72"
+  }
+]

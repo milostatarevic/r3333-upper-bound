@@ -1,0 +1,22 @@
+'R4333.UUTD9StrongCase.strongLargeSupportCandidates_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongCase.strongSmallSupportCandidates_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongCase.strongCompatibleSmallSupportCandidates_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongCase.strongPhysicalSupportPair_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongCase.StrongRealization.largeSupport_mem_candidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongCase.StrongRealization.smallSupport_mem_candidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongCase.StrongRealization.smallSupport_mem_compatibleCandidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongCase.StrongRealization.small_small_edge_physical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongCase.StrongRealization.free_large_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongCase.StrongRealization.free_small_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongCase.StrongRealization.large_small_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongCase.strongCaseFiniteBoundary' depends on axioms: [propext, Classical.choice, Quot.sound]

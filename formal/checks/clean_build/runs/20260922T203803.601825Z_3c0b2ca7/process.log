@@ -1,0 +1,3 @@
+'PricingG.DPhysicalBlocks.supported_D_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.DPhysicalBlocks.actual_D_physical_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.DPhysicalBlocks.Blocks.mixedUT' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,25 @@
+'R4333.degreePattern61_sorted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.degree61_two_ge_fifteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.degree61_three_ge_fourteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.degree61_two_small_impossible' depends on axioms: [propext, Quot.sound]
+'R4333.largeIncidence_pigeonhole31' depends on axioms: [propext, Quot.sound]
+'R4333.sevenNeighborhoods_exceed61' depends on axioms: [propext, Quot.sound]
+'R4333.attaching_order_range' depends on axioms: [propext, Quot.sound]
+        2.90 real         2.05 user         0.98 sys
+          2977267712  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              233217  page reclaims
+                   2  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                5200  involuntary context switches
+         30677468576  instructions retired
+         11567369688  cycles elapsed
+           599658584  peak memory footprint

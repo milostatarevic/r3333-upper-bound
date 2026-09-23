@@ -1,0 +1,6 @@
+'R4333.ColoringJoinRows.not_mem_availableColors_of_card_lt_support_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ColoringJoinRows.not_mem_availableColors_of_eleven_on_sixteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

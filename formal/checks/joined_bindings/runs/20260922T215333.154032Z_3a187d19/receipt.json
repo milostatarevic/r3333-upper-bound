@@ -1,0 +1,31 @@
+{
+  "label": "CLEAN_PORTABLE_UUQ_EMIT_001",
+  "runner_sha256": "46137ffd4a317c85e650c65e6560e6dba6f5e18cbb3f70e23aebf9354c572e50",
+  "gate_sha256": "4b43e52ecff6c4be5d112b53363389662f164cc9414da9f6cd4ea99c454c497b",
+  "command": [
+    "/usr/bin/env",
+    "LEAN_PATH=/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/lib:/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/external_classification:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/Cli/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/Qq/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/aesop/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/batteries/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/importGraph/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/plausible/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/lib/lean",
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j1",
+    "--run",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/package_001/reproduce/uuq/EmitUUQ.lean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/joined_portable_binding_001/uuq"
+  ],
+  "cwd": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration",
+  "started_utc": "2026-09-22T21:53:33.162093+00:00",
+  "admission_wait_seconds": 0.007633416000000004,
+  "cpu_threads": 1,
+  "expected_RSS_bytes_for_admission_only": 4294967296,
+  "wall_deadline": null,
+  "CPU_RSS_file_limits": null,
+  "slot": 0,
+  "owned_pid": 52284,
+  "status": "PASS",
+  "exit_code": 0,
+  "guard_reason": null,
+  "CPU_seconds": 15.700836,
+  "elapsed_seconds_informational": 15.927767625000001,
+  "peak_polled_RSS_bytes": 3044196352,
+  "log_sha256": "b690a40599e89a3feacd1ededf04612b9b5beafa70a0249566f0bf4dece48697",
+  "finished_utc": "2026-09-22T21:53:49.090242+00:00"
+}

@@ -1,0 +1,2 @@
+'PricingIntegration.GCoreConsumer.empty_core_excludes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.GCoreConsumer.conflict_core_excludes' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,6 @@
+'PricingABD.P15Suffix.suffix_satisfied' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.P15Suffix.frame_satisfies_observed_P15_leaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingABD.P15Suffix.frame_satisfies_observed_P15_leaf {c : Host} {t : Bool} (f : Frame c 4 t)
+  (hc : NoMonochromaticTriangle c) (placement : Fin 14 ↪ Fin 50) :
+  (coloringValuation (physicalColoring f)).satisfies_fmla
+    (baseFmla t ++ suffix (⇑placement) (observedMatrix f ⇑placement))

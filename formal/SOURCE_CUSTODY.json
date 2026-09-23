@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-22T19:44:47.543367+00:00",
+  "frozen_repository_commit": "b51b57b0d74dc4c262634f2395d9b7f4254f1cc0",
+  "source_audit_sha256": "184a17e8689e733818dbab2eaf8cdad5c5d11c1651df9b7bcd42eb7c3c0a5b06",
+  "original_math_source_bytes": 32817211,
+  "classification_data_bytes": 5081743,
+  "scope": "Exact mathematical source/data closure; no binary artifacts or failed drafts copied."
+}

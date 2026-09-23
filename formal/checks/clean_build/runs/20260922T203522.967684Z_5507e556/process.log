@@ -1,0 +1,10 @@
+'R4333.ProfileCRowExtension.kindOfWitness_twisted_of_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileCRowExtension.tailWitnessOfStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileCRowExtension.joinedColoring_noMono' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileCRowExtension.insideColoring_rootForbidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileCRowExtension.extensionOfStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileCRowExtension.no_profileC_star_of_no_rowExtensions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

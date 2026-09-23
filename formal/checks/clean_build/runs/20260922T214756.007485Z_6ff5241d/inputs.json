@@ -1,0 +1,17 @@
+[
+  {
+    "module": "PricingG.UUQPhysicalExtension",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211527.114022Z_8bdbcde5/output.olean",
+    "sha256": "a519c11cd5b96511ea01bec124ce62ca63a8c1b3484582e9854e51d0e4f16b98"
+  },
+  {
+    "module": "PricingG.UUUSelectedSatisfaction",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T214744.200314Z_9bf874ca/output.olean",
+    "sha256": "bc85221ec10a724b49c3e359940d046f0072ed926851b456283c0276263d8b1c"
+  },
+  {
+    "module": "PricingG.UUTSelectedSatisfaction",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T214744.716085Z_0bb700d5/output.olean",
+    "sha256": "b661a648a1a32a762f5c8948e0847814794abee2e08c23f53ec01e216adb29fa"
+  }
+]

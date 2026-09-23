@@ -1,0 +1,3 @@
+'R4333.ProfileDUUUDegreeTenCatalogOrbits61.catalogNormalizerEquation_support0_chunk3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

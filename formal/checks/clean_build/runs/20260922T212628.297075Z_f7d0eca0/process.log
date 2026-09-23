@@ -1,0 +1,21 @@
+'R4333.ProfileDUUUFourSupportP15SupportPair61.firstSupport_templateIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SupportPair61.secondSupport_templateIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SupportPair61.exists_firstSupportIndex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SupportPair61.exists_secondSupportIndex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SupportPair61.normalizeSupports_firstSupport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SupportPair61.normalizeSupports_secondSupport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SupportPair61.exists_normalizedSupportPair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,42 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/ABProgram.lean:78:58: warning: 'omega' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/ABProgram.lean:78:58: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/ABProgram.lean:86:13: warning: This simp argument is unused:
+  assertionFormula
+
+Hint: Omit it from the simp argument list.
+  simp only [̵a̵s̵s̵e̵r̵t̵i̵o̵n̵F̵o̵r̵m̵u̵l̵a̵,̵S̵i̵g̵n̵a̵l̵F̵o̵r̵m̵u̵l̵a̵S̵a̵t̵,̵L̵i̵s̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵f̵o̵r̵a̵l̵l̵_̵e̵q̵]̵[̲S̲i̲g̲n̲a̲l̲F̲o̲r̲m̲u̲l̲a̲S̲a̲t̲,̲ ̲L̲i̲s̲t̲.̲m̲e̲m̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲,̲ ̲f̲o̲r̲a̲l̲l̲_̲e̲q̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/ABProgram.lean:91:29: warning: This simp argument is unused:
+  hu
+
+Hint: Omit it from the simp argument list.
+  simp only [boundSignal,h̵u̵,̵ ̲if_true, ̲holds_negate]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/ABProgram.lean:100:34: warning: This simp argument is unused:
+  he
+
+Hint: Omit it from the simp argument list.
+  simp [boundClause,̵h̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/ABProgram.lean:104:36: warning: This simp argument is unused:
+  he
+
+Hint: Omit it from the simp argument list.
+  simp [boundClause,̵h̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/ABProgram.lean:105:54: warning: This simp argument is unused:
+  he
+
+Hint: Omit it from the simp argument list.
+  simp [boundClause,̵h̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingABD.ABProgram.satisfying_extension' depends on axioms: [propext, Classical.choice, Quot.sound]

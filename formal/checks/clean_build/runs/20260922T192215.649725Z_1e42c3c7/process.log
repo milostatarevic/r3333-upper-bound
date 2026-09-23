@@ -1,0 +1,5 @@
+'R4333.SingleRootStarCNF.witnessValuation_satisfies_fmla' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.SingleRootStarCNF.exists_satisfyingValuation_of_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.SingleRootStarCNF.noCanonicalStarWitness_of_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]

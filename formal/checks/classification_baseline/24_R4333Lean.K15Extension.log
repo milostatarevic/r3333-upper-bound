@@ -1,0 +1,24 @@
+'R4333.threeColor_degree_four_or_five_at_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.existsUnique_deficientColor_at_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.noMono_extendByLast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.extendCriticalK15_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.attachment_eq_deficientColor15' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.good_extensions_agree_off_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+        2.97 real         1.94 user         1.16 sys
+          2919333888  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              230522  page reclaims
+                   7  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                4937  voluntary context switches
+                7802  involuntary context switches
+         26077294771  instructions retired
+         10921931804  cycles elapsed
+           512480400  peak memory footprint

@@ -1,0 +1,20 @@
+'R4333.UUTD9StrongPhysical.degreeNineTailPerm_templateCanonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongPhysical.transportBranchByPhysicalK15' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongPhysical.totalColoring_transportBranchByPhysicalK15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongPhysical.transportBranchByPhysicalAndFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongPhysical.totalColoring_transportBranchByPhysicalAndFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongPhysical.semantic_factorAssignmentRealization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongPhysical.FactorAssignmentRealization.rootFlip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9StrongPhysical.FactorAssignmentRealization.normalize' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

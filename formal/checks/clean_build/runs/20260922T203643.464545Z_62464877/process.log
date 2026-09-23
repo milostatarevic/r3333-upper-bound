@@ -1,0 +1,8 @@
+'R4333.ProfileDFourRowStrategicRestriction.restrictFourWith' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileDFourRowStrategicRestriction.restrictDegreeFlooredFourWith' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourRowStrategicRestriction.fourEmbeddingAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDFourRowStrategicRestriction.restrictDegreeFlooredFourAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

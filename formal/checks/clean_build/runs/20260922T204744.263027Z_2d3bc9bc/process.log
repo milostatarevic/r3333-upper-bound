@@ -1,0 +1,6 @@
+'R4333.ProfileDDegreeTenMatrixCNF.exactBranch_satisfies_fixedDegreeTenMatrixFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenMatrixCNF.noExactDegreeTenMatrixBranch_of_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

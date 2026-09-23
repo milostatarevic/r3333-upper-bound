@@ -1,0 +1,1 @@
+'PricingG.SignDesign.pentagon_centroid' depends on axioms: [propext, Classical.choice, Quot.sound]

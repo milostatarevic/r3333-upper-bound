@@ -1,0 +1,8 @@
+'R4333.fourColorPairNormalization_apply_delta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.noMono_normalizeFourColorPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.noMono_normalizeFourColorPair_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.colorNeighborhood_normalizeFourColorPair_delta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.colorDegree_normalizeFourColorPair_delta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.colorNeighborhood_inter_normalizeFourColorPair_delta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.attachingRegionFinset_normalizeFourColorPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.normalizeAttachingPartitionLabels' depends on axioms: [propext, Classical.choice, Quot.sound]

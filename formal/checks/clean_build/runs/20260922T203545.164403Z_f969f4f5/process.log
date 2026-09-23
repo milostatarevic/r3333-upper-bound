@@ -1,0 +1,6 @@
+'R4333.ProfileBThreeRowBoundary.restrictThree' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileBThreeRowBoundary.no_profileB_star_of_universalThreeRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileBThreeRowBoundary.universalFourRowObstruction_of_universalThreeRowObstruction' depends on axioms: [propext,
+ Quot.sound]

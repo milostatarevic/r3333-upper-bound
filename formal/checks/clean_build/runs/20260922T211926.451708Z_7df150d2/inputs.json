@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.ClauseCore",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191825.706835Z_56d6c610/output.olean",
+    "sha256": "1da2075d27ca3af7393cf7670e875240dffc1cc05d1a4aca5c782bcc9fb734c5"
+  },
+  {
+    "module": "R4333Lean.ContinuationDegreeNineTwistedRoot12QuotientFormula61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211922.124366Z_993a38a6/output.olean",
+    "sha256": "209795febe3fd35b74d563d6d3885ced73a1bc82c484b31865e0803caffcce34"
+  }
+]

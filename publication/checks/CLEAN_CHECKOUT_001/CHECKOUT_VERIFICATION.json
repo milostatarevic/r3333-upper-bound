@@ -1,0 +1,85 @@
+{
+  "status": "PASS_CLEAN_GIT_CHECKOUT_TOOLS",
+  "git_commit": "4b84bede74c1e1409d16d93238ffb927ec175216",
+  "commands": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "reproduce/test_verify.py"
+      ],
+      "returncode": 0,
+      "log": "/private/tmp/ramsey61-clean-checkout-results-001/00.log",
+      "log_sha256": "d60e7802c5bf0f6ee6074b37eb8f56a526adaeda7580625045f329d1f71c2b38"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "reproduce/test_abd_inputs.py"
+      ],
+      "returncode": 0,
+      "log": "/private/tmp/ramsey61-clean-checkout-results-001/01.log",
+      "log_sha256": "da6640387022ca5b7f55d7b8b1c1a0a2d8a0888d2e9de0cd8bf40e1206a14b3c"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "reproduce/verify.py",
+        "check",
+        "--archive",
+        "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/archives/evidence-v1.tar.gz"
+      ],
+      "returncode": 0,
+      "log": "/private/tmp/ramsey61-clean-checkout-results-001/02.log",
+      "log_sha256": "a573d8939ee79ee2e6be5c786efd9057132e32bc25a7eeaa868d4aedf2d9e278"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "reproduce/abd_inputs.py",
+        "verify-all",
+        "--snapshot",
+        "/private/tmp/ramsey61-public-release-check-20260921-001"
+      ],
+      "returncode": 0,
+      "log": "/private/tmp/ramsey61-clean-checkout-results-001/03.log",
+      "log_sha256": "a1c39ae28c890c8160bb100c4fc88486548cd41fa8cb579d11bb540edcd7852d"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "reproduce/verify.py",
+        "verify-c-all",
+        "--snapshot",
+        "/private/tmp/ramsey61-public-release-check-20260921-001",
+        "--receipt",
+        "/private/tmp/ramsey61-clean-checkout-results-001/C_INPUTS.json"
+      ],
+      "returncode": 0,
+      "log": "/private/tmp/ramsey61-clean-checkout-results-001/04.log",
+      "log_sha256": "8831bcf8e0bf6b6d04b8fd69efba9b7165da9c448087eb0df6917c6035bde3aa"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "reproduce/g_check.py",
+        "--snapshot",
+        "/private/tmp/ramsey61-public-release-check-20260921-001",
+        "--output",
+        "/private/tmp/ramsey61-clean-checkout-results-001/G_REPLAY"
+      ],
+      "returncode": 0,
+      "log": "/private/tmp/ramsey61-clean-checkout-results-001/05.log",
+      "log_sha256": "f4886273d22128009d256c383da75a31a333261d637e8900569e1259dd96dd4d"
+    }
+  ],
+  "driver_CPU_seconds": 0.009034,
+  "new_solver_calls": 0,
+  "fresh_archive_extraction_receipt": "/private/tmp/ramsey61-public-release-check-20260921-001.json",
+  "scope": "Source from local no-hardlinks clean Git clone; pinned offline archive and previously fresh-authenticated extraction."
+}

@@ -1,0 +1,3 @@
+'PricingIntegration.DNativeMaps.four_roundtrip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.DNativeMaps.five_roundtrip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.DNativeMaps.five_decode_ordered' depends on axioms: [propext, Classical.choice, Quot.sound]

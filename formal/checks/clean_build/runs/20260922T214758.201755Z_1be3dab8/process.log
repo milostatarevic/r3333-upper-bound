@@ -1,0 +1,6 @@
+Sigma.instFintype
+PricingIntegration.NativeCommonCases.physical_common_excluded (h : AllUnsat) {c : Host} {l : Layout} {t : Types}
+  (b : CompletionC.CommonBlocks.Blocks c l t) (hc : NoMonochromaticTriangle c) (ho : NativeOwner l t) : False
+'PricingIntegration.NativeCommonCases.physical_common_excluded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

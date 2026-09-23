@@ -1,0 +1,22 @@
+{
+  "D/UUT/full_inputs_000/MANIFEST.json": {
+    "sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12",
+    "bytes": 1478967
+  },
+  "D/mixed/full_inputs_UTU_000/MANIFEST.json": {
+    "sha256": "b58f50c345e3007f22abea3a0dd1eff029ee50e2a2e5154a6077553aab2988ac",
+    "bytes": 6487084
+  },
+  "D/mixed/full_inputs_UTT_000/MANIFEST.json": {
+    "sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7",
+    "bytes": 6495516
+  },
+  "D/mixed/full_inputs_TTU_000/MANIFEST.json": {
+    "sha256": "a656853526685c105102fb6962dc71c6777887ffbf5c63d6b2c07e41a4791736",
+    "bytes": 17937625
+  },
+  "D/mixed/full_inputs_TTT_000/MANIFEST.json": {
+    "sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec",
+    "bytes": 17943949
+  }
+}

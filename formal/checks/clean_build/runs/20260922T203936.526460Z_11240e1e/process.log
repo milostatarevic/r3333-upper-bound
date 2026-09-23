@@ -1,0 +1,18 @@
+'R4333.ProfileDFourSupportRestoredRootK15.exists_foreignSupportEnumerations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourSupportRestoredRootK15.restoredRootHostK15_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourSupportRestoredRootK15.restoredRootHostK15_avoids_own' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourSupportRestoredRootK15.restoredRootDecodedK15_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourSupportRestoredRootK15.exists_weakEquiv_restoredRoot_k15Template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourSupportRestoredRootK15.exists_catalogued_restoredRootK15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

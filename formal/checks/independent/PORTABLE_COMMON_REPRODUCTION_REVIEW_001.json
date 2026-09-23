@@ -1,0 +1,52 @@
+{
+  "status": "PASS_BOUNDED_INDEPENDENT_SOURCE_REVIEW",
+  "created_utc": "2026-09-22T19:49:04.948543+00:00",
+  "scope": "Read-only diff review of the portable common native emitter, exact cache helper, and relocated comparator; no repeated native emission or solving.",
+  "findings": [
+    "Cached literal equality helper is byte-identical to the accepted original helper.",
+    "The 737-pair/all-eight-types/all-representatives suffix iteration is unchanged; main now accepts a fresh output directory and has no #eval side effect.",
+    "Added prefix iteration covers exactly four A and six B owners, each for free sizes4 and5; calls ABNative.exactPrefix directly.",
+    "All original prefix body/header, literal polarity/order, selected word, full formula hash/count/byte checks and bijective55016case census checks remain.",
+    "Relocation uses separate explicit archive/emission/Dprefix/package roots with a pinned historical-path index; copied original records are hash checked.",
+    "Python optimization is explicitly rejected so semantic assertions cannot be disabled.",
+    "Fresh output directory and create-only reports preserve earlier results."
+  ],
+  "trust_boundary": "Source review; complete new-emission comparison and corrupted-copy negative control are owned by ABD lane. Package SOURCE_MANIFEST must pin the relocation index and verifier alongside source.",
+  "pins": [
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/verify_common_native_census.py",
+      "sha256": "a58b3db2663451b185fe265f8ee983d8a19a3c70f987ec60909436e6551f2fe8",
+      "bytes": 9707
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/PricingABD/EmitCommonSuffixes.lean",
+      "sha256": "9619ff6732d2953ae6ee31528da739b2ee22add7e811809ac8032e719d9edb6c",
+      "bytes": 2325
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/PricingABD/CommonSuffixCache.lean",
+      "sha256": "f5c97a531d56e2ef74998e486cd5613c0b2092437f7adee87776750100b1148c",
+      "bytes": 1140
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/verify.py",
+      "sha256": "def9b23e9c6d7e3fcea7113c47fc16a10be7d0394095fec5fc60da30d8e05b57",
+      "bytes": 11660
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/Emit.lean",
+      "sha256": "3c1863163b777d7ab5622c52c2d5a85cea4fd1c376d99e4b5a05de72192ef92a",
+      "bytes": 3547
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/lean/PricingABD/CommonSuffixCache.lean",
+      "sha256": "f5c97a531d56e2ef74998e486cd5613c0b2092437f7adee87776750100b1148c",
+      "bytes": 1140
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/path_index.json",
+      "sha256": "6e0cede41404aa2d9e1945da9336ca4347bac7d713942ebcce6bd5031b872b80",
+      "bytes": 34084
+    }
+  ]
+}

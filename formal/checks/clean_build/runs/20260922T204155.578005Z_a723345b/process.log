@@ -1,0 +1,2 @@
+'CompletionC.NativeSelectedBlocks.factorFree_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.NativeSelectedBlocks.selectedBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]

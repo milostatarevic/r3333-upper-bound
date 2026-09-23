@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingG.IsomorphismEndpoint",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203717.960641Z_b2ce6e65/output.olean",
+    "sha256": "590cf32aaba97090b5583f217d4ba7fe25271d9961c21a156c236b2c457bf958"
+  },
+  {
+    "module": "PricingC.GraphResidual",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203706.380923Z_52aa9623/output.olean",
+    "sha256": "f79ef3ec2a392bae4850db5fb48d66ef2fb6a670432cf9ce498fa6ce899fc830"
+  }
+]

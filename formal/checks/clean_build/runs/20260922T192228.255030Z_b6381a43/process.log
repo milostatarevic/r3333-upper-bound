@@ -1,0 +1,2 @@
+'PricingABD.NativeTemplateDegreeProfiles.k16_rows' depends on axioms: [propext, Quot.sound]
+'PricingABD.NativeTemplateDegreeProfiles.k15_rows' depends on axioms: [propext, Quot.sound]

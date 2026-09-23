@@ -1,0 +1,2 @@
+'CompletionC.NativeSuffix.pair_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.NativeSuffix.label_supportIndex' depends on axioms: [propext, Classical.choice, Quot.sound]

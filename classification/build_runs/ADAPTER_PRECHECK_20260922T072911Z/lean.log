@@ -1,0 +1,51 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/ClassificationAdapter.lean:71:2: error: Type mismatch
+  R4333.k16_colorGraph_isSRG (toLegacy c) hc q
+has type
+  @SimpleGraph.IsSRGWith (Fin 16) (Fin.fintype 16) (R4333.colorGraph (toLegacy c) q)
+    (R4333.colorGraphDecidableRel (toLegacy c) q) 16 5 0 2
+but is expected to have type
+  @SimpleGraph.IsSRGWith (Fin 16) (Fin.fintype 16) (colorGraph c q) (Classical.decRel (colorGraph c q).Adj) 16 5 0 2
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/ClassificationAdapter.lean:99:4: error: `simp` made no progress
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/ClassificationAdapter.lean:109:4: error: Type mismatch: After simplification, term
+  hval
+ has type
+  @Eq R4333.FourColor (c.color ↑(e.vertex.symm i) ↑(e.vertex.symm j)) ↑(e.colors.symm (template.color i j))
+but is expected to have type
+  @Eq FourColor
+    (c.color ({ toFun := fun i => ↑(e.vertex.symm i), inj' := ⋯ } i)
+      ({ toFun := fun i => ↑(e.vertex.symm i), inj' := ⋯ } j))
+    ↑(e.colors.symm (template.color i j))
+'Ramsey61.ClassificationAdapter.k16_catalogued' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.k15_catalogued' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.k15_extends_to_k16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.k16_colorGraph_srg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.physical_neighborhood_k15' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Ramsey61.ClassificationAdapter.physical_neighborhood_k16' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Ramsey61.ClassificationAdapter.physical_high_neighborhood' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+        3.05 real         1.18 user         1.24 sys
+          2858631168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              225799  page reclaims
+                 734  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                6546  voluntary context switches
+                4922  involuntary context switches
+         18499561978  instructions retired
+          7501074744  cycles elapsed
+           476354688  peak memory footprint

@@ -1,0 +1,32 @@
+[
+  {
+    "module": "PricingG.UUTP15Seed",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T214742.555022Z_3fdb09bb/output.olean",
+    "sha256": "3a5212fc923cc6ebaa24ef29ec256b34d6725243efd4aeea4753523b78b2dbd6"
+  },
+  {
+    "module": "PricingG.UUTD9Restricted",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211847.642692Z_6946e1e8/output.olean",
+    "sha256": "16a46ee6902247d62cd55062b3313ce558a7aa62954b6d44e5a5f7b55bc1ffe5"
+  },
+  {
+    "module": "PricingG.UUTD10Entrance",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T212701.157697Z_6bdb7743/output.olean",
+    "sha256": "3dba794efdf0b387b8ffd271397e8928112253df8f28c87bf287059375932f19"
+  },
+  {
+    "module": "PricingG.UUTFourPosition",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211558.050810Z_343305bc/output.olean",
+    "sha256": "3c3c205f2dacfa22b333f85627ca4cd69640fdca635d78e309d64fba336e2350"
+  },
+  {
+    "module": "PricingG.UUTFivePosition",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211503.496754Z_8b88a7e7/output.olean",
+    "sha256": "efe5c69fb6e243984f7c8c24f7bd88a2f79f43e69b0d4309d216de878ac44456"
+  },
+  {
+    "module": "PricingG.DSixOwnerEntrance",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211524.378137Z_fe5f2856/output.olean",
+    "sha256": "fc80b4b23e405b809aa9047201a65e161942356e0e0a732ed30be55fc0f4b097"
+  }
+]

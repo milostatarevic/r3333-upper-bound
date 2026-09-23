@@ -1,0 +1,1 @@
+'PricingIntegration.MultiSparseCounter.starts_eq_of_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]

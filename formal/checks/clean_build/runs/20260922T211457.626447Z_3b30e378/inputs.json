@@ -1,0 +1,17 @@
+[
+  {
+    "module": "R4333Lean.ProfileDHighOwnFiveSupportC5CheckedBoundary",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T204104.935544Z_944e9568/output.olean",
+    "sha256": "276986d59e9b1deb80bf2fd0a7816381e9d799a855da6f616055f0892d00d8ba"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplateSelectedPositionOrbits",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203835.204935Z_9242a07f/output.olean",
+    "sha256": "cb0a1b2e76fdaf3117d3ae991918874784a64ab7525ed2458960732e807a832a"
+  },
+  {
+    "module": "R4333Lean.NormalizedCanonicalAttaching61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192233.227163Z_b5b7491b/output.olean",
+    "sha256": "a5d6236f41e0fc165448b5b7a98eec121f7b0c31c49f14ed27fb52b343141670"
+  }
+]

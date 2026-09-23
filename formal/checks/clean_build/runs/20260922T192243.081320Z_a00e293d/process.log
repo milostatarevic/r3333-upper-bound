@@ -1,0 +1,6 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/EightPentagons.lean:14:23: warning: Variable name `hB` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'PricingG.no_eight_orthogonal_pentagon_complements' depends on axioms: [propext, Classical.choice, Quot.sound]

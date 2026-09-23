@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.ProfileBCFourRowBoundary",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203526.199257Z_83428f4c/output.olean",
+    "sha256": "96614ef43bfe321a4f2050a9d5c3f2cb3686432cd7060ca9ceca296fa8b95761"
+  },
+  {
+    "module": "R4333Lean.FiniteColorCNF",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/FiniteColorCNF.olean",
+    "sha256": "235947e0d6eaab38705637b6a949b7b0290abd1f9811af60ee3f883fa0d1fbe8"
+  }
+]

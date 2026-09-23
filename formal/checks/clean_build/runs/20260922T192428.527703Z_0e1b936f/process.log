@@ -1,0 +1,4 @@
+'PricingABD.Rooted455Data.roots_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.Rooted455Data.iso0_complete_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.Rooted455Data.iso1_complete_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.Rooted455Data.iso2_complete_at' depends on axioms: [propext, Classical.choice, Quot.sound]

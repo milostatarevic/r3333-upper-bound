@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.AttachingPartition",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191825.669163Z_9a2b5a9f/output.olean",
+    "sha256": "461082bcecdd85c1bac117ce93effed20ca7aa4ecd066f1f989aee84dbcf3201"
+  },
+  {
+    "module": "R4333Lean.ColorRelabel",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/ColorRelabel.olean",
+    "sha256": "4e3d6782732ab775bc0f2be15f3fcfca1385347a50592e10d8b96cb6462470b3"
+  }
+]

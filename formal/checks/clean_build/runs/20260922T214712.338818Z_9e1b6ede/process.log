@@ -1,0 +1,4 @@
+'R4333.UUTP15Representative.candidateVertex_stageOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Representative.candidateColor_stageOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Representative.representativeCoordinate_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Representative.exists_orderedLeafCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,13 @@
+'R4333.UUTD10SupportClassification.firstSupport_templateIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD10SupportClassification.secondSupport_templateIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD10SupportClassification.exists_supportIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD10SupportClassification.exists_normalizedSupportPair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD10SupportClassification.normalizedSupportPair_lands_in_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

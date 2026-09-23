@@ -1,0 +1,22 @@
+[
+  {
+    "module": "R4333Lean.ProfileCFourRowKindSymmetry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203547.209641Z_f0446f52/output.olean",
+    "sha256": "b424c4cc77ee00979e427596d2b35434c29b0f8870ac58aaa4ec392e393df43c"
+  },
+  {
+    "module": "R4333Lean.ProfileDFourRowKindSymmetry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203613.190582Z_c952262e/output.olean",
+    "sha256": "2fc679389f4c8694c626206ad924d4200762526b444946edb7dfb3c234ef4738"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplateMaximumSetIntersection",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203518.586080Z_a71c95ce/output.olean",
+    "sha256": "e050d07193b6ea98663f1ebb76b0b7e54d4eeaaf9561300bc6bfe340e6dba42e"
+  },
+  {
+    "module": "R4333Lean.K15Extension",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/K15Extension.olean",
+    "sha256": "174b5ba0a21472a9f8f49b97bde644af317f2cb4921990f2d94b2ca07dc4c074"
+  }
+]

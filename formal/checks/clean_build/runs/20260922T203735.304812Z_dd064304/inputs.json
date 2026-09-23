@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.ProfileDDegreeTenNeighborhoodCatalogueEntrance61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203731.519613Z_50a452d8/output.olean",
+    "sha256": "472fc436d063b58c12d78e5e44a0df4cceeb67cdc0f3055d1f6d6a2fc47a66fc"
+  },
+  {
+    "module": "R4333Lean.CriticalK15PartitionClassification",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203531.054527Z_d5d4bfcb/output.olean",
+    "sha256": "e050099bc3eaeaeaa14ecd18d5e2fb2ca512a8ba4390b01a7ad9393a047c06e8"
+  }
+]

@@ -1,0 +1,2 @@
+'PricingIntegration.SeedBinding.actual_colors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.SeedBinding.actual_xs_agree' depends on axioms: [propext, Classical.choice, Quot.sound]

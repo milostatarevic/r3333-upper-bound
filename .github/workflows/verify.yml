@@ -1,0 +1,75 @@
+name: Source integrity and small Lean encoding check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lean:
+    name: Package controls and five-module encoding build
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      LEAN_NUM_THREADS: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      GIT_LFS_SKIP_SMUDGE: "1"
+    steps:
+      - name: Check out sources without the evidence archive
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Check complete package source integrity and audit controls
+        run: |
+          mkdir -p verification-artifacts
+          git rev-parse HEAD > verification-artifacts/commit.txt
+          python3 scripts/check_lean_sources.py --report verification-artifacts/source-audit.json
+          make test-ci
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          files = [Path(p) for p in ('formal/SOURCE_MANIFEST.json', 'formal/build.py',
+                    'formal/lean-toolchain', 'formal/lakefile.toml', 'formal/lake-manifest.json',
+                    'publication/checks/ACCEPTED_MATH_MANIFEST.sha256',
+                    'formal/BUILD_IDENTITY.json',
+                    'reproduce/abd_native.py', 'reproduce/test_abd_native.py',
+                    'scripts/lean_ci.py', 'scripts/check_lean_sources.py',
+                    'scripts/test_lean_audits.py', 'scripts/test_build_identity.py',
+                    'Makefile', '.github/workflows/verify.yml')]
+          rows = [{'path': str(p), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
+                  for p in files]
+          Path('verification-artifacts/control-hashes.json').write_text(json.dumps(rows, indent=2) + '\n')
+          PY
+      - name: Install pinned Lean and retrieve Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          lake-package-directory: formal
+          use-mathlib-cache: true
+          use-github-cache: false
+          build: false
+          test: false
+          lint: false
+          leanchecker: false
+          nanoda: false
+      - name: Build five encoding modules and audit two theorem assumptions
+        run: |
+          set -o pipefail
+          make lean-ci 2>&1 | tee verification-artifacts/small-lean-driver.log
+      - name: Retain source controls and small-build receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-integrity-and-small-lean-check
+          path: verification-artifacts/
+          if-no-files-found: warn
+      - name: Explain the verification boundary
+        run: |
+          echo 'All manifested mathematical sources and embedded data passed source/hash/import/census controls.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'The five-module NativeColoringClauses target compiled; its two theorem axiom reports passed.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'This job did not rebuild the complete theorem, replay classification certificates, check native input bindings, or rerun SAT.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Full-build and native-evidence acceptance are separate from this push-CI result.' >> "$GITHUB_STEP_SUMMARY"

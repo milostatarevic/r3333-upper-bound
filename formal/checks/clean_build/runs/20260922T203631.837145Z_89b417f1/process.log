@@ -1,0 +1,15 @@
+'_private.R4333Lean.ProfileDConditionalCompletionCNF.0.R4333.ProfileDConditionalCompletionCNF.firstVertex_has_blocking_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDConditionalCompletionCNF.fourExtension_satisfies_fmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDConditionalCompletionCNF.noFourExtension_of_C_obstruction_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDConditionalCompletionCNF.RepresentativeLRATRefutations.obstructions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDConditionalCompletionCNF.RepresentativeLRATRefutations.universalFourRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

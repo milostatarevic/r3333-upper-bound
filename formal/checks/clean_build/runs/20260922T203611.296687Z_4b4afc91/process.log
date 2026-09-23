@@ -1,0 +1,1 @@
+'PricingG.regular_overlap_has_bijective_centers' depends on axioms: [propext, Classical.choice, Quot.sound]

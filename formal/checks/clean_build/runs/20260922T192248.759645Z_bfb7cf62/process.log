@@ -1,0 +1,24 @@
+'R4333.CanonicalHighOwnTransport61.colorDegree_pullback_nonRoot_add_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CanonicalHighOwnTransport61.normalizedHost_root_hostRelabelVertex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CanonicalHighOwnTransport61.canonical_own_degree_add_one_eq_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CanonicalHighOwnTransport61.canonicalHighOwnDegreeSupport_card_eq_host' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CanonicalHighOwnTransport61.canonicalHighOwnDegreeSupport_card_ge_thirtyTwo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CanonicalHighOwnTransport61.canonicalHighTailDegreeSupport_card_ge_eighteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CanonicalHighOwnTransport61.vertexBlock_ne_zero_of_fourteen_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.CanonicalHighOwnTransport61.exists_high_blockPosition_outside_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

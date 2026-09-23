@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "actual_host_adapter_against_fresh_32_module_classification",
+  "exit_code": 0,
+  "elapsed_seconds": 2.892727459,
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j1",
+    "-o",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/classification_adapter_fresh/20260922T073615Z/ClassificationAdapter.olean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/ClassificationAdapter.lean"
+  ],
+  "LEAN_PATH": [
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/build/lib/lean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean",
+    "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean",
+    "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/plausible/.lake/build/lib/lean",
+    "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/batteries/.lake/build/lib/lean",
+    "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/aesop/.lake/build/lib/lean",
+    "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/Qq/.lake/build/lib/lean"
+  ],
+  "source_sha256": "ba4fc9343574e607478103599de47d45f176ba2dfef6cfcea9535f96ab165356",
+  "classification_summary": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/SUMMARY.json",
+  "limits": null
+}

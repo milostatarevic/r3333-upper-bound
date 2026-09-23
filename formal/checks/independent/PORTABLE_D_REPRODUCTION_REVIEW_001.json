@@ -1,0 +1,85 @@
+{
+  "status": "PASS_BOUNDED_INDEPENDENT_SOURCE_AND_PIN_REVIEW",
+  "created_utc": "2026-09-22T19:53:37.751066+00:00",
+  "scope": "Portable twelve-D-prefix source, byte serialization, immutable archive pins and recorded positive/negative controls. No new compiler, emission, solver or certificate replay.",
+  "findings": [
+    "cachedFour/cachedFive are byte-identical definitions to accepted original emitter; both cached_eq theorems are rfl against current DNativePrefix formulas.",
+    "Clause iteration, sign/number rendering, zero-variable rejection and newline terminators are unchanged.",
+    "The explicit six owners UUU,UUT,UTU,UTT,TTU,TTT each emit four and five bodies: all12 formulas.",
+    "Runtime main accepts a fresh directory; atomic createDir acquires that top-level directory before any output is written; no #eval compile side effect.",
+    "Verifier checks pinned original manifests, exact ordered mixed-D body bytes plus header/hash/counts, and UUU/UUT dense base hashes. It rejects Python optimization.",
+    "All five archive manifest pins independently rehashed and matched the public evidence.",
+    "Positive verifier receipt covers all12 bodies. Negative fixture was rejected for UTU/four corruption and accepted outputs were unchanged."
+  ],
+  "limits": [
+    "This verifies D base identity only; full UUQ/common native leaf identities are covered by separate complete comparators.",
+    "The positive emitter run preceded the atomic-directory-only amendment; source inspection confirms the pure formula and serialization definitions are unchanged. Root owns any final compile/refusal check."
+  ],
+  "pins": [
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/d/Emit.lean",
+      "sha256": "e009fb68ddfbcba31e0f3e6c52c28241976b8ff0a0d3e671c602988a77940ea9",
+      "bytes": 2314
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/d/verify.py",
+      "sha256": "1b91e4b35136bbd2b86cf11fb588d13335698c25387609d3ad4f7578204857ee",
+      "bytes": 2877
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/d/path_index.json",
+      "sha256": "f23f8e04fec93976dd3766bb2518309df83bca7f59019d31b666fa29dac25a61",
+      "bytes": 784
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativePrefix.lean",
+      "sha256": "6068d5f36e1f0ee3f016197ec651807da3c1a31458af52256e2f2764dc547016",
+      "bytes": 3613
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativePrefixEmit.lean",
+      "sha256": "c42b8a96fc95771f4edd3272d260bc70af15dce24b425d352722013f99548042",
+      "bytes": 1963
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativePrefixEmitAll.lean",
+      "sha256": "8de061254eb10ef5c89da05ae57444f0d0619bbc68e634420e4dc6e34e188bb5",
+      "bytes": 613
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/portable_d_verification_001/receipt.json",
+      "sha256": "8955e5e4c8a0df83a31107b65e60e6abdd97ded4d7ae192d0f361dfda138ccad",
+      "bytes": 5665
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PORTABLE_D_NEGATIVE_CONTROL_001.json",
+      "sha256": "3814b3f27ae6a150c2b4931ec2bf6bc758df6463d26c2ad281063bd452e6edb7",
+      "bytes": 1805
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/UUT/full_inputs_000/MANIFEST.json",
+      "sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12",
+      "bytes": 1478967
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_UTU_000/MANIFEST.json",
+      "sha256": "b58f50c345e3007f22abea3a0dd1eff029ee50e2a2e5154a6077553aab2988ac",
+      "bytes": 6487084
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_UTT_000/MANIFEST.json",
+      "sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7",
+      "bytes": 6495516
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_TTU_000/MANIFEST.json",
+      "sha256": "a656853526685c105102fb6962dc71c6777887ffbf5c63d6b2c07e41a4791736",
+      "bytes": 17937625
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_TTT_000/MANIFEST.json",
+      "sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec",
+      "bytes": 17943949
+    }
+  ]
+}

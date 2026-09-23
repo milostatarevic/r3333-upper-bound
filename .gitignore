@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.lake/
+
+# Immutable evidence and historical guides are preserved in the LFS archive.
+/evidence/
+/mathematics/
+/support/
+/organization/
+/manifest/
+/.snapshot/
+/tools/
+/PROOF_INDEX.md
+/PORTABILITY_AND_SCOPE.md
+
+# Generated mathematical builds and local CI artifacts.
+/formal/.build/
+/verification-artifacts/

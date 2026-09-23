@@ -1,0 +1,13 @@
+'PricingABD.SupportTransport.physical_five_pair_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.SupportTransport.physical_TT_upper_pair_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingABD.SupportTransport.physical_TT_upper_pair_cover {c : Host} {k : ℕ} {t : Bool} (f : Frame c k t)
+  (hc : NoMonochromaticTriangle c) (hl : #(leftSupport f) = 5) (hr : #(rightSupport f) = 5) :
+  ∃ changed g i j,
+    i ≤ j ∧
+      g.root = f.root ∧
+        g.marked 15 = f.marked 15 ∧
+          leftSupport g = representatives5.get i ∧
+            rightSupport g = representatives5.get j ∧
+              NoMonochromaticTriangle (if changed = true then swappedHost c else c) ∧
+                H (if changed = true then swappedHost c else c) f.root = H c f.root ∧
+                  W (if changed = true then swappedHost c else c) f.root = W c f.root

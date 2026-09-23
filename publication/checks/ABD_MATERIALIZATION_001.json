@@ -1,0 +1,737 @@
+{
+  "status": "PASS_MATERIALIZED_ALL_COMPONENT_REPRESENTATIVES",
+  "cases": [
+    {
+      "family": "A",
+      "case_id": "A_UUU/P15/pair_000/rep_000",
+      "sha256": "b3d444decb33607f320c36395f185c39fbaa2e08744211815f7c5c1040e4bf7a",
+      "bytes": 12866699,
+      "variables": 151918,
+      "clauses": 664305,
+      "output": {
+        "bytes": 12866699,
+        "sha256": "b3d444decb33607f320c36395f185c39fbaa2e08744211815f7c5c1040e4bf7a",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-00.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_UUU/D9_FIRST4/pair_000/rep_000",
+      "sha256": "f2c96a36a2f3c85cc9e5a3cb8990a20f34d4656041a2225b19df2b72040be55d",
+      "bytes": 14330779,
+      "variables": 168681,
+      "clauses": 734712,
+      "output": {
+        "bytes": 14330779,
+        "sha256": "f2c96a36a2f3c85cc9e5a3cb8990a20f34d4656041a2225b19df2b72040be55d",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-01.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_UUU/D10/pair_000/rep_000",
+      "sha256": "b0cf62059c1c741ce2086f37465c4ff13e1b4d6615a171b4089ca129a0f4bb41",
+      "bytes": 14330842,
+      "variables": 168681,
+      "clauses": 734722,
+      "output": {
+        "bytes": 14330842,
+        "sha256": "b0cf62059c1c741ce2086f37465c4ff13e1b4d6615a171b4089ca129a0f4bb41",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-02.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_UUT/P15/pair_000/rep_000",
+      "sha256": "15fc68a917d2d081e3f8c2a0c34127c882fae07269a130308f126f179e557b15",
+      "bytes": 12866699,
+      "variables": 151918,
+      "clauses": 664305,
+      "output": {
+        "bytes": 12866699,
+        "sha256": "15fc68a917d2d081e3f8c2a0c34127c882fae07269a130308f126f179e557b15",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-03.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_UUT/D9_FIRST4/pair_000/rep_000",
+      "sha256": "4697d318bfaa786a4756dcf4964dc66dce2adf4189592314032168fbdc31811f",
+      "bytes": 14330779,
+      "variables": 168681,
+      "clauses": 734712,
+      "output": {
+        "bytes": 14330779,
+        "sha256": "4697d318bfaa786a4756dcf4964dc66dce2adf4189592314032168fbdc31811f",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-04.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_UUT/D10/pair_000/rep_000",
+      "sha256": "ad80864069e0c3f802a8420fda67a91eddc3f031572261eeae28e46c67bb69c2",
+      "bytes": 14330842,
+      "variables": 168681,
+      "clauses": 734722,
+      "output": {
+        "bytes": 14330842,
+        "sha256": "ad80864069e0c3f802a8420fda67a91eddc3f031572261eeae28e46c67bb69c2",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-05.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_UTT/P15/pair_000/rep_000",
+      "sha256": "0fe3daa8399a9555ba48a7d7fa7174859142cdb03b9307b73abf13353920ff72",
+      "bytes": 12866699,
+      "variables": 151918,
+      "clauses": 664305,
+      "output": {
+        "bytes": 12866699,
+        "sha256": "0fe3daa8399a9555ba48a7d7fa7174859142cdb03b9307b73abf13353920ff72",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-06.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_UTT/D9_FIRST4/pair_000/rep_000",
+      "sha256": "69d27dd73388434500a238f34cbc10e53d48abe8724ad51716bba1930c9bde2a",
+      "bytes": 14330779,
+      "variables": 168681,
+      "clauses": 734712,
+      "output": {
+        "bytes": 14330779,
+        "sha256": "69d27dd73388434500a238f34cbc10e53d48abe8724ad51716bba1930c9bde2a",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-07.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_UTT/D10/pair_000/rep_000",
+      "sha256": "4721995e06c7ec713356b437459a3d3eaac8393f66f9113f263bfac43ca6d5e4",
+      "bytes": 14330842,
+      "variables": 168681,
+      "clauses": 734722,
+      "output": {
+        "bytes": 14330842,
+        "sha256": "4721995e06c7ec713356b437459a3d3eaac8393f66f9113f263bfac43ca6d5e4",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-08.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_TTT/P15/pair_000/rep_000",
+      "sha256": "6dbb8d00957c8922f0f61dc4bcbf7f3526123f8ef1ca4109aa0dd7b74d224dae",
+      "bytes": 12866700,
+      "variables": 151918,
+      "clauses": 664305,
+      "output": {
+        "bytes": 12866700,
+        "sha256": "6dbb8d00957c8922f0f61dc4bcbf7f3526123f8ef1ca4109aa0dd7b74d224dae",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-09.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_TTT/D9_FIRST4/pair_000/rep_000",
+      "sha256": "be39c1586190dd25a088c78688d4c08ff287fa10be9095b76621ce77dbe01bc1",
+      "bytes": 14330779,
+      "variables": 168681,
+      "clauses": 734712,
+      "output": {
+        "bytes": 14330779,
+        "sha256": "be39c1586190dd25a088c78688d4c08ff287fa10be9095b76621ce77dbe01bc1",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-10.cnf"
+      }
+    },
+    {
+      "family": "A",
+      "case_id": "A_TTT/D10/pair_000/rep_000",
+      "sha256": "8d825e319f57a6a418f8a67eb7b096e4e672832ee2d03158031afa5e765a93ce",
+      "bytes": 14330842,
+      "variables": 168681,
+      "clauses": 734722,
+      "output": {
+        "bytes": 14330842,
+        "sha256": "8d825e319f57a6a418f8a67eb7b096e4e672832ee2d03158031afa5e765a93ce",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/A-11.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_UUU/P15/pair_000/rep_000",
+      "sha256": "99ccdc4e6e22c8ed28cf27e055f4f9b65a96b20f44819ed197e116e1e69b5564",
+      "bytes": 12340546,
+      "variables": 146603,
+      "clauses": 639037,
+      "output": {
+        "bytes": 12340546,
+        "sha256": "99ccdc4e6e22c8ed28cf27e055f4f9b65a96b20f44819ed197e116e1e69b5564",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-00.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_UUU/D9_FIRST4/pair_000/rep_000",
+      "sha256": "d722e2fbbb26925e110bc6d6e5f659c161de19178dafcee56b6781643d129d34",
+      "bytes": 13280290,
+      "variables": 156913,
+      "clauses": 684080,
+      "output": {
+        "bytes": 13280290,
+        "sha256": "d722e2fbbb26925e110bc6d6e5f659c161de19178dafcee56b6781643d129d34",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-01.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_UUU/D10/pair_000/rep_000",
+      "sha256": "5da907042b078ad213272c12d2d83de4c9f627d5a5e336e89246ad430f16eb22",
+      "bytes": 13280353,
+      "variables": 156913,
+      "clauses": 684090,
+      "output": {
+        "bytes": 13280353,
+        "sha256": "5da907042b078ad213272c12d2d83de4c9f627d5a5e336e89246ad430f16eb22",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-02.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_UUT/P15/pair_000/rep_000",
+      "sha256": "7f6e5b63758957eab90e77b799513cf1150acd2da433c86a983f188a65ce1a59",
+      "bytes": 12340546,
+      "variables": 146603,
+      "clauses": 639037,
+      "output": {
+        "bytes": 12340546,
+        "sha256": "7f6e5b63758957eab90e77b799513cf1150acd2da433c86a983f188a65ce1a59",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-03.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_UUT/D9_FIRST4/pair_000/rep_000",
+      "sha256": "5e68c6291c782e4b01922ab12129269d9ee0003103f42ed4a6f909dc18521551",
+      "bytes": 13280290,
+      "variables": 156913,
+      "clauses": 684080,
+      "output": {
+        "bytes": 13280290,
+        "sha256": "5e68c6291c782e4b01922ab12129269d9ee0003103f42ed4a6f909dc18521551",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-04.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_UUT/D10/pair_000/rep_000",
+      "sha256": "9019b4c09bdf482a5034c7938547d11e011a13d5ec15992751745b0db2edbf2a",
+      "bytes": 13280353,
+      "variables": 156913,
+      "clauses": 684090,
+      "output": {
+        "bytes": 13280353,
+        "sha256": "9019b4c09bdf482a5034c7938547d11e011a13d5ec15992751745b0db2edbf2a",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-05.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_UTT/P15/pair_000/rep_000",
+      "sha256": "d07cbbd48ef70e5c3bfcd1538b470d7abbf143ddd14bacd366136d534fbdb62e",
+      "bytes": 12340546,
+      "variables": 146603,
+      "clauses": 639037,
+      "output": {
+        "bytes": 12340546,
+        "sha256": "d07cbbd48ef70e5c3bfcd1538b470d7abbf143ddd14bacd366136d534fbdb62e",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-06.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_UTT/D9_FIRST4/pair_000/rep_000",
+      "sha256": "7117066c90c57345d53791cc013da0a05eaa66abb0d7842ee0a20a86dff2b690",
+      "bytes": 13280290,
+      "variables": 156913,
+      "clauses": 684080,
+      "output": {
+        "bytes": 13280290,
+        "sha256": "7117066c90c57345d53791cc013da0a05eaa66abb0d7842ee0a20a86dff2b690",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-07.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_UTT/D10/pair_000/rep_000",
+      "sha256": "3c42b797d79b9c2a237277b407403b032e287b5d0d97661d7c382db1e77afcab",
+      "bytes": 13280353,
+      "variables": 156913,
+      "clauses": 684090,
+      "output": {
+        "bytes": 13280353,
+        "sha256": "3c42b797d79b9c2a237277b407403b032e287b5d0d97661d7c382db1e77afcab",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-08.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_TUU/P15/pair_000/rep_000",
+      "sha256": "db7112145cb3b3bdea27d3d8b4797a9c3638cf9a419aec5a457f5e1667024941",
+      "bytes": 12340546,
+      "variables": 146603,
+      "clauses": 639037,
+      "output": {
+        "bytes": 12340546,
+        "sha256": "db7112145cb3b3bdea27d3d8b4797a9c3638cf9a419aec5a457f5e1667024941",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-09.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_TUU/D9_FIRST4/pair_000/rep_000",
+      "sha256": "098322441a8b4b62f3c3dc1b5f229369eb4d9d83188d70b6be2c898c32a59866",
+      "bytes": 13280290,
+      "variables": 156913,
+      "clauses": 684080,
+      "output": {
+        "bytes": 13280290,
+        "sha256": "098322441a8b4b62f3c3dc1b5f229369eb4d9d83188d70b6be2c898c32a59866",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-10.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_TUU/D10/pair_000/rep_000",
+      "sha256": "6b22b5074a4bffce5db90538472d9b7aa28450dec8c83a0f0fb0b90b927d1185",
+      "bytes": 13280353,
+      "variables": 156913,
+      "clauses": 684090,
+      "output": {
+        "bytes": 13280353,
+        "sha256": "6b22b5074a4bffce5db90538472d9b7aa28450dec8c83a0f0fb0b90b927d1185",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-11.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_TUT/P15/pair_000/rep_000",
+      "sha256": "4863fbe686b9cc3709f31cc850f902580a6cffcebd26933240703a0b00aafcb0",
+      "bytes": 12340546,
+      "variables": 146603,
+      "clauses": 639037,
+      "output": {
+        "bytes": 12340546,
+        "sha256": "4863fbe686b9cc3709f31cc850f902580a6cffcebd26933240703a0b00aafcb0",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-12.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_TUT/D9_FIRST4/pair_000/rep_000",
+      "sha256": "3625dc0e0fa5b5599641f0bc95b77a24b12a33559e5938f864b31c1344188f10",
+      "bytes": 13280290,
+      "variables": 156913,
+      "clauses": 684080,
+      "output": {
+        "bytes": 13280290,
+        "sha256": "3625dc0e0fa5b5599641f0bc95b77a24b12a33559e5938f864b31c1344188f10",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-13.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_TUT/D10/pair_000/rep_000",
+      "sha256": "ab44ecfd81431e58e5fd219254cef2d4ebeae6fa90d30808aac07329e8ec5718",
+      "bytes": 13280353,
+      "variables": 156913,
+      "clauses": 684090,
+      "output": {
+        "bytes": 13280353,
+        "sha256": "ab44ecfd81431e58e5fd219254cef2d4ebeae6fa90d30808aac07329e8ec5718",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-14.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_TTT/P15/pair_000/rep_000",
+      "sha256": "6c51c9e7e8f323aabb6d46f4bc1212029e6a47efc3f615e84b01abb2d79dcf6e",
+      "bytes": 12340546,
+      "variables": 146603,
+      "clauses": 639037,
+      "output": {
+        "bytes": 12340546,
+        "sha256": "6c51c9e7e8f323aabb6d46f4bc1212029e6a47efc3f615e84b01abb2d79dcf6e",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-15.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_TTT/D9_FIRST4/pair_000/rep_000",
+      "sha256": "f53795928bedf2e74f991206de0ce5f789b7c4ef9c911af0c1ec026e7c945b81",
+      "bytes": 13280290,
+      "variables": 156913,
+      "clauses": 684080,
+      "output": {
+        "bytes": 13280290,
+        "sha256": "f53795928bedf2e74f991206de0ce5f789b7c4ef9c911af0c1ec026e7c945b81",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-16.cnf"
+      }
+    },
+    {
+      "family": "B",
+      "case_id": "B_TTT/D10/pair_000/rep_000",
+      "sha256": "cf1e7a39384fbbdb08b7a0c97ae3f6541a711bef0124e58c08f2e5aa32c41d99",
+      "bytes": 13280353,
+      "variables": 156913,
+      "clauses": 684090,
+      "output": {
+        "bytes": 13280353,
+        "sha256": "cf1e7a39384fbbdb08b7a0c97ae3f6541a711bef0124e58c08f2e5aa32c41d99",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/B-17.cnf"
+      }
+    },
+    {
+      "family": "D_UUU",
+      "case_id": "P15_MATRIX_ONLY_189/seed_000_s0_s0_m0",
+      "sha256": "1a3b3d48a36c136809a7adecfccc2f7a2c7eca459b622ce76ad137c43272c503",
+      "bytes": 1643186,
+      "variables": 4900,
+      "clauses": 87402,
+      "output": {
+        "bytes": 1643186,
+        "sha256": "1a3b3d48a36c136809a7adecfccc2f7a2c7eca459b622ce76ad137c43272c503",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUU-00.cnf"
+      }
+    },
+    {
+      "family": "D_UUU",
+      "case_id": "D9_TWISTED_ROOT1/rep_000",
+      "sha256": "e452e150fcb5d608e411f4816c70aa7f2dbe2187b50a4a795050ca7280218729",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "e452e150fcb5d608e411f4816c70aa7f2dbe2187b50a4a795050ca7280218729",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUU-01.cnf"
+      }
+    },
+    {
+      "family": "D_UUU",
+      "case_id": "D9_TWISTED_ROOT4/rep_000",
+      "sha256": "13e1b6a0430ab0a23e19fabd2287c997282ed77fda1e3aa78f5fed6063777e64",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "13e1b6a0430ab0a23e19fabd2287c997282ed77fda1e3aa78f5fed6063777e64",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUU-02.cnf"
+      }
+    },
+    {
+      "family": "D_UUU",
+      "case_id": "D9_TWISTED_ROOT12/rep_000",
+      "sha256": "5f9003961252749bf72b8fa0c3263d7642b13670a72620890b852b2b84a05c26",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "5f9003961252749bf72b8fa0c3263d7642b13670a72620890b852b2b84a05c26",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUU-03.cnf"
+      }
+    },
+    {
+      "family": "D_UUU",
+      "case_id": "D9_STRONG_ROOT2/rep_000",
+      "sha256": "61c042657b4a768de2169488bc45a592cef43834e6bbc596c49ce8417d42d445",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "61c042657b4a768de2169488bc45a592cef43834e6bbc596c49ce8417d42d445",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUU-04.cnf"
+      }
+    },
+    {
+      "family": "D_UUU",
+      "case_id": "D10_B2P15_82/leaf_00_uuu_b2_p15_s0_s0_m0",
+      "sha256": "152f48818a6b847d6a7279ce0f824ee5134715e44a270cc4854ff3117d91f126",
+      "bytes": 6206819,
+      "variables": 131570,
+      "clauses": 343473,
+      "output": {
+        "bytes": 6206819,
+        "sha256": "152f48818a6b847d6a7279ce0f824ee5134715e44a270cc4854ff3117d91f126",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUU-05.cnf"
+      }
+    },
+    {
+      "family": "D_UUT",
+      "case_id": "P15_MATRIX_ONLY_189/seed_000_s0_s0_m0",
+      "sha256": "4f90560769800af4231e5813bc3b59b805944e313571f99cba34b8c465cd7cfa",
+      "bytes": 1643186,
+      "variables": 4900,
+      "clauses": 87402,
+      "output": {
+        "bytes": 1643186,
+        "sha256": "4f90560769800af4231e5813bc3b59b805944e313571f99cba34b8c465cd7cfa",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUT-00.cnf"
+      }
+    },
+    {
+      "family": "D_UUT",
+      "case_id": "D9_TWISTED_ROOT1/rep_000",
+      "sha256": "67587cc558fcb25eab5ec4b372b084414b9550aadbb01dbe029f348ddcabe3ba",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "67587cc558fcb25eab5ec4b372b084414b9550aadbb01dbe029f348ddcabe3ba",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUT-01.cnf"
+      }
+    },
+    {
+      "family": "D_UUT",
+      "case_id": "D9_TWISTED_ROOT4/rep_000",
+      "sha256": "772255fbb95aae685872acd117d6f29d34d3adf2e78f7fc2d52f24ed03834400",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "772255fbb95aae685872acd117d6f29d34d3adf2e78f7fc2d52f24ed03834400",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUT-02.cnf"
+      }
+    },
+    {
+      "family": "D_UUT",
+      "case_id": "D9_TWISTED_ROOT12/rep_000",
+      "sha256": "53b31ec8a79575a7c5461233e86d9d9aee3f172bc5e23cbadcdda44a8a7bfecd",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "53b31ec8a79575a7c5461233e86d9d9aee3f172bc5e23cbadcdda44a8a7bfecd",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUT-03.cnf"
+      }
+    },
+    {
+      "family": "D_UUT",
+      "case_id": "D9_STRONG_ROOT2/rep_000",
+      "sha256": "13089e0b8e43ff99f39ed953185641f00bf01604a786ca9c1ee98a52a50f2f24",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "13089e0b8e43ff99f39ed953185641f00bf01604a786ca9c1ee98a52a50f2f24",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUT-04.cnf"
+      }
+    },
+    {
+      "family": "D_UUT",
+      "case_id": "D10_B2P15_82/leaf_00_uuu_b2_p15_s0_s0_m0",
+      "sha256": "a80f1fd6adac53deb19c69bdab8eba552214d5080e973582dbdfc28988ed9d47",
+      "bytes": 6206819,
+      "variables": 131570,
+      "clauses": 343473,
+      "output": {
+        "bytes": 6206819,
+        "sha256": "a80f1fd6adac53deb19c69bdab8eba552214d5080e973582dbdfc28988ed9d47",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UUT-05.cnf"
+      }
+    },
+    {
+      "family": "D_UTU",
+      "case_id": "UTU/P15_MATRIX_ONLY/pair_000/rep_000",
+      "sha256": "b4536bd254653ef20cc147629aa02f262695c17f178833f238d919c77946673a",
+      "bytes": 1643186,
+      "variables": 4900,
+      "clauses": 87402,
+      "output": {
+        "bytes": 1643186,
+        "sha256": "b4536bd254653ef20cc147629aa02f262695c17f178833f238d919c77946673a",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UTU-00.cnf"
+      }
+    },
+    {
+      "family": "D_UTU",
+      "case_id": "UTU/D9_FIRST4/pair_000/rep_000",
+      "sha256": "b6d6f23f8beab60b0659271457534c4daba40018de99628694233a6abd663fd6",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "b6d6f23f8beab60b0659271457534c4daba40018de99628694233a6abd663fd6",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UTU-01.cnf"
+      }
+    },
+    {
+      "family": "D_UTU",
+      "case_id": "UTU/D9_SECOND4/pair_000/rep_000",
+      "sha256": "7001c85f0e78fa38e0224f4203c720ff8ab22ad190fd458246ab1a519250ea15",
+      "bytes": 6206755,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206755,
+        "sha256": "7001c85f0e78fa38e0224f4203c720ff8ab22ad190fd458246ab1a519250ea15",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UTU-02.cnf"
+      }
+    },
+    {
+      "family": "D_UTU",
+      "case_id": "UTU/D10/pair_000/rep_000",
+      "sha256": "2f755dda316c93a7dcc9b75a9ba5468dfaf66064788e0fd60f347c6cf355b918",
+      "bytes": 6206819,
+      "variables": 131570,
+      "clauses": 343473,
+      "output": {
+        "bytes": 6206819,
+        "sha256": "2f755dda316c93a7dcc9b75a9ba5468dfaf66064788e0fd60f347c6cf355b918",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UTU-03.cnf"
+      }
+    },
+    {
+      "family": "D_UTT",
+      "case_id": "UTT/P15_MATRIX_ONLY/pair_000/rep_000",
+      "sha256": "bc92f5582f65dae74895a9535f6f3c37f4c0b46392c3d8fcb56291c40ee58273",
+      "bytes": 1643186,
+      "variables": 4900,
+      "clauses": 87402,
+      "output": {
+        "bytes": 1643186,
+        "sha256": "bc92f5582f65dae74895a9535f6f3c37f4c0b46392c3d8fcb56291c40ee58273",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UTT-00.cnf"
+      }
+    },
+    {
+      "family": "D_UTT",
+      "case_id": "UTT/D9_FIRST4/pair_000/rep_000",
+      "sha256": "d92bdcff12a579d969e85f2711b9081f25bd23ebdfd227f535f0150906076b99",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "d92bdcff12a579d969e85f2711b9081f25bd23ebdfd227f535f0150906076b99",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UTT-01.cnf"
+      }
+    },
+    {
+      "family": "D_UTT",
+      "case_id": "UTT/D9_SECOND4/pair_000/rep_000",
+      "sha256": "93ae9c81dc5c08111a1e25fe242a712e34abc445730559595931b4c5ec357936",
+      "bytes": 6206755,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206755,
+        "sha256": "93ae9c81dc5c08111a1e25fe242a712e34abc445730559595931b4c5ec357936",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UTT-02.cnf"
+      }
+    },
+    {
+      "family": "D_UTT",
+      "case_id": "UTT/D10/pair_000/rep_000",
+      "sha256": "17e15bb50123435309e686140886ffba8e3b1b5d4a1e01e806a3de1dff03e3fd",
+      "bytes": 6206819,
+      "variables": 131570,
+      "clauses": 343473,
+      "output": {
+        "bytes": 6206819,
+        "sha256": "17e15bb50123435309e686140886ffba8e3b1b5d4a1e01e806a3de1dff03e3fd",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_UTT-03.cnf"
+      }
+    },
+    {
+      "family": "D_TTU",
+      "case_id": "TTU/P15_MATRIX_ONLY/pair_000/rep_000",
+      "sha256": "25dc4589922a3857e026854dc2e0ab2798bc8218125ce4786fecff5e5b2d89ab",
+      "bytes": 1643186,
+      "variables": 4900,
+      "clauses": 87402,
+      "output": {
+        "bytes": 1643186,
+        "sha256": "25dc4589922a3857e026854dc2e0ab2798bc8218125ce4786fecff5e5b2d89ab",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_TTU-00.cnf"
+      }
+    },
+    {
+      "family": "D_TTU",
+      "case_id": "TTU/D9_FIRST4/pair_000/rep_000",
+      "sha256": "1247814e11f7c911d33b60954031b3f9d809a1a94f18ba989a509bf0d51732e4",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "1247814e11f7c911d33b60954031b3f9d809a1a94f18ba989a509bf0d51732e4",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_TTU-01.cnf"
+      }
+    },
+    {
+      "family": "D_TTU",
+      "case_id": "TTU/D10/pair_000/rep_000",
+      "sha256": "f5cdb359ff83aaafe1a72a88e9ba6b79ba1bb123c66823cbccbaddeadaf46394",
+      "bytes": 6206819,
+      "variables": 131570,
+      "clauses": 343473,
+      "output": {
+        "bytes": 6206819,
+        "sha256": "f5cdb359ff83aaafe1a72a88e9ba6b79ba1bb123c66823cbccbaddeadaf46394",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_TTU-02.cnf"
+      }
+    },
+    {
+      "family": "D_TTT",
+      "case_id": "TTT/P15_MATRIX_ONLY/pair_000/rep_000",
+      "sha256": "8b179a7e549469672437be9b4ce17f1fb500b06792bd83c49614f047679e2112",
+      "bytes": 1643186,
+      "variables": 4900,
+      "clauses": 87402,
+      "output": {
+        "bytes": 1643186,
+        "sha256": "8b179a7e549469672437be9b4ce17f1fb500b06792bd83c49614f047679e2112",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_TTT-00.cnf"
+      }
+    },
+    {
+      "family": "D_TTT",
+      "case_id": "TTT/D9_FIRST4/pair_000/rep_000",
+      "sha256": "99cc720b8c6f3a8ca1b3bd2c16378ba98ea8e6b770ddcc64f4855d8ba88ea078",
+      "bytes": 6206756,
+      "variables": 131570,
+      "clauses": 343463,
+      "output": {
+        "bytes": 6206756,
+        "sha256": "99cc720b8c6f3a8ca1b3bd2c16378ba98ea8e6b770ddcc64f4855d8ba88ea078",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_TTT-01.cnf"
+      }
+    },
+    {
+      "family": "D_TTT",
+      "case_id": "TTT/D10/pair_000/rep_000",
+      "sha256": "e7a343cf6cc5ef9fa53b6e9438e0e5814963b5829c8bf636f9eda3061a2c87af",
+      "bytes": 6206819,
+      "variables": 131570,
+      "clauses": 343473,
+      "output": {
+        "bytes": 6206819,
+        "sha256": "e7a343cf6cc5ef9fa53b6e9438e0e5814963b5829c8bf636f9eda3061a2c87af",
+        "path": "/private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3/D_TTT-02.cnf"
+      }
+    }
+  ],
+  "output_directory": "/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-materialized-so757iy3",
+  "CPU_seconds": 2.8437349999999997,
+  "new_solver_calls": 0,
+  "scope": "One case for every distinct retained prefix/family in each A/B/D cover. Full logical input hashes checked separately."
+}

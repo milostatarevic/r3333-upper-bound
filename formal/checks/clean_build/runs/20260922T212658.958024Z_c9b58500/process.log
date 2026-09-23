@@ -1,0 +1,24 @@
+'R4333.ProfileDUUUFourSupportP15SwapFiniteCoverage61.checkedCoordinateSwap_eq_semantic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SwapFiniteCoverage61.rawSwapMatrixColor_eq_semantic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SwapFiniteCoverage61.swapWitnessCoordinate_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SwapFiniteCoverage61.firstWitnessAction_extends_strongly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SwapFiniteCoverage61.swapLeaf_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SwapFiniteCoverage61.swapLeaf_involutive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SwapFiniteCoverage61.seed_covers_ordered_leaf' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SwapFiniteCoverage61.exists_exact_seed_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

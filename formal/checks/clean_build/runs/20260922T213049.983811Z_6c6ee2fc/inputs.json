@@ -1,0 +1,17 @@
+[
+  {
+    "module": "R4333Lean.ProfileDUUUFourSupportP0OrbitFiniteCoverage61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T212915.020272Z_93d440f2/output.olean",
+    "sha256": "d1e337d66743d90a67bdf2fcde9c853bb5723c4a7c18a5d7f47efcd27beae02c"
+  },
+  {
+    "module": "R4333Lean.CriticalK15ColorPreservingClassification",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203515.879231Z_a2485175/output.olean",
+    "sha256": "fa739f02c8ea6f39dbb0e7014fb9edd271bc50e27cff6911a32d9995caec0d2c"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeNineFactorOrbitCoverage61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T212019.814813Z_1dee4fac/output.olean",
+    "sha256": "8b5b3b66b9238c50fc5e3a5b715dd46bd9d186de16d4a84f42744e5d980a3eb8"
+  }
+]

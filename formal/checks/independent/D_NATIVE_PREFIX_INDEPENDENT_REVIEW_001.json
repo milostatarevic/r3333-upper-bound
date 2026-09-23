@@ -1,0 +1,126 @@
+{
+  "status": "PASS_INDEPENDENT_SOURCE_SCOPE_AND_BINDING_REVIEW",
+  "created_utc": "2026-09-22T19:20:18.972214+00:00",
+  "reviewer": "independent ABD lane",
+  "modules": [
+    {
+      "module": "PricingIntegration.DFrameColoring",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DFrameColoring.lean",
+      "source_sha256": "657e1e6137d3b084f0c778fa53afb1a2ccc4931cb2500ddd7d06522b2202b28a",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T183551.684426Z_03ece3b5/receipt.json",
+      "output_sha256": "485062f2e37610739ff219b418c4f3f65d94b25d9e986d0b5d12fc9402b0f46c",
+      "log_sha256": "d426c42dccf1742240ad19f8dac43063770bd568e82ed1d9a1d1134ae0c05f0a"
+    },
+    {
+      "module": "PricingIntegration.DFrameRows",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DFrameRows.lean",
+      "source_sha256": "b0dc0f739464b1ff6e1efcc0da502e5e45d159defb9cf36a782761fc8d3ce1f7",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T183826.330119Z_4d0eb5ba/receipt.json",
+      "output_sha256": "fbb0ca33006916e2fb525b2560db0b5966b446ac38d8c16baa624823c835ba16",
+      "log_sha256": "fc50918122a637647f6ebec1e82be6e8aa2b9b588d7a266834e0c1e73bfb2b25"
+    },
+    {
+      "module": "PricingIntegration.DFrameDegrees",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DFrameDegrees.lean",
+      "source_sha256": "9ba261dd26d5b7bc7b9f64f6e42bc6ae622ae921a8682ac4ef72625538b1fc95",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T184136.896746Z_4e6fbcd0/receipt.json",
+      "output_sha256": "d50b8abb3f07ed6b111a0de97e5d79520907695e1d67f9c1cca296383fdfb2f7",
+      "log_sha256": "f5eea451ad4ac0695798bed44df6e080d18090548a525b57bb7cf93d458d97f2"
+    },
+    {
+      "module": "PricingIntegration.DFrameBaseFive",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DFrameBaseFive.lean",
+      "source_sha256": "a181ff0d3c05f6de8fc5f5eb21e25e77a16cb6046c3fe9fe0bc16b8123c66acc",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T184501.779226Z_ec4e11ec/receipt.json",
+      "output_sha256": "c53795a3ba3337301cbb6d1dc1bf4e66a999e43a4a3125b5bc5725bf94dc86eb",
+      "log_sha256": "cc2ac3519f18394513162d4baccf339bc9e6b371050f26b309ba62545f9b9974"
+    },
+    {
+      "module": "PricingIntegration.NativeRenaming",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/NativeRenaming.lean",
+      "source_sha256": "2339903d673d83c982b19ef19403561a2093889f7a60327c0bd58d4b3eac929d",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T185209.289637Z_4880f5f2/receipt.json",
+      "output_sha256": "169dcecbdaa21b8a4bb253b7937cb81c6c71abf0a93e07c72248d35b81c37b15",
+      "log_sha256": "e5f276824c6aa3374833277713f7baa8013dd56d095f7e55648cc11c5235bad3"
+    },
+    {
+      "module": "PricingIntegration.DNativeEdgeMap",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativeEdgeMap.lean",
+      "source_sha256": "44bae4389da87467ace33a0400ea1bb36fb0217168a594619e68d3ef28b0f277",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T185640.074117Z_a093f505/receipt.json",
+      "output_sha256": "2950d2ff2d7742cf38dddb10a2506778790dd414b17cd4b5a5b3e70b076673eb",
+      "log_sha256": "3d1db100846ce1ed9a8e667616cccd581dbef99eaa965d052c9090fa1603b426"
+    },
+    {
+      "module": "PricingIntegration.DNativeMapData",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativeMapData.lean",
+      "source_sha256": "37d021eadacbba3cf0c5ab6e6e614b8d0d7ec8472b58f433b762daf25ac5106d",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T185701.039560Z_1418ba68/receipt.json",
+      "output_sha256": "4441182526a40e277c8935e4a715638f4c47b18457e39bba199489550560b71f",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PricingIntegration.DNativeMaps",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativeMaps.lean",
+      "source_sha256": "d37521e334a14ae3226d9af4e858b484c6dc84ddcac7e4f7cfeecb632acc22f3",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T185909.623761Z_7dbf7ffa/receipt.json",
+      "output_sha256": "1b448a1f88e6250c7ed8417218898b84a05dfed23af43aeda28a1e8a8bcaca9c",
+      "log_sha256": "2cffc5e075716b79417fdc93731a4bd2348b64aa2c296d00a0929be5e19b2fe8"
+    },
+    {
+      "module": "PricingIntegration.DNativePrefix",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativePrefix.lean",
+      "source_sha256": "6068d5f36e1f0ee3f016197ec651807da3c1a31458af52256e2f2764dc547016",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T190408.436157Z_8e992438/receipt.json",
+      "output_sha256": "eef2cbeb1794d5e6e86c2098ba1c620574877f9af898f6087391da0dd2dbb736",
+      "log_sha256": "8625597bdc7bb60a819d9edd9ae83f52f496da62e94341ee1b9aaf38678c9af6"
+    },
+    {
+      "module": "PricingIntegration.DNativePrefixComplete",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativePrefixComplete.lean",
+      "source_sha256": "fc55d57fd5ad18349a4a2fbbbecf435ec353a4ae539a2b19b9c9aea2686cf95d",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T190631.683375Z_39ef69f2/receipt.json",
+      "output_sha256": "c8f5abaf708a1f0b37ebef891672952be1af5a161ec3726df861c287db3f706c",
+      "log_sha256": "73827197485f964283942d94d65d73cfe99573a8d06751bb3fd35d0283c9fbb4"
+    },
+    {
+      "module": "PricingIntegration.DNativePrefixEmit",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativePrefixEmit.lean",
+      "source_sha256": "c42b8a96fc95771f4edd3272d260bc70af15dce24b425d352722013f99548042",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T190414.759233Z_70a2a105/receipt.json",
+      "output_sha256": "49c3221a915ef3958a83a479c673cb0095502134460c0635e15268ce7ecfb7c8",
+      "log_sha256": "5ce6d22e6a4928834e7d0593e91bcb5e894eb20eed585d0f72d17b2e3e63a487"
+    },
+    {
+      "module": "PricingIntegration.DNativePrefixEmitAll",
+      "source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/PricingIntegration/DNativePrefixEmitAll.lean",
+      "source_sha256": "8de061254eb10ef5c89da05ae57444f0d0619bbc68e634420e4dc6e34e188bb5",
+      "receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/runs/20260922T190552.337311Z_ac713764/receipt.json",
+      "output_sha256": "6394dd5b770ad58ae1b8cfbbcdec230c7a22fd953375536166e54e6bdc4daa85",
+      "log_sha256": "8e6460fce8f180d1249b4ea94b28f015aeb5b195bc56ab3492274a0c962bd440"
+    }
+  ],
+  "binding_receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/D_NATIVE_PREFIX_ALL_BINDING_001.json",
+  "binding_receipt_sha256": "c4285fc3a639f135118597026dd15902e819acdcd1885e3bd6e6492881851782",
+  "rechecked_unique_pins": 38,
+  "rechecked_kind_shape_bodies": 12,
+  "checks": [
+    "The coloring and all four/five rows are pullbacks of one actual host through an injective complete retained coordinate map; joined_eq and joined_good give full row compatibility.",
+    "The generic actual-tail identity and physical degree bounds are consumed, including actual marked highness and the upper tail degree10 from five retained low-cell neighbors plus the original root.",
+    "The canonical C5 translation is finite checked and preserves the exact original free color geometry. No independent recoloring of cells occurs.",
+    "The old sparse five-row counter valuation preserves all sparse physical edge atoms by proved namespace disjointness.",
+    "NativeRenaming gives a genuine total left inverse for every sparse atom, including fallback atoms; positive and negative literals and formula satisfaction are preserved.",
+    "Exact native edge decode identities cover all ordered physical edge/color atoms at n50/51, giving the SAME physical edge meaning in the renamed native valuation.",
+    "Both final four/five endpoints require only actual Frame, Geometry and NoMono, and have standard axioms only. No encoding, map correctness or arithmetic bound hypotheses are left as assumed exclusions.",
+    "All twelve body identities rechecked against pinned native bytes or the explicit pinned sparse-to-dense conversion; exact full-formula suffixes remain outside this body review."
+  ],
+  "scope_limits": [
+    "This is prefix satisfiability and physical EDGE preservation, not whole D-family exclusion. Owner/support/matrix cover, signed suffix joins and accepted native UNSAT exclusions remain separate.",
+    "Five-row auxiliaries can overlap the A/B high-flag address range; only edge preservation is promised or reviewed, which is sufficient for the current edge-only native suffix interface.",
+    "UUU/UUT body comparison uses the exact pinned original sparse parent and native dense map; it does not claim completion of their special679 suffix/census bridge."
+  ],
+  "findings": [],
+  "new_solver_calls": 0,
+  "new_Lean_checks": 0,
+  "CPU_seconds_metadata_and_byte_recheck": 1.330022
+}

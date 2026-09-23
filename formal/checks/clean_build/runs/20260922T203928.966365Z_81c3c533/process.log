@@ -1,0 +1,21 @@
+'R4333.ProfileDDegreeTenRestoredRootK16.restoredRootHostK16_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenRestoredRootK16.restoredRootAttachment_eq_deficientColor15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenRestoredRootK16.restoredRootDecodedK16_eq_extendCriticalK15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenRestoredRootK16.cataloguedRestoredRootWeakEquiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenRestoredRootK16.catalogued_supports_eq_rootNeighborhoods' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenRestoredRootK16.exists_colorPreserving_hostK16Template_of_catalogued' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenRestoredRootK16.selectedEndpointConeK17_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

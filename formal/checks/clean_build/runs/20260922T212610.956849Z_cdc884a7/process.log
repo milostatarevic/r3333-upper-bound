@@ -1,0 +1,12 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeTenExactEntranceGeneric61.lean:243:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeTenExactEntranceGeneric61.lean:251:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'R4333.ProfileDUUUDegreeTenExactEntranceGeneric61.matrixCoordinatesOfOrderedSupports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenExactEntranceGeneric61.exists_exactDegreeTenMatrixBranch_of_tailOwnDegree_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,39 @@
+{
+  "module": "R4333Lean.ClebschCompletionSemantics",
+  "status": "PASS",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j4",
+    "-o",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/ClebschCompletionSemantics.olean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/R4333Lean/ClebschCompletionSemantics.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 3.771247374999973,
+  "user_CPU_seconds": 2.45,
+  "system_CPU_seconds": 1.17,
+  "peak_RSS_bytes_macos": 3048751104,
+  "source_sha256": "b1fd00f31662e60bd0e4eb36609aea5c23836249bc5423b3c913529cf3cbb62c",
+  "log_sha256": "e5567fa153c39417ca99e6e627038414fe1ee239d71974e1a0f65533cb3855e4",
+  "olean": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/ClebschCompletionSemantics.olean",
+  "olean_sha256": "6c98ea8369dd2b0d0102c6b8b48aac6f999fa0e6fd2171dfea5ac46d54d4db9e",
+  "olean_bytes": 264896,
+  "host_before": {
+    "memory_free_percent": 84,
+    "disk_free_bytes": 1997149638656,
+    "pressure_report": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 84%"
+  },
+  "host_after": {
+    "memory_free_percent": 84,
+    "disk_free_bytes": 1997161779200,
+    "pressure_report": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 84%"
+  },
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "mathlib_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "input_manifest_sha256": "1e6c353e19417892f91eadd33319b886ce7503c5f1d0414bf4d4345dab8442b3",
+  "controller_sha256": "b9f3eaf65986b23f5298750e0d858f96a87cef1bddec4fbbb60ac302c23046a0",
+  "CPU_limit": null,
+  "RSS_kill_limit": null,
+  "file_size_limit": null,
+  "new_solver_calls": 0
+}

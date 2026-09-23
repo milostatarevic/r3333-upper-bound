@@ -1,0 +1,1 @@
+'PricingC.GParity.extract_residual_pentagons' depends on axioms: [propext, Classical.choice, Quot.sound]

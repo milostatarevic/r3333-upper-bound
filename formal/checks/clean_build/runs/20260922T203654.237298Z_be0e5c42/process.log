@@ -1,0 +1,25 @@
+'R4333.ProfileDHighOwnFiveRowSplit61.restrictDegreeFlooredFiveWith' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveRowSplit61.selectedEndpoint_fullOwnDegree_eq_free_add_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveRowSplit61.tailOwnDegree_between_nine_eleven_of_support_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveRowSplit61.tailOwnDegree_between_ten_twelve_of_support_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveRowSplit61.tailOwnDegree_between_nine_ten_of_support_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveRowSplit61.tailOwnDegree_eq_ten_of_support_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveRowSplit61.exists_highOwnFiveRow_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDHighOwnFiveRowSplit61.exists_cycle_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDHighOwnFiveRowSplit61.FiveSupportFiveRowExtension.exists_inside_cycle_relabel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

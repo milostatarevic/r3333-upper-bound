@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-22T19:50:48.839663+00:00",
+  "source_sha256": "ef371a2e38b33139444bc31d414b3f46d9929a254889cb1b7c54ab6d935b9d91",
+  "cases": [
+    {
+      "case": "minimal source graph",
+      "status": "PASS"
+    },
+    {
+      "case": "certificate command",
+      "status": "REJECTED",
+      "reason": "Certificate replay forbidden; selected closure contains: A"
+    },
+    {
+      "case": "comment-only certificate mention",
+      "status": "PASS"
+    },
+    {
+      "case": "compile-time execution",
+      "status": "REJECTED",
+      "reason": "Unapproved #eval in source: A"
+    },
+    {
+      "case": "corrupted source hash",
+      "status": "REJECTED",
+      "reason": "Hash mismatch: src/A.lean"
+    },
+    {
+      "case": "undeclared import",
+      "status": "REJECTED",
+      "reason": "Import declaration mismatch: A"
+    },
+    {
+      "case": "cyclic import",
+      "status": "REJECTED",
+      "reason": "Import cycle at A"
+    },
+    {
+      "case": "escaping module path",
+      "status": "REJECTED",
+      "reason": "Noncanonical module path: A"
+    },
+    {
+      "case": "unpinned build control",
+      "status": "REJECTED",
+      "reason": "Manifest must pin all four build control files"
+    },
+    {
+      "case": "unpinned embedded data",
+      "status": "REJECTED",
+      "reason": "Unpinned embedded data: /private/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey61-portable-static-zl7uho9n/src/missing.data"
+    }
+  ],
+  "new_compiler_calls": 0,
+  "new_certificate_replays": 0
+}

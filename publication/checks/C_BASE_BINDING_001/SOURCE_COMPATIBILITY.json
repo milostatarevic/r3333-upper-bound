@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "scope": "The declaration bytes of CEncodingBase are unchanged; exactly five diagnostic #print axioms commands were removed. The six other imported source files are byte-identical.",
+  "recorded_source_sha256": "70973cf905034f9294e793b3f1932bfa18ea5d12759c088a263d16e7183ccf86",
+  "current_source": "formal/Ramsey61/CEncodingBase.lean",
+  "current_source_sha256": "9ba1a3051f64e785d422939ccbbff2ad8b2b83da82287c1dc96c5718f30a1186",
+  "removed_diagnostic_lines": [
+    "#print axioms Ramsey61.CEncodingBase.baseValuation_HClauses",
+    "#print axioms Ramsey61.CEncodingBase.baseValuation_profileClauses",
+    "#print axioms Ramsey61.CEncodingBase.baseValuation_selectorClauses",
+    "#print axioms Ramsey61.CEncodingBase.coloring_satisfies_broaderBase",
+    "#print axioms Ramsey61.CEncodingBase.broaderBase_satisfiable_of_normalized_host"
+  ],
+  "recorded_source_after_removing_only_these_lines_sha256": "9ba1a3051f64e785d422939ccbbff2ad8b2b83da82287c1dc96c5718f30a1186",
+  "exact_source_bytes_equal_after_removing_diagnostics": true,
+  "other_imports": [
+    {
+      "source": "formal/Ramsey61/CEncodingCore.lean",
+      "sha256": "4b14f5276bd033aad4942d66507666f502e1e0db37b70554da1aef004ec8f48e",
+      "identical_to_emission_receipt": true
+    },
+    {
+      "source": "formal/Ramsey61/DenseCounter.lean",
+      "sha256": "d75295d0a3633dcca00c08cfef853ff96d93374fb6c77ad025861e3081bb8cbe",
+      "identical_to_emission_receipt": true
+    },
+    {
+      "source": "formal/Ramsey61/Selector.lean",
+      "sha256": "f143934c11a36769886baa2a94c005405047e011bbabf6970220025f144db4d3",
+      "identical_to_emission_receipt": true
+    },
+    {
+      "source": "formal/Ramsey61/Incidence.lean",
+      "sha256": "b2261f8d5ac1677a1dfd304b114d8e615aac76295dfd0fd6107f16e086bf2320",
+      "identical_to_emission_receipt": true
+    },
+    {
+      "source": "formal/Ramsey61/Profiles.lean",
+      "sha256": "309cca6aa5649824c69c8199f0467bce457e50b0c1e2f0db842c75cf8eae3e16",
+      "identical_to_emission_receipt": true
+    },
+    {
+      "source": "formal/Ramsey61/Foundations.lean",
+      "sha256": "ca05aa3e88b048c9b313cf645dfe7dd397e226661c780daeb81578c917bc904f",
+      "identical_to_emission_receipt": true
+    }
+  ],
+  "packaged_file_pins": {
+    "EmitBase.lean": {
+      "bytes": 1554,
+      "sha256": "ba4d084b9f9c8e4005740d6ec309538555b665f54488f0005779796faff1b1f1"
+    },
+    "PORTABLE_COMPARISON.json": {
+      "bytes": 5555,
+      "sha256": "819c681f10cb8a5995889e253d5e0df84ae296e0e188b12d26def6246a6b94fa"
+    },
+    "PORTABLE_CONTROLS.json": {
+      "bytes": 333,
+      "sha256": "aceedadf583a3ac945d0e11c9d50edce0f7349a6dde423b1262f07cca4fdecb0"
+    },
+    "README.md": {
+      "bytes": 3099,
+      "sha256": "f00ebb63919cbd50009561950f2a1a6f3808d95ff2d4626a8e4fe2cabb0054c6"
+    },
+    "compare_base.py": {
+      "bytes": 4232,
+      "sha256": "4729aa929cda81edbeebebe37ebe7d6efe52a6cf3670e367838ff9e6a7e65204"
+    },
+    "comparison.json": {
+      "bytes": 5287,
+      "sha256": "cceb5504bf74b5131fc6fbef7af057aff01e1fe712807f75726d737c53016eb8"
+    },
+    "historical/compare_base.py": {
+      "bytes": 3939,
+      "sha256": "bdf7345902bc8194ce27f35ba09d85ef6db08f32c6c8f7aba7df33460dca1f7e"
+    },
+    "historical/run_emitter.py": {
+      "bytes": 3161,
+      "sha256": "f7efe2905168e204994d86912235feddd084b49757a0708c8009470aba1f2062"
+    },
+    "lean.log": {
+      "bytes": 1280,
+      "sha256": "8e979b9a041012055134bef559b7c75bc41d6a254e97d2dac65deb097edeb998"
+    },
+    "receipt.json": {
+      "bytes": 6713,
+      "sha256": "11010f25bbc3a4691af92852bed6445d540638ff8f9d2a4ee2f6dfd86e5c0f47"
+    },
+    "historical/CEncodingBase.lean": {
+      "bytes": 27189,
+      "sha256": "70973cf905034f9294e793b3f1932bfa18ea5d12759c088a263d16e7183ccf86"
+    }
+  },
+  "archived_base_bytes": 39604154,
+  "archived_base_sha256": "58478e3641d3ea52639566683daaea5f7a1d4112de5809f4af73ce1dfebf164f",
+  "new_solver_calls": 0,
+  "preserved_receipted_source": "historical/CEncodingBase.lean"
+}

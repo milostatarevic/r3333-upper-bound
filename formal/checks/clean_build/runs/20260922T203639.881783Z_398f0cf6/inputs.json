@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.ProfileDRowSupportBounds61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203632.016598Z_ff77bdb1/output.olean",
+    "sha256": "86fd33ca5f812a69c2e055521f84c8a0b94ef62967fa497b56cd1f29a3c63ea6"
+  },
+  {
+    "module": "R4333Lean.K15PairEndpointBound",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203539.341880Z_5e89dcd9/output.olean",
+    "sha256": "5995f3a97159f3d54d1da5a896424930608da1a0bbbd690d3bea7ab572862951"
+  }
+]

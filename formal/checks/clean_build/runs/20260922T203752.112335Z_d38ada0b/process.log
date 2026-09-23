@@ -1,0 +1,4 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingC/PhysicalTags.lean:39:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'PricingC.physical_S_tag' depends on axioms: [propext, Classical.choice, Quot.sound]

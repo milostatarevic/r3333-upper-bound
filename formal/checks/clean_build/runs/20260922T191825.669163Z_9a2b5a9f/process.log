@@ -1,0 +1,5 @@
+'R4333.attachingRegionFinset_pairwise_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.existsUnique_mem_attachingRegionFinset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.attachingRegion_cards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.attachingRegion_outside_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.attachingPartitionLabels' depends on axioms: [propext, Classical.choice, Quot.sound]

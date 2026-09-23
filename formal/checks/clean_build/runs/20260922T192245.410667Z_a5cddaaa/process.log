@@ -1,0 +1,2 @@
+'PricingC.GParity.no_six_pentagon_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.GParity.no_eight_relative_pentagon_complements' depends on axioms: [propext, Classical.choice, Quot.sound]

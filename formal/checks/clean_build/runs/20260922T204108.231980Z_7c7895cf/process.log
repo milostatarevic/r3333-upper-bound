@@ -1,0 +1,2 @@
+'CompletionC.CommonExchange.exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.CommonExchange.actual_pair_admitted' depends on axioms: [propext, Classical.choice, Quot.sound]

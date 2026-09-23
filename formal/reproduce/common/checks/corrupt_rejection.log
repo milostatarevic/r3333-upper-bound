@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/verify.py", line 136, in <module>
+    emission = indexed_pin(index['suffix_original_path']).decode('ascii').splitlines()
+  File "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/verify.py", line 77, in indexed_pin
+    assert pins[str(path)]['sha256']==index['historical_paths'][historical]['sha256'], ('indexed hash',historical)
+AssertionError: ('indexed hash', '/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/COMMON_SUFFIXES_FROM_LEAN_001.tsv')

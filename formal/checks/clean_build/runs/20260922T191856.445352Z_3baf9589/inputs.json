@@ -1,0 +1,17 @@
+[
+  {
+    "module": "Ramsey61.Uniform",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191847.937416Z_2d7a28a3/output.olean",
+    "sha256": "355625aa765590baab62ada176f036b9d04a56f3a6c97a38c3ec835e3c28a0ce"
+  },
+  {
+    "module": "Mathlib.Combinatorics.SimpleGraph.Coloring.Vertex",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Combinatorics/SimpleGraph/Coloring/Vertex.olean",
+    "sha256": "924a758a559fa467c3b8d5c9ac37d754b96a2a4386df86ca3866154d4fc83ae3"
+  },
+  {
+    "module": "Mathlib.Data.Finset.Sort",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Sort.olean",
+    "sha256": "222c0b1126e3e61359a8e76f6d9b628c8429f48aa3150738bb9e331b4e487f2e"
+  }
+]

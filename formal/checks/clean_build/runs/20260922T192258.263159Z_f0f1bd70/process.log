@@ -1,0 +1,7 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingC/PlaneTables.lean:164:95: warning: Variable name `r` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'PricingC.PlaneTables.planeMap_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.PlaneTables.nonstar_zero_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]

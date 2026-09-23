@@ -1,0 +1,1 @@
+'PricingC.Rooted45Orientation.free_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]

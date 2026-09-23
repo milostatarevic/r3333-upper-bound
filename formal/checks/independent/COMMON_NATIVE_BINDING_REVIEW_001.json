@@ -1,0 +1,40 @@
+{
+  "status": "PASS_INDEPENDENT_SOURCE_SCOPE_AND_PIN_REVIEW",
+  "UTC": "2026-09-22T19:31:40.800288+00:00",
+  "reviewer": "math_render",
+  "binding_receipt": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/COMMON_NATIVE_ALL_INPUT_BINDING_001.json",
+  "binding_receipt_sha256": "b942b0a94832ddbf127b8ca9c648b687acbe839e424c0be0ddebd845b9c55c5c",
+  "pins_rechecked": 92,
+  "total_bytes_hashed": 848193449,
+  "map_rows": 55016,
+  "map_keys_unique": 55016,
+  "full_case_ids_unique": 55016,
+  "CPU_seconds": 0.419955,
+  "reviewed_sources": [
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/PricingABD/CommonSuffixCache.lean",
+      "sha256": "f5c97a531d56e2ef74998e486cd5613c0b2092437f7adee87776750100b1148c"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/PricingABD/EmitCommonSuffixes.lean",
+      "sha256": "9619ff6732d2953ae6ee31528da739b2ee22add7e811809ac8032e719d9edb6c"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/verify_common_native_census.py",
+      "sha256": "a58b3db2663451b185fe265f8ee983d8a19a3c70f987ec60909436e6551f2fe8"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/c/CompletionC/CommonCaseLayout.lean",
+      "sha256": "bffdcc70ffb9ba4fca00e0db0cf8ba0a89c498800f1c1c888d3cbdb6fdaf93d8"
+    }
+  ],
+  "findings": [
+    "Cached suffix is definitionally equal to the checked NativeSuffix list by the proved cached_eq theorem; caching neither changes literals nor their order.",
+    "Emitter enumerates every p737, all8Types, and every Fin(tablecount) representative. The independently kernel-proved admitted_layout_unique theorem shows its one computed Layout perpair loses no Admitted case.",
+    "Verifier rejects duplicate JSON keys, pair/leaf/admission duplicates, missingororphan labels, word mismatch, any ordered literal mismatch, source/body/header drift, and full formula hash/count/byte mismatch.",
+    "The full formula hash is SHA256(originalheader ++ checkedLeanprefixbody ++ exactLeanunits), not a hash of a surrogate serialization. Hashstate cloning is semantically identical to appending to the original prefix.",
+    "Independent rehash confirmed all pinned files and one-to-one55016row map; no formulas, prefixes, solvers, or prior finite Lean computations were regenerated."
+  ],
+  "scope": "Read-only independent code/scope and artifact-pin review. The original verifier and emitter are the computational runs being reviewed; native UNSAT is separate existing evidence.",
+  "issues": []
+}

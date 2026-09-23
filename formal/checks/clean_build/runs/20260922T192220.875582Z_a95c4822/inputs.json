@@ -1,0 +1,27 @@
+[
+  {
+    "module": "R4333Lean.Attaching61Reduction",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/Attaching61Reduction.olean",
+    "sha256": "c3b7ae6f03b5667e37795ea7e76e0cc0824a9ee1e2f83ced82b0513b6e53bb61"
+  },
+  {
+    "module": "R4333Lean.CriticalCatalogues",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CriticalCatalogues.olean",
+    "sha256": "fb3909abe0d4f0d93d5ecbe4c655a0f3f820908f7e68e6038dba296732984ecc"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplateOverlap",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192218.528043Z_35af4213/output.olean",
+    "sha256": "0dddab8ed02e97d954c29a4337a488433c8db3385ca5ce2b4570a1062efd17b1"
+  },
+  {
+    "module": "R4333Lean.AttachingPartition",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191825.669163Z_9a2b5a9f/output.olean",
+    "sha256": "461082bcecdd85c1bac117ce93effed20ca7aa4ecd066f1f989aee84dbcf3201"
+  },
+  {
+    "module": "R4333Lean.DegreeTargets61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192212.317303Z_1070ca9b/output.olean",
+    "sha256": "15b8337e43ed052c68383b6ceac7ebcaca7367185838e7a9aec0ec448852613b"
+  }
+]

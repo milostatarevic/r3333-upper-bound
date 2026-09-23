@@ -1,0 +1,2 @@
+'CompletionC.NativeFamilyJoin.admitted_pair_satisfiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.NativeFamilyJoin.common_native_cover' depends on axioms: [propext, Classical.choice, Quot.sound]

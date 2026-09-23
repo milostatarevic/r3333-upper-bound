@@ -1,0 +1,47 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/ComplementDecomposition.lean:37:57: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [̵S̵i̵m̵p̵l̵e̵G̵r̵a̵p̵h̵.̵a̵d̵j̵M̵a̵t̵r̵i̵x̵_̵a̵p̵p̵l̵y̵,̵a̵l̵l̵O̵n̵e̵s̵,̵M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵]̵[̲S̲i̲m̲p̲l̲e̲G̲r̲a̲p̲h̲.̲a̲d̲j̲M̲a̲t̲r̲i̲x̲_̲a̲p̲p̲l̲y̲,̲ ̲a̲l̲l̲O̲n̲e̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/ComplementDecomposition.lean:38:75: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [̵S̵i̵m̵p̵l̵e̵G̵r̵a̵p̵h̵.̵a̵d̵j̵M̵a̵t̵r̵i̵x̵_̵a̵p̵p̵l̵y̵,̵a̵l̵l̵O̵n̵e̵s̵,̵M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵h̵x̵y̵,̵h̵,̵S̵i̵m̵p̵l̵e̵G̵r̵a̵p̵h̵.̵c̵o̵m̵p̵l̵_̵a̵d̵j̵]̵[̲S̲i̲m̲p̲l̲e̲G̲r̲a̲p̲h̲.̲a̲d̲j̲M̲a̲t̲r̲i̲x̲_̲a̲p̲p̲l̲y̲,̲ ̲a̲l̲l̲O̲n̲e̲s̲,̲ ̲h̲x̲y̲,̲ ̲h̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲S̲i̲m̲p̲l̲e̲G̲r̲a̲p̲h̲.̲c̲o̲m̲p̲l̲_̲a̲d̲j̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/ComplementDecomposition.lean:71:38: warning: This simp argument is unused:
+  ← sum_filter
+
+Hint: Omit it from the simp argument list.
+  simp [SimpleGraph.adjMatrix_apply,̵←̵ ̵s̵u̵m̵_̵f̵i̵l̵t̵e̵r̵]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/ComplementDecomposition.lean:77:105: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp_all [̵a̵l̵l̵O̵n̵e̵s̵,̵S̵i̵m̵p̵l̵e̵G̵r̵a̵p̵h̵.̵m̵e̵m̵_̵n̵e̵i̵g̵h̵b̵o̵r̵F̵i̵n̵s̵e̵t̵,̵S̵i̵m̵p̵l̵e̵G̵r̵a̵p̵h̵.̵a̵d̵j̵M̵a̵t̵r̵i̵x̵_̵a̵p̵p̵l̵y̵,̵K̵.̵a̵d̵j̵_̵c̵o̵m̵m̵,̵J̵.̵a̵d̵j̵_̵c̵o̵m̵m̵,̵M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵]̵[̲a̲l̲l̲O̲n̲e̲s̲,̲ ̲S̲i̲m̲p̲l̲e̲G̲r̲a̲p̲h̲.̲m̲e̲m̲_̲n̲e̲i̲g̲h̲b̲o̲r̲F̲i̲n̲s̲e̲t̲,̲ ̲S̲i̲m̲p̲l̲e̲G̲r̲a̲p̲h̲.̲a̲d̲j̲M̲a̲t̲r̲i̲x̲_̲a̲p̲p̲l̲y̲,̲ ̲K̲.̲a̲d̲j̲_̲c̲o̲m̲m̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲J̲.̲a̲d̲j̲_̲c̲o̲m̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/ComplementDecomposition.lean:90:55: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [̵S̵i̵m̵p̵l̵e̵G̵r̵a̵p̵h̵.̵a̵d̵j̵M̵a̵t̵r̵i̵x̵_̵a̵p̵p̵l̵y̵,̵a̵l̵l̵O̵n̵e̵s̵,̵M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵]̵[̲S̲i̲m̲p̲l̲e̲G̲r̲a̲p̲h̲.̲a̲d̲j̲M̲a̲t̲r̲i̲x̲_̲a̲p̲p̲l̲y̲,̲ ̲a̲l̲l̲O̲n̲e̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/ComplementDecomposition.lean:92:85: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp_all [̵S̵i̵m̵p̵l̵e̵G̵r̵a̵p̵h̵.̵a̵d̵j̵M̵a̵t̵r̵i̵x̵_̵a̵p̵p̵l̵y̵,̵t̵h̵i̵r̵d̵G̵r̵a̵p̵h̵,̵S̵i̵m̵p̵l̵e̵G̵r̵a̵p̵h̵.̵c̵o̵m̵p̵l̵_̵a̵d̵j̵,̵a̵l̵l̵O̵n̵e̵s̵,̵M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵]̵[̲S̲i̲m̲p̲l̲e̲G̲r̲a̲p̲h̲.̲a̲d̲j̲M̲a̲t̲r̲i̲x̲_̲a̲p̲p̲l̲y̲,̲ ̲t̲h̲i̲r̲d̲G̲r̲a̲p̲h̲,̲ ̲S̲i̲m̲p̲l̲e̲G̲r̲a̲p̲h̲.̲c̲o̲m̲p̲l̲_̲a̲d̲j̲,̲ ̲a̲l̲l̲O̲n̲e̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingG.full_defects_third_square' depends on axioms: [propext, Classical.choice, Quot.sound]

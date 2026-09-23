@@ -1,0 +1,23 @@
+{
+  "status": "PASS_EXPECTED_REJECTION_OF_CORRUPTED_D_PREFIX",
+  "created_utc": "2026-09-22T19:45:54.359308+00:00",
+  "verifier_sha256": "1b91e4b35136bbd2b86cf11fb588d13335698c25387609d3ad4f7578204857ee",
+  "original_output_hashes": {
+    "TTU_five.body": "583f6508a743220038567a711fe9e1f2d04225b724f13033ef61bdc237c4f737",
+    "UUU_five.body": "cf050d44fab941f06240fc7a8baada5baee0ea508f9a92ecbe9875bb4cf1aa74",
+    "UTT_four.body": "5e1df15450ef4d93f90bbc9a27772336310b555ac09636dc681c3464d9b8e969",
+    "TTT_five.body": "9ab8e9a40bff9034cba9675deffccfa46788381f4bc6d884168a812f4b26aef0",
+    "UUT_five.body": "41c157defa25006221e9212f10aac4f305225718e87f031881dd6b8e14962bd8",
+    "UTU_four.body": "35956f32cec3619572e83ec924c272b3b83e3f2ef31da79cdde2476ad6c2ca61",
+    "UUT_four.body": "13292f48dae1a08144dd1dca094ce3fe9acf14de6bdec3b80efa90d84e22af0f",
+    "TTT_four.body": "91cc26abbc31a6c67824318f24a341baf1b44af81011838358e59cc3ca462d91",
+    "UTU_five.body": "f5180f99442a1c0f10f813d3d25099259cdf9cc8389bca27fdddae8a9ad8606d",
+    "UUU_four.body": "0442bc50c552d58cd17afd10a6b8381210529d58a58dbb85cfd8dec49da4bc39",
+    "TTU_four.body": "5ff0968e7e625ce772633fb9efa7c98a6b7e604d05b78f1733bddab1efcd9902",
+    "UTT_five.body": "44ad076b5cb44a1b584d0ecbfe3c4eadb3b82488ab38b887f5d240fbbbaa65e1"
+  },
+  "corrupt_sha256": "50c44cf279815a2bb89d1bbf25ac79be0095a7639c21580d42e4ff9a61965920",
+  "exit_code": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/d/verify.py\", line 30, in <module>\n    assert got==body and sha(got)==p['body_sha256'],kind+'/'+shape\nAssertionError: UTU/four\n",
+  "accepted_outputs_unchanged": true
+}

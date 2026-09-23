@@ -1,0 +1,19 @@
+'R4333.CatalogueBaseCNF.k16_common_3_split_2_blue_2_2_0_unsat' depends on axioms: [propext]
+       40.47 real        60.08 user         1.73 sys
+          4647534592  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              335704  page reclaims
+                   3  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  59  voluntary context switches
+               73086  involuntary context switches
+        622605845485  instructions retired
+        240965499945  cycles elapsed
+          2241713320  peak memory footprint

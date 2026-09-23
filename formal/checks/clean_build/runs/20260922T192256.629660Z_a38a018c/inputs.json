@@ -1,0 +1,17 @@
+[
+  {
+    "module": "PricingIntegration.FixedPhysicalNeighborhood",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192230.980775Z_9ca68efd/output.olean",
+    "sha256": "a7a5b35cc2df72d4d21502c9d7cb9302e14db4a2b948d35063711a4c10784f3c"
+  },
+  {
+    "module": "PricingIntegration.ABDRootPalette",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191858.451192Z_10fb55e6/output.olean",
+    "sha256": "de16eb3848e763370a257edfb8d6628a129550a2efcb83e378a647d6aba692c1"
+  },
+  {
+    "module": "PricingABD.BPhysicalBounds",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192248.249935Z_bb3c9777/output.olean",
+    "sha256": "926b30ae86e9311641c19532d1d34460c35f48194e4defd34a0f5735ce376f6d"
+  }
+]

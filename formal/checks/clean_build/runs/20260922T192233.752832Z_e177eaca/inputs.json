@@ -1,0 +1,32 @@
+[
+  {
+    "module": "R4333Lean.SharedCriticalCompletion",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192223.722752Z_88371eb7/output.olean",
+    "sha256": "0cd6a45c1be634f723fd60b30495558fe40e3bad564c48b366d4d1f3e781002d"
+  },
+  {
+    "module": "R4333Lean.ColorRelabel",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/ColorRelabel.olean",
+    "sha256": "4e3d6782732ab775bc0f2be15f3fcfca1385347a50592e10d8b96cb6462470b3"
+  },
+  {
+    "module": "Mathlib.Combinatorics.SimpleGraph.DegreeSum",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Combinatorics/SimpleGraph/DegreeSum.olean",
+    "sha256": "0946f03afdfb9cc8115ab1e48a77d378af4d053403531391ba4678daeebf4b72"
+  },
+  {
+    "module": "Mathlib.Data.Finset.Sort",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Sort.olean",
+    "sha256": "222c0b1126e3e61359a8e76f6d9b628c8429f48aa3150738bb9e331b4e487f2e"
+  },
+  {
+    "module": "Mathlib.Data.Prod.Lex",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Prod/Lex.olean",
+    "sha256": "e7347aebcb29abe5ab09290187a175e1d2586996b81a39a037d002f24e2b1727"
+  },
+  {
+    "module": "Mathlib.Data.Fintype.Fin",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Fin.olean",
+    "sha256": "2446a54cd70761907d8279369470d0b130017b42c3584a93caffa880cc558eae"
+  }
+]

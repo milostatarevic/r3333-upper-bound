@@ -1,0 +1,20 @@
+'R4333.ProfileDDegreeFlooredCNF.trueInputCount_rowColorAtoms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDDegreeFlooredCNF.trueInputCount_rowOtherColorAtoms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeFlooredCNF.counterSpecs_wellFormed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDDegreeFlooredCNF.allCaps_of_degreeFlooredFourExtension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeFlooredCNF.degreeFlooredFourExtension_satisfies_fmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeFlooredCNF.noDegreeFlooredFourExtension_of_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeFlooredCNF.RepresentativeLRATRefutations.obstructions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeFlooredCNF.no_profileD_star_of_degreeFloored_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

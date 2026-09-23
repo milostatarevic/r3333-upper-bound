@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingABD.ABPhysicalBounds",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192251.001787Z_72c323c8/output.olean",
+    "sha256": "5c416b94f3a989c643cc1f806dc6184e8d04409c1d74225917eded20857aa214"
+  },
+  {
+    "module": "PricingIntegration.NativePrimary",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192347.983975Z_e2860620/output.olean",
+    "sha256": "da91184916439e20db2d41c565b376e391f0f1c1de9ea2a1c7d09e17baa336eb"
+  }
+]

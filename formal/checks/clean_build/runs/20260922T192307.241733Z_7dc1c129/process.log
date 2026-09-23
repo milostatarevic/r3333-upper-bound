@@ -1,0 +1,1 @@
+'PricingG.graphIso_srg' depends on axioms: [propext, Classical.choice, Quot.sound]

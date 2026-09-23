@@ -1,0 +1,3 @@
+'PricingG.SignDesign.row_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.SignDesign.every_sign_up_to_negation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.SignDesign.neighborhood_centroid' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,92 @@
+[
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS0F0G0",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211212.290402Z_9c3bbab5/output.olean",
+    "sha256": "e468f33db7d678ad56d50b25279f09b6f269fda981e1823902e8b81389acb565"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS0F0G1",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211225.580926Z_7239d42c/output.olean",
+    "sha256": "3b8a956555eca993b5b0f83aa86954034016cf673214224489400299125dc21d"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS0F0G2",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211227.023394Z_ccd12650/output.olean",
+    "sha256": "52ef49455da790845ea618eb9970cb46e6c2c31d0df896f19c2f88d49de7cff1"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS0F1G0",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211227.609425Z_b2eeda67/output.olean",
+    "sha256": "7dc542a7b90876c0b0e5b3f9c088b35121b35b5e7554527ea7873a573dabbe44"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS0F1G1",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211236.083780Z_70ab3af6/output.olean",
+    "sha256": "d6edd2da0ae12df6f2e1581afea2a9e3a632adf8e2bdeb923e10226f12c25c59"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS0F1G2",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211240.296637Z_1048e995/output.olean",
+    "sha256": "6ad6a6e7321071e7051855e832fde6b55094303ef620c77d27a4660e42358468"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS2F0G0",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211242.222338Z_09244b97/output.olean",
+    "sha256": "43aa72d5d75a6d34f04eac3e5577014a56be6ef4072f86394e21fedce7504bd1"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS2F0G1",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211243.822238Z_5398d4af/output.olean",
+    "sha256": "1093b06e0882a406ee26840823623b04261fd7cc5e6f3447bfc6ee401ad3cc91"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS2F0G2",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211245.159003Z_a5869ddd/output.olean",
+    "sha256": "7acd6cacb5ddab30a253fdbebacb4a8c6e8a0cc7a148c2373105693b372acd43"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS2F1G0",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211252.850692Z_29f9b045/output.olean",
+    "sha256": "ccdc3b3d8e12d110daa5ec3419ef34a54d5acb27fa16b47ee932d04d2558fc58"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS2F1G1",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211256.969273Z_2519309a/output.olean",
+    "sha256": "e092a2e91b49c5d0d5b4702bcdab5eff42993a393d6a8054c939f284e3e29e17"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS2F1G2",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211257.064496Z_3e8fdd73/output.olean",
+    "sha256": "cbb45f0f5eb45af037ca075b9c355d23706dde508342876d1cce2233b6ddd911"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS7F0G0",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211258.514177Z_db0e45f2/output.olean",
+    "sha256": "050f99ab9057a890a97865ee6e8bf87aeafdbfe44d6d0f3e7256bf42301fb81b"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS7F0G1",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211300.366694Z_6f6eb8b2/output.olean",
+    "sha256": "8d8a6949d7c57fa8fcd558b461cc252c5b86b05fe2bf56db3891ba663378d17e"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS7F0G2",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211310.277513Z_0d86ce62/output.olean",
+    "sha256": "c75df8cad2132cc4e87f8695b8655a88192c97baf710d72ed3434ff4949b69c5"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS7F1G0",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211314.824511Z_94a63fbc/output.olean",
+    "sha256": "cf9cf56c892da668da4ff22a2bbc577707c6056393590ca99fe70defef770243"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS7F1G1",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211315.355807Z_d802d0b7/output.olean",
+    "sha256": "072c9e030e2cd5ea818b7922d530f8aa867b6367b2c8f0f76320dab8d8c36480"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogLocalMapCompleteS7F1G2",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211315.393261Z_31d21c0d/output.olean",
+    "sha256": "21d6f2e38219cf6c5b0732be67a10fcae0e367235dae51945a3190b34fff9c9a"
+  }
+]

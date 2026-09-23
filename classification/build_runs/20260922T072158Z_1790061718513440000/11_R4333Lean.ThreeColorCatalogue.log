@@ -1,0 +1,22 @@
+'R4333.threeColor_degree_eq_five_at_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.threeColor_independent_card_le_five_at_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.WeakColorEquiv.noMono_iff' depends on axioms: [propext, Quot.sound]
+'R4333.everyThreeColoringExtends_of_catalogue' depends on axioms: [Quot.sound]
+        2.11 real         1.30 user         1.01 sys
+          2909519872  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              229593  page reclaims
+                  17  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                6604  involuntary context switches
+         21893126283  instructions retired
+          8721850474  cycles elapsed
+           499618888  peak memory footprint

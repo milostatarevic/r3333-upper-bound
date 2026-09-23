@@ -1,0 +1,12 @@
+'R4333.ProfileDUUUDegreeTenSupportOrbits61.u15SupportFamily_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportOrbits61.u16SupportFamily_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportOrbits61.exists_u15_strong_support_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportOrbits61.exists_u16_strong_support_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

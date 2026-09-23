@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingC.AutomorphismRigidity",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203623.596173Z_2ede240d/output.olean",
+    "sha256": "6bf8ad74a3c0f8c27bb914d6d5940378c47fcd055c31f38b11b30dcfee9efcd7"
+  },
+  {
+    "module": "PricingC.AdjacentMapBoundary",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203631.364233Z_32ad5908/output.olean",
+    "sha256": "48d7e97c8eaab2bd14d5155a12e593ea9ab1eb03c2284ba5b1da11bc65d51e3d"
+  }
+]

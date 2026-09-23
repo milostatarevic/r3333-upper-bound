@@ -1,0 +1,19 @@
+'R4333.joinC5_arrows' depends on axioms: [propext, Classical.choice, Quot.sound]
+        2.41 real         1.80 user         0.92 sys
+          2899722240  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              229429  page reclaims
+                 221  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                5663  involuntary context switches
+         25803408268  instructions retired
+         10377037049  cycles elapsed
+           511283264  peak memory footprint

@@ -1,0 +1,9 @@
+'R4333.ProfileDUUUDegreeTenSupportClassificationUUU0P2.firstSupport_templateIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportClassificationUUU0P2.secondSupport_templateIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportClassificationUUU0P2.exists_supportIndices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

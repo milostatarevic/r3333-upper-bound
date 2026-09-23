@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingG.SignOverlap",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192304.347999Z_fdc94ed0/output.olean",
+    "sha256": "199d069a376ab137f03f859c56b8aa0ec14e28a83b4a5677fa3aa0afc4fd1593"
+  },
+  {
+    "module": "Mathlib.LinearAlgebra.Matrix.Trace",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/Matrix/Trace.olean",
+    "sha256": "7fb98156993abb046c8833c82564f78c7a11c4f7b840d96b9e3dbed874ee60bc"
+  }
+]

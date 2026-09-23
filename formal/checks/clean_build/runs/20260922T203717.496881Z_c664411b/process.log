@@ -1,0 +1,9 @@
+'R4333.ProfileDFromBFreeCompletionCNF.fourExtension_satisfies_fmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFromBFreeCompletionCNF.noFourExtension_of_B_C_obstruction_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFromBFreeCompletionCNF.RepresentativeLRATRefutations.universalFourRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

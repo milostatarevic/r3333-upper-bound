@@ -1,0 +1,6 @@
+'R4333.SequentialAtMostCNF.sequentialAtMostFmla_length' depends on axioms: [propext, Quot.sound]
+'R4333.SequentialAtMostCNF.sequentialExtension_satisfies_counter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.SequentialAtMostCNF.inputsAtMost_of_satisfies_counter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.SequentialAtMostCNF.no_base_valuation_atMost_of_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]

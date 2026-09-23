@@ -1,0 +1,6 @@
+'R4333.UUTP15Leaves.leafPhysicalVertex_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Leaves.matrixUnitFmla_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Leaves.matrixLeafFmla_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Leaves.exact_satisfies_matrixUnitFmla' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Leaves.exact_satisfies_matrixLeafFmla' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Leaves.no_exactSeed_of_refutations' depends on axioms: [propext, Classical.choice, Quot.sound]

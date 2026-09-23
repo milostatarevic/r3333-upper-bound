@@ -1,0 +1,24 @@
+'R4333.ProfileDRowSupportBounds61.colorDegree_joinColoring_inl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDRowSupportBounds61.rootForbidden_nonzero_degree_ge_three_at_fourteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDRowSupportBounds61.row_zero_support_ge_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDRowSupportBounds61.row_nonzero_support_ge_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDRowSupportBounds61.row_nonzero_support_le_thirteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDRowSupportBounds61.DegreeFlooredFourExtension.rows_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDRowSupportBounds61.restrictDegreeFlooredFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDRowSupportBounds61.no_profileD_star_of_degreeFlooredFourRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDRowSupportBounds61.transportDegreeFlooredFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDRowSupportBounds61.no_profileD_star_of_swapRepresentativeDegreeFlooredObstructions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

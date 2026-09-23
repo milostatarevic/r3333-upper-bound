@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.K16ZeroIndependentClassification",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192212.321222Z_a1046507/output.olean",
+    "sha256": "c73ee8dd275df77f776f98953d2f8f68284694058b0f246967dba551af4c1445"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplatePaletteSymmetry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191825.699600Z_c6b9b5a6/output.olean",
+    "sha256": "a0fa6931680e1f13c7b01284a9b76a399c1cf5c621ba0639d41886c1451a845d"
+  }
+]

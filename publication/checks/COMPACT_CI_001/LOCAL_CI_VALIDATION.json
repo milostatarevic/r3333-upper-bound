@@ -1,0 +1,48 @@
+{
+  "status": "PASS_LOCAL_CI_EQUIVALENT",
+  "utc": "2026-09-22T22:10:29.707759+00:00",
+  "environment": "macOS arm64; local execution, not a hosted GitHub Actions run",
+  "Python_controls": {
+    "CI": 24,
+    "archive_and_C": 23,
+    "ABD": 10,
+    "total": 57,
+    "exit_code": 0
+  },
+  "Lean_build": "small-lean-audit.json",
+  "scope": "All manifested proof sources/data and accepted-manifest pin checked; five-module coloring-encoding target freshly compiled and axiom-audited. No full theorem rebuild or SAT search in this CI run.",
+  "controls": [
+    {
+      "path": "scripts/check_lean_sources.py",
+      "sha256": "b08be9916517e8c7b9ac300752d26f8b99c0e206ce646949fb28991e1f4398c1"
+    },
+    {
+      "path": "scripts/lean_ci.py",
+      "sha256": "320a5ec1a81c279fd511b1eea2a6a765c9dd523d9a7648f70620aa5462e7de67"
+    },
+    {
+      "path": "scripts/test_lean_audits.py",
+      "sha256": "9e79cb9b763e5661f7ea10b5837d8281e3ea59cf50fb0a31712304494984977c"
+    },
+    {
+      "path": "reproduce/test_verify.py",
+      "sha256": "4bb603606dca54d6102d1d469138ff4834d3af661fd552a3563a807e2b0ba26d"
+    },
+    {
+      "path": "reproduce/test_abd_inputs.py",
+      "sha256": "e331c410519004ab6d4e2237a9fc77468a10e59ebf107a4772f478736039602d"
+    },
+    {
+      "path": "Makefile",
+      "sha256": "ae09d7aab3e66c24dd20ded380e2ce8faa003cea102aeb8294f468e7e6434059"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "sha256": "29436f55debdeb7a6e0569780725b20ace2ffc76434498f03cc6760916378cae"
+    },
+    {
+      "path": "publication/checks/ACCEPTED_MATH_MANIFEST.sha256",
+      "sha256": "2c50be9a50e82c4f75a28b098e3b05b6f7cfa5bf95f81cdeac9013044ba15e9b"
+    }
+  ]
+}

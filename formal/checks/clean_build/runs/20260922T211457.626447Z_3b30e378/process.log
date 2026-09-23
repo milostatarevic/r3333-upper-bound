@@ -1,0 +1,21 @@
+'R4333.ProfileDUUUFiveSupportPositionSymmetry.exists_positioned_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFiveSupportPositionSymmetry.fiveSupport_yields_representative_satisfying' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFiveSupportPositionSymmetry.strong_automorphism_cannot_merge_k15_representatives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFiveSupportPositionSymmetry.blockSwapZero_preserves_k15OrbitClass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFiveSupportPositionSymmetry.size_preserving_block_permutation_fixes_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFiveSupportPositionSymmetry.size_preserving_block_permutation_eq_identity_or_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFiveSupportPositionSymmetry.distinct_representativeLocations_not_related' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

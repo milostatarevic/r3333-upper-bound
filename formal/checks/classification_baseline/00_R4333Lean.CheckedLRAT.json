@@ -1,0 +1,39 @@
+{
+  "module": "R4333Lean.CheckedLRAT",
+  "status": "PASS",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j4",
+    "-o",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CheckedLRAT.olean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/R4333Lean/CheckedLRAT.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 3.6647892079999997,
+  "user_CPU_seconds": 0.37,
+  "system_CPU_seconds": 0.71,
+  "peak_RSS_bytes_macos": 820707328,
+  "source_sha256": "0dc50a516ce88c897aa9c1b71baedb1f693b010cdd644886f83dd09fd677edc5",
+  "log_sha256": "7bec12133ffabac0c9141bde50a7debd891017adb18f56b6180bc9b001ae5869",
+  "olean": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CheckedLRAT.olean",
+  "olean_sha256": "df0ef8029cb4bc6ac71471e9cdf03eb7a52063f70571384bd4ccb06ace72b79f",
+  "olean_bytes": 218392,
+  "host_before": {
+    "memory_free_percent": 84,
+    "disk_free_bytes": 1997278404608,
+    "pressure_report": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 84%"
+  },
+  "host_after": {
+    "memory_free_percent": 84,
+    "disk_free_bytes": 1997279490048,
+    "pressure_report": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 84%"
+  },
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "mathlib_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "input_manifest_sha256": "1e6c353e19417892f91eadd33319b886ce7503c5f1d0414bf4d4345dab8442b3",
+  "controller_sha256": "b9f3eaf65986b23f5298750e0d858f96a87cef1bddec4fbbb60ac302c23046a0",
+  "CPU_limit": null,
+  "RSS_kill_limit": null,
+  "file_size_limit": null,
+  "new_solver_calls": 0
+}

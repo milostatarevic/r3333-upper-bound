@@ -1,0 +1,6 @@
+'PricingIntegration.FixedPhysicalNeighborhood.physical_k15_fixed_palette' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.FixedPhysicalNeighborhood.physical_k16_marked_fixed_palette' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,22 @@
+[
+  {
+    "module": "R4333Lean.ProfileDDegreeTenNeighborhoodCatalogueEntrance61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203731.519613Z_50a452d8/output.olean",
+    "sha256": "472fc436d063b58c12d78e5e44a0df4cceeb67cdc0f3055d1f6d6a2fc47a66fc"
+  },
+  {
+    "module": "R4333Lean.ProfileDDegreeTenNeighborhoodPartition61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203735.304812Z_dd064304/output.olean",
+    "sha256": "cb27e94668c10c63863bfe60d493093f0cd0544611dd722c00aeb284017f80de"
+  },
+  {
+    "module": "R4333Lean.K15DeficientCertificate",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/K15DeficientCertificate.olean",
+    "sha256": "209486c8896484b1ab727f8ee46feaf9ba6ed1559db966f4319d9ef24e3c9600"
+  },
+  {
+    "module": "R4333Lean.CriticalCatalogues",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CriticalCatalogues.olean",
+    "sha256": "fb3909abe0d4f0d93d5ecbe4c655a0f3f820908f7e68e6038dba296732984ecc"
+  }
+]

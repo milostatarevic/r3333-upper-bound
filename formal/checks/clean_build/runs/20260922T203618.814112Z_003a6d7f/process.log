@@ -1,0 +1,7 @@
+'R4333.ProfileDFourRowDegreeCap.tail_rootForbidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDFourRowDegreeCap.joinedColoring_rootForbidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDFourRowDegreeCap.totalColoring_rootForbidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDFourRowDegreeCap.totalColoring_ownRootColorDegree_le_fifteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourRowDegreeCap.colorDegree_le_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]

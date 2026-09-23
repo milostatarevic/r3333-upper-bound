@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingC.AutomorphismRigidity",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203623.596173Z_2ede240d/output.olean",
+    "sha256": "6bf8ad74a3c0f8c27bb914d6d5940378c47fcd055c31f38b11b30dcfee9efcd7"
+  },
+  {
+    "module": "PricingC.PhysicalY",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203749.398847Z_01cf5551/output.olean",
+    "sha256": "a273314d8e169a0a56ccbad511237dffe58650fd8d3f57d466a37cccd2eb8ad9"
+  }
+]

@@ -1,0 +1,21 @@
+'R4333.clebschModelFin16Code_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.clebschModelFin16Iso' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.clebschIsoK16Untwisted' depends on axioms: [propext, Classical.choice, Quot.sound]
+        4.95 real         5.59 user         1.20 sys
+          3165716480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              245799  page reclaims
+                 288  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 102  voluntary context switches
+               13208  involuntary context switches
+         54344890048  instructions retired
+         23157923778  cycles elapsed
+           742807152  peak memory footprint

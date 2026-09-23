@@ -1,0 +1,32 @@
+{
+  "archive": "archives/evidence-v1.tar.gz",
+  "archive_bytes": 375104364,
+  "archive_sha256": "2b85cac94df0317a532aa823cfea93ac83738093fc854805896943f90d468757",
+  "formal_certificate_claim": false,
+  "new_files_excluded_from_snapshot": "Only macOS Finder .DS_Store metadata; no manifest payload omitted.",
+  "original_evidence_deleted": false,
+  "schema": "RAMSEY61_LFS_ARCHIVE_1",
+  "snapshot_verification": {
+    "CPU_seconds": 99.80068600000001,
+    "custody": {
+      "effective_dual_native_owners": 456,
+      "formal_certificate_verified": false,
+      "native_logs": 1843,
+      "result_counts": {
+        "first_tail": 13,
+        "original_broad": 912,
+        "restricted": 914,
+        "second_tail": 4
+      },
+      "status": "PASS_STAGED_C_AND_FINAL_CUSTODY"
+    },
+    "manifest_index_sha256": "0371c357740e6cce262a055d3f998637f8f218f1d492864be2fcff78e46b222e",
+    "new_solver_calls": 0,
+    "original_source_reads": 0,
+    "status": "PASS_STAGING_BYTES_AND_CUSTODY",
+    "total_bytes": 2078952544,
+    "total_files": 455901
+  },
+  "status": "PASS_ARCHIVE_EXTRACTED_AND_VERIFIED",
+  "verified_utc": "2026-09-21T02:42:54.469139+00:00"
+}

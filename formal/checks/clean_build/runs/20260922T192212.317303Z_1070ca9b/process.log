@@ -1,0 +1,2 @@
+'R4333.degreeTuple_mem_degreeTargets61' depends on axioms: [propext, Quot.sound]
+'R4333.fourColorDegreeTuple_mem_degreeTargets61' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,81 @@
+{
+  "branched_labels": 0,
+  "branches_checked": 0,
+  "by_root_kind": {
+    "T/T": {
+      "branched_labels": 0,
+      "branches_total": 0,
+      "labels_total": 4320,
+      "local_cores": 0,
+      "rejected_branches": 0,
+      "whole_label_rejected": 4320
+    },
+    "T/U": {
+      "branched_labels": 0,
+      "branches_total": 0,
+      "labels_total": 864,
+      "local_cores": 0,
+      "rejected_branches": 0,
+      "whole_label_rejected": 864
+    },
+    "U/T": {
+      "branched_labels": 0,
+      "branches_total": 0,
+      "labels_total": 4320,
+      "local_cores": 0,
+      "rejected_branches": 0,
+      "whole_label_rejected": 4320
+    },
+    "U/U": {
+      "branched_labels": 0,
+      "branches_total": 0,
+      "labels_total": 864,
+      "local_cores": 0,
+      "rejected_branches": 0,
+      "whole_label_rejected": 864
+    }
+  },
+  "by_witness": {
+    "EMPTY_SCOPE": 10044,
+    "FORCED_DIAGONAL_CONFLICT": 324
+  },
+  "census_pin": {
+    "bytes": 920722,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/census.json",
+    "sha256": "1f0fad0daf300ba33d3942f8ef7fee4fb6eb9504b1f3bddcca23f004d56a298e"
+  },
+  "checked_records_pin": {
+    "bytes": 2146176,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/checker/CENSUS_RESULTS.jsonl",
+    "sha256": "53b3f63521d87b4d2bc4f5af6def6503683c0c8e49e7430ee77b4af7d427c93f"
+  },
+  "cpu_seconds": 1.3896680000000001,
+  "labels_checked": 10368,
+  "local_cores": 0,
+  "producer_summary_pin": {
+    "bytes": 1488,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/producer/SUMMARY.json",
+    "sha256": "4cb471489f76138bffd6e16cba33b03359879e5d3c66e81e55fb823166f2e984"
+  },
+  "reference_pin": {
+    "bytes": 117800,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/parent_local_reference.json",
+    "sha256": "2a7a1bf3f4128caaffefc0c8dbde13177e572e4f9b21ec8135f9ecd87b66f8b2"
+  },
+  "rejected_branches": 0,
+  "results_pin": {
+    "bytes": 1149252,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/producer/results.jsonl",
+    "sha256": "9d472a88e328ab05ffc7567b8f06ab6d6b338c23decefb5bd982a769f27c0c3d"
+  },
+  "schema": "C61_G_CHECKER_CENSUS_1",
+  "scope": "Complete remaining-G necessary K33 census. LOCAL_CORE is not K61 SAT; failed-G branches remain open.",
+  "source_pin": {
+    "bytes": 41424,
+    "path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/tools/checker.py",
+    "sha256": "1ebf555cf5f0bb268b5412735747c361c6a43e2e36173a2d6f073b4f41347192"
+  },
+  "status": "PASS",
+  "wall_seconds": 1.4372415410000001,
+  "whole_label_rejected": 10368
+}

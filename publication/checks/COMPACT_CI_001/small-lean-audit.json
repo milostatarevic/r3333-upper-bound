@@ -1,0 +1,30 @@
+{
+  "build_run": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.build/runs/20260922T220645.854505Z_665d55bc",
+  "classification_certificates_replayed": false,
+  "complete_theorem_rebuilt": false,
+  "manifest_sha256": "545c12c5f23b0e0e4b99079e1db2183c7f9937f17a0d8fe38a43735cfbc4775f",
+  "modules": [
+    "PricingIntegration.NativeColoringClauses",
+    "PricingIntegration.NativePrimaryCore",
+    "Ramsey61.CEncodingCore",
+    "Ramsey61.DenseCounter",
+    "Ramsey61.Foundations"
+  ],
+  "native_input_bindings_checked": false,
+  "native_unsat_verified": false,
+  "scope": "Fresh five-module coloring-encoding build and its two theorem axiom reports only.",
+  "status": "PASS_SMALL_LEAN_ENCODING_BUILD_AND_AXIOM_AUDIT",
+  "target": "PricingIntegration.NativeColoringClauses",
+  "theorem_axioms": {
+    "PricingIntegration.NativeColoringClauses.physicalValuation_physical": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PricingIntegration.NativeColoringClauses.physicalValuation_triangles": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

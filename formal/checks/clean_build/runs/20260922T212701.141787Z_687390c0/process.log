@@ -1,0 +1,6 @@
+'R4333.ProfileDUUUDegreeTenExactEntranceUUU2P15.exists_exactDegreeTenMatrixBranch_selected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenExactEntranceUUU2P15.exists_representativeExactBranch_of_canonical_degreeTen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

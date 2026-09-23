@@ -1,0 +1,6 @@
+'PricingC.AdjacentAutomorphisms.adjacent_automorphism_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingC.AdjacentAutomorphisms.adjacent_equivalence_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ROOT_SET_AMENDMENT_REVIEW",
+  "created_utc": "2026-09-22T21:00:39.181960+00:00",
+  "collector_sha256": "b6d5932827693980df8b3ace84bbd34f64272b2a95b33db212346291dce29210",
+  "prior_collector_sha256": "362d6a84540ba64b01fc70d38477965d04b0ad56e82b64a6044ebabcc40f635b",
+  "prior_review": "CLEAN_BUILD_COLLECTOR_REVIEW_002.json",
+  "exact_delta": "Replace root-set equality with final package roots subset of coherent roots and every coherent root contained in the package module map. No other source change.",
+  "reason": "Earlier root endpoints are retained during append-only preparation. They do not enlarge the mathematical source closure because exact coherent/package module-set equality is still enforced. Every final advertised root remains included and compiled.",
+  "remaining_findings": [],
+  "no_collector_execution": true,
+  "no_compiler_solver_or_certificate_work": true
+}

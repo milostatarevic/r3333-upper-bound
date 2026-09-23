@@ -1,0 +1,14 @@
+{
+  "archive": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/archives/evidence-v1.tar.gz",
+  "archive_pin": {
+    "bytes": 375104364,
+    "sha256": "2b85cac94df0317a532aa823cfea93ac83738093fc854805896943f90d468757"
+  },
+  "driver_CPU_seconds": 0.178197,
+  "formal_certificate_verified": false,
+  "new_solver_calls": 0,
+  "original_source_reads": 0,
+  "schema": "RAMSEY61_PORTABLE_REPRODUCTION_1",
+  "scope": "Authenticated release archive bytes; payload/custody not checked by this command",
+  "status": "PASS_ARCHIVE_SHA256_ONLY"
+}

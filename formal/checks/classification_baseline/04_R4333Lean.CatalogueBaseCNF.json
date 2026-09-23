@@ -1,0 +1,39 @@
+{
+  "module": "R4333Lean.CatalogueBaseCNF",
+  "status": "PASS",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j4",
+    "-o",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CatalogueBaseCNF.olean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/R4333Lean/CatalogueBaseCNF.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.832507291999999,
+  "user_CPU_seconds": 0.9,
+  "system_CPU_seconds": 0.92,
+  "peak_RSS_bytes_macos": 2817916928,
+  "source_sha256": "18d88eb96423cb5cb65c57f3213559757cb4e9afeb977d5dcb179d9825844e93",
+  "log_sha256": "1ea5f6b8e28c4fd37a6e1a4de4970671c1efa97bfdffa532bb56fcb59ea5c718",
+  "olean": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CatalogueBaseCNF.olean",
+  "olean_sha256": "12ffce3c58ab3c0ba74f85c06fb238f756d7a8e9ba13ff1c083e87859c701e0c",
+  "olean_bytes": 127312,
+  "host_before": {
+    "memory_free_percent": 84,
+    "disk_free_bytes": 1997236621312,
+    "pressure_report": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 84%"
+  },
+  "host_after": {
+    "memory_free_percent": 84,
+    "disk_free_bytes": 1997234692096,
+    "pressure_report": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 84%"
+  },
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "mathlib_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "input_manifest_sha256": "1e6c353e19417892f91eadd33319b886ce7503c5f1d0414bf4d4345dab8442b3",
+  "controller_sha256": "b9f3eaf65986b23f5298750e0d858f96a87cef1bddec4fbbb60ac302c23046a0",
+  "CPU_limit": null,
+  "RSS_kill_limit": null,
+  "file_size_limit": null,
+  "new_solver_calls": 0
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "module": "Mathlib.Data.Bool.Basic",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Bool/Basic.olean",
+    "sha256": "dee634402ab8fb5d9a209ae7df9f2a876d560ede6f8704cde80b958d51171f06"
+  },
+  {
+    "module": "Mathlib.Tactic",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean",
+    "sha256": "0534ef12e7aaf8ffbb6e520a91f922da4469d0dca2b54c87b4458e1faa28a6a2"
+  },
+  {
+    "module": "Mathlib.Combinatorics.SimpleGraph.Clique",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Combinatorics/SimpleGraph/Clique.olean",
+    "sha256": "99ddb4defe02de734994295c1d726c01433ded2b2344f8019bcdd19305aa3ed4"
+  },
+  {
+    "module": "Mathlib.Combinatorics.SimpleGraph.Finite",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Combinatorics/SimpleGraph/Finite.olean",
+    "sha256": "faedeac47c6eb62935eef46c539ac5070eb102cceebec6145f67af05ad541d50"
+  }
+]

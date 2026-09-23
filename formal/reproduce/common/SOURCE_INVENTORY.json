@@ -1,0 +1,122 @@
+{
+  "status": "PORTABLE_TOOL_SOURCE_INVENTORY",
+  "files": [
+    {
+      "path": "Emit.lean",
+      "bytes": 3547,
+      "sha256": "3c1863163b777d7ab5622c52c2d5a85cea4fd1c376d99e4b5a05de72192ef92a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3568,
+      "sha256": "fbdbe32621f946ae27da785b0b18c72b459fd69becf7a3be56dc164afdd8ea3d"
+    },
+    {
+      "path": "checks/CONTROL_RESULTS.json",
+      "bytes": 5307,
+      "sha256": "08a1689def707740a9d21b9e1923a6b35a91ae1957b841189c599ee652e78fd1"
+    },
+    {
+      "path": "checks/CORRUPTION_DESCRIPTION.json",
+      "bytes": 285,
+      "sha256": "892a33ee01d0ee2c8c1acd8a7f128a79ffe3aa2d3b91254736fa358f6b6302fd"
+    },
+    {
+      "path": "checks/VALID_BINDING.json",
+      "bytes": 33409,
+      "sha256": "8202c2d4ac771215c7cc13557f857ed02a36c2bf94387d2c9dfb1c83b5898ab2"
+    },
+    {
+      "path": "checks/corrupt_rejection.json",
+      "bytes": 2198,
+      "sha256": "793e0216974ef794a42edfccd2817d268f408a16b0eed601a7c3939403d07208"
+    },
+    {
+      "path": "checks/corrupt_rejection.log",
+      "bytes": 875,
+      "sha256": "4f75136d077f28149f21f9ba3dde656912477b16dfdb224913491599058d5ad2"
+    },
+    {
+      "path": "checks/emission.json",
+      "bytes": 1457,
+      "sha256": "0da765d1d39cfc98b980963fdcd02944b3a519b3b79730ac316190afaf1efff9"
+    },
+    {
+      "path": "checks/emission.log",
+      "bytes": 445,
+      "sha256": "e9021de1fb1d345c7f222d5bec8a1f8aeace92e4c21750af12ad309c5e356a93"
+    },
+    {
+      "path": "checks/python_O_rejection.json",
+      "bytes": 1248,
+      "sha256": "fd22af301d2dc8105bd8cce9a0a552c520cf63dcd8ec7d79f1b8a3ab178445ca"
+    },
+    {
+      "path": "checks/python_O_rejection.log",
+      "bytes": 55,
+      "sha256": "0fce4df581aca67b361c77a616ff9850b9724122f9bd398b219d1c7188014c8a"
+    },
+    {
+      "path": "checks/valid.json",
+      "bytes": 2161,
+      "sha256": "94e6acbc110f2075d1a8fc124ca272de5f303d8626899a413e51e88c42173152"
+    },
+    {
+      "path": "checks/valid.log",
+      "bytes": 1546,
+      "sha256": "f362b5b25e3e53c61fbc833234cb86522f4f6f57b88f52d9335f83146bad9d0b"
+    },
+    {
+      "path": "lean/PricingABD/CommonSuffixCache.lean",
+      "bytes": 1140,
+      "sha256": "f5c97a531d56e2ef74998e486cd5613c0b2092437f7adee87776750100b1148c"
+    },
+    {
+      "path": "original_receipts/ALL20_EXACT_PREFIX_BINDING_001.json",
+      "bytes": 19480,
+      "sha256": "02487a08eab4604b6abb1de0764067ac7ff4232c53a2250bc7d654f31437bd46"
+    },
+    {
+      "path": "original_receipts/COMMON_NATIVE_ALL_INPUT_BINDING_001.json",
+      "bytes": 32145,
+      "sha256": "b942b0a94832ddbf127b8ca9c648b687acbe839e424c0be0ddebd845b9c55c5c"
+    },
+    {
+      "path": "original_receipts/D_NATIVE_PREFIX_ALL_BINDING_001.json",
+      "bytes": 19105,
+      "sha256": "c4285fc3a639f135118597026dd15902e819acdcd1885e3bd6e6492881851782"
+    },
+    {
+      "path": "original_receipts/PAIR_ADMISSION_GENERATED_001.json",
+      "bytes": 300736,
+      "sha256": "952c622d0fc91b37f6827388e2978e4b80629fec344851508974284467667012"
+    },
+    {
+      "path": "path_index.json",
+      "bytes": 34084,
+      "sha256": "6e0cede41404aa2d9e1945da9336ca4347bac7d713942ebcce6bd5031b872b80"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 11660,
+      "sha256": "def9b23e9c6d7e3fcea7113c47fc16a10be7d0394095fec5fc60da30d8e05b57"
+    }
+  ],
+  "source_bytes": 474451,
+  "additional_pure_lean_modules": [
+    {
+      "module": "PricingABD.CommonSuffixCache",
+      "path": "lean/PricingABD/CommonSuffixCache.lean",
+      "sha256": "f5c97a531d56e2ef74998e486cd5613c0b2092437f7adee87776750100b1148c",
+      "imports": [
+        "CompletionC.NativeFamilyJoin"
+      ]
+    }
+  ],
+  "runtime_lean_entry": "Emit.lean",
+  "compile_time_IO": false,
+  "external_lean_dependency": "Pinned full native mathematical source closure and its Lean4.32.1/Mathlib lock",
+  "python_dependencies": "Python3 standard library; assertions required; -O rejected",
+  "payload_files_in_bundle": 0,
+  "no_build_products": true
+}

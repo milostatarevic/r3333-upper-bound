@@ -1,0 +1,12 @@
+[
+  {
+    "module": "CompletionC.NativeMatrices",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203606.153191Z_bdcfa348/output.olean",
+    "sha256": "d6c7e839cb12643bce7d6ffa415498433944bf00686f256c345586afc274b0f5"
+  },
+  {
+    "module": "PricingC.ThreeSupportUnbalanced",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203436.744209Z_aba91377/output.olean",
+    "sha256": "1f1218f7c053709a5641aa1482a9e902820ad55442565a7cd5ce0a66fb732dad"
+  }
+]

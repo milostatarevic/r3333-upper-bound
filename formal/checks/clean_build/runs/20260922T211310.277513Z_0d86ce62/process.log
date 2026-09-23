@@ -1,0 +1,3 @@
+'R4333.ProfileDUUUDegreeTenCatalogLocalMaps61.compatibleMap_complete_support7_false_group2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,3 @@
+'PricingIntegration.PhysicalTypeTransport.physical_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.PhysicalTypeTransport.k16_repalette' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.PhysicalTypeTransport.k16_remark' depends on axioms: [propext, Classical.choice, Quot.sound]

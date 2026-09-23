@@ -1,0 +1,17 @@
+[
+  {
+    "module": "PricingABD.TemplateNormalization",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192225.996826Z_0aa78420/output.olean",
+    "sha256": "093897f1084aa0d4babf85e8647520467011804dccec93f03a78968ed50fd2be"
+  },
+  {
+    "module": "PricingABD.P15MatrixTransport",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192340.453047Z_cf529027/output.olean",
+    "sha256": "69e9a425f5bc7e8404aedb818230605d26993712055b8ac85c31adc2204e9453"
+  },
+  {
+    "module": "Mathlib.Data.Fintype.Perm",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Perm.olean",
+    "sha256": "a01e2b960834decaba0c6adfed85423b13b2815d965879e19a94ee66fb261b22"
+  }
+]

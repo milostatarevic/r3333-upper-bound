@@ -1,0 +1,17 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingIntegration/LocalProjection.lean:10:44: warning: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  simp only [referenceColor, hne, if_false,̵ ̵t̵r̵u̵e̵_̵a̵n̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingIntegration/LocalProjection.lean:11:38: warning: This simp argument is unused:
+  hx
+
+Hint: Omit it from the simp argument list.
+  simp [hx̵,̵h̵ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingIntegration.LocalProjection.physical_scope_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

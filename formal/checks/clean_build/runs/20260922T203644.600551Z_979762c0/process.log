@@ -1,0 +1,5 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/ZeroPairGeometry.lean:40:36: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'PricingG.SignDesign.energy_six_two_zeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.SignDesign.pair_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]

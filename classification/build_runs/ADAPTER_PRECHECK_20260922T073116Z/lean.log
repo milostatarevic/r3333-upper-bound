@@ -1,0 +1,52 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/ClassificationAdapter.lean:73:8: error: typeclass instance problem is stuck
+  Subsingleton ?m.198
+
+Note: Lean will not try to resolve this typeclass instance problem because the type argument to `Subsingleton` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/ClassificationAdapter.lean:97:25: error: unsolved goals
+c : Host
+hc : NoMonochromaticTriangle c
+root : Fin 61
+q : FourColor
+n : ℕ
+template : R4333.EdgeColoring (Fin n) (Fin 3)
+e : R4333.WeakColorEquiv (R4333.neighborhoodThreeColoring (toLegacy c) hc q root) template
+v : Fin 61
+hv : v ∈ colorNeighborhood c q root
+x : R4333.NeighborhoodVertex (toLegacy c) q root := ⟨v, hv⟩
+⊢ ↑x = v
+'Ramsey61.ClassificationAdapter.k16_catalogued' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.k15_catalogued' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.k15_extends_to_k16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.k16_colorGraph_srg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Ramsey61.ClassificationAdapter.physical_neighborhood_k15' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Ramsey61.ClassificationAdapter.physical_neighborhood_k16' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Ramsey61.ClassificationAdapter.physical_high_neighborhood' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+        2.19 real         1.17 user         0.99 sys
+          2863661056  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              227390  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 127  voluntary context switches
+                2057  involuntary context switches
+         18324156546  instructions retired
+          6809118745  cycles elapsed
+           476616736  peak memory footprint

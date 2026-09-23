@@ -1,0 +1,2 @@
+'PricingIntegration.NativeClauseBounds.physicalClauses_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.NativeClauseBounds.triangleClauses_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,252 @@
+{
+  "schema": "RAMSEY61_MARKDOWN_MATH_CHECK_2",
+  "checked_at_utc": "2026-09-22T05:52:28.154639+00:00",
+  "corrects_previous_check": "MATH_RENDER_002.json",
+  "prior_check_limitation": "The earlier check covered syntax, GitHub Markdown preprocessing and two selected local images. It did not detect the numbered-equation layout failures and unsupported operatorname command later shown in user screenshots. That receipt remains preserved as historical evidence.",
+  "formatting_changes": [
+    "Removed every TeX tag command and placed equation labels in ordinary Markdown outside mathematics.",
+    "Replaced operatorname{Im} with mathrm{Im}.",
+    "Used fenced math blocks and protected inline math in both documents; aligned row endings include explicit spacing to prevent Markdown escape changes."
+  ],
+  "github_markdown_api": "Authenticated POST /markdown with mode=gfm and the repository context; compares every emitted expression with the source.",
+  "mathjax_version": "3.2.2",
+  "local_renderer_input": "Exact expressions returned by the GitHub Markdown API.",
+  "reviewed_macro_allowlist": [
+    "Gamma",
+    "Longrightarrow",
+    "begin",
+    "bigl",
+    "bigr",
+    "binom",
+    "cap",
+    "cdot",
+    "chi",
+    "circ",
+    "cup",
+    "delta",
+    "dot",
+    "end",
+    "geq",
+    "gt",
+    "in",
+    "land",
+    "langle",
+    "ldots",
+    "leftrightarrow",
+    "leq",
+    "lor",
+    "lvert",
+    "mapsto",
+    "mathbb",
+    "mathbf",
+    "mathbin",
+    "mathrm",
+    "ne",
+    "pi",
+    "qquad",
+    "quad",
+    "rangle",
+    "rvert",
+    "subseteq",
+    "sum",
+    "text"
+  ],
+  "macro_allowlist_scope": "Conservative task-specific syntax audit, not a specification of every GitHub frontend implementation.",
+  "live_authenticated_github_page_checked": false,
+  "live_page_limitation": "The browser was logged out of the private repository; no live GitHub frontend layout verification is claimed.",
+  "documents": [
+    {
+      "file": "proof.md",
+      "sha256": "7ff26ea5310705a8ebcc2bb83e41cb82e33277c02860f7c1ac0769ffad319f54",
+      "display_expressions": 27,
+      "inline_expressions": 102,
+      "github_math_element_count": 129,
+      "github_roundtrip_all_expressions_preserved_after_whitespace_normalization": true,
+      "github_rendered_html_sha256": "22ed352aef90884e84be2fdd336bf6e0400ad3c80721fb0ce5c0013ab8c6ee54",
+      "mathjax_parse_errors": [],
+      "mathjax_expressions_wider_than_840px": [],
+      "numbered_equations_checked": [
+        {
+          "label": "1",
+          "index": 20,
+          "width": 180.265625,
+          "height": 42.390625,
+          "errors": []
+        },
+        {
+          "label": "2",
+          "index": 26,
+          "width": 347.578125,
+          "height": 20.109375,
+          "errors": []
+        },
+        {
+          "label": "3",
+          "index": 40,
+          "width": 302.015625,
+          "height": 15.375,
+          "errors": []
+        },
+        {
+          "label": "4",
+          "index": 46,
+          "width": 381.328125,
+          "height": 46.765625,
+          "errors": []
+        },
+        {
+          "label": "5",
+          "index": 53,
+          "width": 88.921875,
+          "height": 21,
+          "errors": []
+        },
+        {
+          "label": "6",
+          "index": 73,
+          "width": 381.8125,
+          "height": 20.109375,
+          "errors": []
+        },
+        {
+          "label": "7",
+          "index": 83,
+          "width": 151.984375,
+          "height": 15.234375,
+          "errors": []
+        },
+        {
+          "label": "8",
+          "index": 86,
+          "width": 141,
+          "height": 20.109375,
+          "errors": []
+        },
+        {
+          "label": "9",
+          "index": 96,
+          "width": 195.328125,
+          "height": 15.4375,
+          "errors": []
+        },
+        {
+          "label": "10",
+          "index": 99,
+          "width": 162.03125,
+          "height": 15.234375,
+          "errors": []
+        }
+      ],
+      "numbered_equations_visually_reviewed": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "observed_visual_result": "All ten numbered equations form normal horizontal displays; no stacked-glyph layout."
+    },
+    {
+      "file": "publication/MATHEMATICS.md",
+      "sha256": "d1a696560d49f873590cd43b57a8338ccc4322e6ddcfdb73aa09b0db967822c9",
+      "display_expressions": 26,
+      "inline_expressions": 96,
+      "github_math_element_count": 122,
+      "github_roundtrip_all_expressions_preserved_after_whitespace_normalization": true,
+      "github_rendered_html_sha256": "6030ad211bbefd573ae33c93a60ee8904a21c8e4862a0e2ad094197711741e3c",
+      "mathjax_parse_errors": [],
+      "mathjax_expressions_wider_than_840px": [],
+      "numbered_equations_checked": [
+        {
+          "label": "1",
+          "index": 14,
+          "width": 178.75,
+          "height": 42.03125,
+          "errors": []
+        },
+        {
+          "label": "2",
+          "index": 19,
+          "width": 344.65625,
+          "height": 19.9375,
+          "errors": []
+        },
+        {
+          "label": "3",
+          "index": 33,
+          "width": 299.46875,
+          "height": 15.25,
+          "errors": []
+        },
+        {
+          "label": "4",
+          "index": 39,
+          "width": 378.125,
+          "height": 46.375,
+          "errors": []
+        },
+        {
+          "label": "5",
+          "index": 46,
+          "width": 88.171875,
+          "height": 20.828125,
+          "errors": []
+        },
+        {
+          "label": "6",
+          "index": 66,
+          "width": 378.609375,
+          "height": 19.9375,
+          "errors": []
+        },
+        {
+          "label": "7",
+          "index": 76,
+          "width": 150.703125,
+          "height": 15.109375,
+          "errors": []
+        },
+        {
+          "label": "8",
+          "index": 79,
+          "width": 139.828125,
+          "height": 19.9375,
+          "errors": []
+        },
+        {
+          "label": "9",
+          "index": 89,
+          "width": 193.6875,
+          "height": 15.3125,
+          "errors": []
+        },
+        {
+          "label": "10",
+          "index": 92,
+          "width": 160.671875,
+          "height": 15.109375,
+          "errors": []
+        }
+      ],
+      "numbered_equations_visually_reviewed": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "observed_visual_result": "All ten numbered equations form normal horizontal displays; no stacked-glyph layout."
+    }
+  ],
+  "scope": "Formatting and render checks only; not verification of the mathematical argument."
+}

@@ -1,0 +1,10 @@
+'R4333.ProfileDToBFreeCompletionTransfer.freeCompletesSecondK15_iff_avoids' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDToBFreeCompletionTransfer.transferSecondWith' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDToBFreeCompletionTransfer.every_free_row_hits_secondK15_of_B_obstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDToBFreeCompletionTransfer.every_free_row_hits_firstK15_of_B_obstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

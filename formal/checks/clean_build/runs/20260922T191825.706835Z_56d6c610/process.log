@@ -1,0 +1,4 @@
+'R4333.ClauseCore.satisfies_select' depends on axioms: [propext]
+'R4333.ClauseCore.satisfies_selectGaps' depends on axioms: [propext]
+'R4333.ClauseCore.satisfies_append' depends on axioms: [propext]
+'R4333.ClauseCore.no_full_model_of_core_refutation' depends on axioms: [propext]

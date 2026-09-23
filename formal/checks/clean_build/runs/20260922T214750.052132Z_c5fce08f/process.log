@@ -1,0 +1,1 @@
+'PricingG.D9StrongFast.units_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

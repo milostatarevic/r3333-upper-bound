@@ -1,0 +1,9 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/SignedDichotomy.lean:74:15: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  simp only [̵i̵f̵_̵p̵o̵s̵ ̵r̵f̵l̵]̵ ̵at he
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingG.SignDesign.evaluations_even_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.SignDesign.star_rows_at_least_three_fours' depends on axioms: [propext, Classical.choice, Quot.sound]

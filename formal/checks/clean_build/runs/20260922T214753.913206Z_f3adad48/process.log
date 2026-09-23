@@ -1,0 +1,8 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/P15FastUnits.lean:93:54: warning: This simp argument is unused:
+  ProfileDUUUFourSupportP15MatrixOnlyLeaves61.matrixUnitClause
+
+Hint: Omit it from the simp argument list.
+  simp only [̵u̵n̵i̵t̵s̵,̵s̵e̵e̵d̵_̵e̵q̵,̵p̵h̵y̵s̵i̵c̵a̵l̵_̵e̵q̵,̵m̵a̵t̵r̵i̵x̵U̵n̵i̵t̵F̵m̵l̵a̵,̵P̵r̵o̵f̵i̵l̵e̵D̵U̵U̵U̵F̵o̵u̵r̵S̵u̵p̵p̵o̵r̵t̵P̵1̵5̵M̵a̵t̵r̵i̵x̵O̵n̵l̵y̵L̵e̵a̵v̵e̵s̵6̵1̵.̵m̵a̵t̵r̵i̵x̵U̵n̵i̵t̵C̵l̵a̵u̵s̵e̵]̵[̲u̲n̲i̲t̲s̲,̲ ̲s̲e̲e̲d̲_̲e̲q̲,̲ ̲p̲h̲y̲s̲i̲c̲a̲l̲_̲e̲q̲,̲ ̲m̲a̲t̲r̲i̲x̲U̲n̲i̲t̲F̲m̲l̲a̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingG.P15FastUnits.units_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

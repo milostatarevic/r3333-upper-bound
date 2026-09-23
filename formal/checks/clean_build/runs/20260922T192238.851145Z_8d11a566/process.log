@@ -1,0 +1,9 @@
+'R4333.SingleRootStarWitness61.criticalTemplateColoring_finEquiv' depends on axioms: [propext, Quot.sound]
+'R4333.SingleRootStarWitness61.canonicalCriticalBlockEquiv_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.SingleRootStarWitness61.hostRelabelEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.SingleRootStarWitness61.canonicalStarWitnessOfReduction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.SingleRootStarWitness61.singleRootStarCover61' depends on axioms: [propext, Classical.choice, Quot.sound]

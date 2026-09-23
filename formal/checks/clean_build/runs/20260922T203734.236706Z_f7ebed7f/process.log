@@ -1,0 +1,13 @@
+'R4333.ProfileDCompactFreeCompletionBlockZeroCNF.exists_zero_in_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactFreeCompletionBlockZeroCNF.compactCounterSpecs_wellFormed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactFreeCompletionBlockZeroCNF.degreeFlooredFourExtension_satisfies_fmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDCompactFreeCompletionBlockZeroCNF.fmla_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDCompactFreeCompletionBlockZeroCNF.no_profileD_star_of_B_C_obstruction_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

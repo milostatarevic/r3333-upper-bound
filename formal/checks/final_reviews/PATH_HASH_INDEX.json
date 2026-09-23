@@ -1,0 +1,34 @@
+{
+  "records": [
+    {
+      "original": "g/PACKAGE_001_FINAL_SCOPE_AUDIT_001.json",
+      "path": "checks/final_reviews/PACKAGE_001_FINAL_SCOPE_AUDIT_001.json",
+      "sha256": "c33b8c60e7cc5d7af52f7cef540ea935dc3fd89dc3e94c64780f8b103af67dec",
+      "bytes": 4697
+    },
+    {
+      "original": "g/PACKAGE_001_FINAL_SCOPE_AUDIT_001.md",
+      "path": "checks/final_reviews/PACKAGE_001_FINAL_SCOPE_AUDIT_001.md",
+      "sha256": "de307b5b7475876874b9cf9b1288b7ac0c14405ef0957afa283ad449264512b3",
+      "bytes": 1837
+    },
+    {
+      "original": "c/PACKAGE_READER_DOCUMENTATION_REVIEW_002.json",
+      "path": "checks/final_reviews/PACKAGE_READER_DOCUMENTATION_REVIEW_002.json",
+      "sha256": "a4342d39828f52f39b8e1d81e27cce09e6c8e97d9b8e47dcf361c35fb8d491aa",
+      "bytes": 1569
+    },
+    {
+      "original": "c/CLEAN_BUILD_COLLECTOR_REVIEW_003.json",
+      "path": "checks/final_reviews/CLEAN_BUILD_COLLECTOR_REVIEW_003.json",
+      "sha256": "c3a59f5e47ccd18c5e5cf1155a526fd60c63549e21b11c27bc452c9851408272",
+      "bytes": 904
+    },
+    {
+      "original": "c/SOURCE_PACKAGE_FREEZER_REVIEW_002.json",
+      "path": "checks/final_reviews/SOURCE_PACKAGE_FREEZER_REVIEW_002.json",
+      "sha256": "2e648a2ae68e4fbe3e27f0818fc1ccb5c1eca44ba5b47f48f18ff21d22169609",
+      "bytes": 1516
+    }
+  ]
+}

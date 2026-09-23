@@ -1,0 +1,35 @@
+{
+  "schema": "RAMSEY61_MARKDOWN_MATH_CARRYFORWARD_1",
+  "checked_at_utc": "2026-09-22T06:53:06.820762+00:00",
+  "prior_render_receipt": "MATH_RENDER_003.json",
+  "prior_render_receipt_sha256": "455b50d7c55961a92b23476587d2c6b1a176376eb2ac20400ba0102ba9efd63c",
+  "change": "Current-status prose now records three remaining mathematical bridges and the completed synchronized C/E-to-uniform graph proof. No mathematical expression or equation label changed.",
+  "documents": [
+    {
+      "file": "proof.md",
+      "source_sha256": "29e6a2dd5998d2921307114838828c302f406b452b4d181cb0471abeac435de3",
+      "prior_source_sha256": "7ff26ea5310705a8ebcc2bb83e41cb82e33277c02860f7c1ac0769ffad319f54",
+      "display_expressions": 27,
+      "inline_expressions": 102,
+      "all_mathematical_expressions_unchanged_in_exact_order_and_content": true,
+      "equation_labels_unchanged": true,
+      "expression_sequence_json_sha256": "7781d69d93673cac01bcb4526e4a0f39ced04a63f70e296aa22f8c3e773813ad"
+    },
+    {
+      "file": "publication/MATHEMATICS.md",
+      "source_sha256": "500f396c88789c63ad47b91320ed1ead2d9f333c04596e6c7bc454834ce8cba8",
+      "prior_source_sha256": "d1a696560d49f873590cd43b57a8338ccc4322e6ddcfdb73aa09b0db967822c9",
+      "display_expressions": 26,
+      "inline_expressions": 96,
+      "all_mathematical_expressions_unchanged_in_exact_order_and_content": true,
+      "equation_labels_unchanged": true,
+      "expression_sequence_json_sha256": "4f03849140c7f248c9bc6d9bf73cdf95793b9619494645253ca5a872d965f19c"
+    }
+  ],
+  "total_unchanged_expressions": 251,
+  "fresh_github_markdown_api_call": false,
+  "fresh_mathjax_render": false,
+  "rendering_evidence": "Unchanged-formula carryforward from receipt003, not a fresh render. Baseline source texts were independently matched to both source hashes in003 before comparing every expression.",
+  "live_authenticated_github_page_checked": false,
+  "scope": "Prose-only update; prior preprocessing/local-rendering results and their stated live-GitHub limitation are carried forward for identical mathematical expressions. This receipt does not independently verify the mathematical argument."
+}

@@ -1,0 +1,1 @@
+'PricingC.star_four_reference' depends on axioms: [propext, Classical.choice, Quot.sound]

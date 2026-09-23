@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j1",
+    "-M3500",
+    "-o",
+    "/private/tmp/ramsey61-clean-checkout-20260921-001/formal/.lake/build/lib/lean/Ramsey61/Selector.olean",
+    "/private/tmp/ramsey61-clean-checkout-20260921-001/formal/Ramsey61/Selector.lean"
+  ],
+  "exit_code": 0,
+  "guard_reason": null,
+  "CPU_seconds": 7.4951039999999995,
+  "CPU_cap_seconds": 180,
+  "RSS_limit_bytes": 4294967296,
+  "peak_polled_RSS_bytes": 2996355072,
+  "elapsed_seconds_informational": 7.612669,
+  "wall_deadline": null,
+  "source_sha256": "f143934c11a36769886baa2a94c005405047e011bbabf6970220025f144db4d3",
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "controller_sha256": "29508136a6e90d3c7cdaf39daba2f9b6bd3f109c6dd02f506a34e625165550ad",
+  "lean_toolchain": "leanprover/lean4:v4.32.1",
+  "mathlib_git_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "mathlib_cache": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "new_solver_calls": 0
+}

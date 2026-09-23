@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ATOMIC_DIRECTORY_SOURCE_DELTA",
+  "created_utc": "2026-09-22T19:53:37.751066+00:00",
+  "prior_review": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/c/PORTABLE_COMMON_REPRODUCTION_REVIEW_001.json",
+  "old_source_sha256": "3c1863163b777d7ab5622c52c2d5a85cea4fd1c376d99e4b5a05de72192ef92a",
+  "current_source_sha256": "aa8a09393f7e664795007caf0f413229148bcc4fff36562deebd40ae6813790d",
+  "exact_change": "One recursive mkdir is replaced by exclusive top-level createDir and a separate prefixes child createDir. Pure formula definitions, literal serialization, owner/pair/representative loops are byte-identical.",
+  "positive_emission_compatibility": "No change to successful output bytes; no duplicate emission needed. Existing-directory refusal is checked separately by the owning lane.",
+  "no_new_emission_or_solver": true
+}

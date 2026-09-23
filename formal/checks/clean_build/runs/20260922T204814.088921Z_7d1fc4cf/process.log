@@ -1,0 +1,3 @@
+'PricingIntegration.SeedBinding.aligned_triple_supplies_partial_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

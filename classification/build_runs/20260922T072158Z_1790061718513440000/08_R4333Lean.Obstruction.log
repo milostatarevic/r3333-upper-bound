@@ -1,0 +1,22 @@
+'R4333.noMono_pullback' does not depend on any axioms
+'R4333.noFourColoring_61_implies_62' depends on axioms: [propext, Quot.sound]
+'R4333.partEmbedding_forbids_nonarrowing' does not depend on any axioms
+'R4333.noFourColoring_of_projection_obstructions' depends on axioms: [propext, Quot.sound]
+        1.88 real         0.93 user         0.95 sys
+          2864496640  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              226423  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                3844  involuntary context switches
+         18474006233  instructions retired
+          7173054202  cycles elapsed
+           477925320  peak memory footprint

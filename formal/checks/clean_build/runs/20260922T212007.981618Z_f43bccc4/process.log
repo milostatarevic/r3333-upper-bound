@@ -1,0 +1,21 @@
+'R4333.ContinuationDegreeNineTwistedRoot1PhysicalSymmetry61.degreeNineTailPerm_templateCanonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1PhysicalSymmetry61.transportBranchByPhysicalK15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1PhysicalSymmetry61.totalColoring_transportBranchByPhysicalK15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1PhysicalSymmetry61.transportBranchByPhysicalAndFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1PhysicalSymmetry61.totalColoring_transportBranchByPhysicalAndFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1PhysicalSymmetry61.semantic_factorAssignmentRealization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1PhysicalSymmetry61.FactorAssignmentRealization.normalize' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

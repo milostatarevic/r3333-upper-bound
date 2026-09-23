@@ -1,0 +1,2 @@
+'CompletionC.NativeRoleGeometry.role_support_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.NativeRoleGeometry.role_support_edge' depends on axioms: [propext, Classical.choice, Quot.sound]

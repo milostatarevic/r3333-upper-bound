@@ -1,0 +1,26 @@
+{
+  "status": "PASS_DIRECTORY_ALLOCATION_ONLY_HARDENING",
+  "UTC": "2026-09-22T19:52:21.016011+00:00",
+  "old_source": {
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/portable_common_Emit_before_atomic_mkdir.lean.txt",
+    "bytes": 3547,
+    "sha256": "3c1863163b777d7ab5622c52c2d5a85cea4fd1c376d99e4b5a05de72192ef92a"
+  },
+  "current_source": {
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/Emit.lean",
+    "bytes": 3565,
+    "sha256": "aa8a09393f7e664795007caf0f413229148bcc4fff36562deebd40ae6813790d"
+  },
+  "exact_change": "IO.FS.createDirAll (dir/\"prefixes\") -> IO.FS.createDir dir; IO.FS.createDir (dir/\"prefixes\")",
+  "all_formula_and_serialization_definitions_unchanged": true,
+  "new_directory_creation_atomic": true,
+  "existing_output_control": "PASS_EXPECTED_REJECTION",
+  "control_receipt": {
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/checks/atomic_refusal.json",
+    "bytes": 1475,
+    "sha256": "4ce293b43d6bae7ad214d3e7b70dc2450a36527b6f2d38b8a1bf8e66fd854a31"
+  },
+  "valid_emitted_files_rehashed_unchanged": 21,
+  "positive_emission_repeated": false,
+  "reason": "Pure formula/serialization functions are byte-identical; setup-only change compiled and refused an existing directory."
+}

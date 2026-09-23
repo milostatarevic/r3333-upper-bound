@@ -1,0 +1,30 @@
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.normalizeSupportBlockZero_tailOwnDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.swapSupportBlockOneToZero_tailOwnDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.exists_positioned_degreeNine_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.exists_positioned_degreeNine_indexed_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.exists_templateRootCase_for_positioned_degreeNine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.exactDegreeNineTemplatePartition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.residualDeficientColor_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.residualUntwistedRootRepresentativeSet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.residualTwistedRootRepresentativeSet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineFiniteBoundary61.degreeNineResidualLocalCase_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

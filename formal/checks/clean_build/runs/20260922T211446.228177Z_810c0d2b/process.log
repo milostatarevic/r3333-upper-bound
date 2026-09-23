@@ -1,0 +1,16 @@
+'R4333.ProfileDUUUDegreeTenCatalogSemanticCompleteness61.matrixGroupLabels_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogSemanticCompleteness61.catalogMatrixColor_symm' depends on axioms: [propext]
+'R4333.ProfileDUUUDegreeTenCatalogSemanticCompleteness61.exists_partition_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogSemanticCompleteness61.normalizedLocalMap_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogSemanticCompleteness61.normalizedLocalMap_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogSemanticCompleteness61.exists_catalogMatrix_of_normalizedHost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

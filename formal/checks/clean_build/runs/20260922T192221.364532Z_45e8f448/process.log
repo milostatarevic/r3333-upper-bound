@@ -1,0 +1,7 @@
+'R4333.ComplementAtomCNF.complementExtension_satisfies_definitions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ComplementAtomCNF.trueInputCount_complementAtoms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ComplementAtomCNF.complementDefinitionClauses_outside_otherNamespace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

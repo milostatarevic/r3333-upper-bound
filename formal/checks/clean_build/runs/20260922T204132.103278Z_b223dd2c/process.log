@@ -1,0 +1,3 @@
+'PricingIntegration.SeedCensus.s_physical_tags' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.SeedCensus.sx_overlap_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.SeedCensus.sy_overlap_exact' depends on axioms: [propext, Classical.choice, Quot.sound]

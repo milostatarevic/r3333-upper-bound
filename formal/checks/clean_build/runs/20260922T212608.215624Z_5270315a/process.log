@@ -1,0 +1,12 @@
+'R4333.ProfileDUUUDegreeTenExactEntrance61.orderedSupportOfCardFive_positions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenExactEntrance61.exists_exactDegreeTenMatrixBranch_of_tailOwnDegree_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenExactEntrance61.exists_exactDegreeTenMatrixBranch_selected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenExactEntrance61.exists_representativeExactBranch_of_canonical_degreeTen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

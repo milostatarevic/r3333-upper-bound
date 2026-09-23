@@ -1,0 +1,2 @@
+'R4333.ProfileCFourRowFreeVertexSymmetry.transportFourExtension' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileDFourRowFreeVertexSymmetry.transportFourExtension' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,12 @@
+[
+  {
+    "module": "Ramsey61.DenseBipartite",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191856.445352Z_3baf9589/output.olean",
+    "sha256": "47830126b3ee3001cc6e2056b05f71b73f47571e4960c1a92f7296cc6feb7bc1"
+  },
+  {
+    "module": "Mathlib.Combinatorics.SimpleGraph.Bipartite",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/build/lib/lean/Mathlib/Combinatorics/SimpleGraph/Bipartite.olean",
+    "sha256": "9bf883a7c2a339cba5d30d748c4d8505f125c73408951d0cdaa5cabf6a8bb32f"
+  }
+]

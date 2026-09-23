@@ -1,0 +1,21 @@
+'R4333.ProfileDUUUFourSupportPositionSymmetry61.normalizeFourSupportBlockZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportPositionSymmetry61.normalizeFourSupportBlockTwo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportPositionSymmetry61.swapFourSupportBlockOneToZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportPositionSymmetry61.exists_positioned_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportPositionSymmetry61.exists_indexed_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportPositionSymmetry61.exists_uniquelySlotted_positioned_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportPositionSymmetry61.exists_indexed_catalogued_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

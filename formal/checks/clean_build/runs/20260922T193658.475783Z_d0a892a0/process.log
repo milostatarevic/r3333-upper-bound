@@ -1,0 +1,8 @@
+'PricingC.Rooted45Orientation.physical_host_to_exact600' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingC.Rooted45Orientation.physical_host_to_exact600 {k : Bool} {c : Host} (f : Physical45 k c)
+  (hc : NoMonochromaticTriangle c) :
+  ∃ p i,
+    ∀ (a b : Fin 14),
+      a ≠ b →
+        c.color (f.physical ((OwnFive15.freeLift p) a.castSucc)) (f.physical ((OwnFive15.freeLift p) b.castSucc)) =
+          palette (matrix k (word (candidate k i)) a b)

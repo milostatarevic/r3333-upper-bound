@@ -1,0 +1,20 @@
+'R4333.k16TemplateToLastMap_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16TemplateToLastMap_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+       23.62 real        24.87 user         1.49 sys
+          6038913024  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              420473  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   4  voluntary context switches
+               33942  involuntary context switches
+        202448982162  instructions retired
+         94272430981  cycles elapsed
+          3636174200  peak memory footprint

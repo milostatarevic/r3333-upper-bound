@@ -1,0 +1,55 @@
+Ramsey61.fourColor_colorDegree_le_sixteen.{u_1} {V : Type u_1} [Fintype V] [DecidableEq V]
+  (c : Ramsey61.EdgeColoring V Ramsey61.FourColor) (hc : Ramsey61.NoMonochromaticTriangle c) (q : Ramsey61.FourColor)
+  (v : V) : Ramsey61.colorDegree c q v ≤ 16
+Ramsey61.fourColorDegreeTuple_mem_degreeTargets61.{u_1} {V : Type u_1} [Fintype V] [DecidableEq V]
+  (hcard : Fintype.card V = 61) (c : Ramsey61.EdgeColoring V Ramsey61.FourColor)
+  (hc : Ramsey61.NoMonochromaticTriangle c) (v : V) : Ramsey61.fourColorDegreeTuple c v ∈ Ramsey61.degreeTargets61
+Ramsey61.total_highOwn_eq_total_criticalDegreeMass.{u_1} {V : Type u_1} [Fintype V] [DecidableEq V]
+  (c : Ramsey61.EdgeColoring V Ramsey61.FourColor) :
+  ∑ root, Ramsey61.highOwnNeighborCount c root = ∑ endpoint, Ramsey61.criticalDegreeMass c endpoint
+Ramsey61.no_C_witness_forces_synchronized_CE (c : Ramsey61.Host) (hc : Ramsey61.NoMonochromaticTriangle c)
+  (selectors : Ramsey61.SelectorX c) (none : ¬Ramsey61.CExteriorWitness c) : Ramsey61.SynchronizedCE c
+Ramsey61.synchronized_no_color_edge_across_cut (c : Ramsey61.Host) (sync : Ramsey61.SynchronizedCE c)
+  (q : Ramsey61.FourColor) (v u : Fin 61) (hne : u ≠ v) (hv : Ramsey61.colorDegree c q v < 15)
+  (hu : 15 ≤ Ramsey61.colorDegree c q u) : c.color v u ≠ q
+structure Ramsey61.RemainingBaselineBridges (family : Ramsey61.CFormulaFamily) : Prop
+number of parameters: 1
+fields:
+  Ramsey61.RemainingBaselineBridges.abd_supplied_root_selector : ∀ (c : Ramsey61.Host),
+      Ramsey61.NoMonochromaticTriangle c → Ramsey61.SelectorX c
+  Ramsey61.RemainingBaselineBridges.synchronized_CE_to_uniform : ∀ (c : Ramsey61.Host),
+      Ramsey61.NoMonochromaticTriangle c → Ramsey61.SynchronizedCE c → Ramsey61.UniformCommonHighPair c
+  Ramsey61.RemainingBaselineBridges.uniform_host_guarded_G_exclusion : ∀ (c : Ramsey61.Host),
+      Ramsey61.NoMonochromaticTriangle c → Ramsey61.UniformCommonHighPair c → False
+  Ramsey61.RemainingBaselineBridges.physical_C_to_CNF_cover : ∀ (c : Ramsey61.Host),
+      Ramsey61.NoMonochromaticTriangle c →
+        Ramsey61.SelectorX c → Ramsey61.CExteriorWitness c → ∃ i, Ramsey61.Satisfiable (family i)
+constructor:
+  Ramsey61.RemainingBaselineBridges.mk {family : Ramsey61.CFormulaFamily}
+    (abd_supplied_root_selector : ∀ (c : Ramsey61.Host), Ramsey61.NoMonochromaticTriangle c → Ramsey61.SelectorX c)
+    (synchronized_CE_to_uniform :
+      ∀ (c : Ramsey61.Host),
+        Ramsey61.NoMonochromaticTriangle c → Ramsey61.SynchronizedCE c → Ramsey61.UniformCommonHighPair c)
+    (uniform_host_guarded_G_exclusion :
+      ∀ (c : Ramsey61.Host), Ramsey61.NoMonochromaticTriangle c → Ramsey61.UniformCommonHighPair c → False)
+    (physical_C_to_CNF_cover :
+      ∀ (c : Ramsey61.Host),
+        Ramsey61.NoMonochromaticTriangle c →
+          Ramsey61.SelectorX c → Ramsey61.CExteriorWitness c → ∃ i, Ramsey61.Satisfiable (family i)) :
+    Ramsey61.RemainingBaselineBridges family
+Ramsey61.root_entrance_conditional (c : Ramsey61.Host) (hc : Ramsey61.NoMonochromaticTriangle c)
+  (selectors : Ramsey61.SelectorX c)
+  (synchronized_to_uniform : Ramsey61.SynchronizedCE c → Ramsey61.UniformCommonHighPair c)
+  (uniform_G_exclusion : Ramsey61.UniformCommonHighPair c → False) : Ramsey61.CExteriorWitness c
+Ramsey61.ramsey61_conditional (family : Ramsey61.CFormulaFamily) (bridges : Ramsey61.RemainingBaselineBridges family)
+  (all456_unsat : ∀ (i : Fin 456), ¬Ramsey61.Satisfiable (family i)) (c : Ramsey61.Host) :
+  ¬Ramsey61.NoMonochromaticTriangle c
+'Ramsey61.fourColor_colorDegree_le_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.fourColorDegreeTuple_mem_degreeTargets61' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.total_highOwn_eq_total_criticalDegreeMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.sorted_degree_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.mass4_ABD_interfaces' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.no_C_witness_forces_synchronized_CE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.synchronized_no_color_edge_across_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.root_entrance_conditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey61.ramsey61_conditional' depends on axioms: [propext, Classical.choice, Quot.sound]

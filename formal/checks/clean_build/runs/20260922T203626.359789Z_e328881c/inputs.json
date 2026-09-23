@@ -1,0 +1,22 @@
+[
+  {
+    "module": "PricingC.FourAnchorTables",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203622.049332Z_3fe20c9a/output.olean",
+    "sha256": "92f1fc48358a8c892e543572956ba3f8ca26be70fe3713eb6a280ccabd54f1a0"
+  },
+  {
+    "module": "PricingC.AnchoredScope",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203620.871169Z_07175e7e/output.olean",
+    "sha256": "797d75b9a1703a8c007a4f1b6591d50d75e816ab5526f4094e30582eea9f8b98"
+  },
+  {
+    "module": "PricingC.UnanchoredReference",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203605.698743Z_8c346ff8/output.olean",
+    "sha256": "74762b8d212c021925ae9c193cb64f8a24dd0c893f689de2c2339821e2a1f55d"
+  },
+  {
+    "module": "Mathlib.Logic.Equiv.Fintype",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Logic/Equiv/Fintype.olean",
+    "sha256": "96a1644881fdbf03a9141d72043bebe9eb626d4d1806fdf263d957dd43a40451"
+  }
+]

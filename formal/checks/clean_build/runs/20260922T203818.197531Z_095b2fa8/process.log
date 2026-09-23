@@ -1,0 +1,12 @@
+'PricingIntegration.NativeSupportConsumers.actual_u15_support_admitted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.NativeSupportConsumers.actual_t15_support_admitted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.NativeSupportConsumers.actual_u16_support_admitted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.NativeSupportConsumers.actual_t16_support_admitted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

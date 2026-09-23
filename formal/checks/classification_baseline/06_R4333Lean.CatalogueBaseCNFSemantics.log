@@ -1,0 +1,21 @@
+'R4333.CatalogueBaseCNF.coloring_satisfies_setEdge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.CatalogueBaseCNF.coloring_satisfies_forbidEdge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.CatalogueBaseCNF.coloring_satisfies_k16BaseLiteral' depends on axioms: [propext, Classical.choice, Quot.sound]
+        1.82 real         0.95 user         0.91 sys
+          2862710784  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              226341  page reclaims
+                   3  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                4610  involuntary context switches
+         18671157439  instructions retired
+          7072159823  cycles elapsed
+           481218792  peak memory footprint

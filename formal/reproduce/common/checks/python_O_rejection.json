@@ -1,0 +1,29 @@
+{
+  "label": "portable_common_expected_optimized_python_rejection",
+  "runner_sha256": "46137ffd4a317c85e650c65e6560e6dba6f5e18cbb3f70e23aebf9354c572e50",
+  "gate_sha256": "4215dce86cf6cb6ab6176a588e473bc9eed0ada27431245ecf74d0516550c500",
+  "command": [
+    "/usr/bin/python3",
+    "-I",
+    "-O",
+    "-B",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/verify.py"
+  ],
+  "cwd": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd",
+  "started_utc": "2026-09-22T19:47:16.313580+00:00",
+  "admission_wait_seconds": 0.020711124999999997,
+  "cpu_threads": 1,
+  "expected_RSS_bytes_for_admission_only": 1073741824,
+  "wall_deadline": null,
+  "CPU_RSS_file_limits": null,
+  "slot": 6,
+  "owned_pid": 60402,
+  "status": "FAIL",
+  "exit_code": 1,
+  "guard_reason": null,
+  "CPU_seconds": 0.10858099999999998,
+  "elapsed_seconds_informational": 0.525036167,
+  "peak_polled_RSS_bytes": 6635520,
+  "log_sha256": "0fce4df581aca67b361c77a616ff9850b9724122f9bd398b219d1c7188014c8a",
+  "finished_utc": "2026-09-22T19:47:16.838975+00:00"
+}

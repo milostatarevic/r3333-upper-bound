@@ -1,0 +1,9 @@
+'R4333.ProfileDUUUDegreeTenCatalogLeafBridgeUUU2P15.alignedCatalogVertex_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogLeafBridgeUUU2P15.catalogLeafEquation_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenCatalogLeafBridgeUUU2P15.matrix_eq_alignedCatalog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

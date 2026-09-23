@@ -1,0 +1,15 @@
+'R4333.ProfileDDegreeTenNeighborhoodCatalogueEntrance61.retainedJoinedColoring_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenNeighborhoodCatalogueEntrance61.neighborhoodEmbedding_mem_ownColorNeighborhood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenNeighborhoodCatalogueEntrance61.encodedNeighborhoodColoring_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenNeighborhoodCatalogueEntrance61.exists_weakEquiv_k15Template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenNeighborhoodCatalogueEntrance61.exists_cataloguedDegreeTenNeighborhood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,9 @@
+'R4333.ProfileDFreeOwnColorColumnCap.freeOwnColorSupport_le_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFreeOwnColorColumnCap.tail_ownColorDegree_le_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFreeOwnColorColumnCap.freeOwnColorSupport_between_four_and_five_of_fullDegree_ge_fourteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

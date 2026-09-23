@@ -1,0 +1,3 @@
+'R4333.UUTD9Geometry.degreeNineSkeleton_blockTwo_blockOne_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

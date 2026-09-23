@@ -1,0 +1,1 @@
+'PricingC.NativeFactorGeometry.all_geometry_good' depends on axioms: [propext, Quot.sound]

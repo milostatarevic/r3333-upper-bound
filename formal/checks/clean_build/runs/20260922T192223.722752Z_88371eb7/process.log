@@ -1,0 +1,4 @@
+'R4333.SharedCriticalCompletion.pairwise_compatible' depends on axioms: [propext, Quot.sound]
+'R4333.SharedCriticalCompletion.original_color_of_template_edge' depends on axioms: [propext, Quot.sound]
+'R4333.exists_sharedCriticalCompletion_of_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.exists_sharedCriticalCompletion_of_degreeTargetAt61' depends on axioms: [propext, Classical.choice, Quot.sound]

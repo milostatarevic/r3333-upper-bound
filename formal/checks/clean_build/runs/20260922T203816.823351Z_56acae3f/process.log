@@ -1,0 +1,2 @@
+'PricingIntegration.DFrameDegrees.degreeFloored' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.DFrameDegrees.marked_tail_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,100 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:129:5: warning: Variable name `assignment` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:137:5: warning: Variable name `assignment` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:451:39: warning: This simp argument is unused:
+  realization.branchBlock_eq_two
+
+Hint: Omit it from the simp argument list.
+  simp [restColoring, pullbackColoring, restEmbedding,
+  ̵  ̵ ̵ ̵ ̵ ̵retainedJoinedColoring, joinColoring,
+  ̲  ̲ ̲ ̲ ̲ ̲largePhysicalEmbedding,
+  ̵  ̵ ̵ ̵ ̵ ̵realization.firstLarge_eq_false, r̵e̵a̵li̵z̵at̵i̵o̵n̵.̵b̵ra̵n̵c̵h̵B̵l̵o̵c̵k̵_̵e̵q̵_̵t̵w̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵l̵a̵r̵geForeignBlock,
+  ̲  ̲ ̲ ̲ ̲ ̲secondForeignBlock,
+  ̵  ̵ ̵ ̵ ̵ ̵ProfileDUUUFiveSupportPositionSymmetry.PositionedFiveSupport.toSemantic,
+        strongCase, caseSlot, uuuRepresentativeIndexBySlot,
+        ProfileDUUUFiveSupportPositionSymmetry.k16Index]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:620:2: warning: 'change (semanticLargePairEquiv realization index).1 = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:648:2: warning: 'change (semanticSmallPairEquiv realization index).1 = _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:671:27: warning: This simp argument is unused:
+  secondRemainingColor
+
+Hint: Omit it from the simp argument list.
+  simp [strongFreeNormalColor, hcycle, decodeRemainingColor, firstRemainingColor,
+  ̲  ̲ ̲ ̲s̵e̵c̵o̵n̵d̵R̵e̵m̵a̵i̵n̵i̵n̵g̵C̵o̵l̵o̵r̵,̵ ̵decode_three_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:673:6: warning: This simp argument is unused:
+  firstRemainingColor
+
+Hint: Omit it from the simp argument list.
+  simp [strongFreeNormalColor, hcycle, decodeRemainingColor, f̵i̵r̵s̵t̵R̵e̵m̵a̵i̵n̵i̵n̵g̵C̵o̵l̵o̵r̵,̵ ̵secondRemainingColor,
+  ̲  ̲ ̲ ̲decode_three_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:795:12: warning: This simp argument is unused:
+  ProfileDTripleJoinReduction.blockVertex_val
+
+Hint: Omit it from the simp argument list.
+  simp [P̵r̵o̵f̵i̵l̵e̵D̵T̵r̵i̵p̵l̵e̵J̵o̵i̵n̵R̵e̵d̵u̵c̵t̵i̵o̵n̵.̵b̵l̵o̵c̵k̵V̵e̵r̵t̵e̵x̵_̵v̵a̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵sourcePosition, htarget]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:1129:10: warning: This simp argument is unused:
+  counterTag
+
+Hint: Omit it from the simp argument list.
+  simp [̵c̵o̵u̵n̵t̵e̵r̵T̵a̵g̵,̵ ̵n̵a̵m̵e̵s̵p̵a̵c̵e̵V̵e̵r̵t̵e̵x̵,̵[̲n̲a̲m̲e̲s̲p̲a̲c̲e̲V̲e̲r̲t̲e̲x̲,̲ selectorNamespaceTag, selectorNamespaceVertex] at hval
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeNineStrongCaseCNF61.lean:1129:39: warning: This simp argument is unused:
+  selectorNamespaceTag
+
+Hint: Omit it from the simp argument list.
+  simp [counterTag, namespaceVertex, selectorNamespaceT̵a̵g̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵e̵l̵e̵c̵t̵o̵r̵N̵a̵m̵e̵s̵p̵a̵c̵e̵Vertex] at hval
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.strongFreeLabelSet_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.strongLargeLabelSet_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.strongSmallLabelSet_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.supportUnitClauses_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.guardedAssignmentClauses_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.selectorFmla_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.strongFmla_outside_selectorNamespace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.semanticAssignmentData_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.strongRealization_satisfies_pairFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseCNF61.noStrongRealization_of_all_pair_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

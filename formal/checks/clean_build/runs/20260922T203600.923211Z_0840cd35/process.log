@@ -1,0 +1,1 @@
+'PricingC.ordered_anchor_reference' depends on axioms: [propext, Classical.choice, Quot.sound]

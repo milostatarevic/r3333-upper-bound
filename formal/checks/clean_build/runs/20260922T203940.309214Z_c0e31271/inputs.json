@@ -1,0 +1,17 @@
+[
+  {
+    "module": "PricingIntegration.PairAdmissionHeaders",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203843.259335Z_045eed40/output.olean",
+    "sha256": "8a8c96b5625bfc4b006a6d02a3ce63f5d319a8b418e499db9161ad035fc344dc"
+  },
+  {
+    "module": "PricingIntegration.PairAdmissionComplete",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203937.578927Z_0a0808c9/output.olean",
+    "sha256": "8a8c3621452afe44843d732e1381ac55f23e367b4f6a83bfe7f832f63504c3b0"
+  },
+  {
+    "module": "PricingC.NativePairActionData",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T200026.063058Z_9a2d4d39/output.olean",
+    "sha256": "57ffb784183176c47a5c15f837786b63cf779a7f0e8739f72f7cc71073ff216c"
+  }
+]

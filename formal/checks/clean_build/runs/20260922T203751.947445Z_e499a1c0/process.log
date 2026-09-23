@@ -1,0 +1,9 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingC/ScopeOmission.lean:40:4: warning: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingC/ScopeOmission.lean:43:4: warning: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'PricingC.pair_three_domains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.pair_support_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.reference_scope_omission' depends on axioms: [propext, Classical.choice, Quot.sound]

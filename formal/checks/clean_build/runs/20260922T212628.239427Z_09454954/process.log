@@ -1,0 +1,24 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/UUQSupportTransport.lean:80:14: warning: This simp argument is unused:
+  blockSize
+
+Hint: Omit it from the simp argument list.
+  simp [b̵l̵o̵c̵k̵Siz̵e̵,̵ ̵S̵i̵ngleRootStarCNF.templateColor,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵SingleRootStarCNF.fin15, leftFin, rightFin,
+            Nat.mod_eq_of_lt hleft, Nat.mod_eq_of_lt hright]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/UUQSupportTransport.lean:131:14: warning: This simp argument is unused:
+  blockSize
+
+Hint: Omit it from the simp argument list.
+  simp [b̵l̵o̵c̵k̵Siz̵e̵,̵ ̵S̵i̵ngleRootStarCNF.templateColor,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵SingleRootStarCNF.fin15, leftFin, rightFin,
+            Nat.mod_eq_of_lt hleft, Nat.mod_eq_of_lt hright]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingG.UUQSupportTransport.uuq_supportNormalizer_templateCanonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingG.UUQSupportTransport.normalizeUUQExactDegreeTenSupports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

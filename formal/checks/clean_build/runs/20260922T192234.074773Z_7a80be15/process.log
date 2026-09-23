@@ -1,0 +1,19 @@
+'R4333.OutsideDegreeCapCNF.trueInputCount_outsideIncidentAtoms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.OutsideDegreeCapCNF.selectedCard_add_outsideDegree_le_hostDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.OutsideDegreeCapCNF.outsideCoreFmla_outside_counterNamespace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.OutsideDegreeCapCNF.cappedCoreUnsatisfiable_of_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.OutsideDegreeCapCNF.outsideDegreeCapBendersClause_of_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.OutsideDegreeCapCNF.outsideFourColorDegreeCapBendersClause_of_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.OutsideDegreeCapCNF.canonicalK41OutsideDegreeCapBendersClause_of_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

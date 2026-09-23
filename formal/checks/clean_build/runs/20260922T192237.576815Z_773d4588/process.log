@@ -1,0 +1,9 @@
+'R4333.HighOwnIncidenceRootSelection61.total_highOwn_eq_total_criticalDegreeMass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.HighOwnIncidenceRootSelection61.criticalDegreeMass_ge_thirtyTwo_of_hasDegreeSixteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.HighOwnIncidenceRootSelection61.exists_degreeSixteen_root_highOwn_ge_thirtyTwo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

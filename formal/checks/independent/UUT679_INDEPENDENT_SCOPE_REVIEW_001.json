@@ -1,0 +1,340 @@
+{
+  "status": "PASS_SCOPED_MATHEMATICAL_REVIEW",
+  "reviewer": "root independent of implementation agent dependency_audit",
+  "created_utc": "2026-09-22T19:21:12.750723+00:00",
+  "manifest_sha256": "99b50f1b689dee2841a0db6ef262e91dae87ec75b062aeba550b562ab484b6dd",
+  "checked_modules": [
+    {
+      "module": "PricingG.UUTD10SupportClassification",
+      "source_sha256": "240600c40067c5f5e4845fd4815ec079ca0c1b0ca90c8926201de413ce0b54f4",
+      "receipt_sha256": "96d1267c1eaf4ab620f29a57271e51a014846244b07baf1b2fcbe19ecbc822c1",
+      "output_sha256": "175c1f081fbbf618d508dcb4828d56434a7b590a809413fc9414f18b74819fcc"
+    },
+    {
+      "module": "PricingG.UUTD10CatalogEntry",
+      "source_sha256": "09f4ef43196aa149d41bf8c41f8ef499b888990c86bee7b10bd6bd985c7a90d9",
+      "receipt_sha256": "9690a159cd258cc372703ecf1c6943547b8528ea5a61534b5825879abd688557",
+      "output_sha256": "afb8ff954d3786e98615a4146b73fecae2ec635c803c338134992e9aeae1ca40"
+    },
+    {
+      "module": "PricingG.UUTD10OrbitTransport",
+      "source_sha256": "54500372945a0ebdb84ec5516d5c44847468f7502f654b949b864b2d02f68fd3",
+      "receipt_sha256": "c90363b1a00770aa5d14b167e03bd0e8ac561de579834304c18e0c271673af0e",
+      "output_sha256": "cf1b182c97a54816a707c484a518c482a0b6debb334f677dda73b453cf531a77"
+    },
+    {
+      "module": "PricingG.UUTD10Complete",
+      "source_sha256": "94842ea4c822704d4037f7e635e29c9a45d42378487ea5f14407b364e52b5ce9",
+      "receipt_sha256": "b29dc0e36b3bd86da9eae469ec185420dc0b8e2e6430b06cc9a9481a399fce8a",
+      "output_sha256": "d5ae4e7e0bdd58fac27f84b5f3538224e031df69d23f64b73e7442df9fea8f84"
+    },
+    {
+      "module": "PricingG.UUTD10Entrance",
+      "source_sha256": "61e83fd544879d3904be90162755e8bb3f6783bdfd7d15523a515bcaca2fea22",
+      "receipt_sha256": "347ccd63a6a056726fd27092677b16da6684585aa28a1eecb4974199c5b45568",
+      "output_sha256": "3dba794efdf0b387b8ffd271397e8928112253df8f28c87bf287059375932f19"
+    },
+    {
+      "module": "PricingG.UUTD9Realization",
+      "source_sha256": "12fc216c11aa78b8522c145d016070289531660393336c622e0b8474300aa3f0",
+      "receipt_sha256": "3050355d2c0d41e258bcf1d0687ede88a086c495b09205b2b0fdd988b1f6ec5b",
+      "output_sha256": "789507dbe95a5d74d8c80ad531f8f2291e605e16630ae40ca2e659918f8a8edd"
+    },
+    {
+      "module": "PricingG.UUTFivePosition",
+      "source_sha256": "973eb5da719988db3729c7668d31f4d51cb355cb34431a5ed10112c6b8325b9c",
+      "receipt_sha256": "d8fa8b9579cb4997b098ee3a8221376ae944749daeef78da17ca3050591795f5",
+      "output_sha256": "efe5c69fb6e243984f7c8c24f7bd88a2f79f43e69b0d4309d216de878ac44456"
+    },
+    {
+      "module": "PricingG.UUTD9Geometry",
+      "source_sha256": "19ca3a4d9e877ec2525fb62622e279dda749a32ea4df552282cb846c573f9f1a",
+      "receipt_sha256": "fc22a8c7d903bfc28077f9f0737ac8e54d79d879afeffb75abcb8fabc0fe06e5",
+      "output_sha256": "530c3e624ee966a0b3c5706343e2ee44b557d5350c88271a8b1e99211aa5e219"
+    },
+    {
+      "module": "PricingG.UUTD9StrongCase",
+      "source_sha256": "3835f039c9d98898f91c5dd633fd3e9db6d0dbd76aa464e9ceba6ec109b8586b",
+      "receipt_sha256": "8a9fc0f39a3560795177e448981e41215b9f489761e0ad94873647ed42264056",
+      "output_sha256": "375b3dc88a27920ba366e72a5aedfad481ca9aa5f068783751d60219538d9b59"
+    },
+    {
+      "module": "PricingG.UUTD9StrongCNF",
+      "source_sha256": "46d83837461654d2b63fe46e97382eacaf25ec0c69e2948ae0c7603691df6a78",
+      "receipt_sha256": "abd5e16bcfdab79f2065b8dd600c071e4a2b8049c1dcce0c25bc4908d4400fc6",
+      "output_sha256": "ac762da4e0ac0f06f0d46847a31874db01fdf3200419abb22fbd28b515b67cf2"
+    },
+    {
+      "module": "PricingG.UUTD9StrongFactor",
+      "source_sha256": "60262854ab353edef9a607681f2b89433fd889acae2bee6ce6be330ad9aa6632",
+      "receipt_sha256": "76159142a4a3b90c0da838ebf6bd3ae27dc36ee87819cbc80573512f04e093f5",
+      "output_sha256": "d2cea2a5d7381b05903458c9383a9ec5c0a5fe5bab904e471a89d0f0fbd7c357"
+    },
+    {
+      "module": "PricingG.UUTD9StrongStabilizer",
+      "source_sha256": "8a9bbb71ce580b4b8d3441a7bd863d2c7e1ffc93413df649b0c4176bcdf98508",
+      "receipt_sha256": "d4fc428954ba43f64e5b32043fe35fc6e739fa9aaa263d3b6ae926563f372860",
+      "output_sha256": "8f0f2949c072274e597abac7a266beb24eb827b77136c48b59ca9d1621ebc77b"
+    },
+    {
+      "module": "PricingG.UUTD9StrongPhysical",
+      "source_sha256": "0cb1f010da3818de064a7013bb7083f924d3ca934b5e2e685fea10c37e28debb",
+      "receipt_sha256": "fa2cc51a42be11b30d8bdf0bd64a1103e63c29a13021e2c185f68f2df0e2da9a",
+      "output_sha256": "56a7a2fa450ad7c1c811e7f8072d5f07a14828f1fa08e6616095b6c554c009eb"
+    },
+    {
+      "module": "PricingG.UUTD9StrongOrbit",
+      "source_sha256": "34f4695905f043c410c2a52cfe5df0bf64d71d122312bc12676cd0c16b95f999",
+      "receipt_sha256": "4a5fdca441081084a988bb5a7d1db3744ebff3903016c0e444f0f535ba6045bf",
+      "output_sha256": "e43dda876ade21e8254b86049817075d17e2972c4f2f494514da9dcd9ad4429c"
+    },
+    {
+      "module": "PricingG.UUTD9StrongFormula",
+      "source_sha256": "9a5be0b2e87383d5c7795179c8d9fb8dd4bba6ae7171312d767a28330b73d612",
+      "receipt_sha256": "33581c52a513f2d89ca57954b2bd3963cc09798a3fe98211b2242b6c96cc97f0",
+      "output_sha256": "d5059caacd03cf72a77a804d4819a047462449001688e2ce47af20d34af0f7db"
+    },
+    {
+      "module": "PricingG.UUTD9StrongSemantic",
+      "source_sha256": "6d32f72db2744fde2ca400f29036e840c7e55e9ae682f7b8395910e975a71d7e",
+      "receipt_sha256": "04cc759301791b0b72d13aa8470515490a95888a54643bf58398752a3083da78",
+      "output_sha256": "2c1a7856666b9dfa7a8307147d89b32fec505642f0e01583f322a404e129088d"
+    },
+    {
+      "module": "PricingG.UUTD9Root1Case",
+      "source_sha256": "1d807b97e0dc1b6798a2a0eb3650f608b233e9bc645daf1c162547e797caa0c2",
+      "receipt_sha256": "52325942992e9610c787575215e23190dafd4be6c17b84402a74cfd8a678e92d",
+      "output_sha256": "f9c42599624b3896f919998c4d1451c11448bcb5240df0d49d663ae6a25aba55"
+    },
+    {
+      "module": "PricingG.UUTD9Root1CNF",
+      "source_sha256": "4161c8202ac531dcd221c15001d3ddafeadf76adb1ec4533e43c21f480141339",
+      "receipt_sha256": "7fb5c088cb0892e69c5d7aabd1df362d49a4ac90c9e7c2f8494680df94dd927f",
+      "output_sha256": "cff4694ac7ae3d31aeba625ba2ca1a2afb57b514854fbfb4f87d2de0cd5bd3d9"
+    },
+    {
+      "module": "PricingG.UUTD9Root1Factor",
+      "source_sha256": "df033ee266c8b5bc51a6c795b01d46b3f05e80468b8d2d98176910f7ca49b9d4",
+      "receipt_sha256": "505d32cd52189769336bf817b4371d5e2c7274ba1be86f68cdd78214c9712e90",
+      "output_sha256": "a8546a127ebd5d2f0f600af15682fa3b366b494087a8852735d0054afaace33d"
+    },
+    {
+      "module": "PricingG.UUTD9Root1Physical",
+      "source_sha256": "2343407544e060fee87426fcb596fa979df9119edc4a8277a8991756f1915cd9",
+      "receipt_sha256": "9c14af326fd61f8e0162b723670aa3c1d13d23f4e5b931d956bb398a64e74a08",
+      "output_sha256": "355d9fc8b09a7dfe05755afe3ab8ef4b0e57f1c12ead16ca5f05293e039644d4"
+    },
+    {
+      "module": "PricingG.UUTD9Root1Orbit",
+      "source_sha256": "ee09022e545939b1fde6bcc7e29845ac74bb5c49ae935e65d61284091dd24d27",
+      "receipt_sha256": "2845c55e1361d9cb27228532761d9d01382560ee2ca5fd3aa6180111dfa6542f",
+      "output_sha256": "6e0fa7f7743b445432cfeaeec48e06621f5d9e266a3cc7349e7dfe54b5b415d5"
+    },
+    {
+      "module": "PricingG.UUTFourPosition",
+      "source_sha256": "f17dd46ae60de9c7116e0f3dcf6e32de37399af22e899e5016b86c2abc3effcc",
+      "receipt_sha256": "77730e2ea77ba91325152c2a0fe374c26f87bf1b8c1148c802b8d17328fe589c",
+      "output_sha256": "3c3c205f2dacfa22b333f85627ca4cd69640fdca635d78e309d64fba336e2350"
+    },
+    {
+      "module": "PricingG.UUTD9DegreeTransport",
+      "source_sha256": "b2587bbfb7d7c28461ab1d40c631a37febdf091a2eaa1839818d93ee0aa73c9b",
+      "receipt_sha256": "1d15a804faca160b942aea536d40058b104bc7b4a3eb34478cb98ff187f75a48",
+      "output_sha256": "ba3eb1554e2f06ed20c4da3d7c6c8ec46779b46a879c667182b1449f8311b85f"
+    },
+    {
+      "module": "PricingG.UUTP15SupportPair",
+      "source_sha256": "6940f878406b6f0c1c9adc493b497c68090e5bfd11e5c2d1f6be5edb623ccb24",
+      "receipt_sha256": "358fccbcf171644b3336c7cc038cc82ae95b962766cd3a4736b9d65b8dd9e284",
+      "output_sha256": "191168639f6e3801f9f7eede29bc5e8bb941fab62b2554767d5461b986c8b87f"
+    },
+    {
+      "module": "PricingG.UUTD9Root1Formula",
+      "source_sha256": "c6890523a0d474db1260bdd0f8471d12bd92231e11a2462d1ba9bdbf741965f8",
+      "receipt_sha256": "f32f03ed3ba3f0cad4e0f9d28f087e00db50e3661ae33ff72df42fed0877aeb9",
+      "output_sha256": "a5133932085ed59812653c7a887feca6ae24b39fa8a8ecee10fb12a7891dea33"
+    },
+    {
+      "module": "PricingG.UUTD9Root1Semantic",
+      "source_sha256": "9430dc0cc7b12b8684affd4a8d4030875ea8e70faa358bef33a9251de4f02426",
+      "receipt_sha256": "97cd820bdd61a2e98b771ad6e4efbd7bb03b6591eb37748c5218a262b3696b97",
+      "output_sha256": "307bf51eb51255dd4266586a467419cc481a532607e4ad70fc41a460227c67a6"
+    },
+    {
+      "module": "PricingG.UUTD9Root12Case",
+      "source_sha256": "12a7f8d8cb09d21651602907c38df47cdc1e420c52e109a258d9325f6b26e700",
+      "receipt_sha256": "65bde2f538facf01ab4a4a44b27815c9058fdff4b0b19a53f45f42e65a77aad7",
+      "output_sha256": "eb687092ff98822fb6b86c7da30d5b2b2b49ead7abfe7910669c4ead271d0cda"
+    },
+    {
+      "module": "PricingG.UUTD9Root4Case",
+      "source_sha256": "396a6d1b3f295e473764b5fe90ec0475a644e5034d7967f43203a0de28825f70",
+      "receipt_sha256": "d32f079aafd471f733c71a578cf622d44dc82a273593cb83a80974babf57f714",
+      "output_sha256": "c3d082cd6e68d7be4726072fec5bb0f39a1584270c26c358061a5ed8569ef2f5"
+    },
+    {
+      "module": "PricingG.UUTD9Root12CNF",
+      "source_sha256": "515ce09ee0a4dc0cf89d5a1b037ce56fe7bbd771e496eaeaead33eba40f60688",
+      "receipt_sha256": "41782598e72ff904c8a95eb97f8750de0a3040697641cd95c228d8ef77778f52",
+      "output_sha256": "07cd7f1ba0293e87049f8ff4f9e01759cfab9f57376aa7df8f03ffdafc42ed3d"
+    },
+    {
+      "module": "PricingG.UUTD9Root4CNF",
+      "source_sha256": "db1f4fa53b65ca9eb87f296de1cf6a02363111e8167b6f2fb47dc88112047d4c",
+      "receipt_sha256": "3c6a9ee4b131855fbc1f7a9734030a8164a243ac3ead43fedfdcb8365a0ee8c1",
+      "output_sha256": "d37c62807ebba241c6d86320a9b1c17f27836f2b5ab3015926357804d5dae546"
+    },
+    {
+      "module": "PricingG.UUTD9Root12Factor",
+      "source_sha256": "8af66cb2b447b6436d7391830f1133bbf4930e2fb8f4ff90c0bafb9dcaf4d9ad",
+      "receipt_sha256": "44fbfa0231003c90c33acf217eaaeda7184a15760c1fe6e053f093bd12118edf",
+      "output_sha256": "2a9e3ed808ed54dc89ce8fed853cda2ae4c11a815138e482a18ee4f862dc7d1f"
+    },
+    {
+      "module": "PricingG.UUTD9Root4Factor",
+      "source_sha256": "68911591394e96543b16a1608f226c4ecb275e750c176ab2d44c590f177914ec",
+      "receipt_sha256": "5e204bcf58ce71dd460e8c5a3f482e7d8f7ac43226d748b4b14b656beff98c21",
+      "output_sha256": "2476d59e4bb7ef066f98f4b3feb4b29f52cc47d7ad9f769d6c4f234e2e371804"
+    },
+    {
+      "module": "PricingG.UUTD9Root12Stabilizer",
+      "source_sha256": "72527d230758ec8ab387cbb305a4849554b865d8402de3911d58cb96d3d575c2",
+      "receipt_sha256": "ea7e71e834aa572f5a3cf30e152518e946b8cb534849a4a97c72f0eb10c86767",
+      "output_sha256": "4bc00b009a79017bae1d3425cc2eb6afb555878b561d8450c74836949981499c"
+    },
+    {
+      "module": "PricingG.UUTD9Root4Physical",
+      "source_sha256": "8b2268820b668027e901922e9949989a0675f1f62342fb713ece3f213bae8eaf",
+      "receipt_sha256": "b96f985d7caeb9336238d96647ecc2124733f30c255ae42a9964468fa7db87bd",
+      "output_sha256": "2c50492c9e9bcae32031ff4f44f3dbd8e8bad61f1fd9df254581d8d6dc94ef31"
+    },
+    {
+      "module": "PricingG.UUTD9Root12Physical",
+      "source_sha256": "d67b0f2dc784263fbb2871f08b398ae73cb49f03e5788b83fef2f0808601d1be",
+      "receipt_sha256": "4e8e53f87d3501bc2d846f9cafcc39f3bbb1e1ba7793f1dfae19d7c67a434196",
+      "output_sha256": "b4ee9fa05c53c3390086a14b47d6ad1d0a6ffbf4f099cf73cca91a9898d59d7b"
+    },
+    {
+      "module": "PricingG.UUTD9Root4Orbit",
+      "source_sha256": "ff3a664061ec807afd4c047546e688c5287e17e8eec9c8373f79a75a3de801ce",
+      "receipt_sha256": "c2cca9bab71ec60b41a0d1e8547c2e143e0d8d3a436225b670e5df9fe8a4791e",
+      "output_sha256": "2519a5c6480fd7244b650fcae77f120d178e9782a3949ab22530b53d2aa272fa"
+    },
+    {
+      "module": "PricingG.UUTD9Root12Orbit",
+      "source_sha256": "2c5a4c3968dd229ae1f048773e0c4a5fd86ceed88b6a6c825d434584d3478345",
+      "receipt_sha256": "25302fdaea249b5e09d5b104fa67475d68f2feddf15dbed3de052e09a8f6c270",
+      "output_sha256": "f156bba68bdaefa8e464646196eef3f370df86aa8a764bcd8ece030ce87b0181"
+    },
+    {
+      "module": "PricingG.UUTD9Root4Formula",
+      "source_sha256": "0b2d67484250af7db4166092539e18be30445573e5a8166fedccc7a11bb88cf8",
+      "receipt_sha256": "2992bee2a6d42c95f38ac60debfa3c53cc0e8e945573b217c2f0a47c2ddb73d9",
+      "output_sha256": "4808a506d055fda854a275e8c9243b44dcf4790b0401bdaf0bfa44d317c23785"
+    },
+    {
+      "module": "PricingG.UUTD9Root4Semantic",
+      "source_sha256": "5be4373ddb60d1d57777603756e84d4d7df6ca450d9e8a4d01ab97aaf85fbc58",
+      "receipt_sha256": "9cf40b5fb333b6a051f170e9dc4bc7780268b8539902b2f04586123f99e3f060",
+      "output_sha256": "e8fe1e7280dd2c82aa201aef8a319e06ed75c116f9fd93ebf71618443a5af9a4"
+    },
+    {
+      "module": "PricingG.UUTD9Root12Formula",
+      "source_sha256": "c45b39b865226e08646a9fc805b4dd1cad7be93af833762d6bcec44e6a6939b3",
+      "receipt_sha256": "50a505a40f532195c8777c5d996f7b74e9be8cebf6a429ee781e35e062b60f8c",
+      "output_sha256": "cdf05ebc58b3ce14fd1093c3a2e3a8249df99bd31983a03ef25477da44048bf5"
+    },
+    {
+      "module": "PricingG.UUTD9Root12Semantic",
+      "source_sha256": "e5b108bb793c77c62ae72469238d84e2868cc47dd0127b5d1acb9e184e8df602",
+      "receipt_sha256": "84f99c9977e8347d21858f1ebde4a7ab1950530d471878246adf5aa460764582",
+      "output_sha256": "7bd069480ff2b213000dfab62d674ce72d43fe607b849a3984a1fe7f0da75394"
+    },
+    {
+      "module": "PricingG.UUTD9Swap",
+      "source_sha256": "24dabf1272cb8ec6a98da888635b52a2f93e8f96ba8afde435e982c02160caa0",
+      "receipt_sha256": "dcef5e4a76bc58f83a39674e3073b612469e46a69204b970b32616f4a18bf3fa",
+      "output_sha256": "3a8987d7e0f982e00ac0e715883a74ecdcf5e48904c53c929f892422100f453b"
+    },
+    {
+      "module": "PricingG.UUTD9Restricted",
+      "source_sha256": "67943637d379c6a09ebfbc414e068390024cc0747164eaa20b4046534d61de4e",
+      "receipt_sha256": "b524f59b36498f10e40992e57ae6ec833bff9ddd97655415758b0e82e364ff0d",
+      "output_sha256": "16a46ee6902247d62cd55062b3313ce558a7aa62954b6d44e5a5f7b55bc1ffe5"
+    },
+    {
+      "module": "PricingG.UUTP15Base",
+      "source_sha256": "ebf474b8455f50fb1ad702ae846b1717ac314e817ef2331314ba480fdd41b177",
+      "receipt_sha256": "a13d1ddec5d94c740635b9816e34cdf47fc16b8fd31dcaa42e79d536acf17553",
+      "output_sha256": "7c1a032bc05f4ec9ac7a995b64af47b1bdff891c0ed90ea506c84ef20f7aa89a"
+    },
+    {
+      "module": "PricingG.UUTP15Rooted",
+      "source_sha256": "f1765cf5ff0438084104a1a6079118206e4bb73d9c72f0b8a615fe3af2086276",
+      "receipt_sha256": "05748b5bff00155c24b2a92e08cb129701907801a8876842b10655aedd51e170",
+      "output_sha256": "f537ac5eaba3a414bd0bd7b27ce02a0d423e86f9bb73763e303e05df44a736ce"
+    },
+    {
+      "module": "PricingG.UUTP15Representative",
+      "source_sha256": "52c00b55fe279f1a77ff41ca6efcbc546a04edd40fed996a6d95e4d9a80d878b",
+      "receipt_sha256": "7a21b84ad603995783d89b9c613929fe5858772d1b11a57995ace81913e8af82",
+      "output_sha256": "84c9e5598c3977505db798bf60c288f9d00dcea43642c30e18f6a1867f1903a3"
+    },
+    {
+      "module": "PricingG.UUTP15Leaves",
+      "source_sha256": "1165b97383003810ee8e61d575aba4970bc4278183de0bf2918d458a8a7db83e",
+      "receipt_sha256": "5742140bf36649db640f5c61225ee98485a93db8a325235dddcef168a93fd548",
+      "output_sha256": "6b6b36707046afd4c6d1b0386eeb40a5d8fbdeaf48f758808bd64c038c028777"
+    },
+    {
+      "module": "PricingG.UUTP15Transport",
+      "source_sha256": "40f86b9fb6b4dbb9e9036736293462a177175f9402c2ff00748aef14d4aad7e5",
+      "receipt_sha256": "af04653770952c64503bcde38cdee5fa725db8aeb9decf352fa03787fa0f4c12",
+      "output_sha256": "87ef0c2984cc8652ddab9301fabb6035845880206cc0c38f6d65b83167cf10dc"
+    },
+    {
+      "module": "PricingG.UUTFourSwap",
+      "source_sha256": "0f705bbc6bcb4c9a469247af26eb21e2638c539cc9e45800a5f162c81ffcb4d6",
+      "receipt_sha256": "1a6b3c070002e495f58c025dfe8880ae41c21519d45a21925fc9560d66710e89",
+      "output_sha256": "e316cac29ee72289ca039c016aaf3e571b2d72533fc66157e869676bc24c0cd7"
+    },
+    {
+      "module": "PricingG.UUTP15Swap",
+      "source_sha256": "c0ecb75c7825e4ad933584f8504c31f8d45652286ce6549e7eb876caf8f40415",
+      "receipt_sha256": "b64488135e97a3edfaa05a82b797b31ffb0a02ed2987c905c2dc654a005552d6",
+      "output_sha256": "80e240f48da74a21124718e578fcc117bcd8f0093fe5a3b4f33798a4971baf5c"
+    },
+    {
+      "module": "PricingG.UUTP15Seed",
+      "source_sha256": "632e6f3fe6282f08bb6b2cbcfa549187816bcf8df92a279bd9c96f707012900b",
+      "receipt_sha256": "715bb9d3e25567739a87655f53461ba2776442b462a6cd77ec4068c707e8ae62",
+      "output_sha256": "3a5212fc923cc6ebaa24ef29ec256b34d6725243efd4aeea4753523b78b2dbd6"
+    },
+    {
+      "module": "PricingG.UUTSelectedSatisfaction",
+      "source_sha256": "5a84b752347f77880811915208b029da2cf1aae99d0a8f02bafac89018cf5c8c",
+      "receipt_sha256": "68de4ca1851eb430b95752e226799aec7e340c7648b4c57cbe928bce18f2b146",
+      "output_sha256": "b661a648a1a32a762f5c8948e0847814794abee2e08c23f53ec01e216adb29fa"
+    }
+  ],
+  "reviewed_claim": "A complete selected UUT branch implies satisfiability of one of189P15+408restrictedD9+82D10 exact semantic formulas.",
+  "key_scope_checks": [
+    "P15 same-kind complete branch and two-stage whole-tail actions reach exact189 seed cover.",
+    "Both5+4 orientations use one global equal-K15 color/vertex swap retaining .uut and restoring selected mark15.",
+    "D9 allfour retained families cover72+132+132+72; no Tier2 or universal closure premise.",
+    "Five-support degree9/10 split proved from actual9..10 bounds.",
+    "D10 exact82 native matrices reached through checked full600 catalogue and actual semantic branch transport.",
+    "Endpoint accepts no coverage, encoding, UNSAT or arbitrary bridge proposition.",
+    "52source/output/receipt hash triples match; all successful endpoints use only propext,Classical.choice,Quot.sound.",
+    "Same-Blocks physical adapter independently inspected: full14+46 image exactly61vertices minus originalroot; palette inverse and selected degree15\u219214 retained."
+  ],
+  "physical_adapter_source": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/g/PricingG/UUQPhysicalExtension.lean",
+  "physical_adapter_sha256": "2ba8067657d2fdb9977bf96b1f2e1d403b050f96283414b9adb14ca5afdda571",
+  "not_claimed": [
+    "Native full-input identity is a separate byte-binding gate.",
+    "No UNSAT assertion or complete final theorem claimed by this review."
+  ],
+  "cosmetic_findings": [
+    "Copied module comments in UUTD9Swap and UUTD10Complete still say UUU; all actual types explicitly use .uut. Correct package commentary after frozen build or record this distinction."
+  ]
+}

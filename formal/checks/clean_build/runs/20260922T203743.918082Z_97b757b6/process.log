@@ -1,0 +1,2 @@
+'PricingC.referenceScope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.ReferenceScope.card_eq_degree' depends on axioms: [propext, Classical.choice, Quot.sound]

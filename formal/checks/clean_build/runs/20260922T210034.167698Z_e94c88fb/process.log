@@ -1,0 +1,6 @@
+'R4333.ProfileDDegreeTenRepresentativeLeafBridge61.packedCatalogColor_eq_matrix_of_ne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenRepresentativeLeafBridge61.representativeExactBranch_satisfies_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

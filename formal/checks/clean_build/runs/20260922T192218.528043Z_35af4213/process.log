@@ -1,0 +1,3 @@
+'R4333.criticalNeighborhoodWitness_iff_exists_kind' depends on axioms: [propext, Quot.sound]
+'R4333.exists_labeledCriticalTemplateOverlap_of_witnesses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.LabeledCriticalTemplateOverlap.compatible' depends on axioms: [propext, Quot.sound]

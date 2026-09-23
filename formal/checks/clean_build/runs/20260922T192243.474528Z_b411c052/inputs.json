@@ -1,0 +1,22 @@
+[
+  {
+    "module": "Ramsey61.ABDExtraction",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192240.153357Z_c30d374f/output.olean",
+    "sha256": "87625d55f0709e638b1c86987a59521aabb2bde58b97bf0d3d36938adb567c35"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplateDeletion",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/CriticalTemplateDeletion.olean",
+    "sha256": "a2489467f527054aa19be859f167c5572ec75aa53ea95f4ec5f27c3bf3a538b2"
+  },
+  {
+    "module": "Mathlib.Data.Finset.Powerset",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Powerset.olean",
+    "sha256": "4e174727b084d9fc88e9c0ac9fdc60a6af4c68049987b2fea29b121df3914482"
+  },
+  {
+    "module": "Mathlib.Data.List.Sublists",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/List/Sublists.olean",
+    "sha256": "10a1fb5d1453c2363d36401fe3f1062ca6aa32d6e6824191ecfac5d8a824b2d1"
+  }
+]

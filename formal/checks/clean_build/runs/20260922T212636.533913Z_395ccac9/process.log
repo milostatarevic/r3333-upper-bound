@@ -1,0 +1,25 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP15SemanticBase61.lean:146:6: warning: Try `simp at hsplit` instead of `simpa using hsplit`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP15SemanticBase61.lean:146:6: warning: Try `simp at hsplit` instead of `simpa using hsplit`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP15SemanticBase61.lean:358:20: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP15SemanticBase61.lean:376:18: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP15SemanticBase61.lean:403:16: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'R4333.ProfileDUUUFourSupportP15SemanticBase61.fourExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SemanticBase61.physicalVertex_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SemanticBase61.physicalMatrix_eq_ownNeighborhood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP15SemanticBase61.restoredRootHostK15_root_degree_free' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,7 @@
+'R4333.UUTD9StrongStabilizer.rootFlipMap_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongStabilizer.rootFlipFreeChoice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongStabilizer.rootFlipLargeChoice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongStabilizer.rootFlipSmallChoice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongStabilizer.rootFlip_freeLarge_color' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongStabilizer.rootFlip_freeSmall_color' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9StrongStabilizer.rootFlip_largeSmall_color' depends on axioms: [propext, Classical.choice, Quot.sound]

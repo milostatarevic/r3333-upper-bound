@@ -1,0 +1,8 @@
+'R4333.ProfileDDegreeTenMatrixLeafTenDataUUU0P2.leaves_metadata' does not depend on any axioms
+'R4333.ProfileDDegreeTenMatrixLeafTenDataUUU0P2.selectedTotalVertex_val' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileDDegreeTenMatrixLeafTenDataUUU0P2.formula_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenMatrixLeafTenDataUUU0P2.representativeExactBranch_satisfies_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

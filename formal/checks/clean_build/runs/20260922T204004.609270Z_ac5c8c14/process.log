@@ -1,0 +1,2 @@
+'PricingC.GIsomorphic.censusRow_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingC.GIsomorphic.caseCore_index' depends on axioms: [propext, Quot.sound]

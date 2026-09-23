@@ -1,0 +1,68 @@
+{
+  "CPU_seconds": 3.702393,
+  "certificate_checked": false,
+  "command": "verify-all",
+  "families": [
+    {
+      "family": "A",
+      "formulas": 360,
+      "logical_formula_bytes": 5012673964,
+      "manifest_sha256": "04b63427c743d41369cd305fd82e37450bc26c4d5262b47ddd20b4544d8ced13",
+      "ordered_formula_records_sha256": "84711b15313260f2e301ecef5bbfab80e780a2414c04b6df223e5cc04a007492"
+    },
+    {
+      "family": "B",
+      "formulas": 5096,
+      "logical_formula_bytes": 66356978204,
+      "manifest_sha256": "717eddaab19150f9e6443c06180fdcaf655ebdd89a9ce43056d2aa8ae054fa66",
+      "ordered_formula_records_sha256": "3c9fbc9accd722b31fa31c8c168faeda445b19c613ec9c172902c83c32d8e393"
+    },
+    {
+      "family": "D_UUU",
+      "formulas": 679,
+      "logical_formula_bytes": 3351877954,
+      "manifest_sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12",
+      "ordered_formula_records_sha256": "7bceb81700bc43ca7b773a502d64fd09e7df336632676c478845bbd4df8476d1"
+    },
+    {
+      "family": "D_UUT",
+      "formulas": 679,
+      "logical_formula_bytes": 3351877954,
+      "manifest_sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12",
+      "ordered_formula_records_sha256": "3abc5401e30d6864361952ce7ce85807f555667257d0b3abd4aa6fe7423b06e0"
+    },
+    {
+      "family": "D_UTU",
+      "formulas": 6576,
+      "logical_formula_bytes": 32491707918,
+      "manifest_sha256": "b58f50c345e3007f22abea3a0dd1eff029ee50e2a2e5154a6077553aab2988ac",
+      "ordered_formula_records_sha256": "56885050ee9fca306738df70b5debc33aaa2bf6e1e8b8f5b052e66938c689304"
+    },
+    {
+      "family": "D_UTT",
+      "formulas": 6576,
+      "logical_formula_bytes": 32491707918,
+      "manifest_sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7",
+      "ordered_formula_records_sha256": "9a9f2db3fe9deb11f0f0e40cc4cca92fec16ce0f2eae5271663b83a3edc0aa64"
+    },
+    {
+      "family": "D_TTU",
+      "formulas": 18204,
+      "logical_formula_bytes": 89001781990,
+      "manifest_sha256": "a656853526685c105102fb6962dc71c6777887ffbf5c63d6b2c07e41a4791736",
+      "ordered_formula_records_sha256": "9718f6b91662624f6c75943c03858cb6ce397a361409ecc53ed2a6fce993f2b1"
+    },
+    {
+      "family": "D_TTT",
+      "formulas": 18204,
+      "logical_formula_bytes": 89001781990,
+      "manifest_sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec",
+      "ordered_formula_records_sha256": "f87f18b376184cba23decffb72b3a8d9bf5868dedbb3d8eb1582f6a6745df830"
+    }
+  ],
+  "mathematical_coverage_proved": false,
+  "new_solver_calls": 0,
+  "schema": "RAMSEY61_PORTABLE_ABD_INPUTS_1",
+  "scope": "Input reconstruction/hash verification only; authenticate complete evidence separately.",
+  "status": "PASS_EXACT_INPUT_BYTES"
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "RAMSEY61_BUILD_SOURCE_IDENTITY_1",
+  "baseline_manifest_sha256": "545c12c5f23b0e0e4b99079e1db2183c7f9937f17a0d8fe38a43735cfbc4775f",
+  "modules": [
+    {
+      "module": "Ramsey61.Conditional",
+      "original_source_sha256": "0f7c3162e4ca210d88ac0a9d077a7f3ebb037bce50816ec6cbae15f247c76862",
+      "comments": [
+        {
+          "before": "/-- Not yet instantiated by the archived CNFs. The count alone is not data binding. -/",
+          "after": "/-- A family indexed by the 456 C cases. The concrete instance is\n`Ramsey61.CConcreteFamily.concreteFamily`, consumed by\n`PricingIntegration.NativeWholeProof.ramsey61`. -/"
+        },
+        {
+          "before": "/-- Unformalized bridges are deliberately separate named parameters.\nNone is asserted as an axiom or hidden behind a SAT-refutation label. -/",
+          "after": "/-- Interfaces used by the parametric composition lemma.\n`PricingIntegration.NativeWholeProof.ramsey61` supplies all three fields\nwith proved terms for the concrete formula family. None is an added axiom. -/"
+        },
+        {
+          "before": "/-- Critical K15/K16 classification, physical456 seed coverage, full auxiliary\n  assignment and the semantic map to this exact family. Still NOT proved here. -/",
+          "after": "/-- Physical C coverage and a satisfying auxiliary assignment for this family.\n  The final endpoint supplies `PricingIntegration.CComplete.physical_C_to_exact_family`. -/"
+        },
+        {
+          "before": "/-- The new incidence argument proves this entrance once its remaining graph/G\nbranches are supplied. No assumption of the complete Ramsey theorem occurs. -/",
+          "after": "/-- The incidence entrance parameterized by its graph and guarded-G implications.\nThe composition below supplies them from the proved structural argument and\nthe supplied guard exclusion. -/"
+        },
+        {
+          "before": "/-- A parametric conditional endpoint. The actual frozen family/data binding,\nall three named bridges, and the refutations remain obligations. Standard axioms\nin #print do not discharge these explicit theorem parameters. -/",
+          "after": "/-- Parametric composition of the root entrance, case cover and refutations.\nThe complete endpoint `PricingIntegration.NativeWholeProof.ramsey61` instantiates\nthe concrete family and all three mathematical interfaces; only its explicit\n`AllNativeUnsat` computational premise remains. -/"
+        }
+      ]
+    },
+    {
+      "module": "Ramsey61.Selector",
+      "original_source_sha256": "f143934c11a36769886baa2a94c005405047e011bbabf6970220025f144db4d3",
+      "comments": [
+        {
+          "before": "/-- The global synchronized C/E branch, before its still-unformalized elimination. -/",
+          "after": "/-- The synchronized C/E branch used by the proved incidence entrance.\nThe final composition is `PricingIntegration.NativeWholeProof.ramsey61`. -/"
+        }
+      ]
+    },
+    {
+      "module": "R4333Lean.Attaching61Reduction",
+      "original_source_sha256": "cea2031fbc9ea0fd22693f87e2fe7a761c696879f7529238153a207e1cfddda9",
+      "comments": [
+        {
+          "before": "/-!\n# Exact remaining finite obstruction for the order-61 theorem\n\nThe ordinary graph theory and the K15/K16 catalogue semantics reduce the\nupper bound to one proposition below.  This file does not assert that finite\nproposition; it proves that a future checked overlap/shared-outside\ncertificate for it closes `R(3,3,3,3) <= 61` immediately.\n-/",
+          "after": "/-!\n# An alternative attaching-obstruction reduction for order 61\n\nThis file gives a sufficient condition for the upper bound in terms of\ncatalogued attaching configurations. Its obstruction remains an explicit\nparameter of this auxiliary composition theorem. The complete endpoint\n`PricingIntegration.NativeWholeProof.ramsey61` uses the profile reduction.\n-/"
+        },
+        {
+          "before": "/-- This is the sole unresolved mathematical proposition after the current\nformal reduction: no good K61 four-colouring contains the forced pair of\ncatalogued critical neighbourhoods.  It is a definition, not an axiom. -/",
+          "after": "/-- The obstruction parameter for the auxiliary attaching reduction:\nno good K61 four-colouring contains the forced pair of catalogued critical\nneighbourhoods. This definition is not an axiom or a premise of the final\nprofile-based endpoint. -/"
+        },
+        {
+          "before": "/-- Once the exact finite obstruction is certificate-checked, the improved\nupper bound follows without any additional graph-theoretic assumption. -/",
+          "after": "/-- The catalogue-completeness statements and the attaching obstruction\nsuffice for the upper bound in this alternative composition. -/"
+        }
+      ]
+    },
+    {
+      "module": "R4333Lean.CriticalCatalogues",
+      "original_source_sha256": "b652c8bc79277144f6cf247dca3f7e021c8e9414be13c308a99747131ea279b8",
+      "comments": [
+        {
+          "before": "/-- The exact final assembly theorem.  A checked proof of the remaining\nfinite attaching obstruction is sufficient for `R(3,3,3,3) <= 61`. -/",
+          "after": "/-- An auxiliary sufficient-condition theorem using the attaching obstruction.\nThe complete endpoint `PricingIntegration.NativeWholeProof.ramsey61` instead\nuses the profile reduction and its explicit native computational premise. -/"
+        }
+      ]
+    }
+  ]
+}

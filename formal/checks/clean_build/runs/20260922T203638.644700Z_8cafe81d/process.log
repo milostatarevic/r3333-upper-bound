@@ -1,0 +1,12 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/ColumnBudget.lean:91:12: warning: This simp argument is unused:
+  ← sum_filter
+
+Hint: Omit it from the simp argument list.
+  simp [̵←̵ ̵s̵u̵m̵_̵f̵i̵l̵t̵e̵r̵,̵m̵u̵l̵_̵c̵o̵m̵m̵]̵[̲m̲u̲l̲_̲c̲o̲m̲m̲]̲
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingG.SignDesign.total_energy_eq_five_stars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.SignDesign.total_fours_at_least_three_stars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.SignDesign.column_data_of_star' depends on axioms: [propext, Classical.choice, Quot.sound]

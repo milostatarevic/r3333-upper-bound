@@ -1,0 +1,14 @@
+{
+  "scope": "Current package copies of README files adapted for isolated build environment selection.",
+  "adaptation_sha256": "33bd324062a17b68fdd5818a6561dfca83615de38319a0bfbc00de682c34dfbb",
+  "files": [
+    {
+      "path": "reproduce/common/README.md",
+      "sha256": "80c07d96cde33dc8408c07d3183087ad8ab722111b25bf5762831a26121a504e"
+    },
+    {
+      "path": "reproduce/uuq/README.md",
+      "sha256": "251914090e1dfe40f7041f7406d9e547169882f6a930a3f67cfd24d902ec8422"
+    }
+  ]
+}

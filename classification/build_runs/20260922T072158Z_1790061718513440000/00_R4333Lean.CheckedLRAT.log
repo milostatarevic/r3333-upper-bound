@@ -1,0 +1,20 @@
+'R4333.checkedTwoBitToyUnsat' depends on axioms: [propext]
+'R4333.checkedTwoBitToy_noValuation' depends on axioms: [propext]
+        3.66 real         0.37 user         0.71 sys
+           820707328  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               24399  page reclaims
+               38014  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                6039  voluntary context switches
+               32854  involuntary context switches
+          7961075164  instructions retired
+          4146122424  cycles elapsed
+           152975752  peak memory footprint

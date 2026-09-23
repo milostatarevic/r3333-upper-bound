@@ -1,0 +1,32 @@
+'R4333.UUTD9Root12Case.twistedRoot12LargeSupportCandidates_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.twistedRoot12SmallSupportCandidates_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.twistedRoot12CompatibleSmallSupportCandidates_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.twistedRoot12PhysicalSupportPair_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root12Case.TwistedRoot12Realization.largeSupport_mem_candidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.TwistedRoot12Realization.smallSupport_mem_candidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.TwistedRoot12Realization.smallSupport_mem_compatibleCandidates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.TwistedRoot12Realization.small_small_edge_physical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.TwistedRoot12Realization.free_large_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.TwistedRoot12Realization.free_small_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.TwistedRoot12Realization.large_small_edge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root12Case.twistedRoot12CaseFiniteBoundary' depends on axioms: [propext, Classical.choice, Quot.sound]

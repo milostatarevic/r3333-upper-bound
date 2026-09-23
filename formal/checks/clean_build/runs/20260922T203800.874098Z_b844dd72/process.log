@@ -1,0 +1,2 @@
+'PricingIntegration.BSupportedBlocks.supported_B_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.BSupportedBlocks.actual_B_support_split' depends on axioms: [propext, Classical.choice, Quot.sound]

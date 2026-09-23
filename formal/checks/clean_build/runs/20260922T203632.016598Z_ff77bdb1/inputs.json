@@ -1,0 +1,22 @@
+[
+  {
+    "module": "R4333Lean.CanonicalStarOwnColorDegree",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192245.934805Z_56562cfa/output.olean",
+    "sha256": "edbf4cfd9917a2c552a2864ff83b0e30a4f613fd7eed2561033cf639fb717050"
+  },
+  {
+    "module": "R4333Lean.ColoringJoinRowSupport",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192212.339926Z_1f32fbad/output.olean",
+    "sha256": "6e8935b59d3cf73575a57e4c05ac43e3d2a6db96aee4cb0041e642203b980c5e"
+  },
+  {
+    "module": "R4333Lean.ProfileDFourRowDegreeCap",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203618.814112Z_003a6d7f/output.olean",
+    "sha256": "0f5054cd3c13ce410b98a200afa6373378eadb7c64b5e5f3e06f11c4d15abaad"
+  },
+  {
+    "module": "R4333Lean.ProfileDFourRowKindSymmetry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203613.190582Z_c952262e/output.olean",
+    "sha256": "2fc679389f4c8694c626206ad924d4200762526b444946edb7dfb3c234ef4738"
+  }
+]

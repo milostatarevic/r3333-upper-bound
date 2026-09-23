@@ -1,0 +1,79 @@
+{
+  "schema": "RAMSEY61_MARKDOWN_MATH_CARRYFORWARD_1",
+  "checked_at_utc": "2026-09-22T09:01:44.798313+00:00",
+  "prior_render_receipt": "MATH_RENDER_005.json",
+  "prior_render_receipt_sha256": "4dd0a5079a86bababd5e910453dfe9ae1ab39fc8e0e30b635e1d45893df1b4ab",
+  "original_render_receipt": "MATH_RENDER_003.json",
+  "change": "Reader-facing proof and technical account remove research chronology, superseded-formula stories, and K61 certificate-production roadmap. The mathematical argument, all expressions, labels and rendering syntax are unchanged. Redundant acceptance-report documents are preserved outside the reader-facing tree.",
+  "documents": [
+    {
+      "file": "proof.md",
+      "source_sha256": "4be01b474f945d56c3e110d6c9d08bb87cdf5f7342ebcccd7e49800de2f75ae2",
+      "prior_source_sha256": "17b9a75840abe0bac4a8e8430da6385e7b8b561b94b5e89a67bb3d18aecc123b",
+      "display_expressions": 27,
+      "inline_expressions": 102,
+      "all_mathematical_expressions_unchanged_in_exact_order_and_content": true,
+      "equation_labels_unchanged": true,
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "expression_sequence_json_sha256": "7781d69d93673cac01bcb4526e4a0f39ced04a63f70e296aa22f8c3e773813ad"
+    },
+    {
+      "file": "publication/MATHEMATICS.md",
+      "source_sha256": "b3ac1ba7405346bed040bf1f0c7f378fee9a5e647a74a37e095f9ac02636686b",
+      "prior_source_sha256": "8d658e84e5471d85ce13913c137804e47c295082dac21f315b2bb330419267af",
+      "display_expressions": 26,
+      "inline_expressions": 96,
+      "all_mathematical_expressions_unchanged_in_exact_order_and_content": true,
+      "equation_labels_unchanged": true,
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "expression_sequence_json_sha256": "4f03849140c7f248c9bc6d9bf73cdf95793b9619494645253ca5a872d965f19c"
+    }
+  ],
+  "other_updated_document_hashes": [
+    {
+      "file": "publication/REPRODUCIBILITY.md",
+      "source_sha256": "f90f6fffbf9ae640c7c3ba4ef773eb9a528e697d2499519245b7fac021bd9dcc"
+    },
+    {
+      "file": "docs/MEASURED_COSTS_FINAL_002.md",
+      "source_sha256": "86da0f39f6a48d499ccd0f88543a2a49536c97d4f488d5feaa02b849c046af2d"
+    },
+    {
+      "file": "docs/READING_GUIDE.md",
+      "source_sha256": "f1f07b2d392f761067d0dcca36cc97f227fde99a6a7a2705ab0e2b7135db4f00"
+    },
+    {
+      "file": "docs/REFERENCE_PREMISES.md",
+      "source_sha256": "128e94aa1d04eebe12261bcc0d6a7257838756293e2add9c669bfb5287031a30"
+    }
+  ],
+  "total_unchanged_expressions": 251,
+  "expression_sequence_hash_format": "UTF-8 compact JSON array, ensure_ascii=False, each ordered item has kind(display|inline) then tex with exact original content.",
+  "fresh_github_markdown_api_call": false,
+  "fresh_mathjax_render": false,
+  "rendering_evidence": "Exact formula and label carryforward from receipt 005 to the original GitHub Markdown API/local MathJax checks in 003. Pre-edit source hashes match 005; all 251 expressions and 20 labels match exactly. This is not a new render.",
+  "live_authenticated_github_page_checked": false,
+  "scope": "Editorial cleanup only. Existing syntax/preprocessing/local-layout evidence is carried forward, including the explicit absence of authenticated live-GitHub layout verification."
+}

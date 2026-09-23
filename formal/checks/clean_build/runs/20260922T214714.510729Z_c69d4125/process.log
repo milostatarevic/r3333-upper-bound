@@ -1,0 +1,8 @@
+'R4333.UUTP15Transport.transportNormalizedLocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Transport.transportNormalizedLocal_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Transport.representativeTotalPerm_physicalVertex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTP15Transport.transportedBranch_matrixExact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Transport.exactOrderedLeaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15Transport.exists_exactOrderedLeaf' depends on axioms: [propext, Classical.choice, Quot.sound]

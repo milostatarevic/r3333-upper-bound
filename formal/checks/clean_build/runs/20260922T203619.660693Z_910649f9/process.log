@@ -1,0 +1,16 @@
+'R4333.ProfileDToCCompletionTransfer.transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDToCCompletionTransfer.completesSecondK15_iff_avoids' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDToCCompletionTransfer.nonempty_C_of_D_with_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDToCCompletionTransfer.universalD_of_C_and_completionFreeD' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDToCCompletionTransfer.blockedCompletionPairColoring_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDToCCompletionTransfer.blockedCompletionCross_no_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

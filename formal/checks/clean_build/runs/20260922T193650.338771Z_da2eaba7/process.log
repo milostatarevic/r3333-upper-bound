@@ -1,0 +1,2 @@
+'PricingIntegration.NativeRenaming.roundtrip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.NativeRenaming.native_formula_satisfied' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'PricingIntegration.SeedCensus.metadata_maps_eraseY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.SeedCensus.star_plane_same_anchor' depends on axioms: [propext, Quot.sound]

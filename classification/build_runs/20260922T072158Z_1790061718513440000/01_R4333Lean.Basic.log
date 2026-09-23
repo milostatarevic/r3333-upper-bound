@@ -1,0 +1,22 @@
+'R4333.homogeneous_pair_iff' depends on axioms: [propext]
+'R4333.noMono_pair_iff_fiberwise' depends on axioms: [propext]
+'R4333.admits_refinement_iff_both_parts_nonarrowing' depends on axioms: [propext]
+'R4333.hasFourColoring_iff_exists_admissible_projection' depends on axioms: [Quot.sound]
+        9.71 real         1.21 user         2.14 sys
+          2885582848  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              130557  page reclaims
+              100161  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               17063  voluntary context switches
+               83560  involuntary context switches
+         25336870129  instructions retired
+         12673608444  cycles elapsed
+           485052456  peak memory footprint

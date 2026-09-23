@@ -1,0 +1,8 @@
+'R4333.ProfileBFourRowBoundary.restrictFour' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileBFourRowBoundary.no_profileB_star_of_universalFourRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileCFourRowBoundary.restrictFour' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileCFourRowBoundary.no_profileC_star_of_universalFourRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

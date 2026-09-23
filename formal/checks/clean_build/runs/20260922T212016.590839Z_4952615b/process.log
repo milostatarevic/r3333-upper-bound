@@ -1,0 +1,59 @@
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.explicitFreeLabelOrder_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.explicitLargeLabelOrder_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.explicitSmallLabelOrder_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.largeCatalogue_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.smallCatalogue_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.largeCatalogueChoice_physical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.smallCatalogueChoice_physical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.explicitLargeCompatible_covered' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.explicitSmallCompatible_covered' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.exists_largeCatalogueIndex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.exists_smallCatalogueIndex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.largeNormalizerEquationExplicit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.smallNormalizerEquationExplicit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.largeNormalizerEquation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.smallNormalizerEquation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.freeRepresentative_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.exists_independentPhysicalNormalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.quotientRepresentativePair_coverage' depends on axioms: [propext,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.factorAssignmentRealization_reduces_to_132' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ContinuationDegreeNineTwistedRoot1FactorOrbitCoverage61.twistedRoot1Realization_reduces_to_132' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

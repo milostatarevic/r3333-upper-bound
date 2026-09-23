@@ -1,0 +1,4 @@
+'CompletionC.ActualProfileCover.actual_A_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.ActualProfileCover.actual_B_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.ActualProfileCover.actual_D_cover_or_UU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.ActualProfileCover.actual_A_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]

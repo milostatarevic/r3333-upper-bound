@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.SingleRootStarWitness61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192238.851145Z_8d11a566/output.olean",
+    "sha256": "8813f2689b1b340c7de0c046c586de549fbb18bc82da892140971ceee200ed17"
+  },
+  {
+    "module": "R4333Lean.Obstruction",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/Obstruction.olean",
+    "sha256": "a653fdb33bad072c73c3839effe52c54679e2705944cc3bf3dbfb4b281d6a170"
+  }
+]

@@ -1,0 +1,11 @@
+'R4333.ProfileBThreeRowKindSymmetry.transportTailWitness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileBThreeRowKindSymmetry.transportThreeExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileBThreeRowKindSymmetry.nonempty_threeExtension_iff_swapKind' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileBThreeRowKindSymmetry.SixRepresentativeObstructions.universalThreeRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileBThreeRowKindSymmetry.no_profileB_star_of_sixRepresentativeObstructions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,7 @@
+'PricingABD.TemplateNormalization.k15_color_preserving_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingABD.TemplateNormalization.k16_rooted_color_preserving_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingABD.TemplateNormalization.degree_of_color_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]

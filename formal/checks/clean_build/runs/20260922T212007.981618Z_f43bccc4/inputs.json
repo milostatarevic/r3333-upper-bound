@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.ContinuationDegreeNineTwistedRoot1CaseFactorCNF61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211930.070976Z_0f234396/output.olean",
+    "sha256": "8f3e345fe0a8df4cfc1484ef1ea5e2e7240f08ceb308001cac8e8283f8215554"
+  },
+  {
+    "module": "R4333Lean.ProfileDDegreeTenMatrixTransport61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211506.918816Z_94b384a7/output.olean",
+    "sha256": "811ae6507b5db063a44beb523531b9811980753d5317071b7e47e888c7028b6d"
+  }
+]

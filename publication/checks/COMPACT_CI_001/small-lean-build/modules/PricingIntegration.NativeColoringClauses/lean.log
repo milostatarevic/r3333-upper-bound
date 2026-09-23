@@ -1,0 +1,6 @@
+'PricingIntegration.NativeColoringClauses.physicalValuation_physical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.NativeColoringClauses.physicalValuation_triangles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

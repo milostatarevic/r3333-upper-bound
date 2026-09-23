@@ -1,0 +1,465 @@
+{
+  "schema": "ramsey61-common-portable-path-index-v1",
+  "records": {
+    "PAIR_ADMISSION_GENERATED_001": {
+      "path": "original_receipts/PAIR_ADMISSION_GENERATED_001.json",
+      "sha256": "952c622d0fc91b37f6827388e2978e4b80629fec344851508974284467667012"
+    },
+    "ALL20_EXACT_PREFIX_BINDING_001": {
+      "path": "original_receipts/ALL20_EXACT_PREFIX_BINDING_001.json",
+      "sha256": "02487a08eab4604b6abb1de0764067ac7ff4232c53a2250bc7d654f31437bd46"
+    },
+    "D_NATIVE_PREFIX_ALL_BINDING_001": {
+      "path": "original_receipts/D_NATIVE_PREFIX_ALL_BINDING_001.json",
+      "sha256": "c4285fc3a639f135118597026dd15902e819acdcd1885e3bd6e6492881851782"
+    },
+    "COMMON_NATIVE_ALL_INPUT_BINDING_001": {
+      "path": "original_receipts/COMMON_NATIVE_ALL_INPUT_BINDING_001.json",
+      "sha256": "b942b0a94832ddbf127b8ca9c648b687acbe839e424c0be0ddebd845b9c55c5c"
+    }
+  },
+  "historical_paths": {
+    "/private/tmp/ramsey61-public-release-check-20260921-001/evidence/A/SELECTED_A_VERIFIED_CENSUS_000.json": {
+      "root": "archive",
+      "path": "A/SELECTED_A_VERIFIED_CENSUS_000.json",
+      "sha256": "bb2a36c4cbaaa23d5a78911600043f5eaaf9ee189412403f5927483e6edf566e"
+    },
+    "/private/tmp/ramsey61-public-release-check-20260921-001/evidence/B/SELECTED_B_VERIFIED_CENSUS_000.json": {
+      "root": "archive",
+      "path": "B/SELECTED_B_VERIFIED_CENSUS_000.json",
+      "sha256": "5dd67c47ba1048f029acb5b00cf5c9130ff4959d23e5166950676f8a37532d54"
+    },
+    "/private/tmp/ramsey61-public-release-check-20260921-001/evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json": {
+      "root": "archive",
+      "path": "D/mixed/MIXED_D_VERIFIED_CENSUS_000.json",
+      "sha256": "07c1d26ecd7af8bd16d57e1e86d3ee2a539291cd203d727dbda9cc61e73edbec"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/A_UUU_4_PREFIX_FROM_LEAN_001.cnf": {
+      "root": "emission",
+      "path": "prefixes/A_UUU_4.body",
+      "sha256": "e6183ad189628b59875ec6d3b38e66634f7026897c8926215f4a9c1a5e51ebc7"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/A_UUU_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/A_UUU_5.body",
+      "sha256": "3b00177bef19eca928c8dbb88852b39a132adc511edabca0dcd1a6256b8ab299"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/A_UUT_4.cnf": {
+      "root": "emission",
+      "path": "prefixes/A_UUT_4.body",
+      "sha256": "8e6d6ae0f7af12dbf6bc58c5ebc0e6fafcbd285e96365ed15042cf3cf2b2183f"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/A_UUT_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/A_UUT_5.body",
+      "sha256": "42ab5bea485042008b9409a6af8163f5c6ccde1997a91c688cd56d1a4cd8d6a6"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/A_UTT_4.cnf": {
+      "root": "emission",
+      "path": "prefixes/A_UTT_4.body",
+      "sha256": "81737498246415ee8d0aa5720c2cf864fa0943010dc31a9a315936c907bc5b6c"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/A_UTT_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/A_UTT_5.body",
+      "sha256": "a4d182aaf9a492fa920b3156c300588a48fa2654f0a0de62f914555df286832c"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/A_TTT_4.cnf": {
+      "root": "emission",
+      "path": "prefixes/A_TTT_4.body",
+      "sha256": "6d3ebc634a7fe661813937f1b132ddba635e5b34d8d4680fba62b1f889ae41c2"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/A_TTT_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/A_TTT_5.body",
+      "sha256": "c31b7dc40f598b361d19f1ca471022284acf0021438c4e19dcd751b292e9e9ac"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_UUU_4.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_UUU_4.body",
+      "sha256": "6c22e5c3642692ce685f474c1fb19b8fad73e22d71f3ed843cae7dc9a9ca996e"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_UUU_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_UUU_5.body",
+      "sha256": "4a354cd5ed5e242186b6647219d6b1148fae78ef212d9559ca1e3f33ae0f3574"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_UUT_4.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_UUT_4.body",
+      "sha256": "5041f3f15b972602e85d5a9df0a7b4043248813b64bb30bd71a863b2a3139e4c"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_UUT_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_UUT_5.body",
+      "sha256": "966a00254cc027a5369c54cc27f873e55e79a49d6ae33a0d2c7cc974a92fabf0"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_UTT_4.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_UTT_4.body",
+      "sha256": "850ecd658711b9e2fe2c6fce85eded3ec8398373d34794d02b7d31026ec2037d"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_UTT_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_UTT_5.body",
+      "sha256": "64a779e4fff80ec634f4c006ad64669bdd1aed5855f50208558e4f6fd6933f80"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_TUU_4.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_TUU_4.body",
+      "sha256": "e723746e1934132f40afba0dbd08040a4c97bb402c65031249853ae53c802ec1"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_TUU_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_TUU_5.body",
+      "sha256": "a495343a4bdcbb85d760cb9eb4dd50be1b4d12335264e72346381816c0f14ca5"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_TUT_4.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_TUT_4.body",
+      "sha256": "c90850dcf89cf280f65dbb69bc1b037b2ed04524e89717ee894583f3a016a037"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_TUT_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_TUT_5.body",
+      "sha256": "2e07070df094de31ab401cef729fe4293da93d0fd89ace1ca62c8e383a5d4641"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_TTT_4.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_TTT_4.body",
+      "sha256": "0b670fd2a71702924d3d91887e2fbdf09c0986f6e944f4d2c237582ce4c7133c"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/ab_prefixes_from_lean_001/B_TTT_5.cnf": {
+      "root": "emission",
+      "path": "prefixes/B_TTT_5.body",
+      "sha256": "c9c4cf8d608de4ae086f91f891fb2d9e8ff1fad3537eb239c226929520c8ff3f"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/UTU_five.body": {
+      "root": "d_prefix",
+      "path": "UTU_five.body",
+      "sha256": "f5180f99442a1c0f10f813d3d25099259cdf9cc8389bca27fdddae8a9ad8606d"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/UTU_four.body": {
+      "root": "d_prefix",
+      "path": "UTU_four.body",
+      "sha256": "35956f32cec3619572e83ec924c272b3b83e3f2ef31da79cdde2476ad6c2ca61"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/UTT_five.body": {
+      "root": "d_prefix",
+      "path": "UTT_five.body",
+      "sha256": "44ad076b5cb44a1b584d0ecbfe3c4eadb3b82488ab38b887f5d240fbbbaa65e1"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/UTT_four.body": {
+      "root": "d_prefix",
+      "path": "UTT_four.body",
+      "sha256": "5e1df15450ef4d93f90bbc9a27772336310b555ac09636dc681c3464d9b8e969"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/TTU_five.body": {
+      "root": "d_prefix",
+      "path": "TTU_five.body",
+      "sha256": "583f6508a743220038567a711fe9e1f2d04225b724f13033ef61bdc237c4f737"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/TTU_four.body": {
+      "root": "d_prefix",
+      "path": "TTU_four.body",
+      "sha256": "5ff0968e7e625ce772633fb9efa7c98a6b7e604d05b78f1733bddab1efcd9902"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/TTT_five.body": {
+      "root": "d_prefix",
+      "path": "TTT_five.body",
+      "sha256": "9ab8e9a40bff9034cba9675deffccfa46788381f4bc6d884168a812f4b26aef0"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/TTT_four.body": {
+      "root": "d_prefix",
+      "path": "TTT_four.body",
+      "sha256": "91cc26abbc31a6c67824318f24a341baf1b44af81011838358e59cc3ca462d91"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/UUU_five.body": {
+      "root": "d_prefix",
+      "path": "UUU_five.body",
+      "sha256": "cf050d44fab941f06240fc7a8baada5baee0ea508f9a92ecbe9875bb4cf1aa74"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/UUT_five.body": {
+      "root": "d_prefix",
+      "path": "UUT_five.body",
+      "sha256": "41c157defa25006221e9212f10aac4f305225718e87f031881dd6b8e14962bd8"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/UUU_four.body": {
+      "root": "d_prefix",
+      "path": "UUU_four.body",
+      "sha256": "0442bc50c552d58cd17afd10a6b8381210529d58a58dbb85cfd8dec49da4bc39"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/integration/native_d_prefix_001/UUT_four.body": {
+      "root": "d_prefix",
+      "path": "UUT_four.body",
+      "sha256": "13292f48dae1a08144dd1dca094ce3fe9acf14de6bdec3b80efa90d84e22af0f"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/TTT_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/TTT_D10.prefix.cnf",
+      "sha256": "4233c34ae42417c1c07c9e03e266bd7157a0f94a587e2117514b1b8d2905b8cb"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/TTT_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/TTT_D9.prefix.cnf",
+      "sha256": "e825281ac599d1dd1ec7b93cb0ef990642eefc1144f1d099c6d1c90f95ddd875"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/TTT_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/TTT_P15.prefix.cnf",
+      "sha256": "914a425cb37dce26ae61b46d635d6c0462a05e49b99abafd676309205850dceb"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/UTT_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/UTT_D10.prefix.cnf",
+      "sha256": "0fa169c5e7310bb5b8776ae9e0b7d958ed2b90df117af11e875ddf3671bff85b"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/UTT_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/UTT_D9.prefix.cnf",
+      "sha256": "6afdeb7033031109ca79f68a0416203ec2847bc7d0afdcfe77d7f121d7706b43"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/UTT_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/UTT_P15.prefix.cnf",
+      "sha256": "66940ce858c928f42485f0f303cf727c43dae0180d1e33f76f460879d82caa4b"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/UUT_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/UUT_D10.prefix.cnf",
+      "sha256": "ada26b0306df96e08b17a21cd2a24c0f8f5ed8559d6f11c3cbaa47d85d4d5b2c"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/UUT_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/UUT_D9.prefix.cnf",
+      "sha256": "84102c50f7453934d3fcecbe72ab29e96fc3a40d140719ad8a033d191d8679af"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/UUT_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/UUT_P15.prefix.cnf",
+      "sha256": "a490cae304de91ccab9135cab9b45289c808134d210603a85ee174a6ca1962b4"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/UUU_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/UUU_D10.prefix.cnf",
+      "sha256": "12c91b7755b73cd6540260a6708febe3d050877f3586c0791386fb6802226bdf"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/UUU_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/UUU_D9.prefix.cnf",
+      "sha256": "963a8943056305481c2cd2a8cbbc018b33697fe437f43b3b3679f7243dc7c989"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_a_campaign_20260914_000/full_inputs_000/prefixes/UUU_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "A/full_inputs_000/prefixes/UUU_P15.prefix.cnf",
+      "sha256": "7434cf9c0c670c1242fe5fa7d2ae159998c4d996f0f39e89117d609046f07d7a"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/TTT_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/TTT_D10.prefix.cnf",
+      "sha256": "051530e41dfcac2734fe277acdb63c2d71115acdf81f3dc156ec44215e6a5373"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/TTT_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/TTT_D9.prefix.cnf",
+      "sha256": "fd154c0f6b542328a3aec961d7db475887b5c76062d10262d72a6e72c9d0ab8d"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/TTT_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/TTT_P15.prefix.cnf",
+      "sha256": "e85d68020fab80ee29ed69de5751f43fee6e315451c7f6953932562fabe0ddeb"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/TUT_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/TUT_D10.prefix.cnf",
+      "sha256": "da24a58b49a34cd419186907d7fb2cd16877f51bb00f0dcd71d11a6a7ad77de2"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/TUT_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/TUT_D9.prefix.cnf",
+      "sha256": "69d5c607f4b9bea94b1f53441fa52c9a32b6cafb595d3e2c0cfaf8837db5b625"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/TUT_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/TUT_P15.prefix.cnf",
+      "sha256": "63dbdf8b9b1b18866fd0afd5b3c23056c1ab49d46e9b2f46b2133ec43913dc21"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/TUU_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/TUU_D10.prefix.cnf",
+      "sha256": "5c49e53f343aa7ef629ffdcf626da05f43f6bec8a0a247fc99911e5da9c5ac2b"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/TUU_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/TUU_D9.prefix.cnf",
+      "sha256": "3f77f685803a576c5fb9c530b315932c186c0fff2c00503ce87e5877739f919c"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/TUU_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/TUU_P15.prefix.cnf",
+      "sha256": "a9964d3687e7a889bb160d5135f038d10a8c8b9df1e0d64b6a0b97195adccad6"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/UTT_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/UTT_D10.prefix.cnf",
+      "sha256": "6b9a0829f23a21e2911139f7879b348d19b2711b1b6a9d26db33fd2c72380c63"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/UTT_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/UTT_D9.prefix.cnf",
+      "sha256": "fecc89031f83e2309593c498a8f05c922067042207810cfb163b2d4bde0dee84"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/UTT_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/UTT_P15.prefix.cnf",
+      "sha256": "309491ec3998c73a3d2a4b936623e4a429af31bfe354fe57b06e4a17cf2c4bc7"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/UUT_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/UUT_D10.prefix.cnf",
+      "sha256": "5f7516bbc7316c6da6d290457a7eb818eafb7f1581ef0af875a915f5993c224b"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/UUT_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/UUT_D9.prefix.cnf",
+      "sha256": "fad557208ac0869a02f547a45f848d4ffe202a6a323b2db3eed053c966a3bf4b"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/UUT_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/UUT_P15.prefix.cnf",
+      "sha256": "3951b4dfe44a069e7e7380c32465aeecfeaa4ea73bdd15eca33b19a73bad94b8"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/UUU_D10.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/UUU_D10.prefix.cnf",
+      "sha256": "7da6fc4aa4f59247d1e1bbf93ae94e54e5458f2e1b80bc3ca0eb465ffc1c2551"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/UUU_D9.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/UUU_D9.prefix.cnf",
+      "sha256": "e2935e04495a4d75d57484b777bb3b175c5195c7a50a7010ad35c881c7804ee5"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/selected_b_campaign_20260913_000/full_inputs_000/prefixes/UUU_P15.prefix.cnf": {
+      "root": "archive",
+      "path": "B/full_inputs_000/prefixes/UUU_P15.prefix.cnf",
+      "sha256": "efd707baeafa8ea2f1ebd90c97f0477c971ee0429eb1e138d774a1ba49176deb"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_UTU_000/D10.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTU_000/D10.prefix.cnf",
+      "sha256": "0b8efd42c95745e949d8befe2bbb675ec8e19a523a8ed3a2bb50cda2387e79cc"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_UTU_000/D9_FIRST4.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTU_000/D9_FIRST4.prefix.cnf",
+      "sha256": "2880f2d95fd5bbc5f18cd0762196597b2a004033f1477c217f4b6d69b413ce03"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_UTU_000/D9_SECOND4.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTU_000/D9_SECOND4.prefix.cnf",
+      "sha256": "2880f2d95fd5bbc5f18cd0762196597b2a004033f1477c217f4b6d69b413ce03"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_UTU_000/P15_MATRIX_ONLY.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTU_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "f5e0229d884da7b8d43816b60130cb696d8ab5b3b4c9771a6039a26c5ab015f2"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_UTT_000/D10.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTT_000/D10.prefix.cnf",
+      "sha256": "3ec9c3308a7ed3327d01e5c2076ec0a9438328751749fa91bbf7d665f8c3b606"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_UTT_000/D9_FIRST4.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTT_000/D9_FIRST4.prefix.cnf",
+      "sha256": "6a0e312d065dbd541b117706377ed8997c928a8d32f8dd605f319754b11457f6"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_UTT_000/D9_SECOND4.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTT_000/D9_SECOND4.prefix.cnf",
+      "sha256": "6a0e312d065dbd541b117706377ed8997c928a8d32f8dd605f319754b11457f6"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_UTT_000/P15_MATRIX_ONLY.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTT_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "0763c8631756487af32b645a8a7efcc5a5116b3391f4c56346c9367d96286daa"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_TTU_000/D10.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_TTU_000/D10.prefix.cnf",
+      "sha256": "b736a55c6e917b2ac29e9c64101d6b1e88b36afd68acc70e77e5b4fc34f1a013"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_TTU_000/D9_FIRST4.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_TTU_000/D9_FIRST4.prefix.cnf",
+      "sha256": "028d01e7d6ca5114df5b5543fadb02fd364635262aa3cb2b87329f59ee229f79"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_TTU_000/P15_MATRIX_ONLY.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_TTU_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "94895e16df305a953cda0204a0e204c8f4c5c7a6054074a4a66f17269f3fdb1c"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_TTT_000/D10.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_TTT_000/D10.prefix.cnf",
+      "sha256": "0078a2860fb4387d87fcfd25cc304d16ef10c90ed2e4b6aa117f7279d7952363"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_TTT_000/D9_FIRST4.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_TTT_000/D9_FIRST4.prefix.cnf",
+      "sha256": "1fbc35b306dd3e7856a9a116b8c81c688b7820bdce9935c6472a133c229f7d0b"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_original_uut_feasibility_20260912_001/mixed_d_preparation_000/full_inputs_TTT_000/P15_MATRIX_ONLY.prefix.cnf": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_TTT_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "751c05a0e4b6c57399a0ddfae7f552b987beab3a7b09d3ed208cacc4f79919a3"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/COMMON_SUFFIXES_FROM_LEAN_001.tsv": {
+      "root": "emission",
+      "path": "COMMON_SUFFIXES.tsv",
+      "sha256": "11b8fcf2887385dd7a6a19cb07548ff14d3262cca3a9bfae075e475de417ef47"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/A/full_inputs_000/MANIFEST.json": {
+      "root": "archive",
+      "path": "A/full_inputs_000/MANIFEST.json",
+      "sha256": "04b63427c743d41369cd305fd82e37450bc26c4d5262b47ddd20b4544d8ced13"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/B/full_inputs_000/MANIFEST.json": {
+      "root": "archive",
+      "path": "B/full_inputs_000/MANIFEST.json",
+      "sha256": "717eddaab19150f9e6443c06180fdcaf655ebdd89a9ce43056d2aa8ae054fa66"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_UTU_000/MANIFEST.json": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTU_000/MANIFEST.json",
+      "sha256": "b58f50c345e3007f22abea3a0dd1eff029ee50e2a2e5154a6077553aab2988ac"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_UTT_000/MANIFEST.json": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_UTT_000/MANIFEST.json",
+      "sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_TTU_000/MANIFEST.json": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_TTU_000/MANIFEST.json",
+      "sha256": "a656853526685c105102fb6962dc71c6777887ffbf5c63d6b2c07e41a4791736"
+    },
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_TTT_000/MANIFEST.json": {
+      "root": "archive",
+      "path": "D/mixed/full_inputs_TTT_000/MANIFEST.json",
+      "sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec"
+    }
+  },
+  "suffix_original_path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/COMMON_SUFFIXES_FROM_LEAN_001.tsv",
+  "expected_complete_inputs": 55016,
+  "expected_abstract_suffixes": 29508,
+  "note": "Original immutable records are copied byte-for-byte. Only this separate index maps historical paths into caller-supplied roots.",
+  "manifests": {
+    "A": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/A/full_inputs_000/MANIFEST.json",
+    "B": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/B/full_inputs_000/MANIFEST.json",
+    "UTU": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_UTU_000/MANIFEST.json",
+    "UTT": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_UTT_000/MANIFEST.json",
+    "TTU": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_TTU_000/MANIFEST.json",
+    "TTT": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/evidence/D/mixed/full_inputs_TTT_000/MANIFEST.json"
+  }
+}

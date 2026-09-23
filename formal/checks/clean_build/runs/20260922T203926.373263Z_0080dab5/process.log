@@ -1,0 +1,120 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:114:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:699:12: warning: This simp argument is unused:
+  largeDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲freeDecodedColor, l̵a̵r̵g̵e̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵ ̵smallDecodedColor, embedding, hlargeFree]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:699:31: warning: This simp argument is unused:
+  smallDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲freeDecodedColor, largeDecodedColor, s̵m̵a̵l̵l̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵ ̵embedding, hlargeFree]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:703:10: warning: This simp argument is unused:
+  largeDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲freeDecodedColor, l̵a̵r̵g̵e̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵ ̵smallDecodedColor, embedding, hsmallFree]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:703:29: warning: This simp argument is unused:
+  smallDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲freeDecodedColor, largeDecodedColor, s̵m̵a̵l̵l̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵ ̵embedding, hsmallFree]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:741:47: warning: This simp argument is unused:
+  freeDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲f̵r̵e̵e̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵largeDecodedColor, smallDecodedColor, embedding, hfreeLarge]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:742:31: warning: This simp argument is unused:
+  smallDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲freeDecodedColor, largeDecodedColor, s̵m̵a̵l̵l̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵ ̵embedding, hfreeLarge]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:745:45: warning: This simp argument is unused:
+  freeDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲f̵r̵e̵e̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵largeDecodedColor, smallDecodedColor, embedding, hsmallLarge]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:746:29: warning: This simp argument is unused:
+  smallDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲freeDecodedColor, largeDecodedColor, s̵m̵a̵l̵l̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵ ̵embedding, hsmallLarge]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:784:47: warning: This simp argument is unused:
+  freeDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲f̵r̵e̵e̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵largeDecodedColor, smallDecodedColor, embedding, hfreeSmall, hlargeSmall]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:785:12: warning: This simp argument is unused:
+  largeDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲freeDecodedColor, l̵a̵r̵g̵e̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵ ̵smallDecodedColor, embedding, hfreeSmall, hlargeSmall]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:788:45: warning: This simp argument is unused:
+  freeDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲f̵r̵e̵e̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵largeDecodedColor, smallDecodedColor, embedding]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:789:10: warning: This simp argument is unused:
+  largeDecodedColor
+
+Hint: Omit it from the simp argument list.
+  simp [colorNeighborhood, decodedRootedColoring, rootedHostColoring, restRootColor,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲freeDecodedColor, l̵a̵r̵g̵e̵D̵e̵c̵o̵d̵e̵d̵C̵o̵l̵o̵r̵,̵ ̵smallDecodedColor, embedding]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeNineFullNeighborhoodNormalForm61.lean:895:2: warning: Try `simp at h'` instead of `simpa using h'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'R4333.ProfileDDegreeNineFullNeighborhoodNormalForm61.exists_degreeNineSkeleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeNineFullNeighborhoodNormalForm61.rootedHostColoring_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeNineFullNeighborhoodNormalForm61.encodedNeighborhoodColoring_noMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeNineFullNeighborhoodNormalForm61.template_degree_five_five_four_iff_canonicalPart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeNineFullNeighborhoodNormalForm61.exists_degreeNineFullNeighborhoodNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeNineFullNeighborhoodNormalForm61.exists_orbitReducedDegreeNineFullNeighborhoodNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,33 @@
+starting core
+finished core, total_clauses=1129842, elapsed_ms=3004
+starting highness
+finished highness, total_clauses=1159122, elapsed_ms=47
+starting H
+finished H, total_clauses=1852387, elapsed_ms=1889
+starting profile
+finished profile, total_clauses=1871663, elapsed_ms=40
+starting selector
+finished selector, total_clauses=1873371, elapsed_ms=4
+starting root
+finished root, total_clauses=1873432, elapsed_ms=0
+starting fiber
+finished fiber, total_clauses=1880888, elapsed_ms=21
+base_clauses=1880888
+        6.73 real         5.82 user         0.88 sys
+          3228139520  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              249275  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+                2399  involuntary context switches
+        123236920512  instructions retired
+         26137018318  cycles elapsed
+           862278848  peak memory footprint

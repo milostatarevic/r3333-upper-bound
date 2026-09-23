@@ -1,0 +1,407 @@
+{
+  "scope": "Established classification baseline records; no replay performed during mathematical completion. Original records are byte-identical.",
+  "records": [
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/SUMMARY.json",
+      "path": "SUMMARY.json",
+      "sha256": "61f95dd570a76bb3c9e91777be0f59705d831acad3bc2b81781123cdd56a6592",
+      "bytes": 2031
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/input_manifest.json",
+      "path": "input_manifest.json",
+      "sha256": "1e6c353e19417892f91eadd33319b886ce7503c5f1d0414bf4d4345dab8442b3",
+      "bytes": 47460
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/build_local.py",
+      "path": "build_local.py",
+      "sha256": "b9f3eaf65986b23f5298750e0d858f96a87cef1bddec4fbbb60ac302c23046a0",
+      "bytes": 7156
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/00_R4333Lean.CheckedLRAT.json",
+      "path": "00_R4333Lean.CheckedLRAT.json",
+      "sha256": "d9c70ce86ee973c5f08cf61086439b70a1f88f37b3124feceddc14e3b961499b",
+      "bytes": 2124
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/01_R4333Lean.Basic.json",
+      "path": "01_R4333Lean.Basic.json",
+      "sha256": "6a4d1f0c370914a772078ee1412d7623d6c123af6d9c509db170bc755fd96e0a",
+      "bytes": 2094
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/02_R4333Lean.FiniteColorCNF.json",
+      "path": "02_R4333Lean.FiniteColorCNF.json",
+      "sha256": "71a66105492893c7eaf79c88bbc1d22be59d9362134cdac54e9b5afaa605f915",
+      "bytes": 2128
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/03_R4333Lean.CatalogueBaseLiteral.json",
+      "path": "03_R4333Lean.CatalogueBaseLiteral.json",
+      "sha256": "12caa7d436cf990235f36df32be745ac5d083fc75d7089ae3e1fd7b81ab2c6c2",
+      "bytes": 2162
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/04_R4333Lean.CatalogueBaseCNF.json",
+      "path": "04_R4333Lean.CatalogueBaseCNF.json",
+      "sha256": "3d89d57093031093fb8d5dca59583714875d0c9452a43510495d0ae814a790cd",
+      "bytes": 2143
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/05_R4333Lean.CatalogueBaseCNFLeavesK16Refined.json",
+      "path": "05_R4333Lean.CatalogueBaseCNFLeavesK16Refined.json",
+      "sha256": "446bf73b791d6f4c99eaafe5d569920b2ff09acc3c2cdbbd1eb9ea6044bc1109",
+      "bytes": 2206
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/06_R4333Lean.CatalogueBaseCNFSemantics.json",
+      "path": "06_R4333Lean.CatalogueBaseCNFSemantics.json",
+      "sha256": "2c7077a95d9264e413f04bb38c07540d8e950796a023881ccb4b6e1c986548a4",
+      "bytes": 2179
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/07_R4333Lean.JoinC5.json",
+      "path": "07_R4333Lean.JoinC5.json",
+      "sha256": "02807e9cc90dc461fc7c3030b099c4f6aab0bfa5f76cefdca9479d5c38bb807f",
+      "bytes": 2104
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/08_R4333Lean.Obstruction.json",
+      "path": "08_R4333Lean.Obstruction.json",
+      "sha256": "33255ce965fdfb2c23f725210da5f4b61f2978a0b6a42a035f3cff6f82930b28",
+      "bytes": 2123
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/09_R4333Lean.Attaching61Arithmetic.json",
+      "path": "09_R4333Lean.Attaching61Arithmetic.json",
+      "sha256": "2f39325c1e85ac0415fb4e93633935e1979c8ae5d5b7f820d1afc009746836c5",
+      "bytes": 2166
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/10_R4333Lean.Attaching61.json",
+      "path": "10_R4333Lean.Attaching61.json",
+      "sha256": "ab3b73dccefe1029c3b63693b96cdf00f0e1d623361b214097c172d753e839de",
+      "bytes": 2119
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/11_R4333Lean.ThreeColorCatalogue.json",
+      "path": "11_R4333Lean.ThreeColorCatalogue.json",
+      "sha256": "4a535b31f10ce85461f2eb446acb634f0a47c2a495b6cef8093034b0e1ae0885",
+      "bytes": 2156
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/12_R4333Lean.ColorRelabel.json",
+      "path": "12_R4333Lean.ColorRelabel.json",
+      "sha256": "b9dd6c5b4cbf51fde23168e143bec8093f678f49be0fa636292d5221ae4d21fa",
+      "bytes": 2128
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/13_R4333Lean.K16CommonCertificate.json",
+      "path": "13_R4333Lean.K16CommonCertificate.json",
+      "sha256": "4aba5cd51815ea2ec0ba6534aece2f16ad29df460f146c5eb6f6bbb5d47a18b3",
+      "bytes": 2163
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/14_R4333Lean.ClebschCompletionData.json",
+      "path": "14_R4333Lean.ClebschCompletionData.json",
+      "sha256": "1d1ce1b7b110914a1bc5dd3e1a97b8e05240ca95a7e0744ef8478f9f7014badf",
+      "bytes": 2166
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/15_R4333Lean.ClebschCompletionCNF.json",
+      "path": "15_R4333Lean.ClebschCompletionCNF.json",
+      "sha256": "200dc0418860338a59a4c3043cb28fba368bc6279537f9b7841d254bb493d5cd",
+      "bytes": 2164
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/16_R4333Lean.ClebschCompletionSemantics.json",
+      "path": "16_R4333Lean.ClebschCompletionSemantics.json",
+      "sha256": "e0e935cf2e0a5b5fa0886d1182cab552b045f3999dc5414b62f4e6e588f69b71",
+      "bytes": 2184
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/17_R4333Lean.CriticalTemplates.json",
+      "path": "17_R4333Lean.CriticalTemplates.json",
+      "sha256": "6e2dbebd28a97a0283567cc7aa7997bbc182703fd25861b7d5d983fca327d9f9",
+      "bytes": 2148
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/18_R4333Lean.ClebschCompletionClassification.json",
+      "path": "18_R4333Lean.ClebschCompletionClassification.json",
+      "sha256": "96f959eaf0f66080815aeea6bfc919f690bf6ba7798b220c7e22b2cf12cceb99",
+      "bytes": 2207
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/19_R4333Lean.ClebschUniqueness.json",
+      "path": "19_R4333Lean.ClebschUniqueness.json",
+      "sha256": "0461943011addc0b723a14bd5a2a4f9aaa93a60cc5f86ef210a481a5ffda457a",
+      "bytes": 2148
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/20_R4333Lean.K16CatalogueFromSRG.json",
+      "path": "20_R4333Lean.K16CatalogueFromSRG.json",
+      "sha256": "b85e5db1b732f756fd1d59a6e2bfd9c1710218a52fed227b11e7099307e28ee0",
+      "bytes": 2155
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/21_R4333Lean.NeighborhoodThreeColor.json",
+      "path": "21_R4333Lean.NeighborhoodThreeColor.json",
+      "sha256": "7332b3081e2daa06f9ff16c8dc33917d8a12f7284ed9806c39f1962cb72eff5a",
+      "bytes": 2162
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/22_R4333Lean.CriticalTemplateDeletionData.json",
+      "path": "22_R4333Lean.CriticalTemplateDeletionData.json",
+      "sha256": "a655b397e53c8adbda521ac68306b989e9970a48b96de2e06b45b0fac83a57ed",
+      "bytes": 2192
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/23_R4333Lean.CriticalTemplateDeletion.json",
+      "path": "23_R4333Lean.CriticalTemplateDeletion.json",
+      "sha256": "976cf917f6b9f8850dc5d3f059d354b494cb78213bbd443219a8f7f8c7f01968",
+      "bytes": 2178
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/24_R4333Lean.K15Extension.json",
+      "path": "24_R4333Lean.K15Extension.json",
+      "sha256": "3c8272812f484b96d60a2c305099c678e92f4bc5954cd318b2d50aa7b134d5e6",
+      "bytes": 2128
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/25_R4333Lean.CriticalTemplateRestriction.json",
+      "path": "25_R4333Lean.CriticalTemplateRestriction.json",
+      "sha256": "eb3021494d62e4c129400976a8e1dc20f0499ee1bd13a7baadbf866bb9d32660",
+      "bytes": 2187
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/26_R4333Lean.CatalogueBaseCNFLeavesK15Refined.json",
+      "path": "26_R4333Lean.CatalogueBaseCNFLeavesK15Refined.json",
+      "sha256": "9f36e271690580d75106da36002b9c90a760bd88c4c97d2e0871f5c6f16df9fd",
+      "bytes": 2212
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/27_R4333Lean.K15DeficientCertificate.json",
+      "path": "27_R4333Lean.K15DeficientCertificate.json",
+      "sha256": "535ab3d3e3138b59b63b17635b242e37472cdd40f5a714cfd22a39262f0ed1ca",
+      "bytes": 2170
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/28_R4333Lean.K15Catalogue.json",
+      "path": "28_R4333Lean.K15Catalogue.json",
+      "sha256": "cf2f91041b7fa57e33801a5c9b33aa89660cd467827606c4d19899a10d0ee3a5",
+      "bytes": 2128
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/29_R4333Lean.CataloguedNeighborhood.json",
+      "path": "29_R4333Lean.CataloguedNeighborhood.json",
+      "sha256": "fa59c1ee56af7f1e235ba81cbd62dd67ffbae7536fba6031bce34234bfcab6b3",
+      "bytes": 2168
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/30_R4333Lean.Attaching61Reduction.json",
+      "path": "30_R4333Lean.Attaching61Reduction.json",
+      "sha256": "8b371b59b625761ceb901126042a1661e4acdef984ec31a4e7342defac10e96f",
+      "bytes": 2160
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/31_R4333Lean.CriticalCatalogues.json",
+      "path": "31_R4333Lean.CriticalCatalogues.json",
+      "sha256": "e6d0bf8a7976f02151414946da9f1fa95412f853ebdbf1bd4237ad0fbe477547",
+      "bytes": 2152
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/00_R4333Lean.CheckedLRAT.log",
+      "path": "00_R4333Lean.CheckedLRAT.log",
+      "sha256": "7bec12133ffabac0c9141bde50a7debd891017adb18f56b6180bc9b001ae5869",
+      "bytes": 902
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/01_R4333Lean.Basic.log",
+      "path": "01_R4333Lean.Basic.log",
+      "sha256": "4260595d5bfbaf788ad54ca1be58a0123b8bc90355b10814f4531812b30427e7",
+      "bytes": 1069
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/02_R4333Lean.FiniteColorCNF.log",
+      "path": "02_R4333Lean.FiniteColorCNF.log",
+      "sha256": "89587668840ab5e9c01e31f59bbe22be333e2df3a0e30ce526f4eec189101119",
+      "bytes": 1002
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/03_R4333Lean.CatalogueBaseLiteral.log",
+      "path": "03_R4333Lean.CatalogueBaseLiteral.log",
+      "sha256": "7686ed92b1959a70647e6fefd7db8b4755962aefe0788c8396267dbfe39d121c",
+      "bytes": 923
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/04_R4333Lean.CatalogueBaseCNF.log",
+      "path": "04_R4333Lean.CatalogueBaseCNF.log",
+      "sha256": "1ea5f6b8e28c4fd37a6e1a4de4970671c1efa97bfdffa532bb56fcb59ea5c718",
+      "bytes": 777
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/05_R4333Lean.CatalogueBaseCNFLeavesK16Refined.log",
+      "path": "05_R4333Lean.CatalogueBaseCNFLeavesK16Refined.log",
+      "sha256": "ec6f6584a9fa7ae1516df31bd8dfdfc21810a14fb561388364a2f6400bfeff50",
+      "bytes": 869
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/06_R4333Lean.CatalogueBaseCNFSemantics.log",
+      "path": "06_R4333Lean.CatalogueBaseCNFSemantics.log",
+      "sha256": "23ace55d7f96efae939b67b526d5384248a3118f4e57e62736c523bbc0c3c4b6",
+      "bytes": 1120
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/07_R4333Lean.JoinC5.log",
+      "path": "07_R4333Lean.JoinC5.log",
+      "sha256": "abb57271e86d15ad06e103b58e10448ccb48054025b66015d9fd421a21c0b108",
+      "bytes": 858
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/08_R4333Lean.Obstruction.log",
+      "path": "08_R4333Lean.Obstruction.log",
+      "sha256": "41ab1645e1b8af3058d4e3b9666cdf4d2d9a2dc09d04ae093053c15f0a292648",
+      "bytes": 1072
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/09_R4333Lean.Attaching61Arithmetic.log",
+      "path": "09_R4333Lean.Attaching61Arithmetic.log",
+      "sha256": "13e2c09975ef4c1dc5a934a90aca18ca004389a269c04cb314aeeeab5449977a",
+      "bytes": 1356
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/10_R4333Lean.Attaching61.log",
+      "path": "10_R4333Lean.Attaching61.log",
+      "sha256": "843facac44b069cf5f56d55d7ffdea98d1df4de22b142a867a75308458cb8071",
+      "bytes": 2563
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/11_R4333Lean.ThreeColorCatalogue.log",
+      "path": "11_R4333Lean.ThreeColorCatalogue.log",
+      "sha256": "b21a3eda8c36e5c46498e8650da8c9cfdb6fc0da31b09329956f3d32ca8df8b3",
+      "bytes": 1139
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/12_R4333Lean.ColorRelabel.log",
+      "path": "12_R4333Lean.ColorRelabel.log",
+      "sha256": "cb8871b4f598039618b16a05f7e55e37277453a1045687744a491cd16de5296a",
+      "bytes": 777
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/13_R4333Lean.K16CommonCertificate.log",
+      "path": "13_R4333Lean.K16CommonCertificate.log",
+      "sha256": "f86c3e65f1255eac544f41f0b5880021e49f4d640bbf42bf27e20eeb7e59562b",
+      "bytes": 1079
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/14_R4333Lean.ClebschCompletionData.log",
+      "path": "14_R4333Lean.ClebschCompletionData.log",
+      "sha256": "18720109514c62aa8c9078ce1c74c8c1a9a5f9af8a24c188142657293cd21747",
+      "bytes": 777
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/15_R4333Lean.ClebschCompletionCNF.log",
+      "path": "15_R4333Lean.ClebschCompletionCNF.log",
+      "sha256": "257144ba42b02ca42d45a44c8166f9e3a5c50f188a472214b99e3f8af1512358",
+      "bytes": 850
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/16_R4333Lean.ClebschCompletionSemantics.log",
+      "path": "16_R4333Lean.ClebschCompletionSemantics.log",
+      "sha256": "e5567fa153c39417ca99e6e627038414fe1ee239d71974e1a0f65533cb3855e4",
+      "bytes": 1187
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/17_R4333Lean.CriticalTemplates.log",
+      "path": "17_R4333Lean.CriticalTemplates.log",
+      "sha256": "e286f2b7b16e48934c7f0eff708f32553e7815d55db4bfdf012559f0423d06c0",
+      "bytes": 1041
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/18_R4333Lean.ClebschCompletionClassification.log",
+      "path": "18_R4333Lean.ClebschCompletionClassification.log",
+      "sha256": "550def3395b972b69e852127c15774f9ec615ed284381a6a554204e9842429f5",
+      "bytes": 1286
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/19_R4333Lean.ClebschUniqueness.log",
+      "path": "19_R4333Lean.ClebschUniqueness.log",
+      "sha256": "0d11723af352e6ae83d646a0a7b1bf2cb2068ca0e28140e993191faa0bd811bf",
+      "bytes": 1054
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/20_R4333Lean.K16CatalogueFromSRG.log",
+      "path": "20_R4333Lean.K16CatalogueFromSRG.log",
+      "sha256": "0f1f436fe1e2888914b2f103a06cc6c1dc373fa2913ae784c53838800f9060e3",
+      "bytes": 980
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/21_R4333Lean.NeighborhoodThreeColor.log",
+      "path": "21_R4333Lean.NeighborhoodThreeColor.log",
+      "sha256": "acd5a820925ec31605153160faf341836337c885d78233ecfefa43eefc72b982",
+      "bytes": 1186
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/22_R4333Lean.CriticalTemplateDeletionData.log",
+      "path": "22_R4333Lean.CriticalTemplateDeletionData.log",
+      "sha256": "947c6a31f88c627693f674da1a636ba2d494db7a8a76bfc11827fcf159648feb",
+      "bytes": 777
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/23_R4333Lean.CriticalTemplateDeletion.log",
+      "path": "23_R4333Lean.CriticalTemplateDeletion.log",
+      "sha256": "0c578f6707a7ae84a3280db0d9a0b49e2cce953056dc6b589e22daf065790430",
+      "bytes": 973
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/24_R4333Lean.K15Extension.log",
+      "path": "24_R4333Lean.K15Extension.log",
+      "sha256": "68c2fef6d47458755b52dc4984bc17e58a62b5f9347310bec43febc37075e430",
+      "bytes": 1359
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/25_R4333Lean.CriticalTemplateRestriction.log",
+      "path": "25_R4333Lean.CriticalTemplateRestriction.log",
+      "sha256": "b2c1696d3520714b548773a451c47a4f10470c623170efcf63af40609085b97d",
+      "bytes": 939
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/26_R4333Lean.CatalogueBaseCNFLeavesK15Refined.log",
+      "path": "26_R4333Lean.CatalogueBaseCNFLeavesK15Refined.log",
+      "sha256": "a1649cf385c6da01459515d7b5bd92d6e8db46969b3b0a5a7e09c5ee703c08de",
+      "bytes": 864
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/27_R4333Lean.K15DeficientCertificate.log",
+      "path": "27_R4333Lean.K15DeficientCertificate.log",
+      "sha256": "d048356f1d9df13e3bd3f4df792a13c887e60faee6bd8935c9d2878eb08540a2",
+      "bytes": 984
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/28_R4333Lean.K15Catalogue.log",
+      "path": "28_R4333Lean.K15Catalogue.log",
+      "sha256": "94a0ea6d4837c34daebf6775d2dd77b0a17ca1f025af9d48e804273e4afe3e2f",
+      "bytes": 980
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/29_R4333Lean.CataloguedNeighborhood.log",
+      "path": "29_R4333Lean.CataloguedNeighborhood.log",
+      "sha256": "27a3164cdeda810311ceed64dc3cf45cfc64cd3d9355a92912545463014fd180",
+      "bytes": 1078
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/30_R4333Lean.Attaching61Reduction.log",
+      "path": "30_R4333Lean.Attaching61Reduction.log",
+      "sha256": "0a83157c8df3ea09a1ff65fba396a968aef1169e30678cc92ae1e011ba7abcba",
+      "bytes": 1005
+    },
+    {
+      "original": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/build_runs/20260922T072158Z_1790061718513440000/31_R4333Lean.CriticalCatalogues.log",
+      "path": "31_R4333Lean.CriticalCatalogues.log",
+      "sha256": "850703f4da8712ca0867cb4d6cd6209e1f9391cf881f7cdb2e4427c9f28494af",
+      "bytes": 1204
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+'PricingG.canonical_guard_supplies_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingG.regular_overlap_supplies_core' depends on axioms: [propext, Classical.choice, Quot.sound]

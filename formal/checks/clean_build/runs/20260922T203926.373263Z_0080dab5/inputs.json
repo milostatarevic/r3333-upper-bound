@@ -1,0 +1,22 @@
+[
+  {
+    "module": "R4333Lean.ProfileDHighOwnForeignC5Skeleton61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203726.721217Z_b451ac01/output.olean",
+    "sha256": "dbd57605cf5f0e69fdb6dee717345195a45a662c6dc15d7c31d395121c7ae4af"
+  },
+  {
+    "module": "R4333Lean.CriticalK15PartitionClassification",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203531.054527Z_d5d4bfcb/output.olean",
+    "sha256": "e050099bc3eaeaeaa14ecd18d5e2fb2ca512a8ba4390b01a7ad9393a047c06e8"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplateSelectedPositionOrbits",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203835.204935Z_9242a07f/output.olean",
+    "sha256": "cb0a1b2e76fdaf3117d3ae991918874784a64ab7525ed2458960732e807a832a"
+  },
+  {
+    "module": "R4333Lean.ColoringAddRoot",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191825.702178Z_f0bc3164/output.olean",
+    "sha256": "fa2ec41c1b6ab49ffe1b70961aef4ed7b05e6c05b51441bdad1391372b35c377"
+  }
+]

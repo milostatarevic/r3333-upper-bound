@@ -1,0 +1,16 @@
+{
+  "status": "FAIL",
+  "scope": "Adapter development precheck against retained original classification oleans; final validation must repeat against fresh classification rebuild.",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j1",
+    "-o",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/.lake/classification_adapter_precheck/20260922T073116Z/ClassificationAdapter.olean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/formal/Ramsey61/ClassificationAdapter.lean"
+  ],
+  "exit_code": 1,
+  "source_sha256": "fd71a6fb6a3026ca8bb7e8180eb5998ea53a7134ba46bf939a666d39ee924164",
+  "CPU_limit": null,
+  "RSS_limit": null,
+  "file_size_limit": null
+}

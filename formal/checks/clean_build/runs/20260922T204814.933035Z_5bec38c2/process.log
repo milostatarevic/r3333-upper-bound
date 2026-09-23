@@ -1,0 +1,18 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeTenMatrixLeafDataUUU2P15.lean:167:57: warning: 'decide' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeTenMatrixLeafDataUUU2P15.lean:167:57: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDDegreeTenMatrixLeafDataUUU2P15.lean:374:2: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'R4333.ProfileDDegreeTenMatrixLeafDataUUU2P15.leaves_metadata' depends on axioms: [propext]
+'R4333.ProfileDDegreeTenMatrixLeafDataUUU2P15.support_positions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDDegreeTenMatrixLeafDataUUU2P15.matrix_avoids_three' depends on axioms: [propext, Quot.sound]
+'R4333.ProfileDDegreeTenMatrixLeafDataUUU2P15.formula_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDDegreeTenMatrixLeafDataUUU2P15.representativeExactBranch_satisfies_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

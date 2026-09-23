@@ -1,0 +1,36 @@
+'R4333.forcesTwoCard_6_3_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.forcesTwoCard_28_3_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.triangleFree_exists_independent7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.neighborhood_avoids_own_color' depends on axioms: [propext, Quot.sound]
+'R4333.badPairGraph_cliqueFree_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.threeColorFinset_card_le_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.fourColor_colorDegree_le_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.fourColor_largeIncidences_ge_122' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.exists_largeColor_seven_pairwise_nonbad_at_61' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.seven_large_finsets_overlap_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.exists_attaching_pair_at_61' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.two_neighborhood_inter_card_le_five_of_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.edgeColor_delta_cross_ge_three_of_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.edgeColor_delta_cross_bounds_of_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.attaching_degree_intersection_inequality_of_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.attaching_intersection_le_thirteen_of_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.existsAttaching61' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.existsAttaching61_oriented' depends on axioms: [propext, Classical.choice, Quot.sound]
+        3.94 real         5.48 user         1.08 sys
+          3035021312  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              236955  page reclaims
+                1147  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 133  voluntary context switches
+               25184  involuntary context switches
+         58680956588  instructions retired
+         24870991424  cycles elapsed
+           626185336  peak memory footprint

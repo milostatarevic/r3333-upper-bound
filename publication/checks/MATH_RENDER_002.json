@@ -1,0 +1,19 @@
+{
+  "schema": "RAMSEY61_MARKDOWN_MATH_CHECK_1",
+  "checked_at_utc": "2026-09-22T05:33:46.177150+00:00",
+  "file": "proof.md",
+  "sha256": "56c27c25c0a73b5040d8b78bbaafe9844af2a762c04e90445aae00075b845434",
+  "display_expressions": 27,
+  "inline_expressions": 102,
+  "github_markdown_api": "POST /markdown, mode=gfm, repository context",
+  "github_math_element_count": 129,
+  "github_roundtrip_all_expressions_preserved": true,
+  "mathjax_version": "3.2.2",
+  "mathjax_parse_errors": [],
+  "mathjax_expressions_wider_than_840px": [],
+  "visual_checks": [
+    "H/w cardinality and aligned definitions",
+    "three aligned G conditions"
+  ],
+  "scope": "Rendering and markup checks, not verification of the mathematical argument."
+}

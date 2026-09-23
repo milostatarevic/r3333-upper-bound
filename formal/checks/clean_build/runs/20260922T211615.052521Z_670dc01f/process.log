@@ -1,0 +1,8 @@
+'R4333.UUTD9Root4Factor.indexedLargeMask_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Factor.indexedSmallMask_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Factor.indexedLargeSupport_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Factor.indexedSmallSupport_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Factor.twistedRoot4Realization_satisfies_factorFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root4Factor.noStrongRealization_of_factor_lrat' depends on axioms: [propext, Classical.choice, Quot.sound]

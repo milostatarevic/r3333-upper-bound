@@ -1,0 +1,3 @@
+'R4333.UUTD9Root1Semantic.factorAssignmentRealization_satisfies_quotientLeafFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

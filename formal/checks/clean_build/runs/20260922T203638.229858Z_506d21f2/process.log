@@ -1,0 +1,9 @@
+'R4333.ProfileDThresholdCappedCNF.fmla_outside_counterNamespace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDThresholdCappedCNF.fourExtension_satisfies_allCappedFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDThresholdCappedCNF.noFourExtension_of_allCapped_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

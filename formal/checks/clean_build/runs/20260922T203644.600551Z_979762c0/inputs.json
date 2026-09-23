@@ -1,0 +1,12 @@
+[
+  {
+    "module": "PricingG.SmallMixedCases",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203641.874314Z_01b245ec/output.olean",
+    "sha256": "c71c805b82d1a01eea6b0fa43bfe004936ddd3df24d53aa44052c04087b602eb"
+  },
+  {
+    "module": "PricingG.OverlapContraction",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203632.673794Z_6042e8ef/output.olean",
+    "sha256": "d56c9a29ff5c5aa79881f67e2f79e662e37a0e9aec2008c6e538c1497a8427b0"
+  }
+]

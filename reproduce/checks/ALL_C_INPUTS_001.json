@@ -1,0 +1,27 @@
+{
+  "driver_CPU_seconds": 0.23996699999999999,
+  "formal_certificate_verified": false,
+  "formulas": 456,
+  "logical_formula_bytes": 18060823116,
+  "materialized_formula_files": 0,
+  "new_solver_calls": 0,
+  "ordered_formula_records_sha256": "be9cebbb0a2d8aadc84a30145316e39f53067510e13d7e30d3f9f5bf7a80164b",
+  "original_source_reads": 0,
+  "schema": "RAMSEY61_PORTABLE_REPRODUCTION_1",
+  "scope": "All original broader C formula hashes reconstructed; no solver or mathematical cover replay",
+  "source_pins": {
+    "inputs/BROAD_BASE_001.cnf": [
+      39604154,
+      "58478e3641d3ea52639566683daaea5f7a1d4112de5809f4af73ce1dfebf164f"
+    ],
+    "inputs/SEEDS.json": [
+      2244507,
+      "848f9f9420944b804ba2c38ab48a40fdd2d71f1d1054e285d82ea6d06a7346ad"
+    ],
+    "reviews/BROAD_SECOND_TAIL_RECONCILIATION_001.json": [
+      378870,
+      "c60248e17f5bb30cc7eb27d139f9317cd2ed1748c14f02f9642725afc1df6c09"
+    ]
+  },
+  "status": "PASS_ALL456_EXACT_ACCEPTED_C_FORMULAS"
+}

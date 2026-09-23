@@ -1,0 +1,22 @@
+[
+  {
+    "module": "PricingG.UUQPhysicalCover",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T214756.007485Z_6ff5241d/output.olean",
+    "sha256": "b64617e6ef77358e4b190e2bbc69900f686cdae0207862af674ea0bee60078d1"
+  },
+  {
+    "module": "PricingG.D9PhysicalClauseOrder",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T214750.037154Z_d7738534/output.olean",
+    "sha256": "ad692683eb1c2a6d0ab6f3dfda11ce4980d20be179709286926fdcafd5c4c82c"
+  },
+  {
+    "module": "PricingG.UUTD9PhysicalOrder",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T214756.021662Z_619853bf/output.olean",
+    "sha256": "31f501add32b8ea6f8553f7fe9d8c7b1854438a9a334f59bff23e7a43dac0bc3"
+  },
+  {
+    "module": "PricingIntegration.DNativeMaps",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T193653.103199Z_e6ce74a5/output.olean",
+    "sha256": "1b448a1f88e6250c7ed8417218898b84a05dfed23af43aeda28a1e8a8bcaca9c"
+  }
+]

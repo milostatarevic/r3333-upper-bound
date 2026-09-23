@@ -1,0 +1,9 @@
+'PricingIntegration.PhysicalForeignSupport.support_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.PhysicalForeignSupport.support_four_or_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PricingIntegration.PhysicalForeignSupport.actual_four_is_proper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,36 @@
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.quotientExtendedValuation_selectorAtom' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.quotientExtendedValuation_satisfies_strongFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.quotientSelector_mem_representativeClause' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.quotientFinalValuation_satisfies_selectedRepresentative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.quotientFinalValuation_satisfies_selectedRepresentativeUnits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.factorAssignmentRealization_satisfies_quotientFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.factorAssignmentRealization_satisfies_quotientLeafFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.satisfies_quotientLeafCoreFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.strongCaseObstruction_of_quotient_leaf_lrats' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.strongRealization_yields_satisfying_quotientFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.noStrongRealization_of_quotient_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineQuotientSemantic61.strongCaseObstruction_of_quotient_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,17 @@
+[
+  {
+    "module": "R4333Lean.FiniteColorCNF",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/FiniteColorCNF.olean",
+    "sha256": "235947e0d6eaab38705637b6a949b7b0290abd1f9811af60ee3f883fa0d1fbe8"
+  },
+  {
+    "module": "R4333Lean.OutsideListBenders",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192215.101237Z_ba13ee99/output.olean",
+    "sha256": "ff59e48307a6298a73db15d64f08265ca5e8421f9ab0e11795b2dbf05da4e3c9"
+  },
+  {
+    "module": "R4333Lean.ColorRelabel",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/ColorRelabel.olean",
+    "sha256": "4e3d6782732ab775bc0f2be15f3fcfca1385347a50592e10d8b96cb6462470b3"
+  }
+]

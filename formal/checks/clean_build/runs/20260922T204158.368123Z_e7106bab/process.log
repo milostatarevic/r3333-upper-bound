@@ -1,0 +1,2 @@
+'CompletionC.NativeActionVertices.before_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.NativeActionVertices.left_auto_vertex' depends on axioms: [propext, Classical.choice, Quot.sound]

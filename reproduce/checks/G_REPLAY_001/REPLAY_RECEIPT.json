@@ -1,0 +1,305 @@
+{
+  "changed_checker_source_bytes": false,
+  "checker_output_pins": {
+    "g_isomorphism/checker/CENSUS_RESULTS.json": {
+      "bytes": 1213639,
+      "sha256": "8de4bf07266927d7d424c3e8cce286d95cbeb6889b72d811e758a4a95aa4df31"
+    },
+    "g_isomorphism/checker/CENSUS_SUMMARY.json": {
+      "bytes": 2028,
+      "sha256": "3dd7fca4b43b9eb77f40592609b9ef45c0558fd2a3c4fbd356b0da02e9c6acf5"
+    },
+    "g_isomorphism/checker/CONTROLS.json": {
+      "bytes": 1585,
+      "sha256": "583da6bf3765f1344f665b52c91570093e501031382b7b07ea946a5654160c5f"
+    },
+    "g_isomorphism/checker/LOCAL_SUMMARY.json": {
+      "bytes": 1228,
+      "sha256": "981b51cdb231e77f1c9a59eb922fb25816de9d03be6889d571a6d9808cc8ff46"
+    },
+    "g_isomorphism/checker/local_reference.json": {
+      "bytes": 117800,
+      "sha256": "2a7a1bf3f4128caaffefc0c8dbde13177e572e4f9b21ec8135f9ecd87b66f8b2"
+    },
+    "g_remaining/checker/CENSUS_RESULTS.jsonl": {
+      "bytes": 2146176,
+      "sha256": "53b3f63521d87b4d2bc4f5af6def6503683c0c8e49e7430ee77b4af7d427c93f"
+    },
+    "g_remaining/checker/CENSUS_SUMMARY.json": {
+      "bytes": 2610,
+      "sha256": "7eb20ad6de0ecc0dbe3b3ca792ee7e361d61819d8cc82b1da1065d17398b5327"
+    },
+    "g_remaining/checker/CONTROLS.json": {
+      "bytes": 2024,
+      "sha256": "867ce62d73c03890cb26648491f8fb5b89244f356440b4000671004d1b6bf449"
+    },
+    "g_remaining/checker/PREPARE_SUMMARY.json": {
+      "bytes": 1450,
+      "sha256": "3ce658303cfdf303d407aa695d5777b0158148e758cdde681d413bf96ef620cc"
+    }
+  },
+  "complete_local_states": 72,
+  "copied_exact_inputs": [
+    {
+      "bytes": 35715,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/tools/checker.py",
+      "sha256": "6944bd1ed614d7db9e31bce5cbed9520190ba96507ae106cec2bef0683986ac5",
+      "snapshot_path": "evidence/G/retained/g_isomorphism/tools/checker.py"
+    },
+    {
+      "bytes": 20946,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/tools/producer.py",
+      "sha256": "8157cf89b785834607a11c9211a8a5aab2b50c2c40a8bd34eca84b876eba8367",
+      "snapshot_path": "evidence/G/retained/g_isomorphism/tools/producer.py"
+    },
+    {
+      "bytes": 6438,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/IMPLEMENTATION_CONTRACT.md",
+      "sha256": "bf1b82809714593fea2348dca0be74d386ac53492c5438935057867cc4ea1a0d",
+      "snapshot_path": "evidence/G/retained/g_isomorphism/IMPLEMENTATION_CONTRACT.md"
+    },
+    {
+      "bytes": 290525,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/inputs/census.json",
+      "sha256": "f6f7e9e3c18969663ce0ad4fd94b584a340a70b9f929a433458aa3415d69f17a",
+      "snapshot_path": "evidence/G/retained/g_isomorphism/inputs/census.json"
+    },
+    {
+      "bytes": 2258,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/inputs/source_matrices.json",
+      "sha256": "d278b344d4fbcaf892c41cd3c843b302844d54766d9489427e3a89fcd24f4d13",
+      "snapshot_path": "evidence/G/retained/g_isomorphism/inputs/source_matrices.json"
+    },
+    {
+      "bytes": 647,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/producer/SUMMARY.json",
+      "sha256": "26be9a6941de4ec2bde5e40ff461bc223ae79058645a4034d4ea2a77c5c2f611",
+      "snapshot_path": "evidence/G/retained/g_isomorphism/producer/SUMMARY.json"
+    },
+    {
+      "bytes": 444528,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_isomorphism/producer/results.json",
+      "sha256": "c04d8e4c878d1c68dc516f85570b7f90472805e50068546c3142755b90f70202",
+      "snapshot_path": "evidence/G/retained/g_isomorphism/producer/results.json"
+    },
+    {
+      "bytes": 41424,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/tools/checker.py",
+      "sha256": "1ebf555cf5f0bb268b5412735747c361c6a43e2e36173a2d6f073b4f41347192",
+      "snapshot_path": "evidence/G/retained/g_remaining/tools/checker.py"
+    },
+    {
+      "bytes": 26711,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/tools/producer.py",
+      "sha256": "cc6ece538e6ffe4ae70e1296d0bca94e746f0d9f45a0350a98cc1948ff832f83",
+      "snapshot_path": "evidence/G/retained/g_remaining/tools/producer.py"
+    },
+    {
+      "bytes": 8168,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/IMPLEMENTATION_CONTRACT.md",
+      "sha256": "995342c0ba3939592ae4ef80843b70fccede5dc55499a2e95887d2cc7bf041af",
+      "snapshot_path": "evidence/G/retained/g_remaining/IMPLEMENTATION_CONTRACT.md"
+    },
+    {
+      "bytes": 920722,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/census.json",
+      "sha256": "1f0fad0daf300ba33d3942f8ef7fee4fb6eb9504b1f3bddcca23f004d56a298e",
+      "snapshot_path": "evidence/G/retained/g_remaining/inputs/census.json"
+    },
+    {
+      "bytes": 2258,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/source_matrices.json",
+      "sha256": "d278b344d4fbcaf892c41cd3c843b302844d54766d9489427e3a89fcd24f4d13",
+      "snapshot_path": "evidence/G/retained/g_remaining/inputs/source_matrices.json"
+    },
+    {
+      "bytes": 1488,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/producer/SUMMARY.json",
+      "sha256": "4cb471489f76138bffd6e16cba33b03359879e5d3c66e81e55fb823166f2e984",
+      "snapshot_path": "evidence/G/retained/g_remaining/producer/SUMMARY.json"
+    },
+    {
+      "bytes": 1149252,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/producer/results.jsonl",
+      "sha256": "9d472a88e328ab05ffc7567b8f06ab6d6b338c23decefb5bd982a769f27c0c3d",
+      "snapshot_path": "evidence/G/retained/g_remaining/producer/results.jsonl"
+    },
+    {
+      "bytes": 290525,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/parent_census.json",
+      "sha256": "f6f7e9e3c18969663ce0ad4fd94b584a340a70b9f929a433458aa3415d69f17a",
+      "snapshot_path": "evidence/G/retained/g_remaining/inputs/parent_census.json"
+    },
+    {
+      "bytes": 117800,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/parent_local_reference.json",
+      "sha256": "2a7a1bf3f4128caaffefc0c8dbde13177e572e4f9b21ec8135f9ecd87b66f8b2",
+      "snapshot_path": "evidence/G/retained/g_remaining/inputs/parent_local_reference.json"
+    },
+    {
+      "bytes": 1608,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/parent_LOCAL_SUMMARY.json",
+      "sha256": "f486dfe2bd11c626fdbe399ab0a348eedacce7e900fa100682b67131a41af6f7",
+      "snapshot_path": "evidence/G/retained/g_remaining/inputs/parent_LOCAL_SUMMARY.json"
+    },
+    {
+      "bytes": 973,
+      "replay_path": "/private/tmp/ramsey61-public-G-replay-001/g_remaining/inputs/PREPARE_RECEIPT.json",
+      "sha256": "74c9b958f411b8b758b3f196578428b9631765b18c431921a426d2087028b973",
+      "snapshot_path": "evidence/G/retained/g_remaining/inputs/PREPARE_RECEIPT.json"
+    }
+  ],
+  "free_assignments_checked": 32768,
+  "fresh_reference_matches_retained_parent_bytes": true,
+  "independent_checker_controls": {
+    "g_isomorphism": 11,
+    "g_remaining": 19
+  },
+  "isomorphic_labels_rejected": 3600,
+  "limits": {
+    "RSS_enforcement_note": "Peak checked between immutable bounded stages; Linux additionally has a 2 GiB address-space cap. macOS does not supply a reliable RLIMIT_AS equivalent here.",
+    "minimum_free_disk_bytes": 107374182400,
+    "observed_stage_RSS_bytes": 1073741824,
+    "output_file_bytes": 16777216,
+    "output_tree_bytes": 67108864,
+    "process_CPU_seconds": 60
+  },
+  "local_nullity": 15,
+  "local_rank": 65,
+  "local_relation_recomputed": true,
+  "new_formal_certificate": false,
+  "output": "/private/tmp/ramsey61-public-G-replay-001",
+  "output_tree_bytes_before_receipt": 6871452,
+  "patched_checker_functions": false,
+  "peak_process_RSS_bytes": 40386560,
+  "producer_execution": false,
+  "remaining_labels_rejected": 10368,
+  "schema": "RAMSEY61_PUBLIC_FINITE_G_REPLAY_1",
+  "scope": "Fresh execution of the frozen independent local72 and guarded-G finite checkers; no SAT solver or complete formal Ramsey proof.",
+  "script_pin": {
+    "bytes": 15927,
+    "sha256": "bededef642ba40bd55fbb9f7d64a415c8f787d6e133ba745337a1d858f9793ef"
+  },
+  "snapshot": "/private/tmp/ramsey61-public-release-check-20260921-001",
+  "snapshot_writes": false,
+  "solver_calls": 0,
+  "stages": [
+    {
+      "CPU_seconds": 0.13158,
+      "action": "local",
+      "kind": "g_isomorphism",
+      "output_tree_bytes": 3482134,
+      "peak_process_RSS_bytes": 26624000,
+      "status": "RETURNED_WITHOUT_ERROR",
+      "stderr": {
+        "bytes": 0,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_isomorphism_local.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 1120,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_isomorphism_local.stdout.log",
+        "sha256": "bbbdb0007787f504c5c38095d47d9bf5c00e138ea04cd659f0bbe48d58449a60"
+      },
+      "wall_seconds": 0.13460475
+    },
+    {
+      "CPU_seconds": 0.04921400000000001,
+      "action": "controls",
+      "kind": "g_isomorphism",
+      "output_tree_bytes": 3485168,
+      "peak_process_RSS_bytes": 32129024,
+      "status": "RETURNED_WITHOUT_ERROR",
+      "stderr": {
+        "bytes": 0,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_isomorphism_controls.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 1449,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_isomorphism_controls.stdout.log",
+        "sha256": "a16e72178703b8303902465c44143d72090467542e34b74fa37ca1be063cfab0"
+      },
+      "wall_seconds": 0.050502375000000016
+    },
+    {
+      "CPU_seconds": 0.319878,
+      "action": "census",
+      "kind": "g_isomorphism",
+      "output_tree_bytes": 4707259,
+      "peak_process_RSS_bytes": 35799040,
+      "status": "RETURNED_WITHOUT_ERROR",
+      "stderr": {
+        "bytes": 0,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_isomorphism_census.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 6424,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_isomorphism_census.stdout.log",
+        "sha256": "c8dac51b61d1a91078f84b6ee6a488e26769c0fa45f4866a6f79012dc88ecc84"
+      },
+      "wall_seconds": 0.340001417
+    },
+    {
+      "CPU_seconds": 0.057228999999999974,
+      "action": "prepare",
+      "kind": "g_remaining",
+      "output_tree_bytes": 4710029,
+      "peak_process_RSS_bytes": 35799040,
+      "status": "RETURNED_WITHOUT_ERROR",
+      "stderr": {
+        "bytes": 0,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_remaining_prepare.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 1320,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_remaining_prepare.stdout.log",
+        "sha256": "6d0cc3c67c40ac5cc80fbcc25c149cb0cbde28dba6c7df31ebfc5e6d2bb99db5"
+      },
+      "wall_seconds": 0.057867209000000086
+    },
+    {
+      "CPU_seconds": 0.13413200000000003,
+      "action": "controls",
+      "kind": "g_remaining",
+      "output_tree_bytes": 4713907,
+      "peak_process_RSS_bytes": 40386560,
+      "status": "RETURNED_WITHOUT_ERROR",
+      "stderr": {
+        "bytes": 0,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_remaining_controls.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 1854,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_remaining_controls.stdout.log",
+        "sha256": "65c6502581486503018401cb4296eac59d2166496eac874ee416b938d00649bf"
+      },
+      "wall_seconds": 0.13564049999999994
+    },
+    {
+      "CPU_seconds": 1.3931310000000001,
+      "action": "census",
+      "kind": "g_remaining",
+      "output_tree_bytes": 6871452,
+      "peak_process_RSS_bytes": 40386560,
+      "status": "RETURNED_WITHOUT_ERROR",
+      "stderr": {
+        "bytes": 0,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_remaining_census.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 8759,
+        "path": "/private/tmp/ramsey61-public-G-replay-001/logs/g_remaining_census.stdout.log",
+        "sha256": "569b719dbb4b8cbd646fb6f2f9e6903b5a4edd89baa689eaf802c7ecd0d25a94"
+      },
+      "wall_seconds": 1.4407126670000001
+    }
+  ],
+  "status": "PASS",
+  "total_process_CPU_seconds": 2.177987,
+  "wall_seconds": 2.208655708
+}

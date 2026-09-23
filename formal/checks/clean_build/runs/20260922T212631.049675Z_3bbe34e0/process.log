@@ -1,0 +1,7 @@
+'R4333.UUTP15SupportPair.firstSupport_templateIndependent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15SupportPair.secondSupport_templateIndependent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15SupportPair.exists_firstSupportIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15SupportPair.exists_secondSupportIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15SupportPair.normalizeSupports_firstSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15SupportPair.normalizeSupports_secondSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTP15SupportPair.exists_normalizedSupportPair' depends on axioms: [propext, Classical.choice, Quot.sound]

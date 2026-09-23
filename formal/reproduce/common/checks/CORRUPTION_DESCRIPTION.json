@@ -1,0 +1,6 @@
+{
+  "mutation": "first signed literal incremented by1 in copied suffix TSV",
+  "original_sha256": "11b8fcf2887385dd7a6a19cb07548ff14d3262cca3a9bfae075e475de417ef47",
+  "corrupt_sha256": "5be91ea7c9cd9d6cef1ab6beb7b45a52140ec26834235f1a3eae03db05b76aa9",
+  "original_untouched": true
+}

@@ -1,0 +1,21 @@
+'R4333.neighborhood_classified_of_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.criticalNeighborhoodWitness_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.existsCataloguedAttaching61' depends on axioms: [propext, Classical.choice, Quot.sound]
+        2.04 real         1.05 user         1.03 sys
+          2891055104  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              228458  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                2946  involuntary context switches
+         18735830798  instructions retired
+          7288269125  cycles elapsed
+           484038088  peak memory footprint

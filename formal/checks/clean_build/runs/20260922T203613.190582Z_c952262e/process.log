@@ -1,0 +1,11 @@
+'R4333.ProfileDFourRowKindSymmetry.transportWitness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDFourRowKindSymmetry.transportFourExtension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDFourRowKindSymmetry.nonempty_fourExtension_iff_swapKind' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourRowKindSymmetry.SwapRepresentativeObstructions.universalFourRowObstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDFourRowKindSymmetry.no_profileD_star_of_swapRepresentativeObstructions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

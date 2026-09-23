@@ -1,0 +1,15 @@
+'R4333.ProfileDBlockZeroSupport.zeroSupport_card_eq_block_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDBlockZeroSupport.k15_zeroSupport_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDBlockZeroSupport.k15_zeroSupport_unique_completionShadow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDBlockZeroSupport.k16_zeroSupport_unique_shadow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDBlockZeroSupport.blockPair_zeroSupport_ge_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDBlockZeroSupport.every_block_has_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDBlockZeroSupport.saturated_shadow_or_two_large_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

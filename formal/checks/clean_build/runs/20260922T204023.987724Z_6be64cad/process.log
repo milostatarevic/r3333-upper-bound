@@ -1,0 +1,15 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/IsomorphicCoreTransport.lean:14:23: warning: This simp argument is unused:
+  Ne.symm (coreX_ne_zero i)
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵b̵a̵s̵e̵C̵o̵r̵e̵,̵c̵o̵r̵e̵X̵,̵N̵e̵.̵s̵y̵m̵m̵ ̵(̵c̵o̵r̵e̵X̵_̵n̵e̵_̵z̵e̵r̵o̵ ̵i̵)̵]̵s̲i̲m̲p̲ ̲[̲b̲a̲s̲e̲C̲o̲r̲e̲,̲ ̲c̲o̲r̲e̲X̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingG/IsomorphicCoreTransport.lean:18:23: warning: This simp argument is unused:
+  Ne.symm (coreY_ne_zero i)
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵b̵a̵s̵e̵C̵o̵r̵e̵,̵c̵o̵r̵e̵Y̵,̵N̵e̵.̵s̵y̵m̵m̵ ̵(̵c̵o̵r̵e̵Y̵_̵n̵e̵_̵z̵e̵r̵o̵ ̵i̵)̵]̵s̲i̲m̲p̲ ̲[̲b̲a̲s̲e̲C̲o̲r̲e̲,̲ ̲c̲o̲r̲e̲Y̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'PricingG.isomorphic_core_realized' depends on axioms: [propext, Classical.choice, Quot.sound]

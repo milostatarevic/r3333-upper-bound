@@ -1,0 +1,97 @@
+{
+  "status": "PASS_INDEPENDENT_PORTABLE_C_SOURCE_AND_RECORD_INDEX_REVIEW",
+  "UTC": "2026-09-22T20:08:08.772907+00:00",
+  "CPU_seconds": 0.047156,
+  "cases": 456,
+  "unit_clauses": 197544,
+  "unique_original_result_paths": 929,
+  "record_status_counts": {
+    "UNSAT": 912,
+    "UNKNOWN_CPU_CAP": 17
+  },
+  "record_status_phase_counts": [
+    {
+      "status": "UNKNOWN_CPU_CAP",
+      "phase": "broad_replay",
+      "count": 13
+    },
+    {
+      "status": "UNKNOWN_CPU_CAP",
+      "phase": "broad_tail_replay",
+      "count": 4
+    },
+    {
+      "status": "UNSAT",
+      "phase": "broad_first",
+      "count": 456
+    },
+    {
+      "status": "UNSAT",
+      "phase": "broad_replay",
+      "count": 443
+    },
+    {
+      "status": "UNSAT",
+      "phase": "broad_second_tail_replay",
+      "count": 4
+    },
+    {
+      "status": "UNSAT",
+      "phase": "broad_tail_replay",
+      "count": 9
+    }
+  ],
+  "findings": [
+    "Emitter iterates exactly Fin456 and the exact seedLiterals definition used by concreteFamily, retaining positive/negative polarity and original unit order.",
+    "Comparator independently reconstructs the physical one-based edge variable formula, all positive then negative units, and byte-compares every suffix to pinned originals.",
+    "Shared base is pinned by full SHA256 and exact439723/1880888 header; reconstructed complete headers, full formula hashes and byte counts bind all456 inputs.",
+    "Exactly929 distinct original result paths were rehashed and their case/seed/base/full-input/status identities checked:912UNSAT and17UNKNOWN_CPU_CAP, with exactlytwoUNSAT records percase. No UNKNOWN record is promoted or counted as an exclusion.",
+    "Suffix output directory creation is atomic; output reports are create-only and optimized Python is rejected.",
+    "Optional EmitBase.lean is byte-identical to the previously accepted base emitter, with unchanged formulas/serialization; comparator may use the already pinned archive base.",
+    "No solver, external checker or certificate replay occurs in these reproduction tools."
+  ],
+  "issues": [],
+  "pins": [
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/c/path_index.json",
+      "bytes": 418753,
+      "sha256": "87fa31124d334fccde4e44d6950f76fca76bac013ea0c9e94ffe92838920e974"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/c/Emit.lean",
+      "bytes": 852,
+      "sha256": "2db86d61028096c9396d02951751da5dc9e2b803718023b55b6fb82e0ef12bff"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/c/verify.py",
+      "bytes": 5905,
+      "sha256": "f5af1046ef57a3ed856b8a628c9b97c1398b997946657674978b3d22dfa58f27"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/c/EmitBase.lean",
+      "bytes": 1554,
+      "sha256": "ba4d084b9f9c8e4005740d6ec309538555b665f54488f0005779796faff1b1f1"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/publication/checks/C_BASE_BINDING_001/EmitBase.lean",
+      "bytes": 1554,
+      "sha256": "ba4d084b9f9c8e4005740d6ec309538555b665f54488f0005779796faff1b1f1"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/c/checks/original_base_comparison.json",
+      "bytes": 5287,
+      "sha256": "cceb5504bf74b5131fc6fbef7af057aff01e1fe712807f75726d737c53016eb8"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/c/Ramsey61/CConcreteFamily.lean",
+      "bytes": 4915,
+      "sha256": "749835b01cfb9437178a5fa47b65979415ffce70fe5551a480a5f8383a6c4853"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/c/Ramsey61/CSeedData.lean",
+      "bytes": 4867518,
+      "sha256": "49771b516413cca8ad82e49c7bb1f2323fb17d448b1ca04304be14595bb2c65c"
+    }
+  ],
+  "scope": "Independent source and immutable record-index audit; no repeated Lean emission, full-CNF materialization, or solver run."
+}

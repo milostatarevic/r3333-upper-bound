@@ -1,0 +1,20 @@
+'R4333.k16_classified_of_zeroGraph_srg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16CriticalCatalogue_complete_of_srg' depends on axioms: [propext, Classical.choice, Quot.sound]
+        1.95 real         0.96 user         1.00 sys
+          2890940416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              228413  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+                3061  involuntary context switches
+         18294650817  instructions retired
+          6882116482  cycles elapsed
+           479188928  peak memory footprint

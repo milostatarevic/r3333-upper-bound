@@ -1,0 +1,4 @@
+PricingIntegration.NativeWholeProof.ramsey61 (h : AllNativeUnsat) (c : Ramsey61.Host) :
+  ¬Ramsey61.NoMonochromaticTriangle c
+'PricingIntegration.NativeWholeProof.native_case_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.NativeWholeProof.ramsey61' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_EXPECTED_CORRUPTION_AND_OPTIMIZATION_REJECTIONS",
+  "created_utc": "2026-09-22T20:07:12.461237+00:00",
+  "verifier_sha256": "f5af1046ef57a3ed856b8a628c9b97c1398b997946657674978b3d22dfa58f27",
+  "source_sha256": "c017c91aca5feb27f31c7c8a68e171e083c22bb96a08b960f5c20125e81daccd",
+  "corrupt_file": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/c_test_corrupt_001/R3_0.units",
+  "corrupt_sha256": "dc0f32a9f0cacb08410dc30dd811c187d5d526ed7621b01d6a298d2c5a1cffb2",
+  "valid_outputs_unchanged": 456,
+  "corruption_exit_code": 1,
+  "corruption_stderr": "Traceback (most recent call last):\n  File \"/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/c/verify.py\", line 53, in <module>\n    n=len(literals);actual=read(emission/f'R3_{i}.units',expected['suffix_sha256'])\n  File \"/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/c/verify.py\", line 20, in read\n    if expected is not None:assert h==expected,('hash mismatch',str(p),h,expected)\nAssertionError: ('hash mismatch', '/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/c_test_corrupt_001/R3_0.units', 'dc0f32a9f0cacb08410dc30dd811c187d5d526ed7621b01d6a298d2c5a1cffb2', '1c5e07d71fe448e21c56b38d6ce3a6fdc73710c01a7079e53f56ed6df180c5cc')\n",
+  "optimized_exit_code": 1,
+  "optimized_stderr": "Python optimization is prohibited: assertions are part of verification\n",
+  "complete_CNFs_written": 0,
+  "solver_calls": 0,
+  "certificate_replays": 0
+}

@@ -1,0 +1,48 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.lean:317:14: warning: This simp argument is unused:
+  blockSize
+
+Hint: Omit it from the simp argument list.
+  simp [b̵l̵o̵c̵k̵Siz̵e̵,̵ ̵S̵i̵ngleRootStarCNF.templateColor,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵SingleRootStarCNF.fin15, leftFin, rightFin,
+            Nat.mod_eq_of_lt hleft, Nat.mod_eq_of_lt hright]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.lean:368:14: warning: This simp argument is unused:
+  blockSize
+
+Hint: Omit it from the simp argument list.
+  simp [b̵l̵o̵c̵k̵Siz̵e̵,̵ ̵S̵i̵ngleRootStarCNF.templateColor,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵SingleRootStarCNF.fin16, leftFin, rightFin,
+            Nat.mod_eq_of_lt hleft, Nat.mod_eq_of_lt hright]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.lean:430:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.lean:966:6: warning: 'change
+  exact.branch.toDegreeFlooredFiveExtension.toFiveExtension.rows position
+      (ProfileDTripleJoinReduction.blockVertex 0 SelectedPosition.val) =
+    1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'R4333.ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.exists_firstSupportIndex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.exists_secondSupportIndex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.supportNormalizer_templateCanonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.normalizeExactDegreeTenSupports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.exists_catalogExactBranch_of_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.exists_representativeCatalogExactBranch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenEndToEndSemanticUUU0P2.exists_representativeExactBranch_of_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

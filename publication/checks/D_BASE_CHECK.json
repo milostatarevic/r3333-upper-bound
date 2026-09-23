@@ -1,0 +1,543 @@
+{
+  "CPU_seconds": 4.830107,
+  "certificate_checked": false,
+  "checked_at_utc": "2026-09-22T16:57:47.947940+00:00",
+  "checker_sha256": "46954460085d836b7c394505069b71a94cac100344ca63e7dcecfbd2a31ae4c1",
+  "comparisons": [
+    {
+      "base_clauses": 87311,
+      "bytes": 2316857,
+      "clause_families": {
+        "edge_at_least_one": 1225,
+        "edge_at_most_one": 7350,
+        "free_zero_forbidden": 6,
+        "template": 330,
+        "triangle": 78400
+      },
+      "component": "four",
+      "label": "UUU/four/sparse",
+      "owner": "UUU",
+      "path": "support/workspace/r4333_upper/profile_d_four_row_cnf/profile_d_four_row_UUU.cnf",
+      "sha256": "ccd7c6be274fe78e4e3a5c823f25c6582f37956fcc2e58554fde7150e23cf250"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 8591125,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "UUU/five/sparse",
+      "owner": "UUU",
+      "path": "support/workspace/r4333_upper/profile_d_degree9_discovery/strong_case_b2_p15_quotient/base.cnf",
+      "sha256": "0c1d5e77e3e25f0a4e0daf7bd03ecae86f777e24ce367e6a8aa0bde32b771734"
+    },
+    {
+      "base_clauses": 87311,
+      "bytes": 2316857,
+      "clause_families": {
+        "edge_at_least_one": 1225,
+        "edge_at_most_one": 7350,
+        "free_zero_forbidden": 6,
+        "template": 330,
+        "triangle": 78400
+      },
+      "component": "four",
+      "label": "UUT/four/sparse",
+      "owner": "UUT",
+      "path": "evidence/D/UUT/full_inputs_000/bases/four.uut.sparse.cnf",
+      "sha256": "93878d8017551825950672e053c0265e2d47625d1f4db99fd04c11b315ecb029"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 8591125,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "UUT/five/sparse",
+      "owner": "UUT",
+      "path": "evidence/D/UUT/full_inputs_000/bases/five.uut.sparse.cnf",
+      "sha256": "07c302a81a7bf0f03eb6db3f48d3c5a8d9727dd35e2ce1323d46ff146d720023"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "UTU/D10/dense_prefix",
+      "owner": "UTU",
+      "path": "evidence/D/mixed/full_inputs_UTU_000/D10.prefix.cnf",
+      "sha256": "0b8efd42c95745e949d8befe2bbb675ec8e19a523a8ed3a2bb50cda2387e79cc"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "UTU/D9_FIRST4/dense_prefix",
+      "owner": "UTU",
+      "path": "evidence/D/mixed/full_inputs_UTU_000/D9_FIRST4.prefix.cnf",
+      "sha256": "2880f2d95fd5bbc5f18cd0762196597b2a004033f1477c217f4b6d69b413ce03"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "UTU/D9_SECOND4/dense_prefix",
+      "owner": "UTU",
+      "path": "evidence/D/mixed/full_inputs_UTU_000/D9_SECOND4.prefix.cnf",
+      "sha256": "2880f2d95fd5bbc5f18cd0762196597b2a004033f1477c217f4b6d69b413ce03"
+    },
+    {
+      "base_clauses": 87311,
+      "bytes": 1642622,
+      "clause_families": {
+        "edge_at_least_one": 1225,
+        "edge_at_most_one": 7350,
+        "free_zero_forbidden": 6,
+        "template": 330,
+        "triangle": 78400
+      },
+      "component": "four",
+      "label": "UTU/P15_MATRIX_ONLY/dense_prefix",
+      "owner": "UTU",
+      "path": "evidence/D/mixed/full_inputs_UTU_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "f5e0229d884da7b8d43816b60130cb696d8ab5b3b4c9771a6039a26c5ab015f2"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "UTT/D10/dense_prefix",
+      "owner": "UTT",
+      "path": "evidence/D/mixed/full_inputs_UTT_000/D10.prefix.cnf",
+      "sha256": "3ec9c3308a7ed3327d01e5c2076ec0a9438328751749fa91bbf7d665f8c3b606"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "UTT/D9_FIRST4/dense_prefix",
+      "owner": "UTT",
+      "path": "evidence/D/mixed/full_inputs_UTT_000/D9_FIRST4.prefix.cnf",
+      "sha256": "6a0e312d065dbd541b117706377ed8997c928a8d32f8dd605f319754b11457f6"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "UTT/D9_SECOND4/dense_prefix",
+      "owner": "UTT",
+      "path": "evidence/D/mixed/full_inputs_UTT_000/D9_SECOND4.prefix.cnf",
+      "sha256": "6a0e312d065dbd541b117706377ed8997c928a8d32f8dd605f319754b11457f6"
+    },
+    {
+      "base_clauses": 87311,
+      "bytes": 1642622,
+      "clause_families": {
+        "edge_at_least_one": 1225,
+        "edge_at_most_one": 7350,
+        "free_zero_forbidden": 6,
+        "template": 330,
+        "triangle": 78400
+      },
+      "component": "four",
+      "label": "UTT/P15_MATRIX_ONLY/dense_prefix",
+      "owner": "UTT",
+      "path": "evidence/D/mixed/full_inputs_UTT_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "0763c8631756487af32b645a8a7efcc5a5116b3391f4c56346c9367d96286daa"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "TTU/D10/dense_prefix",
+      "owner": "TTU",
+      "path": "evidence/D/mixed/full_inputs_TTU_000/D10.prefix.cnf",
+      "sha256": "b736a55c6e917b2ac29e9c64101d6b1e88b36afd68acc70e77e5b4fc34f1a013"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "TTU/D9_FIRST4/dense_prefix",
+      "owner": "TTU",
+      "path": "evidence/D/mixed/full_inputs_TTU_000/D9_FIRST4.prefix.cnf",
+      "sha256": "028d01e7d6ca5114df5b5543fadb02fd364635262aa3cb2b87329f59ee229f79"
+    },
+    {
+      "base_clauses": 87311,
+      "bytes": 1642622,
+      "clause_families": {
+        "edge_at_least_one": 1225,
+        "edge_at_most_one": 7350,
+        "free_zero_forbidden": 6,
+        "template": 330,
+        "triangle": 78400
+      },
+      "component": "four",
+      "label": "TTU/P15_MATRIX_ONLY/dense_prefix",
+      "owner": "TTU",
+      "path": "evidence/D/mixed/full_inputs_TTU_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "94895e16df305a953cda0204a0e204c8f4c5c7a6054074a4a66f17269f3fdb1c"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "TTT/D10/dense_prefix",
+      "owner": "TTT",
+      "path": "evidence/D/mixed/full_inputs_TTT_000/D10.prefix.cnf",
+      "sha256": "0078a2860fb4387d87fcfd25cc304d16ef10c90ed2e4b6aa117f7279d7952363"
+    },
+    {
+      "base_clauses": 343368,
+      "bytes": 6206122,
+      "clause_families": {
+        "edge_at_least_one": 1275,
+        "edge_at_most_one": 7650,
+        "free_cycle": 10,
+        "free_mark_color_three": 5,
+        "free_zero_forbidden": 10,
+        "sequential_counter": 250788,
+        "template": 330,
+        "triangle": 83300
+      },
+      "component": "five",
+      "label": "TTT/D9_FIRST4/dense_prefix",
+      "owner": "TTT",
+      "path": "evidence/D/mixed/full_inputs_TTT_000/D9_FIRST4.prefix.cnf",
+      "sha256": "1fbc35b306dd3e7856a9a116b8c81c688b7820bdce9935c6472a133c229f7d0b"
+    },
+    {
+      "base_clauses": 87311,
+      "bytes": 1642622,
+      "clause_families": {
+        "edge_at_least_one": 1225,
+        "edge_at_most_one": 7350,
+        "free_zero_forbidden": 6,
+        "template": 330,
+        "triangle": 78400
+      },
+      "component": "four",
+      "label": "TTT/P15_MATRIX_ONLY/dense_prefix",
+      "owner": "TTT",
+      "path": "evidence/D/mixed/full_inputs_TTT_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "751c05a0e4b6c57399a0ddfae7f552b987beab3a7b09d3ed208cacc4f79919a3"
+    }
+  ],
+  "distinct_owner_component_bases": 12,
+  "five_base_counter_blocks": 42,
+  "five_base_counter_clauses": 250788,
+  "leaf_suffixes_checked": false,
+  "lean_built": false,
+  "mathematical_coverage_proved": false,
+  "new_solver_calls": 0,
+  "owners": [
+    "UUU",
+    "UUT",
+    "UTU",
+    "UTT",
+    "TTU",
+    "TTT"
+  ],
+  "schema": "RAMSEY61_D_BASE_SPEC_CHECK_1",
+  "scope": "Independent re-emission of every ordered base clause for all six D owners; exact sparse bytes for UUU/UUT and exact mapped dense prefix bytes for mixed D. No finite support/matrix orbit coverage, per-leaf suffix, native answer, or full formal bridge checked.",
+  "source_pins": [
+    {
+      "bytes": 2258,
+      "path": "mathematics/retained/LITERAL_U_T_MATRICES.json",
+      "sha256": "d278b344d4fbcaf892c41cd3c843b302844d54766d9489427e3a89fcd24f4d13"
+    },
+    {
+      "bytes": 1478967,
+      "path": "evidence/D/UUT/full_inputs_000/MANIFEST.json",
+      "sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12"
+    },
+    {
+      "bytes": 2316857,
+      "path": "support/workspace/r4333_upper/profile_d_four_row_cnf/profile_d_four_row_UUU.cnf",
+      "sha256": "ccd7c6be274fe78e4e3a5c823f25c6582f37956fcc2e58554fde7150e23cf250"
+    },
+    {
+      "bytes": 8591125,
+      "path": "support/workspace/r4333_upper/profile_d_degree9_discovery/strong_case_b2_p15_quotient/base.cnf",
+      "sha256": "0c1d5e77e3e25f0a4e0daf7bd03ecae86f777e24ce367e6a8aa0bde32b771734"
+    },
+    {
+      "bytes": 2316857,
+      "path": "evidence/D/UUT/full_inputs_000/bases/four.uut.sparse.cnf",
+      "sha256": "93878d8017551825950672e053c0265e2d47625d1f4db99fd04c11b315ecb029"
+    },
+    {
+      "bytes": 8591125,
+      "path": "evidence/D/UUT/full_inputs_000/bases/five.uut.sparse.cnf",
+      "sha256": "07c302a81a7bf0f03eb6db3f48d3c5a8d9727dd35e2ce1323d46ff146d720023"
+    },
+    {
+      "bytes": 6487084,
+      "path": "evidence/D/mixed/full_inputs_UTU_000/MANIFEST.json",
+      "sha256": "b58f50c345e3007f22abea3a0dd1eff029ee50e2a2e5154a6077553aab2988ac"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_UTU_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_UTU_000/D10.prefix.cnf",
+      "sha256": "0b8efd42c95745e949d8befe2bbb675ec8e19a523a8ed3a2bb50cda2387e79cc"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_UTU_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_UTU_000/D9_FIRST4.prefix.cnf",
+      "sha256": "2880f2d95fd5bbc5f18cd0762196597b2a004033f1477c217f4b6d69b413ce03"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_UTU_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_UTU_000/D9_SECOND4.prefix.cnf",
+      "sha256": "2880f2d95fd5bbc5f18cd0762196597b2a004033f1477c217f4b6d69b413ce03"
+    },
+    {
+      "bytes": 36401,
+      "path": "evidence/D/mixed/full_inputs_UTU_000/four.dense_map.json",
+      "sha256": "cf2ebdc023e0f7f0461647104b7933b0e2268a4b17586d2771f1f4eb6e643d82"
+    },
+    {
+      "bytes": 1642622,
+      "path": "evidence/D/mixed/full_inputs_UTU_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "f5e0229d884da7b8d43816b60130cb696d8ab5b3b4c9771a6039a26c5ab015f2"
+    },
+    {
+      "bytes": 6495516,
+      "path": "evidence/D/mixed/full_inputs_UTT_000/MANIFEST.json",
+      "sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_UTT_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_UTT_000/D10.prefix.cnf",
+      "sha256": "3ec9c3308a7ed3327d01e5c2076ec0a9438328751749fa91bbf7d665f8c3b606"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_UTT_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_UTT_000/D9_FIRST4.prefix.cnf",
+      "sha256": "6a0e312d065dbd541b117706377ed8997c928a8d32f8dd605f319754b11457f6"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_UTT_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_UTT_000/D9_SECOND4.prefix.cnf",
+      "sha256": "6a0e312d065dbd541b117706377ed8997c928a8d32f8dd605f319754b11457f6"
+    },
+    {
+      "bytes": 36401,
+      "path": "evidence/D/mixed/full_inputs_UTT_000/four.dense_map.json",
+      "sha256": "cf2ebdc023e0f7f0461647104b7933b0e2268a4b17586d2771f1f4eb6e643d82"
+    },
+    {
+      "bytes": 1642622,
+      "path": "evidence/D/mixed/full_inputs_UTT_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "0763c8631756487af32b645a8a7efcc5a5116b3391f4c56346c9367d96286daa"
+    },
+    {
+      "bytes": 17937625,
+      "path": "evidence/D/mixed/full_inputs_TTU_000/MANIFEST.json",
+      "sha256": "a656853526685c105102fb6962dc71c6777887ffbf5c63d6b2c07e41a4791736"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_TTU_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_TTU_000/D10.prefix.cnf",
+      "sha256": "b736a55c6e917b2ac29e9c64101d6b1e88b36afd68acc70e77e5b4fc34f1a013"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_TTU_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_TTU_000/D9_FIRST4.prefix.cnf",
+      "sha256": "028d01e7d6ca5114df5b5543fadb02fd364635262aa3cb2b87329f59ee229f79"
+    },
+    {
+      "bytes": 36401,
+      "path": "evidence/D/mixed/full_inputs_TTU_000/four.dense_map.json",
+      "sha256": "cf2ebdc023e0f7f0461647104b7933b0e2268a4b17586d2771f1f4eb6e643d82"
+    },
+    {
+      "bytes": 1642622,
+      "path": "evidence/D/mixed/full_inputs_TTU_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "94895e16df305a953cda0204a0e204c8f4c5c7a6054074a4a66f17269f3fdb1c"
+    },
+    {
+      "bytes": 17943949,
+      "path": "evidence/D/mixed/full_inputs_TTT_000/MANIFEST.json",
+      "sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_TTT_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_TTT_000/D10.prefix.cnf",
+      "sha256": "0078a2860fb4387d87fcfd25cc304d16ef10c90ed2e4b6aa117f7279d7952363"
+    },
+    {
+      "bytes": 1147579,
+      "path": "evidence/D/mixed/full_inputs_TTT_000/five.dense_map.json",
+      "sha256": "7c9a9548815b62217dc12a2e491b18602eddcd744eb8b8a93229a075f1cca451"
+    },
+    {
+      "bytes": 6206122,
+      "path": "evidence/D/mixed/full_inputs_TTT_000/D9_FIRST4.prefix.cnf",
+      "sha256": "1fbc35b306dd3e7856a9a116b8c81c688b7820bdce9935c6472a133c229f7d0b"
+    },
+    {
+      "bytes": 36401,
+      "path": "evidence/D/mixed/full_inputs_TTT_000/four.dense_map.json",
+      "sha256": "cf2ebdc023e0f7f0461647104b7933b0e2268a4b17586d2771f1f4eb6e643d82"
+    },
+    {
+      "bytes": 1642622,
+      "path": "evidence/D/mixed/full_inputs_TTT_000/P15_MATRIX_ONLY.prefix.cnf",
+      "sha256": "751c05a0e4b6c57399a0ddfae7f552b987beab3a7b09d3ed208cacc4f79919a3"
+    }
+  ],
+  "status": "PASS_EXACT_D_BASE_SPECIFICATION",
+  "stored_base_or_prefix_comparisons": 18
+}

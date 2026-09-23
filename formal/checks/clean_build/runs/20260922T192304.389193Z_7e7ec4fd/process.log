@@ -1,0 +1,1 @@
+'PricingG.rooted_star_or_pentagon' depends on axioms: [propext, Classical.choice, Quot.sound]

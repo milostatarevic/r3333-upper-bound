@@ -1,0 +1,29 @@
+{
+  "label": "portable_common_emit",
+  "runner_sha256": "46137ffd4a317c85e650c65e6560e6dba6f5e18cbb3f70e23aebf9354c572e50",
+  "gate_sha256": "4215dce86cf6cb6ab6176a588e473bc9eed0ada27431245ecf74d0516550c500",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j1",
+    "--run",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common/Emit.lean",
+    "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/common_test_emission_001"
+  ],
+  "cwd": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd",
+  "started_utc": "2026-09-22T19:42:13.090737+00:00",
+  "admission_wait_seconds": 0.01387220800000001,
+  "cpu_threads": 1,
+  "expected_RSS_bytes_for_admission_only": 4294967296,
+  "wall_deadline": null,
+  "CPU_RSS_file_limits": null,
+  "slot": 6,
+  "owned_pid": 51220,
+  "status": "PASS",
+  "exit_code": 0,
+  "guard_reason": null,
+  "CPU_seconds": 111.34942,
+  "elapsed_seconds_informational": 116.039646125,
+  "peak_polled_RSS_bytes": 3182952448,
+  "log_sha256": "e9021de1fb1d345c7f222d5bec8a1f8aeace92e4c21750af12ad309c5e356a93",
+  "finished_utc": "2026-09-22T19:44:09.131087+00:00"
+}

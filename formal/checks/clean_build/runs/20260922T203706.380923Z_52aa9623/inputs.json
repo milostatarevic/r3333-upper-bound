@@ -1,0 +1,22 @@
+[
+  {
+    "module": "PricingC.GParityGeometry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192307.228996Z_df3b9da2/output.olean",
+    "sha256": "9ff709012de9db3407aae6360333d1f378b45c9241ee7d3b26b3dd0932f10510"
+  },
+  {
+    "module": "PricingC.ResidualSmall",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203628.744977Z_03904508/output.olean",
+    "sha256": "da18bc04c3f46f92157fd0870eda90ecd60dce548c79fb7f3e7b151377a4502e"
+  },
+  {
+    "module": "PricingG.GeneralMixedCases",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203703.615949Z_dcaa4873/output.olean",
+    "sha256": "f4f2fffb94b13cfcd81a6d9ac8da1fcd20d5891fe8d009b5416714948a037ac2"
+  },
+  {
+    "module": "Mathlib.Combinatorics.SimpleGraph.DegreeSum",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Combinatorics/SimpleGraph/DegreeSum.olean",
+    "sha256": "0946f03afdfb9cc8115ab1e48a77d378af4d053403531391ba4678daeebf4b72"
+  }
+]

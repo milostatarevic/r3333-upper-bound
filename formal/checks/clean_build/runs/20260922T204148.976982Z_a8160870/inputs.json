@@ -1,0 +1,12 @@
+[
+  {
+    "module": "CompletionC.NativePairCoordinates",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T204145.658568Z_15438cd2/output.olean",
+    "sha256": "edcb11cc8009ea5f511f440c236558391f1050bb456ace6b82456dec81b8616e"
+  },
+  {
+    "module": "CompletionC.NativeFrameCast",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203428.638069Z_218f88bb/output.olean",
+    "sha256": "10dc135bf4ba9abd262407f3f2a728093e4fa85d5d906739ff7bd7a886b93f27"
+  }
+]

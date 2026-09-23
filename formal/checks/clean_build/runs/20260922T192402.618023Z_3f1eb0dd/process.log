@@ -1,0 +1,2 @@
+'PricingIntegration.NativeFrameClauses.primary_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.NativeFrameClauses.primary_triangles' depends on axioms: [propext, Classical.choice, Quot.sound]

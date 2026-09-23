@@ -1,0 +1,18 @@
+'R4333.ProfileDUUUDegreeNineStrongCaseFactorCNF61.indexedLargeMask_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseFactorCNF61.indexedSmallMask_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseFactorCNF61.indexedLargeSupport_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseFactorCNF61.indexedSmallSupport_surjective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseFactorCNF61.strongRealization_satisfies_factorFmla' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeNineStrongCaseFactorCNF61.noStrongRealization_of_factor_lrat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

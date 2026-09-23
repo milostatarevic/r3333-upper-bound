@@ -1,0 +1,15 @@
+'R4333.UUTFourSwap.swapFourSupportBlockTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTFourSwap.swapNormalizeFourSupportBlockTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTFourSwap.swapNormalizeFourSupportBlockTwo_tailOwnDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTFourSwap.mem_foreignOwnSupport_swapNormalize_blockZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTFourSwap.mem_foreignOwnSupport_swapNormalize_blockOne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTFourSwap.swapNormalizeForeignSupportEnumerations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTFourSwap.ownNeighborhoodHostColoring_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTFourSwap.restoredRootHostAttachment_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTFourSwap.restoredRootHostK15_swap' depends on axioms: [propext, Classical.choice, Quot.sound]

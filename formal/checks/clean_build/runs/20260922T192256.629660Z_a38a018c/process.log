@@ -1,0 +1,2 @@
+'PricingIntegration.BActualFrame.ordered_B_has_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingIntegration.BActualFrame.Blocks.frame' depends on axioms: [propext, Classical.choice, Quot.sound]

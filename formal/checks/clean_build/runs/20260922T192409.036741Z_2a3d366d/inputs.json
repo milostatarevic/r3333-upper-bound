@@ -1,0 +1,17 @@
+[
+  {
+    "module": "PricingABD.ABFixedCounts",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192405.569914Z_a18ec5be/output.olean",
+    "sha256": "d82e832a4c9ac031d76f4231d82b217de2e0d0a6f380847fd3d569ab908f92fb"
+  },
+  {
+    "module": "PricingABD.ABCommands",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192356.512673Z_a3aaaf93/output.olean",
+    "sha256": "d323f2703835b272038d3cc5df1df7ae458a6d63d5499af951a92aa6a7d04a7b"
+  },
+  {
+    "module": "PricingABD.KnownSourceDomain",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192311.273551Z_a630f4a4/output.olean",
+    "sha256": "f8e8645faacf88f436fe3d55b070a49926ba0f32dc0a2ce24ae5dae98eb040d4"
+  }
+]

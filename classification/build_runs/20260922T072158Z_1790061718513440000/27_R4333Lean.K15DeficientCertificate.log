@@ -1,0 +1,20 @@
+'R4333.deficientEdgeFree_of_checked_leaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.extendCriticalK15_good_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+      216.84 real       226.28 user         2.64 sys
+          3352231936  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              257190  page reclaims
+                  22  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                6247  voluntary context switches
+              249748  involuntary context switches
+       2371985958953  instructions retired
+        787087226820  cycles elapsed
+           931550880  peak memory footprint

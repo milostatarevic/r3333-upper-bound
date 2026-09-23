@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeTenCatalogOrbitCertificate61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211844.476366Z_d6ca10ac/output.olean",
+    "sha256": "0179bb382e48c4996b494fcedd2cca2d3677b9f551c526a6bee97c842211d50b"
+  },
+  {
+    "module": "R4333Lean.ProfileDDegreeTenRepresentativeLeafBridge61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T210034.167698Z_e94c88fb/output.olean",
+    "sha256": "deb0901df8b2a32aa2c9dcd8fcc746370c788738a4d43c404179896b87cb3feb"
+  }
+]

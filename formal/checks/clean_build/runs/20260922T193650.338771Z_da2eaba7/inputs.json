@@ -1,0 +1,17 @@
+[
+  {
+    "module": "Std.Data.HashMap.Lemmas",
+    "path": "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/lib/lean/Std/Data/HashMap/Lemmas.olean",
+    "sha256": "8257613ca66b49f94780f3870d142712357e88eb002b6bec2dd1983b672c9401"
+  },
+  {
+    "module": "PricingABD.DenseSemantics",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192426.261047Z_f647d787/output.olean",
+    "sha256": "24efcde8e7786b23a90362fb7373981a3b135757002297782ffc8231339fb93f"
+  },
+  {
+    "module": "Ramsey61.DenseCounter",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191829.808224Z_9a1b8683/output.olean",
+    "sha256": "887176c73ce35da13c30574a3c94795db4306add0107017646a1d69dc8eab994"
+  }
+]

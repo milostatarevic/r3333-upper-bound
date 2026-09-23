@@ -1,0 +1,71 @@
+{
+  "schema": "RAMSEY61_MARKDOWN_MATH_CARRYFORWARD_1",
+  "checked_at_utc": "2026-09-22T08:33:52.590181+00:00",
+  "prior_render_receipt": "MATH_RENDER_004.json",
+  "prior_render_receipt_sha256": "8da49f7c80ccf14b663b8c05413dfcb07f66d0af497873c5552efa4dc44a6994",
+  "original_render_receipt": "MATH_RENDER_003.json",
+  "change": "Prose now describes the complete native-solver computer-assisted proof and supplementary Lean/certificate scope, with the proved physical G guard and full deterministic C base. No mathematical expression or equation label changed.",
+  "documents": [
+    {
+      "file": "proof.md",
+      "source_sha256": "17b9a75840abe0bac4a8e8430da6385e7b8b561b94b5e89a67bb3d18aecc123b",
+      "prior_source_sha256": "29e6a2dd5998d2921307114838828c302f406b452b4d181cb0471abeac435de3",
+      "display_expressions": 27,
+      "inline_expressions": 102,
+      "all_mathematical_expressions_unchanged_in_exact_order_and_content": true,
+      "equation_labels_unchanged": true,
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "expression_sequence_json_sha256": "7781d69d93673cac01bcb4526e4a0f39ced04a63f70e296aa22f8c3e773813ad"
+    },
+    {
+      "file": "publication/MATHEMATICS.md",
+      "source_sha256": "8d658e84e5471d85ce13913c137804e47c295082dac21f315b2bb330419267af",
+      "prior_source_sha256": "500f396c88789c63ad47b91320ed1ead2d9f333c04596e6c7bc454834ce8cba8",
+      "display_expressions": 26,
+      "inline_expressions": 96,
+      "all_mathematical_expressions_unchanged_in_exact_order_and_content": true,
+      "equation_labels_unchanged": true,
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "expression_sequence_json_sha256": "4f03849140c7f248c9bc6d9bf73cdf95793b9619494645253ca5a872d965f19c"
+    }
+  ],
+  "other_updated_document_hashes": [
+    {
+      "file": "publication/FORMALIZATION_STATUS.md",
+      "source_sha256": "90c67569ad0701386c0c00f6492006b52b94184b26dba34e04e58f738da67d37"
+    },
+    {
+      "file": "formal/README.md",
+      "source_sha256": "5e8915c885397e5c0bbace8150746c888698c776cad87a8329613297743c5911"
+    }
+  ],
+  "total_unchanged_expressions": 251,
+  "expression_sequence_hash_format": "UTF-8 compact JSON array, ensure_ascii=False, each ordered item has kind(display|inline) then tex with exact original content.",
+  "fresh_github_markdown_api_call": false,
+  "fresh_mathjax_render": false,
+  "rendering_evidence": "Exact source/formula carryforward from receipt 004, which carries the GitHub Markdown API and local MathJax checks in receipt 003. Both pre-edit sources independently match the 004 pins; all 251 expressions and all 20 numbered labels match exactly after prose changes. This is not a fresh render.",
+  "live_authenticated_github_page_checked": false,
+  "scope": "Prose-only update. Prior preprocessing/local-rendering evidence and its explicit live-GitHub limitation are carried forward for unchanged mathematical expressions; no new mathematical verification claim."
+}

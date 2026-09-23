@@ -1,0 +1,12 @@
+'R4333.RootForbiddenK4FreeVertexOrbits.canonicalRepresentatives_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.RootForbiddenK4FreeVertexOrbits.canonicalRepresentatives_orbit_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.RootForbiddenK4FreeVertexOrbits.profileC_exists_canonical_freeRelabel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.RootForbiddenK4FreeVertexOrbits.profileD_exists_canonical_freeRelabel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

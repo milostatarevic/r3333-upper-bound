@@ -1,0 +1,28 @@
+test_absolute_path (__main__.VerifierTests) ... ok
+test_backslash_path (__main__.VerifierTests) ... ok
+test_c_all_bad_last_formula_hash (__main__.VerifierTests) ... ok
+test_c_all_missing_last_seed (__main__.VerifierTests) ... ok
+test_c_all_shared_prefix_hashes (__main__.VerifierTests) ... ok
+test_c_all_unresolved_not_accepted (__main__.VerifierTests) ... ok
+test_duplicate_member (__main__.VerifierTests) ... ok
+test_edge_numbering_boundaries (__main__.VerifierTests) ... ok
+test_existing_destination_rejected (__main__.VerifierTests) ... ok
+test_fifo (__main__.VerifierTests) ... ok
+test_file_directory_collision (__main__.VerifierTests) ... ok
+test_full_census_count_tamper (__main__.VerifierTests) ... ok
+test_good_ordinary_archive (__main__.VerifierTests) ... ok
+test_hardlink (__main__.VerifierTests) ... ok
+test_lfs_pointer_is_not_archive (__main__.VerifierTests) ... ok
+test_member_limit (__main__.VerifierTests) ... ok
+test_parent_traversal (__main__.VerifierTests) ... ok
+test_payload_limit (__main__.VerifierTests) ... ok
+test_pinned_metadata_tamper (__main__.VerifierTests) ... ok
+test_receipt_cannot_be_in_evidence (__main__.VerifierTests) ... ok
+test_symlink (__main__.VerifierTests) ... ok
+test_symlink_input_rejected (__main__.VerifierTests) ... ok
+test_tampered_archive_hash (__main__.VerifierTests) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.040s
+
+OK

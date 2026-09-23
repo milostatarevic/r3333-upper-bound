@@ -1,0 +1,1 @@
+'PricingC.paired_scopes_six_orbits' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,8 @@
+{
+  "measured_utc": "2026-09-22T21:00:22.412737+00:00",
+  "method": "du -sk; existing shared dependencies, outside new project storage",
+  "lean4_32_1_allocated_KiB": 2756128,
+  "pinned_dependency_cache_allocated_KiB": 5028768,
+  "combined_allocated_GiB": 7.42425537109375,
+  "note": "An existing installation measurement, not a guaranteed minimum for a fresh install; no files changed."
+}

@@ -1,0 +1,10 @@
+'R4333.UUTD10OrbitTransport.q2Stabilizer_canonicalEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD10OrbitTransport.q2TailStabilizer_templateCanonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD10OrbitTransport.normalizeCatalogExactToRepresentative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD10OrbitTransport.exists_representativeCatalogExactBranch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

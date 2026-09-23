@@ -1,0 +1,18 @@
+'R4333.ProfileDUUUDegreeTenFiniteBoundary61.normalizeSupportBlockZero_tailOwnDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenFiniteBoundary61.swapSupportBlockOneToZero_tailOwnDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenFiniteBoundary61.exists_positioned_degreeTen_indexed_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenFiniteBoundary61.exists_canonicalTransport_preserving_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenFiniteBoundary61.exists_canonical_degreeTen_indexed_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenFiniteBoundary61.DegreeTenRepresentativeObstructionAssembly.no_exactDegreeTen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,12 @@
+'PricingABD.P15MatrixTransport.complete_pair000_edge_transport' depends on axioms: [propext]
+'PricingABD.P15MatrixTransport.observed_pair000_has_retained_leaf' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PricingABD.P15MatrixTransport.observed_pair000_has_retained_leaf {c : Host} {t : Bool} (f : Frame c 4 t)
+  (hc : NoMonochromaticTriangle c) (i : Fin 600)
+  (observed :
+    ∀ (a b : Fin 14),
+      a ≠ b →
+        c.color (physicalVertex f (placement a)) (physicalVertex f (placement b)) =
+          palette (matrix (word (candidate i)) a b)) :
+  ∃ valuation, valuation.satisfies_fmla (leaf t (target i))

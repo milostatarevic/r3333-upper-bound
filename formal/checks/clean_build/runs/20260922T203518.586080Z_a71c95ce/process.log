@@ -1,0 +1,7 @@
+'R4333.k16Template_sameColorNeighborhood_intersection_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16Template_maxIndependentSets_intersection_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k15Template_maxIndependentSets_intersection_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.criticalTemplate_maxIndependentSets_intersection_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.SharedCriticalCompletion.maximumIndependentSets_intersection_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

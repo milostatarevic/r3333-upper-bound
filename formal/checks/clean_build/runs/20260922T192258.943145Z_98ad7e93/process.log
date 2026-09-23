@@ -1,0 +1,13 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/BPrimary.lean:11:46: warning: Variable name `u` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/BPrimary.lean:11:48: warning: Variable name `v` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'PricingABD.BPrimary.row_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.BPrimary.high_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.BPrimary.retained_caps' depends on axioms: [propext, Classical.choice, Quot.sound]

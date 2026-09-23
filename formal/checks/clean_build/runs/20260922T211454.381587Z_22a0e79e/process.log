@@ -1,0 +1,15 @@
+'R4333.ProfileDUUUDegreeTenSupportClassificationUUU2P15.firstSupport_templateIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportClassificationUUU2P15.secondSupport_templateIndependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportClassificationUUU2P15.exists_supportIndices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportClassificationUUU2P15.exists_normalizedSupportPair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportClassificationUUU2P15.normalizedSupportPair_lands_in_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

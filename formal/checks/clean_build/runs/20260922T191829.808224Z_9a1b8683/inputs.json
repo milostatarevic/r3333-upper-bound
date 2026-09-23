@@ -1,0 +1,12 @@
+[
+  {
+    "module": "Mathlib.Data.List.Count",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/List/Count.olean",
+    "sha256": "33fa71b9854317d42d18bcf8d241bfb8cdef104419157c0bc83bf854655e3000"
+  },
+  {
+    "module": "Mathlib.Tactic",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean",
+    "sha256": "0534ef12e7aaf8ffbb6e520a91f922da4469d0dca2b54c87b4458e1faa28a6a2"
+  }
+]

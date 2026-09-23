@@ -1,0 +1,17 @@
+[
+  {
+    "module": "PricingG.UUTD9Geometry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211513.485310Z_f907a604/output.olean",
+    "sha256": "530c3e624ee966a0b3c5706343e2ee44b557d5350c88271a8b1e99211aa5e219"
+  },
+  {
+    "module": "PricingG.UUTD9Realization",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211510.759914Z_82f9f14c/output.olean",
+    "sha256": "789507dbe95a5d74d8c80ad531f8f2291e605e16630ae40ca2e659918f8a8edd"
+  },
+  {
+    "module": "R4333Lean.ProfileDUUUDegreeNineBlockTwoSwap61",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T211515.517646Z_b36616a4/output.olean",
+    "sha256": "68f497d9fb98eca5c8d084f50e1a0f2469210ce22cd513c671f92e96632951aa"
+  }
+]

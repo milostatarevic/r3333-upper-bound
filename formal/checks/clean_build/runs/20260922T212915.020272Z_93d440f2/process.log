@@ -1,0 +1,4 @@
+'R4333.ProfileDUUUFourSupportP0OrbitData61.candidateColor_stageOne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0OrbitData61.reducedCoverage' depends on axioms: [propext, Classical.choice, Quot.sound]

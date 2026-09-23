@@ -1,0 +1,14 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/P15Encoder.lean:56:13: warning: Variable name `a` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/PricingABD/P15Encoder.lean:56:15: warning: Variable name `b` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'PricingABD.P15Encoder.physicalColoring_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PricingABD.P15Encoder.frame_satisfies_exact_P15_base' depends on axioms: [propext, Classical.choice, Quot.sound]
+PricingABD.P15Encoder.frame_satisfies_exact_P15_base {c : Host} {t : Bool} (f : Frame c 4 t)
+  (hc : NoMonochromaticTriangle c) : (coloringValuation (physicalColoring f)).satisfies_fmla (baseFmla t)

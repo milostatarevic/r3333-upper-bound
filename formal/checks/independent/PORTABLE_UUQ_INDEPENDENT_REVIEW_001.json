@@ -1,0 +1,70 @@
+{
+  "status": "PASS_INDEPENDENT_PORTABLE_UUQ_SOURCE_AND_REFERENCE_REVIEW",
+  "UTC": "2026-09-22T19:54:48.743719+00:00",
+  "CPU_seconds": 0.222663,
+  "source_count": 586,
+  "additional_pure_helpers": [
+    "PricingG.D10ArraySuffix",
+    "PricingG.D10ArrayWord",
+    "PricingG.D10CachedSuffix",
+    "PricingG.D10SuffixRepresentation",
+    "PricingG.D9Root12Fast",
+    "PricingG.D9Root1Fast",
+    "PricingG.D9Root4Fast",
+    "PricingG.D9StrongFast",
+    "PricingG.P15FastUnits",
+    "PricingG.UUQEmissionIdentity"
+  ],
+  "native_cases": 1358,
+  "archive_files_rehashed": 1369,
+  "archive_bytes_rehashed": 19895440,
+  "pins": [
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/uuq/source_inventory.json",
+      "bytes": 298920,
+      "sha256": "c141c1d90c23223cd15bdf7e06a88dc5af5df2193f751d566e8e8054097408e3"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/uuq/reference_index.json",
+      "bytes": 799241,
+      "sha256": "eb472d445fd14fca548c10947a7850e988e8883b06a9208a2ee0e7d963304b61"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/abd/NATIVE_PORTABLE_SOURCE_CLOSURE_AUDIT_002.json",
+      "bytes": 1397524,
+      "sha256": "184a17e8689e733818dbab2eaf8cdad5c5d11c1651df9b7bcd42eb7c3c0a5b06"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/g/UUQ1358_NATIVE_TERMINAL_BINDING_001.json",
+      "bytes": 682771,
+      "sha256": "07912d52e82ebfaa57fdd05f2510bac702ac68094a17228325047ec89dddd169"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/g/UUQ1358_FINAL_LEAN_NATIVE_BINDING_001.json",
+      "bytes": 356676,
+      "sha256": "1a9025108db76d3abac96b7de20e4fc5734d013b3b6946289e1afc062d299ba6"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/uuq/EmitUUQ.lean",
+      "bytes": 2384,
+      "sha256": "aa9102b34899640e514f727e7fdb5f5965e616ea8406260e33824916da2f6fa8"
+    },
+    {
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/portable_reproduce/uuq/compare.py",
+      "bytes": 12642,
+      "sha256": "760bbf3ff1ac14360af2db81280f65a3c3d23712fbd0a35443b08997926c50a5"
+    }
+  ],
+  "findings": [
+    "The runtime emitter uses the proved exact cached suffixes and actual native renaming; sparse and native signs and ordered singleton clauses are retained.",
+    "All1358 reference owner/case/input/result identities independently match the accepted original terminal binding and final Lean emission binding.",
+    "All archived reference files were independently rehashed at their relocated public evidence paths.",
+    "Comparator checks exact boundary, both sparse/native suffixes, injective maps, prefix sparse round trips, all fullformula hashes, and actual UNSAT/exit20/input-posthash identities.",
+    "D10 lacks a units array in its original census; its exact original expected_formula hashes plus UUT units census and both full hashes supply that binding without weakening the boundary.",
+    "The transitive IO emitter import has been removed from the pure helper closure; all586sources match inventory hashes and all10extrahelpers are free of #eval, filesystem IO and absolute paths.",
+    "Both accepted archive-root forms are normalized before relative-path checks; optimized Python is rejected.",
+    "Fresh output directory acquisition is atomic and reports remain create-only."
+  ],
+  "issues": [],
+  "scope": "Read-only independent code/scope/identity review; no repeated Lean compilation, emission, solver, or certificate execution."
+}

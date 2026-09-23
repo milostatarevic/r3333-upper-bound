@@ -1,0 +1,1 @@
+'CompletionC.NativeShapeCoordinates.actual_native_catalogue' depends on axioms: [propext, Classical.choice, Quot.sound]

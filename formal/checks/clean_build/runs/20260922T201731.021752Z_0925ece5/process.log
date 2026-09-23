@@ -1,0 +1,1 @@
+'PricingC.Rooted555.all_rooted_choices_in_catalogue' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'PricingG.D9PhysicalClauseOrder.original_model_physical_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

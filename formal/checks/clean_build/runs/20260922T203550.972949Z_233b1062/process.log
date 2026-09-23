@@ -1,0 +1,8 @@
+'R4333.ProfileDTripleJoinReduction.tailEmbedding_blockVertex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDTripleJoinReduction.witnessOfStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.ProfileDTripleJoinReduction.exists_tailWitness_of_star' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDTripleJoinReduction.no_profileD_star_of_tripleJoinRefutations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

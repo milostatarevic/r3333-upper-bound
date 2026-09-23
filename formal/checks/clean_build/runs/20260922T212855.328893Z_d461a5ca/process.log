@@ -1,0 +1,48 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP0OrbitData61.lean:625:4: warning: This simp argument is unused:
+  finSumFinEquiv_apply_left
+
+Hint: Omit it from the simp argument list.
+  simp only [fourFiveFiveEquiv, Equiv.trans_apply, Equiv.sumCongr_apply,̵
+  ̵ ̵ ̵ ̵ ̵f̵i̵n̵S̵u̵m̵F̵i̵n̵E̵q̵u̵i̵v̵_̵a̵p̵p̵l̵y̵_̵l̵e̵f̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP0OrbitData61.lean:631:4: warning: This simp argument is unused:
+  finSumFinEquiv_apply_left
+
+Hint: Omit it from the simp argument list.
+  simp only [fourFiveFiveEquiv, Equiv.trans_apply, Equiv.sumCongr_apply, f̵i̵n̵S̵u̵m̵F̵i̵n̵E̵q̵u̵i̵v̵_̵a̵p̵p̵l̵y̵_̵l̵e̵f̵t̵,̵ ̵finSumFinEquiv_apply_right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP0OrbitData61.lean:631:31: warning: This simp argument is unused:
+  finSumFinEquiv_apply_right
+
+Hint: Omit it from the simp argument list.
+  simp only [fourFiveFiveEquiv, Equiv.trans_apply, Equiv.sumCongr_apply, f̵i̵n̵S̵u̵m̵F̵i̵n̵E̵q̵u̵i̵v̵_̵a̵p̵p̵l̵y̵_̵l̵e̵f̵t̵,̵ ̵f̵i̵n̵S̵u̵m̵F̵i̵n̵E̵q̵u̵i̵v̵_̵a̵p̵p̵l̵y̵_̵r̵i̵g̵h̵t̵]̵f̲i̲n̲S̲u̲m̲F̲i̲n̲E̲q̲u̲i̲v̲_̲a̲p̲p̲l̲y̲_̲l̲e̲f̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUFourSupportP0OrbitData61.lean:637:4: warning: This simp argument is unused:
+  finSumFinEquiv_apply_right
+
+Hint: Omit it from the simp argument list.
+  simp only [fourFiveFiveEquiv, Equiv.trans_apply, Equiv.sumCongr_apply,̵
+  ̵ ̵ ̵ ̵ ̵f̵i̵n̵S̵u̵m̵F̵i̵n̵E̵q̵u̵i̵v̵_̵a̵p̵p̵l̵y̵_̵r̵i̵g̵h̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'R4333.ProfileDUUUFourSupportP0OrbitData61.freeNormalizer_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0OrbitData61.firstNormalizer_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0OrbitData61.secondNormalizer_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0OrbitData61.rootFreeGroupVertex_position_of_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0OrbitData61.rootFirstGroupVertex_position_of_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUFourSupportP0OrbitData61.rootSecondGroupVertex_position_of_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,1461 @@
+{
+  "schema": "RAMSEY61_PUBLICATION_DEPENDENCIES_3",
+  "scope": "The mathematical reductions and computational evidence used by proof.md for the K61 exclusion.",
+  "path_base": "extracted_authenticated_evidence_snapshot_root",
+  "exposition": "source_repository:proof.md",
+  "target": "Every four-edge-coloring of K61 has a monochromatic triangle.",
+  "accepted_outcome": "evidence/final_validation/FINAL_OUTCOME_002.json",
+  "trust_standard": "Complete computer-assisted proof with Lean-checked mathematical reductions to concrete finite CNFs and retained native SAT answers. All 56,374 A/B/D formulas have Kissat results; all 456 C formulas have matching Kissat and CaDiCaL results. Exact formula-to-input bindings are checked externally. The K15/K16 classification is kernel-checked using the included small CNF/LRAT data. Large native search refutations remain the explicit computational premise.",
+  "current_claim": "complete_computer_assisted_proof",
+  "nodes": [
+    {
+      "id": "elementary_degree_profiles",
+      "title": "Elementary degree bounds, profiles and directed incidence identity",
+      "statement": "In a hypothetical good K61 every color degree lies in 12..16, the sorted profile is A/B/C/D/E, and sum_v H(v)=sum_v w(v). H uses the neighbor full degree in the joining color. The 35 ordered profiles are exhaustive.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [],
+      "evidence": [
+        {
+          "path": "evidence/final_validation/PROVISIONAL_PROOF_002.md",
+          "bytes": 8229,
+          "sha256": "4fbc931543eace78f4d20d987599bda04d8a8e1c70a1247f7b69678d7609802a"
+        },
+        {
+          "path": "evidence/c_campaign/FINAL_COMPOSITION_MATH_REVIEW_001.md",
+          "bytes": 15431,
+          "sha256": "c9518e05418764301897c4cfcf52ed08b8e5f591f1fa5da142895bbf2c1c1b9f"
+        }
+      ],
+      "counts": {
+        "ordered_profiles": 35
+      },
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/Ramsey61/Foundations.lean",
+          "bytes": 18955,
+          "sha256": "ca05aa3e88b048c9b313cf645dfe7dd397e226661c780daeb81578c917bc904f"
+        },
+        {
+          "path": "source_repository:formal/src/Ramsey61/Profiles.lean",
+          "bytes": 4029,
+          "sha256": "309cca6aa5649824c69c8199f0467bce457e50b0c1e2f0db842c75cf8eae3e16"
+        },
+        {
+          "path": "source_repository:formal/src/Ramsey61/Incidence.lean",
+          "bytes": 3862,
+          "sha256": "b2261f8d5ac1677a1dfd304b114d8e615aac76295dfd0fd6107f16e086bf2320"
+        }
+      ]
+    },
+    {
+      "id": "critical_classification",
+      "title": "Critical K15/K16 classification",
+      "statement": "Every good three-colored K16 is weakly isomorphic to literal U or T; every good K15 is a deletion of a critical K16. Each designated color graph of a critical K16 is Clebsch. No arbitrary K14 extension is assumed.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [],
+      "evidence": [
+        {
+          "path": "mathematics/retained/CLASSIFICATION_SOURCES.md",
+          "bytes": 3254,
+          "sha256": "f13b88ba167ac4a3a250d04fa85d8f2aa86161410826da51879eb29eeb687537"
+        },
+        {
+          "path": "mathematics/retained/LITERAL_U_T_MATRICES.json",
+          "bytes": 2258,
+          "sha256": "d278b344d4fbcaf892c41cd3c843b302844d54766d9489427e3a89fcd24f4d13"
+        },
+        {
+          "path": "support/workspace/R4333Lean/CriticalCatalogues.lean",
+          "bytes": 2095,
+          "sha256": "b652c8bc79277144f6cf247dca3f7e021c8e9414be13c308a99747131ea279b8"
+        },
+        {
+          "path": "support/workspace/R4333Lean/K15Catalogue.lean",
+          "bytes": 2329,
+          "sha256": "cb06bd235c0fee3fb608797de60ad0daf4b8532f57084c66d637404c1e9d3a81"
+        }
+      ],
+      "current_source_package": "source_repository:formal/",
+      "provenance_note": "The complete mathematical source package includes the classification library and actual-host adapter. The clean mathematical run reuses 32 pinned previously checked classification outputs; the portable full-source build rechecks the 55 supplied small CNF/LRAT pairs.",
+      "public_formal_scope": "The K15/K16 completeness library is connected to actual hosts through ClassificationAdapter. The complete source package includes the 32 classification modules and 55 small CNF/LRAT pairs.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/R4333Lean/CriticalCatalogues.lean",
+          "bytes": 2186,
+          "sha256": "63d920e5739c36a743b7024686c360fb4e521228fc174b13d3be71949e48210e"
+        },
+        {
+          "path": "source_repository:formal/src/R4333Lean/K15Catalogue.lean",
+          "bytes": 2329,
+          "sha256": "cb06bd235c0fee3fb608797de60ad0daf4b8532f57084c66d637404c1e9d3a81"
+        },
+        {
+          "path": "source_repository:formal/src/Ramsey61/ClassificationAdapter.lean",
+          "bytes": 8441,
+          "sha256": "ba4fc9343574e607478103599de47d45f176ba2dfef6cfcea9535f96ab165356"
+        }
+      ]
+    },
+    {
+      "id": "template_transports",
+      "title": "Literal template palette and mark transports",
+      "statement": "Palette covariance and color-preserving K16 vertex transitivity supply whole-host coordinate changes and mark-fixed palette lifts. All incident edges move; overlapping neighborhoods must agree physically.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "critical_classification"
+      ],
+      "evidence": [
+        {
+          "path": "support/workspace/R4333Lean/CriticalTemplatePaletteSymmetry.lean",
+          "bytes": 7261,
+          "sha256": "728e28b1e34f66711c674fa4200c2dab3c3d4dda1a0dc3ff92e98cdcff4dcf52"
+        },
+        {
+          "path": "support/workspace/R4333Lean/CriticalTemplateDeletion.lean",
+          "bytes": 2288,
+          "sha256": "8831e3f3bf5c868d9208c5fc27e1eefc832cdbb8048549066938947b785b901f"
+        }
+      ],
+      "source_scope": "Whole-host palette and vertex changes, physical coordinates, template normalization and marked-support transports are proved and consumed by the complete cover.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/PhysicalTypeTransport.lean",
+          "bytes": 4027,
+          "sha256": "707ea1fb1d71bd7b2b7b9b7e066df636c071c3d4e068be0fdbc86c76f0f030c2"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/ABDRootPalette.lean",
+          "bytes": 15226,
+          "sha256": "b9d31d493a98f5ac79c78ae50cce7829693b56d6a723ff5f5386c986d8865ead"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/PhysicalCoordinateColoring.lean",
+          "bytes": 3975,
+          "sha256": "5d1792ce73323b8fe03112ec878cd6d93b70dc3faa5b07368a953d577cf6f4c9"
+        }
+      ],
+      "public_formal_scope": "Whole-host palette and vertex changes, physical coordinates, template normalization and marked-support transports are proved and consumed by the complete cover."
+    },
+    {
+      "id": "abd_marked_cover",
+      "title": "Common marked-neighborhood construction",
+      "statement": "For any supplied A/H>=48, B/H>=47 or D/H>=46 root, choose a genuine high endpoint in a designated K16. Its actual own-color supports have sizes 455,545,554 or555. Rooted critical classification and full-block stabilizers give complete support/matrix covers.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "elementary_degree_profiles",
+        "critical_classification",
+        "template_transports"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/A/SELECTED_A_HAND_COVERAGE_DESIGN_000.md",
+          "bytes": 10108,
+          "sha256": "8cf41991203ece0b273c9e30e09aef6557cf403652543df019530aeac33c1558"
+        },
+        {
+          "path": "evidence/B/INDEPENDENT_SELECTED_B_HAND_COVERAGE_REVIEW_000.json",
+          "bytes": 6582,
+          "sha256": "365bf232126cc0beafab3dbfb2666be4bb758bda744dcc08819005ce94941ac1"
+        },
+        {
+          "path": "evidence/D/mixed/UTU_UTT_ORIGINAL_FINITE_BOUNDARY_DESIGN_000.md",
+          "bytes": 13711,
+          "sha256": "ef70f56aeb565d668a43ec295817f2e4b19a123cdb4ea56390f3bd89557b7b35"
+        },
+        {
+          "path": "support/workspace/r4333_upper/pro_findings_review_2026_09_11/ramsey61_research/marked_catalogue.py",
+          "bytes": 5123,
+          "sha256": "901594a22a575f8a5c79990ac54799ba8a70c263e688e1faee9fa9837f10c0e4"
+        },
+        {
+          "path": "support/workspace/r4333_upper/pro_findings_review_2026_09_11/ramsey61_research/direct_profile_counts.json",
+          "bytes": 8472356,
+          "sha256": "1deb526e962e1a47a5128e97e700eeb27c22833b4e399486ffbce7d29a4e8b31"
+        },
+        {
+          "path": "support/workspace/r4333_upper/pro_findings_review_2026_09_11/ramsey61_research/template_math.py",
+          "bytes": 2473,
+          "sha256": "926b6298a29de51819820e71d911f6e75751efab45888ca5f79a5867d6c2a36b"
+        }
+      ],
+      "counts": {
+        "rooted_matrix_words_per_ordered_shape": 600
+      },
+      "input_and_finite_data_index": "source_repository:publication/ABD_EVIDENCE_INDEX.json",
+      "public_formal_scope": "Actual high-mark extraction, complete support/matrix coverage and whole-cell normalization are proved, retaining a single physical coloring.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/CompletionC/CommonEntrance.lean",
+          "bytes": 6102,
+          "sha256": "d233a8b2daa02fe7efa9feb580b3890375b26c6d7801a4812329b518391e1e9c"
+        },
+        {
+          "path": "source_repository:formal/src/CompletionC/CommonSupportNormalization.lean",
+          "bytes": 5330,
+          "sha256": "737817cb62d2c510cb79b63b3951bdd31bca89db5e8275ad00387f271fbafde7"
+        },
+        {
+          "path": "source_repository:formal/src/CompletionC/CommonPairAdmission.lean",
+          "bytes": 3276,
+          "sha256": "aafc2b0aa4de2be85c8d8d4712dde9244160afa0c834c44beba14859d515198f"
+        },
+        {
+          "path": "source_repository:formal/src/CompletionC/NativeFamilyJoin.lean",
+          "bytes": 3665,
+          "sha256": "1b19b4b43630ac03640096549c31aeb7e740cdc17688154a5758cd2db14459af"
+        }
+      ]
+    },
+    {
+      "id": "a_cover_inputs",
+      "title": "A360 physical cover and input semantics",
+      "statement": "Every supplied A root with H>=48 produces a satisfying valuation of an exact A360 case. Foreign blocks are 16/16, free-row nonzero intervals are 7..15, and projected-high proxies use only genuine-high implies proxy.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "abd_marked_cover"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/A/INDEPENDENT_A_INPUT_SPEC_AND_EXTRACTION_000.md",
+          "bytes": 6838,
+          "sha256": "92746c08e10e0050138fb68541173d21b6d9f6adb59b139c8df0e0080cc903d6"
+        },
+        {
+          "path": "evidence/A/INDEPENDENT_SELECTED_A_ACTUAL_FINITE_REVIEW_000.json",
+          "bytes": 19793,
+          "sha256": "02648d17aa34b34c8ea009ed4896e228cae63e66ee790f5072888990ff04cd30"
+        },
+        {
+          "path": "evidence/A/INPUT_EXECUTION_ACCEPTANCE_000.json",
+          "bytes": 9560,
+          "sha256": "85c36f875ba616f45f7a6d11e1aaed171f46df6b5c27b7d63cf87b77f21e169c"
+        },
+        {
+          "path": "evidence/A/A360_PROVISIONAL_CONSUMER_SUBSTITUTION_000.md",
+          "bytes": 4785,
+          "sha256": "ff72f648dac185248f25732dd62f44f95ff8ae14a90431e43efd455b60bb0d05"
+        },
+        {
+          "path": "evidence/A/full_inputs_000/MANIFEST.json",
+          "bytes": 374915,
+          "sha256": "04b63427c743d41369cd305fd82e37450bc26c4d5262b47ddd20b4544d8ced13"
+        },
+        {
+          "path": "evidence/A/SELECTED_A_VERIFIED_CENSUS_000.json",
+          "bytes": 132927,
+          "sha256": "bb2a36c4cbaaa23d5a78911600043f5eaaf9ee189412403f5927483e6edf566e"
+        }
+      ],
+      "counts": {
+        "UUU": 14,
+        "UUT": 14,
+        "UTT": 56,
+        "TTT": 276,
+        "total": 360
+      },
+      "input_and_finite_data_index": "source_repository:publication/ABD_EVIDENCE_INDEX.json",
+      "public_formal_scope": "Every supplied selected A root reaches a concrete original A formula; all prefix counters, allocation and signed suffix clauses are satisfied by the constructed valuation.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingABD/ABNative.lean",
+          "bytes": 3283,
+          "sha256": "dc2f3b73aaf689b02e3a491a43f52b3ad8a25e55b7318add832110b24c764633"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/ABActualOwners.lean",
+          "bytes": 3187,
+          "sha256": "44e1635a086d0ca4d35465f5db15644418dc4d9b40cd4b881ade0bb49dc5de12"
+        },
+        {
+          "path": "source_repository:formal/src/CompletionC/ActualProfileCover.lean",
+          "bytes": 2875,
+          "sha256": "43b95c4343f92e6fc1de889a01a690dec5a4b98a7e117411fdf5cce6083f3cc8"
+        },
+        {
+          "path": "source_repository:formal/src/CompletionC/NativeFamilyJoin.lean",
+          "bytes": 3665,
+          "sha256": "1b19b4b43630ac03640096549c31aeb7e740cdc17688154a5758cd2db14459af"
+        }
+      ]
+    },
+    {
+      "id": "b_cover_inputs",
+      "title": "B5096 physical cover and input semantics",
+      "statement": "Every supplied B root with H>=47 produces a satisfying valuation of an exact B5096 case. Foreign blocks are 15/16; both deficiency orientations and zero-covered cases remain; free-row nonzero bounds are 7..14.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "abd_marked_cover"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/B/tools/SELECTED_B_INPUT_SPEC_000.md",
+          "bytes": 8811,
+          "sha256": "d5e2eb4a6901bd31a4b3beb07170ee9260ba51b92113005274a26e0672d258fc"
+        },
+        {
+          "path": "evidence/B/INDEPENDENT_SELECTED_B_ACTUAL_FINITE_REVIEW_000.json",
+          "bytes": 4933,
+          "sha256": "4083a9a4721c6d5416281dc288d334d4fe5669d2972a445577517be09ca2cc6a"
+        },
+        {
+          "path": "evidence/B/INDEPENDENT_SELECTED_B_ACTUAL_INPUT_REVIEW_000.json",
+          "bytes": 20013,
+          "sha256": "3b43ebd935b74e06dfa8dc43b96f2cadad17e708ae923a9cf7e0e6b99089929b"
+        },
+        {
+          "path": "evidence/B/full_inputs_000/MANIFEST.json",
+          "bytes": 4932770,
+          "sha256": "717eddaab19150f9e6443c06180fdcaf655ebdd89a9ce43056d2aa8ae054fa66"
+        },
+        {
+          "path": "evidence/B/SELECTED_B_VERIFIED_CENSUS_000.json",
+          "bytes": 1619135,
+          "sha256": "5dd67c47ba1048f029acb5b00cf5c9130ff4959d23e5166950676f8a37532d54"
+        }
+      ],
+      "counts": {
+        "UUU": 122,
+        "UUT": 122,
+        "UTT": 592,
+        "TUU": 592,
+        "TUT": 592,
+        "TTT": 3076,
+        "total": 5096
+      },
+      "input_and_finite_data_index": "source_repository:publication/ABD_EVIDENCE_INDEX.json",
+      "public_formal_scope": "Every supplied selected B root reaches a concrete original B formula, retaining both deficiency orientations and all cases; its complete prefix and signed suffix encoding is proved.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingABD/ABNative.lean",
+          "bytes": 3283,
+          "sha256": "dc2f3b73aaf689b02e3a491a43f52b3ad8a25e55b7318add832110b24c764633"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/BActualGeometry.lean",
+          "bytes": 5386,
+          "sha256": "92430ec2efcde3082191dc2e6d62119ce1379983ddeff22df749129e50150516"
+        },
+        {
+          "path": "source_repository:formal/src/CompletionC/ActualProfileCover.lean",
+          "bytes": 2875,
+          "sha256": "43b95c4343f92e6fc1de889a01a690dec5a4b98a7e117411fdf5cce6083f3cc8"
+        },
+        {
+          "path": "source_repository:formal/src/CompletionC/NativeFamilyJoin.lean",
+          "bytes": 3665,
+          "sha256": "1b19b4b43630ac03640096549c31aeb7e740cdc17688154a5758cd2db14459af"
+        }
+      ]
+    },
+    {
+      "id": "d_uuu_cover_inputs",
+      "title": "D/UUU 679-case cover and exact inputs",
+      "statement": "Every supplied D/UUU root with H>=46 maps to a P15 matrix-only, selected-K16 D9 or D10 formula. The same-host extraction and coordinate changes apply before projection.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "abd_marked_cover"
+      ],
+      "evidence": [
+        {
+          "path": "support/workspace/research_handoffs/ramsey61_density_20260912_001/D_UUU_FULL_HOST_REUSE_CLAIM_000.md",
+          "bytes": 21236,
+          "sha256": "f8fdaf1dad1a23d2ff06820d7090606aeaa49e946db5023c8e2f691bd1a41cf4"
+        },
+        {
+          "path": "support/workspace/research_handoffs/ramsey61_density_20260912_001/D_UUU_FULL_HOST_REUSE_REVIEW_000.json",
+          "bytes": 10875,
+          "sha256": "f3ebfc5be06d2d1539b8a6e569aee25ef6c83acdc684a0dad73db1ec9c596551"
+        },
+        {
+          "path": "evidence/D/UUU/PROVENANCE.md",
+          "bytes": 11653,
+          "sha256": "4341bab55d20153f4c086845f36340a92a5c0cd6cbb4bfd7c8d7c6bb545b24d6"
+        },
+        {
+          "path": "evidence/D/UUT/full_inputs_000/MANIFEST.json",
+          "bytes": 1478967,
+          "sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12"
+        },
+        {
+          "path": "evidence/D/UUU/census/P15_MATRIX_ONLY_189.json",
+          "bytes": 332224,
+          "sha256": "12826a3a46608f20d36fa0d8edecf67de7bcfe1e4c0b2ffa085581e2df508f20"
+        },
+        {
+          "path": "evidence/D/UUU/census/D9_STRONG_ROOT2.json",
+          "bytes": 140646,
+          "sha256": "9c67ccb0df4b20830957cdfddc99eb8088a372acea35061017d9f8f30c09d443"
+        },
+        {
+          "path": "evidence/D/UUU/census/D9_TWISTED_ROOT1.json",
+          "bytes": 255860,
+          "sha256": "216aa4d24f117082fcae5cbd546d18f233dd1d66ce32ab78f92ce0a6a1870470"
+        },
+        {
+          "path": "evidence/D/UUU/census/D9_TWISTED_ROOT4.json",
+          "bytes": 255860,
+          "sha256": "83c20e22d75f332298086a29ace738cab5d3e70a6a4f715ec9c2b99cc1f6e096"
+        },
+        {
+          "path": "evidence/D/UUU/census/D9_TWISTED_ROOT12.json",
+          "bytes": 140930,
+          "sha256": "057c2379cbbcce75cd831c959553f688a74abc8177a7abc3721ce4cdd89bfc82"
+        },
+        {
+          "path": "evidence/D/UUU/census/D10_B2P15_82.json",
+          "bytes": 86895,
+          "sha256": "126d08874e66f6fb91b46dd9a935a2b20faf62d9af3430b4e030f94bbbaa501e"
+        },
+        {
+          "path": "support/r3333-fable/continuation/inputs/r4333-profile-d-degree10-discovery-uuu-b2-p15.json",
+          "bytes": 124223,
+          "sha256": "44ca07c9c35db5586f4cf86c9e33779e08555fc248c6f77f1ac4136c6df011f1"
+        }
+      ],
+      "counts": {
+        "P15": 189,
+        "D9": 408,
+        "D10": 82,
+        "total": 679
+      },
+      "written_exposition": "source_repository:publication/D_COVER_AND_ENCODING.md",
+      "source_scope": "The same supplied physical blocks give the complete 189+408+82 UUU cover and a satisfying valuation of the exact native formula.",
+      "input_and_finite_data_index": "source_repository:publication/ABD_EVIDENCE_INDEX.json",
+      "public_formal_scope": "The same supplied physical blocks give the complete 189+408+82 UUU cover and a satisfying valuation of the exact native formula.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingG/UUQPhysicalExtension.lean",
+          "bytes": 12818,
+          "sha256": "2ba8067657d2fdb9977bf96b1f2e1d403b050f96283414b9adb14ca5afdda571"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/UUQPhysicalCover.lean",
+          "bytes": 1434,
+          "sha256": "20e9edddb9bd1a7fefc95ae490716d1805786ea2ac16acc79be4eb19438b3ea8"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/UUQExactNative.lean",
+          "bytes": 3928,
+          "sha256": "350efcef14b3134b5deac4a1d9470f11d9b6d2b6b6da77b4fd3976ac1739ed6b"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/UUUSelectedSatisfaction.lean",
+          "bytes": 5217,
+          "sha256": "5b824cbb874e814b9581e601b63242a3e78ff5c405d743009a7e767acf6233d6"
+        }
+      ]
+    },
+    {
+      "id": "d_uut_cover_inputs",
+      "title": "D/UUT 679-case cover and exact inputs",
+      "statement": "The UUU finite label cover transports to UUT through explicit Q-identity maps and mark-fixed global palette exchanges. Each UUT formula has its own changed Q template; no UUU UNSAT answer is transferred.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "abd_marked_cover",
+        "d_uuu_cover_inputs"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/D/UUT/ORIGINAL_UUT_679_HAND_COVERAGE_CLAIM_000.md",
+          "bytes": 13960,
+          "sha256": "bfcd8b17a04ddec273ac42ecc050bcfacf9ecbd413b22eb45ff17863d2d00fe4"
+        },
+        {
+          "path": "evidence/D/UUT/ORIGINAL_UUT_679_INDEPENDENT_REVIEW_000.md",
+          "bytes": 9796,
+          "sha256": "a0225c67c55174b547802a18a639058b8d4a3d924a0949a2fe61758f6790393e"
+        },
+        {
+          "path": "evidence/D/UUT/INDEPENDENT_FULL_UUT_BUILDER_SOURCE_REVIEW_000.md",
+          "bytes": 6732,
+          "sha256": "d2cd1e3deacef24b6f736ca18da015e9754aace13ec7c12acf5081d979e66211"
+        },
+        {
+          "path": "evidence/D/UUT/full_inputs_000/MANIFEST.json",
+          "bytes": 1478967,
+          "sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12"
+        }
+      ],
+      "counts": {
+        "P15": 189,
+        "D9": 408,
+        "D10": 82,
+        "total": 679
+      },
+      "written_exposition": "source_repository:publication/D_COVER_AND_ENCODING.md",
+      "source_scope": "The same physical-block extraction and complete 679-label cover preserve twisted Q16 and prove satisfaction of the exact UUT formula. UUU refutations are not substituted.",
+      "input_and_finite_data_index": "source_repository:publication/ABD_EVIDENCE_INDEX.json",
+      "public_formal_scope": "The same physical-block extraction and complete 679-label cover preserve twisted Q16 and prove satisfaction of the exact UUT formula. UUU refutations are not substituted.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingG/UUQPhysicalExtension.lean",
+          "bytes": 12818,
+          "sha256": "2ba8067657d2fdb9977bf96b1f2e1d403b050f96283414b9adb14ca5afdda571"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/UUQExactNative.lean",
+          "bytes": 3928,
+          "sha256": "350efcef14b3134b5deac4a1d9470f11d9b6d2b6b6da77b4fd3976ac1739ed6b"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/UUTSelectedSatisfaction.lean",
+          "bytes": 4311,
+          "sha256": "5a84b752347f77880811915208b029da2cf1aae99d0a8f02bafac89018cf5c8c"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/UUTFourSwap.lean",
+          "bytes": 45807,
+          "sha256": "0f705bbc6bcb4c9a469247af26eb21e2638c539cc9e45800a5f162c81ffcb4d6"
+        }
+      ]
+    },
+    {
+      "id": "d_mixed_cover_inputs",
+      "title": "Mixed D physical covers and exact inputs",
+      "statement": "UT foreign blocks retain both deficiency orientations; TT orders support pairs before matrix classification and retains all diagonal matrix representatives. Complete finite orbits and physical suffixes cover UTU/UTT/TTU/TTT separately.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "abd_marked_cover"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/D/mixed/UTU_UTT_ORIGINAL_FINITE_BOUNDARY_DESIGN_000.md",
+          "bytes": 13711,
+          "sha256": "ef70f56aeb565d668a43ec295817f2e4b19a123cdb4ea56390f3bd89557b7b35"
+        },
+        {
+          "path": "evidence/D/mixed/TT_SUPPORT_PAIR_PRECLASSIFICATION_REDUCTION_000.md",
+          "bytes": 7529,
+          "sha256": "df4fa9a137344502ff33812b2f0578aaff44a903197557543482759e73466d66"
+        },
+        {
+          "path": "evidence/D/mixed/INDEPENDENT_MIXED_D_FINITE_DATA_REVIEW_000.json",
+          "bytes": 44560,
+          "sha256": "c0505abc8bf5249f045602b55466a2552ce56c0bab012769997544bf391699e6"
+        },
+        {
+          "path": "evidence/D/mixed/INDEPENDENT_MIXED_D_COMPLETE_INPUT_DEFINITIONS_REVIEW_000.json",
+          "bytes": 1841478,
+          "sha256": "f301b10fa455334cee78e755e93a82cdbd429f794313decc79e4c7e8b940f98d"
+        },
+        {
+          "path": "evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json",
+          "bytes": 5726709,
+          "sha256": "07c1d26ecd7af8bd16d57e1e86d3ee2a539291cd203d727dbda9cc61e73edbec"
+        },
+        {
+          "path": "evidence/D/mixed/full_inputs_UTU_000/MANIFEST.json",
+          "bytes": 6487084,
+          "sha256": "b58f50c345e3007f22abea3a0dd1eff029ee50e2a2e5154a6077553aab2988ac"
+        },
+        {
+          "path": "evidence/D/mixed/full_inputs_UTT_000/MANIFEST.json",
+          "bytes": 6495516,
+          "sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7"
+        },
+        {
+          "path": "evidence/D/mixed/full_inputs_TTU_000/MANIFEST.json",
+          "bytes": 17937625,
+          "sha256": "a656853526685c105102fb6962dc71c6777887ffbf5c63d6b2c07e41a4791736"
+        },
+        {
+          "path": "evidence/D/mixed/full_inputs_TTT_000/MANIFEST.json",
+          "bytes": 17943949,
+          "sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec"
+        }
+      ],
+      "counts": {
+        "UTU": 6576,
+        "UTT": 6576,
+        "TTU": 18204,
+        "TTT": 18204
+      },
+      "written_exposition": "source_repository:publication/D_COVER_AND_ENCODING.md",
+      "source_scope": "The physical mixed-D cover, both required orientations, selected TT representatives, exact native prefixes and every signed suffix unit are proved.",
+      "input_and_finite_data_index": "source_repository:publication/ABD_EVIDENCE_INDEX.json",
+      "public_formal_scope": "The physical mixed-D cover, both required orientations, selected TT representatives, exact native prefixes and every signed suffix unit are proved.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/DNativePrefixComplete.lean",
+          "bytes": 1182,
+          "sha256": "fc55d57fd5ad18349a4a2fbbbecf435ec353a4ae539a2b19b9c9aea2686cf95d"
+        },
+        {
+          "path": "source_repository:formal/src/CompletionC/ActualProfileCover.lean",
+          "bytes": 2875,
+          "sha256": "43b95c4343f92e6fc1de889a01a690dec5a4b98a7e117411fdf5cce6083f3cc8"
+        },
+        {
+          "path": "source_repository:formal/src/CompletionC/NativeFamilyJoin.lean",
+          "bytes": 3665,
+          "sha256": "1b19b4b43630ac03640096549c31aeb7e740cdc17688154a5758cd2db14459af"
+        }
+      ]
+    },
+    {
+      "id": "abd_native_refutations",
+      "title": "Accepted exact A/B/D native formula refutations",
+      "statement": "Each of the 56,374 exact A/B/D formulas has an accepted Kissat native UNSAT result joined to its required case and formula hash. These runs have no checked refutation certificates or complete second-solver replay.",
+      "evidence_kind": "native_unsat_and_independent_provenance_joins",
+      "requires": [],
+      "evidence": [
+        {
+          "path": "evidence/c_campaign/ABD_SELECTOR_INTERFACE_AUDIT_001.json",
+          "bytes": 20242,
+          "sha256": "02983c897797401f195e3c15c2a19a6b4aefdc5528dcff8cc1d29b4361f2bffc"
+        },
+        {
+          "path": "evidence/c_campaign/reviews/ABD_NATIVE_A_002.json",
+          "bytes": 4139,
+          "sha256": "72b9b9718592a069908fc831d1a45bda256cd95a67528aff36977d1b9d2fa3a4"
+        },
+        {
+          "path": "evidence/c_campaign/reviews/ABD_NATIVE_B_002.json",
+          "bytes": 4191,
+          "sha256": "0be4939c7a1bd4cfc2f02313a5fede27113933845e583ea4291dfde50083188b"
+        },
+        {
+          "path": "evidence/c_campaign/reviews/ABD_NATIVE_UTU_002.json",
+          "bytes": 4888,
+          "sha256": "d3436ff6911aa7cc8188858baa920c4e241da2a0559317dd51d1ece1eb6f84a9"
+        },
+        {
+          "path": "evidence/c_campaign/reviews/ABD_NATIVE_UTT_002.json",
+          "bytes": 4887,
+          "sha256": "b774466da71aa2a7fdce1599a1c4296d28767fef245c8862c3bda55496999f3d"
+        },
+        {
+          "path": "evidence/c_campaign/reviews/ABD_NATIVE_TTU_002.json",
+          "bytes": 4926,
+          "sha256": "fbae145c7ebf92d200392f64ac49c631a02406f42f1ebee3f03c6f93a4fd2ade"
+        },
+        {
+          "path": "evidence/c_campaign/reviews/ABD_NATIVE_TTT_002.json",
+          "bytes": 4932,
+          "sha256": "5e6f44dee5993d617fe2feebe11aea3e2fa1379c96a4a716ff4708b47feda8ee"
+        },
+        {
+          "path": "evidence/D/UUT/INDEPENDENT_FULL_UUT_NATIVE_TERMINAL_REVIEW_000.md",
+          "bytes": 3162,
+          "sha256": "2a758a175623845f4e1aad4ecec5cb979fe6fddb8b982e2b7e8e3ddd9918bfc3"
+        },
+        {
+          "path": "evidence/D/UUU/REPORT.md",
+          "bytes": 4894,
+          "sha256": "7e46a332a34a801a9b58720661e16fab55ecc8ca9d831a00403f9be976d46b6f"
+        }
+      ]
+    },
+    {
+      "id": "selector_x",
+      "title": "Universal supplied-root inequalities",
+      "statement": "In every hypothetical good K61 and for every vertex v: A(v) implies H(v)<=47, B(v) implies H(v)<=46, D(v) implies H(v)<=45. This does not assert A/B/D vertices are absent.",
+      "evidence_kind": "kernel_checked_composition_under_concrete_native_unsat",
+      "requires": [
+        "a_cover_inputs",
+        "b_cover_inputs",
+        "d_uuu_cover_inputs",
+        "d_uut_cover_inputs",
+        "d_mixed_cover_inputs",
+        "abd_native_refutations"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/c_campaign/ABD_SELECTOR_INTERFACE_AUDIT_001.md",
+          "bytes": 9308,
+          "sha256": "77df27978bd4bdbb147db9875ef8753346f7a3d6440aa8fe4710c84fffb35b45"
+        },
+        {
+          "path": "evidence/c_campaign/FINAL_COMPOSITION_MATH_REVIEW_001.md",
+          "bytes": 15431,
+          "sha256": "c9518e05418764301897c4cfcf52ed08b8e5f591f1fa5da142895bbf2c1c1b9f"
+        }
+      ],
+      "public_formal_scope": "NativeWholeProof.selector proves SelectorX using only the explicit AllNativeUnsat premise for the concrete finite formula family.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/NativeWholeProof.lean",
+          "bytes": 3199,
+          "sha256": "f7513d6f09ea6aab86f9764f2928a3eaf7ccc0fe9020b4de753f32ea9943aeb7"
+        }
+      ]
+    },
+    {
+      "id": "clebsch_anchor_geometry",
+      "title": "Independent fives and the two independent-four geometries",
+      "statement": "In the designated Clebsch graph, each independent five is a unique-center neighborhood; an independent four is a star-four or an affine nonstar plane. Plane symmetries permit all four-point permutations, transported through the full completion relation.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "critical_classification"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/c_campaign/ANCHOR_GEOMETRY_EXPLANATION_001.md",
+          "bytes": 5033,
+          "sha256": "1459fd2ae48bf86a8954ab75a4d74424ad47be2622eb6430e3a98ce4c33f6938"
+        },
+        {
+          "path": "evidence/c_campaign/ANCHOR_GEOMETRY_REVIEW_001.md",
+          "bytes": 4554,
+          "sha256": "b46a39372f1dd48e2fdd204ab55f5361562138bc3113ee10d434bc8d62e7df61"
+        }
+      ],
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/IndependentFive.lean",
+          "bytes": 3707,
+          "sha256": "d8107b816806f57178ba946575c0e2a13ff484093184aca774019a80df8691e6"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/AlignedCoordinates.lean",
+          "bytes": 6076,
+          "sha256": "cde054fff48e1fe7dcc1e95d767bdf058681a7a6135aa1842db1764254feb4cd"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/CComplete.lean",
+          "bytes": 1946,
+          "sha256": "bce6036516e52dd8079678a635e705bb242fd21bfdda737e823aa7dc8dd2be48"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "local72_math",
+      "title": "Complete 72-state relation and six anchored states",
+      "statement": "Full-support solutions of the physical Clebsch pentagon equations are exactly all good fixed-designated-color completions: 12 constant and60 twisted states. A fixed colored five-anchor leaves6 states.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "critical_classification",
+        "clebsch_anchor_geometry"
+      ],
+      "evidence": [
+        {
+          "path": "mathematics/retained/LOCAL_72_STATE_HAND_REVIEW.md",
+          "bytes": 8295,
+          "sha256": "bc1fb35f26a486025e510115dc7f0131a185e931a8119bea7138964504381534"
+        },
+        {
+          "path": "mathematics/retained/PARTIAL_SCOPE_REVIEW.md",
+          "bytes": 7803,
+          "sha256": "923c3959e8e7cd55018879615cef1d241ae456384d4ba290442b6c00960edd9c"
+        }
+      ],
+      "counts": {
+        "local_states": 72,
+        "anchored_states": 6
+      },
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/LocalRelations.lean",
+          "bytes": 5843,
+          "sha256": "eaff11d259b4d466959844aea66a5d1faa143b534d8941f99bb076b396d0f641"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/LocalStarPentagonCompact.lean",
+          "bytes": 2559,
+          "sha256": "65c52d1c2b6e36764d35f797ef4335a32d06e457db2b124b59f1491dd7198965"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "local72_data",
+      "title": "Independent finite realization of the local relation",
+      "statement": "The independent checker constructs the80 physical equations, obtains rank65/nullity15, tests32768 nonzero free-coordinate assignments, and agrees exactly with the72 analytic states and literal templates.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "local72_math"
+      ],
+      "evidence": [
+        {
+          "path": "mathematics/retained/ACCEPTED_72_STATE_REFERENCE.json",
+          "bytes": 117800,
+          "sha256": "2a7a1bf3f4128caaffefc0c8dbde13177e572e4f9b21ec8135f9ecd87b66f8b2"
+        },
+        {
+          "path": "mathematics/retained/ACCEPTED_72_STATE_SUMMARY.json",
+          "bytes": 1608,
+          "sha256": "f486dfe2bd11c626fdbe399ab0a348eedacce7e900fa100682b67131a41af6f7"
+        },
+        {
+          "path": "mathematics/retained/G_ISOMORPHIC_FINITE_ACCEPTANCE.md",
+          "bytes": 4296,
+          "sha256": "dfda537d1ff9aa649681565850632b2fa5ddf1e316b7857e52b957f599b19125"
+        }
+      ],
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/LocalRelations.lean",
+          "bytes": 5843,
+          "sha256": "eaff11d259b4d466959844aea66a5d1faa143b534d8941f99bb076b396d0f641"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/LocalProjection.lean",
+          "bytes": 4407,
+          "sha256": "0455753fbbbff34f73f8bbb9fa72aa0d98e349caf24be1f48c0df6a14814d9f1"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "g_partial_scope",
+      "title": "Actual degree15/16 partial-scope masks",
+      "statement": "A full actual five-anchor gives injective center/pair roles for known members in an actual degree15/16 opposite scope. Any missing reference position is outside the anchor and stays nonphysical. Two disjoint actual anchors determine at most one colored K10 restriction.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "critical_classification",
+        "clebsch_anchor_geometry",
+        "local72_math"
+      ],
+      "evidence": [
+        {
+          "path": "mathematics/retained/PARTIAL_SCOPE_REVIEW.md",
+          "bytes": 7803,
+          "sha256": "923c3959e8e7cd55018879615cef1d241ae456384d4ba290442b6c00960edd9c"
+        }
+      ],
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingG/GuardedCenters.lean",
+          "bytes": 8323,
+          "sha256": "02ee70a5f3df5a9e54fccae6d5d88ce7bfd59f8883054be149e21e74efcebaaf"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/BoundedColumns.lean",
+          "bytes": 2913,
+          "sha256": "cf7fecd0bf990430749f3e55399b814cf1bbd2096ade72546560716e4dc8b76e"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/ScopeReindex.lean",
+          "bytes": 3687,
+          "sha256": "aca74ab603e8775d6004db1234a5e757d93d9ddff42b339274437b246d08bc6f"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "g_bijections",
+      "title": "G fiber-map saturation, bijections and defects",
+      "statement": "Under all five fibers and32 opposite-high guards, integer incidence counting forces both fiber-center maps bijective; pulled-back neighborhoods are star-fives or pentagons, with equal defect count. No attaching-high or uniform-profile condition is added.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "elementary_degree_profiles",
+        "g_partial_scope"
+      ],
+      "evidence": [
+        {
+          "path": "mathematics/retained/G_BIJECTION_REVIEW.md",
+          "bytes": 12751,
+          "sha256": "8d7ed078baf4d9d5f81ab2881ba4ac624213e437db8f5229cc7c946f47cc768d"
+        }
+      ],
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingG/SupportSaturation.lean",
+          "bytes": 6682,
+          "sha256": "cdb7c4600a6c2c5050307e09c03ceccb2a56013e717f1636b7703bc1a04d09c1"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/CenterBijection.lean",
+          "bytes": 5147,
+          "sha256": "37a8edc81e990f2ab8b37c79b4f0ad366218ec65e1a434519d397850d3272fc4"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "g_isomorphic_cover",
+      "title": "Complete G isomorphic-map cover",
+      "statement": "If either fiber map is a Clebsch isomorphism, both normalize to f=id and one of25 adjacent-displacement automorphisms. Full X U/T choice and all72 Y completions give3600 covering labels with shared physical scope constraints.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "g_bijections",
+        "template_transports",
+        "local72_data"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/G/retained/g_isomorphism/context/GUARDED_UU_EXCLUSION_REVIEW_000.md",
+          "bytes": 8701,
+          "sha256": "4fc09a7ccc78a101a08e57f8a6cc8e73dd127c52fb8e359785dd6624787dd424"
+        },
+        {
+          "path": "evidence/G/retained/g_isomorphism/context/ADDITIONAL_FAMILY_FILTER_THEOREM.md",
+          "bytes": 7554,
+          "sha256": "725a82d6860f755e44ef8f028df2911a252798c5c9f1c5afc4bbf9ec01be256f"
+        },
+        {
+          "path": "evidence/G/retained/g_isomorphism/context/COVER_JOIN_AND_SCOPE_REVIEW_000.md",
+          "bytes": 8781,
+          "sha256": "320dd3c8b66367c1a57ea008a6bfb9c91eb5b8cc7297b5dc2807aaacb00ad794"
+        },
+        {
+          "path": "evidence/G/retained/g_isomorphism/IMPLEMENTATION_CONTRACT.md",
+          "bytes": 6438,
+          "sha256": "bf1b82809714593fea2348dca0be74d386ac53492c5438935057867cc4ea1a0d"
+        }
+      ],
+      "counts": {
+        "labels": 3600
+      },
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingG/ActualCoreCover.lean",
+          "bytes": 3035,
+          "sha256": "dda12bea63aa8a55c201331c95ec214ed6e66423c2583c8e3bfecbfc53b99c6f"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/IsomorphicCoreTransport.lean",
+          "bytes": 6972,
+          "sha256": "72982ffa9740566ff77173922db4380a4f409762b2266ac6acd0332f99ed3c06"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "g_isomorphic_witnesses",
+      "title": "All3600 guarded isomorphic labels rejected",
+      "statement": "An independently reconstructed empty local relation or conflicting forced physical edge rejects every covering label; no core survives.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "g_isomorphic_cover"
+      ],
+      "evidence": [
+        {
+          "path": "mathematics/retained/G_ISOMORPHIC_FINITE_ACCEPTANCE.md",
+          "bytes": 4296,
+          "sha256": "dfda537d1ff9aa649681565850632b2fa5ddf1e316b7857e52b957f599b19125"
+        },
+        {
+          "path": "mathematics/retained/G_ISOMORPHIC_ACCEPTANCE_PINS.json",
+          "bytes": 915016,
+          "sha256": "190c5718b22016dc5020442d6882ee3a1d1dc07b127f875714d706d756bbec5b"
+        }
+      ],
+      "counts": {
+        "empty_relations": 3164,
+        "shared_edge_conflicts": 436,
+        "total": 3600
+      },
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/GCoreConsumer.lean",
+          "bytes": 3317,
+          "sha256": "24c2bf79d514c9688aeb8d0bd31f8133a5e1f0e779f904f03c53cab7b08d12cf"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/GComplete.lean",
+          "bytes": 1070,
+          "sha256": "da3bd8c924ee1cde6ed5de36014510f3d281ca5be94463d979e3b3b45ad2e971"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "g_shared_graph_classification",
+      "title": "Star/pentagon Clebsch graph dichotomy",
+      "statement": "Two shared-label Clebsch graphs with independent/pentagon neighborhoods are equal or edge-disjoint with a third Clebsch complement. Under G, the latter case forces the remaining permutation to identity. Intermediate defect counts are excluded by parity and the signed overlap-matrix argument.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "g_bijections",
+        "local72_math"
+      ],
+      "evidence": [
+        {
+          "path": "mathematics/retained/G_SHARED_GRAPH_CLASSIFICATION_REVIEW.md",
+          "bytes": 12200,
+          "sha256": "33ba539eb64a34467dc83bbd21baa36b04c41e0ba7dc66db9849a24b1f90a0df"
+        }
+      ],
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingG/GuardedClassification.lean",
+          "bytes": 2278,
+          "sha256": "0557965f91002fa611ef7862237171d9a2dfc705b5fc516abc4f1119d1f0c889"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/SignedDichotomy.lean",
+          "bytes": 5147,
+          "sha256": "f29ac9bdbba60eb6eac65c063e11a7f0d1036ec59fc29c13027e61d3d21fba88"
+        },
+        {
+          "path": "source_repository:formal/src/PricingG/ComplementDecomposition.lean",
+          "bytes": 5604,
+          "sha256": "3a9e983fee3d592a747a71764fc8c59810a3ab373330f9607ad4c8b6a056cd9e"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "g_remaining_cover",
+      "title": "Complete remaining-G decomposition/diagonal cover",
+      "statement": "Normalize X to U/T, retain all72 K/J/H decompositions and72 Y completions. For each of10368 labels the initial scope relations have0/1/3 states and diagonal tuples identify physical K10 predictions; at most5 free diagonal coordinates suffice if earlier checks survive.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "g_shared_graph_classification",
+        "g_partial_scope",
+        "local72_data",
+        "template_transports"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/G/retained/g_remaining/context/DIAGONAL_REDUCTION_AND_COVER_REVIEW.md",
+          "bytes": 10562,
+          "sha256": "ae32ed49422c7b054d43f54150365467d0f4408c3867aa251c6fc6ab8e4d7fd4"
+        },
+        {
+          "path": "evidence/G/retained/g_remaining/IMPLEMENTATION_CONTRACT.md",
+          "bytes": 8168,
+          "sha256": "995342c0ba3939592ae4ef80843b70fccede5dc55499a2e95887d2cc7bf041af"
+        }
+      ],
+      "counts": {
+        "labels": 10368,
+        "prospective_max_diagonal_assignments_per_label": 32
+      },
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingG/RemainingCoreTransport.lean",
+          "bytes": 6890,
+          "sha256": "53a1360b93e16460407c8438d370a76f6406dc17d8eec5c77af5424d3a224a51"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/RemainingGCore.lean",
+          "bytes": 9741,
+          "sha256": "afdbd930431d2566233f51733d1b9e07e3e87a13c41d45529c447dfcbb43dd1f"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "g_remaining_witnesses",
+      "title": "All10368 remaining-G labels rejected",
+      "statement": "Every label is rejected before diagonal branching, by an independently checked empty necessary physical scope or inconsistent forced physical diagonal.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "g_remaining_cover"
+      ],
+      "evidence": [
+        {
+          "path": "mathematics/retained/G_REMAINING_FINITE_ACCEPTANCE.md",
+          "bytes": 6592,
+          "sha256": "f7a402db3a67e41a4160f7c48c697bfa14a5174b27ef7723b8ad6337163a841d"
+        },
+        {
+          "path": "mathematics/retained/G_REMAINING_ACCEPTANCE_PINS.json",
+          "bytes": 26004,
+          "sha256": "246c68e7c70442a7bd39dd0ab61e32650d3d57342c23c0281ae692175a465c22"
+        }
+      ],
+      "counts": {
+        "empty_scopes": 10044,
+        "forced_diagonal_conflicts": 324,
+        "total": 10368,
+        "actual_branched_labels": 0
+      },
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/RemainingGComplete.lean",
+          "bytes": 10754,
+          "sha256": "039cdc9a2f0e0799b5fd9313b021848f83295635208c2728c5e617d2654cbceb"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/GComplete.lean",
+          "bytes": 1070,
+          "sha256": "da3bd8c924ee1cde6ed5de36014510f3d281ca5be94463d979e3b3b45ad2e971"
+        }
+      ],
+      "public_formal_scope": "The mathematical construction and its consumer are checked in the complete Lean dependency closure; the listed sources identify the corresponding formal interfaces."
+    },
+    {
+      "id": "g_exclusion",
+      "title": "Entire guarded G consumer excluded",
+      "statement": "No eligible C root satisfies all five F/G fibers and all32 opposite degree>=15 guards. This includes uniform all-C hosts with one common high-color pair.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "g_isomorphic_witnesses",
+        "g_remaining_witnesses"
+      ],
+      "evidence": [
+        {
+          "path": "mathematics/retained/G_REMAINING_FINITE_ACCEPTANCE.md",
+          "bytes": 6592,
+          "sha256": "f7a402db3a67e41a4160f7c48c697bfa14a5174b27ef7723b8ad6337163a841d"
+        },
+        {
+          "path": "evidence/c_campaign/FINAL_COMPOSITION_MATH_REVIEW_001.md",
+          "bytes": 15431,
+          "sha256": "c9518e05418764301897c4cfcf52ed08b8e5f591f1fa5da142895bbf2c1c1b9f"
+        }
+      ],
+      "public_formal_scope": "GComplete.guarded_G_exclusion proves that the actual regular-overlap guard is impossible. It has no native UNSAT premise.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/GComplete.lean",
+          "bytes": 1070,
+          "sha256": "da3bd8c924ee1cde6ed5de36014510f3d281ca5be94463d979e3b3b45ad2e971"
+        }
+      ]
+    },
+    {
+      "id": "c_root_entrance",
+      "title": "Global existence of an eligible exterior-high C root",
+      "statement": "Every good K61 satisfying selector-X and the G exclusion has a C root r with H(r)>=32 and an actual neighbor p in a degree14 root cell whose joining-color degree is15 or16. Proof uses sumH=sumw, synchronization only under temporary absence, and low-set bipartite arithmetic.",
+      "evidence_kind": "kernel_checked_composition_under_concrete_native_unsat",
+      "requires": [
+        "elementary_degree_profiles",
+        "selector_x",
+        "g_exclusion"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/c_campaign/BROAD_456_WHOLE_C_BRIDGE_001.md",
+          "bytes": 9674,
+          "sha256": "f4393167cdffeb592a132d6407ae563fa259ff9f2586850039d7adbb4d62b17c"
+        },
+        {
+          "path": "evidence/c_campaign/BROAD_BRIDGE_INDEPENDENT_REVIEW_001.md",
+          "bytes": 6920,
+          "sha256": "26dd5b2e3650d690059436dcc594fa437f286388c61c26eacd5b0c26480491f7"
+        }
+      ],
+      "public_formal_scope": "The incidence, synchronization and bipartite arguments combine with the proved selector and G exclusion to supply an actual exterior-high C witness.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/Ramsey61/Selector.lean",
+          "bytes": 9190,
+          "sha256": "8f2153b0df767d3ea9a9f31c8f446e53fc5bbf2d712edee6fbc17b7ee986021d"
+        },
+        {
+          "path": "source_repository:formal/src/Ramsey61/Uniform.lean",
+          "bytes": 13218,
+          "sha256": "bb54bc676837def7b6a23a7fa93690ee39c703d4411faf79bf0a50e02496c170"
+        },
+        {
+          "path": "source_repository:formal/src/Ramsey61/DenseBipartite.lean",
+          "bytes": 11184,
+          "sha256": "4cf5f9c1a34e0f3bd9126657ad33b3b59656cfcc4d9edaf3c8d5a565639ec151"
+        },
+        {
+          "path": "source_repository:formal/src/Ramsey61/UniformCases.lean",
+          "bytes": 19902,
+          "sha256": "8f06679d2187c556539733ed5f9841f86f9972d5e9f0204c23fb57d605262978"
+        },
+        {
+          "path": "source_repository:formal/src/Ramsey61/GuardedEntrance.lean",
+          "bytes": 5701,
+          "sha256": "8806091eadb8e594fd84b7373cc6175b6b5f8a130c8059e35922e02099a9f986"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/NativeWholeProof.lean",
+          "bytes": 3199,
+          "sha256": "f7513d6f09ea6aab86f9764f2928a3eaf7ccc0fe9020b4de753f32ea9943aeb7"
+        }
+      ]
+    },
+    {
+      "id": "c_456_physical_cover",
+      "title": "456 actual three-neighborhood seeds",
+      "statement": "For every eligible C root with an exterior high p, actual X,Y,S=N2(p) normalize to shapes555/554/545; simultaneous shared-cycle pair orbits, all omissions and both short-anchor geometries give36+180+180+60 physical seeds. No independent injection factor or phantom vertex is omitted.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "critical_classification",
+        "local72_data",
+        "clebsch_anchor_geometry",
+        "template_transports"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/c_campaign/FINAL_ENCODING_COVER_REVIEW_001.md",
+          "bytes": 15696,
+          "sha256": "b7cb4a5c8002fefc10eff6835933782950044ea804e47cee1835e5ffc52418c4"
+        },
+        {
+          "path": "evidence/c_campaign/SEED_GENERATOR_ENGINEERING.md",
+          "bytes": 3037,
+          "sha256": "301ac2f8fe245fb8acc987f131cdc78265253c869bec63cbc1dcdf457b514ebb"
+        },
+        {
+          "path": "evidence/c_campaign/tools/seeds.py",
+          "bytes": 14744,
+          "sha256": "67aeca655786d4fe6fc79951b4397e687b6d659dadd963d6ca6e7f711d998ba7"
+        },
+        {
+          "path": "evidence/c_campaign/inputs/SEEDS.json",
+          "bytes": 2244507,
+          "sha256": "848f9f9420944b804ba2c38ab48a40fdd2d71f1d1054e285d82ea6d06a7346ad"
+        },
+        {
+          "path": "evidence/c_campaign/reviews/INDEPENDENT_AUDIT_001.json",
+          "bytes": 4876,
+          "sha256": "8b5abb99dbb3a77808904bf6fec9c25af45e4167cbe6c0ae3746d32528c01d36"
+        }
+      ],
+      "counts": {
+        "555_five": 36,
+        "554_five": 180,
+        "545_star_four": 180,
+        "545_nonstar_four": 60,
+        "total": 456
+      },
+      "public_formal_scope": "CComplete proves the exhaustive compatible 456-seed cover with simultaneous physical coordinate/palette transport and exact seed binding.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/SeedCensus.lean",
+          "bytes": 2958,
+          "sha256": "217ec29616a655d62ba29e369ad994a2534ff6accb5b0940fc8cab534dd0e6f7"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/SeedBinding.lean",
+          "bytes": 46676,
+          "sha256": "c6f2c19d58e7565068f41e166cbff1d4d7158600f93b5cabc141501672e934d9"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/CComplete.lean",
+          "bytes": 1946,
+          "sha256": "bce6036516e52dd8079678a635e705bb242fd21bfdda737e823aa7dc8dd2be48"
+        }
+      ]
+    },
+    {
+      "id": "c_broad_encoding",
+      "title": "Exact broader full-host CNF implication",
+      "statement": "Every host from the entrance and physical cover yields a satisfying valuation of BROAD_BASE_001 plus one seed. All 61 physical vertices, 35 ordered profiles, exact degrees/H and selector-X are retained. Fiber counters define auxiliaries without imposing opposite-high or small-fiber restrictions.",
+      "evidence_kind": "kernel_checked_mathematics_with_retained_written_and_finite_evidence",
+      "requires": [
+        "elementary_degree_profiles",
+        "selector_x",
+        "c_456_physical_cover"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/c_campaign/FINAL_ENCODING_COVER_REVIEW_001.md",
+          "bytes": 15696,
+          "sha256": "b7cb4a5c8002fefc10eff6835933782950044ea804e47cee1835e5ffc52418c4"
+        },
+        {
+          "path": "evidence/c_campaign/tools/encode.py",
+          "bytes": 20545,
+          "sha256": "bf105c142c5cd27e653513aaf49c672b908bc176b6e7fd94034a1f6c189ed9ad"
+        },
+        {
+          "path": "evidence/c_campaign/tools/build_broad_001.py",
+          "bytes": 2685,
+          "sha256": "8ef4fbf2aa5fbd67a0960f453bcbd12f56b4aecf3c95b455a29b5f4ea62ef4e3"
+        },
+        {
+          "path": "evidence/c_campaign/reviews/BROAD_INPUT_AUDIT_001.json",
+          "bytes": 12458,
+          "sha256": "d6293d76a651f092bd6b3ffdffd229e889b68d83b0baf339c041f796245ab1e5"
+        },
+        {
+          "path": "evidence/c_campaign/inputs/BROAD_BASE_001.json",
+          "bytes": 3095,
+          "sha256": "159a1d17ff3f30c75fbe6e6329648ae78e07dfd51b901d32bc63f6c9a6064a2d"
+        }
+      ],
+      "counts": {
+        "variables": 439723,
+        "base_clauses": 1880888
+      },
+      "public_formal_scope": "The full base and seed clauses have a proved satisfying extension of the physical coloring. The complete concrete C family is instantiated; exact external input identities are checked separately.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/Ramsey61/CEncodingBase.lean",
+          "bytes": 26848,
+          "sha256": "9ba1a3051f64e785d422939ccbbff2ad8b2b83da82287c1dc96c5718f30a1186"
+        },
+        {
+          "path": "source_repository:formal/src/Ramsey61/CConcreteFamily.lean",
+          "bytes": 4915,
+          "sha256": "749835b01cfb9437178a5fa47b65979415ffce70fe5551a480a5f8383a6c4853"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/CComplete.lean",
+          "bytes": 1946,
+          "sha256": "bce6036516e52dd8079678a635e705bb242fd21bfdda737e823aa7dc8dd2be48"
+        }
+      ]
+    },
+    {
+      "id": "c_native_refutations",
+      "title": "Effective dual-native broader C456 refutations",
+      "statement": "Each of the 456 exact full-host C formulas has matching accepted native UNSAT answers from pinned Kissat and CaDiCaL, bound to the same complete formula hash. No checked refutation certificate is supplied for these formulas.",
+      "evidence_kind": "dual_native_unsat_and_independent_terminal_reconciliation",
+      "requires": [],
+      "evidence": [
+        {
+          "path": "evidence/c_campaign/reviews/BROAD_SECOND_TAIL_RECONCILIATION_001.json",
+          "bytes": 378870,
+          "sha256": "c60248e17f5bb30cc7eb27d139f9317cd2ed1748c14f02f9642725afc1df6c09"
+        },
+        {
+          "path": "evidence/c_campaign/reviews/BROAD_SECOND_TAIL_RECONCILIATION_001.md",
+          "bytes": 546,
+          "sha256": "0bc1cc28693aa0feb551e9d61d075f2a7f2d550b045a95da787e0940cd18626f"
+        }
+      ],
+      "counts": {
+        "broader_formula_count": 456,
+        "native_solvers_per_effective_case": 2
+      }
+    },
+    {
+      "id": "k61_conclusion",
+      "title": "R(3,3,3,3)<=61",
+      "statement": "A hypothetical good K61 supplies an exterior-high C root and a satisfying valuation of an exact full-host formula, contradicting its accepted native refutation.",
+      "evidence_kind": "kernel_checked_composition_under_concrete_native_unsat",
+      "requires": [
+        "c_root_entrance",
+        "c_broad_encoding",
+        "c_native_refutations"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/c_campaign/FINAL_COMPOSITION_MATH_REVIEW_001.md",
+          "bytes": 15431,
+          "sha256": "c9518e05418764301897c4cfcf52ed08b8e5f591f1fa5da142895bbf2c1c1b9f"
+        },
+        {
+          "path": "evidence/final_validation/FINAL_OUTCOME_002.json",
+          "bytes": 9643,
+          "sha256": "ac65128ed7f9c7fa35931912d9f8279b52c49601b6e1cbe0b8e7b4fb96e8506b"
+        }
+      ],
+      "public_formal_scope": "NativeWholeProof.ramsey61 proves the K61 exclusion with only AllNativeUnsat over 56,830 concrete CNFs as an explicit premise; all mathematical coverage, transport and encoding arguments are supplied.",
+      "public_formal_sources": [
+        {
+          "path": "source_repository:formal/src/PricingIntegration/NativeWholeProof.lean",
+          "bytes": 3199,
+          "sha256": "f7513d6f09ea6aab86f9764f2928a3eaf7ccc0fe9020b4de753f32ea9943aeb7"
+        },
+        {
+          "path": "source_repository:formal/src/PricingIntegration/NativeWholeCount.lean",
+          "bytes": 646,
+          "sha256": "04ec9b8d5fb6471a8b13a87fe26e648a1e89bd7b19118530adc1e504500553c9"
+        }
+      ]
+    }
+  ],
+  "topological_order": [
+    "elementary_degree_profiles",
+    "critical_classification",
+    "template_transports",
+    "abd_marked_cover",
+    "a_cover_inputs",
+    "b_cover_inputs",
+    "d_uuu_cover_inputs",
+    "d_uut_cover_inputs",
+    "d_mixed_cover_inputs",
+    "abd_native_refutations",
+    "selector_x",
+    "clebsch_anchor_geometry",
+    "local72_math",
+    "local72_data",
+    "g_partial_scope",
+    "g_bijections",
+    "g_isomorphic_cover",
+    "g_isomorphic_witnesses",
+    "g_shared_graph_classification",
+    "g_remaining_cover",
+    "g_remaining_witnesses",
+    "g_exclusion",
+    "c_root_entrance",
+    "c_456_physical_cover",
+    "c_broad_encoding",
+    "c_native_refutations",
+    "k61_conclusion"
+  ],
+  "formalization_boundary": {
+    "endpoint": "source_repository:formal/src/PricingIntegration/NativeWholeProof.lean",
+    "theorem": "PricingIntegration.NativeWholeProof.ramsey61",
+    "explicit_bridge_parameters": [],
+    "computational_premise": "PricingIntegration.NativeWholeProof.AllNativeUnsat",
+    "formula_family_instantiated": true,
+    "case_counts": {
+      "common": 55016,
+      "UUU_UUT": 1358,
+      "C": 456,
+      "total": 56830
+    },
+    "K61_refutations_checked_in_Lean": false,
+    "DIMACS_export_identity_checked_in_Lean": false,
+    "scope_description": "source_repository:publication/FORMALIZATION_STATUS.md",
+    "native_result_is_not_lean_proof": true,
+    "counts_alone_are_not_coverage": true,
+    "hashes_establish_identity_not_mathematical_truth": true
+  },
+  "attribution": {
+    "source": "source_repository:publication/ATTRIBUTION.md",
+    "independent_review_meaning": "Separate recorded project reviewers or independently authored checking code; not external human peer review."
+  },
+  "evidence_location_contract": "Node evidence paths are relative to the authenticated extracted archives/evidence-v1.tar.gz snapshot. Paths prefixed source_repository: identify public repository files. Archive evidence is immutable; current exposition is proof.md. See publication/REPRODUCIBILITY.md and publication/ABD_EVIDENCE_INDEX.md.",
+  "classification_provenance": "source_repository:publication/CLASSIFICATION_PROVENANCE.md",
+  "evidence_index": "source_repository:publication/ABD_EVIDENCE_INDEX.json",
+  "public_verification_evidence": {
+    "formal_scope": "Complete mathematical reduction with explicit native UNSAT premise. Routine hosted CI checks source/data integrity and a five-module coloring-encoding target; complete theorem validation uses the documented high-memory build. The local clean mathematical build reuses 32 pinned classification outputs.",
+    "classification_manifest": {
+      "path": "source_repository:classification/MANIFEST.json",
+      "bytes": 48784,
+      "sha256": "17bf05355c2093d815fef692402a3d5b95076269aea73742909d7db06c580164"
+    },
+    "classification_rebuild": {
+      "path": "source_repository:classification/build_runs/20260922T072158Z_1790061718513440000/SUMMARY.json",
+      "bytes": 2031,
+      "sha256": "61f95dd570a76bb3c9e91777be0f59705d831acad3bc2b81781123cdd56a6592"
+    },
+    "classification_adapter": {
+      "path": "source_repository:classification/build_runs/ADAPTER_FRESH_20260922T073615Z/receipt.json",
+      "bytes": 2320,
+      "sha256": "c0caf794bdf31bd20a7ac4433b70ac30bb9fce7e322bed47b9ad260c429cbeee"
+    },
+    "C_base_byte_comparison": {
+      "path": "source_repository:publication/checks/C_BASE_BINDING_001/PORTABLE_COMPARISON.json",
+      "bytes": 5555,
+      "sha256": "819c681f10cb8a5995889e253d5e0df84ae296e0e188b12d26def6246a6b94fa"
+    },
+    "ABD_input_reconstruction": {
+      "path": "source_repository:publication/checks/ABD_ALL_INPUTS_001.json",
+      "bytes": 2797,
+      "sha256": "5b763432d953147b23ec03388f40b536ba0884cea22d53bd06eb7087112cdabf"
+    },
+    "C_input_reconstruction": {
+      "path": "source_repository:reproduce/checks/ALL_C_INPUTS_001.json",
+      "bytes": 977,
+      "sha256": "ae77dbf2365820487a7705aa13a7082ac5b36cfe2292a6f2bf9996d7beb86eb4"
+    },
+    "formal_source_manifest": {
+      "path": "source_repository:formal/SOURCE_MANIFEST.json",
+      "bytes": 872309,
+      "sha256": "15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed"
+    },
+    "formal_source_receipts": {
+      "path": "source_repository:formal/checks/clean_build/CLEAN_BUILD_CUSTODY.json",
+      "bytes": 2394929,
+      "sha256": "903491033e1a79f8409dd8c1b941d9694c6d79d361ea15075041bd80c4c1f243"
+    },
+    "formal_axiom_and_type_audit": {
+      "path": "source_repository:formal/checks/clean_build/runs/20260922T214944.366644Z_03c17f01/process.log",
+      "bytes": 408,
+      "sha256": "2ff9e96cdc5e1adc21a4bdc57d6e839af2e4d48121e789bf0226824fafd5930a"
+    },
+    "complete_native_input_binding": {
+      "path": "source_repository:formal/checks/joined_bindings/RUN_RESULT.json",
+      "bytes": 20094,
+      "sha256": "49d8dd4acaadd81b8d5e722f50e9736bb5dc342c24078f068cd4ee4580b87ba4"
+    },
+    "formal_package_file_manifest": {
+      "path": "source_repository:formal/PACKAGE_FILES.json",
+      "bytes": 1464098,
+      "sha256": "5efc200b115d01ec9a06308a123d3b3da7c2a06a2c5cb1cce4ef40d14aad8453"
+    },
+    "formal_build_source_identity": {
+      "path": "source_repository:formal/BUILD_IDENTITY.json",
+      "bytes": 5460,
+      "sha256": "5c92104305178b44756f24ab49aaca626106c4bdbc57c0203910c12d07acfd8d"
+    }
+  },
+  "mathematical_reduction_formally_checked": true,
+  "unconditional_Lean_bound": false
+}

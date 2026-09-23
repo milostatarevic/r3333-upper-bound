@@ -1,0 +1,27 @@
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeTenSupportTransportUUU2P15.lean:164:14: warning: This simp argument is unused:
+  blockSize
+
+Hint: Omit it from the simp argument list.
+  simp [b̵l̵o̵c̵k̵Siz̵e̵,̵ ̵S̵i̵ngleRootStarCNF.templateColor,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵SingleRootStarCNF.fin15, leftFin, rightFin,
+            Nat.mod_eq_of_lt hleft, Nat.mod_eq_of_lt hright]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/src/R4333Lean/ProfileDUUUDegreeTenSupportTransportUUU2P15.lean:214:14: warning: This simp argument is unused:
+  blockSize
+
+Hint: Omit it from the simp argument list.
+  simp [b̵l̵o̵c̵k̵Siz̵e̵,̵ ̵S̵i̵ngleRootStarCNF.templateColor,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵SingleRootStarCNF.fin15, leftFin, rightFin,
+            Nat.mod_eq_of_lt hleft, Nat.mod_eq_of_lt hright]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'R4333.ProfileDUUUDegreeTenSupportTransportUUU2P15.q2SupportEquiv_symm_preserves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportTransportUUU2P15.supportNormalizer_templateCanonical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.ProfileDUUUDegreeTenSupportTransportUUU2P15.normalizeExactDegreeTenSupports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

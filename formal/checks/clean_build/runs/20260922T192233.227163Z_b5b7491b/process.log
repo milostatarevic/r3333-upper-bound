@@ -1,0 +1,6 @@
+'R4333.colorDegree_relabelVertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.cataloguedAttachingConfiguration_normalize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.FiniteObstructionInterface.normalizedPartitionLabels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.exists_normalizedFiniteObstructionBridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.exists_normalizedCanonicalAttaching61' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.NormalizedCanonicalAttaching61.canonicalDegreeTargets' depends on axioms: [propext, Classical.choice, Quot.sound]

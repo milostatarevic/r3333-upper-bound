@@ -1,0 +1,5 @@
+'R4333.noMono_outsideInducedColoring' does not depend on any axioms
+'R4333.outside_edge_ne_of_exposedIncidenceCollision' does not depend on any axioms
+'R4333.outsideRestrictionCoreUnsatisfiable_iff_hits' depends on axioms: [propext, Quot.sound]
+'R4333.outsideInducedColoring_avoidsCore_of_all_collide' depends on axioms: [propext, Quot.sound]
+'R4333.outsideListBendersClause_of_coreUnsatisfiable' depends on axioms: [propext, Classical.choice, Quot.sound]

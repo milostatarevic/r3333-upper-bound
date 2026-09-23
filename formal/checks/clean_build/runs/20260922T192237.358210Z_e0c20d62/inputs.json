@@ -1,0 +1,12 @@
+[
+  {
+    "module": "R4333Lean.OutsideDegreeCapCNF",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192234.074773Z_7a80be15/output.olean",
+    "sha256": "051579edac77792740841e32a9219a5da68ee10f9087e334b67464831ad9c5d4"
+  },
+  {
+    "module": "R4333Lean.SequentialAtMostManyCNF",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T192218.525255Z_b59008e6/output.olean",
+    "sha256": "6ecf919dd5e2508ca44d2a41ae2a51bcbfc4fc8e2bd25d32802d575993a65d47"
+  }
+]

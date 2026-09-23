@@ -1,0 +1,17 @@
+[
+  {
+    "module": "R4333Lean.ProfileBCFourRowBoundary",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T203526.199257Z_83428f4c/output.olean",
+    "sha256": "96614ef43bfe321a4f2050a9d5c3f2cb3686432cd7060ca9ceca296fa8b95761"
+  },
+  {
+    "module": "R4333Lean.ColorRelabel",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/ramsey61-provisional-staging/classification/.lake/classification_runs/20260922T072158Z_1790061718513440000/lib/lean/R4333Lean/ColorRelabel.olean",
+    "sha256": "4e3d6782732ab775bc0f2be15f3fcfca1385347a50592e10d8b96cb6462470b3"
+  },
+  {
+    "module": "R4333Lean.CriticalTemplatePaletteSymmetry",
+    "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/research_handoffs/ramsey61_math_formalization_completion_20260922_001/coherent_math_001/runs/20260922T191825.699600Z_c6b9b5a6/output.olean",
+    "sha256": "a0fa6931680e1f13c7b01284a9b76a399c1cf5c621ba0639d41886c1451a845d"
+  }
+]

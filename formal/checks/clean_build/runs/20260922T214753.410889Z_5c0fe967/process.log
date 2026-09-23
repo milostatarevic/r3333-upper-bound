@@ -1,0 +1,3 @@
+'CompletionC.CommonEntrance.actual_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.CommonEntrance.actual_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompletionC.CommonEntrance.actual_D' depends on axioms: [propext, Classical.choice, Quot.sound]

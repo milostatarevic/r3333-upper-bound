@@ -1,0 +1,20 @@
+{
+  "schema": "PACKAGE_README_ENV_ADAPTATION_V1",
+  "created_utc": "2026-09-22T20:44:44.960494+00:00",
+  "scope": "Documentation-only correction to select the package builder's successful isolated lib output before portable emission. No Lean source/runtime/data/old-validation receipt changed.",
+  "changes": [
+    {
+      "path": "reproduce/common/README.md",
+      "old_sha256": "fbdbe32621f946ae27da785b0b18c72b459fd69becf7a3be56dc164afdd8ea3d",
+      "new_sha256": "80c07d96cde33dc8408c07d3183087ad8ab722111b25bf5762831a26121a504e",
+      "preserved_original": "reproduce/common/checks/README_ORIGINAL_BEFORE_PACKAGE_ENV.md"
+    },
+    {
+      "path": "reproduce/uuq/README.md",
+      "old_sha256": "0a91bc1839169e21e362f63c709dadfd4304890cd4f61bcdb32e4e665eb9a47b",
+      "new_sha256": "251914090e1dfe40f7041f7406d9e547169882f6a930a3f67cfd24d902ec8422",
+      "preserved_original": "reproduce/uuq/checks/README_ORIGINAL_BEFORE_PACKAGE_ENV.md"
+    }
+  ],
+  "historical_inventory_policy": "Original tool inventories and validation records remain unchanged. This record supersedes their README hash entries only; originals are preserved at the paths above."
+}

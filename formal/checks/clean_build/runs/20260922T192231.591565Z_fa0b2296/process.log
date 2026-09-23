@@ -1,0 +1,14 @@
+'R4333.k16Untwisted_normalizedColorZero_shadowCount_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16Template_maxIndependentSet_unique_shadow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k15CompletionShadowNeighborhood_injective_of_card_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.k16Untwisted_differentColorNeighborhood_disjoint_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16Twisted_differentColorNeighborhood_disjoint_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16Untwisted_sameColorNeighborhood_disjoint_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16Twisted_sameColorNeighborhood_disjoint_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16CrossRow_unique_fullShadow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k16CrossRow_of_blockColor_card_le_one_unique_fullShadow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.k16FullShadowRows_edge_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]

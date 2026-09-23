@@ -1,0 +1,26 @@
+'R4333.UUTD9Root4Orbit.explicitFreeLabelOrder_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.explicitLargeLabelOrder_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.explicitSmallLabelOrder_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.largeCatalogue_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.smallCatalogue_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.largeCatalogueChoice_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.smallCatalogueChoice_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.explicitLargeCompatible_covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.explicitSmallCompatible_covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.exists_largeCatalogueIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.exists_smallCatalogueIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.largeNormalizerEquationExplicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.smallNormalizerEquationExplicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.largeNormalizerEquation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.smallNormalizerEquation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.freeRepresentative_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.UUTD9Root4Orbit.exists_independentPhysicalNormalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root4Orbit.quotientRepresentativePair_coverage' depends on axioms: [propext, Quot.sound]
+'R4333.UUTD9Root4Orbit.factorAssignmentRealization_reduces_to_132' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'R4333.UUTD9Root4Orbit.twistedRoot4Realization_reduces_to_132' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
