@@ -71,22 +71,17 @@ build and theorem-audit records.
 
 ## Build and classification scope
 
-The [build identity](../formal/BUILD_IDENTITY.json) binds the mathematical
-source to the recorded build. Source-integrity checks compare the declarations
-and proofs with that recorded source before compilation.
+The [source manifest](../formal/SOURCE_MANIFEST.json) identifies the exact
+mathematical source and embedded data accepted by the
+[complete portable build](../formal/BUILD_RESULT.json). All 1,809 modules were
+compiled from a fresh checkout into an isolated output tree. The run records
+the compiler identity, all pinned dependency revisions and imported-artifact
+hashes; no prior project artifacts were reused.
 
-The local clean mathematical build uses an isolated output tree and reuses
-32 pinned outputs from the established K15/K16 classification library.
-Its classification dependency is a previously checked library, with source and
-certificate provenance documented in
-[CLASSIFICATION_PROVENANCE.md](CLASSIFICATION_PROVENANCE.md).
-
-The [portable full source build](../formal/BUILD.md) compiles the entire
-project closure, including those classification modules, and replays all 55
-included small CNF/LRAT pairs. Its supplied execution receipts cover the
-five-module CI target; the complete local build used separate controllers.
-A complete portable execution is not yet recorded. This operation is separate
-from rerunning the large native searches. The [measured workload](../formal/MEASUREMENTS.md)
+The build includes all 32 classification modules and replays all 55 supplied
+small CNF/LRAT pairs. [Classification provenance](CLASSIFICATION_PROVENANCE.md)
+describes their role. This operation is separate from rerunning the large
+native searches. The [measured workload](../formal/MEASUREMENTS.md)
 supports a recommendation of 64 GiB for serial checking or 128 GiB with
 carefully controlled parallel jobs. These are hardware recommendations,
 not implemented build profiles: the portable builder has a fixed job limit.

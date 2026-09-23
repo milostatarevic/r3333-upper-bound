@@ -77,7 +77,7 @@
         }
       ],
       "current_source_package": "source_repository:formal/",
-      "provenance_note": "The complete mathematical source package includes the classification library and actual-host adapter. The clean mathematical run reuses 32 pinned previously checked classification outputs; the portable full-source build rechecks the 55 supplied small CNF/LRAT pairs.",
+      "provenance_note": "The complete portable build compiled all 32 classification modules and replayed all 55 supplied CNF/LRAT pairs from source, with pinned dependency and imported-artifact records.",
       "public_formal_scope": "The K15/K16 completeness library is connected to actual hosts through ClassificationAdapter. The complete source package includes the 32 classification modules and 55 small CNF/LRAT pairs.",
       "public_formal_sources": [
         {
@@ -1394,16 +1394,16 @@
   "classification_provenance": "source_repository:publication/CLASSIFICATION_PROVENANCE.md",
   "evidence_index": "source_repository:publication/ABD_EVIDENCE_INDEX.json",
   "public_verification_evidence": {
-    "formal_scope": "Complete mathematical reduction with explicit native UNSAT premise. Routine hosted CI checks source/data integrity and a five-module coloring-encoding target; complete theorem validation uses the documented high-memory build. The local clean mathematical build reuses 32 pinned classification outputs.",
+    "formal_scope": "Complete portable compilation of all 1,809 project modules with pinned dependencies, including fresh classification and its 55 small certificate pairs. Native UNSAT remains an explicit computational premise. Routine CI checks source/data integrity and the compact coloring-encoding target.",
     "classification_manifest": {
       "path": "source_repository:classification/MANIFEST.json",
-      "bytes": 48784,
-      "sha256": "17bf05355c2093d815fef692402a3d5b95076269aea73742909d7db06c580164"
+      "bytes": 48594,
+      "sha256": "0c92e5944608938b652b9dc1844da8adf7b266cffbc47f82f5f1a93712716e77"
     },
     "classification_rebuild": {
-      "path": "source_repository:classification/build_runs/20260922T072158Z_1790061718513440000/SUMMARY.json",
-      "bytes": 2031,
-      "sha256": "61f95dd570a76bb3c9e91777be0f59705d831acad3bc2b81781123cdd56a6592"
+      "path": "source_repository:formal/BUILD_RESULT.json",
+      "bytes": 2501,
+      "sha256": "e1898ff49a5485034520d7370c2a32c69963860adcb499f17f4d3056a6e03b68"
     },
     "classification_adapter": {
       "path": "source_repository:classification/build_runs/ADAPTER_FRESH_20260922T073615Z/receipt.json",
@@ -1431,14 +1431,14 @@
       "sha256": "15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed"
     },
     "formal_source_receipts": {
-      "path": "source_repository:formal/checks/clean_build/CLEAN_BUILD_CUSTODY.json",
-      "bytes": 2394929,
-      "sha256": "903491033e1a79f8409dd8c1b941d9694c6d79d361ea15075041bd80c4c1f243"
+      "path": "source_repository:formal/checks/portable-build.tar.gz",
+      "bytes": 608810,
+      "sha256": "0258f9669b4cbc307d1abcde70b8c526a435615ea24cdcfe0036bf3718d77e4d"
     },
     "formal_axiom_and_type_audit": {
-      "path": "source_repository:formal/checks/clean_build/runs/20260922T214944.366644Z_03c17f01/process.log",
-      "bytes": 408,
-      "sha256": "2ff9e96cdc5e1adc21a4bdc57d6e839af2e4d48121e789bf0226824fafd5930a"
+      "path": "source_repository:formal/BUILD_RESULT.json",
+      "bytes": 2501,
+      "sha256": "e1898ff49a5485034520d7370c2a32c69963860adcb499f17f4d3056a6e03b68"
     },
     "complete_native_input_binding": {
       "path": "source_repository:formal/checks/joined_bindings/RUN_RESULT.json",
@@ -1447,13 +1447,8 @@
     },
     "formal_package_file_manifest": {
       "path": "source_repository:formal/PACKAGE_FILES.json",
-      "bytes": 1464098,
-      "sha256": "5efc200b115d01ec9a06308a123d3b3da7c2a06a2c5cb1cce4ef40d14aad8453"
-    },
-    "formal_build_source_identity": {
-      "path": "source_repository:formal/BUILD_IDENTITY.json",
-      "bytes": 5460,
-      "sha256": "5c92104305178b44756f24ab49aaca626106c4bdbc57c0203910c12d07acfd8d"
+      "bytes": 1464261,
+      "sha256": "ac66b3bdce4ad2dcbb18a6a284833bb8a264a08878e8463edde14d2b305034fd"
     }
   },
   "mathematical_reduction_formally_checked": true,

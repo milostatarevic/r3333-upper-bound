@@ -28,8 +28,10 @@ explains the constructions and their interfaces. The repository's
 overall argument.
 
 The source closure includes the project's K15/K16 classification library and
-its 55 small CNF/LRAT pairs. A full source build checks those supplied traces
-inside Lean. Native SAT exclusions for the 56,830 final instances are supported
+its 55 small CNF/LRAT pairs. The [complete portable build](BUILD_RESULT.json)
+passed for all 1,809 modules from a fresh checkout and checked those traces
+inside Lean, without prior project artifacts. Native SAT exclusions for the
+56,830 final instances are supported
 by the archived searches and exact formula-to-input bindings.
 
 The package pins Lean 4.32.1 and Mathlib revision

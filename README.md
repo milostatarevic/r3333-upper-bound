@@ -152,13 +152,13 @@ external checks, separate from the kernel-checked mathematical reduction.
 [The verification method](publication/TRUST_AND_CERTIFICATION.md) and
 [formal scope](publication/FORMALIZATION_STATUS.md) describe this boundary.
 
-The complete source build is described in [formal/BUILD.md](formal/BUILD.md).
-It includes the critical-neighborhood classification proofs and their 55
-small CNF/LRAT pairs. The local clean mathematical build reuses 32 pinned,
-previously checked classification outputs. The portable full-build command
-compiles those sources and replays their certificates; its recorded execution
-covers the compact CI target, not yet the full closure. Build and audit scopes
-are indexed in [RELEASE_CHECKS.md](publication/RELEASE_CHECKS.md).
+The [complete portable source build](formal/BUILD.md) passed from a fresh
+checkout: all **1,809 modules**, including the 32 critical-neighborhood
+classification modules and replay of their 55 small CNF/LRAT pairs. It used
+**9.80 CPU-hours**, or **4h58m with two workers**, and reused no prior project
+artifacts. The [build result](formal/BUILD_RESULT.json) records the pinned
+compiler and dependencies; [RELEASE_CHECKS.md](publication/RELEASE_CHECKS.md)
+indexes the mathematical and computational checks.
 
 [CI](.github/workflows/verify.yml) checks all manifested mathematical sources and embedded data and builds a compact five-module physical-coloring target. The full
 mathematical build has higher memory requirements. The measured workload

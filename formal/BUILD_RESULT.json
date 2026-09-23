@@ -1,0 +1,56 @@
+{
+  "schema": "RAMSEY_PORTABLE_BUILD_RESULT_1",
+  "status": "PASS",
+  "source_manifest_sha256": "15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed",
+  "toolchain": "leanprover/lean4:v4.32.1",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "dependency_revisions": {
+    "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "plausible": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "LeanSearchClient": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "importGraph": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "proofwidgets": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "aesop": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "Qq": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "batteries": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "Cli": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+  },
+  "modules_completed": 1809,
+  "classification_modules_compiled": 32,
+  "classification_certificate_pairs_replayed": 55,
+  "baseline_project_artifacts_reused": false,
+  "failed_modules": 0,
+  "pending_modules": 0,
+  "interrupted": false,
+  "jobs": 2,
+  "new_solver_calls": 0,
+  "started_utc": "2026-09-23T06:42:38.333345+00:00",
+  "finished_utc": "2026-09-23T11:40:43.725307+00:00",
+  "measurements": {
+    "total_build_CPU_seconds": 35294.79,
+    "module_CPU_seconds": 35232.967415,
+    "elapsed_seconds": 17885.391962,
+    "peak_single_compiler_RSS_bytes": 30898667520,
+    "sampled_peak_concurrent_compiler_RSS_bytes": 40444313600,
+    "compiled_output_bytes": 2248341376,
+    "build_directory_allocated_bytes": 4517208064,
+    "dependency_directory_allocated_bytes": 7877570560,
+    "checkout_allocated_bytes_excluding_native_archive": 12530024448
+  },
+  "main_theorem": "PricingIntegration.NativeWholeProof.ramsey61",
+  "computational_premise": "AllNativeUnsat",
+  "native_case_count": 56830,
+  "theorem_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "records": {
+    "path": "checks/portable-build.tar.gz",
+    "bytes": 608810,
+    "sha256": "0258f9669b4cbc307d1abcde70b8c526a435615ea24cdcfe0036bf3718d77e4d",
+    "files": 3619,
+    "build_result_sha256": "524fe95f4fb267d3e6f3411728781522ad92157e622ce750b5b7cf09e07c33c5"
+  },
+  "scope": "Complete project-source compilation with pinned dependencies and replay of the included classification traces. Native SAT answers and complete formula-to-input bindings are separate checks. Dependency libraries use the standard pinned Lean/Mathlib cache."
+}

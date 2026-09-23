@@ -16,9 +16,6 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 FORMAL = ROOT / 'formal'
 ACCEPTED_MANIFEST_PIN = ROOT / 'publication/checks/ACCEPTED_MATH_MANIFEST.sha256'
-BUILD_IDENTITY_SHA = '5c92104305178b44756f24ab49aaca626106c4bdbc57c0203910c12d07acfd8d'
-IDENTITY_MODULES = {'Ramsey61.Conditional': 5, 'Ramsey61.Selector': 1,
-                    'R4333Lean.Attaching61Reduction': 3, 'R4333Lean.CriticalCatalogues': 1}
 MODULE_COUNT, DATA_COUNT = 1809, 110
 ROOTS = ('PricingIntegration.NativeWholeProof', 'CompletionC.CommonCaseCount',
          'PricingIntegration.NativeWholeCount', 'PricingABD.CommonSuffixCache',
@@ -70,47 +67,9 @@ def read_accepted_manifest_pin(path=ACCEPTED_MANIFEST_PIN):
 
 
 def require_accepted_package(formal, current_sha256, accepted_sha256):
-    """Bind current proof sources to the recorded build without source snapshots.
-
-    Reverse the exact documentation substitutions and recover the original
-    source hashes and full manifest digest. Declarations/proofs cannot change.
-    """
-    require(isinstance(accepted_sha256, str) and DIGEST.fullmatch(accepted_sha256),
-            'Missing/invalid accepted full-build manifest hash')
-    if current_sha256 == accepted_sha256:
-        return {'kind': 'exact_accepted_build', 'baseline_manifest_sha256': accepted_sha256}
-    formal = Path(formal)
-    identity = strict_json(pinned(formal, {'path': 'BUILD_IDENTITY.json', 'sha256': BUILD_IDENTITY_SHA}))
-    require_accepted_manifest(identity['baseline_manifest_sha256'], accepted_sha256)
-    raw = (formal / 'SOURCE_MANIFEST.json').read_bytes()
-    require(sha(raw) == current_sha256, 'Current manifest hash differs')
-    manifest = strict_json(raw)
-    rows = identity['modules']
-    require(len(rows) == len(IDENTITY_MODULES) and
-            {r['module'] for r in rows} == set(IDENTITY_MODULES), 'Build-identity module census differs')
-    for revision in rows:
-        name = revision['module']; row = manifest['modules'][name]
-        require(row['path'] == 'src/' + name.replace('.', '/') + '.lean', 'Build-identity source path differs')
-        text = pinned(formal, row).decode('utf-8')
-        require(len(revision['comments']) == IDENTITY_MODULES[name], 'Documentation-span census differs')
-        for comment in reversed(revision['comments']):
-            old, new = comment['before'], comment['after']
-            for block in (old, new):
-                require(block.startswith(('/--', '/-!')) and block.endswith('-/') and
-                        '/-' not in block[3:-2] and '-/' not in block[3:-2],
-                        'Substitution must be one closed documentation comment')
-            require(text.count(new) == 1, 'Documentation span is not unique')
-            text = text.replace(new, old, 1)
-        original = text.encode('utf-8')
-        require(sha(original) == revision['original_source_sha256'], 'Proof source differs from recorded build')
-        row.update(sha256=sha(original), bytes=len(original))
-    original_manifest = (json.dumps(manifest, indent=2) + '\n').encode('utf-8')
-    require_accepted_manifest(sha(original_manifest), accepted_sha256)
-    return {'kind': 'recorded_build_sources_with_identical_declarations',
-            'baseline_manifest_sha256': accepted_sha256,
-            'current_manifest_sha256': current_sha256,
-            'build_identity_sha256': BUILD_IDENTITY_SHA,
-            'complete_theorem_rebuilt': False}
+    """Require the exact manifest compiled by the complete portable build."""
+    require_accepted_manifest(current_sha256, accepted_sha256)
+    return {'kind': 'exact_accepted_build', 'manifest_sha256': current_sha256}
 
 
 def mask_noncode(text):

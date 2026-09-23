@@ -36,19 +36,16 @@ identifies the component theorems and exact scope.
 
 | Complete mathematical check | Result and evidence |
 | --- | --- |
-| Clean mathematical build | 1,777 modules compiled and 32 pinned classification outputs reused; 12.263 CPU-hours, 2h31m23s compiler span. [Source/import/output custody](../formal/checks/clean_build/CLEAN_BUILD_CUSTODY.json) |
+| Complete portable mathematical build | All 1,809 modules compiled from a fresh checkout, including 32 classification modules and 55 CNF/LRAT pairs; 9.80 CPU-hours, 4h58m with two workers. [Build result](../formal/BUILD_RESULT.json) |
 | Final theorem and exact count | The theorem has only `AllNativeUnsat` over 56,830 concrete CNFs; standard axioms only. [Theorem and build record](../formal/VERIFICATION.md) |
-| Complete clean-output input binding | All 56,830 input identities match; 142.98 CPU-seconds, no solver calls. [Joined binding record](../formal/checks/joined_bindings/RUN_RESULT.json) |
-| Mathematical source package | Source, embedded data and build tools; no compiled artifacts. [Package file manifest](../formal/PACKAGE_FILES.json), [build identity](../formal/BUILD_IDENTITY.json) |
+| Separate complete input binding | All 56,830 input identities match; 142.98 CPU-seconds, no solver calls. This check is separate from the portable build. [Joined binding record](../formal/checks/joined_bindings/RUN_RESULT.json) |
+| Mathematical source package | Source, embedded data and build tools; no compiled artifacts. [Package file manifest](../formal/PACKAGE_FILES.json), [build result](../formal/BUILD_RESULT.json) |
 
 [VERIFICATION.md](../formal/VERIFICATION.md) explains the custody and theorem
 checks. [MEASUREMENTS.md](../formal/MEASUREMENTS.md) distinguishes mathematical
-build cost, development cost, memory and storage. Routine CI compares the
-mathematical source against its [build identity](../formal/BUILD_IDENTITY.json)
-before the compact Lean build. The
-[hosted Actions check](https://github.com/milostatarevic/ramsey61-provisional-staging/actions/runs/35819483295)
-passed on commit `e6a721ad3b8cc3399e418c75f69da7b3143aa967`, including
-source-integrity controls and the compact target.
+build cost, memory and storage. Routine CI checks the mathematical source
+against the manifest accepted by the full build before compiling the compact
+Lean target.
 
 | Check | Result and scope | Evidence |
 | --- | --- | --- |
@@ -56,14 +53,11 @@ source-integrity controls and the compact target.
 | Deterministic C-base identity | All 1,880,888 clauses emitted from Lean match the archived base byte for byte, including DIMACS header | [Binding tools and receipts](checks/C_BASE_BINDING_001/README.md) |
 | Complete mathematical source and data | The manifest identifies the proof sources, embedded classification data, dependency pins and build controls | [Source manifest](../formal/SOURCE_MANIFEST.json) |
 
-The local clean mathematical build reuses 32 pinned, previously checked
-classification outputs. The portable full-source command includes replay of
-their 55 small CNF/LRAT pairs. Its supplied execution receipts cover the
-compact target, not yet the full source closure. The full local build and
-separate classification replay have the scopes shown above; the local build's
-Mathlib artifact-provenance limits are described in
-[VERIFICATION.md](../formal/VERIFICATION.md). These classification traces are
-distinct from the large native SAT searches used by the final theorem.
+The full build records Lean 4.32.1, the nine pinned external package revisions
+and imported-artifact hashes. Its isolated project library contains only
+outputs produced by that run. The classification traces are checked inside
+Lean; the large native SAT searches retain the separate scope described in
+[VERIFICATION.md](../formal/VERIFICATION.md).
 
 Exact formula-to-input bindings are checked by the external
 [reproduction tools](../formal/reproduce/README.md). They connect the

@@ -73,10 +73,11 @@ and the implementation of each reduction.
 
 The source closure includes the project's K15/K16 classification proofs and
 55 small CNF/LRAT pairs. Those certificates establish completeness of the
-critical-neighborhood catalogues. The local clean mathematical build reuses
-32 pinned, previously checked classification outputs. The portable full
-source-build command compiles those modules and replays their supplied traces;
-its recorded execution covers the compact target rather than the full closure.
+critical-neighborhood catalogues. The
+[complete portable build](../formal/BUILD_RESULT.json) compiled all 1,809 modules,
+including the 32 classification modules, and replayed the supplied traces.
+It used a fresh checkout, pinned dependencies and its own project outputs;
+no prior project artifacts were reused.
 [Classification provenance](CLASSIFICATION_PROVENANCE.md) identifies the
 classification sources, payloads and checks.
 

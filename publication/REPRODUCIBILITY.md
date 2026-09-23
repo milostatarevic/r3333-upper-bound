@@ -268,18 +268,16 @@ Keep the supplied `lake-manifest.json`; do not run `lake update`. The compiler
 must match `lean-toolchain` (Lean 4.32.1), and the builder checks the locked
 external dependency revisions. The default build includes the classification
 sources and replays their **55 supplied small CNF/LRAT pairs**. It runs no SAT
-search. The recorded clean mathematical validation used local controllers
-and reused 32 pinned classification outputs, whose separate kernel-replay
-provenance is described in
-[CLASSIFICATION_PROVENANCE.md](CLASSIFICATION_PROVENANCE.md). The portable
-builder has a recorded five-module CI execution; a complete portable run is
-not included in the supplied build receipts. [VERIFICATION.md](../formal/VERIFICATION.md)
-distinguishes the recorded build and dependency provenance.
+search. The [recorded complete run](../formal/BUILD_RESULT.json) used this
+portable path with `--jobs 2`: all 1,809 modules passed from a fresh checkout,
+including the 32 classification modules, without prior project artifacts.
+Its compiler, dependency revisions and import identities are recorded.
+[VERIFICATION.md](../formal/VERIFICATION.md) describes the scope.
 
 For planning, use a **64 GiB host with one compiler**. A 128 GiB host supports
 controlled parallel work with admissions adjusted to actual memory pressure;
 it does not make eight simultaneous heavy compilers safe by default. A
-measured single compiler peaked at **28.72 GiB RSS**. The portable `--jobs`
+measured single compiler peaked at **28.78 GiB RSS**. The portable `--jobs`
 option is a concurrency ceiling, not an adaptive memory controller. Start at
 one and select higher concurrency only for the available memory. The measured
 peak is not a bound on aggregate machine memory or future runs.

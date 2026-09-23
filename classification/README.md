@@ -55,8 +55,9 @@ from the default `formal/` CI package.
 [MANIFEST.json](MANIFEST.json) records exact files, hashes, import order and
 source provenance. Build receipts preserve input manifests, commands, compiler
 and source hashes, full logs and resource records. The
-[build identity](../formal/BUILD_IDENTITY.json) binds the mathematical sources
-to the recorded build.
+[complete portable build](../formal/BUILD_RESULT.json) also compiled all 32
+classification modules and replayed all 55 pairs within the full mathematical
+closure, using the [integrated source manifest](../formal/SOURCE_MANIFEST.json).
 
 The package pins Lean 4.32.1 and Mathlib revision
 `520045ab14e26149ee970e2e617ca04b09bde5d6`, matching the current formal package.

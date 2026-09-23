@@ -1,7 +1,7 @@
 {
   "schema": "RAMSEY61_CLASSIFICATION_SOURCE_PACKAGE_1",
   "scope": "Local K15/K16 completeness derivation and exact included CNF/LRAT data; excludes K61 profile search certificates",
-  "copy_validation": "Source and data hashes describe the current package. Mathematical declarations and embedded CNF/LRAT data match the recorded build; the integrated source identity is checked by formal/BUILD_IDENTITY.json.",
+  "copy_validation": "Classification source and certificate data are byte-identical to their integrated formal-package copies. The complete portable build compiled all 32 modules and checked all 55 included CNF/LRAT pairs.",
   "local_source_modules": 32,
   "included_cnf_files": 55,
   "included_lrat_files": 55,
@@ -1062,8 +1062,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4734,
-      "sha256": "eb8e1f9998d3e6cb1cfa8ac7a848c3388e249d0aa3269ae7c10eec5cd1257f98",
+      "bytes": 4867,
+      "sha256": "1e12f87a70b19bcf643a93d0a0e78396e164115e0d4a85cfa6c0fa214852bbdd",
       "kind": "new_package_documentation"
     },
     {
@@ -1092,11 +1092,9 @@
     }
   ],
   "fresh_validation": {
-    "classification_summary": "build_runs/20260922T072158Z_1790061718513440000/SUMMARY.json",
-    "classification_summary_sha256": "61f95dd570a76bb3c9e91777be0f59705d831acad3bc2b81781123cdd56a6592",
-    "adapter_receipt": "build_runs/ADAPTER_FRESH_20260922T073615Z/receipt.json",
-    "adapter_receipt_sha256": "c0caf794bdf31bd20a7ac4433b70ac30bb9fce7e322bed47b9ad260c429cbeee",
-    "adapter_source": "adapter/Ramsey61/ClassificationAdapter.lean",
-    "note": "Classification and actual-host adapter freshly compiled; default formal CI remains separate."
+    "portable_build": "../formal/BUILD_RESULT.json",
+    "portable_build_sha256": "e1898ff49a5485034520d7370c2a32c69963860adcb499f17f4d3056a6e03b68",
+    "source_manifest_sha256": "15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed",
+    "scope": "Fresh classification compilation and certificate replay within the complete 1,809-module portable build."
   }
 }

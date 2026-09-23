@@ -1058,21 +1058,20 @@ logs contain only the quiet-mode UNSAT status; commands, input hashes and
 resource records are supplied by the runners. All original inputs are
 reproducible, and [E50] records their final input/result accounting.
 
-The local clean mathematical build reuses 32 pinned, previously checked
-classification outputs. The [portable full source build](formal/BUILD.md)
-compiles those classification modules and replays their 55 small CNF/LRAT
-pairs as part of the complete source closure. Its scope, the final theorem
-interface and the check records are documented in
+The [complete portable source build](formal/BUILD_RESULT.json) compiled all
+1,809 modules from a fresh checkout, including all 32 classification modules
+and replay of their 55 small CNF/LRAT pairs. No prior project artifacts were
+reused. Its scope, the final theorem interface and the check records are
+documented in
 [FORMALIZATION_STATUS.md](publication/FORMALIZATION_STATUS.md),
 [TRUST_AND_CERTIFICATION.md](publication/TRUST_AND_CERTIFICATION.md) and
 [RELEASE_CHECKS.md](publication/RELEASE_CHECKS.md).
 
 **Independent human verification remains outstanding.** The human author
 has not independently verified the complete mathematics and computations.
-The research, implementation and reviews were heavily assisted by AI;
-separate model reviews agreed on the argument, but external human review is
-still required. The author is responsible for the claim, its supporting
-artifacts and any corrections. The supplied argument, code and evidence
+The research, implementation and formalization were heavily assisted by AI.
+The author is responsible for the claim, its supporting artifacts and any
+corrections. The supplied argument, code and evidence
 make the result available for that review and for reproduction from the
 original formulas.
 
@@ -1086,8 +1085,8 @@ The historical classification attribution is discussed in
 The project's research reports, mathematical reviews, finite checking sources
 and native result records are indexed below and in
 [DEPENDENCIES.json](publication/DEPENDENCIES.json). Many reduction proposals
-originated in GPT-6 Pro reports. Their subsequent development and model-assisted
-review are recorded in [ATTRIBUTION.md](publication/ATTRIBUTION.md).
+originated in GPT-6 Pro reports. Research contributions are recorded in
+[ATTRIBUTION.md](publication/ATTRIBUTION.md).
 
 ## Appendix A. Portable evidence locators
 

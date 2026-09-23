@@ -36,7 +36,7 @@ G's physical core cover divides into the 3,600 isomorphic and 10,368 remaining c
 
 ## Classification reuse and computational boundary
 
-[`ClassificationAdapter`](src/Ramsey61/ClassificationAdapter.lean) connects the project's already checked K15/K16 completeness library to actual hosts, preserving vertex and palette maps. This includes `k15_catalogued`, `k16_catalogued`, and `k15_extends_to_k16`. The isolated rebuild reuses the established 32-module classification library and its earlier kernel-checked payloads; it does not assume a published classification theorem or rerun the old D/UUU certificate chain.
+[`ClassificationAdapter`](src/Ramsey61/ClassificationAdapter.lean) connects the K15/K16 completeness library to actual hosts, preserving vertex and palette maps through `physical_neighborhood_k15` and `physical_neighborhood_k16`. The complete portable build compiles all 32 classification modules from source and replays their 55 included CNF/LRAT pairs.
 
 The final `Case` type is the disjoint sum of [concrete common owner/support/matrix indices](src/PricingIntegration/NativeCommonCases.lean), `Bool × Leaf679`, and `Fin 456`. The retained native census is 55,016 + 1,358 + 456 = **56,830** inputs. Exact formula-to-archive binding is a separate, hash-pinned reproducibility check. For UUQ, [`emitted_eq`](src/PricingG/UUQEmissionIdentity.lean) proves equality to the cached executable representation, and [the full native binding receipt](checks/bindings/uuq/UUQ1358_FINAL_LEAN_NATIVE_BINDING_001.json) matches every complete Lean-emitted input to the retained solver-input hash.
 

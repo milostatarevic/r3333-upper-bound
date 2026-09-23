@@ -38,8 +38,8 @@ classification dependency closure: **32 modules and 55 CNF/LRAT pairs**.
 [SOURCE_MANIFEST.json](../formal/SOURCE_MANIFEST.json) pins the mathematical
 source and embedded data. The standalone and integrated classification copies
 have the same mathematical declarations and proofs as the recorded replay.
-The [build identity](../formal/BUILD_IDENTITY.json) binds those sources to the
-recorded build.
+The [complete portable build](../formal/BUILD_RESULT.json) records successful
+compilation of that exact source manifest.
 
 The classification endpoints use only `propext`, `Classical.choice` and
 `Quot.sound`.
@@ -49,15 +49,11 @@ retain the classification's source, payload and build provenance. That replay
 compiled all 32 modules and checked all 55 pairs without project compiled
 artifacts, using 827.71 CPU seconds and peaking at 13.78 GiB RSS.
 
-The recorded clean mathematical validation uses the **32 pinned, separately
-checked classification outputs**. Its
-[classification custody record](../formal/checks/classification_baseline/CLASSIFICATION_BASELINE_CUSTODY_REVIEW_001.json)
-identifies their source, proof and artifact hashes. This reuse is distinct
-from a new classification replay. The portable full build in
-[BUILD.md](../formal/BUILD.md) compiles the classification sources and replays
-all 55 supplied pairs; it has no baseline-import mode. The supplied portable
-execution receipts cover its compact CI target, not the full classification
-replay. The separate 32-module classification replay is recorded above.
+The [complete portable build](../formal/BUILD_RESULT.json) also compiled all
+32 classification modules from source and replayed all 55 supplied pairs as
+part of the 1,809-module mathematical closure. It used the pinned dependency
+cache and its own project outputs, with no reused project artifacts.
+[BUILD.md](../formal/BUILD.md) gives the reproduction commands.
 
 ## Connection to the K61 theorem
 

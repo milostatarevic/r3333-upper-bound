@@ -13,13 +13,13 @@
     },
     {
       "path": "MATHEMATICS.md",
-      "bytes": 5761,
-      "sha256": "89f32fc4778b4ee22bb2f024f695c625c4e20fdd0e22094a2d80d3c63c9979cc"
+      "bytes": 5638,
+      "sha256": "de2296a6e378201c3a6702924c0f52beafc635081157bc5933598fab5e9a9776"
     },
     {
       "path": "MEASUREMENTS.md",
-      "bytes": 3821,
-      "sha256": "d18c6920a2059ba5d0e82620874efada5c05fb06469b60efe420743e7afd77ea"
+      "bytes": 2021,
+      "sha256": "bc562a77ee4bba5c94d0868e4daa515e1e5e3e1ad7ac37f0e04fa0198eee8849"
     },
     {
       "path": "PACKAGE_README_ENV_ADAPTATION_001.json",
@@ -28,8 +28,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2352,
-      "sha256": "f031ec5adeaa83aa1622915633fab3e4f41eb920abbcebaf037216a4b4136b8b"
+      "bytes": 2461,
+      "sha256": "2b286ea80b46a7d65e6027098966ff478954352eaeea024174282f3f29b39d46"
     },
     {
       "path": "SOURCE_CUSTODY.json",
@@ -48,8 +48,8 @@
     },
     {
       "path": "VERIFICATION.md",
-      "bytes": 3008,
-      "sha256": "4447aa55ad06bc53706e480b6564553add57d2a6838e6ae66e808df5a9d3f1e4"
+      "bytes": 2528,
+      "sha256": "ede9b016975b916a9aea6d02482577a97b4a98b87b51be54dede80bc9103563d"
     },
     {
       "path": "build.py",
@@ -37297,12 +37297,17 @@
       "sha256": "634f26149f4ec77c7f79dc2579a07457093ba14f547a5d057baadc8589f3d62a"
     },
     {
-      "path": "BUILD_IDENTITY.json",
-      "bytes": 5460,
-      "sha256": "5c92104305178b44756f24ab49aaca626106c4bdbc57c0203910c12d07acfd8d"
+      "path": "BUILD_RESULT.json",
+      "bytes": 2501,
+      "sha256": "e1898ff49a5485034520d7370c2a32c69963860adcb499f17f4d3056a6e03b68"
+    },
+    {
+      "path": "checks/portable-build.tar.gz",
+      "bytes": 608810,
+      "sha256": "0258f9669b4cbc307d1abcde70b8c526a435615ea24cdcfe0036bf3718d77e4d"
     }
   ],
-  "payload_bytes_excluding_this_manifest": 91383935,
+  "payload_bytes_excluding_this_manifest": 91987492,
   "compiled_artifacts": 0,
   "symlinks": 0,
   "scope": "Mathematical sources, existing small classification traces, input-binding tools and validation evidence. Native search evidence is supplied in this repository\u2019s separate evidence archive."

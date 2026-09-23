@@ -35,10 +35,10 @@ jobs:
           files = [Path(p) for p in ('formal/SOURCE_MANIFEST.json', 'formal/build.py',
                     'formal/lean-toolchain', 'formal/lakefile.toml', 'formal/lake-manifest.json',
                     'publication/checks/ACCEPTED_MATH_MANIFEST.sha256',
-                    'formal/BUILD_IDENTITY.json',
+                    'formal/BUILD_RESULT.json',
                     'reproduce/abd_native.py', 'reproduce/test_abd_native.py',
                     'scripts/lean_ci.py', 'scripts/check_lean_sources.py',
-                    'scripts/test_lean_audits.py', 'scripts/test_build_identity.py',
+                    'scripts/test_lean_audits.py',
                     'Makefile', '.github/workflows/verify.yml')]
           rows = [{'path': str(p), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
                   for p in files]
