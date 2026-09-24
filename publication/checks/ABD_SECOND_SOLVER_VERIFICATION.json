@@ -1,0 +1,116 @@
+{
+  "CPU_seconds": 17.192867999999997,
+  "Lean_calls": 0,
+  "archive": {
+    "bytes": 246051484,
+    "path": "archives/abd-cadical.tar.gz",
+    "sha256": "3d41a4f6ad761c52cd1538f6f50f6a539995fa35d7bdbf29e37232e901fa3a0e"
+  },
+  "archive_members_extracted": 0,
+  "certificate_replays": 0,
+  "complete_case_CNFs_written": 0,
+  "created_utc": "2026-09-24T20:45:08.412724+00:00",
+  "elapsed_seconds": 17.400076833553612,
+  "families": [
+    {
+      "family": "A",
+      "formulas": 360,
+      "native_CPU_seconds": 3733.752746,
+      "native_UNSAT": 360
+    },
+    {
+      "family": "B",
+      "formulas": 5096,
+      "native_CPU_seconds": 87605.22521,
+      "native_UNSAT": 5096
+    },
+    {
+      "family": "D_UUU",
+      "formulas": 679,
+      "native_CPU_seconds": 8433.517696,
+      "native_UNSAT": 679
+    },
+    {
+      "family": "D_UUT",
+      "formulas": 679,
+      "native_CPU_seconds": 8522.288421,
+      "native_UNSAT": 679
+    },
+    {
+      "family": "D_UTU",
+      "formulas": 6576,
+      "native_CPU_seconds": 87440.55685,
+      "native_UNSAT": 6576
+    },
+    {
+      "family": "D_UTT",
+      "formulas": 6576,
+      "native_CPU_seconds": 91228.584092,
+      "native_UNSAT": 6576
+    },
+    {
+      "family": "D_TTU",
+      "formulas": 18204,
+      "native_CPU_seconds": 296812.862978,
+      "native_UNSAT": 18204
+    },
+    {
+      "family": "D_TTT",
+      "formulas": 18204,
+      "native_CPU_seconds": 304754.209876,
+      "native_UNSAT": 18204
+    }
+  ],
+  "formulas": 56374,
+  "manifest": {
+    "bytes": 1090,
+    "path": "manifest.json",
+    "sha256": "5d87c5f285e2d22f37337d0914877466cfe656d7ee94169bfceaaf2fc1e68515"
+  },
+  "native_CPU_seconds": 888530.997869,
+  "native_UNSAT": 56374,
+  "original_archive_manifest_index_sha256": "0371c357740e6cce262a055d3f998637f8f218f1d492864be2fcff78e46b222e",
+  "peak_RSS_bytes": 1022443520,
+  "records": {
+    "bytes": 60493945,
+    "path": "results.jsonl",
+    "sha256": "76b8c3715b752bc0f3d9399b5de1238e41d1c3e2b710ed7d7793bae85045c963"
+  },
+  "schema": "RAMSEY61_PORTABLE_ABD_SECOND_SOLVER_JOIN_1",
+  "scope": "Every original A/B/D formula reconstructed and matched by family, case, complete SHA256, byte size and dimensions to a retained CaDiCaL result. Every raw log authenticated and checked for matching version, parsed header, one UNSAT status and exit20. This checks recorded native evidence, not solver correctness, refutation certificates, the original Kissat custody joins or mathematical coverage.",
+  "solver": {
+    "arguments": [
+      "--seed=0",
+      "/dev/fd/4"
+    ],
+    "bytes": 1250184,
+    "name": "CaDiCaL",
+    "proof_logging": false,
+    "sha256": "601c9fa8ba5d09fd81bb00c89b3e54832f138bccc3422bd8652e8cda4d74d1fa",
+    "version": "3.0.1"
+  },
+  "solver_calls": 0,
+  "source_files": [
+    {
+      "bytes": 19811,
+      "path": "reproduce/abd_second_solver.py",
+      "sha256": "e77413a95aa6ed0c274b3ead1a712fe003ea34781d5224f5c879009aa5912daa"
+    },
+    {
+      "bytes": 12721,
+      "path": "reproduce/abd_inputs.py",
+      "sha256": "d5d42b3ce418a94a704978fda06fd3a07fdefa4877f99dc7a044c851577dca9b"
+    },
+    {
+      "bytes": 19050,
+      "path": "reproduce/abd_native.py",
+      "sha256": "35302b10b883760c51736554802756fe5e8d8b8708a4c3b97dbf75545a5004ba"
+    },
+    {
+      "bytes": 19804,
+      "path": "reproduce/verify.py",
+      "sha256": "6782e2f9073d502bcd7b0247952ba29fb0ace2af2305e5f6d528800ffeddcaf9"
+    }
+  ],
+  "status": "PASS_ALL_56374_CADICAL_UNSAT_JOINS"
+}

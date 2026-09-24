@@ -1055,6 +1055,16 @@
       "path": "reproduce/abd_second_solver.py",
       "bytes": 19811,
       "sha256": "e77413a95aa6ed0c274b3ead1a712fe003ea34781d5224f5c879009aa5912daa"
+    },
+    {
+      "path": "publication/checks/ABD_NATIVE.json",
+      "bytes": 10657,
+      "sha256": "549398956588b078002a98e5876188de0c006a0880e2fc7b0bad7b23b1fa01c7"
+    },
+    {
+      "path": "publication/checks/ABD_SECOND_SOLVER_VERIFICATION.json",
+      "bytes": 3467,
+      "sha256": "cf18360560fb0e260cadb26edc5ba5aa2a1bfaea048226deadf63c6b5b50270d"
     }
   ],
   "identity_check": {

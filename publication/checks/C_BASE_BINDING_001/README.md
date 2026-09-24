@@ -8,10 +8,10 @@ numbers agree in all ten clause families.
 SHA-256: `58478e3641d3ea52639566683daaea5f7a1d4112de5809f4af73ce1dfebf164f`.
 
 [comparison.json](comparison.json) records the byte comparisons and each
-family's hash. [receipt.json](receipt.json) records the emission, source and
-compiled-import pins. Emission used 6.70 CPU seconds and comparison used
-2.83 CPU seconds. The [portable comparator replay](PORTABLE_COMPARISON.json)
-checked the same retained files in 2.92 CPU seconds.
+family's hash. [receipt.json](receipt.json) records the emission and comparison
+using the published source manifest and the complete portable build's library.
+The [complete input-binding record](../../../formal/checks/joined_bindings/RUN_RESULT.json)
+includes this base check and the subsequent checks of all 56,830 formulas.
 
 This check connects the generator used by
 `Ramsey61.CEncodingBase.broaderBase_satisfiable_of_normalized_host` to the
@@ -53,17 +53,13 @@ this package.
 
 ## Source and receipt identity
 
-The emission receipt pins `CEncodingBase.lean` at
-`70973cf905034f9294e793b3f1932bfa18ea5d12759c088a263d16e7183ccf86`.
-The supplied module's SHA-256 is
+The source manifest is SHA-256
+`15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed`,
+the same manifest recorded by the [complete mathematical build](../../../formal/BUILD_RESULT.json).
+The compiled `CEncodingBase.lean` source has SHA-256
 `9ba1a3051f64e785d422939ccbbff2ad8b2b83da82287c1dc96c5718f30a1186`.
-[SOURCE_COMPATIBILITY.json](SOURCE_COMPATIBILITY.json) verifies that removing
-exactly five diagnostic `#print axioms` lines from the receipted source gives
-the supplied file byte for byte. Its declarations and six other imported
-sources are unchanged.
-
-The [receipted source](historical/CEncodingBase.lean), original receipts, log
-and emitter are preserved byte for byte. Original
-machine-specific driver scripts are retained in `historical/` as provenance;
-the commands above and the parameterized comparator are the portable entry
-points.
+The emission uses the build's isolated project library with its pinned
+dependencies. The [execution records](../../../formal/checks/joined_bindings/records.tar.gz)
+retain the source and imported-artifact checks, exact command, log, timing
+and byte-comparison result. The emitter and comparator here are the portable
+entry points; no source-text compatibility transformation is required.

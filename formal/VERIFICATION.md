@@ -37,8 +37,11 @@ The standard cached dependency binaries remain part of the Lean/Mathlib
 trust boundary.
 
 The [joined input-binding record](checks/joined_bindings/RUN_RESULT.json)
-separately connects the Lean-defined formulas to the native input identities.
-That check was not rerun as part of the portable compilation. The native
+connects all 56,830 Lean-defined formulas to the native input identities using
+the complete portable build's library and the same `15b67757…` source
+manifest. The check also emits and compares the complete C base. Its
+[execution records](checks/joined_bindings/records.tar.gz) retain commands,
+source and artifact hashes, logs and comparison results. The native
 UNSAT evidence and second-solver cross-checks are described in this repository's
 [search reproduction guide](../publication/REPRODUCIBILITY.md). All 56,374 A/B/D
 inputs and all 456 C inputs have UNSAT results from both solvers. These results

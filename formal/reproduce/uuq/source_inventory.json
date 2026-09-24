@@ -6,8 +6,13 @@
   ],
   "lean_toolchain": "leanprover/lean4:v4.32.1",
   "mathlib_pin_source": "Use the final package lake-manifest.json; this tool reuses its pinned library environment.",
+  "source_manifest": {
+    "path": "../../SOURCE_MANIFEST.json",
+    "sha256": "15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed",
+    "bytes": 872309
+  },
   "source_count": 586,
-  "source_bytes": 8309458,
+  "source_bytes": 8309634,
   "sources": [
     {
       "module": "CompletionC.CommonBlocks",
@@ -2493,8 +2498,8 @@
       "module": "R4333Lean.Attaching61Reduction",
       "packaged_module_path": "R4333Lean/Attaching61Reduction.lean",
       "source_origin": "publication/classification/R4333Lean/Attaching61Reduction.lean",
-      "sha256": "cea2031fbc9ea0fd22693f87e2fe7a761c696879f7529238153a207e1cfddda9",
-      "bytes": 3323,
+      "sha256": "7a1a00ff5bfb2674eb6b06ce4b134aeb7e3e6aac03b6369657de05d790f07238",
+      "bytes": 3347,
       "imports": [
         "R4333Lean.CataloguedNeighborhood"
       ],
@@ -3029,8 +3034,8 @@
       "module": "R4333Lean.CriticalCatalogues",
       "packaged_module_path": "R4333Lean/CriticalCatalogues.lean",
       "source_origin": "publication/classification/R4333Lean/CriticalCatalogues.lean",
-      "sha256": "b652c8bc79277144f6cf247dca3f7e021c8e9414be13c308a99747131ea279b8",
-      "bytes": 2095,
+      "sha256": "63d920e5739c36a743b7024686c360fb4e521228fc174b13d3be71949e48210e",
+      "bytes": 2186,
       "imports": [
         "R4333Lean.K16CommonCertificate",
         "R4333Lean.K16CatalogueFromSRG",
@@ -6934,8 +6939,8 @@
       "module": "Ramsey61.Selector",
       "packaged_module_path": "Ramsey61/Selector.lean",
       "source_origin": "publication/formal/Ramsey61/Selector.lean",
-      "sha256": "f143934c11a36769886baa2a94c005405047e011bbabf6970220025f144db4d3",
-      "bytes": 9129,
+      "sha256": "8f2153b0df767d3ea9a9f31c8f446e53fc5bbf2d712edee6fbc17b7ee986021d",
+      "bytes": 9190,
       "imports": [
         "Ramsey61.Incidence"
       ],
@@ -7009,8 +7014,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "0a91bc1839169e21e362f63c709dadfd4304890cd4f61bcdb32e4e665eb9a47b",
-      "bytes": 2934
+      "sha256": "0dd12eeb7368d137d4258da3b2d4eb7c26a87772bac2d6b88e17eae0a1de5a0a",
+      "bytes": 3629
     }
   ],
   "runtime": "No compile-time #eval in EmitUUQ.lean; main takes exactly one fresh output directory. No SAT/certificate processes.",

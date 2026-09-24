@@ -10,12 +10,17 @@ no SAT search and generated no new refutation certificates.
 | Complete portable build | **9.80 CPU-hours** | Driver and compiler CPU combined; all 1,809 modules |
 | Module compilation sum | **9.79 CPU-hours** | Included in the complete-build total, not an additional cost |
 | Build elapsed time | **4h58m** | Two compiler workers |
-| Separate exact-input check | **142.98 CPU-seconds** | All 56,830 formula identities; not rerun as part of the portable build |
+| Exact-input bindings | **139.16 CPU-seconds** | All 56,830 formula identities, using the complete portable build's library |
+| Fresh C-base emission and comparison | **9.45 CPU-seconds** | All 1,880,888 clauses compared byte for byte |
+| Emission and comparison total | **148.61 CPU-seconds** | Summed process CPU for the preceding two rows; no proof rebuild or solver calls |
 
 The [build result](BUILD_RESULT.json) records exact measurements and the
 compiler, source and dependency identities. The separate
 [input-binding record](checks/joined_bindings/RUN_RESULT.json) supplies the
-input-check timing. Native SAT search costs are given in the
+input-check timing and pins the same source manifest as the build. The ten
+sequential steps took **158.57 elapsed seconds**, peaked at **3.01 GiB RSS**
+and wrote **377 MB** of temporary output. Only the compact execution records
+are included in the repository. Native SAT search costs are given in the
 [search cost table](../publication/MEASURED_COSTS.md).
 
 The peak single compiler used **28.78 GiB RSS**. The sampled peak across

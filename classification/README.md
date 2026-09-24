@@ -37,13 +37,14 @@ the command does not declare an UNSAT axiom.
 
 ## Evidence and reproduction
 
-The [32-module verification build](build_runs/20260922T072158Z_1790061718513440000/SUMMARY.json)
-passed on 22 September 2026, using the packaged sources and all 55 included
-CNF/LRAT pairs. Its import path contains only the build output and the
-pinned Mathlib dependency cache; all project modules are compiled from source. The complete rebuild used **827.71 CPU seconds**, **725.37 seconds of
-summed module elapsed time**, and at most **14,793,555,968 bytes (13.78 GiB)
-RSS**. Modules were admitted serially, with four Lean threads per module.
-The largest output was a 77,115,296-byte `.olean`.
+The [complete portable build](../formal/BUILD_RESULT.json) passed on
+23 September 2026. It compiled the current 32 classification modules and
+replayed all 55 included CNF/LRAT pairs within the 1,809-module mathematical
+closure, using the [integrated source manifest](../formal/SOURCE_MANIFEST.json)
+with SHA256 `15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed`.
+The standalone and integrated copies of these modules are byte-identical.
+The build used pinned dependencies and its own project outputs, with no
+reused project artifacts.
 
 The [actual-host adapter](adapter/README.md) connects this classification
 closure to the 61-vertex Ramsey proof. All seven inspected endpoints use only
@@ -55,9 +56,8 @@ in the complete portable mathematical build.
 [MANIFEST.json](MANIFEST.json) records exact files, hashes, import order and
 source provenance. Build receipts preserve input manifests, commands, compiler
 and source hashes, full logs and resource records. The
-[complete portable build](../formal/BUILD_RESULT.json) also compiled all 32
-classification modules and replayed all 55 pairs within the full mathematical
-closure, using the [integrated source manifest](../formal/SOURCE_MANIFEST.json).
+[full-build measurements](../formal/MEASUREMENTS.md) give the CPU, elapsed-time
+and memory accounting for the complete mathematical closure.
 
 The package pins Lean 4.32.1 and Mathlib revision
 `520045ab14e26149ee970e2e617ca04b09bde5d6`, matching the current formal package.
@@ -92,8 +92,9 @@ python3 build_local.py --cache-root /path/to/pinned/.lake/packages \
 
 Neither script imposes CPU, RSS or output-file kill limits. `build_local.py`
 stops admitting new modules if the host reports acute memory or disk
-pressure; it never signals existing jobs. The measured 13.78 GiB compiler
-peak means the full rebuild should not be assumed to fit a small CI runner.
+pressure; it never signals existing jobs. Use the
+[full-build memory measurements](../formal/MEASUREMENTS.md) when selecting a
+machine; classification replay should not be assumed to fit a small CI runner.
 
 The present GitHub CI checks `formal/`, not this separate classification
 package. Its verification scope is described in

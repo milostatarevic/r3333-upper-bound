@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "positive_comparison": "PORTABLE_COMPARISON.json",
-  "truncated_emission_rejected": true,
-  "negative_output_not_created": true,
-  "optimized_python_rejected": true,
-  "preserved_control_directory": "/var/folders/5p/gzb7_krn1hj1bsdjnbnd6q8c0000gn/T/ramsey-c-base-portable-km4y66rl",
-  "new_solver_calls": 0
-}

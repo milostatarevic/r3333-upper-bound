@@ -1,0 +1,268 @@
+{
+  "CPU_seconds": 27.500605999999998,
+  "Lean_calls": 0,
+  "archive_manifest_files": 455901,
+  "archive_manifest_index": {
+    "bytes": 5425,
+    "sha256": "0371c357740e6cce262a055d3f998637f8f218f1d492864be2fcff78e46b222e"
+  },
+  "certificate_replays": 0,
+  "complete_case_CNFs_written": 0,
+  "consumed_record_bytes": 723696255,
+  "consumed_record_reads": 224842,
+  "created_utc": "2026-09-24T20:45:36.678345+00:00",
+  "elapsed_seconds": 45.66521141678095,
+  "families": [
+    {
+      "family": "A",
+      "formulas": 360,
+      "manifest": {
+        "bytes": 374915,
+        "path": "evidence/A/full_inputs_000/MANIFEST.json",
+        "sha256": "04b63427c743d41369cd305fd82e37450bc26c4d5262b47ddd20b4544d8ced13"
+      },
+      "native_CPU_seconds": 3015.9850760000004,
+      "native_UNSAT": 360,
+      "native_sources": {
+        "original": 360
+      },
+      "ordered_formula_records_sha256": "84711b15313260f2e301ecef5bbfab80e780a2414c04b6df223e5cc04a007492",
+      "ordered_native_joins_sha256": "47ce5f4b5967ba052da7198b5347e3bef35bed0c15ad4ae3d4c179e7f8a61a96",
+      "terminal_parents": [
+        {
+          "bytes": 516811,
+          "path": "evidence/A/native_000/RESULT.json",
+          "sha256": "795f352797506c47a5f748442a4d0967f355114146ae4ea89dca61d21399626c"
+        }
+      ]
+    },
+    {
+      "family": "B",
+      "formulas": 5096,
+      "manifest": {
+        "bytes": 4932770,
+        "path": "evidence/B/full_inputs_000/MANIFEST.json",
+        "sha256": "717eddaab19150f9e6443c06180fdcaf655ebdd89a9ce43056d2aa8ae054fa66"
+      },
+      "native_CPU_seconds": 76900.06573700014,
+      "native_UNSAT": 5096,
+      "native_sources": {
+        "original": 5096
+      },
+      "ordered_formula_records_sha256": "3c9fbc9accd722b31fa31c8c168faeda445b19c613ec9c172902c83c32d8e393",
+      "ordered_native_joins_sha256": "aeb941937f418724b1a7ae8763597acf3c70c9da6427e9df384a9adbd7b2cf7f",
+      "terminal_parents": [
+        {
+          "bytes": 7294241,
+          "path": "evidence/B/native_000/RESULT.json",
+          "sha256": "b71fb1204d25f575f5c6e36ef84df57b4eaf1b5c621b175f3f13e4c2d5867544"
+        }
+      ]
+    },
+    {
+      "family": "D_UUU",
+      "formulas": 679,
+      "manifest": {
+        "bytes": 1478967,
+        "path": "evidence/D/UUT/full_inputs_000/MANIFEST.json",
+        "sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12"
+      },
+      "native_CPU_seconds": 7008.770000000001,
+      "native_UNSAT": 679,
+      "native_sources": {
+        "original": 679
+      },
+      "ordered_formula_records_sha256": "7bceb81700bc43ca7b773a502d64fd09e7df336632676c478845bbd4df8476d1",
+      "ordered_native_joins_sha256": "ad433684aa63b34393e50457fc6a7c4879d1b8a8911172060c13e238632dbc8e",
+      "terminal_parents": []
+    },
+    {
+      "family": "D_UUT",
+      "formulas": 679,
+      "manifest": {
+        "bytes": 1478967,
+        "path": "evidence/D/UUT/full_inputs_000/MANIFEST.json",
+        "sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12"
+      },
+      "native_CPU_seconds": 6225.789432,
+      "native_UNSAT": 679,
+      "native_sources": {
+        "original": 678,
+        "pilot": 1
+      },
+      "ordered_formula_records_sha256": "3abc5401e30d6864361952ce7ce85807f555667257d0b3abd4aa6fe7423b06e0",
+      "ordered_native_joins_sha256": "46193f239cd447ec4b1317c0fbb39547238623bfbb1594c0c9c30b949789fa11",
+      "terminal_parents": [
+        {
+          "bytes": 360292,
+          "path": "evidence/D/UUT/full_native_000/RESULT.json",
+          "sha256": "960147864f5dc058d2a8cc29dc76fd87e5e547affb319f8844b73e7a9fff79fd"
+        }
+      ]
+    },
+    {
+      "family": "D_UTU",
+      "formulas": 6576,
+      "manifest": {
+        "bytes": 6487084,
+        "path": "evidence/D/mixed/full_inputs_UTU_000/MANIFEST.json",
+        "sha256": "b58f50c345e3007f22abea3a0dd1eff029ee50e2a2e5154a6077553aab2988ac"
+      },
+      "native_CPU_seconds": 68056.14570699992,
+      "native_UNSAT": 6576,
+      "native_sources": {
+        "continuation": 5197,
+        "predecessor": 1379
+      },
+      "ordered_formula_records_sha256": "56885050ee9fca306738df70b5debc33aaa2bf6e1e8b8f5b052e66938c689304",
+      "ordered_native_joins_sha256": "fe1bf33f1141c9c521df219a046698a530ddd7e5e24ab04b8eaada36f3bc7eb1",
+      "terminal_parents": [
+        {
+          "bytes": 7849920,
+          "path": "evidence/D/mixed/uncapped_continuation_000/full_native_UTU_000/RESULT.json",
+          "sha256": "58ad412f3a0af611abc9bba5ef26d2c560f790a78ff95a6ad97dc37589bcc40f"
+        },
+        {
+          "bytes": 2242306,
+          "path": "evidence/D/mixed/uncapped_continuation_000/full_native_UTU_000/ADOPTION.json",
+          "sha256": "f55a967c949d8b2c61e9df68826ae2275f223be6c4e0ab0a46f037502f7ce43c"
+        },
+        {
+          "bytes": 2431844,
+          "path": "evidence/D/mixed/full_native_UTU_000/RESULT.json",
+          "sha256": "701e23a83ae1e2b86687e6338c823ed0eae656b642ba7c9d533b0055d5a107e8"
+        }
+      ]
+    },
+    {
+      "family": "D_UTT",
+      "formulas": 6576,
+      "manifest": {
+        "bytes": 6495516,
+        "path": "evidence/D/mixed/full_inputs_UTT_000/MANIFEST.json",
+        "sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7"
+      },
+      "native_CPU_seconds": 68112.17954000011,
+      "native_UNSAT": 6576,
+      "native_sources": {
+        "continuation": 5198,
+        "predecessor": 1378
+      },
+      "ordered_formula_records_sha256": "9a9f2db3fe9deb11f0f0e40cc4cca92fec16ce0f2eae5271663b83a3edc0aa64",
+      "ordered_native_joins_sha256": "b598eb512a5fd1f03327a0f4944f01e1d86213bf13d4236e9cb96e0a239c55d8",
+      "terminal_parents": [
+        {
+          "bytes": 7852056,
+          "path": "evidence/D/mixed/uncapped_continuation_000/full_native_UTT_000/RESULT.json",
+          "sha256": "8dd6b2c83d5ae3a3a496715ea16abed1b9ec6a15acea5ad7ff3e3ae6b704ecb1"
+        },
+        {
+          "bytes": 2240648,
+          "path": "evidence/D/mixed/uncapped_continuation_000/full_native_UTT_000/ADOPTION.json",
+          "sha256": "40c70b67c6398c8239a784de5c7a574a07cbe24821e6b85febc67c062cfa3f86"
+        },
+        {
+          "bytes": 2430225,
+          "path": "evidence/D/mixed/full_native_UTT_000/RESULT.json",
+          "sha256": "260e109f712c6910f0214b84d02691e11038fc23bccff149c2a5b7860b71d8d1"
+        }
+      ]
+    },
+    {
+      "family": "D_TTU",
+      "formulas": 18204,
+      "manifest": {
+        "bytes": 17937625,
+        "path": "evidence/D/mixed/full_inputs_TTU_000/MANIFEST.json",
+        "sha256": "a656853526685c105102fb6962dc71c6777887ffbf5c63d6b2c07e41a4791736"
+      },
+      "native_CPU_seconds": 222759.2811779995,
+      "native_UNSAT": 18204,
+      "native_sources": {
+        "continuation": 16637,
+        "predecessor": 1567
+      },
+      "ordered_formula_records_sha256": "9718f6b91662624f6c75943c03858cb6ce397a361409ecc53ed2a6fce993f2b1",
+      "ordered_native_joins_sha256": "e97f07d0510a3b571f37440b82a40b2dbf1c1573a527de1b4100b0ee64a4f9e4",
+      "terminal_parents": [
+        {
+          "bytes": 24993480,
+          "path": "evidence/D/mixed/uncapped_continuation_000/full_native_TTU_000/RESULT.json",
+          "sha256": "43c8263ce38475a3bb03f069e5c9c7846e9a450b2acdaa894a02befcde1d071a"
+        },
+        {
+          "bytes": 2911898,
+          "path": "evidence/D/mixed/uncapped_continuation_000/full_native_TTU_000/ADOPTION.json",
+          "sha256": "7a9db32a077f37858951d78ad4a9443c0c0f45fd8927fe1e2707b39d39e0c378"
+        },
+        {
+          "bytes": 3495467,
+          "path": "evidence/D/mixed/full_native_TTU_000/RESULT.json",
+          "sha256": "a8369d12bda00bf6db0af13a040bf5dfeea7e4a437506840c46f89d39e076016"
+        }
+      ]
+    },
+    {
+      "family": "D_TTT",
+      "formulas": 18204,
+      "manifest": {
+        "bytes": 17943949,
+        "path": "evidence/D/mixed/full_inputs_TTT_000/MANIFEST.json",
+        "sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec"
+      },
+      "native_CPU_seconds": 223260.1610979995,
+      "native_UNSAT": 18204,
+      "native_sources": {
+        "continuation": 16570,
+        "predecessor": 1634
+      },
+      "ordered_formula_records_sha256": "f87f18b376184cba23decffb72b3a8d9bf5868dedbb3d8eb1582f6a6745df830",
+      "ordered_native_joins_sha256": "ca84944c1d864b74772464eee785d63152b2a5b8fa0a46ce8be5e936735ed508",
+      "terminal_parents": [
+        {
+          "bytes": 24895749,
+          "path": "evidence/D/mixed/uncapped_continuation_000/full_native_TTT_000/RESULT.json",
+          "sha256": "9bd5bc648b4fb14c439e1cc691bb9cf529088e9654ba3ee13e9be2cceda60fb8"
+        },
+        {
+          "bytes": 3008852,
+          "path": "evidence/D/mixed/uncapped_continuation_000/full_native_TTT_000/ADOPTION.json",
+          "sha256": "087616bc7035e21ecb7a34987cabe8deda8b41c613e9e1e88731fdb8d81dd960"
+        },
+        {
+          "bytes": 3591219,
+          "path": "evidence/D/mixed/full_native_TTT_000/RESULT.json",
+          "sha256": "b6176b01e355a1f94d8bb3f2e9dbf34c694365af83e736b2dd628ce2ae92f8e9"
+        }
+      ]
+    }
+  ],
+  "formulas": 56374,
+  "native_UNSAT": 56374,
+  "ordered_native_joins_sha256": "0673f4eb91f6801dff2e79cc5727eb0ea182f105ff3c186c12fdbbaa6188f73e",
+  "ordered_record_reads_sha256": "ec0ef6ced5e4fdf71548b00e8d852aa289f8daafd21c3ebe6bee2f7e6d4378f3",
+  "original_source_reads": 0,
+  "peak_RSS_bytes": 937852928,
+  "schema": "RAMSEY61_PORTABLE_ABD_NATIVE_JOIN_1",
+  "scope": "Every required A/B/D formula reconstructed, then joined by complete SHA256, byte size, variable/clause counts and owner to its original terminal native UNSAT record and authenticated solver log. Mixed-D predecessor adoption and the UUT pilot are checked explicitly. Historical paths resolve only through the pinned archive source map. This checks recorded native evidence, not solver correctness, refutation certificates or mathematical coverage. Unrelated archive payloads are not rehashed; run reproduce/verify.py full for archive census.",
+  "solver_calls": 0,
+  "solver_sha256": "05d6f3e9c402a1fe8853b0746e384e1b3d1c4a550e255f11daa2461d279aa848",
+  "source_files": [
+    {
+      "bytes": 19050,
+      "path": "reproduce/abd_native.py",
+      "sha256": "35302b10b883760c51736554802756fe5e8d8b8708a4c3b97dbf75545a5004ba"
+    },
+    {
+      "bytes": 12721,
+      "path": "reproduce/abd_inputs.py",
+      "sha256": "d5d42b3ce418a94a704978fda06fd3a07fdefa4877f99dc7a044c851577dca9b"
+    },
+    {
+      "bytes": 19804,
+      "path": "reproduce/verify.py",
+      "sha256": "6782e2f9073d502bcd7b0247952ba29fb0ace2af2305e5f6d528800ffeddcaf9"
+    }
+  ],
+  "status": "PASS_ALL_56374_NATIVE_UNSAT_JOINS"
+}

@@ -36,20 +36,19 @@ axiom asserting the computation's result.
 The [formal source package](../formal/README.md) includes the complete local
 classification dependency closure: **32 modules and 55 CNF/LRAT pairs**.
 [SOURCE_MANIFEST.json](../formal/SOURCE_MANIFEST.json) pins the mathematical
-source and embedded data. The standalone and integrated classification copies
-have the same mathematical declarations and proofs as the recorded replay.
+source and embedded data. Its SHA256 is
+`15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed`.
+The standalone and integrated classification modules are byte-identical.
 The [complete portable build](../formal/BUILD_RESULT.json) records successful
-compilation of that exact source manifest.
+compilation of these exact sources on 23 September 2026.
 
 The classification endpoints use only `propext`, `Classical.choice` and
 `Quot.sound`.
 The [standalone classification manifest](../classification/MANIFEST.json)
-and [kernel replay receipt](../classification/build_runs/20260922T072158Z_1790061718513440000/SUMMARY.json)
-retain the classification's source, payload and build provenance. That replay
-compiled all 32 modules and checked all 55 pairs without project compiled
-artifacts, using 827.71 CPU seconds and peaking at 13.78 GiB RSS.
+records the packaged source and certificate data and identifies the complete
+portable build as their verification record.
 
-The [complete portable build](../formal/BUILD_RESULT.json) also compiled all
+The [complete portable build](../formal/BUILD_RESULT.json) compiled all
 32 classification modules from source and replayed all 55 supplied pairs as
 part of the 1,809-module mathematical closure. It used the pinned dependency
 cache and its own project outputs, with no reused project artifacts.

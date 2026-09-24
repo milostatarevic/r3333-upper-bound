@@ -10,7 +10,10 @@ They do not run a SAT solver or replay certificates.
 
 Use the final proof package's Lean 4.32.1 environment and pinned dependencies,
 with `PricingG.UUQEmissionIdentity` and its dependency closure compiled.
-`source_inventory.json` identifies every required module by source hash.
+`source_inventory.json` records the current 586-module source closure and pins
+the [source manifest](../../SOURCE_MANIFEST.json). Its module hashes and byte
+counts match the current package sources. This inventory is documentary;
+the emitter and comparator do not read it.
 `EmitUUQ.lean` is a runtime `main`, so importing/compiling it writes no files.
 Python 3.9 or newer is sufficient for the comparator; `-O` and `-OO` are rejected.
 
@@ -60,3 +63,7 @@ binding and terminal reconciliation; its provenance hashes are included.
 The reproduction preserves the original trust boundary: the Lean mathematics
 and exact input binding are checked, while the large search refutations are
 supported by native solver results.
+
+The [current complete input-binding result](../../checks/joined_bindings/RUN_RESULT.json)
+records the package-wide verification. Existing validation receipts retain the
+inventory and documentation hashes recorded for their earlier runs.

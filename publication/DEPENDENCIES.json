@@ -1407,7 +1407,7 @@
     "classification_manifest": {
       "path": "source_repository:classification/MANIFEST.json",
       "bytes": 48594,
-      "sha256": "d7ee852c32690f6cbfe06969b3cb0136e84d4df3fbcdf64770e8a41616d3dfe9"
+      "sha256": "a93208981a167bbf90b84d210d809aaec1963c7a31d03e453f1cec6859c96061"
     },
     "classification_rebuild": {
       "path": "source_repository:formal/BUILD_RESULT.json",
@@ -1420,9 +1420,9 @@
       "sha256": "c0caf794bdf31bd20a7ac4433b70ac30bb9fce7e322bed47b9ad260c429cbeee"
     },
     "C_base_byte_comparison": {
-      "path": "source_repository:publication/checks/C_BASE_BINDING_001/PORTABLE_COMPARISON.json",
-      "bytes": 5555,
-      "sha256": "819c681f10cb8a5995889e253d5e0df84ae296e0e188b12d26def6246a6b94fa"
+      "path": "source_repository:publication/checks/C_BASE_BINDING_001/comparison.json",
+      "bytes": 5516,
+      "sha256": "01e3745dc9d24b7d1e92d65f9a3e88f485a7181066452f334b55fe0a8602aca8"
     },
     "ABD_input_reconstruction": {
       "path": "source_repository:publication/checks/ABD_ALL_INPUTS_001.json",
@@ -1451,18 +1451,38 @@
     },
     "complete_native_input_binding": {
       "path": "source_repository:formal/checks/joined_bindings/RUN_RESULT.json",
-      "bytes": 20094,
-      "sha256": "49d8dd4acaadd81b8d5e722f50e9736bb5dc342c24078f068cd4ee4580b87ba4"
+      "bytes": 8689,
+      "sha256": "e0984c384efd9a975ca73e16e8115d2445fa810a47c42f8453b578113e9b814e"
     },
     "formal_package_file_manifest": {
       "path": "source_repository:formal/PACKAGE_FILES.json",
-      "bytes": 1461567,
-      "sha256": "0707ac5acea9a70a0cfaf74a7fb073e16204af31fdbab17da9f8eadfb5453062"
+      "bytes": 1456130,
+      "sha256": "28fb723f302f2e1873c9c22da43b88d0f7971f78539e5ec3caa9a7cd50b417ee"
     },
     "ABD_second_solver": {
       "path": "source_repository:publication/checks/ABD_SECOND_SOLVER.json",
       "bytes": 2396,
       "sha256": "d3e82e7f31c014a88ffaab2eb8723230409fadaf24feda95cb1389fc39a49168"
+    },
+    "C_base_execution": {
+      "path": "source_repository:publication/checks/C_BASE_BINDING_001/receipt.json",
+      "bytes": 2447,
+      "sha256": "ad38ce1c814b021ef658d5edced46de947d389e3d8620d72fe0e39194377bd9f"
+    },
+    "ABD_original_solver_join": {
+      "path": "source_repository:publication/checks/ABD_NATIVE.json",
+      "bytes": 10657,
+      "sha256": "549398956588b078002a98e5876188de0c006a0880e2fc7b0bad7b23b1fa01c7"
+    },
+    "ABD_second_solver_join": {
+      "path": "source_repository:publication/checks/ABD_SECOND_SOLVER_VERIFICATION.json",
+      "bytes": 3467,
+      "sha256": "cf18360560fb0e260cadb26edc5ba5aa2a1bfaea048226deadf63c6b5b50270d"
+    },
+    "complete_native_input_binding_records": {
+      "path": "source_repository:formal/checks/joined_bindings/records.tar.gz",
+      "bytes": 691532,
+      "sha256": "e3e2ecb079f98ebe29e4b4b171b4d089e9d810b110d01bfee8cc3fcfbd904d34"
     }
   },
   "mathematical_reduction_formally_checked": true,
