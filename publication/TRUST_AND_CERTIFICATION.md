@@ -3,8 +3,8 @@
 We give a computer-assisted proof of R(3,3,3,3) ≤ 61. The release consists of
 the complete written argument, Lean mathematical reduction, exhaustive case
 covers, exact formula reconstruction, native solver results and reproducible
-finite checks. These
-are the mathematical and computational basis of the claimed bound.
+finite checks. These are the mathematical and computational basis of the
+claimed bound.
 
 ## The verification standard used here
 
@@ -21,8 +21,13 @@ finite CNF family. All physical extraction, coverage, transport and encoding
 implications are proved within the mathematical development.
 
 The computational conclusion uses explicit trust in native solver answers.
-Kissat and CaDiCaL agree on all 456 full-host C formulas. The A/B/D evidence
-supplies the retained Kissat results. Input reconstruction and native-result
+Kissat and CaDiCaL agree on all **56,830 formulas**: the **56,374 A/B/D**
+inputs and **456 full-host C** inputs. The complete A/B/D rerun used
+CaDiCaL 3.0.1 and produced accepted UNSAT results for every required case,
+with no SAT, UNKNOWN or error results. Its
+[acceptance receipt](checks/ABD_SECOND_SOLVER.json) and
+[checker](../reproduce/abd_second_solver.py) accompany the compressed evidence
+in `archives/abd-cadical.tar.gz`. Input reconstruction and native-result
 accounting connect each required formula's SHA-256 to its runner-recorded
 input hash and UNSAT result.
 
@@ -55,12 +60,11 @@ all computational results in §5, with no discrepancies. Their final exclusion
 was obtained by both programs. This is a relevant precedent for a computational
 proof supported by explicit algorithms.
 
-The present repository uses SAT encodings and records its own verification
-scope: the complete C family has independent Kissat/CaDiCaL agreement. The
-A/B/D evidence supplies the original native runs without a full second-solver
-replay. The Lean reduction and native result checks have distinct scopes. The two projects therefore
-share a general computational-proof methodology, with different verification
-coverage documented explicitly.
+The present repository uses SAT encodings with Kissat/CaDiCaL agreement on
+every formula in the complete A/B/D and C case cover. The Lean development
+checks the mathematical reduction; the two native solvers corroborate the
+computational exclusions. This provides two-solver coverage of the main SAT
+computation while retaining the explicit `AllNativeUnsat` premise.
 
 ## Formal mathematics and exact input identities
 
@@ -102,7 +106,9 @@ Native search timings and their accounting boundaries are in
 [the cost table](MEASURED_COSTS.md). Reproduction and formal
 check receipts are listed in [RELEASE_CHECKS.md](RELEASE_CHECKS.md).
 
-The proof was heavily assisted by AI and has not yet been independently
-verified by a human, including its human author. The author takes responsibility
-for the result, its evidence and corrections; see
+The mathematical reductions are verified in Lean, and every required SAT
+instance has matching UNSAT results from Kissat and CaDiCaL. The work was
+developed with extensive AI assistance and has not yet undergone independent
+human review. The author takes responsibility for the result, its evidence
+and corrections; see
 [ATTRIBUTION.md](ATTRIBUTION.md).

@@ -14,10 +14,10 @@ by Fettes, Kramer and Radziszowski in 2004.
 
 The proof combines structural mathematics, exhaustive finite enumeration
 and SAT solving. Its complete case cover uses **56,830 SAT formulas**, all
-refuted, and **13,968 finite compatibility checks**. The final 456 formulas
-were refuted by both Kissat and CaDiCaL. We provide the mathematical argument,
-exact input reconstruction, solver results and checking tools so readers can
-inspect the proof and rerun the computations.
+refuted by **both Kissat and CaDiCaL**, and **13,968 finite compatibility checks**.
+We provide the mathematical argument, exact input reconstruction, solver
+results and checking tools so readers can inspect the proof and rerun the
+computations.
 
 Start with [proof.md](proof.md) for the complete argument,
 [search costs](#search-costs) for the computation, and
@@ -99,6 +99,14 @@ Elapsed time depends on parallelism and host availability.
 [Detailed phase accounting](publication/MEASURED_COSTS.md) ·
 [Research history](RESEARCH.md)
 
+The complete A/B/D rerun with CaDiCaL 3.0.1 used **246.81 solver CPU-hours**
+and returned UNSAT for all **56,374** formulas, with no SAT, UNKNOWN or error
+results. Its elapsed duration was **37h18m30s**, measured from launch to the
+last solver finish rather than summed across solver processes.
+Together with the existing two-solver C check, this corroborates every SAT
+case in the proof. These verification costs are separate from the original
+search times above.
+
 ## Proof
 
 The human-readable argument is in [proof.md](proof.md). It begins by assuming
@@ -142,8 +150,11 @@ The main theorem,
 [`PricingIntegration.NativeWholeProof.ramsey61`](formal/src/PricingIntegration/NativeWholeProof.lean),
 takes one computational premise, `AllNativeUnsat`, asserting that those concrete
 formulas are unsatisfiable. Native solver results supply the evidence for this
-premise. The final C family has matching Kissat and CaDiCaL answers; A/B/D use
-the retained Kissat runs.
+premise. Every A/B/D and C formula has matching Kissat and CaDiCaL UNSAT
+answers, bound to the same complete input hash. The
+[A/B/D second-solver receipt](publication/checks/ABD_SECOND_SOLVER.json)
+records the completed rerun; the C reconciliation is retained in the original
+evidence archive.
 
 [Exact input comparisons](formal/reproduce/README.md) connect the Lean-defined
 formulas to retained or reconstructed DIMACS bytes and runner-recorded input
@@ -175,8 +186,10 @@ GPT-6 Astra in Codex with ultra reasoning developed the C-profile solution.
 GPT-6 Pro research sessions contributed successive mathematical proposals
 and reductions.
 
-The proof has **not yet been independently verified by a human**, including
-its human author. The author takes responsibility for the result, its evidence
+The mathematical reductions are verified in Lean, and every required SAT
+instance has matching UNSAT results from Kissat and CaDiCaL. The work was
+developed with extensive AI assistance and has not yet undergone independent
+human review. The author takes responsibility for the result, its evidence
 and corrections.
 [Full attribution](publication/ATTRIBUTION.md)
 
@@ -191,19 +204,26 @@ The [reproduction guide](publication/REPRODUCIBILITY.md),
 | Authenticate and extract the evidence archive | Exact preserved files, manifests, native logs and recorded acceptance relationships |
 | Reconstruct all 56,830 SAT input hashes | The original formula bytes are recoverable without writing hundreds of gigabytes of repeated data |
 | Join reconstructed A/B/D formulas to native results | Every required formula matches its authenticated UNSAT record and solver log |
+| Check the A/B/D second-solver evidence | Every required formula has a matching accepted CaDiCaL UNSAT result in addition to its original Kissat result |
 | Build the complete Lean mathematical reduction | The implication from the explicit native UNSAT premise to the Ramsey bound |
 | Compare Lean-defined formulas with retained or reconstructed inputs | Exact complete DIMACS identities for all 56,830 cases |
 | Replay the 13,968 local compatibility checks | The retained finite witnesses still give the stated contradictions |
 | Materialize and solve a chosen SAT input | A fresh native solver result for an exact case in the proof |
 
-The Python reproduction tools use the standard library. The immutable
-375 MB evidence archive is stored with Git LFS. To obtain and authenticate it:
+The Python reproduction tools use the standard library. The **375 MB original
+evidence archive** and **246 MB A/B/D CaDiCaL archive** are stored with Git LFS.
+Fetch both archives and authenticate the original:
 
 ```sh
 git lfs install --local
-git lfs pull --include="archives/evidence-v1.tar.gz"
+git lfs pull --include='archives/*.tar.gz'
 python3 -B reproduce/verify.py check
 ```
+
+The [reproduction guide](publication/REPRODUCIBILITY.md) gives the extraction
+and verification commands. The [second-solver checker](reproduce/abd_second_solver.py)
+streams `archives/abd-cadical.tar.gz` without extracting it, using the original
+snapshot to reconstruct and identify every input.
 
 Every required input hash and both finite compatibility computations have
 been checked using the portable tools. Archive authentication, clean-checkout
@@ -224,6 +244,7 @@ attempts are included; it is not a total for every unsuccessful experiment.
 | [`reproduce/`](publication/REPRODUCIBILITY.md) | Portable archive, input and finite-computation checks |
 | [`publication/`](publication/RELEASE_CHECKS.md) | Dependency ledger, verification status, references and computational records |
 | `archives/evidence-v1.tar.gz` | Immutable evidence snapshot, tracked through Git LFS |
+| `archives/abd-cadical.tar.gz` | Complete A/B/D CaDiCaL rerun evidence, tracked through Git LFS |
 | [`.github/workflows/verify.yml`](.github/workflows/verify.yml) | Mathematical-source and data integrity, compact Lean build and supporting tool checks |
 
 ## Invitation to review

@@ -5,7 +5,7 @@
   "exposition": "source_repository:proof.md",
   "target": "Every four-edge-coloring of K61 has a monochromatic triangle.",
   "accepted_outcome": "evidence/final_validation/FINAL_OUTCOME_002.json",
-  "trust_standard": "Complete computer-assisted proof with Lean-checked mathematical reductions to concrete finite CNFs and retained native SAT answers. All 56,374 A/B/D formulas have Kissat results; all 456 C formulas have matching Kissat and CaDiCaL results. Exact formula-to-input bindings are checked externally. The K15/K16 classification is kernel-checked using the included small CNF/LRAT data. Large native search refutations remain the explicit computational premise.",
+  "trust_standard": "Complete computer-assisted proof with Lean-checked mathematical reductions to concrete finite CNFs and matching Kissat and CaDiCaL UNSAT answers for all 56,830 formulas. Exact formula-to-input bindings are checked externally. The K15/K16 classification is kernel-checked using the included small CNF/LRAT data. Large native search refutations remain the explicit computational premise.",
   "current_claim": "complete_computer_assisted_proof",
   "nodes": [
     {
@@ -596,8 +596,8 @@
     {
       "id": "abd_native_refutations",
       "title": "Accepted exact A/B/D native formula refutations",
-      "statement": "Each of the 56,374 exact A/B/D formulas has an accepted Kissat native UNSAT result joined to its required case and formula hash. These runs have no checked refutation certificates or complete second-solver replay.",
-      "evidence_kind": "native_unsat_and_independent_provenance_joins",
+      "statement": "Each of the 56,374 exact A/B/D formulas has matching accepted Kissat and CaDiCaL native UNSAT results joined to its required case and complete formula hash. Native execution records and raw logs are supplied; these runs have no checked refutation certificates.",
+      "evidence_kind": "dual_native_unsat_and_exact_input_joins",
       "requires": [],
       "evidence": [
         {
@@ -644,8 +644,17 @@
           "path": "evidence/D/UUU/REPORT.md",
           "bytes": 4894,
           "sha256": "7e46a332a34a801a9b58720661e16fab55ecc8ca9d831a00403f9be976d46b6f"
+        },
+        {
+          "path": "source_repository:publication/checks/ABD_SECOND_SOLVER.json",
+          "bytes": 2396,
+          "sha256": "d3e82e7f31c014a88ffaab2eb8723230409fadaf24feda95cb1389fc39a49168"
         }
-      ]
+      ],
+      "counts": {
+        "formulas": 56374,
+        "native_solvers_per_case": 2
+      }
     },
     {
       "id": "selector_x",
@@ -1398,7 +1407,7 @@
     "classification_manifest": {
       "path": "source_repository:classification/MANIFEST.json",
       "bytes": 48594,
-      "sha256": "0c92e5944608938b652b9dc1844da8adf7b266cffbc47f82f5f1a93712716e77"
+      "sha256": "d7ee852c32690f6cbfe06969b3cb0136e84d4df3fbcdf64770e8a41616d3dfe9"
     },
     "classification_rebuild": {
       "path": "source_repository:formal/BUILD_RESULT.json",
@@ -1447,8 +1456,13 @@
     },
     "formal_package_file_manifest": {
       "path": "source_repository:formal/PACKAGE_FILES.json",
-      "bytes": 1464261,
-      "sha256": "ac66b3bdce4ad2dcbb18a6a284833bb8a264a08878e8463edde14d2b305034fd"
+      "bytes": 1461567,
+      "sha256": "0707ac5acea9a70a0cfaf74a7fb073e16204af31fdbab17da9f8eadfb5453062"
+    },
+    "ABD_second_solver": {
+      "path": "source_repository:publication/checks/ABD_SECOND_SOLVER.json",
+      "bytes": 2396,
+      "sha256": "d3e82e7f31c014a88ffaab2eb8723230409fadaf24feda95cb1389fc39a49168"
     }
   },
   "mathematical_reduction_formally_checked": true,

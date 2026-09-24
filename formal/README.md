@@ -5,7 +5,7 @@ This package formalizes the mathematical reduction of the Ramsey bound to
 case coverage, preservation of the original coloring through all reductions,
 and the connection between the physical configurations and the exact CNFs.
 The repository's [evidence archive](../publication/REPRODUCIBILITY.md) supplies the native
-solver results.
+solver results and second-solver cross-checks.
 
 The main theorem is
 [`PricingIntegration.NativeWholeProof.ramsey61`](src/PricingIntegration/NativeWholeProof.lean).
@@ -39,8 +39,8 @@ The package pins Lean 4.32.1 and Mathlib revision
 `SOURCE_MANIFEST.json` records every mathematical source and embedded data file.
 No compiled artifacts or solver binaries are part of the source package.
 
-Build and input-binding reproduction instructions are in `BUILD.md` and
-`reproduce/README.md`. The three operations are separate: checking the Lean
+Build and input-binding reproduction instructions are in [BUILD.md](BUILD.md) and
+[reproduce/README.md](reproduce/README.md). The three operations are separate: checking the Lean
 mathematics, verifying exact input identities, and rerunning the native searches.
 The input-identity tools invoke no SAT solver.
 

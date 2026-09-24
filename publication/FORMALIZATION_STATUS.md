@@ -49,6 +49,8 @@ It has no additional mathematical coverage, classification, transport or
 encoding parameter.
 
 The native UNSAT results remain external evidence for `AllNativeUnsat`.
+Kissat and CaDiCaL agree on all 56,830 formulas, including the complete
+[A/B/D second-solver rerun](checks/ABD_SECOND_SOLVER.json).
 The endpoint's audited axioms are `propext`, `Classical.choice` and
 `Quot.sound`; this axiom list does not discharge the explicit computational
 premise. The large K61 search refutations are not checked by Lean.

@@ -13,6 +13,7 @@ in [proof.md](../proof.md); the trust boundary is described in
 | Archive extraction and verification | PASS: 455,901 payload files, 2,078,952,544 bytes and recorded C/final evidence relationships; about 213 combined driver/checker CPU seconds | [Archive verification](checks/ARCHIVE_FULL_VERIFICATION_001.json) |
 | A/B/D input reconstruction | PASS: all 56,374 exact formula hashes; 3.70 CPU seconds on extracted evidence | [All A/B/D inputs](checks/ABD_ALL_INPUTS_001.json) |
 | A/B/D file materialization | PASS: 56 representatives covering every distinct prefix/family; all persisted files rehashed | [Materialization check](checks/ABD_MATERIALIZATION_001.json) |
+| Complete A/B/D second-solver rerun | PASS: CaDiCaL 3.0.1 accepted UNSAT for all 56,374 original formulas, matching the original Kissat input identities; zero SAT, UNKNOWN or error results; 246.814166 native solver CPU hours | [Second-solver receipt](checks/ABD_SECOND_SOLVER.json), [checker](../reproduce/abd_second_solver.py) |
 | Independent D base specification | PASS: all 12 owner/component bases through 18 exact-byte comparisons, including all 42 five-row counter blocks; 4.83 CPU seconds. Excludes per-leaf suffixes and finite-cover proofs | [Specification check](checks/D_BASE_CHECK.json), [checker](../reproduce/d_base_check.py) |
 | C input reconstruction | PASS: all 456 exact formula hashes; 0.24 CPU seconds without writing repeated base clauses | [All C inputs](../reproduce/checks/ALL_C_INPUTS_001.json) |
 | Finite G replay | PASS: the 72-state local relation and 3,600 + 10,368 checked contradictions; 2.18 CPU seconds | [Execution receipt](../reproduce/checks/G_REPLAY_001/REPLAY_RECEIPT.json) |
@@ -21,7 +22,10 @@ in [proof.md](../proof.md); the trust boundary is described in
 
 These checks authenticate and reproduce the evidence within their stated
 scope. Input hashes establish formula identity; the native UNSAT records
-supply the search results. Reconstructing a formula does not run its solver.
+supply the search results. All 56,830 main SAT formulas have matching Kissat
+and CaDiCaL UNSAT results; the C reconciliation is included in the original
+archive, and the A/B/D rerun in `archives/abd-cadical.tar.gz`.
+Reconstructing a formula does not run its solver.
 Commands for a fresh search are in [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
 
 ## Lean mathematics and exact input bindings

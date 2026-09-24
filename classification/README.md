@@ -45,12 +45,12 @@ summed module elapsed time**, and at most **14,793,555,968 bytes (13.78 GiB)
 RSS**. Modules were admitted serially, with four Lean threads per module.
 The largest output was a 77,115,296-byte `.olean`.
 
-The [actual-host adapter](adapter/README.md) is checked against this
-classification closure. All seven inspected endpoints use only `propext`, `Classical.choice`
-and `Quot.sound`; no catalogue-completeness premise remains at the K15/K16
-physical-neighborhood endpoints. The adapter preserves both the physical
-vertex map and the single palette permutation. It is checked separately
-from the default `formal/` CI package.
+The [actual-host adapter](adapter/README.md) connects this classification
+closure to the 61-vertex Ramsey proof. All seven inspected endpoints use only
+`propext`, `Classical.choice` and `Quot.sound`; no catalogue-completeness premise
+remains at the K15/K16 physical-neighborhood endpoints. The adapter preserves
+both the physical vertex map and the single palette permutation. It is included
+in the complete portable mathematical build.
 
 [MANIFEST.json](MANIFEST.json) records exact files, hashes, import order and
 source provenance. Build receipts preserve input manifests, commands, compiler

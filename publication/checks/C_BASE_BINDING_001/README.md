@@ -22,18 +22,20 @@ coverage and the additional seed units have their own arguments in
 
 ## Reproduce
 
-Use the pinned Lean environment described in [formal/README.md](../../../formal/README.md)
+Complete the pinned Lean build described in [formal/README.md](../../../formal/README.md)
 and extract the evidence archive following [the reproduction guide](../../REPRODUCIBILITY.md).
 From the repository root, set `snapshot` to that extracted directory and choose
-a fresh output directory:
+a fresh output directory. Set `proof_lib` to the successful build's isolated
+`lib/` directory:
 
 ```sh
 repo_dir="$PWD"
-snapshot="/absolute/path/to/extracted/evidence"
+snapshot="/absolute/path/to/extracted-archive"
+proof_lib="/absolute/path/to/successful/.build/runs/RUN/lib"
 binding_work_dir="$(mktemp -d)"
 cd "$repo_dir/formal"
-lake build Ramsey61
-lake env lean -j1 --run \
+lake env sh -c 'export LEAN_PATH="$1:$LEAN_PATH"; shift; exec "$@"' \
+  sh "$proof_lib" lean -j1 --run \
   "$repo_dir/publication/checks/C_BASE_BINDING_001/EmitBase.lean" \
   "$binding_work_dir/BROAD_BASE_FROM_LEAN.cnf"
 cd "$repo_dir"

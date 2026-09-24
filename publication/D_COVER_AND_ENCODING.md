@@ -433,9 +433,10 @@ no one of the three substitutes for the others.
 ## 7. Trust scope
 
 The [trust statement](TRUST_AND_CERTIFICATION.md) governs the computational
-conclusion. The D exclusions use retained native UNSAT answers and their
-input/result joins. They do not have a complete checked DRAT/LRAT
-certificate collection or an independent second-solver replay. Full per-leaf
+conclusion. The D exclusions have matching native UNSAT answers from Kissat
+and CaDiCaL, joined to their exact input hashes. The complete
+[A/B/D second-solver receipt](checks/ABD_SECOND_SOLVER.json) includes every D
+owner. These native answers remain external computational evidence. Full per-leaf
 D inputs are not archived; retained parent bases, finite data, maps, suffixes
 and runner-recorded input hashes support exact reconstruction.
 Native quiet logs and runner-recorded input hashes retain the limitations

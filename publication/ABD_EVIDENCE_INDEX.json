@@ -1047,9 +1047,14 @@
       "sha256": "4b75d7844af7547d30a1131b9b6af5255f111513e6cdefcbf12c76e87b2b5903"
     },
     {
-      "path": "reproduce/ABD_INPUTS_REVIEW.md",
-      "bytes": 1972,
-      "sha256": "667a13c3719da8aa9f61da61238a692dbfbf4dc67948a5017732b467315ce39b"
+      "path": "publication/checks/ABD_SECOND_SOLVER.json",
+      "bytes": 2396,
+      "sha256": "d3e82e7f31c014a88ffaab2eb8723230409fadaf24feda95cb1389fc39a49168"
+    },
+    {
+      "path": "reproduce/abd_second_solver.py",
+      "bytes": 19811,
+      "sha256": "e77413a95aa6ed0c274b3ead1a712fe003ea34781d5224f5c879009aa5912daa"
     }
   ],
   "identity_check": {
@@ -1066,5 +1071,16 @@
     "D9_T_root4_assignment_orbits": "support/r3333-fable/continuation/locks/duuu/discovery/twisted_root4_orbits.json",
     "D9_T_root12_assignment_orbits": "support/r3333-fable/continuation/locks/duuu/discovery/twisted_root12_orbits.json",
     "D9_finite_permutation_order": "support/workspace/r4333_upper/profile_d_degree9_discovery/strong_case_b2_p15_quotient/lean-permutations.tsv"
+  },
+  "second_solver": {
+    "solver": "CaDiCaL 3.0.1",
+    "formulas": 56374,
+    "UNSAT": 56374,
+    "SAT": 0,
+    "UNKNOWN": 0,
+    "errors": 0,
+    "summary": "publication/checks/ABD_SECOND_SOLVER.json",
+    "archive": "archives/abd-cadical.tar.gz",
+    "check": "reproduce/abd_second_solver.py"
   }
 }

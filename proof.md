@@ -22,8 +22,8 @@ The proof combines combinatorial reductions, exhaustive finite calculations,
 and SAT refutations. The reductions preserve a single hypothetical coloring
 through an exhaustive cover of exact formulas. The retained evidence contains
 the finite tables, their checks, the encoded inputs and the native UNSAT
-results; all 456 formulas in the final family have matching answers from
-Kissat and CaDiCaL. Section 10 describes the formalization and verification
+results; all 56,830 formulas have matching answers from Kissat and CaDiCaL.
+Section 10 describes the formalization and verification
 status separately from the mathematical argument.
 
 We call an edge coloring **good** if it has no monochromatic triangle. We
@@ -47,8 +47,10 @@ produces an exhaustive cover by full-host SAT formulas, whose refutations
 finish the argument.
 
 Bracketed references [E1], [E2], … locate exact archived mathematical and
-computational evidence in Appendix A. The bibliography gives historical sources for the
-smaller-order classifications established in the supplied Lean development.
+computational evidence in Appendix A. The
+[classification provenance](publication/CLASSIFICATION_PROVENANCE.md) records
+the historical attribution of the smaller-order classifications established
+in the supplied Lean development.
 The [verification map](publication/MATHEMATICS.md),
 [A/B/D evidence index](publication/ABD_EVIDENCE_INDEX.md) and
 [dependency ledger](publication/DEPENDENCIES.json) connect the argument to
@@ -402,8 +404,10 @@ uses neither a C exclusion nor a maximum-H choice of root.
 
 The native result inventory [E23], complete evidence join [E24] and UUU
 same-host semantic join [E25] identify the computations used here. All 56,374
-A/B/D inputs have recorded Kissat UNSAT answers; this evidence does not include
-a complete second-solver replay. The reconstruction tools recover each exact
+A/B/D inputs have recorded Kissat UNSAT answers and matching CaDiCaL 3.0.1
+UNSAT answers from the complete
+[second-solver rerun](publication/checks/ABD_SECOND_SOLVER.json).
+The reconstruction tools recover each exact
 formula from the retained bases and finite data. Full per-case A/B/D CNFs
 are not retained in the archive; reconstruction is checked against the input
 SHA-256 recorded by the corresponding solver runner. Section 10 states the
@@ -618,7 +622,7 @@ The complete execution rejected all labels with independently checked
 witnesses: **3164 empty local relations and 436 shared-edge conflicts**.
 These categories record the first witness selected by the checker's scope
 order; their individual counts are not invariants of the configurations.
-The root-kind counts are UU300, UT1500, TU300, TT1500. The
+The root-kind counts are UU: 300, UT: 1,500, TU: 300, TT: 1,500. The
 cover review [E32],
 literal finite contract [E33],
 and terminal acceptance [E34]
@@ -708,7 +712,7 @@ and $`A\cup\{b\}`$ a pentagon for every b in B. The graph on B is a P4;
 each a joins its two endpoints, giving an endpoint four neighbors in A,
 contradicting its degree two in the other pentagon.
 
-Thus only k=0 or 16 remains. At zero, (8) gives J=K. At16, m=0, each
+Thus only k=0 or 16 remains. At zero, (8) gives J=K. At 16, m=0, each
 J-neighborhood's unique K-nonneighbor is its own label, so p=id. The
 rooted pentagon intersection numbers give the following identity, with
 $`\mathbf U`$ denoting the all-one matrix and J the graph:
@@ -770,9 +774,11 @@ These witness categories depend on the scope order; every label has a checked
 contradiction regardless of which conflicting scope is examined first. See the
 finite contract [E37]
 and terminal acceptance [E38].
-Together (7) and (10) therefore exclude all of G at the stated
-hand-plus-finite-computation standard. They do not on their own exclude
-hosts where G fails.
+Together (7) and (10) therefore exclude all of G. The Lean theorem
+[`GComplete.guarded_G_exclusion`](formal/src/PricingIntegration/GComplete.lean)
+checks the structural reductions and finite exclusions without a native SAT
+premise. The argument still requires the guards defining G; the next section
+connects it to every hypothetical good host.
 
 ## 6. A global existence lemma
 
@@ -796,8 +802,8 @@ highness in that edge's color.
 For each color i let $`L_i=\{v:d_i(v)=14\}`$. These are C vertices.
 The color-i graph on $`L_i`$ is 14-regular and has no color-i edge to
 its complement; the latter has degrees 15 or 16. A triangle-free graph
-of minimum degree d has order at least2d: the disjoint neighborhoods
-of the two ends of any edge have at least2d vertices. Thus any proper
+of minimum degree d has order at least 2d: the disjoint neighborhoods
+of the two ends of any edge have at least 2d vertices. Thus any proper
 nonempty $`L_i`$ has size between 28 and 31.
 
 We need the elementary bipartiteness lemma: a triangle-free graph of
@@ -810,41 +816,41 @@ $`l\delta\leq2n`$, contrary to $`\delta\gt2n/5`$.
 
 Both low and high color-i graphs satisfy this strict bound. The
 14-regular low graph has equal bipartition sizes, so $`|L_i|=28`$ or 30.
-The complementary graph has at least15 vertices on each bipartition
-side and, with at most33 vertices, only one nonempty component.
+The complementary graph has at least 15 vertices on each bipartition
+side and, with at most 33 vertices, only one nonempty component.
 
 - If $`|L_i|=30`$, its high complement has sides 15 and 16. Minimum
   degree 15 makes it $`K_{15,16}`$. Exactly the 16 vertices on the
   larger side have color-i degree 15; in the C/E population these are
   precisely all E vertices.
 - If $`|L_i|=28`$, its high complement has 33 vertices. Sides 15+18
-  are impossible: the 18 side requires at least270 edges, while the
- 15 side permits at most240. For sides 16+17, let their E counts be
- $`e_a,e_b`$. Edge balance gives $`256-e_a=272-e_b`$, so the counts
- are (0,16) or(1,17), and the total number of E vertices is16 or 18.
+  are impossible: the 18 side requires at least 270 edges, while the
+  15 side permits at most 240. For sides 16+17, let their E counts be
+  $`e_a,e_b`$. Edge balance gives $`256-e_a=272-e_b`$, so the counts
+  are (0,16) or (1,17), and the total number of E vertices is 16 or 18.
 
 The existence of a proper nonempty low set has therefore forced 16 or 18 E
 vertices. An E vertex lies in no low set, so every other nonempty low set
 is also proper and must have size 28 or 30. This justifies applying those
 two size alternatives simultaneously to all four colors.
 
-Every C belongs to two low sets. If there are18 E vertices, the sum of
-the four low-set sizes is86; no size 30 is possible, and 86 is not a
-multiple of 28. If there are16 E vertices, the sum is90, forcing sizes
+Every C belongs to two low sets. If there are 18 E vertices, the sum of
+the four low-set sizes is 86; no size 30 is possible, and 86 is not a
+multiple of 28. If there are 16 E vertices, the sum is 90, forcing sizes
 30,30,30,0. In each of the first three colors all 16 E vertices are in
 one independent part of $`K_{15,16}`$, so every edge between them has
 the fourth color. That produces a monochromatic triangle. Thus no
 proper nonempty $`L_i`$ exists.
 
 If all $`L_i`$ are empty, every vertex is E; a color graph would be
-15-regular on61 vertices, contradicting the handshake lemma. Otherwise
+15-regular on 61 vertices, contradicting the handshake lemma. Otherwise
 one $`L_i`$ is the whole vertex set, so all vertices are C. As every
 low set is empty or full, they all share one pair of low colors and
 one pair of high colors. At any root, the attaching degree-16
 neighborhood of $`x\in X`$ in color 0 is the root plus intersections
 with Y and the two low cells. Each intersection has size at most five;
 all three must be five. Symmetrically all other fibers in G are five,
-and all opposite degrees are16. This is exactly G, already excluded.
+and all opposite degrees are 16. This is exactly G, already excluded.
 The contradiction proves the lemma.
 
 The bridge [E39] and
@@ -856,7 +862,7 @@ as constraints into the formulas searched after an entrance exists.
 ## 7. Three actual neighborhoods at the remaining root
 
 Normalize the lemma's root to $`X=N_0(r),Y=N_1(r),P=N_2(r),Q=N_3(r)`$,
-of sizes16,16,14,14, and put p in P by a single global low-color swap.
+of sizes 16,16,14,14, and put p in P by a single global low-color swap.
 Let $`S=N_2(p)`$. It contains r, meets neither P nor p, and decomposes
 as
 
@@ -867,7 +873,7 @@ S=\{r\}\mathbin{\dot\cup}A\mathbin{\dot\cup}B
 ```
 
 Each intersection is a good two-colored clique of size at most five.
-Since p is high, S has order 15 or 16. The sizes are555 or a permutation
+Since p is high, S has order 15 or 16. The sizes are 555 or a permutation
 of 455. If A is short, globally swap the equal high colors and X,Y.
 The remaining shapes are **555,554,545**.
 
@@ -878,10 +884,10 @@ positions of the indicated short B or D cell.
 
 In X, A is independent in actual color 2, hence a Clebsch neighborhood.
 In S, it is the actual color 0 neighborhood of r. The same A cycle uses
-actual colors1 and 3 in both. Choose its physical colored-cycle labeling
+actual colors 1 and 3 in both. Choose its physical colored-cycle labeling
 once and use it for both coordinate systems. Their six anchored states
 are subjected to the **same** order-ten dihedral action. There are six
-pair orbits, of sizes1,5,5,5,10,10. Every omitted-position choice is
+pair orbits, of sizes 1,5,5,5,10,10. Every omitted-position choice is
 retained *after* taking that simultaneous quotient.
 
 The complete Y template must then be bound to the actual B:
@@ -962,7 +968,7 @@ T(i,k)\leftrightarrow T(i-1,k)\lor(b_i\land T(i-1,k-1))
 with its true k=0 and false i=0,k>0 boundaries. This assignment satisfies
 all degree, H and retained fiber definitions for any actual coloring.
 The per-incidence high bit selects the *neighbor's* degree in the
-actual joining color. The H counters stop at threshold48, which does
+actual joining color. The H counters stop at threshold 48, which does
 not cap H: a larger value makes every retained threshold true.
 
 These constraints enforce degree≤16, all 35 exact profile choices,
@@ -1031,7 +1037,7 @@ independent audit and fresh solver runs.
 | Critical K15/K16 structure | Local Lean completeness proofs, explicit templates, 55 small CNF/LRAT pairs and an actual-host adapter consumed by the reduction |
 | Finite G exclusions | Kernel-checked structural and finite-cover arguments; independent reconstruction of the 3,600 and 10,368 compatibility checks |
 | Exact SAT input binding | Complete Lean-emitted formula comparisons with retained or reconstructed DIMACS headers, ordered clauses and signed suffixes, plus runner-recorded formula hashes |
-| SAT computation | Exhaustive case censuses and native UNSAT records; A/B/D use the retained Kissat runs, and Kissat and CaDiCaL agree on every final C formula |
+| SAT computation | Exhaustive case censuses and matching Kissat/CaDiCaL UNSAT records for every one of the 56,830 formulas |
 
 ### The formal theorem and its computational premise
 
@@ -1056,7 +1062,9 @@ comparisons also use external verification tools, described in
 [the formula-binding guide](formal/reproduce/README.md). Many retained native
 logs contain only the quiet-mode UNSAT status; commands, input hashes and
 resource records are supplied by the runners. All original inputs are
-reproducible, and [E50] records their final input/result accounting.
+reproducible, and [E50] records the original input/result accounting. The
+[A/B/D second-solver receipt](publication/checks/ABD_SECOND_SOLVER.json)
+records the complete CaDiCaL rerun, with no SAT, UNKNOWN or error results.
 
 The [complete portable source build](formal/BUILD_RESULT.json) compiled all
 1,809 modules from a fresh checkout, including all 32 classification modules

@@ -1,14 +1,24 @@
 # Reproduce the 456 C input identities
 
-`Emit.lean` emits the exact signed unit suffixes from `Ramsey61.CConcreteFamily.seedLiterals`. Use the pinned Lean environment and prepend the completed mathematical build's `lib/` directory to `LEAN_PATH`, as described in the package's build/reproduction instructions. The output directory's parent must exist; the emitter atomically creates the fresh output directory and refuses an existing one.
+`Emit.lean` emits the exact signed unit suffixes from `Ramsey61.CConcreteFamily.seedLiterals`. Complete the mathematical build using [BUILD.md](../../BUILD.md), then run the following commands from the repository root. Set `proof_lib` to that successful build's isolated `lib/` directory and `archive_dir` to the extracted archive root containing `evidence/`. The temporary workspace supplies the existing parent directory required by the emitter; both output directories must be fresh.
 
 ```sh
-lean -j1 --run Emit.lean /absolute/path/to/fresh-c-suffixes
-python3 verify.py \
-  --archive-dir /absolute/path/to/extracted-evidence-archive \
-  --emission-dir /absolute/path/to/fresh-c-suffixes \
-  --base-file /absolute/path/to/extracted-evidence-archive/evidence/c_campaign/inputs/BROAD_BASE_001.cnf \
-  --output-dir /absolute/path/to/fresh-c-verification
+cd formal
+proof_lib="/absolute/path/to/successful/.build/runs/RUN/lib"
+archive_dir="/absolute/path/to/extracted-archive"
+work_dir="$(mktemp -d)"
+
+in_proof_env() {
+  lake env sh -c 'export LEAN_PATH="$1:$LEAN_PATH"; shift; exec "$@"' \
+    sh "$proof_lib" "$@"
+}
+
+in_proof_env lean -j1 --run reproduce/c/Emit.lean "$work_dir/c-suffixes"
+python3 -I -B reproduce/c/verify.py \
+  --archive-dir "$archive_dir" \
+  --emission-dir "$work_dir/c-suffixes" \
+  --base-file "$archive_dir/evidence/c_campaign/inputs/BROAD_BASE_001.cnf" \
+  --output-dir "$work_dir/c-check"
 ```
 
 `--archive-dir` accepts either the archive root containing `evidence/` or that `evidence/` directory itself. All other file arguments are explicit. The verifier rejects Python optimization (`-O`), missing or extra suffix files, modified pinned evidence, changed literal signs/order, and inconsistent complete formula hashes, byte counts or clause counts.

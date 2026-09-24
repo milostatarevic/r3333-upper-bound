@@ -1062,8 +1062,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4867,
-      "sha256": "1e12f87a70b19bcf643a93d0a0e78396e164115e0d4a85cfa6c0fa214852bbdd",
+      "bytes": 4883,
+      "sha256": "4f537f72bf07733fcc5339ebe42b664aadbf900d794d5532cbe127642e7d9d50",
       "kind": "new_package_documentation"
     },
     {
@@ -1075,8 +1075,8 @@
     {
       "path": "adapter/README.md",
       "kind": "documentation",
-      "bytes": 2431,
-      "sha256": "c00405f3b3024e7d37e6be2ec2dd437e351ba60f131c38c42c038282a630703b"
+      "bytes": 1843,
+      "sha256": "922485db697708ea80e1244cae93a34e029f90bacc11d2f68368c0ec8729836c"
     },
     {
       "path": "adapter/RELOCATION.json",

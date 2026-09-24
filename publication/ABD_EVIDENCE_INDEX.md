@@ -7,7 +7,7 @@ The [machine-readable index](ABD_EVIDENCE_INDEX.json) gives exact byte sizes
 and SHA256 hashes for all 85 indexed snapshot files, including every shared
 prefix and the UUU/UUT sparse bases and dense maps.
 
-Paths beginning `evidence/` or `support/` below are relative to the
+Code-formatted paths beginning `evidence/` or `support/` below are relative to the
 authenticated extracted `archives/evidence-v1.tar.gz` snapshot. They are
 archive locators, not links to files in a clean checkout. Follow the
 [extraction instructions](REPRODUCIBILITY.md) first. The archive SHA256 is
@@ -131,13 +131,21 @@ reconstructed formulas to their authenticated UNSAT records and logs, including
 mixed-D predecessor adoptions and the UUT pilot. It checks recorded evidence
 without rerunning a solver.
 
+The original formulas have also been rerun with CaDiCaL 3.0.1. The
+[second-solver receipt](checks/ABD_SECOND_SOLVER.json) records **56,374
+accepted UNSAT results**, with zero SAT, UNKNOWN or error results. The
+compressed records in `archives/abd-cadical.tar.gz` and
+[portable checker](../reproduce/abd_second_solver.py) bind those results to
+the original family/case census and exact input hashes. This adds a second
+native answer for every original A/B/D formula; it introduces no new cases.
+
 All 85 indexed files were rehashed and matched to the authenticated archive
 manifest records, and the seven input manifests' case counts were checked.
 That index check performs no finite mathematical search, solver execution,
-certificate replay or Lean build. The proof uses the recorded native Kissat
-answers for A/B/D; these formulas have no checked refutation certificates or
-complete second-solver replay. The [dependency ledger](DEPENDENCIES.json)
-links the corresponding native acceptance records. The
+certificate replay or Lean build. The proof uses matching native Kissat and
+CaDiCaL answers for A/B/D; the large refutations remain external computational
+evidence. The [dependency ledger](DEPENDENCIES.json) links the corresponding
+native acceptance records. The
 [Lean theorem](../formal/src/PricingIntegration/NativeWholeProof.lean) proves the
 complete mathematical reduction under `AllNativeUnsat`; the
 [formula-binding tools](../formal/reproduce/README.md) compare all 55,016

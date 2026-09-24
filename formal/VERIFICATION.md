@@ -39,8 +39,10 @@ trust boundary.
 The [joined input-binding record](checks/joined_bindings/RUN_RESULT.json)
 separately connects the Lean-defined formulas to the native input identities.
 That check was not rerun as part of the portable compilation. The native
-UNSAT evidence is retained in this repository's
-[search archive](../publication/REPRODUCIBILITY.md).
+UNSAT evidence and second-solver cross-checks are described in this repository's
+[search reproduction guide](../publication/REPRODUCIBILITY.md). All 56,374 A/B/D
+inputs and all 456 C inputs have UNSAT results from both solvers. These results
+support `AllNativeUnsat`; their large refutations are not checked inside Lean.
 
 [BUILD.md](BUILD.md) gives the reproduction commands.
 [MEASUREMENTS.md](MEASUREMENTS.md) reports CPU time, memory and storage.

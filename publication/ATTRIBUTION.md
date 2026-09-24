@@ -18,9 +18,10 @@ sessions and checking programs. The work
 of these systems is acknowledged as assistance, not attributed as human
 coauthorship.
 
-**The human author has not independently verified the complete proof.**
-Formal and computational checks are recorded with their exact scopes in the
-repository. Independent human mathematical verification remains to be done.
+The mathematical reductions are verified in Lean, and every required SAT
+instance has matching UNSAT results from Kissat and CaDiCaL. These checks are
+recorded with their exact scopes in the repository. The work has not yet
+undergone independent human review.
 
 The author takes responsibility for the claimed result, the mathematical
 account, the computational artifacts, the description of the verification

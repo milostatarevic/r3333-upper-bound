@@ -16,8 +16,9 @@ The research was heavily assisted by AI. GPT 5.6 in Codex's ultra mode and
 Fable 5 in Claude Code's ultracode mode produced the initial A/B/D closures.
 GPT-6 Pro sessions contributed successive mathematical proposals and analyses.
 GPT-6 Astra in Codex's ultra mode developed the final C-profile solution.
-The human author has not independently verified the complete proof; [the attribution statement](publication/ATTRIBUTION.md) explains the
-roles and responsibility.
+The work has not yet undergone independent human review;
+[the attribution statement](publication/ATTRIBUTION.md) explains the formal
+and computational checks, roles and responsibility.
 
 ## The problem and the earlier bound
 
@@ -243,10 +244,20 @@ continuations:
 | C phase | Solver CPU hours |
 | --- | ---: |
 | Kissat | 1.5417 |
-| Independent solver replay, including its capped attempts | 1.2624 |
-| First continuation of the 13 unresolved replay cases | 1.1326 |
-| Second continuation of the 4 remaining replay cases | 0.7402 |
+| CaDiCaL replay, including its capped attempts | 1.2624 |
+| CaDiCaL continuation of the 13 unresolved replay cases | 1.1326 |
+| Seed-varied CaDiCaL continuation of the 4 remaining replay cases | 0.7402 |
 | **All four phases** | **4.6769** |
+
+The original A/B/D formulas also received a complete second-solver rerun
+with CaDiCaL 3.0.1. All **56,374** returned accepted UNSAT results, with
+zero SAT, UNKNOWN or error results, using **888,530.997869 solver CPU seconds**
+(**246.814166 CPU hours**). The run spanned **37h18m30s** from September 22
+to September 24, 2026. Elapsed time measures the interval from launch to the
+last solver finish; CPU time sums work across the parallel solver processes.
+The [acceptance receipt](publication/checks/ABD_SECOND_SOLVER.json) binds the
+rerun to the original case census and formula identities. Together, the
+A/B/D and C checks provide Kissat/CaDiCaL agreement on all 56,830 formulas.
 
 Separately, a fresh replay of the 13,968 finite G checks took **2.178 CPU
 seconds**. This is the cost of checking their local compatibility witnesses,

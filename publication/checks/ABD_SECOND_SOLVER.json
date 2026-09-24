@@ -1,0 +1,91 @@
+{
+  "schema": "RAMSEY_ABD_SECOND_SOLVER_SUMMARY_1",
+  "status": "ALL_UNSAT",
+  "cases": 56374,
+  "UNSAT": 56374,
+  "SAT": 0,
+  "UNKNOWN": 0,
+  "errors": 0,
+  "solver": {
+    "name": "CaDiCaL",
+    "version": "3.0.1",
+    "bytes": 1250184,
+    "sha256": "601c9fa8ba5d09fd81bb00c89b3e54832f138bccc3422bd8652e8cda4d74d1fa",
+    "arguments": [
+      "--seed=0",
+      "/dev/fd/4"
+    ],
+    "proof_logging": false
+  },
+  "archive": {
+    "path": "archives/abd-cadical.tar.gz",
+    "bytes": 246051484,
+    "sha256": "3d41a4f6ad761c52cd1538f6f50f6a539995fa35d7bdbf29e37232e901fa3a0e"
+  },
+  "manifest": {
+    "path": "manifest.json",
+    "bytes": 1090,
+    "sha256": "5d87c5f285e2d22f37337d0914877466cfe656d7ee94169bfceaaf2fc1e68515"
+  },
+  "records": {
+    "path": "results.jsonl",
+    "bytes": 60493945,
+    "sha256": "76b8c3715b752bc0f3d9399b5de1238e41d1c3e2b710ed7d7793bae85045c963"
+  },
+  "families": {
+    "A": {
+      "cases": 360,
+      "UNSAT": 360,
+      "native_CPU_seconds": 3733.752746
+    },
+    "B": {
+      "cases": 5096,
+      "UNSAT": 5096,
+      "native_CPU_seconds": 87605.22521
+    },
+    "D_UUU": {
+      "cases": 679,
+      "UNSAT": 679,
+      "native_CPU_seconds": 8433.517696
+    },
+    "D_UUT": {
+      "cases": 679,
+      "UNSAT": 679,
+      "native_CPU_seconds": 8522.288421
+    },
+    "D_UTU": {
+      "cases": 6576,
+      "UNSAT": 6576,
+      "native_CPU_seconds": 87440.55685
+    },
+    "D_UTT": {
+      "cases": 6576,
+      "UNSAT": 6576,
+      "native_CPU_seconds": 91228.584092
+    },
+    "D_TTU": {
+      "cases": 18204,
+      "UNSAT": 18204,
+      "native_CPU_seconds": 296812.862978
+    },
+    "D_TTT": {
+      "cases": 18204,
+      "UNSAT": 18204,
+      "native_CPU_seconds": 304754.209876
+    }
+  },
+  "measurements": {
+    "native_CPU_seconds": 888530.997869,
+    "worker_CPU_seconds": 7793.765149,
+    "controller_CPU_seconds": 8720.768006,
+    "monitor_helper_CPU_seconds": 922.2828050108711,
+    "started_utc": "2026-09-22T18:31:14.840163+00:00",
+    "finished_utc": "2026-09-24T07:49:45.171816+00:00",
+    "elapsed_seconds": 134310.33165287971,
+    "maximum_workers": 8,
+    "peak_single_solver_RSS_bytes": 319078400,
+    "longest_solver_CPU_seconds": 1016.179288,
+    "raw_log_bytes": 1335500728
+  },
+  "scope": "Exact original A/B/D formulas, independently solved with CaDiCaL; raw logs retained. Native UNSAT evidence, without refutation certificates."
+}

@@ -9,6 +9,7 @@ test-ci:
 	$(PYTHON) reproduce/test_verify.py
 	$(PYTHON) reproduce/test_abd_inputs.py
 	$(PYTHON) reproduce/test_abd_native.py
+	$(PYTHON) reproduce/test_abd_second_solver.py
 
 lean-ci:
 	$(PYTHON) scripts/lean_ci.py

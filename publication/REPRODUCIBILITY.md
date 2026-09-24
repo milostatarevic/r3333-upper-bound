@@ -8,14 +8,17 @@ Lean build uses Python 3.10 or newer and the pinned toolchain described in
 [formal/BUILD.md](../formal/BUILD.md).
 
 The proof uses **56,830 distinct SAT formulas**: 56,374 in the A/B/D families
-and 456 full-host C formulas. The C results were checked with both Kissat and
-CaDiCaL. Another 13,968 G configurations are excluded by direct finite checks.
+and 456 full-host C formulas. Every formula has matching UNSAT answers from
+Kissat and CaDiCaL. Another 13,968 G configurations are excluded by direct finite checks.
 [Measured search costs](MEASURED_COSTS.md) give detailed search and
 verification phase accounting.
 
 ## 1. Obtain and authenticate the evidence
 
-Fetch `archives/evidence-v1.tar.gz` with Git LFS, or provide an offline copy.
+Fetch `archives/evidence-v1.tar.gz` and `archives/abd-cadical.tar.gz` with
+Git LFS, or provide offline copies. The first archive contains the original
+proof evidence, including both C solvers; the second contains the complete
+A/B/D CaDiCaL cross-check. Their hashes are listed in `archives/SHA256SUMS`.
 The verifier detects an unexpanded LFS pointer and performs no download.
 
 ```sh
@@ -168,6 +171,29 @@ The receipt must be a new file outside the authenticated snapshot. The
 checker verifies recorded evidence; it does not establish solver correctness
 or replace a fresh SAT run.
 
+### Check the second solver on every A/B/D formula
+
+```sh
+python3 -B reproduce/abd_second_solver.py \
+  --snapshot "$proof_work_dir/snapshot" \
+  --receipt "$proof_work_dir/abd-second-solver.json"
+```
+
+For an offline archive, add `--archive /path/to/abd-cadical.tar.gz`. This
+checker authenticates the supplemental archive against the
+[published summary](checks/ABD_SECOND_SOLVER.json), streams all 56,374
+records and raw logs without extracting them, and reconstructs each required
+formula from the original snapshot. It checks the complete case census,
+input hashes before and after solving, recorded solver identity, log hashes,
+parsed formula dimensions, UNSAT status, exit code 20 and CPU accounting.
+Missing, duplicate or extra cases and archive members are rejected.
+
+The two A/B/D commands have complementary roles: `abd_native.py` checks the
+original Kissat evidence, while `abd_second_solver.py` checks the CaDiCaL
+evidence for exactly the same required formulas. Neither command launches a
+solver or writes complete CNFs. The second-solver archive contains native
+execution evidence, not refutation certificates.
+
 ### Check the D base specification independently
 
 The following checker re-emits the clause specification in
@@ -241,9 +267,11 @@ CaDiCaL 3.0.1. A build for another platform can have a different binary hash;
 record its identity with the new results.
 
 To repeat all required SAT computations, enumerate every ID in the eight
-A/B/D families and all 456 C IDs. Run both solvers for C to reproduce its
-two-solver check. The total is 56,830 distinct formulas; the second solver
-for C adds runs, not new formulas. The separate G computations are covered
+A/B/D families and all 456 C IDs. Run both solvers on each formula to reproduce
+the complete two-solver check. The total is 56,830 distinct formulas and
+113,660 successful solver results; a second solver adds runs, not new
+formulas. Recorded C retries contribute additional measured work, as explained
+in [the cost table](MEASURED_COSTS.md). The separate G computations are covered
 by Section 5.
 
 ## 7. Build the Lean mathematical reduction
@@ -344,6 +372,8 @@ unsafe archive paths, invalid units, corrupt suffixes and incorrect outputs:
 ```sh
 python3 -B reproduce/test_verify.py
 python3 -B reproduce/test_abd_inputs.py
+python3 -B reproduce/test_abd_native.py
+python3 -B reproduce/test_abd_second_solver.py
 ```
 
 They create temporary fixtures and do not alter the evidence or run a search.

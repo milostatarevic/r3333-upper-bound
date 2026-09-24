@@ -49,6 +49,11 @@ the Lean proof. The main theorem does not kernel-check the large SAT
 refutations. The 55 smaller classification CNF/LRAT pairs have their own
 kernel-checked role.
 
+Every formula has matching UNSAT answers from Kissat and CaDiCaL. The
+[A/B/D second-solver receipt](checks/ABD_SECOND_SOLVER.json) covers all 56,374
+original A/B/D cases; the original archive retains the corresponding
+two-solver reconciliation for all 456 C cases.
+
 For A/B/D, the [evidence index](ABD_EVIDENCE_INDEX.md) identifies the finite
 data, complete censuses, formula assets and native results. For C and G,
 [Appendix A](../proof.md#appendix-a-portable-evidence-locators) locates the

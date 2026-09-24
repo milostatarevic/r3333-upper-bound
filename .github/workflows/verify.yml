@@ -37,6 +37,8 @@ jobs:
                     'publication/checks/ACCEPTED_MATH_MANIFEST.sha256',
                     'formal/BUILD_RESULT.json',
                     'reproduce/abd_native.py', 'reproduce/test_abd_native.py',
+                    'reproduce/abd_second_solver.py', 'reproduce/test_abd_second_solver.py',
+                    'publication/checks/ABD_SECOND_SOLVER.json',
                     'scripts/lean_ci.py', 'scripts/check_lean_sources.py',
                     'scripts/test_lean_audits.py',
                     'Makefile', '.github/workflows/verify.yml')]
