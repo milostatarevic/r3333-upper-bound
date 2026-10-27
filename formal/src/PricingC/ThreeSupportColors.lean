@@ -1,7 +1,7 @@
 import PricingC.ThreeSupportFrame
 namespace PricingC.ThreeSupportFrame
 open Ramsey61 Ramsey61.CEncodingCore
-open PricingABD.P15PhysicalRooted (threeIndex)
+open UniformK61.PhysicalHelpers (threeIndex)
 open PricingC.Rooted45Orientation (Cycle)
 
 def group {nf nl nr:Nat} (i:Fin (order nf nl nr)):Fin 3:=

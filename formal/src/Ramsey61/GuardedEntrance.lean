@@ -1,4 +1,4 @@
-import Ramsey61.UniformCases
+import Ramsey61.Uniform
 
 namespace Ramsey61
 open Finset

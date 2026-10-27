@@ -1,3 +1,0 @@
-'PricingIntegration.SeedCensus.states_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingIntegration.SeedCensus.s_map_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingIntegration.SeedCensus.anchor_source_colors' depends on axioms: [propext, Classical.choice, Quot.sound]

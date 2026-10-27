@@ -1,114 +1,37 @@
 # Verification method
 
-We give a computer-assisted proof of R(3,3,3,3) ≤ 61. The release consists of
-the complete written argument, Lean mathematical reduction, exhaustive case
-covers, exact formula reconstruction, native solver results and reproducible
-finite checks. These are the mathematical and computational basis of the
-claimed bound.
+We give a computer-assisted proof of R(3,3,3,3) ≤ 61. Its mathematical reduction is formalized in Lean. The exhaustive native SAT exclusions are confirmed by two solvers, with exact input identities linking those searches to the formal formulas.
 
-## The verification standard used here
+## The proof boundary
 
-The written proof and the Lean development establish that any counterexample
-gives a satisfying assignment to one of the searched formulas. The formal
-reduction includes the exhaustive covers and the 13,968 finite compatibility
-exclusions used for the separate guarded branch. The computation supplies
-native UNSAT results for all **56,830 SAT formulas**.
+[`UniformK61.WholeProof.ramsey61`](../formal/src/UniformK61/WholeProof.lean) takes the single premise `AllNativeUnsat`: all **56,723 concrete formulas** in its finite case type are unsatisfiable. Classification completeness, case coverage, physical transport and encoding soundness are proved within the development. Any good coloring of K61 supplies a satisfying assignment to at least one of those formulas.
 
-The main theorem,
-[`NativeWholeProof.ramsey61`](../formal/src/PricingIntegration/NativeWholeProof.lean),
-takes only `AllNativeUnsat`, which asserts unsatisfiability of its concrete
-finite CNF family. All physical extraction, coverage, transport and encoding
-implications are proved within the mathematical development.
-
-The computational conclusion uses explicit trust in native solver answers.
-Kissat and CaDiCaL agree on all **56,830 formulas**: the **56,374 A/B/D**
-inputs and **456 full-host C** inputs. The complete A/B/D rerun used
-CaDiCaL 3.0.1 and produced accepted UNSAT results for every required case,
-with no SAT, UNKNOWN or error results. Its
-[acceptance receipt](checks/ABD_SECOND_SOLVER.json) and
-[checker](../reproduce/abd_second_solver.py) accompany the compressed evidence
-in `archives/abd-cadical.tar.gz`. Input reconstruction and native-result
-accounting connect each required formula's SHA-256 to its runner-recorded
-input hash and UNSAT result.
+The case type consists of 56,374 A/B/D formulas, 346 direct C entrance formulas and three globally balanced formulas. Every formula contains the same full K61 physical base. The marked cases add signed physical facts. Their normalized support-and-word configurations cover every actual supplied mark, and a finite whole-host transport check connects each configuration to a retained case. The balanced cases also encode support choices and the visible parts of actual critical neighborhoods, with proved auxiliary witnesses.
 
 The verification boundary has three parts:
 
-- **The mathematical statement and Lean kernel:** the definitions describe
-  the physical coloring problem, and the kernel checks the reduction and
-  finite mathematical exclusions.
-- **Formula binding and evidence accounting:** external tools compare the
-  complete Lean-emitted formulas with retained or reconstructed DIMACS bytes.
-  Native-result accounting then joins the formula hashes to the required case
-  census and the runner-recorded input hashes and UNSAT results.
-- **The native searches:** each solver's UNSAT result is accepted as the
-  exclusion of its exact formula. The large K61 refutations are not
-  kernel-checked certificates.
+- **The mathematical statement and Lean kernel.** The definitions describe the physical coloring problem. Lean checks the reductions, finite mathematical covers and satisfiability implications.
+- **Formula binding and result accounting.** External tools compare complete Lean-emitted formulas with the native input catalogue, then join their hashes to the required case census and recorded solver inputs and results.
+- **Native UNSAT answers.** Each solver's answer excludes its exact input formula. The large K61 refutations are not kernel-checked certificates.
 
-Hashes establish file identity. The byte-binding tools and the native answers
-supply evidence for the theorem's explicit computational premise; they are
-not replaced by its axiom audit. The
-[reproduction guide](REPRODUCIBILITY.md), [Lean build guide](../formal/BUILD.md)
-and [formula-binding guide](../formal/reproduce/README.md) give the separate
-verification commands.
+Kissat 4.0.4 and CaDiCaL 3.0.1 agree on every required formula, giving 113,446 UNSAT results. Both run with default options and no CPU or wall-time limit. The complete accounting has no SAT, UNKNOWN, error or missing result. Two-solver agreement corroborates the computation; it does not remove the explicit computational premise from the Lean theorem.
 
-## Comparison with the earlier bound
+Hashes establish file identity. A theorem's standard-axiom audit does not prove the external byte comparisons or a native solver answer. The [reproduction guide](REPRODUCIBILITY.md), [Lean build guide](../formal/BUILD.md) and [binding guide](../formal/reproduce/uniform/README.md) give the distinct checks.
 
-Fettes, Kramer and Radziszowski present a mathematical reduction and exhaustive
-computations in their [2004 paper, §§5–6](https://combinatorialpress.com/article/ars/Volume%20072/volume-72-paper-5.pdf).
-They report that the first and third authors independently obtained and compared
-all computational results in §5, with no discrepancies. Their final exclusion
-was obtained by both programs. This is a relevant precedent for a computational
-proof supported by explicit algorithms.
+## Classification certificates and mathematical coverage
 
-The present repository uses SAT encodings with Kissat/CaDiCaL agreement on
-every formula in the complete A/B/D and C case cover. The Lean development
-checks the mathematical reduction; the two native solvers corroborate the
-computational exclusions. This provides two-solver coverage of the main SAT
-computation while retaining the explicit `AllNativeUnsat` premise.
+The K15/K16 classification has its own local completeness proofs and **55 small CNF/LRAT pairs** checked by Lean. These establish that every relevant critical neighborhood is represented by the literal templates. They are separate from the native K61 case exclusions. [Classification provenance](CLASSIFICATION_PROVENANCE.md) identifies their sources and checking method.
 
-## Formal mathematics and exact input identities
+The [source manifest](../formal/SOURCE_MANIFEST.json) fixes the complete mathematical source closure. The [formalization scope](FORMALIZATION_STATUS.md) states the exact endpoint and how the physical covers and auxiliary witnesses are supplied. All actual vertices and overlapping neighborhoods refer to one coloring, with one global color palette.
 
-The [`formal/` package](../formal/README.md) supplies the complete mathematical
-source closure. Its final case type contains 55,016 common A/B/mixed-D
-formulas, 1,358 UUU/UUT formulas and 456 C formulas. The total of 56,830 is
-proved by [NativeWholeCount](../formal/src/PricingIntegration/NativeWholeCount.lean).
-[FORMALIZATION_STATUS.md](FORMALIZATION_STATUS.md) gives the theorem interface
-and the implementation of each reduction.
+The [release checks](RELEASE_CHECKS.md) distinguish the complete source build, final theorem audit, full input binding and native result reconciliation. The compact CI target checks source/data integrity and physical-base foundations; it is not a substitute for those complete checks.
 
-The source closure includes the project's K15/K16 classification proofs and
-55 small CNF/LRAT pairs. Those certificates establish completeness of the
-critical-neighborhood catalogues. The
-[complete portable build](../formal/BUILD_RESULT.json) compiled all 1,809 modules,
-including the 32 classification modules, and replayed the supplied traces.
-It used a fresh checkout, pinned dependencies and its own project outputs;
-no prior project artifacts were reused.
-[Classification provenance](CLASSIFICATION_PROVENANCE.md) identifies the
-classification sources, payloads and checks.
+## Relation to the earlier bound
 
-Complete input comparisons cover every formula in the final case type,
-including the deterministic bases and each ordered signed suffix. Their
-scope is exact byte identity with the retained or reconstructed formulas,
-established by the external tools in
-[formal/reproduce/](../formal/reproduce/README.md). Full per-case A/B/D CNFs
-are not archived: their retained bases and suffix data reconstruct formulas
-whose SHA-256 values match the solver runners' recorded input hashes.
-Native-result accounting checks those hashes against the accepted results.
-This is distinct from a kernel-checked DIMACS parser or a checked refutation
-of each large formula.
+Fettes, Kramer and Radziszowski combine mathematical reductions and exhaustive computations in their [2004 paper, §§5–6](https://combinatorialpress.com/article/ars/Volume%20072/volume-72-paper-5.pdf). Their use of independently compared computations is a relevant precedent for an explicit computational proof.
 
-The compact CI job checks manifested mathematical-source and data integrity and the five-module
-physical-coloring target. The complete mathematical build and its theorem
-and axiom audit have separate records in [RELEASE_CHECKS.md](RELEASE_CHECKS.md).
+Here the mathematical reduction is also checked in Lean, while the main computational exclusions remain native SAT results. The repository states these mechanisms directly rather than treating different forms of verification as interchangeable.
 
 ## Costs and responsibility
 
-Native search timings and their accounting boundaries are in
-[the cost table](MEASURED_COSTS.md). Reproduction and formal
-check receipts are listed in [RELEASE_CHECKS.md](RELEASE_CHECKS.md).
-
-The mathematical reductions are verified in Lean, and every required SAT
-instance has matching UNSAT results from Kissat and CaDiCaL. The work was
-developed with extensive AI assistance and has not yet undergone independent
-human review. The author takes responsibility for the result, its evidence
-and corrections; see
-[ATTRIBUTION.md](ATTRIBUTION.md).
+The [cost table](MEASURED_COSTS.md) gives the measured search workload and its accounting scope. The author takes responsibility for the mathematical account, evidence and corrections. The work was developed with extensive AI assistance and has not yet undergone independent human review; [attribution](ATTRIBUTION.md) records that context.

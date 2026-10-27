@@ -1,19 +1,21 @@
 {
-  "schema": "RAMSEY61_ABD_EVIDENCE_INDEX_1",
-  "path_base": "authenticated_extracted_evidence_snapshot_root",
-  "scope": "Exact manifests, finite tables and input assets for the 56,374 A/B/D formulas used by proof.md Section 3.",
+  "schema": "RAMSEY61_ABD_EVIDENCE_INDEX_3",
+  "path_base": "authenticated_extracted_finite_source_archive_root",
+  "scope": "Finite supports, words and case facts for the 56,374 current A/B/D full-K61 formulas.",
   "archive": {
     "bytes": 375104364,
     "sha256": "2b85cac94df0317a532aa823cfea93ac83738093fc854805896943f90d468757"
   },
   "archive_manifest_index_sha256": "0371c357740e6cce262a055d3f998637f8f218f1d492864be2fcff78e46b222e",
   "formula_count": 56374,
+  "complete_current_case_count": 56723,
   "families": [
     {
       "family": "A",
       "formula_count": 360,
-      "manifest": "evidence/A/full_inputs_000/MANIFEST.json",
-      "input_assets": [
+      "case_data_manifest": "evidence/A/full_inputs_000/MANIFEST.json",
+      "finite_census": "evidence/A/SELECTED_A_VERIFIED_CENSUS_000.json",
+      "retained_source_assets": [
         {
           "prefix_key": "A_TTT/D10",
           "path": "evidence/A/full_inputs_000/prefixes/TTT_D10.prefix.cnf"
@@ -62,14 +64,14 @@
           "prefix_key": "A_UUU/P15",
           "path": "evidence/A/full_inputs_000/prefixes/UUU_P15.prefix.cnf"
         }
-      ],
-      "finite_census": "evidence/A/SELECTED_A_VERIFIED_CENSUS_000.json"
+      ]
     },
     {
       "family": "B",
       "formula_count": 5096,
-      "manifest": "evidence/B/full_inputs_000/MANIFEST.json",
-      "input_assets": [
+      "case_data_manifest": "evidence/B/full_inputs_000/MANIFEST.json",
+      "finite_census": "evidence/B/SELECTED_B_VERIFIED_CENSUS_000.json",
+      "retained_source_assets": [
         {
           "prefix_key": "B_TTT/D10",
           "path": "evidence/B/full_inputs_000/prefixes/TTT_D10.prefix.cnf"
@@ -142,84 +144,24 @@
           "prefix_key": "B_UUU/P15",
           "path": "evidence/B/full_inputs_000/prefixes/UUU_P15.prefix.cnf"
         }
-      ],
-      "finite_census": "evidence/B/SELECTED_B_VERIFIED_CENSUS_000.json"
+      ]
     },
     {
       "family": "D_UUU",
       "formula_count": 679,
-      "manifest": "evidence/D/UUT/full_inputs_000/MANIFEST.json",
-      "input_assets": [
-        {
-          "component": "five",
-          "kind": "dense_map",
-          "path": "evidence/D/UUT/full_inputs_000/bases/five.dense_map.json"
-        },
-        {
-          "component": "five",
-          "kind": "sparse_base",
-          "path": "support/workspace/r4333_upper/profile_d_degree9_discovery/strong_case_b2_p15_quotient/base.cnf"
-        },
-        {
-          "component": "four",
-          "kind": "dense_map",
-          "path": "evidence/D/UUT/full_inputs_000/bases/four.dense_map.json"
-        },
-        {
-          "component": "four",
-          "kind": "sparse_base",
-          "path": "support/workspace/r4333_upper/profile_d_four_row_cnf/profile_d_four_row_UUU.cnf"
-        }
-      ],
-      "component_censuses": [
-        "evidence/D/UUU/census/P15_MATRIX_ONLY_189.json",
-        "evidence/D/UUU/census/D9_STRONG_ROOT2.json",
-        "evidence/D/UUU/census/D9_TWISTED_ROOT1.json",
-        "evidence/D/UUU/census/D9_TWISTED_ROOT4.json",
-        "evidence/D/UUU/census/D9_TWISTED_ROOT12.json",
-        "evidence/D/UUU/census/D10_B2P15_82.json"
-      ]
+      "case_data_manifest": "source_repository:reproduce/data/marked_uu.json"
     },
     {
       "family": "D_UUT",
       "formula_count": 679,
-      "manifest": "evidence/D/UUT/full_inputs_000/MANIFEST.json",
-      "input_assets": [
-        {
-          "component": "five",
-          "kind": "dense_map",
-          "path": "evidence/D/UUT/full_inputs_000/bases/five.dense_map.json"
-        },
-        {
-          "component": "five",
-          "kind": "sparse_base",
-          "path": "evidence/D/UUT/full_inputs_000/bases/five.uut.sparse.cnf"
-        },
-        {
-          "component": "four",
-          "kind": "dense_map",
-          "path": "evidence/D/UUT/full_inputs_000/bases/four.dense_map.json"
-        },
-        {
-          "component": "four",
-          "kind": "sparse_base",
-          "path": "evidence/D/UUT/full_inputs_000/bases/four.uut.sparse.cnf"
-        }
-      ],
-      "component_censuses": [
-        "evidence/D/UUU/census/P15_MATRIX_ONLY_189.json",
-        "evidence/D/UUU/census/D9_STRONG_ROOT2.json",
-        "evidence/D/UUU/census/D9_TWISTED_ROOT1.json",
-        "evidence/D/UUU/census/D9_TWISTED_ROOT4.json",
-        "evidence/D/UUU/census/D9_TWISTED_ROOT12.json",
-        "evidence/D/UUU/census/D10_B2P15_82.json"
-      ]
+      "case_data_manifest": "source_repository:reproduce/data/marked_uu.json"
     },
     {
       "family": "D_UTU",
       "formula_count": 6576,
-      "manifest": "evidence/D/mixed/full_inputs_UTU_000/MANIFEST.json",
-      "input_assets": [
+      "case_data_manifest": "evidence/D/mixed/full_inputs_UTU_000/MANIFEST.json",
+      "finite_census": "evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json",
+      "retained_source_assets": [
         {
           "prefix_key": "D10",
           "path": "evidence/D/mixed/full_inputs_UTU_000/D10.prefix.cnf"
@@ -236,14 +178,14 @@
           "prefix_key": "P15_MATRIX_ONLY",
           "path": "evidence/D/mixed/full_inputs_UTU_000/P15_MATRIX_ONLY.prefix.cnf"
         }
-      ],
-      "finite_census": "evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json"
+      ]
     },
     {
       "family": "D_UTT",
       "formula_count": 6576,
-      "manifest": "evidence/D/mixed/full_inputs_UTT_000/MANIFEST.json",
-      "input_assets": [
+      "case_data_manifest": "evidence/D/mixed/full_inputs_UTT_000/MANIFEST.json",
+      "finite_census": "evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json",
+      "retained_source_assets": [
         {
           "prefix_key": "D10",
           "path": "evidence/D/mixed/full_inputs_UTT_000/D10.prefix.cnf"
@@ -260,14 +202,14 @@
           "prefix_key": "P15_MATRIX_ONLY",
           "path": "evidence/D/mixed/full_inputs_UTT_000/P15_MATRIX_ONLY.prefix.cnf"
         }
-      ],
-      "finite_census": "evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json"
+      ]
     },
     {
       "family": "D_TTU",
       "formula_count": 18204,
-      "manifest": "evidence/D/mixed/full_inputs_TTU_000/MANIFEST.json",
-      "input_assets": [
+      "case_data_manifest": "evidence/D/mixed/full_inputs_TTU_000/MANIFEST.json",
+      "finite_census": "evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json",
+      "retained_source_assets": [
         {
           "prefix_key": "D10",
           "path": "evidence/D/mixed/full_inputs_TTU_000/D10.prefix.cnf"
@@ -280,14 +222,14 @@
           "prefix_key": "P15_MATRIX_ONLY",
           "path": "evidence/D/mixed/full_inputs_TTU_000/P15_MATRIX_ONLY.prefix.cnf"
         }
-      ],
-      "finite_census": "evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json"
+      ]
     },
     {
       "family": "D_TTT",
       "formula_count": 18204,
-      "manifest": "evidence/D/mixed/full_inputs_TTT_000/MANIFEST.json",
-      "input_assets": [
+      "case_data_manifest": "evidence/D/mixed/full_inputs_TTT_000/MANIFEST.json",
+      "finite_census": "evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json",
+      "retained_source_assets": [
         {
           "prefix_key": "D10",
           "path": "evidence/D/mixed/full_inputs_TTT_000/D10.prefix.cnf"
@@ -300,40 +242,14 @@
           "prefix_key": "P15_MATRIX_ONLY",
           "path": "evidence/D/mixed/full_inputs_TTT_000/P15_MATRIX_ONLY.prefix.cnf"
         }
-      ],
-      "finite_census": "evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json"
+      ]
     }
   ],
-  "UU_component_censuses": [
+  "local_case_tables": [
     {
-      "component": "P15_MATRIX_ONLY_189",
-      "formula_count": 189,
-      "path": "evidence/D/UUU/census/P15_MATRIX_ONLY_189.json"
-    },
-    {
-      "component": "D9_STRONG_ROOT2",
-      "formula_count": 72,
-      "path": "evidence/D/UUU/census/D9_STRONG_ROOT2.json"
-    },
-    {
-      "component": "D9_TWISTED_ROOT1",
-      "formula_count": 132,
-      "path": "evidence/D/UUU/census/D9_TWISTED_ROOT1.json"
-    },
-    {
-      "component": "D9_TWISTED_ROOT4",
-      "formula_count": 132,
-      "path": "evidence/D/UUU/census/D9_TWISTED_ROOT4.json"
-    },
-    {
-      "component": "D9_TWISTED_ROOT12",
-      "formula_count": 72,
-      "path": "evidence/D/UUU/census/D9_TWISTED_ROOT12.json"
-    },
-    {
-      "component": "D10_B2P15_82",
-      "formula_count": 82,
-      "path": "evidence/D/UUU/census/D10_B2P15_82.json"
+      "path": "source_repository:reproduce/data/marked_uu.json",
+      "sha256": "83718289fe149a28e26daf9a5f96dea4f806b06352fec3c89de29738681689b1",
+      "bytes": 571223
     }
   ],
   "finite_table_fields": {
@@ -354,7 +270,7 @@
       "bytes": 374915,
       "sha256": "04b63427c743d41369cd305fd82e37450bc26c4d5262b47ddd20b4544d8ced13",
       "roles": [
-        "exact_formula_manifest"
+        "finite_case_record_manifest"
       ]
     },
     {
@@ -362,7 +278,7 @@
       "bytes": 14330129,
       "sha256": "4233c34ae42417c1c07c9e03e266bd7157a0f94a587e2117514b1b8d2905b8cb",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -370,7 +286,7 @@
       "bytes": 14330129,
       "sha256": "e825281ac599d1dd1ec7b93cb0ef990642eefc1144f1d099c6d1c90f95ddd875",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -378,7 +294,7 @@
       "bytes": 12866053,
       "sha256": "914a425cb37dce26ae61b46d635d6c0462a05e49b99abafd676309205850dceb",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -386,7 +302,7 @@
       "bytes": 14330129,
       "sha256": "0fa169c5e7310bb5b8776ae9e0b7d958ed2b90df117af11e875ddf3671bff85b",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -394,7 +310,7 @@
       "bytes": 14330129,
       "sha256": "6afdeb7033031109ca79f68a0416203ec2847bc7d0afdcfe77d7f121d7706b43",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -402,7 +318,7 @@
       "bytes": 12866052,
       "sha256": "66940ce858c928f42485f0f303cf727c43dae0180d1e33f76f460879d82caa4b",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -410,7 +326,7 @@
       "bytes": 14330129,
       "sha256": "ada26b0306df96e08b17a21cd2a24c0f8f5ed8559d6f11c3cbaa47d85d4d5b2c",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -418,7 +334,7 @@
       "bytes": 14330129,
       "sha256": "84102c50f7453934d3fcecbe72ab29e96fc3a40d140719ad8a033d191d8679af",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -426,7 +342,7 @@
       "bytes": 12866052,
       "sha256": "a490cae304de91ccab9135cab9b45289c808134d210603a85ee174a6ca1962b4",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -434,7 +350,7 @@
       "bytes": 14330129,
       "sha256": "12c91b7755b73cd6540260a6708febe3d050877f3586c0791386fb6802226bdf",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -442,7 +358,7 @@
       "bytes": 14330129,
       "sha256": "963a8943056305481c2cd2a8cbbc018b33697fe437f43b3b3679f7243dc7c989",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -450,7 +366,7 @@
       "bytes": 12866052,
       "sha256": "7434cf9c0c670c1242fe5fa7d2ae159998c4d996f0f39e89117d609046f07d7a",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -458,7 +374,7 @@
       "bytes": 4932770,
       "sha256": "717eddaab19150f9e6443c06180fdcaf655ebdd89a9ce43056d2aa8ae054fa66",
       "roles": [
-        "exact_formula_manifest"
+        "finite_case_record_manifest"
       ]
     },
     {
@@ -466,7 +382,7 @@
       "bytes": 13279648,
       "sha256": "051530e41dfcac2734fe277acdb63c2d71115acdf81f3dc156ec44215e6a5373",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -474,7 +390,7 @@
       "bytes": 13279648,
       "sha256": "fd154c0f6b542328a3aec961d7db475887b5c76062d10262d72a6e72c9d0ab8d",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -482,7 +398,7 @@
       "bytes": 12339907,
       "sha256": "e85d68020fab80ee29ed69de5751f43fee6e315451c7f6953932562fabe0ddeb",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -490,7 +406,7 @@
       "bytes": 13279648,
       "sha256": "da24a58b49a34cd419186907d7fb2cd16877f51bb00f0dcd71d11a6a7ad77de2",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -498,7 +414,7 @@
       "bytes": 13279648,
       "sha256": "69d5c607f4b9bea94b1f53441fa52c9a32b6cafb595d3e2c0cfaf8837db5b625",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -506,7 +422,7 @@
       "bytes": 12339907,
       "sha256": "63dbdf8b9b1b18866fd0afd5b3c23056c1ab49d46e9b2f46b2133ec43913dc21",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -514,7 +430,7 @@
       "bytes": 13279648,
       "sha256": "5c49e53f343aa7ef629ffdcf626da05f43f6bec8a0a247fc99911e5da9c5ac2b",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -522,7 +438,7 @@
       "bytes": 13279648,
       "sha256": "3f77f685803a576c5fb9c530b315932c186c0fff2c00503ce87e5877739f919c",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -530,7 +446,7 @@
       "bytes": 12339907,
       "sha256": "a9964d3687e7a889bb160d5135f038d10a8c8b9df1e0d64b6a0b97195adccad6",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -538,7 +454,7 @@
       "bytes": 13279648,
       "sha256": "6b9a0829f23a21e2911139f7879b348d19b2711b1b6a9d26db33fd2c72380c63",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -546,7 +462,7 @@
       "bytes": 13279648,
       "sha256": "fecc89031f83e2309593c498a8f05c922067042207810cfb163b2d4bde0dee84",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -554,7 +470,7 @@
       "bytes": 12339907,
       "sha256": "309491ec3998c73a3d2a4b936623e4a429af31bfe354fe57b06e4a17cf2c4bc7",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -562,7 +478,7 @@
       "bytes": 13279648,
       "sha256": "5f7516bbc7316c6da6d290457a7eb818eafb7f1581ef0af875a915f5993c224b",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -570,7 +486,7 @@
       "bytes": 13279648,
       "sha256": "fad557208ac0869a02f547a45f848d4ffe202a6a323b2db3eed053c966a3bf4b",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -578,7 +494,7 @@
       "bytes": 12339907,
       "sha256": "3951b4dfe44a069e7e7380c32465aeecfeaa4ea73bdd15eca33b19a73bad94b8",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -586,7 +502,7 @@
       "bytes": 13279648,
       "sha256": "7da6fc4aa4f59247d1e1bbf93ae94e54e5458f2e1b80bc3ca0eb465ffc1c2551",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -594,7 +510,7 @@
       "bytes": 13279648,
       "sha256": "e2935e04495a4d75d57484b777bb3b175c5195c7a50a7010ad35c881c7804ee5",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -602,7 +518,7 @@
       "bytes": 12339907,
       "sha256": "efd707baeafa8ea2f1ebd90c97f0477c971ee0429eb1e138d774a1ba49176deb",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -610,7 +526,7 @@
       "bytes": 1478967,
       "sha256": "6ac1fa05c9f5013afade79be9842c36fbc9efa2b0af9aaa2f719b8e2ec20bd12",
       "roles": [
-        "exact_formula_manifest"
+        "finite_case_record_manifest"
       ]
     },
     {
@@ -618,7 +534,7 @@
       "bytes": 1147660,
       "sha256": "673ce4adcfdb1aee47549a490496b46ef4f6278039c69dee5e3174901d7462af",
       "roles": [
-        "bijective_dense_map"
+        "retained_source_coordinate_map"
       ]
     },
     {
@@ -626,7 +542,7 @@
       "bytes": 8591125,
       "sha256": "0c1d5e77e3e25f0a4e0daf7bd03ecae86f777e24ce367e6a8aa0bde32b771734",
       "roles": [
-        "sparse_formula_base"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -634,7 +550,7 @@
       "bytes": 36478,
       "sha256": "5a483cd38aa8d4c77506d9e49415c59628706e5f4eaadb5e3008c9ac4732e646",
       "roles": [
-        "bijective_dense_map"
+        "retained_source_coordinate_map"
       ]
     },
     {
@@ -642,7 +558,7 @@
       "bytes": 2316857,
       "sha256": "ccd7c6be274fe78e4e3a5c823f25c6582f37956fcc2e58554fde7150e23cf250",
       "roles": [
-        "sparse_formula_base"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -650,7 +566,7 @@
       "bytes": 8591125,
       "sha256": "07c302a81a7bf0f03eb6db3f48d3c5a8d9727dd35e2ce1323d46ff146d720023",
       "roles": [
-        "sparse_formula_base"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -658,7 +574,7 @@
       "bytes": 2316857,
       "sha256": "93878d8017551825950672e053c0265e2d47625d1f4db99fd04c11b315ecb029",
       "roles": [
-        "sparse_formula_base"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -666,7 +582,7 @@
       "bytes": 6487084,
       "sha256": "b58f50c345e3007f22abea3a0dd1eff029ee50e2a2e5154a6077553aab2988ac",
       "roles": [
-        "exact_formula_manifest"
+        "finite_case_record_manifest"
       ]
     },
     {
@@ -674,7 +590,7 @@
       "bytes": 6206122,
       "sha256": "0b8efd42c95745e949d8befe2bbb675ec8e19a523a8ed3a2bb50cda2387e79cc",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -682,7 +598,7 @@
       "bytes": 6206122,
       "sha256": "2880f2d95fd5bbc5f18cd0762196597b2a004033f1477c217f4b6d69b413ce03",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -690,7 +606,7 @@
       "bytes": 6206122,
       "sha256": "2880f2d95fd5bbc5f18cd0762196597b2a004033f1477c217f4b6d69b413ce03",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -698,7 +614,7 @@
       "bytes": 1642622,
       "sha256": "f5e0229d884da7b8d43816b60130cb696d8ab5b3b4c9771a6039a26c5ab015f2",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -706,7 +622,7 @@
       "bytes": 6495516,
       "sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7",
       "roles": [
-        "exact_formula_manifest"
+        "finite_case_record_manifest"
       ]
     },
     {
@@ -714,7 +630,7 @@
       "bytes": 6206122,
       "sha256": "3ec9c3308a7ed3327d01e5c2076ec0a9438328751749fa91bbf7d665f8c3b606",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -722,7 +638,7 @@
       "bytes": 6206122,
       "sha256": "6a0e312d065dbd541b117706377ed8997c928a8d32f8dd605f319754b11457f6",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -730,7 +646,7 @@
       "bytes": 6206122,
       "sha256": "6a0e312d065dbd541b117706377ed8997c928a8d32f8dd605f319754b11457f6",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -738,7 +654,7 @@
       "bytes": 1642622,
       "sha256": "0763c8631756487af32b645a8a7efcc5a5116b3391f4c56346c9367d96286daa",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -746,7 +662,7 @@
       "bytes": 17937625,
       "sha256": "a656853526685c105102fb6962dc71c6777887ffbf5c63d6b2c07e41a4791736",
       "roles": [
-        "exact_formula_manifest"
+        "finite_case_record_manifest"
       ]
     },
     {
@@ -754,7 +670,7 @@
       "bytes": 6206122,
       "sha256": "b736a55c6e917b2ac29e9c64101d6b1e88b36afd68acc70e77e5b4fc34f1a013",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -762,7 +678,7 @@
       "bytes": 6206122,
       "sha256": "028d01e7d6ca5114df5b5543fadb02fd364635262aa3cb2b87329f59ee229f79",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -770,7 +686,7 @@
       "bytes": 1642622,
       "sha256": "94895e16df305a953cda0204a0e204c8f4c5c7a6054074a4a66f17269f3fdb1c",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -778,7 +694,7 @@
       "bytes": 17943949,
       "sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec",
       "roles": [
-        "exact_formula_manifest"
+        "finite_case_record_manifest"
       ]
     },
     {
@@ -786,7 +702,7 @@
       "bytes": 6206122,
       "sha256": "0078a2860fb4387d87fcfd25cc304d16ef10c90ed2e4b6aa117f7279d7952363",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -794,7 +710,7 @@
       "bytes": 6206122,
       "sha256": "1fbc35b306dd3e7856a9a116b8c81c688b7820bdce9935c6472a133c229f7d0b",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -802,7 +718,7 @@
       "bytes": 1642622,
       "sha256": "751c05a0e4b6c57399a0ddfae7f552b987beab3a7b09d3ed208cacc4f79919a3",
       "roles": [
-        "formula_prefix"
+        "retained_source_encoding_asset"
       ]
     },
     {
@@ -930,7 +846,7 @@
       "bytes": 771,
       "sha256": "9742141b2a00c9c6e35054ab21bdc9333e0d0d193a301a22970ccf9dabf5b2d4",
       "roles": [
-        "recorded_finite_check_output"
+        "finite_check_record_reference"
       ]
     },
     {
@@ -938,7 +854,7 @@
       "bytes": 773,
       "sha256": "c49e3621cea34bd95806b875b329d62cfaa5aa4b94818f3d8e7c97ad23dfd218",
       "roles": [
-        "recorded_finite_check_output"
+        "finite_check_record_reference"
       ]
     },
     {
@@ -946,7 +862,7 @@
       "bytes": 758,
       "sha256": "ecc0e5d5f6566fb320d0b4f034ddabbf3f01e6f08262c791ab89a581ba0cbc75",
       "roles": [
-        "recorded_finite_check_output"
+        "finite_check_record_reference"
       ]
     },
     {
@@ -954,7 +870,7 @@
       "bytes": 24673,
       "sha256": "418c33a3f9def21db3e13b232ff75475f0217d6e8caecd2989c73c8de971fdcb",
       "roles": [
-        "independent_finite_checker_source"
+        "finite_checker_source_reference"
       ]
     },
     {
@@ -962,7 +878,7 @@
       "bytes": 24355,
       "sha256": "a954f77430a7c7628b00b4047d20d3f5615cc23948eb876a86230ccf3260181b",
       "roles": [
-        "independent_finite_checker_source"
+        "finite_checker_source_reference"
       ]
     },
     {
@@ -970,7 +886,7 @@
       "bytes": 19897,
       "sha256": "22723e892416a09a9f5519dcfe87215c48802a7c2d4b25751ad723725f18139f",
       "roles": [
-        "independent_finite_checker_source"
+        "finite_checker_source_reference"
       ]
     },
     {
@@ -1030,67 +946,116 @@
       ]
     }
   ],
-  "source_repository_files": [
-    {
-      "path": "reproduce/abd_inputs.py",
-      "bytes": 12721,
-      "sha256": "d5d42b3ce418a94a704978fda06fd3a07fdefa4877f99dc7a044c851577dca9b"
+  "indexed_snapshot_files": 85,
+  "source_asset_scope": "The immutable source mapping includes finite case data and retained encoding/coordinate assets. Source formula prefixes, bases and hashes are not current SAT inputs. Current inputs use the common K61 base and complete physical units.",
+  "formal_coverage": {
+    "cases": 56374,
+    "criterion": "Whole-host transport preserving every signed physical fact",
+    "sources": [
+      {
+        "path": "source_repository:formal/src/UniformK61/UnitTransport.lean",
+        "sha256": "69cfb3a5f9368e4e1611903d59a07d06e09f0548828eb6d678af95f5b96b3afb",
+        "bytes": 4200
+      },
+      {
+        "path": "source_repository:formal/src/UniformK61/CommonCover.lean",
+        "sha256": "dbe954c552e02072f66c2ba4d76468ad3842c924f9cf171f3cb19b02a9c1ebfa",
+        "bytes": 4886
+      },
+      {
+        "path": "source_repository:formal/src/UniformK61/UUFiniteCover.lean",
+        "sha256": "9859b5d60d677f8c9862541a73037aa42928b9aba4a08306026aaa7f8a6b0f1d",
+        "bytes": 779
+      },
+      {
+        "path": "source_repository:formal/src/UniformK61/ABDProof.lean",
+        "sha256": "00440f3fc497866f09b75e6c9a32bc68f1d1f14f2feba6f6c7f5ed66b7ee7533",
+        "bytes": 2076
+      }
+    ]
+  },
+  "current_formula_boundary": {
+    "variables": 7320,
+    "shared_base_clauses": 156770,
+    "case_constraints": "ordered signed physical unit clauses",
+    "catalog": {
+      "path": "current_evidence:inputs/cases.jsonl.gz",
+      "sha256": "7acb8426af801cbcaba464f32e018f59d5fd4c63edd0f4173d6bdb54868f0b0f",
+      "bytes": 6828236
     },
-    {
-      "path": "publication/checks/ABD_ALL_INPUTS_001.json",
-      "bytes": 2797,
-      "sha256": "5b763432d953147b23ec03388f40b536ba0884cea22d53bd06eb7087112cdabf"
+    "input_manifest": {
+      "path": "current_evidence:inputs/MANIFEST.json",
+      "sha256": "918bc28991d254811ea033b40aa6f39d058312bb7b120fac6a2fa1a0d024af97",
+      "bytes": 2936
     },
-    {
-      "path": "publication/checks/ABD_MATERIALIZATION_001.json",
-      "bytes": 28448,
-      "sha256": "4b75d7844af7547d30a1131b9b6af5255f111513e6cdefcbf12c76e87b2b5903"
+    "base": {
+      "path": "current_evidence:inputs/base.clauses",
+      "sha256": "f974e4a1e44ae758ba748fc91838cd820cfb807ed4c09e7ffa5dc661d267565e",
+      "bytes": 3003439
     },
-    {
-      "path": "publication/checks/ABD_SECOND_SOLVER.json",
-      "bytes": 2396,
-      "sha256": "d3e82e7f31c014a88ffaab2eb8723230409fadaf24feda95cb1389fc39a49168"
-    },
-    {
-      "path": "reproduce/abd_second_solver.py",
-      "bytes": 19811,
-      "sha256": "e77413a95aa6ed0c274b3ead1a712fe003ea34781d5224f5c879009aa5912daa"
-    },
-    {
-      "path": "publication/checks/ABD_NATIVE.json",
-      "bytes": 10657,
-      "sha256": "549398956588b078002a98e5876188de0c006a0880e2fc7b0bad7b23b1fa01c7"
-    },
-    {
-      "path": "publication/checks/ABD_SECOND_SOLVER_VERIFICATION.json",
-      "bytes": 3467,
-      "sha256": "cf18360560fb0e260cadb26edc5ba5aa2a1bfaea048226deadf63c6b5b50270d"
+    "fresh_binding": {
+      "path": "current_evidence:math/binding/RUN_RESULT.json",
+      "sha256": "806e70165787f8ee257142fed7c5f31f48e8692679f6b43c30909889c0da558d",
+      "bytes": 1786542
     }
-  ],
-  "identity_check": {
-    "method": "Rehashed every indexed snapshot file and matched its size and SHA256 to the archive manifest shards; verified shard hashes against the recorded manifest-index hash.",
-    "indexed_snapshot_files": 85,
-    "result": "PASS",
-    "scope": "File identity and manifest case counts only. Does not re-execute finite mathematics, reconstruction, SAT solvers, certificates or Lean."
   },
-  "UU_assignment_cover": {
-    "P15_exchange_relation": "support/workspace/r4333_upper/profile_d_four_support_discovery/uuu_b2_p15_swap_quotient.json",
-    "D9_assignment_construction": "support/r3333-fable/continuation/locks/duuu/discovery/d9_case_census.py",
-    "D9_U_root2_assignment_orbits": "support/workspace/r4333_upper/profile_d_degree9_discovery/strong_case_b2_p15_quotient/assignment-orbits.json",
-    "D9_T_root1_assignment_orbits": "support/r3333-fable/continuation/locks/duuu/discovery/twisted_root1_orbits.json",
-    "D9_T_root4_assignment_orbits": "support/r3333-fable/continuation/locks/duuu/discovery/twisted_root4_orbits.json",
-    "D9_T_root12_assignment_orbits": "support/r3333-fable/continuation/locks/duuu/discovery/twisted_root12_orbits.json",
-    "D9_finite_permutation_order": "support/workspace/r4333_upper/profile_d_degree9_discovery/strong_case_b2_p15_quotient/lean-permutations.tsv"
-  },
-  "second_solver": {
-    "solver": "CaDiCaL 3.0.1",
-    "formulas": 56374,
-    "UNSAT": 56374,
+  "native_evidence": {
+    "receipt": {
+      "path": "source_repository:publication/checks/UNIFORM_K61.json",
+      "sha256": "644ee0941b7fc84c29173967bc43078e2a0384cebaa0913a6b2fc927ed6317d4",
+      "bytes": 2183
+    },
+    "solvers": {
+      "kissat": "4.0.4",
+      "cadical": "3.0.1"
+    },
+    "policy": "unlimited_CPU_and_wall_default_options",
+    "ABD_UNSAT_outcomes": 112748,
+    "complete_current_UNSAT_outcomes": 113446,
     "SAT": 0,
     "UNKNOWN": 0,
-    "errors": 0,
-    "summary": "publication/checks/ABD_SECOND_SOLVER.json",
-    "archive": "archives/abd-cadical.tar.gz",
-    "check": "reproduce/abd_second_solver.py"
-  }
+    "errors": 0
+  },
+  "source_repository_files": [
+    {
+      "path": "source_repository:reproduce/uniform_k61.py",
+      "sha256": "30b6c65d20b56e4dcdf9c8ef9bfc082f17539e5bdd675912e6152d649ce2459c",
+      "bytes": 15698
+    },
+    {
+      "path": "source_repository:reproduce/uniform_balance.py",
+      "sha256": "a419fdba5a0bf6bf281d973cb6c38dd62c5d0524ac6a5c856b9c4e7f387d493a",
+      "bytes": 7926
+    },
+    {
+      "path": "source_repository:reproduce/uniform_c.py",
+      "sha256": "6f8f404a520bb696b7be03f8fc4de9d4ce582df8812fd94739bc319aa91b4a4c",
+      "bytes": 4571
+    },
+    {
+      "path": "source_repository:reproduce/data/marked_uu.json",
+      "sha256": "83718289fe149a28e26daf9a5f96dea4f806b06352fec3c89de29738681689b1",
+      "bytes": 571223
+    },
+    {
+      "path": "source_repository:reproduce/data/c_entrances.json",
+      "sha256": "f1c59973fe6c5f2cff27457b78962d89e58d6e844d40433552f9f0880fd778a9",
+      "bytes": 260050
+    },
+    {
+      "path": "source_repository:reproduce/data/balance_anchors.json",
+      "sha256": "3ecb1ea085fb963cddadea3f839d09f59585069ffc9dcce2d754f48e80435913",
+      "bytes": 35021
+    },
+    {
+      "path": "source_repository:reproduce/uniform_verify.py",
+      "sha256": "73ea39901ed3e4536745bf6c1c6f9b053d526ae117561a34b8abb6288dcbdd70",
+      "bytes": 22665
+    },
+    {
+      "path": "source_repository:reproduce/uniform_release.py",
+      "sha256": "367af481e8934d1833e3bfd61c7748a22e6ebe4cbfecfcf33e2d4da0191bb93e",
+      "bytes": 35055
+    }
+  ]
 }

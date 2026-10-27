@@ -1,72 +1,60 @@
-# Measured search costs
+# Measured computational costs
 
-The proof uses 56,374 A/B/D formulas and 456 full-host C formulas. The table
-reports the original successful search time summed over solver processes. It
-excludes input generation, validation, independent reruns, unsuccessful attempts
-and exploratory research. The complete C accounting and the separate A/B/D
-second-solver cost appear below.
+Every one of the 56,723 formulas has an UNSAT result from Kissat 4.0.4
+and CaDiCaL 3.0.1, both with default search options and no CPU or
+elapsed-time limit. The table sums native process CPU time for exactly
+the 113,446 required executions. It excludes input generation, evidence
+checking, Lean compilation and exploratory research.
 
-| Family | Formulas | Successful solver hours |
-|---|---:|---:|
-| A | 360 | 0.8378 |
-| B | 5,096 | 21.3611 |
-| D/UUU | 679 | 1.96 |
-| D/UUT | 679 | 1.7294 |
-| D/UTU | 6,576 | 18.9045 |
-| D/UTT | 6,576 | 18.9200 |
-| D/TTU | 18,204 | 61.8776 |
-| D/TTT | 18,204 | 62.0167 |
-| C | 456 | 1.5417 |
+| Family | Formulas | Kissat CPU hours | CaDiCaL CPU hours | Combined CPU hours |
+| --- | ---: | ---: | ---: | ---: |
+| A | 360 | 0.31 | 1.71 | 2.02 |
+| B | 5,096 | 7.45 | 41.21 | 48.66 |
+| D / TTT | 18,204 | 66.15 | 184.43 | 250.59 |
+| D / TTU | 18,204 | 65.23 | 168.26 | 233.49 |
+| D / UTT | 6,576 | 20.67 | 45.89 | 66.56 |
+| D / UTU | 6,576 | 20.04 | 40.03 | 60.07 |
+| D / UUT | 679 | 2.01 | 6.47 | 8.47 |
+| D / UUU | 679 | 1.92 | 3.25 | 5.18 |
+| C, marked entrance | 346 | 0.26 | 1.42 | 1.67 |
+| C, perfect balance | 3 | 0.02 | 0.03 | 0.05 |
+| **Total** | **56,723** | **184.06** | **492.71** | **676.77** |
 
-Profile and U/T definitions are given in [the proof](../proof.md). Different
-families use different exhaustive decompositions, so a case count alone does
-not measure difficulty. The C formulas use selector inequalities established
-by the A/B/D computations; they do not independently replace those computations.
+The profile and template names are defined in [the proof](../proof.md).
+The case counts measure the exhaustive boundary; they are not estimates
+of relative difficulty. Rounded table entries need not sum exactly.
 
-The mixed-D evidence combines two controller settings: the initial campaign
-used per-case ceilings of 600 CPU seconds and 720 elapsed seconds; its
-continuation removed those time ceilings. The table counts only accepted
-UNSAT attempts, from either setting. Capped or interrupted attempts are
-retained in the evidence and are excluded from these successful-search totals.
+## Elapsed time and concurrency
 
-## Two-solver C verification
+A/B/D execution spanned **59.83 hours** with up to 12 solver
+workers. The 346 C entrances spanned **42 minutes**, with up to
+12 workers. The three balanced cases spanned **38 seconds**,
+with up to 6 workers. These are measured execution
+intervals, not predictions for a dedicated machine. Other work shared the
+host, and the C interval includes a single long-running tail.
 
-Every C formula has matching UNSAT answers from Kissat and CaDiCaL on the same
-input hash. All attempts, including capped attempts that returned UNKNOWN,
-contribute to the following totals.
+CPU time is summed over native processes. Elapsed time includes scheduling
+and input preparation between those processes and cannot be obtained by
+adding their CPU times. The host had 16 logical CPUs and 128 GiB RAM.
 
-| Phase | Solver CPU seconds | CPU hours |
-|---|---:|---:|
-| Kissat | 5,550.242931 | 1.5417 |
-| CaDiCaL | 4,544.485844 | 1.2624 |
-| CaDiCaL default continuations for 13 cases | 4,077.199416 | 1.1326 |
-| CaDiCaL seed-varied continuations for 4 cases | 2,664.835519 | 0.7402 |
-| **All C attempts** | **16,836.763710** | **4.6769** |
+## Perfect balance
 
-An UNKNOWN record is not a refutation. The complete input/result reconciliation
-identifies the accepted UNSAT answer for each formula and solver. Generation,
-audit and controller costs are recorded separately in
-`evidence/final_validation/FINAL_COSTS_002.json` and the accompanying CPU ledger.
-All archive paths are relative to the extraction described in the
-[reproduction guide](REPRODUCIBILITY.md).
+The balanced cases use 13,656 variables and 524,462 clauses each. Their
+individual native costs, rounded to seconds, are:
 
-## Complete A/B/D second-solver verification
+| Case | Kissat CPU seconds | CaDiCaL CPU seconds |
+| --- | ---: | ---: |
+| UU | 30 | 32 |
+| UT | 29 | 37 |
+| TT | 19 | 32 |
 
-CaDiCaL 3.0.1 reran all **56,374 original A/B/D formulas** and returned an
-accepted UNSAT result for every case, with **zero SAT, UNKNOWN or error results**.
-The [acceptance receipt](checks/ABD_SECOND_SOLVER.json) records the exact
-input and result accounting.
+The six executions together used **179 CPU-seconds**. Their results
+have the same uncapped policy and exact-input checks as every other case.
 
-| Measure | Recorded value |
-|---|---:|
-| Native solver CPU seconds | 888,530.997869 |
-| Native solver CPU hours | 246.814166 |
-| Launch (UTC) | 2026-09-22 18:31:14 |
-| Last solver finish (UTC) | 2026-09-24 07:49:45 |
-| Elapsed duration, rounded to the nearest second | 37h18m30s |
+## Mathematical checking and storage
 
-CPU time is summed across native solver processes. Elapsed time measures the
-interval from launch to the last solver finish, with up to eight solvers
-running in parallel. This verification cost is additional to the original
-successful-search table and separate from the C reruns, input checks and
-Lean build.
+The [formal measurements](../formal/MEASUREMENTS.md) report the complete
+Lean build, the executed formula-binding checks, memory and disk usage.
+Those costs are separate from native SAT solving. The evidence retains
+raw per-execution measurements, input hashes and logs, indexed by the
+[release checks](RELEASE_CHECKS.md).

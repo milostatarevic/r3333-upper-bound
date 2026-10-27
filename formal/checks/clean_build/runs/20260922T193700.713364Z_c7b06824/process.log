@@ -1,1 +1,0 @@
-'PricingC.DegreeFourPath.template_degree_four_path' depends on axioms: [propext, Classical.choice, Quot.sound]

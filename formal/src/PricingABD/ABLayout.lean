@@ -1,5 +1,5 @@
 import Ramsey61.ABDTailBounds
-import Ramsey61.CEncodingCore
+import UniformK61.Physical
 
 set_option autoImplicit false
 namespace PricingABD.ABLayout
@@ -9,8 +9,8 @@ inductive Profile where
   | A | B | D
   deriving DecidableEq, Repr
 
-/-- Native retained coordinates. D is included only for sharing the physical
-and literal interface; the counter-program completion targets A and B. -/
+/-- Coordinates for the complete marked support and three critical root
+cells in profiles A, B and D. -/
 structure Layout where
   profile : Profile
   five : Bool

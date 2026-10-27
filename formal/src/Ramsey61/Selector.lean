@@ -155,7 +155,7 @@ theorem W60_degree_cases (c : Host) (hc : NoMonochromaticTriangle c) (v : Fin 61
   cases q₁ <;> cases q₂ <;> tauto
 
 /-- The synchronized C/E branch used by the proved incidence entrance.
-The final composition is `PricingIntegration.NativeWholeProof.ramsey61`. -/
+The final composition is `UniformK61.WholeProof.ramsey61`. -/
 def SynchronizedCE (c : Host) : Prop :=
   (∀ v, W c v = 32 ∨ W c v = 60) ∧ (∀ v, Incoming c v = Own c v)
 

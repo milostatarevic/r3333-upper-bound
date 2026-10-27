@@ -1,31 +1,40 @@
 # Critical catalogues on the 61-vertex host
 
-[ClassificationAdapter.lean](Ramsey61/ClassificationAdapter.lean) connects
-the proved K15/K16 catalogues to the `Ramsey61.Host` type. Every
-high monochromatic neighborhood is mapped completely onto a critical
-template, preserving actual vertices and one consistent map of the three
-remaining colors. It also exposes the K15 extension and the K16 strongly
-regular color-graph theorem.
+[ClassificationAdapter.lean](Ramsey61/ClassificationAdapter.lean)
+connects the proved K15/K16 catalogues to `Ramsey61.Host`. A
+critical monochromatic neighborhood is mapped completely onto
+its template, preserving actual vertices and one map of the
+three remaining colors. The adapter also exposes the K15 extension
+and the K16 strongly regular color-graph theorem.
 
-The [check receipt](../build_runs/ADAPTER_FRESH_20260922T073615Z/receipt.json)
-and [axiom output](../build_runs/ADAPTER_FRESH_20260922T073615Z/lean.log) record
-successful compilation against the 32-module classification closure:
-2.30 CPU seconds, 2.89 elapsed seconds and 2,910,715,904 bytes peak RSS.
-All seven inspected endpoints use only `propext`, `Classical.choice` and
-`Quot.sound`. The source SHA-256 is
-`ba4fc9343574e607478103599de47d45f176ba2dfef6cfcea9535f96ab165356`.
+The endpoints `physical_neighborhood_k15`,
+`physical_neighborhood_k16` and `physical_high_neighborhood`
+retain the actual vertex maps. They have no additional
+catalogue-completeness premise and use only Lean's standard
+`propext`, `Classical.choice` and `Quot.sound` axioms.
+Fixed-palette normalization is supplied by
+[FixedPhysicalNeighborhood.lean](../../formal/src/PricingIntegration/FixedPhysicalNeighborhood.lean),
+using the proved template palette symmetries. These are coordinate
+changes in the templates, not independent recolorings of shared
+host edges.
 
-[RELOCATION.json](RELOCATION.json) binds the source path used in the check
-receipt to this byte-identical packaged file. The same source is included as
-[`Ramsey61.ClassificationAdapter`](../../formal/src/Ramsey61/ClassificationAdapter.lean)
-in the complete portable build. Its catalogue and physical-neighborhood maps
-are used by the formalized K61 case covers and the final Ramsey theorem.
+The same adapter source is included as
+[Ramsey61.ClassificationAdapter](../../formal/src/Ramsey61/ClassificationAdapter.lean)
+in the complete mathematical build. Its maps supply the actual
+critical neighborhoods in the A/B/D marked covers, the direct
+C entrance cover and the balanced visible-neighborhood embeddings.
+They enter the final theorem
+[UniformK61.WholeProof.ramsey61](../../formal/src/UniformK61/WholeProof.lean).
 
-Follow the [complete build instructions](../../formal/BUILD.md) to compile the
-adapter together with all its dependencies, including the classification
-sources and their 55 CNF/LRAT pairs. The successful
-[1,809-module build](../../formal/BUILD_RESULT.json) records that execution.
-The [mathematical dependency map](../../formal/MATHEMATICS.md) explains how the
-classification endpoints enter the final proof. Push CI separately checks
-source integrity and compiles a small encoding target; its scope does not
-include compiling this adapter.
+Follow the [complete build instructions](../../formal/BUILD.md)
+to compile the adapter with all dependencies, including the
+classification sources and their 55 checked CNF/LRAT pairs.
+The [source manifest](../../formal/SOURCE_MANIFEST.json) and
+[build record](../../formal/BUILD_RESULT.json) identify the
+accepted complete closure. The
+[mathematical dependency map](../../formal/MATHEMATICS.md)
+connects these classification endpoints to the full theorem.
+
+GitHub CI checks source integrity and a small shared-encoding
+target. Its scope does not include compiling this adapter or
+replaying the classification traces.

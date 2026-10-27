@@ -1,1 +1,0 @@
-'PricingG.realizes_from_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -6,7 +6,7 @@ import R4333Lean.CataloguedNeighborhood
 This file gives a sufficient condition for the upper bound in terms of
 catalogued attaching configurations. Its obstruction remains an explicit
 parameter of this auxiliary composition theorem. The complete endpoint
-`PricingIntegration.NativeWholeProof.ramsey61` uses the profile reduction.
+`UniformK61.WholeProof.ramsey61` uses the profile reduction.
 -/
 
 namespace R4333

@@ -1,9 +1,9 @@
 import PricingC.Rooted45Free
-import PricingABD.P15PhysicalRooted
+import UniformK61.PhysicalHelpers
 
 namespace PricingC.Rooted45Orientation
 open Ramsey61 Ramsey61.CEncodingCore
-open PricingABD.P15PhysicalRooted (threeIndex threeIndex_palette palette_threeIndex threeIndex_injective_on)
+open UniformK61.PhysicalHelpers (threeIndex threeIndex_palette palette_threeIndex threeIndex_injective_on)
 
 /-- One actual marked color3 neighborhood, with its root restored at14.
 Only root incidences and the two foreign support patterns are prescribed;

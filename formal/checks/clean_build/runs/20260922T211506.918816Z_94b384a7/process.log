@@ -1,6 +1,0 @@
-'R4333.ProfileDDegreeTenMatrixTransport61.transportCanonicalBranchByTailPerm' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'R4333.ProfileDDegreeTenMatrixTransport61.transportExactDegreeTenMatrixBranch' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

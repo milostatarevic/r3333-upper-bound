@@ -1,1 +1,0 @@
-'PricingABD.BFixedGeometry.fixed_known_value' depends on axioms: [propext, Classical.choice, Quot.sound]

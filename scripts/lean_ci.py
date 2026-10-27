@@ -13,10 +13,10 @@ import sys
 from check_lean_sources import (FORMAL, inspect_package, require, strict_json,
                                 read_accepted_manifest_pin, require_accepted_package)
 
-TARGET = 'PricingIntegration.NativeColoringClauses'
-MODULES = {TARGET, 'PricingIntegration.NativePrimaryCore', 'Ramsey61.CEncodingCore',
-           'Ramsey61.DenseCounter', 'Ramsey61.Foundations'}
-THEOREMS = {TARGET + '.physicalValuation_physical', TARGET + '.physicalValuation_triangles'}
+TARGET = 'UniformK61.CoreCounts'
+MODULES = {TARGET, 'UniformK61.Core', 'UniformK61.Physical',
+           'UniformK61.CNF', 'Ramsey61.Foundations'}
+THEOREMS = {'UniformK61.Core.baseCNF_length', 'UniformK61.Core.coloring_satisfies_formula'}
 ALLOWED = {'propext', 'Classical.choice', 'Quot.sound'}
 DEPENDENCY = re.compile(r"'([A-Za-z0-9_.]+)' depends on axioms:\s*\[([^\]]*)\]")
 AXIOM_FREE = re.compile(r"'([A-Za-z0-9_.]+)' does not depend on any axioms")

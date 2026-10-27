@@ -1,4 +1,4 @@
-import Ramsey61.CPhysicalNormalization
+import UniformK61.HostNormalization
 set_option autoImplicit false
 namespace PricingIntegration.ABDRootPalette
 open Ramsey61 Ramsey61.CEncodingCore Ramsey61.CPhysicalNormalization

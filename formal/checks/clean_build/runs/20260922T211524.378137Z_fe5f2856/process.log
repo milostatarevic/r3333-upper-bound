@@ -1,1 +1,0 @@
-'PricingG.DKindReduction.actual_D_six_owner' depends on axioms: [propext, Classical.choice, Quot.sound]

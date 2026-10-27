@@ -1,2 +1,0 @@
-'PricingG.PhysicalBlock.cross_fiber_unique_center' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingG.exists_physicalBlock' depends on axioms: [propext, Classical.choice, Quot.sound]

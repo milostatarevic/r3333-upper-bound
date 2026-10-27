@@ -6,10 +6,7 @@ lean-source-audit:
 
 test-ci:
 	$(PYTHON) -m unittest discover -s scripts -p 'test_*.py' -v
-	$(PYTHON) reproduce/test_verify.py
-	$(PYTHON) reproduce/test_abd_inputs.py
-	$(PYTHON) reproduce/test_abd_native.py
-	$(PYTHON) reproduce/test_abd_second_solver.py
+	$(PYTHON) -m unittest discover -s reproduce -p 'test_uniform*.py' -v
 
 lean-ci:
 	$(PYTHON) scripts/lean_ci.py

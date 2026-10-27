@@ -1,2 +1,0 @@
-'PricingIntegration.ABDRootPalette.degree_order' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingIntegration.ABDRootPalette.actual_ABD_root_ordered' depends on axioms: [propext, Classical.choice, Quot.sound]

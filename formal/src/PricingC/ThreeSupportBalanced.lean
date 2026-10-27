@@ -2,7 +2,7 @@ import PricingC.ThreeSupportColors
 import PricingABD.Rooted455Catalogue
 namespace PricingC.ThreeSupportFrame
 open Ramsey61 Ramsey61.CEncodingCore
-open PricingABD.P15PhysicalRooted (threeIndex palette_threeIndex)
+open UniformK61.PhysicalHelpers (threeIndex palette_threeIndex)
 
 /-- Convert a restored critical-neighborhood equality back to the original
 four-color host palette on the same physical vertices. -/

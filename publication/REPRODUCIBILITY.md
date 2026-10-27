@@ -1,126 +1,104 @@
 # Reproduce the proof computations
 
-The tools below authenticate the evidence archive, reconstruct every SAT
-input used by the proof, and rerun the independent finite G checks. They use
-Python 3.9 or later and its standard library. Run the commands from the
-repository root. SAT reruns require a separately installed solver. The full
-Lean build uses Python 3.10 or newer and the pinned toolchain described in
-[formal/BUILD.md](../formal/BUILD.md).
+Run the following commands from the repository root unless stated otherwise.
+The native input and evidence tools use Python 3.9 or later and its standard
+library. The Lean build and binding driver require Python 3.10 or later and
+the pinned toolchain described in [formal/BUILD.md](../formal/BUILD.md).
 
-The proof uses **56,830 distinct SAT formulas**: 56,374 in the A/B/D families
-and 456 full-host C formulas. Every formula has matching UNSAT answers from
-Kissat and CaDiCaL. Another 13,968 G configurations are excluded by direct finite checks.
-[Measured search costs](MEASURED_COSTS.md) give detailed search and
-verification phase accounting.
+The proof has 56,723 mathematical cases and two native executions per case.
+A second solver provides an independent execution of the same formula; it
+does not increase the mathematical case count.
 
-## 1. Obtain and authenticate the evidence
+## Check the retained release
 
-Fetch `archives/evidence-v1.tar.gz` and `archives/abd-cadical.tar.gz` with
-Git LFS, or provide offline copies. The first archive contains the original
-proof evidence, including both C solvers; the second contains the complete
-A/B/D CaDiCaL cross-check. Their hashes are listed in `archives/SHA256SUMS`.
-The verifier detects an unexpanded LFS pointer and performs no download.
+Fetch and authenticate the Git LFS payloads:
 
 ```sh
-python3 -B reproduce/verify.py check
+git lfs install --local
+git lfs pull --include='archives/*.tar.gz'
+shasum -a 256 -c archives/SHA256SUMS
 ```
 
-For an offline copy, add `--archive /path/to/evidence-v1.tar.gz`. The archive
-has 375,104,364 bytes and SHA256
-`2b85cac94df0317a532aa823cfea93ac83738093fc854805896943f90d468757`.
-This command authenticates the compressed bytes; the next command checks the
-contents and their recorded relationships.
+`evidence-v1.tar.gz` supplies authenticated finite support and word data.
+`evidence-v2.tar.gz` contains the current input catalog, all required native
+results, and the mathematical build and exact-binding records. Archive names
+are stable data locators. The current proof boundary is specified by the
+current catalog and `RELEASE.json`.
 
-## 2. Extract and verify the complete evidence
-
-The extractor requires a 100 GiB free-space floor plus an 8 GiB extraction
-reserve. It bounds logical extraction to 4 GiB and one million members; actual
-filesystem allocation depends on the number and size of small files. Choose
-a work directory on a filesystem meeting these requirements.
+Extract the authenticated release into a fresh directory and run the
+current repository's verifier:
 
 ```sh
 proof_work_dir=$(mktemp -d)
-python3 -B reproduce/verify.py full \
-  --extract-to "$proof_work_dir/snapshot" \
-  --receipt "$proof_work_dir/verification.json"
+mkdir "$proof_work_dir/evidence-v2"
+tar -xzf archives/evidence-v2.tar.gz -C "$proof_work_dir/evidence-v2"
+python3 -B reproduce/uniform_release.py verify-package \
+  --root "$proof_work_dir/evidence-v2" \
+  --formal-root formal \
+  --output "$proof_work_dir/release-verification.json"
 ```
 
-The destination and receipt must not already exist, and the receipt must be
-outside the extracted snapshot. Add `--archive /path/to/evidence-v1.tar.gz`
-when using an offline archive. The archive is authenticated before extraction;
-unsafe paths, duplicate members, links and special files are rejected.
+This checks all 113,446 native outcomes and their exact formula identities,
+raw logs, commands, solver binaries, exit codes and resource records. It
+also checks the matching source manifest, complete build records, final
+theorem audit, and exhaustive formula-binding result. The supplied proof
+sources must match the package's mathematical manifest. No Lean compiler or
+SAT solver is launched by this command, and archived scripts are not executed.
+Write new reports outside the evidence directory; its exact file census is
+part of the check.
 
-Successful verification establishes that:
+The release preserves native execution records under `sources/abd/`,
+`sources/c/` and `sources/balance/`, retaining their original local identifiers
+and commands.
+The verifier checks their complete mapping to the one current input catalog.
+`math/build/` and `math/binding/` retain the mathematical verification records.
+The [release checks](RELEASE_CHECKS.md) describe the scope of each result.
 
-- All **455,901 payload files**, totaling **2,078,952,544 bytes**, match the
-  manifest, with no missing or additional files.
-- Input, generator, result, log and source-reference hashes agree with the
-  complete evidence census.
-- Every one of the 456 C inputs is linked to matching accepted UNSAT answers
-  from both native solvers on the same complete formula hash.
-- The mathematical dependency and computation records agree with the
-  supplied result manifest.
+## Reconstruct every current formula
 
-The snapshot is read-only input to subsequent checks. Keep receipts, generated
-CNFs, solver logs and other output outside it; adding even a `.DS_Store` file
-invalidates the exact census. Absolute paths inside archived records identify
-source provenance and are resolved through the included source map, not opened
-on the reader's machine. Partial output from an unsuccessful check is retained
-for inspection and is not accepted as verified evidence.
-
-A reference run used about 213 combined CPU seconds for extraction and full
-verification. Receipts are supplied under `reproduce/checks/`; this timing is
-separate from SAT search costs.
-
-## 3. Verify and reconstruct C inputs
-
-The input and receipt writers retain the 100 GiB free-space floor, including
-hash-only checks that write only a small receipt. Use the work filesystem
-selected in Section 2 for Sections 3–4.
-
-Check all 456 complete C formula hashes without writing 18.06 GB of repeated
-formula bodies:
+Generate a fresh complete catalog from the authenticated finite data:
 
 ```sh
-python3 -B reproduce/verify.py verify-c-all \
-  --snapshot "$proof_work_dir/snapshot" \
-  --receipt "$proof_work_dir/c-input-verification.json"
+python3 -B reproduce/uniform_k61.py prepare \
+  --archive archives/evidence-v1.tar.gz \
+  --output "$proof_work_dir/fresh-campaign/inputs"
 ```
 
-To write one exact formula, choose a case from `R3_000` through `R3_455`:
+The output directory must not exist. It contains a shared `base.clauses`,
+`cases.jsonl.gz`, `MANIFEST.json`, and three complete balanced CNFs. Catalog
+rows record stable indices, family and case IDs, ordered signed units or a
+balanced-input path, dimensions, byte counts and complete formula hashes.
+Preparation performs no SAT search. The generator also reads the checked-in
+normalized tables under `reproduce/data/`, including `marked_uu.json`,
+`c_entrances.json` and `balance_anchors.json`. Their identities are recorded
+with the generated inputs.
+
+Compare the freshly reconstructed catalog and base with the checked release:
 
 ```sh
-python3 -B reproduce/verify.py materialize-c \
-  --snapshot "$proof_work_dir/snapshot" --case R3_000 \
-  --output "$proof_work_dir/R3_000.cnf" \
-  --receipt "$proof_work_dir/R3_000.json"
+cmp "$proof_work_dir/fresh-campaign/inputs/base.clauses" \
+    "$proof_work_dir/evidence-v2/inputs/base.clauses"
+python3 - "$proof_work_dir/fresh-campaign/inputs/cases.jsonl.gz" \
+          "$proof_work_dir/evidence-v2/inputs/cases.jsonl.gz" <<'PY'
+import gzip, itertools, json, sys
+with gzip.open(sys.argv[1], 'rt') as first, gzip.open(sys.argv[2], 'rt') as second:
+    for a, b in itertools.zip_longest(first, second):
+        if a is None or b is None or json.loads(a) != json.loads(b):
+            raise SystemExit('Catalog mismatch')
+print('All catalog records match')
+PY
+for owner in UU UT TT; do
+  cmp "$proof_work_dir/fresh-campaign/inputs/balanced/$owner.cnf" \
+      "$proof_work_dir/evidence-v2/inputs/balanced/$owner.cnf"
+done
 ```
 
-Each formula consists of the pinned `BROAD_BASE_001.cnf` body and the signed
-physical units from its row of `SEEDS.json`, with the corresponding DIMACS
-header. The tool verifies the complete output hash and rereads the written
-file. It uses the base and seed data required by the proof, independently of
-labels in archived metadata.
+The catalog comparison checks every ordered case record, including its
+complete formula identity, without requiring identical gzip implementations.
+The base and balanced formulas are compared byte for byte.
 
-For example, `R3_000` has 39,607,141 bytes, 439,723 variables and 1,881,332
-clauses. Its SHA256 is
-`b56b6f042afd2b5e5eb70acf679c75cf9027fa20bb135016eca73559462724c9`.
-The all-input hash check used 0.240 CPU seconds in the reference run.
-Neither command invokes a solver.
-
-## 4. Verify and reconstruct A/B/D inputs
-
-Check the complete A/B/D formula boundary without materializing its repeated
-input bodies:
-
-```sh
-python3 -B reproduce/abd_inputs.py verify-all \
-  --snapshot "$proof_work_dir/snapshot" \
-  --receipt "$proof_work_dir/abd-input-verification.json"
-```
-
-| Family option | Distinct formulas |
-|---|---:|
+| Family | Cases |
+| --- | ---: |
 | `A` | 360 |
 | `B` | 5,096 |
 | `D_UUU` | 679 |
@@ -129,251 +107,138 @@ python3 -B reproduce/abd_inputs.py verify-all \
 | `D_UTT` | 6,576 |
 | `D_TTU` | 18,204 |
 | `D_TTT` | 18,204 |
-| **Total** | **56,374** |
+| `C` | 346 |
+| `BALANCE` | 3 |
+| **Total** | **56,723** |
 
-List the case identifiers for a family and materialize a chosen formula:
-
-```sh
-python3 -B reproduce/abd_inputs.py list \
-  --snapshot "$proof_work_dir/snapshot" --family D_UUU
-python3 -B reproduce/abd_inputs.py materialize \
-  --snapshot "$proof_work_dir/snapshot" --family D_UUU \
-  --case ACTUAL_CASE_ID_FROM_LIST \
-  --output "$proof_work_dir/chosen-D_UUU.cnf" \
-  --receipt "$proof_work_dir/chosen-D_UUU.json"
-```
-
-The adapter reconstructs exact shared prefixes, variable maps and suffixes,
-and compares each complete formula with its recorded input hash. Outputs must
-be new files outside the snapshot. The all-input check used 3.70 CPU seconds
-in the reference run; this measures input verification, not solving.
-
-Full per-case A/B/D CNFs are not archived. Their reconstruction is checked
-against runner-recorded input hashes. The
-[A/B/D evidence index](ABD_EVIDENCE_INDEX.md) lists the complete manifests,
-finite tables and reconstruction assets, including their exact hashes.
-
-### Join every A/B/D formula to its native UNSAT record
-
-The native-result audit reconstructs all 56,374 formula hashes and joins them
-to authenticated result, claim and log records. It checks exact case IDs,
-formula dimensions, UNSAT status and solver exit 20, including adopted
-mixed-D results and the retained UUT pilot. It invokes no solver and writes
-no complete CNFs.
+Materialize an individual formula by its exact family and case ID:
 
 ```sh
-python3 -B reproduce/abd_native.py \
-  --snapshot "$proof_work_dir/snapshot" \
-  --receipt "$proof_work_dir/abd-native.json"
+python3 -B reproduce/uniform_k61.py materialize \
+  --family C --case UU/455/pair_000/rep_000 \
+  --output "$proof_work_dir/C-UU.cnf"
+python3 -B reproduce/uniform_k61.py materialize \
+  --family BALANCE --case UU \
+  --output "$proof_work_dir/balance-UU.cnf"
 ```
 
-The receipt must be a new file outside the authenticated snapshot. The
-checker verifies recorded evidence; it does not establish solver correctness
-or replace a fresh SAT run.
+The destination must be new. Marked formulas have 7,320 variables and the
+156,770-clause common base followed by one unit clause per recorded literal.
+The three balanced formulas have 13,656 variables and 524,462 clauses each.
 
-### Check the second solver on every A/B/D formula
+For an edge with `u < v` and color `c`, its physical variable is
+
+```text
+4 * (u * (121 - u) // 2 + v - u - 1) + c + 1.
+```
+
+Pairs are listed lexicographically. The base emits the positive color
+clause followed by six pairwise color exclusions for each edge, then the
+four monochromatic-triangle exclusions for each lexicographically listed
+triple. Case facts and auxiliary clauses have fixed orders as well, so the
+comparison checks complete input identities rather than equisatisfiability.
+
+## Run both solvers afresh
+
+The supplied campaign driver uses native process accounting on macOS/Linux.
+Its binary lookup is `/opt/homebrew/bin/kissat` and
+`/opt/homebrew/bin/cadical`, with versions 4.0.4 and 3.0.1. This matches the
+recorded macOS environment. On a different installation, adjust only that
+lookup in the driver to the installed binaries; the driver retains its
+own source and both binary identities in each new campaign. Verification
+of the retained release does not need installed solvers.
+
+After preparing `fresh-campaign/inputs`, start the complete search:
 
 ```sh
-python3 -B reproduce/abd_second_solver.py \
-  --snapshot "$proof_work_dir/snapshot" \
-  --receipt "$proof_work_dir/abd-second-solver.json"
+python3 -B reproduce/uniform_campaign.py \
+  --root "$proof_work_dir/fresh-campaign" --workers 12
 ```
 
-For an offline archive, add `--archive /path/to/abd-cadical.tar.gz`. This
-checker authenticates the supplemental archive against the
-[published summary](checks/ABD_SECOND_SOLVER.json), streams all 56,374
-records and raw logs without extracting them, and reconstructs each required
-formula from the original snapshot. It checks the complete case census,
-input hashes before and after solving, recorded solver identity, log hashes,
-parsed formula dimensions, UNSAT status, exit code 20 and CPU accounting.
-Missing, duplicate or extra cases and archive members are rejected.
+Choose a worker count supported by the machine. Both solvers use default
+search options with no CPU or wall-clock limit for every case. The driver
+copies and hashes the binaries, sources and finite data, and hashes each
+input before and after its native execution. Marked inputs are retained
+compactly as the shared base and signed units; the three balanced inputs
+are retained in full.
 
-The two A/B/D commands have complementary roles: `abd_native.py` checks the
-original Kissat evidence, while `abd_second_solver.py` checks the CaDiCaL
-evidence for exactly the same required formulas. Neither command launches a
-solver or writes complete CNFs. The second-solver archive contains native
-execution evidence, not refutation certificates.
+A stop signal stops new admissions and lets submitted processes finish.
+SAT, UNKNOWN or an error also stops further admissions. A 100 GiB free-disk
+floor pauses new admissions without terminating a running solver. Incomplete
+coverage cannot be reported as a successful complete campaign. Sleeping the
+machine postpones completion without consuming a wall-clock timeout.
 
-### Check the D base specification independently
-
-The following checker re-emits the clause specification in
-[D cover and encoding](D_COVER_AND_ENCODING.md), without importing the
-campaign generators, and compares it with the retained base bytes:
+For an inventory during the search:
 
 ```sh
-python3 -B reproduce/d_base_check.py \
-  --snapshot "$proof_work_dir/snapshot" \
-  --receipt "$proof_work_dir/d-base-specification.json"
+python3 -B reproduce/uniform_verify.py \
+  --root "$proof_work_dir/fresh-campaign" --inventory
 ```
 
-It checks all 12 owner/component bases through 18 sparse-base or dense-prefix
-comparisons, including all good-coloring clauses, template units and 42
-five-row counter blocks. The recorded run used 4.83 CPU seconds. It checks
-neither the finite support/matrix cover nor the per-leaf suffixes or UNSAT
-answers; those obligations have their own arguments and checks. The receipt
-must be a new file outside the authenticated snapshot.
-
-## 5. Replay the local relation and G exclusions
+After it finishes, verify all results and independently rederive every input:
 
 ```sh
-python3 -B reproduce/g_check.py \
-  --snapshot "$proof_work_dir/snapshot" \
-  --output "$proof_work_dir/g-replay"
+python3 -B reproduce/uniform_verify.py \
+  --root "$proof_work_dir/fresh-campaign" \
+  --rederive archives/evidence-v1.tar.gz \
+  --output "$proof_work_dir/fresh-native-verification.json"
 ```
 
-The output directory must not already exist. The adapter executes the pinned
-independent finite checkers with their exact inputs and writes source, input
-and result hashes to `REPLAY_RECEIPT.json`. It writes nothing inside the
-snapshot and invokes no SAT solver.
+`uniform_verify.py` verifies a single native campaign. The supplied release
+also contains mathematical verification records and is checked by
+`uniform_release.py verify-package` as shown above. A native inventory is
+not complete proof-package acceptance.
 
-The checks establish:
+## Build and bind the mathematics
 
-- The local equations have rank 65 and nullity 15; enumeration of all 32,768
-  free-coordinate sign assignments recovers exactly 72 states.
-- Every one of the 3,600 isomorphic-map G labels and 10,368 complementary G
-  labels is rejected by its physical witness check.
-- Both checker control suites pass, with 11 and 19 controls respectively.
-
-A reference run used 2.177987 CPU seconds and 40,386,560 bytes peak RSS.
-The adapter has a 60 CPU-second ceiling, a 64 MiB output-tree bound and the
-100 GiB disk floor. Exact receipts are in `reproduce/checks/G_REPLAY_001/`.
-The physical guard and exhaustive host-to-label arguments are proved in the
-[Lean development](../formal/MATHEMATICS.md) and explained in
-[proof.md](../proof.md). The Python replay is a separate execution of the
-retained finite checks.
-
-## 6. Rerun the SAT searches
-
-After materializing and hash-checking a CNF, run a locally installed solver
-on that exact file. For example:
-
-```sh
-solver_binary=/absolute/path/to/kissat
-solver_status=0
-"$solver_binary" "$proof_work_dir/R3_000.cnf" \
-  > "$proof_work_dir/R3_000.solver.log" 2>&1 || solver_status=$?
-printf '%s\n' "$solver_status" > "$proof_work_dir/R3_000.solver.exit"
-test "$solver_status" -eq 20
-```
-
-Inspect the complete log for its UNSAT result as well as the exit status.
-Kissat and CaDiCaL conventionally return 20 for UNSAT. A failure, cap or UNKNOWN
-answer provides no exclusion. Use resource limits appropriate to the host and
-a new output basename for each attempt.
-
-Retain the command, complete input hash, solver version and binary hash, log,
-exit status and measured cost. The recorded solvers are Kissat 4.0.4 and
-CaDiCaL 3.0.1. A build for another platform can have a different binary hash;
-record its identity with the new results.
-
-To repeat all required SAT computations, enumerate every ID in the eight
-A/B/D families and all 456 C IDs. Run both solvers on each formula to reproduce
-the complete two-solver check. The total is 56,830 distinct formulas and
-113,660 successful solver results; a second solver adds runs, not new
-formulas. Recorded C retries contribute additional measured work, as explained
-in [the cost table](MEASURED_COSTS.md). The separate G computations are covered
-by Section 5.
-
-## 7. Build the Lean mathematical reduction
-
-The [formal package](../formal/README.md) proves the reduction to all 56,830
-concrete CNFs. Its main theorem has only the computational premise
-`AllNativeUnsat`; case coverage, transport and encoding soundness are proved.
-The pinned setup and complete instructions are in [BUILD.md](../formal/BUILD.md).
-From the repository root:
+Build the complete proof from source:
 
 ```sh
 (
   cd formal
   lake exe cache get
-  lake build Mathlib.Combinatorics.SimpleGraph.Bipartite
   lake env python3 build.py --validate-only
   lake env python3 build.py --jobs 1
 )
 ```
 
-Keep the supplied `lake-manifest.json`; do not run `lake update`. The compiler
-must match `lean-toolchain` (Lean 4.32.1), and the builder checks the locked
-external dependency revisions. The default build includes the classification
-sources and replays their **55 supplied small CNF/LRAT pairs**. It runs no SAT
-search. The [recorded complete run](../formal/BUILD_RESULT.json) used this
-portable path with `--jobs 2`: all 1,809 modules passed from a fresh checkout,
-including the 32 classification modules, without prior project artifacts.
-Its compiler, dependency revisions and import identities are recorded.
-[VERIFICATION.md](../formal/VERIFICATION.md) describes the scope.
+Keep the supplied lock file. The full build includes the selected source closure and the
+55 small classification CNF/LRAT checks, using a fresh project library.
+It does not launch the native K61 searches. See
+[the build guide](../formal/BUILD.md) and
+[resource measurements](../formal/MEASUREMENTS.md) before increasing
+compiler concurrency.
 
-For planning, use a **64 GiB host with one compiler**. A 128 GiB host supports
-controlled parallel work with admissions adjusted to actual memory pressure;
-it does not make eight simultaneous heavy compilers safe by default. A
-measured single compiler peaked at **28.78 GiB RSS**. The portable `--jobs`
-option is a concurrency ceiling, not an adaptive memory controller. Start at
-one and select higher concurrency only for the available memory. The measured
-peak is not a bound on aggregate machine memory or future runs.
-
-Each invocation creates a fresh `.build/runs/<timestamp>_<id>/` directory,
-with an isolated `lib/` namespace, immutable module receipts and a final
-`BUILD_RESULT.json`. A successful complete build, including its binding
-helpers, provides the library used in Section 8. Source validation alone is
-not a proof build.
-
-### Routine CI
-
-Routine CI checks all manifested mathematical sources and embedded data and
-compiles the five-module dependency closure of
-`PricingIntegration.NativeColoringClauses`. Its compilation command is:
+Use the successful full build's exact output directory for the binding:
 
 ```sh
 (
   cd formal
-  lake env python3 build.py --target PricingIntegration.NativeColoringClauses \
-    --no-certificate-replay --jobs 1
+  lake env python3 reproduce/uniform/run_binding.py \
+    --build-dir /absolute/path/to/successful/.build/runs/RUN \
+    --inputs "$proof_work_dir/fresh-campaign/inputs" \
+    --output-dir "$proof_work_dir/fresh-binding"
 )
 ```
 
-This bounded target is separate from the full mathematical build. It performs
-no classification certificate replay or native SAT search and does not compile
-the final theorem. The no-replay flag rejects a selected dependency closure
-containing a certificate command instead of silently skipping that source.
+The driver audits the exact final theorem type and count, executes the four
+Lean emitters, then checks their complete disjoint union: 56,374 A/B/D
+marked cases, 346 C entrances and three balanced inputs.
+All 56,723 DIMACS identities must agree. Source, input, compiler, runtime,
+log and artifact hashes are checked across the execution. The output
+directory must be fresh; a failed attempt preserves its records.
 
-## 8. Bind the Lean formulas to the native inputs
-
-The tools in [formal/reproduce/README.md](../formal/reproduce/README.md) emit
-and compare the concrete formulas from a successful complete Lean build.
-They use its explicit isolated `lib/` path; plain `lake build` is not this
-package's mathematical build entry point.
-
-The shared D emitter produces twelve prefix bodies. The common-family check
-binds **55,016** A/B/mixed-D inputs, the UUU/UUT check binds **1,358**, and the
-[C check](../formal/reproduce/c/README.md) binds the remaining **456**. Together
-they verify complete input identities for the theorem's 56,830-case boundary,
-including headers, variables, clause counts, literal signs and ordering.
-Use fresh output directories outside the authenticated evidence snapshot.
-
-These external byte comparisons connect Lean definitions with retained or
-reconstructed formula bytes; the input and result checks match their SHA-256
-values to runner-recorded input hashes. They run no SAT solver and do not turn native UNSAT answers
-into kernel-checked refutation certificates. The archive and native-result
-checks in Sections 1–6 retain their separate roles.
-
-## Scope and tool tests
-
-Archive authentication and formula reconstruction establish data identity;
-independent solver runs establish native UNSAT answers. The Lean proof
-establishes the physical reductions, exhaustive case covers and concrete
-encoding implications under `AllNativeUnsat`; external binding
-checks connect those formulas to the native evidence. Together these are the
-verification components of the computer-assisted proof.
-The commands above reconstruct the proof inputs without recreating a
-particular research machine or its campaign controllers.
-
-The small synthetic tests exercise rejection of tampered hashes and censuses,
-unsafe archive paths, invalid units, corrupt suffixes and incorrect outputs:
+## Routine repository checks
 
 ```sh
-python3 -B reproduce/test_verify.py
-python3 -B reproduce/test_abd_inputs.py
-python3 -B reproduce/test_abd_native.py
-python3 -B reproduce/test_abd_second_solver.py
+make test-ci
+make lean-source-audit
+make lean-ci
 ```
 
-They create temporary fixtures and do not alter the evidence or run a search.
+The source audit authenticates the full selected source/data package.
+The small Lean CI target checks the physical encoding in five modules and
+audits its two theorem dependencies. It does not substitute for the complete
+mathematical build, all input bindings, or native SAT verification. The
+[trust statement](TRUST_AND_CERTIFICATION.md) explains how these checks
+combine to support the proof.

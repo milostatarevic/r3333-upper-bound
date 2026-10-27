@@ -1,2 +1,0 @@
-'PricingC.ThreeSupportFrame.actual_545_to_catalogue' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingC.ThreeSupportFrame.actual_554_to_catalogue' depends on axioms: [propext, Classical.choice, Quot.sound]

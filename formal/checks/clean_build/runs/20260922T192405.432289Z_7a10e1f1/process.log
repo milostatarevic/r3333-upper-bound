@@ -1,1 +1,0 @@
-'PricingABD.ABBase.base_sat' depends on axioms: [propext, Classical.choice, Quot.sound]

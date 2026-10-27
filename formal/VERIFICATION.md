@@ -1,52 +1,34 @@
-# Verification record
+# Verification boundary and records
 
-Lean proves `PricingIntegration.NativeWholeProof.ramsey61` with the explicit
-computational premise `AllNativeUnsat`. The mathematical case coverage,
-preservation of the original coloring, coordinate and palette transport,
-classification use, and CNF encoding arguments are supplied by proved terms.
+The verification has three parts: checking the Lean mathematics, matching the exact formulas to native inputs, and checking the retained native solver records. Each part has its own execution record.
+
+## Mathematical source build
+
+[`SOURCE_MANIFEST.json`](SOURCE_MANIFEST.json) pins all selected project modules, 110 embedded classification files, and build controls. The portable builder compiles the complete selected closure with the pinned Lean/Mathlib environment. Project imports resolve to that run's own library, and the build includes replay of the 55 small classification CNF/LRAT pairs.
+
+[`BUILD_RESULT.json`](BUILD_RESULT.json) identifies the recorded run. Detailed module receipts identify each source, compiler command, imported artifact, output artifact, log, exit status and resource measurement. A successful complete build has no failed or pending modules and no reused project artifacts. Source validation alone, a partial target, and the complete build are distinct operations.
+
+The final theorem is:
 
 ```lean
-ramsey61 (h : AllNativeUnsat) (c : Ramsey61.Host) :
-  ¬Ramsey61.NoMonochromaticTriangle c
+UniformK61.WholeProof.ramsey61 (h : AllNativeUnsat) :
+  ∀ c : Ramsey61.Host, ¬Ramsey61.NoMonochromaticTriangle c
 ```
 
-The theorem and the exact case-count theorem report only `propext`,
-`Classical.choice` and `Quot.sound` in their axiom audits. `AllNativeUnsat`
-remains visible as a theorem parameter; these audits do not check the large
-native search refutations.
+`AllNativeUnsat` concerns exactly 56,723 formulas. The theorem and case-count audits permit only `propext`, `Classical.choice` and `Quot.sound`. The native UNSAT premise is an explicit theorem parameter.
 
-| Check | Result |
-|---|---|
-| Complete portable source build | All 1,809 modules passed from a fresh checkout; no prior project artifacts reused |
-| Classification proofs | All 32 modules compiled from source and all 55 small CNF/LRAT pairs replayed inside Lean |
-| Exact computational boundary, proved in Lean | 55,016 common cases + 1,358 UUU/UUT cases + 456 C cases = 56,830 |
-| Separate exact input binding | All 56,830 formula-to-input identities passed |
-| Source and data validation | All 1,809 modules and 110 embedded files match the source manifest |
+## Exact formula binding
 
-The [build result](BUILD_RESULT.json) records the complete portable execution
-for [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json), SHA-256
-`15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed`.
-The [compressed build records](checks/portable-build.tar.gz) contain the
-per-module compiler receipts and logs, without compiled objects.
-The build used Lean 4.32.1 and the nine package revisions pinned by
-`lake-manifest.json`, including Mathlib
-`520045ab14e26149ee970e2e617ca04b09bde5d6`. The run records source, imported-artifact
-and output hashes. Project imports resolve only to the run's own library;
-external imports resolve to the fresh dependency cache and toolchain.
-The standard cached dependency binaries remain part of the Lean/Mathlib
-trust boundary.
+The [binding driver](reproduce/uniform/README.md) accepts a successful complete current-source build. It checks the exact final theorem type and case count, runs four Lean emitters against that build, and compares the entire disjoint input catalogue. The checks cover ordered literals, signs, dimensions, byte counts and full DIMACS hashes.
 
-The [joined input-binding record](checks/joined_bindings/RUN_RESULT.json)
-connects all 56,830 Lean-defined formulas to the native input identities using
-the complete portable build's library and the same `15b67757…` source
-manifest. The check also emits and compares the complete C base. Its
-[execution records](checks/joined_bindings/records.tar.gz) retain commands,
-source and artifact hashes, logs and comparison results. The native
-UNSAT evidence and second-solver cross-checks are described in this repository's
-[search reproduction guide](../publication/REPRODUCIBILITY.md). All 56,374 A/B/D
-inputs and all 456 C inputs have UNSAT results from both solvers. These results
-support `AllNativeUnsat`; their large refutations are not checked inside Lean.
+Its `RUN_RESULT.json` retains source, compiler, runtime and build identities. Inputs, logs, sources and artifacts are checked before and after the execution. The shared caches used by the common and balanced emitters have Lean proofs of exact ordered-formula equality. Serialization, runtime execution and hash comparison remain external operational checks.
 
-[BUILD.md](BUILD.md) gives the reproduction commands.
-[MEASUREMENTS.md](MEASUREMENTS.md) reports CPU time, memory and storage.
-Compiled project artifacts are not included in the source package.
+## Native evidence and the release package
+
+The native boundary has 56,723 cases and two solver records per case, for 113,446 required runs. The verification policy uses Kissat 4.0.4 and CaDiCaL 3.0.1 with default options and no CPU or wall-time cap. A case contributes to the exclusion only when the retained input, command, binary, raw log and exit status agree on UNSAT. SAT, UNKNOWN, errors and missing records do not count as exclusions.
+
+The release package joins this exact native boundary to the source build and fresh binding. Its `RELEASE.json` identifies the records under `math/build/`, `math/binding/`, and the native input and result directories. The current repository's `reproduce/uniform_release.py verify-package` checks the complete package, including its theorem audit, formula identities and all selected native records. It does not launch Lean or a SAT solver.
+
+The final native UNSAT results remain external to the Lean kernel. The included classification certificates, mathematical reductions and exact formula definitions are checked inside Lean; the standard compiler and pinned dependency runtime remain part of that checking environment.
+
+Reproduction commands are in [BUILD.md](BUILD.md) and [reproduce/README.md](reproduce/README.md).

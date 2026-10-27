@@ -1,2 +1,0 @@
-'PricingC.some_reference' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingC.xorTranslation_graph' depends on axioms: [propext, Classical.choice, Quot.sound]

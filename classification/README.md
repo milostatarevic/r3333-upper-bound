@@ -37,21 +37,24 @@ the command does not declare an UNSAT axiom.
 
 ## Evidence and reproduction
 
-The [complete portable build](../formal/BUILD_RESULT.json) passed on
-23 September 2026. It compiled the current 32 classification modules and
-replayed all 55 included CNF/LRAT pairs within the 1,809-module mathematical
-closure, using the [integrated source manifest](../formal/SOURCE_MANIFEST.json)
-with SHA256 `15b6775769f3578acd5c6aa22c46506decb3c041bd98912a79d50dd6e55ea8ed`.
-The standalone and integrated copies of these modules are byte-identical.
-The build used pinned dependencies and its own project outputs, with no
-reused project artifacts.
+The [complete portable mathematical build](../formal/BUILD.md) compiles
+these 32 classification modules and replays all 55 CNF/LRAT pairs as
+part of the final Ramsey theorem's dependency closure. The
+[integrated source manifest](../formal/SOURCE_MANIFEST.json) pins the
+sources, data and complete build controls; the
+[build record](../formal/BUILD_RESULT.json) gives its accepted execution.
+The standalone and integrated copies of the classification modules are
+byte-identical. The full build uses pinned dependencies and new project
+outputs, without reusing baseline project artifacts.
 
 The [actual-host adapter](adapter/README.md) connects this classification
-closure to the 61-vertex Ramsey proof. All seven inspected endpoints use only
+closure to the 61-vertex Ramsey proof. Its physical-neighborhood endpoints use only
 `propext`, `Classical.choice` and `Quot.sound`; no catalogue-completeness premise
 remains at the K15/K16 physical-neighborhood endpoints. The adapter preserves
 both the physical vertex map and the single palette permutation. It is included
-in the complete portable mathematical build.
+in the complete portable mathematical build and supplies the actual
+neighborhood templates used by
+[`UniformK61.WholeProof.ramsey61`](../formal/src/UniformK61/WholeProof.lean).
 
 [MANIFEST.json](MANIFEST.json) records exact files, hashes, import order and
 source provenance. Build receipts preserve input manifests, commands, compiler
@@ -96,6 +99,9 @@ pressure; it never signals existing jobs. Use the
 [full-build memory measurements](../formal/MEASUREMENTS.md) when selecting a
 machine; classification replay should not be assumed to fit a small CI runner.
 
-The present GitHub CI checks `formal/`, not this separate classification
-package. Its verification scope is described in
-[the provenance note](../publication/CLASSIFICATION_PROVENANCE.md).
+GitHub CI checks source integrity and compiles the small shared-encoding
+target `UniformK61.CoreCounts` in `formal/`. It does not replay these
+classification traces or compile the complete Ramsey theorem. The full
+build and the CI check therefore have distinct verification scopes,
+as described in the
+[provenance note](../publication/CLASSIFICATION_PROVENANCE.md).

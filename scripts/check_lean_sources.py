@@ -16,10 +16,17 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 FORMAL = ROOT / 'formal'
 ACCEPTED_MANIFEST_PIN = ROOT / 'publication/checks/ACCEPTED_MATH_MANIFEST.sha256'
-MODULE_COUNT, DATA_COUNT = 1809, 110
-ROOTS = ('PricingIntegration.NativeWholeProof', 'CompletionC.CommonCaseCount',
-         'PricingIntegration.NativeWholeCount', 'PricingABD.CommonSuffixCache',
-         'PricingG.UUQEmissionIdentity')
+MODULE_COUNT, DATA_COUNT = 857, 110
+ROOTS = (
+    'UniformK61.WholeProof',
+    'UniformK61.CommonCover',
+    'UniformK61.CommonUnitCache',
+    'UniformK61.MarkedUU',
+    'UniformK61.CEntranceCatalogueData',
+    'UniformK61.CEntranceFormula',
+    'UniformK61.BalancedEncodingCache',
+    'UniformK61.CoreCounts',
+)
 CONTROL_FILES = {'lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'build.py', 'BUILD.md'}
 HELPER = 'src/R4333Lean/CheckedLRAT.lean'
 HELPER_SHA = '0dc50a516ce88c897aa9c1b71baedb1f693b010cdd644886f83dd09fd677edc5'
@@ -214,10 +221,6 @@ def inspect_package(root, *, module_count=MODULE_COUNT, data_count=DATA_COUNT, r
     positions = {name: i for i, name in enumerate(order)}
     require(all(positions[d] < positions[m] for m, row in modules.items()
                 for d in row['imports'] if d in modules), 'Invalid topological order')
-    duplicate = root / 'reproduce/common/lean/PricingABD/CommonSuffixCache.lean'
-    if duplicate.exists():
-        require(duplicate.read_bytes() == (root / 'src/PricingABD/CommonSuffixCache.lean').read_bytes(),
-                'Supplemental reproduction copy differs from proof source')
     classification = root.parent / 'classification'
     if (classification / 'MANIFEST.json').is_file():
         catalogue = strict_json((classification / 'MANIFEST.json').read_bytes())

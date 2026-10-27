@@ -35,7 +35,7 @@ theorem exists_cataloguedAttachingConfiguration61_checked
     k15CriticalCatalogue_complete k16CriticalCatalogue_complete
 
 /-- An auxiliary sufficient-condition theorem using the attaching obstruction.
-The complete endpoint `PricingIntegration.NativeWholeProof.ramsey61` instead
+The complete endpoint `UniformK61.WholeProof.ramsey61` instead
 uses the profile reduction and its explicit native computational premise. -/
 theorem noFourColoring_61_of_checkedAttachingObstruction
     (hobstruction : CataloguedAttachingObstruction61) :

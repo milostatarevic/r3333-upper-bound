@@ -122,7 +122,7 @@ theorem physical_avoids_three {c:Host} {nf nl nr:Nat} (f:Frame c nf nl nr)
   ⟨physical_ne_mark f i,physical_ne_mark f j,(physical f).injective.ne hij⟩
   ⟨(physical_marked f i).trans (physical_marked f j).symm,(physical_marked f j).trans he.symm⟩
 
-open PricingABD.P15PhysicalRooted (threeIndex threeIndex_palette palette_threeIndex threeIndex_injective_on)
+open UniformK61.PhysicalHelpers (threeIndex threeIndex_palette palette_threeIndex threeIndex_injective_on)
 noncomputable def restoredColoring {c:Host} {nf nl nr:Nat} (f:Frame c nf nl nr):
  R4333.EdgeColoring (Fin (order nf nl nr)) (Fin 3) where
  color i j:=threeIndex (c (physical f i) (physical f j))

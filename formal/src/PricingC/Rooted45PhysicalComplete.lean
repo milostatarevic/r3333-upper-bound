@@ -3,7 +3,7 @@ import PricingC.Rooted45Physical
 
 namespace PricingC.Rooted45Orientation
 open Ramsey61 Ramsey61.CEncodingCore
-open PricingABD.P15PhysicalRooted (threeIndex palette_threeIndex)
+open UniformK61.PhysicalHelpers (threeIndex palette_threeIndex)
 
 /-- Both545 and554 actual physical support configurations lie in their exact
 retained600word catalogue. The result uses the original four-color palette;

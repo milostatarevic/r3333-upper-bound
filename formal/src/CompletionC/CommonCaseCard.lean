@@ -1,8 +1,8 @@
 import CompletionC.CommonCaseCountDefs
 set_option autoImplicit false
 namespace CompletionC.CommonCaseCount
-open PricingABD.ABLayout CompletionC.NativeFamilyJoin CompletionC.NativeMatrices
-open PricingIntegration.NativeCommonCases Finset
+open PricingABD.ABLayout CompletionC.CommonCases CompletionC.NativeMatrices
+open CompletionC.CommonCases Finset
 
 theorem card_sum:Fintype.card Case=
  ∑l:Layout,∑t:Types,∑p:Fin 737,if Admitted l t p then (pairTable p).count else 0:=by

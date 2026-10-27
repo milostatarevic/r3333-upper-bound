@@ -1,1 +1,0 @@
-'PricingIntegration.PairAdmission.support_product_admitted' depends on axioms: [propext, Classical.choice, Quot.sound]

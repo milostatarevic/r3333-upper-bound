@@ -1,5 +1,5 @@
 import PricingABD.PaletteSymmetry
-import Ramsey61.CPhysicalNormalization
+import UniformK61.HostNormalization
 import Ramsey61.ClassificationAdapter
 
 namespace PricingABD.TTExchange

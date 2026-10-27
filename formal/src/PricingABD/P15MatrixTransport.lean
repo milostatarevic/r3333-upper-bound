@@ -1,8 +1,7 @@
 import PricingABD.P15PairOrbit
 
 namespace PricingABD.P15MatrixTransport
-open Ramsey61 Ramsey61.CEncodingCore PricingABD.TTExchange PricingABD.P15Encoder
-open PricingABD.P15Suffix PricingABD.P15PairOrbit
+open PricingABD.P15PairOrbit
 open R4333.FiniteColorCNF
 
 abbrev Word := Fin 65 → Fin 4
@@ -49,73 +48,5 @@ theorem complete_pair000_edge_transport : ∀ i : Fin 600, ∀ e : Fin 65,
     word (representative (target i)) e =
       word (candidate i) (if useReverse i then crossPermutation e else e) := by decide +kernel
 
-def placementMap : Fin 14 → Fin 50 := ![0,1,2,3,4,5,17,6,14,19,20,32,21,29]
-def placement : Fin 14 ↪ Fin 50 where
-  toFun := placementMap
-  inj' := by decide
-
-/-- The entire four-row embedding is permuted; the underlying host stays fixed. -/
-def reverseFrame {c : Host} {t : Bool} (f : Frame c 4 t) : Frame c 4 t where
-  root := f.root
-  free := reverseFourEquiv.toEmbedding.trans f.free
-  left := f.left
-  right := f.right
-  marked := f.marked
-  free_mem i := f.free_mem (reverseFour i)
-  left_mem := f.left_mem
-  right_mem := f.right_mem
-  marked_mem := f.marked_mem
-  left_edges := f.left_edges
-  right_edges := f.right_edges
-  marked_edges := f.marked_edges
-
-set_option maxRecDepth 100000 in
-theorem placement_reverse {c : Host} {t : Bool} (f : Frame c 4 t) (a : Fin 14) :
-    physicalVertex (reverseFrame f) (placement a) =
-      physicalVertex f (placement (reverseFourteen a)) := by fin_cases a <;> rfl
-
-/-- Full original leaf in one fixed archived TT support pair. -/
-def leaf (t : Bool) (j : Fin 300) : Sat.Fmla :=
-  baseFmla t ++ suffix placement (matrix (word (representative j)))
-
-/-- Every actual realization of one of the600catalogue matrices in this pair
-satisfies an exact retained300-representative leaf after a whole-free-row action.
-Only the matrix-catalogue entrance remains to turn this into a whole P15 cover. -/
-theorem observed_pair000_has_retained_leaf {c : Host} {t : Bool} (f : Frame c 4 t)
-    (hc : NoMonochromaticTriangle c) (i : Fin 600)
-    (observed : ∀ a b, a ≠ b →
-      c (physicalVertex f (placement a)) (physicalVertex f (placement b)) =
-        palette (matrix (word (candidate i)) a b)) :
-    ∃ valuation : Sat.Valuation, valuation.satisfies_fmla (leaf t (target i)) := by
-  by_cases hr : useReverse i = true
-  · have hword : word (representative (target i)) = fun e => word (candidate i) (crossPermutation e) := by
-      funext e
-      simpa [hr] using complete_pair000_edge_transport i e
-    refine ⟨coloringValuation (physicalColoring (reverseFrame f)),?_⟩
-    constructor
-    intro clause hcl
-    rcases List.mem_append.mp hcl with h | h
-    · exact (frame_satisfies_exact_P15_base (reverseFrame f) hc).prop clause h
-    · apply (suffix_satisfied (reverseFrame f) placement (matrix (word (representative (target i)))) ?_).prop clause h
-      intro a b hab
-      rw [placement_reverse,placement_reverse,hword,matrix_reverse]
-      have hinj : Function.Injective reverseFourteen := by decide
-      exact observed _ _ (hinj.ne hab)
-  · have hf : useReverse i = false := Bool.eq_false_iff.mpr hr
-    have hword : word (representative (target i)) = word (candidate i) := by
-      funext e
-      simpa [hf] using complete_pair000_edge_transport i e
-    refine ⟨coloringValuation (physicalColoring f),?_⟩
-    constructor
-    intro clause hcl
-    rcases List.mem_append.mp hcl with h | h
-    · exact (frame_satisfies_exact_P15_base f hc).prop clause h
-    · apply (suffix_satisfied f placement (matrix (word (representative (target i)))) ?_).prop clause h
-      intro a b hab
-      rw [hword]
-      exact observed a b hab
-
 #print axioms complete_pair000_edge_transport
-#print axioms observed_pair000_has_retained_leaf
-#check observed_pair000_has_retained_leaf
 end PricingABD.P15MatrixTransport

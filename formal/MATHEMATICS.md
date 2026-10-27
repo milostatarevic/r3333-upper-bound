@@ -1,43 +1,50 @@
 # Mathematical dependency map
 
-The final endpoint is [`PricingIntegration.NativeWholeProof.ramsey61`](src/PricingIntegration/NativeWholeProof.lean):
+The endpoint is [`UniformK61.WholeProof.ramsey61`](src/UniformK61/WholeProof.lean). Its only external premise is unsatisfiability of the concrete formulas indexed by `WholeProof.Case`:
 
 ```lean
-ramsey61 (h : AllNativeUnsat) : ∀ c : Host, ¬NoMonochromaticTriangle c
+def AllNativeUnsat : Prop :=
+  ∀ k : Case, ¬∃ w : Valuation, FormulaSat w (formula k)
 ```
 
-`Host` is a four-coloring of the actual 61 vertices. `AllNativeUnsat` concerns only the explicitly defined finite CNFs below. The source constructs every mathematical argument connecting a hypothetical good coloring to those formulas.
+All vertices and edge colors in the reductions belong to one actual K61 coloring. Template coordinates and palette maps describe that coloring; they do not introduce independent colorings on overlapping neighborhoods.
 
-## Final composition
+[`CNF`](src/UniformK61/CNF.lean) supplies the clause and valuation semantics. [`Physical`](src/UniformK61/Physical.lean) defines the shared edge variables, one-color clauses and triangle prohibitions; [`Core`](src/UniformK61/Core.lean) adds signed physical facts. [`PhysicalHelpers`](src/UniformK61/PhysicalHelpers.lean) supplies the elementary palette and edge-index facts used by the support transports. [`HostNormalization`](src/UniformK61/HostNormalization.lean) supplies whole-host vertex and palette maps.
 
-[`ramsey61_conditional`](src/Ramsey61/Conditional.lean) supplies the outer incidence/graph argument. The endpoint supplies all three mathematical components required by the outer theorem:
+## Marked A/B/D and C covers
 
-| Interface | Proved implementation | Dependency and conclusion |
-|---|---|---|
-| `abd_supplied_root_selector` | `NativeWholeProof.selector h` | Actual A/B/D roots with high enough incoming mass reach their exact native formulas; their exclusions yield `SelectorX`. |
-| `guarded_G_exclusion` | [`GComplete.guarded_G_exclusion`](src/PricingIntegration/GComplete.lean) | Every actual `RegularOverlapGuard` gives a physical finite core; both exhaustive core families are excluded by proved finite relations. This step takes no native UNSAT premise. |
-| `physical_C_to_CNF_cover` | [`CComplete.physical_C_to_exact_family`](src/PricingIntegration/CComplete.lean) | An actual `CExteriorWitness`, under the derived selector, yields a satisfying valuation for one exact `concreteFamily i`, `i : Fin 456`. |
+A normalized configuration consists of fixed root-cell sizes and template types, selected foreign supports, a free support in reference order, and one of the 600 cross-support words. Its recorded facts include every root spoke, each supplied template, the free-support pattern, the word and exact marked-neighborhood membership.
 
-The [uniform-host/regular-overlap entrance](src/Ramsey61/GuardedEntrance.lean) is consumed by the outer argument. Absence of a C exterior witness forces synchronized C/E structure, then a uniform common high pair and a regular overlap; G excludes that alternative. The resulting C witness reaches the 456-case family, where `h` gives the contradiction.
+The finite coverage criterion supplies a retained case and one whole-host vertex and palette transformation for every normalized configuration. Every target fact must pull back to a recorded source fact. [`UnitTransport.covers_satisfiable`](src/UniformK61/UnitTransport.lean) expresses this physical implication. The support and word checks, including their whole-template actions and all signed membership facts, establish the criterion for the complete retained lists.
 
-## A/B/D to exact native formulas
+The A/B/D construction is implemented by [`CommonCover`](src/UniformK61/CommonCover.lean), [`UUPhysicalCover`](src/UniformK61/UUPhysicalCover.lean) and [`UUFiniteCover`](src/UniformK61/UUFiniteCover.lean). [`CommonHost`](src/UniformK61/CommonHost.lean) extends the coordinates to all 61 vertices; [`CommonSoundness`](src/UniformK61/CommonSoundness.lean) proves the corresponding physical facts. The retained units are defined in [`CommonFormula`](src/UniformK61/CommonFormula.lean) and [`MarkedUU`](src/UniformK61/MarkedUU.lean). [`CommonCases`](src/CompletionC/CommonCases.lean) defines the admitted case indices; [`SupportEdges`](src/CompletionC/SupportEdges.lean) gives their physical support-edge coordinates. Together these covers contain 360 A, 5,096 B and 50,918 D cases.
 
-[`CommonEntrance`](src/CompletionC/CommonEntrance.lean) chooses one global palette and retains complete physical critical cells and the entire four- or five-point low-cell support. [`NativeFamilyJoin.common_native_cover`](src/CompletionC/NativeFamilyJoin.lean) proves support normalization, the 737 support-pair admission, exhaustive matrix coverage, whole-cell coordinate transport, and satisfaction of the native prefix plus **all signed suffix units** by one valuation. Negative support literals are justified by membership biconditionals, not only positive support inclusion.
+[`ABDProof.selector`](src/UniformK61/ABDProof.lean) applies these exclusions to obtain the three strict incoming-ticket bounds for A, B and D. These bounds are conclusions of the case covers, not additional assumptions.
 
-[`ABNative.actual_native_prefix`](src/PricingABD/ABNative.lean) discharges A/B counter schedules, constant folding, cache references, allocation, and auxiliary valuations. [`DNativePrefix.satisfying_extension`](src/PricingIntegration/DNativePrefixComplete.lean) supplies the original D prefix and preserves every physical edge atom. [`ActualProfileCover`](src/CompletionC/ActualProfileCover.lean) connects these constructions to actual W/H-selected A/B/D roots.
+[`CEntrance.physical_cover`](src/UniformK61/CEntranceCover.lean) proves the generic normalized-entrance cover, and [`CEntrance.actual_C_cover`](src/UniformK61/CEntranceFinal.lean) supplies the final witness interface for the direct 346-case catalogue. Its physical layout contains two classified 16-neighborhoods, the actual marked neighborhood, and the complete remaining cells. It requires no critical template for a 14-vertex cell and does not assume that such a cell extends to a critical coloring.
 
-D's two U/U owners are separate. [`UUQPhysicalExtension.selected_split`](src/PricingG/UUQPhysicalExtension.lean) uses the **same supplied physical blocks**, enumerates the complete low K14, retains the original 15/15/16 tail maps and marked vertex, and derives the four/five-support split. [`UUQExactNative.actual_UU_native`](src/PricingG/UUQExactNative.lean) covers precisely 189 P15, 408 restricted D9, and 82 D10 formulas for each Q type. UUT keeps Q16 twisted throughout. `NativeWholeProof.D_selected_excluded` dispatches the same physical witness to this route or the common mixed-D route.
+All these formulas are the shared good-coloring base followed by signed physical edge units. Their satisfying valuations are constructed directly from the transported full host.
 
-## C and G finite mathematics
+## The globally balanced case
 
-`CComplete.normalized_seed_cover` proves the exact 456-seed cover using the actual aligned three-neighborhood construction, simultaneous coordinate/palette transport, and literal seed binding. Its consumer constructs the full CNF valuation, including auxiliaries.
+If there is no C entrance, double counting of tickets and the A/B/D bounds yield [`SynchronizedCE`](src/Ramsey61/Selector.lean). The four [`BalancedStructure`](src/UniformK61/BalancedStructurePair.lean) modules derive one common high-color pair by elementary counting:
 
-G's physical core cover divides into the 3,600 isomorphic and 10,368 remaining core indices. The structural shared-graph classification, coordinate embeddings, highness requirements, and finite relation contradictions are proved before `GComplete.guarded_G_exclusion` is applied. These finite G checks are not additional SAT assumptions.
+1. In a good three-colored K15 or K16, each color degree is between n−11 and 5. A color-closed component has at least twice its minimum degree, so each internal color graph is connected.
+2. Reciprocity therefore makes every high-color flag constant within an actual critical neighborhood. The parity obstruction supplies a C root; an E vertex would force a 15-neighborhood into two intersections of size at most five.
+3. High-color pairs agree across critical edges. Any two 32-element critical-neighbor sets intersect in the 61-vertex host, so the pair is common to every vertex.
 
-## Classification reuse and computational boundary
+[`UniformK61.BalancedHost.uniform_to_three_owners`](src/UniformK61/BalancedHostOwners.lean) normalizes one root, one global palette, and its two actual 16-neighborhoods. Exchanging those two cells together with their high colors leaves the three template pairs UU, UT and TT. The named degree vector at every vertex is (16,16,14,14).
 
-[`ClassificationAdapter`](src/Ramsey61/ClassificationAdapter.lean) connects the K15/K16 completeness library to actual hosts, preserving vertex and palette maps through `physical_neighborhood_k15` and `physical_neighborhood_k16`. The complete portable build compiles all 32 classification modules from source and replays their 55 included CNF/LRAT pairs.
+[`BalancedVisible`](src/UniformK61/BalancedVisible.lean) proves that each observed part of an opposite high-color neighborhood embeds into a classified K16 template. All physical edges between observed vertices are preserved. The two-color intersection bound also supplies the five-element cross supports.
 
-The final `Case` type is the disjoint sum of [concrete common owner/support/matrix indices](src/PricingIntegration/NativeCommonCases.lean), `Bool × UUQExactNative.Leaf`, and `Fin 456`. The retained native census is 55,016 + 1,358 + 456 = **56,830** inputs. Exact formula-to-archive binding is a separate, hash-pinned reproducibility check. For UUQ, [`emitted_eq`](src/PricingG/UUQEmissionIdentity.lean) proves equality to the cached executable representation, and [the complete input-binding record](checks/joined_bindings/RUN_RESULT.json) matches every complete Lean-emitted input to the retained solver-input hash using the published build.
+The finite anchor catalogue covers all 320 ordered five-anchor embeddings with the fixed reference coloring into the two literal templates. Its whole-template maps give six coordinate states. [`BalancedAnchorSupportFinite`](src/UniformK61/BalancedAnchorSupportFinite.lean) covers every independent five-subset. [`BalancedEncodingActualLocal`](src/UniformK61/BalancedEncodingActualLocal.lean) transports the actual observed embeddings into those coordinates, preserving all anchor and member-pair colors. Inactive vertices receive no role; active vertices receive distinct roles.
 
-The remaining explicit hypothesis is the UNSAT of those concrete formulas. Their native solver results supply external computational evidence; `ramsey61` does not kernel-check the large search refutations. Its retained axiom audit lists only `propext`, `Classical.choice`, and `Quot.sound`, with `AllNativeUnsat` visible as a theorem parameter. The source-build receipts and complete census/byte bindings provide the accompanying verification evidence.
+[`BalancedEncodingValuation`](src/UniformK61/BalancedEncodingValuation.lean) combines the support and local-embedding witnesses in disjoint variable ranges, without changing any physical edge value. [`BalancedEncoding.actual_uniform_cover`](src/UniformK61/BalancedEncodingActual.lean) consequently supplies a satisfying valuation of one of the three complete balanced formulas from any good globally balanced host. It has no extra finite-coverage or auxiliary-witness premise.
+
+## Classification and final composition
+
+[`ClassificationAdapter`](src/Ramsey61/ClassificationAdapter.lean) connects the complete K15/K16 classification to actual neighborhoods and their palette maps. Its 55 included CNF/LRAT pairs are checked by the Lean build. The classification is used wherever a critical neighborhood is replaced by a literal template.
+
+`WholeProof.ramsey61` splits on the existence of an actual C entrance. That branch reaches one of the 346 C formulas. The other branch derives the common high pair and reaches one of the three balanced formulas. Together with the 56,374 A/B/D exclusions, this gives the exact 56,723-case computational premise.
+
+The [input-binding checks](reproduce/uniform/README.md) separately compare the complete Lean-emitted formulas with the native input catalogue. Native solver UNSAT remains external; the mathematical connection to those exact formulas is proved in Lean.
