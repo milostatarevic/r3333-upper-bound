@@ -3,7 +3,7 @@ import PricingC.Rooted555Physical
 
 namespace PricingC.Rooted555
 open Ramsey61 Ramsey61.CEncodingCore
-open PricingABD.P15PhysicalRooted (threeIndex threeIndex_palette palette_threeIndex)
+open UniformK61.PhysicalHelpers (threeIndex threeIndex_palette palette_threeIndex)
 
 theorem restored_spokes {c : Host} (f : Physical555 c) :
  ∀ i,i≠15 → restoredColoring f 15 i=group i := by

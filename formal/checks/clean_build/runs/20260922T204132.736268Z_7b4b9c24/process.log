@@ -1,2 +1,0 @@
-'CompletionC.NativeMatrices.pair_shape' depends on axioms: [propext, Quot.sound]
-'CompletionC.NativeMatrices.pair_dimensions' depends on axioms: [propext, Classical.choice, Quot.sound]

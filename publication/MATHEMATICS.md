@@ -1,62 +1,43 @@
 # Mathematical verification map
 
-The complete written argument is [proof.md](../proof.md). The
-[Lean package](../formal/README.md) proves its mathematical reduction to
-**56,830 concrete CNFs**. Its endpoint,
-[`PricingIntegration.NativeWholeProof.ramsey61`](../formal/src/PricingIntegration/NativeWholeProof.lean),
-has the single computational premise `AllNativeUnsat`: every formula in its
-explicit finite `Case` type is unsatisfiable. Classification, case coverage,
-physical transport and encoding soundness are proved in the source.
+The complete argument is [proof.md](../proof.md). The [Lean package](../formal/README.md) proves its reduction to **56,723 concrete CNFs**. Its endpoint, [`UniformK61.WholeProof.ramsey61`](../formal/src/UniformK61/WholeProof.lean), has one external computational premise: every formula in its explicit finite case type is unsatisfiable.
 
 | Proof step | Mathematical argument and verification |
 |---|---|
-| Critical neighborhoods (§1) | Local K15/K16 completeness proofs and the [actual-host adapter](../formal/src/Ramsey61/ClassificationAdapter.lean); [classification provenance](CLASSIFICATION_PROVENANCE.md) |
-| Degrees, incidence and A/B/D selectors (§§2–3) | The [A/B/D evidence index](ABD_EVIDENCE_INDEX.md), [D specification](D_COVER_AND_ENCODING.md), and formal physical covers, native prefixes and signed suffixes |
-| Local relation and guarded exclusion (§§4–5) | Formal structural reductions and both exhaustive G covers; `GComplete.guarded_G_exclusion` has no native SAT premise. The [finite replay tools](REPRODUCIBILITY.md#5-replay-the-local-relation-and-g-exclusions) provide a separate check |
-| Global entrance (§6) | Formal incidence synchronization, low-set counting, uniformity and construction of the actual regular-overlap guard |
-| Physical C cover and formula semantics (§§7–8) | The formal 456-seed cover and satisfying valuation for each reached concrete formula, including its signed seed literals and auxiliaries |
-| Composition (§9) | The main theorem supplies all mathematical components and derives the contradiction from `AllNativeUnsat`; [formal dependency map](../formal/MATHEMATICS.md) |
-| Verification (§10) | [Native trust standard](TRUST_AND_CERTIFICATION.md), [check records](RELEASE_CHECKS.md), and [formalization status](FORMALIZATION_STATUS.md) |
+| Critical neighborhoods | Local K15/K16 completeness proofs and the [actual-host adapter](../formal/src/Ramsey61/ClassificationAdapter.lean); [classification provenance](CLASSIFICATION_PROVENANCE.md) |
+| Degrees, profiles and tickets | The color-degree bounds, exhaustive profiles and double counting of incoming and outgoing tickets |
+| Marked A/B/D roots | [CommonCover](../formal/src/UniformK61/CommonCover.lean) and [UUPhysicalCover](../formal/src/UniformK61/UUPhysicalCover.lean) give complete physical covers; [ABDProof.selector](../formal/src/UniformK61/ABDProof.lean) derives the strict ticket bounds from their exclusions |
+| C entrances | [CEntrance.actual_C_cover](../formal/src/UniformK61/CEntranceFinal.lean) gives a direct 346-case marked-neighborhood cover, without a critical-template assumption on either 14-vertex root cell |
+| Perfect balance | [BalancedStructure](../formal/src/UniformK61/BalancedStructurePair.lean) uses reciprocity, elementary connectivity, intersection bounds and parity to obtain one common high-color pair |
+| Balanced hosts | [BalancedHost](../formal/src/UniformK61/BalancedHostOwners.lean) normalizes the two 16-neighborhoods to UU, UT or TT; [BalancedEncoding.actual_uniform_cover](../formal/src/UniformK61/BalancedEncodingActual.lean) supplies a satisfying valuation of the corresponding complete K61 formula |
+| Composition and evidence | [WholeProof](../formal/src/UniformK61/WholeProof.lean) combines the branches; [input binding](../formal/reproduce/uniform/README.md) connects its concrete formulas to the native searches |
+
+For marked neighborhoods, a normalized configuration consists of chosen support positions and one of the 600 cross-support words, together with all root, template and signed membership facts. The same finite coverage criterion applies to every retained list: each configuration reaches a case through a whole-host symmetry whose pulled-back target facts are recorded source facts.
+
+Every physical transport acts on all 61 vertices and uses one global palette permutation. Template maps describe actual neighborhoods in that coloring. Their overlaps share the same physical edge variables. Marked-neighborhood membership is recorded in both directions, including negative units for omitted vertices.
 
 ## Notation and Lean names
 
-A coloring is good when it has no monochromatic triangle. An incidence is
-high when its vertex's degree in that edge's color is at least 15.
+A coloring is *good* when it has no monochromatic triangle. A color is *high* at a vertex when its degree there is at least 15.
 
-- **H(v)** counts neighbors whose degree in the joining color is high at the
-  neighbor. It is `highOwnNeighborCount c v` in the Lean source.
-- **W(v)** sums the high color degrees at v itself. It is
-  `criticalDegreeMass c v`, also equal to the cardinality of
-  `incomingHighOwnSupport c v`.
-- An **eligible C root** has profile (14,14,16,16) and H(v) at least 32.
-- **Selector-X** denotes the A/B/D incidence bounds obtained from their
-  formal exhaustive covers and native computational exclusions.
-- **G** is the exact regular-overlap configuration in §5. It occurs inside
-  the global entrance argument; the final 456 formulas do not assume G.
+- **H(v)** counts neighbors whose degree in the joining color is high at the neighbor. It is `highOwnNeighborCount c v` in Lean.
+- **w(v)** sums the high color degrees at v itself. It is `criticalDegreeMass c v`, also equal to the cardinality of `incomingHighOwnSupport c v`.
+- An **eligible C entrance** is a C-profile root with H(v) at least 32 and a low-colored neighbor that is high in their joining color. This is `CExteriorWitness`; the neighbor’s actual critical neighborhood supplies the mark used by the finite cover.
+- **SelectorX** states the strict A/B/D ticket bounds. They are conclusions of the formal case covers and their computational exclusions.
 
-## Follow a computational premise
+Double counting of tickets, together with the A/B/D bounds, leaves either a C entrance or synchronized C/E profiles. The latter alternative forces every vertex to have the same named degree vector (16,16,14,14), after one global color relabeling.
 
-The [case-count theorem](../formal/src/PricingIntegration/NativeWholeCount.lean)
-proves the partition 55,016 common A/B/mixed-D cases, 1,358 original UUU/UUT
-cases and 456 C cases. The family is defined in Lean rather than supplied as
-an abstract theorem parameter.
+## The finite computational boundary
 
-The [formula-binding tools](../formal/reproduce/README.md) compare the
-Lean-defined formulas with retained or reconstructed formula bytes, whose
-SHA-256 values are matched to runner-recorded input hashes. Those external
-checks, and the native UNSAT records themselves, remain separate from
-the Lean proof. The main theorem does not kernel-check the large SAT
-refutations. The 55 smaller classification CNF/LRAT pairs have their own
-kernel-checked role.
+| Part of the concrete case type | Formulas |
+|---|---:|
+| A | 360 |
+| B | 5,096 |
+| D | 50,918 |
+| Direct C entrance cases | 346 |
+| Balanced UU, UT and TT cases | 3 |
+| **Total** | **56,723** |
 
-Every formula has matching UNSAT answers from Kissat and CaDiCaL. The
-[A/B/D second-solver receipt](checks/ABD_SECOND_SOLVER.json) covers all 56,374
-original A/B/D cases; the original archive retains the corresponding
-two-solver reconciliation for all 456 C cases.
+`WholeProof.native_case_count` proves this total. The mathematical connection to each formula includes its complete physical constraints and, for balance, the auxiliary witnesses for support selectors and visible-neighborhood embeddings. No coverage, classification or encoding premise remains as a theorem parameter.
 
-For A/B/D, the [evidence index](ABD_EVIDENCE_INDEX.md) identifies the finite
-data, complete censuses, formula assets and native results. For C and G,
-[Appendix A](../proof.md#appendix-a-portable-evidence-locators) locates the
-archive members. The [reproduction guide](REPRODUCIBILITY.md) separates
-archive authentication, exact input reconstruction, formal builds, input
-bindings and fresh native searches.
+The [formal dependency map](../formal/MATHEMATICS.md) explains these constructions. The [verification method](TRUST_AND_CERTIFICATION.md) distinguishes the Lean reduction, the external byte-binding checks and the native UNSAT results. The [reproduction guide](REPRODUCIBILITY.md) gives their separate commands.

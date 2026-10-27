@@ -1,2 +1,0 @@
-'PricingG.GuardedGraphModel.classified' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingG.regular_overlap_classified' depends on axioms: [propext, Classical.choice, Quot.sound]

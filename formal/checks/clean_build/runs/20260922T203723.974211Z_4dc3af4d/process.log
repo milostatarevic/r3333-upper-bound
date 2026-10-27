@@ -1,1 +1,0 @@
-'PricingG.exists_canonical_guard' depends on axioms: [propext, Classical.choice, Quot.sound]

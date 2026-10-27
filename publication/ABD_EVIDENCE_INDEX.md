@@ -1,154 +1,127 @@
 # A/B/D formula and finite-data index
 
-[Section 3 of the proof](../proof.md#3-excluding-high-h-roots-of-profiles-a-b-and-d)
-uses **56,374 exact A/B/D formulas**. This index connects the mathematical
-case tables to the finite data, input manifests and reconstruction assets.
-The [machine-readable index](ABD_EVIDENCE_INDEX.json) gives exact byte sizes
-and SHA256 hashes for all 85 indexed snapshot files, including every shared
-prefix and the UUU/UUT sparse bases and dense maps.
+[Section 4 of the proof](../proof.md#4-the-a-b-and-d-ticket-bounds)
+uses **56,374 exact A/B/D formulas**. Every formula uses the shared
+physical K61 base followed by signed physical unit facts. This index
+connects the mathematical covers, finite data and exact native inputs.
 
-Code-formatted paths beginning `evidence/` or `support/` below are relative to the
-authenticated extracted `archives/evidence-v1.tar.gz` snapshot. They are
-archive locators, not links to files in a clean checkout. Follow the
-[extraction instructions](REPRODUCIBILITY.md) first. The archive SHA256 is
-`2b85cac94df0317a532aa823cfea93ac83738093fc854805896943f90d468757`.
+## Current case boundary
 
-## Exact formula manifests
+| Family | Formulas |
+|---|---:|
+| A | 360 |
+| B | 5,096 |
+| D/UUU | 679 |
+| D/UUT | 679 |
+| D/UTU | 6,576 |
+| D/UTT | 6,576 |
+| D/TTU | 18,204 |
+| D/TTT | 18,204 |
+| **Total** | **56,374** |
 
-| Family | Formulas | Snapshot locator |
-| --- | ---: | --- |
-| A | 360 | `evidence/A/full_inputs_000/MANIFEST.json` |
-| B | 5,096 | `evidence/B/full_inputs_000/MANIFEST.json` |
-| D/UUU | 679 | `evidence/D/UUT/full_inputs_000/MANIFEST.json` |
-| D/UUT | 679 | `evidence/D/UUT/full_inputs_000/MANIFEST.json` |
-| D/UTU | 6,576 | `evidence/D/mixed/full_inputs_UTU_000/MANIFEST.json` |
-| D/UTT | 6,576 | `evidence/D/mixed/full_inputs_UTT_000/MANIFEST.json` |
-| D/TTU | 18,204 | `evidence/D/mixed/full_inputs_TTU_000/MANIFEST.json` |
-| D/TTT | 18,204 | `evidence/D/mixed/full_inputs_TTT_000/MANIFEST.json` |
+The complete current input catalog additionally contains 346 C
+entrance cases and three balance cases, totaling 56,723 formulas.
+In the extracted current evidence package, `inputs/MANIFEST.json`
+declares this boundary and `inputs/cases.jsonl.gz` records each case
+identity, ordered units or balance input path, dimensions and full
+formula hash. The manifest records the exact catalog identity.
 
-These are the seven manifests pinned by
-[`reproduce/abd_inputs.py`](../reproduce/abd_inputs.py). A/B and mixed-D
-manifests contain case IDs, physical unit suffixes, prefix identities and
-complete formula hashes. Their shared prefixes are stored in each manifest's
-directory, under `prefixes/` for A/B. The machine index lists every exact path.
+The common physical base is `inputs/base.clauses`, with SHA256
+`f974e4a1e44ae758ba748fc91838cd820cfb807ed4c09e7ffa5dc661d267565e`.
+It has 7,320 variables and 156,770 clauses. A/B/D case formulas
+add their physical units without introducing auxiliary variables.
 
-The shared UUT manifest records two different formula families. Its
-`old_virtual_dense_sha256` and `historical_control` fields bind each UUU case
-to the original UUU base and its own native result. Its `cnf_sha256` fields
-bind the separately searched UUT formulas. The reconstructor chooses the
-appropriate sparse base, applies the pinned bijective dense map and appends
-the case units. UUT solver answers are not used for UUU. The UUU result
-locator is `evidence/D/UUU/results/<case_id>/RESULT.json`.
+[uniform_k61.py](../reproduce/uniform_k61.py) is the generator.
+The [reproduction guide](REPRODUCIBILITY.md) gives extraction,
+generation, verification and solver commands. Paths beginning
+`inputs/`, `sources/` or `math/` here are relative to the extracted
+current evidence package, not additional checkout files.
 
-## Finite supports and matrix representatives
+## Finite support and word data
 
-| Scope | Snapshot locator |
-| --- | --- |
-| A physical case census | `evidence/A/SELECTED_A_VERIFIED_CENSUS_000.json` |
-| B physical case census | `evidence/B/SELECTED_B_VERIFIED_CENSUS_000.json` |
-| Mixed-D ordered support/matrix census | `evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json` |
-| Common matrix representative tables | `support/workspace/r4333_upper/pro_findings_review_2026_09_11/ramsey61_research/direct_profile_counts.json` |
-| Rooted matrix construction | `support/workspace/r4333_upper/pro_findings_review_2026_09_11/ramsey61_research/marked_catalogue.py` |
-| Profile and template definitions | `direct_profiles.py` and `template_math.py` in that same directory |
+The immutable finite-source archive is
+[`archives/evidence-v1.tar.gz`](../archives/evidence-v1.tar.gz),
+SHA256 `2b85cac94df0317a532aa823cfea93ac83738093fc854805896943f90d468757`.
+The following are locators inside its authenticated extracted tree:
 
-The three verified censuses expose the data through these fields:
+| Finite-data role | Locator |
+|---|---|
+| A support and representative census | `evidence/A/SELECTED_A_VERIFIED_CENSUS_000.json` |
+| B support and representative census | `evidence/B/SELECTED_B_VERIFIED_CENSUS_000.json` |
+| Mixed-D support and representative census | `evidence/D/mixed/MIXED_D_VERIFIED_CENSUS_000.json` |
+| A physical case records | `evidence/A/full_inputs_000/MANIFEST.json` |
+| B physical case records | `evidence/B/full_inputs_000/MANIFEST.json` |
+| Mixed-D physical case records | `evidence/D/mixed/full_inputs_KIND_000/MANIFEST.json`, with KIND equal to UTU, UTT, TTU or TTT |
 
-- `finite_evidence.supports` gives physical support orders and the
-  whole-block actions inducing the allowed support permutations.
-- `finite_evidence.catalogues` records all four ordered shapes, their
-  600-word catalogues and sorted-word hashes.
-- `groups.<foreign_kind>.stages.<stage>.cases[].reps` contains the stored
-  representative color words, encoded as hexadecimal bytes.
-- Stages `0`, `1`, `2`, and `None` mean support sizes 455, 545, 554, and 555.
-  The corresponding cross-edge words have 65, 65, 65, and 75 color entries,
-  ordered by group pairs `(0,1)`, `(0,2)`, `(1,2)`, then the canonical vertex
-  indices within each pair.
+These retained source records supply finite supports, reference
+orders, cross words and physical facts. Their embedded input hashes
+do not replace the current full-K61 catalog hashes above. Current
+formula identity is checked after constructing the shared base and
+the complete physical units.
 
-The mixed-D census retains both ordered deficiency orientations. The TT
-input manifests select the cover from those data by ordering the two
-five-support orbit indices and retaining every matrix representative on a
-diagonal pair. The mathematical justification and the meaning of the D
-constraints are given in [D cover and encoding](D_COVER_AND_ENCODING.md).
+In each finite census, `finite_evidence.supports` identifies the
+support orders and whole-template actions. `finite_evidence.catalogues`
+records the four support shapes and their 600-word lists. Representative
+words occur in `groups.<foreign_kind>.stages.<stage>.cases[].reps`.
+Stages 0,1,2,None correspond to shapes (4,5,5), (5,4,5), (5,5,4), (5,5,5).
+Cross-word entries are ordered by support pairs (0,1), (0,2), (1,2), then their
+reference coordinates; the lengths are 65,65,65,75.
 
-The recorded checker outputs are `finite_check_output_000/CHECK_OUTPUT.json`
-under `evidence/A/`, `evidence/B/`, and `evidence/D/mixed/`. The machine index
-also identifies the three independent finite-checker sources. These records
-check finite supports, actions and representative coverage; formula identity
-and native refutation are separate evidence.
+The [machine-readable index](ABD_EVIDENCE_INDEX.json) gives exact
+retained file identities and locators. The mathematical use of the
+source data is proved in the Lean cover modules, rather than assumed
+from a matching file hash or a case count.
 
-## The six U/U component censuses
+## Normalized configurations and retained cases
 
-These six files are under `evidence/D/UUU/census/` and describe the 679 labels
-used for each of D/UUU and D/UUT:
+For fixed root-cell sizes and template types, a normalized configuration
+consists of a selected foreign support pair and one of the 600 words.
+It records all root and supplied-template edges, the free-support pattern,
+the word and complete signed marked-neighborhood membership.
 
-| File | Labels |
-| --- | ---: |
-| `P15_MATRIX_ONLY_189.json` | 189 |
-| `D9_STRONG_ROOT2.json` | 72 |
-| `D9_TWISTED_ROOT1.json` | 132 |
-| `D9_TWISTED_ROOT4.json` | 132 |
-| `D9_TWISTED_ROOT12.json` | 72 |
-| `D10_B2P15_82.json` | 82 |
+Every retained family meets one finite coverage condition: for every
+normalized configuration there is a target case and a whole-host vertex
+and palette transformation such that each pulled-back target fact is a
+recorded source fact. These transformations preserve the actual host,
+including all negative membership facts. The condition is established
+in the Lean covers and described in [the proof](../proof.md#33-finite-words-and-whole-cell-symmetries).
 
-The assignment covers and exchange relation behind these component labels
-are also indexed:
+The normalized physical case table
+[marked_uu.json](../reproduce/data/marked_uu.json) has schema
+`UNIFORM_K61_MARKED_UU_DATA_1`. It indexes 679 records by the integers
+0 through 678 and supplies their physical facts and exact native case
+identifiers. The marked U or T template gives the D/UUU or D/UUT
+formula. The Lean definition is
+[MarkedUU.caseUnits](../formal/src/UniformK61/MarkedUU.lean), with
+`Fin 679` as its index type. Case identifiers are opaque labels;
+coverage follows from the finite transport proof.
 
-| Role | Snapshot locator |
-| --- | --- |
-| P15's 372-to-189 exchange relation | `support/workspace/r4333_upper/profile_d_four_support_discovery/uuu_b2_p15_swap_quotient.json` |
-| D9 assignment construction | `support/r3333-fable/continuation/locks/duuu/discovery/d9_case_census.py` |
-| D9 finite permutation order | `support/workspace/r4333_upper/profile_d_degree9_discovery/strong_case_b2_p15_quotient/lean-permutations.tsv` |
-| D9 U/root2 assignment orbits | `support/workspace/r4333_upper/profile_d_degree9_discovery/strong_case_b2_p15_quotient/assignment-orbits.json` |
-| D9 T/root1 assignment orbits | `support/r3333-fable/continuation/locks/duuu/discovery/twisted_root1_orbits.json` |
-| D9 T/root4 assignment orbits | `support/r3333-fable/continuation/locks/duuu/discovery/twisted_root4_orbits.json` |
-| D9 T/root12 assignment orbits | `support/r3333-fable/continuation/locks/duuu/discovery/twisted_root12_orbits.json` |
+The [D supplement](D_COVER_AND_ENCODING.md) describes the complete D
+cover, its whole-host symmetries and physical formula semantics.
 
-These records describe the finite assignment quotient. The six component
-censuses bind its retained labels to formula suffixes; the two roles must
-be checked together. Historical source paths in the assignment program are
-provenance references, not portable execution instructions.
+## Formula binding and native evidence
 
-The D10 matrix data are present at
-`support/r3333-fable/continuation/inputs/r4333-profile-d-degree10-discovery-uuu-b2-p15.json`.
-The corresponding literal data source is
-`support/workspace/R4333Lean/ProfileDDegreeTenMatrixLeafDataUUU2P15.lean`.
-Both are pinned in the machine index and expose the literal matrix arrays.
-The [formal dependency map](../formal/MATHEMATICS.md) identifies the complete
-Lean owner, support, matrix, transport and encoding arguments that consume
-these data.
+The Lean A/B/D case type contains 360 A, 5,096 B and 50,918 D cases. The
+[uniform binding driver](../formal/reproduce/uniform/README.md)
+emits all of them from the accepted mathematical build and
+compares every ordered physical fact and complete formula identity
+with the current input catalog. The full binding also includes
+the 346 direct C cases and the three balance inputs.
 
-## Verification scope
+The current evidence package preserves native records without
+rewriting case IDs, commands or logs. Each current A/B/D formula
+has its own Kissat 4.0.4 and CaDiCaL 3.0.1 UNSAT result, obtained
+with default options and no CPU or elapsed-time cutoff. The
+[release verifier](../reproduce/uniform_release.py) checks the
+complete current case mapping and all 112,748 A/B/D outcomes,
+together with the 698 C/balance outcomes and mathematical acceptance
+records. Exact formula hashes, command and binary identities,
+native exit codes and full solver output are all checked.
 
-The [complete reconstruction receipt](checks/ABD_ALL_INPUTS_001.json) records
-agreement with all 56,374 formula hashes. The
-[materialization receipt](checks/ABD_MATERIALIZATION_001.json) covers 56
-representatives spanning every distinct prefix/family, and the
-[reconstructor](../reproduce/abd_inputs.py) checks its specified input-byte
-identities. Reconstruction commands are in
-[REPRODUCIBILITY.md](REPRODUCIBILITY.md). The separate
-[native-result checker](../reproduce/abd_native.py) joins all 56,374
-reconstructed formulas to their authenticated UNSAT records and logs, including
-mixed-D predecessor adoptions and the UUT pilot. It checks recorded evidence
-without rerunning a solver.
-
-The original formulas have also been rerun with CaDiCaL 3.0.1. The
-[second-solver receipt](checks/ABD_SECOND_SOLVER.json) records **56,374
-accepted UNSAT results**, with zero SAT, UNKNOWN or error results. The
-compressed records in `archives/abd-cadical.tar.gz` and
-[portable checker](../reproduce/abd_second_solver.py) bind those results to
-the original family/case census and exact input hashes. This adds a second
-native answer for every original A/B/D formula; it introduces no new cases.
-
-All 85 indexed files were rehashed and matched to the authenticated archive
-manifest records, and the seven input manifests' case counts were checked.
-That index check performs no finite mathematical search, solver execution,
-certificate replay or Lean build. The proof uses matching native Kissat and
-CaDiCaL answers for A/B/D; the large refutations remain external computational
-evidence. The [dependency ledger](DEPENDENCIES.json) links the corresponding
-native acceptance records. The
-[Lean theorem](../formal/src/PricingIntegration/NativeWholeProof.lean) proves the
-complete mathematical reduction under `AllNativeUnsat`; the
-[formula-binding tools](../formal/reproduce/README.md) compare all 55,016
-common A/B/mixed-D and 1,358 original UUU/UUT formulas with retained or
-reconstructed input bytes, whose hashes match the runner-recorded native inputs. The [formalization status](FORMALIZATION_STATUS.md) separates
-that proved reduction from the external byte checks and native UNSAT evidence.
+Coverage, input identity and native execution have different roles.
+The [Lean theorem](../formal/src/UniformK61/WholeProof.lean) proves
+the complete mathematical reduction under `AllNativeUnsat` for
+the concrete formulas. The byte-binding checks connect those
+definitions to native inputs. The large native refutations remain
+external evidence under the
+[stated proof standard](TRUST_AND_CERTIFICATION.md).

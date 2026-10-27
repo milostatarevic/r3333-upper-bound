@@ -1,9 +1,9 @@
 import PricingC.Rooted555Free
-import PricingABD.P15PhysicalRooted
+import UniformK61.PhysicalHelpers
 
 namespace PricingC.Rooted555
 open Ramsey61 Ramsey61.CEncodingCore
-open PricingABD.P15PhysicalRooted (threeIndex palette_threeIndex threeIndex_injective_on)
+open UniformK61.PhysicalHelpers (threeIndex palette_threeIndex threeIndex_injective_on)
 
 /-- Concrete physical555 support data. The two foreign C5 orders are fixed;
 the free five-set has no prescribed internal pattern. All lie in the same

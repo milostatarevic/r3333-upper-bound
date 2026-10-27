@@ -1,39 +1,74 @@
 # Formalization and reproduction measurements
 
-The complete portable mathematical build passed from a fresh checkout with
-two compiler workers. It compiled all 1,809 modules, including the 32
-classification modules and replay of their 55 small CNF/LRAT pairs. It ran
-no SAT search and generated no new refutation certificates.
+The complete mathematical build used **12.89 compiler CPU-hours and 3 hours 1 minute elapsed**, with 8 compiler workers. The exact input binding
+then used **531 seconds of CPU and 531 seconds elapsed time**. These measurements
+are for the accepted 857-module source build and its 56,723-formula binding
+on an Apple M4 Max with 128 GiB RAM. Neither operation launches a SAT search.
+Native search costs are reported [separately](../publication/MEASURED_COSTS.md).
 
-| Operation | Measured cost | Scope |
-|---|---:|---|
-| Complete portable build | **9.80 CPU-hours** | Driver and compiler CPU combined; all 1,809 modules |
-| Module compilation sum | **9.79 CPU-hours** | Included in the complete-build total, not an additional cost |
-| Build elapsed time | **4h58m** | Two compiler workers |
-| Exact-input bindings | **139.16 CPU-seconds** | All 56,830 formula identities, using the complete portable build's library |
-| Fresh C-base emission and comparison | **9.45 CPU-seconds** | All 1,880,888 clauses compared byte for byte |
-| Emission and comparison total | **148.61 CPU-seconds** | Summed process CPU for the preceding two rows; no proof rebuild or solver calls |
+## Computation and memory
 
-The [build result](BUILD_RESULT.json) records exact measurements and the
-compiler, source and dependency identities. The separate
-[input-binding record](checks/joined_bindings/RUN_RESULT.json) supplies the
-input-check timing and pins the same source manifest as the build. The ten
-sequential steps took **158.57 elapsed seconds**, peaked at **3.01 GiB RSS**
-and wrote **377 MB** of temporary output. Only the compact execution records
-are included in the repository. Native SAT search costs are given in the
-[search cost table](../publication/MEASURED_COSTS.md).
+| Operation | CPU time | Elapsed time | Largest recorded process RSS |
+|---|---:|---:|---:|
+| Complete Lean source build, 8 workers | 12.89 hours | 3 hours 1 minute | 21.93 GiB |
+| Exact input binding | 531 seconds | 531 seconds | 2.80 GiB |
 
-The peak single compiler used **28.78 GiB RSS**. The sampled peak across
-concurrent compiler processes was **37.7 GiB**. These measurements support a
-recommendation of **64 GiB RAM for serial checking**, or **128 GiB for
-controlled parallel checking**. The portable builder's job count is a fixed
-concurrency ceiling, not an adaptive memory controller; sampled peaks are
-not guarantees for another run.
+The build CPU total sums the 857 compiler receipts and excludes coordinator
+overhead. Its elapsed interval is recorded in
+[`BUILD_RESULT.json`](BUILD_RESULT.json). The binding total includes its
+driver and custody checks, theorem audit, four Lean emitters and joined
+comparison. The six child commands account for 520 CPU-seconds within that
+total; their time is not added again.
 
-The build workspace used **4.21 GiB** of allocated disk space, and the
-pinned dependencies used **7.34 GiB**. The fresh checkout occupied
-**11.67 GiB in total**, excluding the native-search evidence archive.
-One copy of the compiled `.olean` files contained **2.25 GB** of logical data;
-the build workspace also retains logs, receipts and other compiler outputs.
-Allow approximately **12 GiB for the checkout, dependencies and build**,
-in addition to space for the separate evidence archive and its extraction.
+These RSS figures are individual-process peaks, not simultaneous machine
+memory or minimum RAM requirements. Concurrent compilers, the operating
+system and other applications need additional memory. The builder's `--jobs`
+option sets the maximum number of compiler processes; each compiler uses
+one worker thread. CPU totals and elapsed time therefore measure different
+things and should not be used interchangeably.
+
+The release package retains the detailed compiler receipts under
+`math/build/` and the binding's `RUN_RESULT.json` and execution logs under
+`math/binding/`. They identify the source, runtime and measurement scope.
+
+## Observed storage
+
+| Artifact | File-content bytes | Approximate size |
+|---|---:|---:|
+| Complete fresh build directory, including artifacts and receipts | 1,439,534,589 | 1.34 GiB |
+| Accepted project library, included in the build directory above | 718,173,480 | 0.67 GiB |
+| Binding outputs, comparisons and receipts | 190,199,997 | 181.39 MiB |
+| Complete generated native input directory | 50,401,787 | 48.07 MiB |
+
+These are measured file-content sizes, not capacity requirements. The
+filesystem reported 1.35 GiB of allocated file blocks for the build,
+183.88 MiB for the binding directory and 48.08 MiB for generated inputs.
+Allocation depends on the filesystem. These figures exclude the external
+Lean/Mathlib dependency caches, native solver records and compressed release
+archive. Reproduction also needs working space for the chosen operation;
+archive extraction requires separate space from the archive itself.
+
+The build directory keeps both per-module compiler outputs and the accepted
+project library. The binding stores the shared base and compact signed unit
+tables for 56,720 marked cases, plus the three balanced formulas in full.
+Their identities are compared without materializing every complete marked
+CNF. The release archive retains native evidence and mathematical execution
+records; it does not distribute the compiled project library or bulk binding
+emissions. Its exact compressed size is recorded in
+[the release acceptance receipt](../publication/checks/UNIFORM_K61_RELEASE.json).
+
+## Fixed verification scope
+
+| Scope | Size |
+|---|---:|
+| Lean project source closure | 857 modules |
+| Embedded classification data | 110 files, comprising 55 CNF/LRAT pairs |
+| Final formulas | 56,723 |
+| Required native solver runs | 113,446 |
+| Shared physical base | 7,320 variables; 156,770 clauses |
+| Each balanced formula | 13,656 variables; 524,462 clauses |
+| Three balanced DIMACS files | 40,567,176 bytes |
+
+The [build guide](BUILD.md), [binding guide](reproduce/uniform/README.md) and
+[repository reproduction guide](../publication/REPRODUCIBILITY.md) give the
+commands for these distinct operations.

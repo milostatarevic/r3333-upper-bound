@@ -1,2 +1,0 @@
-'PricingG.SignDesign.boundedVectors_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingG.SignDesign.column_data_exhaustive' depends on axioms: [propext, Classical.choice, Quot.sound]

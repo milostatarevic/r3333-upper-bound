@@ -1,2 +1,0 @@
-'PricingG.high_mixed_counts_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingG.GuardedGraphModel.high_mixed_counts_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]

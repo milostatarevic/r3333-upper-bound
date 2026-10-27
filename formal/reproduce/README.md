@@ -1,52 +1,44 @@
-# Reproduce exact native input identities
+# Reproduce the formula and evidence checks
 
-Build the package using [BUILD.md](../BUILD.md). Use the `lib/` directory of
-a successful complete build, including the two supplemental binding helpers.
-The commands below select that isolated output explicitly; plain `lake build`
-is not the mathematical build entry point for this source package.
+Use the current repository's tools to check the released records, then [build the mathematics](../BUILD.md) and run a fresh [exact input binding](uniform/README.md). These checks do not execute a SAT solver.
 
-Extract this repository's evidence archive using
-the [reproduction guide](../../publication/REPRODUCIBILITY.md) before running
-these checks. The archive path may name its outer directory or the `evidence/`
-directory inside it. Run the following commands from the repository root;
-`cd formal` selects the Lean package.
+## Check the retained release
+
+After extracting the evidence package described in the [repository reproduction guide](../../publication/REPRODUCIBILITY.md), set `release_dir` to the directory containing `RELEASE.json`. Run from the repository root:
 
 ```sh
-cd formal
-proof_lib="/absolute/path/to/successful/.build/runs/RUN/lib"
-archive_dir="/absolute/path/to/extracted-archive"
-work_dir="$(mktemp -d)"
-
-in_proof_env() {
-  lake env sh -c 'export LEAN_PATH="$1:$LEAN_PATH"; shift; exec "$@"' \
-    sh "$proof_lib" "$@"
-}
-
-in_proof_env lean -j1 --run reproduce/d/Emit.lean "$work_dir/d"
-python3 -I -B reproduce/d/verify.py \
-  --archive-dir "$archive_dir" --d-prefix-dir "$work_dir/d" \
-  --output-dir "$work_dir/d-check"
-
-in_proof_env lean -j1 --run reproduce/common/Emit.lean "$work_dir/common"
-python3 -I -B reproduce/common/verify.py \
-  --package-root reproduce/common --archive-root "$archive_dir" \
-  --emission-root "$work_dir/common" --d-prefix-dir "$work_dir/d" \
-  --output-dir "$work_dir/common-check"
-
-in_proof_env lean -j1 --run reproduce/uuq/EmitUUQ.lean "$work_dir/uuq"
-python3 -I -B reproduce/uuq/compare.py \
-  --archive-dir "$archive_dir" --emission-dir "$work_dir/uuq" \
-  --d-prefix-dir "$work_dir/d" --output-dir "$work_dir/uuq-check"
+release_dir="/absolute/path/to/extracted-release"
+python3 reproduce/uniform_release.py verify-package \
+  --root "$release_dir" \
+  --formal-root formal \
+  --output /absolute/path/to/fresh-release-check.json
 ```
 
-The shared D emitter writes twelve prefix bodies. The common-family verifier
-checks 55,016 complete inputs, and the UUU/UUT verifier checks 1,358. They
-reuse prefix hash states to verify complete DIMACS identities without writing
-every full CNF. The C tools cover the separate 456-case family and its common
-base; their usage is described in [c/README.md](c/README.md).
+The output file must not exist. This verifies the complete native and mathematical record set, source and input identities, exact theorem audit, and all 113,446 required native results. It checks retained build records without recompiling Lean and checks native logs without rerunning the searches.
 
-All output directories must be fresh. The tools retain outputs and fail on
-hash, census, literal-order, sign, variable-count or clause-count differences.
-They launch no SAT solver. Original receipts and their path/hash indices are
-preserved; supplied input bindings and native UNSAT results remain distinct
-pieces of evidence.
+## Regenerate the complete input catalogue
+
+From the repository root:
+
+```sh
+python3 reproduce/uniform_k61.py prepare \
+  --archive archives/evidence-v1.tar.gz \
+  --output /absolute/path/to/fresh-uniform-inputs
+```
+
+The output directory must not exist. The generator authenticates the finite support/word source data and the normalized case tables, constructs the shared K61 base and all 56,723 formula identities, and writes the three balanced CNFs. It reads data from the archive without executing archived programs.
+
+## Bind a fresh Lean build
+
+Complete the full source build in [BUILD.md](../BUILD.md), then run from `formal/`:
+
+```sh
+lake env python3 reproduce/uniform/run_binding.py \
+  --build-dir /absolute/path/to/successful/.build/runs/RUN \
+  --inputs /absolute/path/to/fresh-uniform-inputs \
+  --output-dir /absolute/path/to/fresh-binding-run
+```
+
+The driver requires a successful complete current-source build and a complete input catalogue. It checks the final theorem, executes the four current Lean emitters, and joins the exact formula comparisons. See [uniform/README.md](uniform/README.md) for the covered families and retained records.
+
+Native-search reproduction is a separate operation, documented in the [repository guide](../../publication/REPRODUCIBILITY.md).

@@ -1,2 +1,0 @@
-'PricingC.model_neighborhood_mask' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingC.ordered_physical_mask' depends on axioms: [propext, Classical.choice, Quot.sound]

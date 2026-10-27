@@ -36,9 +36,26 @@ jobs:
                     'formal/lean-toolchain', 'formal/lakefile.toml', 'formal/lake-manifest.json',
                     'publication/checks/ACCEPTED_MATH_MANIFEST.sha256',
                     'formal/BUILD_RESULT.json',
-                    'reproduce/abd_native.py', 'reproduce/test_abd_native.py',
-                    'reproduce/abd_second_solver.py', 'reproduce/test_abd_second_solver.py',
-                    'publication/checks/ABD_SECOND_SOLVER.json',
+                    'reproduce/uniform_k61.py', 'reproduce/uniform_campaign.py',
+                    'reproduce/uniform_verify.py', 'reproduce/uniform_release.py',
+                    'reproduce/uniform_c.py', 'reproduce/uniform_balance.py',
+                    'reproduce/data/c_entrances.json', 'reproduce/data/balance_anchors.json',
+                    'reproduce/data/marked_uu.json',
+                    'reproduce/test_uniform_campaign.py', 'reproduce/test_uniform_verify.py',
+                    'reproduce/test_uniform_c.py', 'reproduce/test_uniform_balance.py',
+                    'reproduce/test_uniform_marked.py',
+                    'reproduce/test_uniform_release.py',
+                    'formal/reproduce/uniform/run_binding.py',
+                    'formal/reproduce/uniform/check_all.py',
+                    'formal/reproduce/uniform/check_common.py',
+                    'formal/reproduce/uniform/check_marked_uu.py',
+                    'formal/reproduce/uniform/check_c_entrance.py',
+                    'formal/reproduce/uniform/check_balance.py',
+                    'formal/reproduce/uniform/EmitCommon.lean',
+                    'formal/reproduce/uniform/EmitMarkedUU.lean',
+                    'formal/reproduce/uniform/EmitCEntrance.lean',
+                    'formal/reproduce/uniform/EmitBalanced.lean',
+                    'formal/reproduce/uniform/Audit.lean',
                     'scripts/lean_ci.py', 'scripts/check_lean_sources.py',
                     'scripts/test_lean_audits.py',
                     'Makefile', '.github/workflows/verify.yml')]
@@ -72,6 +89,6 @@ jobs:
       - name: Explain the verification boundary
         run: |
           echo 'All manifested mathematical sources and embedded data passed source/hash/import/census controls.' >> "$GITHUB_STEP_SUMMARY"
-          echo 'The five-module NativeColoringClauses target compiled; its two theorem axiom reports passed.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'The five-module UniformK61.CoreCounts target compiled; its two theorem axiom reports passed.' >> "$GITHUB_STEP_SUMMARY"
           echo 'This job did not rebuild the complete theorem, replay classification certificates, check native input bindings, or rerun SAT.' >> "$GITHUB_STEP_SUMMARY"
           echo 'Full-build and native-evidence acceptance are separate from this push-CI result.' >> "$GITHUB_STEP_SUMMARY"

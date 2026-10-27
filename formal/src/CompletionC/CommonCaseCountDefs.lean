@@ -1,8 +1,8 @@
-import PricingIntegration.NativeCommonCases
+import CompletionC.CommonCases
 set_option autoImplicit false
 namespace CompletionC.CommonCaseCount
-open PricingABD.ABLayout CompletionC.NativeFamilyJoin CompletionC.NativeMatrices
-open PricingIntegration.NativeCommonCases Finset
+open PricingABD.ABLayout CompletionC.CommonCases CompletionC.NativeMatrices
+open CompletionC.CommonCases Finset
 
 def layouts:List Layout:=[Profile.A,Profile.B,Profile.D].flatMap fun p=>[⟨p,false⟩,⟨p,true⟩]
 def types:List Types:=[false,true].flatMap fun a=>[false,true].flatMap fun b=>[false,true].map fun q=>⟨a,b,q⟩

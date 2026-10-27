@@ -1,2 +1,0 @@
-'PricingG.clebsch_adjacency_kernel_trivial' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PricingG.centerMap_bijective_of_balanced_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,160 @@
+{
+  "schema": "UNIFORM_K61_RELEASE_ACCEPTANCE_1",
+  "status": "PASS_CURRENT_RELEASE",
+  "cases": 56723,
+  "native_runs": 113446,
+  "archive": {
+    "bytes": 620350639,
+    "sha256": "0acdcb9ae548c956fcd8a395f5a0fd831dc648f4a2aad6ad01a07d8106719f88",
+    "path": "archives/evidence-v2.tar.gz"
+  },
+  "verification": {
+    "cases": 56723,
+    "family_counts": {
+      "A": 360,
+      "B": 5096,
+      "BALANCE": 3,
+      "C": 346,
+      "D_TTT": 18204,
+      "D_TTU": 18204,
+      "D_UTT": 6576,
+      "D_UTU": 6576,
+      "D_UUT": 679,
+      "D_UUU": 679
+    },
+    "mathematics": {
+      "binding_catalog_order_case_hashes_sha256": "c60088dc72ab9cd77c77a8afe36908668b230cc8715db4e014e4c715757a8d6e",
+      "build_result": {
+        "bytes": 35366,
+        "sha256": "18d35ce7058547d85ea14b257243a839b176e764db5b67afb42fd33713dbc1d3"
+      },
+      "cases": 56723,
+      "fresh_binding_result": {
+        "bytes": 1786542,
+        "sha256": "806e70165787f8ee257142fed7c5f31f48e8692679f6b43c30909889c0da558d"
+      },
+      "live_build_custody_rechecked": false,
+      "modules": 857,
+      "source_manifest": {
+        "bytes": 366603,
+        "sha256": "a3b8f63435129f551e318053c4febdf915da110e4f56bea9fa7f4bdb81a7e6e6"
+      },
+      "theorem_axioms": {
+        "UniformK61.WholeProof.native_case_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UniformK61.WholeProof.ramsey61": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "native": {
+      "CPU_seconds": {
+        "cadical": 1773749.8107899958,
+        "kissat": 662614.7540099939
+      },
+      "SAT": 0,
+      "UNKNOWN": 0,
+      "UNSAT": 113446,
+      "cases": 56723,
+      "catalog": {
+        "bytes": 6828236,
+        "sha256": "7acb8426af801cbcaba464f32e018f59d5fd4c63edd0f4173d6bdb54868f0b0f"
+      },
+      "catalog_order_case_hashes_sha256": "c60088dc72ab9cd77c77a8afe36908668b230cc8715db4e014e4c715757a8d6e",
+      "errors": 0,
+      "families": {
+        "A": {
+          "cadical": 360,
+          "kissat": 360
+        },
+        "B": {
+          "cadical": 5096,
+          "kissat": 5096
+        },
+        "BALANCE": {
+          "cadical": 3,
+          "kissat": 3
+        },
+        "C": {
+          "cadical": 346,
+          "kissat": 346
+        },
+        "D_TTT": {
+          "cadical": 18204,
+          "kissat": 18204
+        },
+        "D_TTU": {
+          "cadical": 18204,
+          "kissat": 18204
+        },
+        "D_UTT": {
+          "cadical": 6576,
+          "kissat": 6576
+        },
+        "D_UTU": {
+          "cadical": 6576,
+          "kissat": 6576
+        },
+        "D_UUT": {
+          "cadical": 679,
+          "kissat": 679
+        },
+        "D_UUU": {
+          "cadical": 679,
+          "kissat": 679
+        }
+      },
+      "family_counts": {
+        "A": 360,
+        "B": 5096,
+        "BALANCE": 3,
+        "C": 346,
+        "D_TTT": 18204,
+        "D_TTU": 18204,
+        "D_UTT": 6576,
+        "D_UTU": 6576,
+        "D_UUT": 679,
+        "D_UUU": 679
+      },
+      "input_manifest": {
+        "bytes": 2936,
+        "sha256": "918bc28991d254811ea033b40aa6f39d058312bb7b120fac6a2fa1a0d024af97"
+      },
+      "native_runs": 113446,
+      "new_solver_calls": 0,
+      "no_native_records_rewritten": true,
+      "peak_RSS_bytes": {
+        "cadical": 600440832,
+        "kissat": 383270912
+      },
+      "schema": "UNIFORM_K61_CURRENT_NATIVE_1",
+      "source_groups": {
+        "abd": {
+          "current_first": 0,
+          "local_count": 56374,
+          "local_indices_sha256": "ea08c954c82e63cacb8dc85f606d04cd55f31d5b90e2578eb9dde8a593415351"
+        },
+        "balance": {
+          "current_first": 56720,
+          "local_count": 3,
+          "local_indices_sha256": "c0be322c1ad6af50f418b96232d98fe25a36d5d0a557291833f8248f2084b8ef"
+        },
+        "c": {
+          "current_first": 56374,
+          "local_count": 346,
+          "local_indices_sha256": "75f1a32b82c77789f00bc7ff9f630e2bef102f257f7b0a4bda3f9d9070727b06"
+        }
+      },
+      "status": "PASS_NATIVE_CURRENT_56723"
+    },
+    "native_runs": 113446,
+    "new_solver_calls": 0,
+    "status": "PASS_CURRENT_RELEASE"
+  },
+  "new_solver_calls": 0
+}
