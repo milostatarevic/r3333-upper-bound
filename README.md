@@ -1,5 +1,10 @@
 # An improved upper bound for the Ramsey number R(3,3,3,3)
 
+> [!NOTE]
+> **Update (October 2026):** The paper accompanying this repository is now on
+> arXiv:\
+> [*An upper bound of 61 for the Ramsey number R(3,3,3,3)*](https://arxiv.org/abs/2610.36648)
+
 ## Changelog
 
 ### 2026-10-15
