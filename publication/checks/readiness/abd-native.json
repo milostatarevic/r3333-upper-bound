@@ -1,0 +1,266 @@
+{
+  "schema": "K60_ABD_NATIVE_EVIDENCE_AUDIT_1",
+  "passed": true,
+  "snapshot_utc": "2026-10-31T04:03:53.900892+00:00",
+  "campaign": {
+    "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/campaign-abd-kissat/campaign.json",
+    "sha256": "35225f62aa17376ed20b15a079b6d658ca06c6733d3bc6ea6d1692846f5cb959"
+  },
+  "pins": {
+    "manifest": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/inputs-abd-exhaustive/manifest.json",
+      "sha256": "fc94af1694ca41df160da21950f48432668afa16014540ffbec79d96ecc6c50f"
+    },
+    "input_audit": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/audit-abd-campaign-inputs.json",
+      "sha256": "4a7181a4328c9334400b2541ae77eefd5c832e243e9634686953e2b7b4178d86"
+    },
+    "hash_ledger": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/inputs-abd-exhaustive/hashes.bin",
+      "sha256": "6e867f0f41cd1bcf1908303a5e22acf1ce3e28bbf12ce95b8b0d587df82bef30",
+      "bytes": 1916716
+    },
+    "ordered_case_hash_sha256": "7ec3ebe7a4f3c0dcb0f1bdee56d92785404dad9a2dcc546f276555d6e8a568eb",
+    "trust": "Independent signed-input audit and original source finite covers remain separate from native UNSAT evidence.",
+    "solver": {
+      "path": "/opt/homebrew/Cellar/kissat/4.0.4/bin/kissat",
+      "bytes": 392456,
+      "sha256": "05d6f3e9c402a1fe8853b0746e384e1b3d1c4a550e255f11daa2461d279aa848"
+    }
+  },
+  "database_snapshot": {
+    "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/campaign-abd-kissat/results.sqlite3",
+    "rows": 56389,
+    "ordered_row_and_compressed_log_hash_sha256": "1c5e450a5d374faf0e6167a6c36677f0684da3abd406d700e0efdd8cb341fbb1",
+    "read_only_consistent_transaction": true
+  },
+  "total_cases": 56374,
+  "attempts_seen": 56389,
+  "attempts_integrity_checked": 56389,
+  "unique_attempted_cases": 56374,
+  "unique_accepted_unsat_cases": 56374,
+  "remaining_cases": 0,
+  "attempt_status_counts": {
+    "UNSAT": 56374,
+    "TIMEOUT": 15
+  },
+  "owner_totals": {
+    "A": {
+      "expected_cases": 360,
+      "attempts_checked": 360,
+      "unique_attempted_cases": 360,
+      "unique_accepted_unsat_cases": 360,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 360
+      },
+      "first_pass": {
+        "count": 360,
+        "sum_seconds": 983.2363007539855,
+        "mean_seconds": 2.7312119465388487,
+        "median_seconds": 2.313017124999078,
+        "p95_seconds": 6.018052958002954,
+        "max_seconds": 16.239966708002612
+      }
+    },
+    "B": {
+      "expected_cases": 5096,
+      "attempts_checked": 5096,
+      "unique_attempted_cases": 5096,
+      "unique_accepted_unsat_cases": 5096,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 5096
+      },
+      "first_pass": {
+        "count": 5096,
+        "sum_seconds": 23734.787939945,
+        "mean_seconds": 4.657532955248234,
+        "median_seconds": 3.276344125000378,
+        "p95_seconds": 12.423087333001604,
+        "max_seconds": 171.4820969160064
+      }
+    },
+    "D_UUU": {
+      "expected_cases": 679,
+      "attempts_checked": 679,
+      "unique_attempted_cases": 679,
+      "unique_accepted_unsat_cases": 679,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 679
+      },
+      "first_pass": {
+        "count": 679,
+        "sum_seconds": 5990.616498249949,
+        "mean_seconds": 8.822704710235564,
+        "median_seconds": 5.29908454100223,
+        "p95_seconds": 26.360755457999403,
+        "max_seconds": 211.83722333300102
+      }
+    },
+    "D_UUT": {
+      "expected_cases": 679,
+      "attempts_checked": 679,
+      "unique_attempted_cases": 679,
+      "unique_accepted_unsat_cases": 679,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 679
+      },
+      "first_pass": {
+        "count": 679,
+        "sum_seconds": 6176.779210968027,
+        "mean_seconds": 9.09687659936381,
+        "median_seconds": 5.587618041998212,
+        "p95_seconds": 24.952994874998694,
+        "max_seconds": 192.50451783399967
+      }
+    },
+    "D_UTU": {
+      "expected_cases": 6576,
+      "attempts_checked": 6576,
+      "unique_attempted_cases": 6576,
+      "unique_accepted_unsat_cases": 6576,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 6576
+      },
+      "first_pass": {
+        "count": 6576,
+        "sum_seconds": 64542.401118923124,
+        "mean_seconds": 9.814842019300961,
+        "median_seconds": 5.401880479500505,
+        "p95_seconds": 30.89216637500067,
+        "max_seconds": 296.8551467920006
+      }
+    },
+    "D_UTT": {
+      "expected_cases": 6576,
+      "attempts_checked": 6577,
+      "unique_attempted_cases": 6576,
+      "unique_accepted_unsat_cases": 6576,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 6576,
+        "TIMEOUT": 1
+      },
+      "first_pass": {
+        "count": 6576,
+        "sum_seconds": 66085.28023025795,
+        "mean_seconds": 10.049464755209542,
+        "median_seconds": 5.571520042000543,
+        "p95_seconds": 31.506129041999884,
+        "max_seconds": 300.07692566600053
+      }
+    },
+    "D_TTU": {
+      "expected_cases": 18204,
+      "attempts_checked": 18213,
+      "unique_attempted_cases": 18204,
+      "unique_accepted_unsat_cases": 18204,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 18204,
+        "TIMEOUT": 9
+      },
+      "first_pass": {
+        "count": 18204,
+        "sum_seconds": 215507.2479444902,
+        "mean_seconds": 11.83845572096738,
+        "median_seconds": 5.913139395998542,
+        "p95_seconds": 39.25682237499859,
+        "max_seconds": 300.065643791997
+      }
+    },
+    "D_TTT": {
+      "expected_cases": 18204,
+      "attempts_checked": 18209,
+      "unique_attempted_cases": 18204,
+      "unique_accepted_unsat_cases": 18204,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 18204,
+        "TIMEOUT": 5
+      },
+      "first_pass": {
+        "count": 18204,
+        "sum_seconds": 218748.89974148816,
+        "mean_seconds": 12.016529320011434,
+        "median_seconds": 6.061085791999176,
+        "p95_seconds": 39.274213042001065,
+        "max_seconds": 300.066026083
+      }
+    }
+  },
+  "native_log_bytes_checked": 1328796958,
+  "invalid_attempts_or_histories": [],
+  "sat_case_ids": [],
+  "sat_unsat_conflict_ids": [],
+  "timings": {
+    "all_checked_attempts": {
+      "count": 56389,
+      "sum_seconds": 607946.8137760754,
+      "mean_seconds": 10.781301561937175,
+      "median_seconds": 5.390609916001267,
+      "p95_seconds": 34.74678524999945,
+      "max_seconds": 642.9490375000023
+    },
+    "first_pass_completed": {
+      "count": 56374,
+      "sum_seconds": 601769.2489850764,
+      "mean_seconds": 10.674588444763124,
+      "median_seconds": 5.386608208500547,
+      "p95_seconds": 34.698982082998555,
+      "max_seconds": 300.07692566600053
+    },
+    "first_pass_capped": {
+      "count": 56374,
+      "sum_seconds": 601768.4672044944,
+      "mean_seconds": 10.674574577012352,
+      "median_seconds": 5.386608208500547,
+      "p95_seconds": 34.698982082998555,
+      "max_seconds": 300
+    },
+    "first_pass_cap_seconds": 300,
+    "p95_definition": "Nearest rank, ceil(0.95*n)."
+  },
+  "first_pass_estimate": {
+    "shuffle_seed": 20261030,
+    "completed_unique_cases": 56374,
+    "complete_shuffle_prefix_cases": 56374,
+    "fixed_chunk_size": 1000,
+    "sample_cases": 56374,
+    "sample_elapsed": {
+      "count": 56374,
+      "sum_seconds": 601769.2489850764,
+      "mean_seconds": 10.674588444763124,
+      "median_seconds": 5.386608208500547,
+      "p95_seconds": 34.698982082998555,
+      "max_seconds": 300.07692566600053
+    },
+    "sample_capped": {
+      "count": 56374,
+      "sum_seconds": 601768.4672044944,
+      "mean_seconds": 10.674574577012352,
+      "median_seconds": 5.386608208500547,
+      "p95_seconds": 34.698982082998555,
+      "max_seconds": 300
+    },
+    "remaining_first_pass_cases": 0,
+    "workers": 12,
+    "estimated_remaining_seconds": 0.0,
+    "currently_unresolved_retry_cases": 0,
+    "scope": "Capped first pass only, using complete fixed chunks of the predetermined random shuffle so unfinished slow cases are not selectively omitted. The estimate excludes future retry-tail time and input preparation overhead; it is descriptive, not a completion guarantee."
+  },
+  "controller_active_seconds_observation": "50948.353717042",
+  "requires_attention": false,
+  "completion_claim": true,
+  "evidence_standard": "Exact-input native Kissat UNSAT, exit20 and exact s UNSATISFIABLE line, pinned binary and full decompressed log hashes. No independently checked UNSAT refutations.",
+  "checker": {
+    "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/check_abd_campaign_results.py",
+    "bytes": 17305,
+    "sha256": "ee3662ffb38fd98e9f1d5b12c340429bf072ba69c51b8e8549d476d27b6829ea"
+  },
+  "check_elapsed_seconds": 7.072008416999999
+}

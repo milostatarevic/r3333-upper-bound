@@ -9,7 +9,8 @@ import unittest
 from unittest.mock import patch
 
 import check_lean_sources as source
-from lean_ci import validate_report, THEOREMS, MODULES, TARGET, audit_run, copy_receipts, check_small_closure
+from lean_ci import (validate_report, THEOREMS, FULL_THEOREMS, MODULES, TARGET,
+                     audit_run, copy_receipts, check_small_closure)
 
 PACKAGE = Path(os.environ.get('RAMSEY_CI_TEST_FORMAL', source.FORMAL))
 
@@ -188,6 +189,17 @@ class AxiomAndReceiptControls(unittest.TestCase):
                     report() + "\n'Unexpected.theorem' does not depend on any axioms"]
         for text in examples:
             with self.assertRaises(ValueError): validate_report(text)
+
+    def test_full_endpoint_reports_are_distinct_from_small_reports(self):
+        full = '\n'.join(f"'{name}' depends on axioms: [propext, Classical.choice, Quot.sound]"
+                         for name in FULL_THEOREMS)
+        self.assertEqual(set(validate_report(full, FULL_THEOREMS)), FULL_THEOREMS)
+        with self.assertRaises(ValueError): validate_report(full)
+        with self.assertRaises(ValueError): validate_report(report(), FULL_THEOREMS)
+        for name in FULL_THEOREMS:
+            missing = '\n'.join(line for line in full.splitlines() if not line.startswith("'" + name + "'"))
+            with self.assertRaises(ValueError): validate_report(missing, FULL_THEOREMS)
+        with self.assertRaises(ValueError): validate_report(full.replace('Quot.sound', 'sorryAx', 1), FULL_THEOREMS)
 
     def test_heavy_small_target_dependency_rejected_before_build(self):
         modules = {name: {'imports': []} for name in MODULES}

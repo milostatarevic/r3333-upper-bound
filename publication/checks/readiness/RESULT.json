@@ -1,0 +1,50 @@
+{
+  "schema": "K60_SINGLE_SOLVER_READINESS_1",
+  "passed": true,
+  "build": {
+    "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-lean/.build/20261030T095512Z_925b57e5/BUILD_RESULT.json",
+    "sha256": "bf8db69ae50e062baabf6f51bc8eb9642835451b637cc3a0d58ffd1256b8f7b5"
+  },
+  "bindings": {
+    "base": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-lean/.build/base-binding-c2d67dd39939/RESULT.json",
+      "sha256": "2c7957c2e99fd7b04a83bc17d6e60e1942650bcc65357b523dd9cf19644cbdbd"
+    },
+    "marked": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-lean/.build/marked-binding-61fd619bfbd4/RESULT.json",
+      "sha256": "d321c705541c0455d4e94f9ba325ae9db0b5bb35cc328b403d53e5aa4f938f88"
+    },
+    "counter": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-lean/.build/counter-binding-9a8c1c1f923e/RESULT.json",
+      "sha256": "fd43e751fa027e1bfcff6b7faf6cafd609b07ccf1ecf635eb5dd9f6524ccf7fe"
+    },
+    "balance": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-lean/.build/balance-binding-5e6afd36ecc2/RESULT.json",
+      "sha256": "3386957b8c67c324e5ba62047a23b0723e5d734066341affbb2d563d688fe2e7"
+    }
+  },
+  "native_audits": {
+    "e": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-lean/.build/release-evidence-a273028229af/e-native.json",
+      "sha256": "7431382028798d79e8b189448667ee25cfc7af6f261f87f0b2dae8830065ee75"
+    },
+    "abd": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-lean/.build/release-evidence-a273028229af/abd-native.json",
+      "sha256": "b92380cc959780375c3ed861216f347f76d7cb5d5492f5f2c67830bd22b9fa9f"
+    },
+    "closure": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-lean/.build/release-evidence-a273028229af/closure-native.json",
+      "sha256": "a7b42c2e7b64a16c0867bf19a5a403c41dda2bfa9714c67715bd48bd80e15099"
+    }
+  },
+  "total_formulas": 296797,
+  "solver_executed": false,
+  "publication_modified": false,
+  "checker": {
+    "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-lean/check_release_evidence.py",
+    "sha256": "1455917fce3085c934e8885818ec9fe0846b9dfdbd6beba18bfa670f13ae365b"
+  },
+  "trust": "Lean checks the reduction to explicit CNF unsatisfiability. The external premise is supported by exact-input native Kissat outcomes; no independently checked UNSAT refutations are claimed.",
+  "solver_sha256": "05d6f3e9c402a1fe8853b0746e384e1b3d1c4a550e255f11daa2461d279aa848",
+  "checked_utc": "2026-10-31T04:03:56.295401+00:00"
+}

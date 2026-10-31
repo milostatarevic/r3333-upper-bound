@@ -1,0 +1,1 @@
+'UniformK60.Core.coloring_satisfies_formula' depends on axioms: [propext, Classical.choice, Quot.sound]

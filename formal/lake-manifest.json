@@ -111,7 +111,7 @@
       "configFile": "lakefile.toml"
     }
   ],
-  "name": "ramsey61Baseline",
+  "name": "ramsey60",
   "lakeDir": ".lake",
   "fixedToolchain": true
 }

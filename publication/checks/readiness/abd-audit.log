@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "total_cases": 56374,
+  "attempts_seen": 56389,
+  "unique_accepted_unsat_cases": 56374,
+  "remaining_cases": 0,
+  "attempt_status_counts": {
+    "UNSAT": 56374,
+    "TIMEOUT": 15
+  },
+  "completion_claim": true,
+  "fatal_error": null
+}

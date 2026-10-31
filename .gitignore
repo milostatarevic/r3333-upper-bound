@@ -1,22 +1,8 @@
 .DS_Store
+/k60-formal-capsule/
+/k60-native-capsule/
+/verification-artifacts/
 __pycache__/
 *.pyc
-*.pyo
-.venv/
-.lake/
-
-# Source data and execution records are stored in the LFS archives.
-/evidence/
-/mathematics/
-/support/
-/organization/
-/manifest/
-/.snapshot/
-/tools/
-/PROOF_INDEX.md
-/PORTABILITY_AND_SCOPE.md
-
-# Generated mathematical builds and local CI artifacts.
 /formal/.build/
-/classification/build_runs/
-/verification-artifacts/
+/formal/.lake/

@@ -1,0 +1,196 @@
+{
+  "schema": "K60_E_NATIVE_EVIDENCE_AUDIT_1",
+  "passed": true,
+  "snapshot_utc": "2026-10-31T04:03:46.320715+00:00",
+  "campaign": {
+    "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/campaign-e-kissat/campaign.json",
+    "sha256": "1e671a5d0fa3fe98d9544571447fb292f52c1869b9681eb721d2cad1cc195158"
+  },
+  "pins": {
+    "manifest": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/inputs-e-exhaustive/manifest.json",
+      "sha256": "1c1fe1bbb2166d058b99a5e3ab16dfff0a81e0f802911879875ed055141cbedb"
+    },
+    "input_audit": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/audit-e-campaign-inputs.json",
+      "sha256": "fadb87c40a7e5ce9637e949c860856f174b7f964e069df385fedf9b9d30db060"
+    },
+    "hash_ledger": {
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/inputs-e-exhaustive/hashes.bin",
+      "sha256": "13176fa47b0e18fcf0884c119f6bcb7f67dd8a7d9a578e4d377137aa84890118",
+      "bytes": 7859712
+    },
+    "ordered_case_hash_sha256": "d8b11819b61cf7c4660856d039a9d6d8c142740665f3cf4ae4d92fe05b8a576f",
+    "trust": "Ledger formula/coverage meaning is supplied by the pinned independent input audit. This checker reconstructs descriptors and checks native evidence; it does not regenerate CNFs or check UNSAT refutations.",
+    "solver": {
+      "path": "/opt/homebrew/Cellar/kissat/4.0.4/bin/kissat",
+      "bytes": 392456,
+      "sha256": "05d6f3e9c402a1fe8853b0746e384e1b3d1c4a550e255f11daa2461d279aa848"
+    }
+  },
+  "database_snapshot": {
+    "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/campaign-e-kissat/results.sqlite3",
+    "rows": 231308,
+    "ordered_row_and_compressed_log_hash_sha256": "9309f05c663a7d221fbf9a143a6209844f759a869bd418f06b5f99868d2bcb20",
+    "read_only_consistent_transaction": true
+  },
+  "total_cases": 231168,
+  "attempts_seen": 231308,
+  "attempts_integrity_checked": 231308,
+  "unique_attempted_cases": 231168,
+  "unique_accepted_unsat_cases": 231168,
+  "remaining_cases": 0,
+  "attempt_status_counts": {
+    "UNSAT": 231168,
+    "INTERRUPTED": 23,
+    "TIMEOUT": 117
+  },
+  "owner_totals": {
+    "UUU": {
+      "expected_cases": 2037,
+      "attempts_checked": 2037,
+      "unique_attempted_cases": 2037,
+      "unique_accepted_unsat_cases": 2037,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 2037
+      },
+      "first_pass": {
+        "count": 2037,
+        "sum_seconds": 17409.48176261772,
+        "mean_seconds": 8.546628258526127,
+        "median_seconds": 5.047437875000469,
+        "p95_seconds": 25.18765600000188,
+        "max_seconds": 186.3780187920056
+      }
+    },
+    "UUT": {
+      "expected_cases": 6111,
+      "attempts_checked": 6111,
+      "unique_attempted_cases": 6111,
+      "unique_accepted_unsat_cases": 6111,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 6111
+      },
+      "first_pass": {
+        "count": 6111,
+        "sum_seconds": 52910.77432368884,
+        "mean_seconds": 8.658284130860553,
+        "median_seconds": 5.259041833996889,
+        "p95_seconds": 25.156491583002207,
+        "max_seconds": 219.64578574999905
+      }
+    },
+    "UTT": {
+      "expected_cases": 59184,
+      "attempts_checked": 59202,
+      "unique_attempted_cases": 59184,
+      "unique_accepted_unsat_cases": 59184,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 59184,
+        "INTERRUPTED": 4,
+        "TIMEOUT": 14
+      },
+      "first_pass": {
+        "count": 59184,
+        "sum_seconds": 562955.1183523781,
+        "mean_seconds": 9.511947795897171,
+        "median_seconds": 5.170411604492983,
+        "p95_seconds": 30.12169158300094,
+        "max_seconds": 300.0695544580085
+      }
+    },
+    "TTT": {
+      "expected_cases": 163836,
+      "attempts_checked": 163958,
+      "unique_attempted_cases": 163836,
+      "unique_accepted_unsat_cases": 163836,
+      "remaining_cases": 0,
+      "attempt_status_counts": {
+        "UNSAT": 163836,
+        "INTERRUPTED": 19,
+        "TIMEOUT": 103
+      },
+      "first_pass": {
+        "count": 163836,
+        "sum_seconds": 1878385.0074956124,
+        "mean_seconds": 11.465032151026712,
+        "median_seconds": 5.628813895993517,
+        "p95_seconds": 38.28589279198786,
+        "max_seconds": 300.0840579999931
+      }
+    }
+  },
+  "native_log_bytes_checked": 5553877495,
+  "invalid_attempts_or_histories": [],
+  "sat_case_ids": [],
+  "sat_unsat_conflict_ids": [],
+  "timings": {
+    "all_checked_attempts": {
+      "count": 231308,
+      "sum_seconds": 2557272.606576675,
+      "mean_seconds": 11.055703246652408,
+      "median_seconds": 5.497964771002444,
+      "p95_seconds": 35.843632208008785,
+      "max_seconds": 636.5191217920074
+    },
+    "first_pass_completed": {
+      "count": 231168,
+      "sum_seconds": 2511660.3819342973,
+      "mean_seconds": 10.865086785083996,
+      "median_seconds": 5.4898378329999105,
+      "p95_seconds": 35.614820916998724,
+      "max_seconds": 300.0840579999931
+    },
+    "first_pass_capped": {
+      "count": 231168,
+      "sum_seconds": 2511654.9439472943,
+      "mean_seconds": 10.865063261123053,
+      "median_seconds": 5.4898378329999105,
+      "p95_seconds": 35.614820916998724,
+      "max_seconds": 300
+    },
+    "first_pass_cap_seconds": 300,
+    "p95_definition": "Nearest rank, ceil(0.95*n)."
+  },
+  "first_pass_estimate": {
+    "shuffle_seed": 20261027,
+    "completed_unique_cases": 231168,
+    "complete_shuffle_prefix_cases": 231168,
+    "fixed_chunk_size": 1000,
+    "sample_cases": 231168,
+    "sample_elapsed": {
+      "count": 231168,
+      "sum_seconds": 2511660.3819342973,
+      "mean_seconds": 10.865086785083996,
+      "median_seconds": 5.4898378329999105,
+      "p95_seconds": 35.614820916998724,
+      "max_seconds": 300.0840579999931
+    },
+    "sample_capped": {
+      "count": 231168,
+      "sum_seconds": 2511654.9439472943,
+      "mean_seconds": 10.865063261123053,
+      "median_seconds": 5.4898378329999105,
+      "p95_seconds": 35.614820916998724,
+      "max_seconds": 300
+    },
+    "remaining_first_pass_cases": 0,
+    "workers": 12,
+    "estimated_remaining_seconds": 0.0,
+    "currently_unresolved_retry_cases": 0,
+    "scope": "Capped first pass only, using complete fixed chunks of the predetermined random shuffle so unfinished slow cases are not selectively omitted. The estimate excludes future retry-tail time and input preparation overhead; it is descriptive, not a completion guarantee."
+  },
+  "controller_active_seconds_observation": "213501.129221416",
+  "requires_attention": false,
+  "completion_claim": true,
+  "evidence_standard": "Exact-input native Kissat UNSAT, exit20 and exact s UNSATISFIABLE line, pinned binary and full decompressed log hashes. No independently checked UNSAT refutations.",
+  "checker": {
+    "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-pilot/check_e_campaign_results.py",
+    "bytes": 18109,
+    "sha256": "b245a77b5444dff3853382e4db777b3505d49d6501dba177ca6140ec75a25fb4"
+  },
+  "check_elapsed_seconds": 20.566516707999998
+}
