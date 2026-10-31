@@ -1,24 +1,31 @@
 # Measured computational costs
 
-Every one of the 56,723 formulas has an UNSAT result from Kissat 4.0.4
-and CaDiCaL 3.0.1, both with default search options and no CPU or
-elapsed-time limit. The table sums native process CPU time for exactly
-the 113,446 required executions. It excludes input generation, evidence
+Every one of the 296,797 formulas has an UNSAT result from Kissat 4.0.4,
+with default search options. A five-minute first pass was followed by longer
+retries where needed. The table sums native process CPU time for all 296,952
+recorded attempts, including 132 timeouts and 23 interruptions; all unresolved
+cases were subsequently refuted. It excludes input generation, evidence
 checking, Lean compilation and exploratory research.
 
-| Family | Formulas | Kissat CPU hours | CaDiCaL CPU hours | Combined CPU hours |
-| --- | ---: | ---: | ---: | ---: |
-| A | 360 | 0.31 | 1.71 | 2.02 |
-| B | 5,096 | 7.45 | 41.21 | 48.66 |
-| D / TTT | 18,204 | 66.15 | 184.43 | 250.59 |
-| D / TTU | 18,204 | 65.23 | 168.26 | 233.49 |
-| D / UTT | 6,576 | 20.67 | 45.89 | 66.56 |
-| D / UTU | 6,576 | 20.04 | 40.03 | 60.07 |
-| D / UUT | 679 | 2.01 | 6.47 | 8.47 |
-| D / UUU | 679 | 1.92 | 3.25 | 5.18 |
-| C, marked entrance | 346 | 0.26 | 1.42 | 1.67 |
-| C, perfect balance | 3 | 0.02 | 0.03 | 0.05 |
-| **Total** | **56,723** | **184.06** | **492.71** | **676.77** |
+| Family | Formulas | Kissat CPU hours |
+| --- | ---: | ---: |
+| A | 360 | 0.27 |
+| B | 5,096 | 6.45 |
+| D / UUU | 679 | 1.63 |
+| D / UUT | 679 | 1.68 |
+| D / UTU | 6,576 | 17.60 |
+| D / UTT | 6,576 | 18.12 |
+| D / TTU | 18,204 | 59.82 |
+| D / TTT | 18,204 | 60.36 |
+| E / UUU | 2,037 | 4.77 |
+| E / UUT | 6,111 | 14.51 |
+| E / UTT | 59,184 | 155.84 |
+| E / TTT | 163,836 | 526.91 |
+| C1, marked entrance | 692 | 0.46 |
+| C2, marked entrance | 7,840 | 12.51 |
+| All-five guards | 3 | 0.03 |
+| Mixed marked balance | 720 | 5.79 |
+| **Total** | **296,797** | **886.75** |
 
 The profile and template names are defined in [the proof](../proof.md).
 The case counts measure the exhaustive boundary; they are not estimates
@@ -26,35 +33,25 @@ of relative difficulty. Rounded table entries need not sum exactly.
 
 ## Elapsed time and concurrency
 
-A/B/D execution spanned **59.83 hours** with up to 12 solver
-workers. The 346 C entrances spanned **42 minutes**, with up to
-12 workers. The three balanced cases spanned **38 seconds**,
-with up to 6 workers. These are measured execution
-intervals, not predictions for a dedicated machine. Other work shared the
-host, and the C interval includes a single long-running tail.
+E execution spanned **59.33 hours**, A/B/D **15.82 hours**, and the direct
+entrance/balance campaign **1.61 hours**, each with up to 12 solver workers.
+These are measured execution intervals, not predictions for a dedicated
+machine. Other work shared the host, and elapsed intervals include pauses
+and sleep.
 
 CPU time is summed over native processes. Elapsed time includes scheduling
 and input preparation between those processes and cannot be obtained by
-adding their CPU times. The host had 16 logical CPUs and 128 GiB RAM.
-
-## Perfect balance
-
-The balanced cases use 13,656 variables and 524,462 clauses each. Their
-individual native costs, rounded to seconds, are:
-
-| Case | Kissat CPU seconds | CaDiCaL CPU seconds |
-| --- | ---: | ---: |
-| UU | 30 | 32 |
-| UT | 29 | 37 |
-| TT | 19 | 32 |
-
-The six executions together used **179 CPU-seconds**. Their results
-have the same uncapped policy and exact-input checks as every other case.
+adding their CPU times.
 
 ## Mathematical checking and storage
 
-The [formal measurements](../formal/MEASUREMENTS.md) report the complete
-Lean build, the executed formula-binding checks, memory and disk usage.
-Those costs are separate from native SAT solving. The evidence retains
-raw per-execution measurements, input hashes and logs, indexed by the
-[release checks](RELEASE_CHECKS.md).
+The complete 1,390-module Lean build and all four exact-input comparisons
+passed. Their receipts are identified in the [release index](checks/K60_RELEASE.json).
+Those costs are separate from native SAT solving.
+
+The native archive retains the complete per-attempt logs and elapsed durations.
+CPU totals above sum the Kissat `process time` field from each log, for exactly
+the histories authenticated by its manifest
+`089599c2c4ed17524bb73727584391f16f85272facaf283d3923e4938f770d95`.
+The total before rounding is **3,192,285.00 CPU-seconds**.
+Independent CaDiCaL verification is running and is not included in these totals.

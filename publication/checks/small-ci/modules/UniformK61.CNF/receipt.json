@@ -1,0 +1,56 @@
+{
+  "CPU_seconds": 1.9654889999999998,
+  "LEAN_PATH": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/.build/runs/20261030T234544.773929Z_1c7637a9/lib:/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/r3333-upper-bound/formal/.lake/uniform-packages-20261013/mathlib/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/plausible/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/importGraph/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/aesop/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/Qq/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/batteries/.lake/build/lib/lean:/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/lib/lean",
+  "artifact_bytes": 31720,
+  "artifact_sha256": "b028f42ef119cd23bfe7f1525f1b7e48a0cc5256cce2cccb1151098cc6c2a9f2",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j1",
+    "-o",
+    "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/.build/runs/20261030T234544.773929Z_1c7637a9/modules/UniformK61.CNF/output.olean",
+    "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/src/UniformK61/CNF.lean"
+  ],
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "cpu_threads": 1,
+  "elapsed_seconds": 2.1872966249999983,
+  "exit_code": 0,
+  "finished_utc": "2026-10-30T23:46:04.222284+00:00",
+  "import_artifacts": [
+    {
+      "bytes": 39360,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/r3333-upper-bound/formal/.lake/uniform-packages-20261013/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean",
+      "sha256": "0534ef12e7aaf8ffbb6e520a91f922da4469d0dca2b54c87b4458e1faa28a6a2"
+    },
+    {
+      "bytes": 96,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/r3333-upper-bound/formal/.lake/uniform-packages-20261013/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean.private",
+      "sha256": "3b91a0e7aa1a6c14f056ebdb465fd91bcdff62a113eb1fe7b63bf5a9fc1a446b"
+    },
+    {
+      "bytes": 96,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/r3333-upper-bound/formal/.lake/uniform-packages-20261013/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean.server",
+      "sha256": "a1865b38a217f71f156593282ceee05cc9392ae0e5ae8a0498ebb8aa1a45facb"
+    },
+    {
+      "bytes": 39248,
+      "path": "/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/r3333-upper-bound/formal/.lake/uniform-packages-20261013/mathlib/.lake/build/lib/lean/Mathlib/Tactic.ir",
+      "sha256": "73f318b1abdc9756fedf89b546c414584860be63cdeb739f58d5c5d275d7912b"
+    }
+  ],
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "module": "UniformK61.CNF",
+  "peak_RSS_bytes": 2852896768,
+  "pid": 74060,
+  "resource_caps": null,
+  "source": {
+    "bytes": 1055,
+    "classification_source": false,
+    "imports": [
+      "Mathlib.Tactic"
+    ],
+    "path": "src/UniformK61/CNF.lean",
+    "sha256": "d80c70064a4673a4de0817554ff645487ffbe3cf921995d352c5ce587aa00fe2"
+  },
+  "started_utc": "2026-10-30T23:46:02.035300+00:00",
+  "status": "PASS"
+}

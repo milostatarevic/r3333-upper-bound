@@ -1,0 +1,41 @@
+{
+  "CPU_seconds": 2.000743,
+  "LEAN_PATH": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/.build/runs/20261030T234544.773929Z_1c7637a9/lib:/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/r3333-upper-bound/formal/.lake/uniform-packages-20261013/mathlib/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/plausible/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/importGraph/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/aesop/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/Qq/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/batteries/.lake/build/lib/lean:/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/lib/lean",
+  "artifact_bytes": 127776,
+  "artifact_sha256": "412090b300f70c75f4fed35ef7b76ba18aaf9a35e769cfc3894eea94a225ae18",
+  "command": [
+    "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
+    "-j1",
+    "-o",
+    "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/.build/runs/20261030T234544.773929Z_1c7637a9/modules/UniformK60.Core/output.olean",
+    "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/src/UniformK60/Core.lean"
+  ],
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "cpu_threads": 1,
+  "elapsed_seconds": 2.262837749999999,
+  "exit_code": 0,
+  "finished_utc": "2026-10-30T23:46:10.052294+00:00",
+  "import_artifacts": [
+    {
+      "bytes": 663208,
+      "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/.build/runs/20261030T234544.773929Z_1c7637a9/lib/UniformK60/Physical.olean",
+      "sha256": "fc7b8495c35ee8cf25b2a5e13e2d1f092bc2dbb79ff6e5235079333366df3152"
+    }
+  ],
+  "log_sha256": "f3f0fa8d6b7cc608fe329a7b10de2544977a7f521c26c9eb373b616d293fe706",
+  "module": "UniformK60.Core",
+  "peak_RSS_bytes": 2886959104,
+  "pid": 74073,
+  "resource_caps": null,
+  "source": {
+    "bytes": 3902,
+    "classification_source": false,
+    "imports": [
+      "UniformK60.Physical"
+    ],
+    "path": "src/UniformK60/Core.lean",
+    "sha256": "3f87e332e10efc351af4c6b4e29809fdc68bd3997345b93dd995ffaf9b5e65b0"
+  },
+  "started_utc": "2026-10-30T23:46:07.789497+00:00",
+  "status": "PASS"
+}

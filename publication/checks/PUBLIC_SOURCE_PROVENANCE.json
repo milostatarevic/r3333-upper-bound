@@ -1,0 +1,13 @@
+{
+  "canonical_build_accepted": true,
+  "canonical_build_target": "UniformK60.Verification",
+  "embedded_data_files": 110,
+  "manifest_sha256": "71ccbfe798c534aa28ee5396b4324b2a7fe4ad4f54691da1121d1a5fcd2486bb",
+  "preparation_only": false,
+  "public_layout_compilation_claimed": false,
+  "schema": "K60_PUBLIC_SOURCE_PROVENANCE_1",
+  "scope": "Selected source/data bytes match the accepted canonical build; public layout and controls are newly packaged. Canonical input bindings remain separate.",
+  "selected_source_map_sha256": "10f987ec0222eeecf6cce31dc74d67db3110048a7c6f87c0ea950b36efb389dd",
+  "selected_sources": 1390,
+  "source_bytes_unchanged": true
+}

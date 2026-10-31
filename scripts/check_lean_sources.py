@@ -16,17 +16,9 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 FORMAL = ROOT / 'formal'
 ACCEPTED_MANIFEST_PIN = ROOT / 'publication/checks/ACCEPTED_MATH_MANIFEST.sha256'
-MODULE_COUNT, DATA_COUNT = 857, 110
-ROOTS = (
-    'UniformK61.WholeProof',
-    'UniformK61.CommonCover',
-    'UniformK61.CommonUnitCache',
-    'UniformK61.MarkedUU',
-    'UniformK61.CEntranceCatalogueData',
-    'UniformK61.CEntranceFormula',
-    'UniformK61.BalancedEncodingCache',
-    'UniformK61.CoreCounts',
-)
+MODULE_COUNT, DATA_COUNT = 1390, 110
+ROOTS = ('UniformK60.Verification',)
+
 CONTROL_FILES = {'lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'build.py', 'BUILD.md'}
 HELPER = 'src/R4333Lean/CheckedLRAT.lean'
 HELPER_SHA = '0dc50a516ce88c897aa9c1b71baedb1f693b010cdd644886f83dd09fd677edc5'
@@ -53,15 +45,15 @@ def sha(data):
 
 
 def require_accepted_manifest(current_sha256, accepted_sha256):
-    """Bind this package to the manifest named by final accepted build evidence.
+    """Bind this package to its published source-manifest identity.
 
-    The integration caller must obtain accepted_sha256 from the owner's final
-    accepted record. This helper deliberately defines no replacement receipt.
+    Assembly pins this manifest only after verifying the unchanged source/data
+    closure against the accepted canonical build. This is not a build receipt.
     """
     require(isinstance(accepted_sha256, str) and DIGEST.fullmatch(accepted_sha256),
-            'Missing/invalid accepted full-build manifest hash')
+            'Missing/invalid published source-manifest hash')
     require(current_sha256 == accepted_sha256,
-            'Current source manifest is not the accepted full-build manifest')
+            'Current source manifest is not the published source manifest')
 
 
 def read_accepted_manifest_pin(path=ACCEPTED_MANIFEST_PIN):
@@ -74,9 +66,9 @@ def read_accepted_manifest_pin(path=ACCEPTED_MANIFEST_PIN):
 
 
 def require_accepted_package(formal, current_sha256, accepted_sha256):
-    """Require the exact manifest compiled by the complete portable build."""
+    """Require the pinned public source manifest, without claiming a new compile."""
     require_accepted_manifest(current_sha256, accepted_sha256)
-    return {'kind': 'exact_accepted_build', 'manifest_sha256': current_sha256}
+    return {'kind': 'published_source_manifest', 'manifest_sha256': current_sha256}
 
 
 def mask_noncode(text):

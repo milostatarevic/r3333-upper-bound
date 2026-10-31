@@ -1,0 +1,626 @@
+{
+  "archive": {
+    "bytes": 2060830514,
+    "sha256": "00ac602302bb6d02329ccfa50323afb66016ba0b9b2cc0a708f47f4dd9ceb567"
+  },
+  "files": {
+    "NATIVE_RELEASE.json": {
+      "bytes": 32124,
+      "sha256": "089599c2c4ed17524bb73727584391f16f85272facaf283d3923e4938f770d95"
+    },
+    "audits/abd-native.json": {
+      "bytes": 9123,
+      "sha256": "cacc1a546773ef639d4f75d1bb72a655e37e5e760060f89390dbc0629f095a4b"
+    },
+    "audits/closure-native.json": {
+      "bytes": 8279,
+      "sha256": "0c6d1a0724a3bdc6ff71453cbd05718ef8e594cb6e0bbc0aadbb931ef75943e1"
+    },
+    "audits/e-native.json": {
+      "bytes": 7211,
+      "sha256": "95959b0e3e9bc74a7752c434023ec966cb0719e679332cc31cf209a4a3f97a9e"
+    },
+    "tools/KISSAT-LICENSE": {
+      "bytes": 1316,
+      "sha256": "0dbd8c6478aa03f62d720ed2256cf585cb93eba657201be1df217c4e920f162d"
+    },
+    "tools/kissat": {
+      "bytes": 392456,
+      "sha256": "05d6f3e9c402a1fe8853b0746e384e1b3d1c4a550e255f11daa2461d279aa848"
+    },
+    "tools/native_evidence.py": {
+      "bytes": 42008,
+      "sha256": "3103b672289f74684c0bf21d33f7f4674deecf2341a4ea830f0730287c7d6337"
+    },
+    "workspace/k60-pilot/abd_catalogue.py": {
+      "bytes": 5306,
+      "sha256": "56e6ebf9b55b26a1a3b8bc773172825865c8fb182981212a525fb105da5721c5"
+    },
+    "workspace/k60-pilot/audit-abd-campaign-inputs.json": {
+      "bytes": 4057,
+      "sha256": "4a7181a4328c9334400b2541ae77eefd5c832e243e9634686953e2b7b4178d86"
+    },
+    "workspace/k60-pilot/audit-balance-fiveguards-all.json": {
+      "bytes": 1385,
+      "sha256": "e56fc65806aeba3b3fd9144628ce71293591c01e0c9c3e008aac9c9c9666ad7e"
+    },
+    "workspace/k60-pilot/audit-closure-campaign-inputs.json": {
+      "bytes": 1953,
+      "sha256": "e7017fa360eee6e8fa0e4a97dfaa23c3a9007932e0e9da5a2e9d6a301c4f1b23"
+    },
+    "workspace/k60-pilot/audit-e-campaign-inputs.json": {
+      "bytes": 5864,
+      "sha256": "fadb87c40a7e5ce9637e949c860856f174b7f964e069df385fedf9b9d30db060"
+    },
+    "workspace/k60-pilot/audit-e-cover.json": {
+      "bytes": 1351,
+      "sha256": "1bd32cc5e119ec98e6a16c0fe118d30a2324bf08d8548006fa6c7e28051aff4c"
+    },
+    "workspace/k60-pilot/audit-k60-entrances.json": {
+      "bytes": 960,
+      "sha256": "7055dab60d03137e12e3416183ecf7289f43d61b0eb99fbbbce1c4bdec397b35"
+    },
+    "workspace/k60-pilot/balance-analysis/anchor-library-aligned.json": {
+      "bytes": 383498,
+      "sha256": "55d554e1e9cd3f3ec2ccfacc8217c85f621d32d712406ac58f060f7811dd5613"
+    },
+    "workspace/k60-pilot/balance-analysis/anchors.py": {
+      "bytes": 3726,
+      "sha256": "4f2da65e73ca6e3766897618ee07e9246ea5f69c122b3c4e729bbcc321421838"
+    },
+    "workspace/k60-pilot/balance-analysis/e-cover.json": {
+      "bytes": 301583,
+      "sha256": "2e2c893f43ad607548c8e5383371b82b0646330b0a728d4629a3972fcfdde236"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/audit-full.json": {
+      "bytes": 8900,
+      "sha256": "868b55257f456b71f3d15012917579a5e17de27bd69b0212959a266bb455d169"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/audit-pentagon-only.json": {
+      "bytes": 8651,
+      "sha256": "0bc44f73c32ecdd368ca2b2c0dcd9dd6921979bd74f75bdb21679defb35f5929"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/check_pentagon_variant.py": {
+      "bytes": 7388,
+      "sha256": "2c7b44df7fe3b817e8e426169004e1a53f308ea444dbad0d2378b0b7768c989b"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/check_pilot.py": {
+      "bytes": 11923,
+      "sha256": "d09fafe4aec7990703e126fefa6c605fbfeab2c43c521904d8fc16a8d6e0003f"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/generate_pentagon_variant.py": {
+      "bytes": 5916,
+      "sha256": "31ca62f0cde30d92e7096aa250ea79dcdaf65b354f155e9ac4775341fc218586"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/generate_pilot.py": {
+      "bytes": 15320,
+      "sha256": "c609371d859a7d718b727d1293ed57d6f318991522dc110e73e715278c8483fc"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realT_markedT_shape455_rep00.cnf": {
+      "bytes": 22915390,
+      "sha256": "68db1beddb3ed308761dcda4645a693f8e87a862546f48d851c199fbd41b2dad"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realT_markedT_shape554_rep00.cnf": {
+      "bytes": 22915418,
+      "sha256": "ca7cbfa2413145ad34617fb77f009a30d69faf41f6365df61d91a3f58f74bd9f"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realT_markedT_shape555_rep00.cnf": {
+      "bytes": 22915487,
+      "sha256": "50c7fd5aee749947eab31e85d5f3d0f22110eca9458a48a5c7cbda88987f7162"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realT_markedU_shape455_rep00.cnf": {
+      "bytes": 22604980,
+      "sha256": "efe78fea89b54835fa1f6a5435f4b373a49090fd8775fdf953e6559d38b9b68a"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realT_markedU_shape554_rep00.cnf": {
+      "bytes": 22605008,
+      "sha256": "eebaeaf001dcccf5351f6ef8a40b060741496b26854db95002fad512bfd44bce"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realT_markedU_shape555_rep00.cnf": {
+      "bytes": 22605077,
+      "sha256": "a1a6efbeecd8f5f7c3e9696c0af3568e52db17c95aa5bf36ff68fc2878017d20"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realU_markedT_shape455_rep00.cnf": {
+      "bytes": 22407022,
+      "sha256": "6f1d5afc58b3d380f94003920528abb59ee4af503d3d67846db927b4264317d9"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realU_markedT_shape554_rep00.cnf": {
+      "bytes": 22407050,
+      "sha256": "f80e632c93f390e0be89e8048a5c35ddaba514fa1f62d2398f2f30908b75f1ef"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realU_markedT_shape555_rep00.cnf": {
+      "bytes": 22407119,
+      "sha256": "fe13069720476594d62d39c27f0431a23f400c59302f571059bc9530b8a422ab"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realU_markedU_shape455_rep00.cnf": {
+      "bytes": 22096612,
+      "sha256": "850f3a0420e0fce584924dd2fc44d77646f469fe83bf38ce8053191a75baa410"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realU_markedU_shape554_rep00.cnf": {
+      "bytes": 22096640,
+      "sha256": "9a4275f61896491152dec64120877ade9b286f08b8ec34a8a779f04bb1f51616"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/full/C2ROOT_realU_markedU_shape555_rep00.cnf": {
+      "bytes": 22096709,
+      "sha256": "e6e414f1e6476c0d09a7f0face1f64e08e9fb842806c9d3251aad086aeca0981"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realT_markedT_shape455_rep00.cnf": {
+      "bytes": 19629330,
+      "sha256": "05c7777b40f3fbee5b4777f4044d7c9e85d990a1f27a82487042fe4a5eec0a05"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realT_markedT_shape554_rep00.cnf": {
+      "bytes": 19629358,
+      "sha256": "bcdc1a55075bde88c966c8e5df0422ca2a8b64ccd301a0c4ece184bb64b549cd"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realT_markedT_shape555_rep00.cnf": {
+      "bytes": 19629427,
+      "sha256": "69d50ec424954c1c60016e09a31c6c5e25522d65dad779a880781c82e5f82a93"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realT_markedU_shape455_rep00.cnf": {
+      "bytes": 19318920,
+      "sha256": "242a8dc18cabf543a0794b6268e64695d86669474f8f27f46c78a25b560bc745"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realT_markedU_shape554_rep00.cnf": {
+      "bytes": 19318948,
+      "sha256": "9053195eebe5ff26226ca25d6c28f63939fef17fae6fecadf82f10f9612116c1"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realT_markedU_shape555_rep00.cnf": {
+      "bytes": 19319017,
+      "sha256": "941ca7933bc172dd0678fe32a6b1dba367ff8662f927932b7712c512ac0a6b31"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realU_markedT_shape455_rep00.cnf": {
+      "bytes": 19120962,
+      "sha256": "9c5fdd5995ada937f1fd9f968490a5848549960145665a1ea1aba2bbf32122ef"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realU_markedT_shape554_rep00.cnf": {
+      "bytes": 19120990,
+      "sha256": "df7d461278c7e4d86c1122d4149cfeadf9c7200a048d57ac1e69d0912d16373b"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realU_markedT_shape555_rep00.cnf": {
+      "bytes": 19121059,
+      "sha256": "4e5f072da8c08127bdbeade46c16424cf2481be54d3fa8295b98214baa152afb"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realU_markedU_shape455_rep00.cnf": {
+      "bytes": 18810552,
+      "sha256": "b9d214eb7067100e4fa35fd0d2158e83a3131ea2b2f87bfc2156edb4cfeedaf2"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realU_markedU_shape554_rep00.cnf": {
+      "bytes": 18810580,
+      "sha256": "40525a171d791141c5cf7b54e9d881b0fbb1e2d64815cbdbfa1329f5f0cebabd"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/inputs/pentagon-only/C2ROOT_realU_markedU_shape555_rep00.cnf": {
+      "bytes": 18810649,
+      "sha256": "09a0c602539948ee1832e760a8483421d5782a7536f8c09075da697ed5f6b4f0"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/manifest-full.json": {
+      "bytes": 206932,
+      "sha256": "dad6a82d18fea126cd4e14bfa5c8d450b3298902a704df8d6b4b090aaa80f1c6"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/manifest-pentagon-only.json": {
+      "bytes": 210237,
+      "sha256": "1999e8a27e25fdf080509ca028269801e716171f10aac28c1245847974ecc84d"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/full/C2_ROOT_TT.cnf": {
+      "bytes": 22912526,
+      "sha256": "041f4d5433d9fbc33534f0e0c04b0f1d79a3fe11b1e99a6fc2045555a8521f1d"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/full/C2_ROOT_TT.metadata.json": {
+      "bytes": 661460,
+      "sha256": "840b3740651d808f690d83a8aa3a147590cf16d54125c8f6a81cb418ec5e59f6"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/full/C2_ROOT_TU.cnf": {
+      "bytes": 22404158,
+      "sha256": "960020029fb9ea71237f6f1fd0ee72f9e2878cb3c0e94d8650d8875195710c08"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/full/C2_ROOT_TU.metadata.json": {
+      "bytes": 639980,
+      "sha256": "fd7ecaff0a433e83365fb3b52b3081ae33e5bdc9b3713a7777db9de50def1211"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/full/C2_ROOT_UT.cnf": {
+      "bytes": 22602170,
+      "sha256": "31bd78d64f40f4799a670c5a5b6d475e3d4addfdbd334e0f5dc47f396c4ced78"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/full/C2_ROOT_UT.metadata.json": {
+      "bytes": 644324,
+      "sha256": "ae3ef022c22c58fcef12f98f8c1900fa83df97785df08c1ccf8421dbee019b41"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/full/C2_ROOT_UU.cnf": {
+      "bytes": 22093802,
+      "sha256": "c26d45ba1d5cf8bbc4294138725cebdfc9b9378ec67edf23c71fa473c01402d6"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/full/C2_ROOT_UU.metadata.json": {
+      "bytes": 622844,
+      "sha256": "6bd7c9a7526aad043821f47a53154c324abeb3dd109d6afb367480520eeba121"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/pentagon-only/C2_ROOT_TT.cnf": {
+      "bytes": 19626466,
+      "sha256": "539e9195dc74410b646bda086e86db4bbabacaf2b05d1017c769236f53df9973"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/pentagon-only/C2_ROOT_TT.metadata.json": {
+      "bytes": 653605,
+      "sha256": "de8c5ca750929e6b81f643f86423546fda79f0bbac858dac15ef8293fe2ec9ec"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/pentagon-only/C2_ROOT_TU.cnf": {
+      "bytes": 19118098,
+      "sha256": "100a0acbd1757b303ecd6ddbd05839a79411861f8a764b7f5e261edc3cacad9c"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/pentagon-only/C2_ROOT_TU.metadata.json": {
+      "bytes": 632125,
+      "sha256": "5294f7db23eaaff4ba0d69ef37c8d562292f3c0286542cd8326dc5080f997f61"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/pentagon-only/C2_ROOT_UT.cnf": {
+      "bytes": 19316110,
+      "sha256": "c71344a5e4f648a28ff68ef086761a87d7c2b52c9454f70b0ea7116c74714149"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/pentagon-only/C2_ROOT_UT.metadata.json": {
+      "bytes": 636469,
+      "sha256": "d7f173bb4cad916065903207561a5f34762d5491cc2443cf16c5e044ff5bc350"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/pentagon-only/C2_ROOT_UU.cnf": {
+      "bytes": 18807742,
+      "sha256": "f43951c774a7f94a8981561220063f4e9f09f2d183819a86c5d59111578b94b8"
+    },
+    "workspace/k60-pilot/balance-simplification-pilot/prefixes/pentagon-only/C2_ROOT_UU.metadata.json": {
+      "bytes": 614989,
+      "sha256": "e282ccffc9614595453490c28ae41c7cde4d20893247e6ba95d767cad0aa383f"
+    },
+    "workspace/k60-pilot/balance-simplified-full/audit-inputs.json": {
+      "bytes": 384158,
+      "sha256": "66ac311eb5bacd9aec087283732f9e0178e9665a2167f89438bc58c7d8602ec1"
+    },
+    "workspace/k60-pilot/balance-simplified-full/certify_cover.py": {
+      "bytes": 15665,
+      "sha256": "811b48679109ee62091d0600d2baaf7020b87a5f9e13113c4b0dbba1ba8cb701"
+    },
+    "workspace/k60-pilot/balance-simplified-full/check_catalogue.py": {
+      "bytes": 12241,
+      "sha256": "6d9162da5c283717e1d00c92ad43a4af1ccb7383d9f7e4ca12789e4c8759c9aa"
+    },
+    "workspace/k60-pilot/balance-simplified-full/generate_catalogue.py": {
+      "bytes": 13271,
+      "sha256": "6339583d776b78f50e93910c4e80e8b658535887a53bfe0f700e9b7ff50afd2c"
+    },
+    "workspace/k60-pilot/balance-simplified-full/manifest.json": {
+      "bytes": 11498480,
+      "sha256": "0240d89463111e4fb51d8c13fb799d16524d8e10e826ed31962788440209db19"
+    },
+    "workspace/k60-pilot/balance-simplified-full/projected-cover-audit.json": {
+      "bytes": 779,
+      "sha256": "9b77da480cb9f0e4fb952ba49e0523e876be89aaf8097d22b09ff1db4a5fae8b"
+    },
+    "workspace/k60-pilot/balance-simplified-full/projected-cover-rows.json": {
+      "bytes": 15237,
+      "sha256": "f4df4cf6649235753cb5c712602bc0b66614e2bd6d3e7d8abb7171778fa42ac3"
+    },
+    "workspace/k60-pilot/balance-simplified-full/projected-cover.json": {
+      "bytes": 4100755,
+      "sha256": "2e656616eadb3c5b463489c234db2a637b1d5750783d148f0dea9f8d38bd691a"
+    },
+    "workspace/k60-pilot/campaign-abd-kissat/campaign.json": {
+      "bytes": 1352,
+      "sha256": "35225f62aa17376ed20b15a079b6d658ca06c6733d3bc6ea6d1692846f5cb959"
+    },
+    "workspace/k60-pilot/campaign-abd-kissat/prerequisite-e-audit.json": {
+      "bytes": 7211,
+      "sha256": "85f4deb9c269609561c6ea2ee02583c4b5246bc7a61d3f201741e745a30b646d"
+    },
+    "workspace/k60-pilot/campaign-abd-kissat/results.sqlite3": {
+      "bytes": 352882688,
+      "sha256": "fb89aed0c4d2528c3e4bdb0193d0499f6c89403ebbe41492e0146e00e5315d91"
+    },
+    "workspace/k60-pilot/campaign-closure-kissat/campaign.json": {
+      "bytes": 1360,
+      "sha256": "a159766d68b520a8fecc0c2eab0b96fcfe0b77a6ff5f5397d9bb4f21ab9c7e9b"
+    },
+    "workspace/k60-pilot/campaign-closure-kissat/prerequisite-abd-audit.json": {
+      "bytes": 9116,
+      "sha256": "83e8b81dad8087ca5beb461d0b5693589ab1b3957238869372ce042a025f26d7"
+    },
+    "workspace/k60-pilot/campaign-closure-kissat/results.sqlite3": {
+      "bytes": 53993472,
+      "sha256": "1c4040943c7957edc30fcc80a788e895a8a39b6d06f25955aab14da818229c13"
+    },
+    "workspace/k60-pilot/campaign-e-kissat/campaign.json": {
+      "bytes": 983,
+      "sha256": "1e671a5d0fa3fe98d9544571447fb292f52c1869b9681eb721d2cad1cc195158"
+    },
+    "workspace/k60-pilot/campaign-e-kissat/results.sqlite3": {
+      "bytes": 1473388544,
+      "sha256": "664041b33f396a892636571a333f99126e61736846d767f37ae09340d0890e4e"
+    },
+    "workspace/k60-pilot/check_abd_campaign_inputs.py": {
+      "bytes": 11395,
+      "sha256": "1fa6d4278afa8fd2ae20c6571cea2dcae36e67a57a07a0a196dc576f893aa522"
+    },
+    "workspace/k60-pilot/check_abd_campaign_results.py": {
+      "bytes": 17305,
+      "sha256": "ee3662ffb38fd98e9f1d5b12c340429bf072ba69c51b8e8549d476d27b6829ea"
+    },
+    "workspace/k60-pilot/check_balance_fiveguards_inputs.py": {
+      "bytes": 5484,
+      "sha256": "c6d2d9d47eca501630dcce38cc18ef977c852115c76cbb55623040a7ff13ef05"
+    },
+    "workspace/k60-pilot/check_balance_inputs.py": {
+      "bytes": 20901,
+      "sha256": "8709741053054a5a6eb680162762a8e6dd9763612826f3d5b44f8b4ed3287e74"
+    },
+    "workspace/k60-pilot/check_closure_campaign_inputs.py": {
+      "bytes": 6376,
+      "sha256": "73a54b2e262f11edafbaf5aa1938a9ca762955d232b608cc99ebf4b5a91af536"
+    },
+    "workspace/k60-pilot/check_closure_campaign_results.py": {
+      "bytes": 17112,
+      "sha256": "df80c546c60ddf8b0936a8368994584810848b05a00f074ce06b6eb88d303c40"
+    },
+    "workspace/k60-pilot/check_e_campaign_inputs.py": {
+      "bytes": 16987,
+      "sha256": "d6f8a0d0fe2b197a2cdb62f221f591161da006ca595aab64116477e3e694d1f0"
+    },
+    "workspace/k60-pilot/check_e_campaign_results.py": {
+      "bytes": 18109,
+      "sha256": "b245a77b5444dff3853382e4db777b3505d49d6501dba177ca6140ec75a25fb4"
+    },
+    "workspace/k60-pilot/check_e_cover_independent.py": {
+      "bytes": 11330,
+      "sha256": "abf0a1db1b8080b537732b34b1282ad8bbf7ddf879b2e7598ebfab700940eb7c"
+    },
+    "workspace/k60-pilot/check_inputs.py": {
+      "bytes": 14874,
+      "sha256": "7445c9290a3cfafbceea25012b7c7ce2a37c67badde9230fbab869a5c6e33986"
+    },
+    "workspace/k60-pilot/check_k60_entrances.py": {
+      "bytes": 8828,
+      "sha256": "d64c25bb7c4ac9ad2e83f06b159ea84b5508d6d65870810994b310f2156aca4c"
+    },
+    "workspace/k60-pilot/closure_catalogue.py": {
+      "bytes": 3349,
+      "sha256": "e38de62d00589bfe65cefc54a77359d3cb1b706643b1a7df92b5701923b840c7"
+    },
+    "workspace/k60-pilot/e_catalogue.py": {
+      "bytes": 8394,
+      "sha256": "250a16e7e08791b6cdc9e95bb7da87018bbc8e83a4a759d9ac3f99647ca14c72"
+    },
+    "workspace/k60-pilot/generate.py": {
+      "bytes": 3421,
+      "sha256": "05352d18e1993a307604bd849875032d1e1aab1cf2a56a15ef0ab983553c1a5f"
+    },
+    "workspace/k60-pilot/generate_abd_catalogue.py": {
+      "bytes": 5412,
+      "sha256": "b33742a85f918f17f14370a9b357f87e19dd0c8155b1db99e8bf2641d032d309"
+    },
+    "workspace/k60-pilot/generate_balance.py": {
+      "bytes": 15552,
+      "sha256": "109a4452e816808dd05913a0d6f246d6eb62a77b9df3b3ac82106689ac92b7e9"
+    },
+    "workspace/k60-pilot/generate_balance_braced_c1_full.py": {
+      "bytes": 8241,
+      "sha256": "6e4325a6acb150788f96e3785b7f0c7d8a052cd5741848e9f5afc2e236c32671"
+    },
+    "workspace/k60-pilot/generate_e_catalogue.py": {
+      "bytes": 9327,
+      "sha256": "5a9cf7ea4751de176ee35f8470dd8f358c22c04b5ffd6879530a5b5c354acad4"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/A.json": {
+      "bytes": 374915,
+      "sha256": "04b63427c743d41369cd305fd82e37450bc26c4d5262b47ddd20b4544d8ced13"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/B.json": {
+      "bytes": 4932770,
+      "sha256": "717eddaab19150f9e6443c06180fdcaf655ebdd89a9ce43056d2aa8ae054fa66"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/D_TTT.json": {
+      "bytes": 14992140,
+      "sha256": "cf92d9758a9fd57d0325396d1c905a3ecb9465f85e71866b40ab1c29f9a39fd0"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/D_TTU.json": {
+      "bytes": 14992140,
+      "sha256": "e21676b910f97a774ac7963d8e92fd21f48537fa8cf925187e6cc2dc1e3b9454"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/D_UTT.json": {
+      "bytes": 5418768,
+      "sha256": "32dfc23ecbdccb612a20e5c4235172c9d51fd891053f1625dade324cdeb76738"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/D_UTU.json": {
+      "bytes": 5418768,
+      "sha256": "ecd167259e9a6c58406b3f7274b28e7b9a9935b6439dd99d97a19810ca443db4"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/D_UU.json": {
+      "bytes": 571223,
+      "sha256": "83718289fe149a28e26daf9a5f96dea4f806b06352fec3c89de29738681689b1"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/base.cnf": {
+      "bytes": 2856604,
+      "sha256": "a48d929e734201beebccd8089578c229fb4cfccd16b3a7d5d9111edf39764cbe"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/hashes.bin": {
+      "bytes": 1916716,
+      "sha256": "6e867f0f41cd1bcf1908303a5e22acf1ce3e28bbf12ce95b8b0d587df82bef30"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/manifest.json": {
+      "bytes": 5888,
+      "sha256": "fc94af1694ca41df160da21950f48432668afa16014540ffbec79d96ecc6c50f"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/source-raw/A.json": {
+      "bytes": 374915,
+      "sha256": "04b63427c743d41369cd305fd82e37450bc26c4d5262b47ddd20b4544d8ced13"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/source-raw/B.json": {
+      "bytes": 4932770,
+      "sha256": "717eddaab19150f9e6443c06180fdcaf655ebdd89a9ce43056d2aa8ae054fa66"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/source-raw/D_TTT.json": {
+      "bytes": 17943949,
+      "sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/source-raw/D_TTU.json": {
+      "bytes": 17937625,
+      "sha256": "a656853526685c105102fb6962dc71c6777887ffbf5c63d6b2c07e41a4791736"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/source-raw/D_UTT.json": {
+      "bytes": 6495516,
+      "sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/source-raw/D_UTU.json": {
+      "bytes": 6487084,
+      "sha256": "b58f50c345e3007f22abea3a0dd1eff029ee50e2a2e5154a6077553aab2988ac"
+    },
+    "workspace/k60-pilot/inputs-abd-exhaustive/source-raw/D_UU.json": {
+      "bytes": 571223,
+      "sha256": "83718289fe149a28e26daf9a5f96dea4f806b06352fec3c89de29738681689b1"
+    },
+    "workspace/k60-pilot/inputs-balance-aligned-c1/00_BALANCE_C1_UU.cnf": {
+      "bytes": 22482784,
+      "sha256": "28cb46faaa77afcdb7a99f5c1a8c66ad5607700c2e4947c7d37d5bf48e7ac993"
+    },
+    "workspace/k60-pilot/inputs-balance-aligned-c1/00_BALANCE_C1_UU.metadata.json": {
+      "bytes": 674804,
+      "sha256": "ec038b4bbcbcad06c6029fa53dc03bfa721e1c01682be6f3605828b2d93f8712"
+    },
+    "workspace/k60-pilot/inputs-balance-aligned-c1/01_BALANCE_C1_UT.cnf": {
+      "bytes": 23025120,
+      "sha256": "3a0d72c77fac5794d36a2638fea6530828ba827c20218d065bcb2adf9b7b8886"
+    },
+    "workspace/k60-pilot/inputs-balance-aligned-c1/01_BALANCE_C1_UT.metadata.json": {
+      "bytes": 697716,
+      "sha256": "fb350c80e8a61f605ca61970781b511d37def3763ae528ac17bc83a374f0932c"
+    },
+    "workspace/k60-pilot/inputs-balance-aligned-c1/02_BALANCE_C1_TT.cnf": {
+      "bytes": 23567456,
+      "sha256": "a65ad3a3ea46ed327e3707050454d1636064237460b769741c8878d52dc4fe81"
+    },
+    "workspace/k60-pilot/inputs-balance-aligned-c1/02_BALANCE_C1_TT.metadata.json": {
+      "bytes": 720628,
+      "sha256": "c8aa840fe8d80250c702437aba3e4759e4b542e6554f4126e92c2dd4bd55ac1a"
+    },
+    "workspace/k60-pilot/inputs-balance-aligned-c1/manifest.json": {
+      "bytes": 4695,
+      "sha256": "e144a7641fd2eeb3eb4a7d5eead392c32c6eff1ad9ba249b4e42cc6eb89f3cef"
+    },
+    "workspace/k60-pilot/inputs-balance-fiveguards-all/00_BALANCE_C1_UU_fiveguards.cnf": {
+      "bytes": 16368012,
+      "sha256": "eed8aa6cbb61d3e193c97a0fdc151a905aa4b68a60d1e13b643ec225aa72422a"
+    },
+    "workspace/k60-pilot/inputs-balance-fiveguards-all/00_BALANCE_C1_UU_fiveguards.metadata.json": {
+      "bytes": 29207,
+      "sha256": "9975c1021e89f64d1fe94d5fbe5d0739bcfae9f3ad96443ce63a76295071fa10"
+    },
+    "workspace/k60-pilot/inputs-balance-fiveguards-all/01_BALANCE_C1_UT_fiveguards.cnf": {
+      "bytes": 16826588,
+      "sha256": "a6d76f25abfb59e886cd7d47b4ec20024b3624069bd6f41021c67c2fa3130875"
+    },
+    "workspace/k60-pilot/inputs-balance-fiveguards-all/01_BALANCE_C1_UT_fiveguards.metadata.json": {
+      "bytes": 32231,
+      "sha256": "cd15c5cedba63fce822b171a718391063d61887561d7dafbb45a3db639e3bdb4"
+    },
+    "workspace/k60-pilot/inputs-balance-fiveguards-all/02_BALANCE_C1_TT_fiveguards.cnf": {
+      "bytes": 17295836,
+      "sha256": "49dd2071f4ed4f2ad53a08b25120a880154adbe5b37f3af51088732f1c3b7ba2"
+    },
+    "workspace/k60-pilot/inputs-balance-fiveguards-all/02_BALANCE_C1_TT_fiveguards.metadata.json": {
+      "bytes": 35287,
+      "sha256": "5131d360fcc93214bb1ec2cf3e6e8d099158e9061cff25fd0caa07a51c56b09e"
+    },
+    "workspace/k60-pilot/inputs-balance-fiveguards-all/manifest.json": {
+      "bytes": 2138,
+      "sha256": "5c39d4af5c9a65eafcfafad4db2473edc8a2529983304ab2bad9938302e3c803"
+    },
+    "workspace/k60-pilot/inputs-direct-closure/manifest.json": {
+      "bytes": 6276,
+      "sha256": "76670e2f9b4a43e4e6d6b1582a3137ab71ef095ed1b0c3bf55b131270d250cb3"
+    },
+    "workspace/k60-pilot/inputs-e-exhaustive/D_TTT.json": {
+      "bytes": 14992200,
+      "sha256": "134ace8d1d8a866d0dcdaa42e7a5e1b3f69bb0f9ccc51059be9ebcef5900a697"
+    },
+    "workspace/k60-pilot/inputs-e-exhaustive/D_UTT.json": {
+      "bytes": 5418828,
+      "sha256": "6d76a79fc190b5ca0561244b251502f5d9f8924288806bf553cdd10514f4d537"
+    },
+    "workspace/k60-pilot/inputs-e-exhaustive/D_UU.json": {
+      "bytes": 570756,
+      "sha256": "3838f326dfadb660df2806e6464339ec8d6456d28fdbd584523cd07dd4c51a29"
+    },
+    "workspace/k60-pilot/inputs-e-exhaustive/base.cnf": {
+      "bytes": 2856604,
+      "sha256": "a48d929e734201beebccd8089578c229fb4cfccd16b3a7d5d9111edf39764cbe"
+    },
+    "workspace/k60-pilot/inputs-e-exhaustive/hashes.bin": {
+      "bytes": 7859712,
+      "sha256": "13176fa47b0e18fcf0884c119f6bcb7f67dd8a7d9a578e4d377137aa84890118"
+    },
+    "workspace/k60-pilot/inputs-e-exhaustive/manifest.json": {
+      "bytes": 5785,
+      "sha256": "1c1fe1bbb2166d058b99a5e3ab16dfff0a81e0f802911879875ed055141cbedb"
+    },
+    "workspace/k60-pilot/inputs-e-exhaustive/source-raw/D_TTT.json": {
+      "bytes": 17943949,
+      "sha256": "d3ea189543e97ca6fc95981ebaa8d317fe464e0f12e8872fdb446a72170b64ec"
+    },
+    "workspace/k60-pilot/inputs-e-exhaustive/source-raw/D_UTT.json": {
+      "bytes": 6495516,
+      "sha256": "fff1c142c445f3f329a5ea466592ace3271623993bafd1f1f737791406f7d8c7"
+    },
+    "workspace/k60-pilot/inputs-e-exhaustive/source-raw/D_UU.json": {
+      "bytes": 571223,
+      "sha256": "83718289fe149a28e26daf9a5f96dea4f806b06352fec3c89de29738681689b1"
+    },
+    "workspace/k60-pilot/inputs-k60-entrances/base.cnf": {
+      "bytes": 2856604,
+      "sha256": "a48d929e734201beebccd8089578c229fb4cfccd16b3a7d5d9111edf39764cbe"
+    },
+    "workspace/k60-pilot/inputs-k60-entrances/manifest.json": {
+      "bytes": 22362572,
+      "sha256": "4ec3d6f6871d9638a908d1d70ada2d68e1e0095cebbd8627fc0a6d0e90b1abbf"
+    },
+    "workspace/k60-pilot/prepare_closure_catalogue.py": {
+      "bytes": 2858,
+      "sha256": "9776049fa444b1b271a1942a8d42ce9f62e4738db476a06f5d379bd36c61ba3b"
+    },
+    "workspace/k60-pilot/run_abd_campaign.py": {
+      "bytes": 18154,
+      "sha256": "5467da552dab3e753b1b270b6a212b9ca946a4353f3141c86604b226e1dff83d"
+    },
+    "workspace/k60-pilot/run_closure_campaign.py": {
+      "bytes": 17821,
+      "sha256": "cd4bbc17264b058396637abb734bdf7e3c7a6a66b4058db9dfc68cd0a5f56209"
+    },
+    "workspace/k60-pilot/run_e_campaign.py": {
+      "bytes": 15548,
+      "sha256": "0ddb957525114f6d02beacf971636a1a4514301fc2e065cb82653f8d97f4a512"
+    },
+    "workspace/k60-pilot/source-e/evidence-v1.tar.gz": {
+      "bytes": 375104364,
+      "sha256": "2b85cac94df0317a532aa823cfea93ac83738093fc854805896943f90d468757"
+    },
+    "workspace/r3333-upper-bound/reproduce/data/balance_anchors.json": {
+      "bytes": 35021,
+      "sha256": "3ecb1ea085fb963cddadea3f839d09f59585069ffc9dcce2d754f48e80435913"
+    },
+    "workspace/r3333-upper-bound/reproduce/data/c_entrances.json": {
+      "bytes": 260050,
+      "sha256": "f1c59973fe6c5f2cff27457b78962d89e58d6e844d40433552f9f0880fd778a9"
+    },
+    "workspace/r3333-upper-bound/reproduce/data/marked_uu.json": {
+      "bytes": 571223,
+      "sha256": "83718289fe149a28e26daf9a5f96dea4f806b06352fec3c89de29738681689b1"
+    },
+    "workspace/r3333-upper-bound/reproduce/uniform_balance.py": {
+      "bytes": 7926,
+      "sha256": "a419fdba5a0bf6bf281d973cb6c38dd62c5d0524ac6a5c856b9c4e7f387d493a"
+    },
+    "workspace/r3333-upper-bound/reproduce/uniform_c.py": {
+      "bytes": 4571,
+      "sha256": "6f8f404a520bb696b7be03f8fc4de9d4ce582df8812fd94739bc319aa91b4a4c"
+    },
+    "workspace/r3333-upper-bound/reproduce/uniform_k61.py": {
+      "bytes": 15698,
+      "sha256": "30b6c65d20b56e4dcdf9c8ef9bfc082f17539e5bdd675912e6152d649ce2459c"
+    }
+  },
+  "manifest": {
+    "bytes": 32124,
+    "sha256": "089599c2c4ed17524bb73727584391f16f85272facaf283d3923e4938f770d95"
+  },
+  "members": 153,
+  "path": "archives/k60-native-evidence.tar.gz"
+}

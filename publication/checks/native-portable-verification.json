@@ -1,0 +1,40 @@
+{
+  "campaigns": {
+    "abd": {
+      "attempt_status_counts": {
+        "TIMEOUT": 15,
+        "UNSAT": 56374
+      },
+      "attempts": 56389,
+      "cases": 56374,
+      "native_log_bytes": 1328796958,
+      "ordered_row_and_compressed_log_hash_sha256": "1c5e450a5d374faf0e6167a6c36677f0684da3abd406d700e0efdd8cb341fbb1"
+    },
+    "closure": {
+      "attempt_status_counts": {
+        "UNSAT": 9255
+      },
+      "attempts": 9255,
+      "cases": 9255,
+      "native_log_bytes": 187060066,
+      "ordered_row_and_compressed_log_hash_sha256": "d32ae2362d97decba274236af40f911e1cc08588c49e1a7f68d8b65f456222c0"
+    },
+    "e": {
+      "attempt_status_counts": {
+        "INTERRUPTED": 23,
+        "TIMEOUT": 117,
+        "UNSAT": 231168
+      },
+      "attempts": 231308,
+      "cases": 231168,
+      "native_log_bytes": 5553877495,
+      "ordered_row_and_compressed_log_hash_sha256": "9309f05c663a7d221fbf9a143a6209844f759a869bd418f06b5f99868d2bcb20"
+    }
+  },
+  "manifest_sha256": "089599c2c4ed17524bb73727584391f16f85272facaf283d3923e4938f770d95",
+  "passed": true,
+  "schema": "K60_PORTABLE_NATIVE_VERIFICATION_2",
+  "solver_executed": false,
+  "total_cases": 296797,
+  "trust": "Archived exact-input native Kissat outcomes and complete attempt/log histories. This is not an independently checked UNSAT-refutation certificate, a Lean proof, or the separate formal/input-binding release gate."
+}

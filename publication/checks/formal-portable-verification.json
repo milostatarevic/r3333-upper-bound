@@ -1,0 +1,8 @@
+{
+  "conditional_reduction_only": true,
+  "modules": 1390,
+  "native_completion_claim": false,
+  "passed": true,
+  "schema": "K60_FORMAL_RELEASE_1",
+  "total_formulas": 296797
+}

@@ -1,0 +1,136 @@
+name: Passive K60 evidence verification
+
+# This workflow requires an externally pinned, finalized release index.
+# This job executes neither Lean nor a SAT solver.
+on:
+  workflow_dispatch:
+    inputs:
+      release_index_sha256:
+        description: Independently obtained SHA256 of publication/checks/K60_RELEASE.json
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    name: Authenticate and passively verify both evidence capsules
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      GIT_LFS_SKIP_SMUDGE: "1"
+      K60_RELEASE_INDEX_SHA256: ${{ inputs.release_index_sha256 }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out the selected revision without large archives
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+
+      - name: Authenticate the release index and unchanged verification tools
+        run: |
+          set -euo pipefail
+          mkdir verification-artifacts
+          git rev-parse HEAD > verification-artifacts/commit.txt
+          python3 - <<'PY'
+          import hashlib, json, os, re, shutil
+          from pathlib import Path
+          expected = os.environ['K60_RELEASE_INDEX_SHA256']
+          if not re.fullmatch('[0-9a-f]{64}', expected):
+              raise ValueError('An external release-index SHA256 is required')
+          path = Path('publication/checks/K60_RELEASE.json')
+          raw = path.read_bytes()
+          if path.is_symlink() or hashlib.sha256(raw).hexdigest() != expected:
+              raise ValueError('Release index hash mismatch')
+          index = json.loads(raw)
+          if index.get('schema') != 'K60_REPOSITORY_PREPARATION_1' or index.get('preparation_only') is not False:
+              raise ValueError('The release index has not been finalized')
+          if set(index.get('capsules', {})) != {'formal', 'native'}:
+              raise ValueError('Both accepted capsules are required')
+          for name in ('formal_evidence.py', 'native_evidence.py', 'materialize_input.py'):
+              tool = Path('reproduce') / name
+              record = index['tools'][name]
+              data = tool.read_bytes()
+              if tool.is_symlink() or record != index['files'][tool.as_posix()] or record != {
+                      'sha256': hashlib.sha256(data).hexdigest(), 'bytes': len(data)}:
+                  raise ValueError('Changed public tool: ' + name)
+          for label, capsule in index['capsules'].items():
+              archive = 'archives/k60-' + label + '-evidence.tar.gz'
+              if capsule['archive'] != archive or capsule['archive_pin'] != index['files'][archive]:
+                  raise ValueError('Inconsistent archive identity')
+              if not re.fullmatch('[0-9a-f]{64}', capsule['manifest_sha256']):
+                  raise ValueError('Invalid capsule manifest pin')
+              with open(os.environ['GITHUB_ENV'], 'a') as env:
+                  env.write('K60_' + label.upper() + '_MANIFEST_SHA256=' + capsule['manifest_sha256'] + '\n')
+          shutil.copyfile(path, 'verification-artifacts/K60_RELEASE.json')
+          Path('verification-artifacts/release-index.sha256').write_text(expected + '\n')
+          PY
+
+      - name: Download only the two K60 evidence archives
+        run: |
+          set -euo pipefail
+          git lfs pull --include="archives/k60-formal-evidence.tar.gz,archives/k60-native-evidence.tar.gz" --exclude=""
+
+      - name: Check archive hashes and safely extract fresh capsule roots
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, os, sys, tarfile
+          from pathlib import Path
+          if sys.version_info < (3, 12):
+              raise RuntimeError('This CI extraction step requires Python 3.12 or newer')
+          raw = Path('publication/checks/K60_RELEASE.json').read_bytes()
+          if hashlib.sha256(raw).hexdigest() != os.environ['K60_RELEASE_INDEX_SHA256']:
+              raise ValueError('Release index changed')
+          index = json.loads(raw)
+          for label in ('formal', 'native'):
+              capsule = index['capsules'][label]
+              path = Path('archives/k60-' + label + '-evidence.tar.gz')
+              expected = capsule['archive_pin']
+              digest = hashlib.sha256()
+              with path.open('rb') as stream:
+                  for block in iter(lambda: stream.read(1 << 20), b''): digest.update(block)
+              if path.is_symlink() or path.stat().st_size != expected['bytes'] or digest.hexdigest() != expected['sha256']:
+                  raise ValueError('Archive hash or size mismatch: ' + label)
+              destination = Path('k60-' + label + '-capsule')
+              destination.mkdir()
+              with tarfile.open(path, 'r:gz') as archive:
+                  members = archive.getmembers()
+                  if any(not item.isfile() for item in members) or len({item.name for item in members}) != len(members):
+                      raise ValueError('Archive contains nonregular or duplicate members')
+                  archive.extractall(destination, members=members, filter='data')
+          PY
+
+      - name: Run the unchanged passive capsule verifiers
+        run: |
+          set -euo pipefail
+          python3 -B reproduce/formal_evidence.py verify \
+            --root "$PWD/k60-formal-capsule" --manifest-sha256 "$K60_FORMAL_MANIFEST_SHA256" \
+            2>&1 | tee verification-artifacts/formal-verification.log
+          python3 -B reproduce/native_evidence.py verify \
+            --root "$PWD/k60-native-capsule" --manifest-sha256 "$K60_NATIVE_MANIFEST_SHA256" \
+            2>&1 | tee verification-artifacts/native-verification.log
+
+      - name: Retain index, revision and passive verification logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: passive-k60-evidence-check
+          path: verification-artifacts/
+          if-no-files-found: warn
+
+      - name: State the checked boundary
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" <<'TEXT'
+          The externally pinned release index, public verifier bytes, archive hashes,
+          and both complete capsule evidence checks passed for the recorded revision.
+          This job inspected retained sources, formulas, build/binding receipts and
+          native logs. It did not rerun Lean's kernel, classification certificates,
+          or native solvers, and it did not check complete K60 UNSAT refutations.
+          Native UNSAT remains external computational evidence for the formal reduction.
+          TEXT

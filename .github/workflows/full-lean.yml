@@ -1,0 +1,71 @@
+name: Full K60 mathematical reduction source build
+
+# This explicit manual job needs a maintainer-provisioned runner with sufficient
+# memory and disk for all finite checks. It is never triggered by a pull request.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: k60-full-lean-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  full:
+    name: Fresh complete mathematical reduction and theorem axiom audit
+    runs-on: [self-hosted, linux, x64, k60-large-memory]
+    timeout-minutes: 1440
+    env:
+      LEAN_NUM_THREADS: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      GIT_LFS_SKIP_SMUDGE: "1"
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out selected sources without native archives
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Check complete package and audit tests
+        run: |
+          set -euo pipefail
+          mkdir verification-artifacts
+          git rev-parse HEAD > verification-artifacts/commit.txt
+          python3 -B scripts/check_lean_sources.py --report verification-artifacts/source-audit.json
+          make test-ci
+      - name: Install pinned Lean and retrieve Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          lake-package-directory: formal
+          use-mathlib-cache: true
+          use-github-cache: false
+          build: false
+          test: false
+          lint: false
+          leanchecker: false
+          nanoda: false
+      - name: Rebuild all selected project modules with one worker
+        run: |
+          set -euo pipefail
+          make lean-full 2>&1 | tee verification-artifacts/full-lean-driver.log
+      - name: Retain full-build receipts and axiom audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: k60-full-conditional-reduction-build
+          path: verification-artifacts/
+          if-no-files-found: warn
+      - name: State the verification boundary
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" <<'TEXT'
+          The complete selected source closure was rebuilt in a fresh project
+          artifact directory, including embedded classification certificate replay.
+          The final theorem's external premise remains ExactInputs.AllUnsat.
+          This public source build does not verify the native UNSAT histories or
+          replace the four same-build exact input bindings in the canonical capsule.
+          TEXT

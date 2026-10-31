@@ -17,18 +17,41 @@ The importer [CheckedLRAT.lean](../formal/src/R4333Lean/CheckedLRAT.lean) constr
 
 ## Sources and certificate checking
 
-The [formal source package](../formal/README.md) contains the classification dependency closure: **32 modules and 55 CNF/LRAT pairs**. The 110 payload files occupy 5,081,743 bytes. The standalone classification sources and data are byte-identical to their integrated copies.
+The [formal source package](../formal/README.md) contains the classification
+dependency closure: **32 modules and 55 CNF/LRAT pairs**. The 110 payload files
+occupy 5,081,743 bytes. They are included with the selected mathematical sources
+and retain their authenticated contents.
 
-The [standalone manifest](../classification/MANIFEST.json) identifies those files. The integrated [source manifest](../formal/SOURCE_MANIFEST.json) includes them in the complete mathematical closure. A complete source build compiles the classification modules and replays all 55 pairs. Its accepted source identities and execution records are indexed by the [build record](../formal/BUILD_RESULT.json) and [release checks](RELEASE_CHECKS.md).
+The [source manifest](../formal/SOURCE_MANIFEST.json) identifies the source and
+data files. A complete source build compiles the classification modules and
+replays all 55 pairs. The [source index](../formal/SOURCE_INDEX.json) connects
+the public modules to the accepted formal capsule; its raw build records and
+classification logs are retained as evidence.
 
-The classification endpoints use only `propext`, `Classical.choice` and `Quot.sound`. The [build guide](../formal/BUILD.md) provides the commands for checking the sources and traces.
+The classification endpoints use only `propext`, `Classical.choice` and
+`Quot.sound`. The [reproduction guide](../REPRODUCIBILITY.md) provides the
+commands for checking the sources and traces.
 
-## Connection to the K61 theorem
+## Connection to the K60 theorem
 
-[ClassificationAdapter.lean](../formal/src/Ramsey61/ClassificationAdapter.lean) supplies `physical_neighborhood_k15` and `physical_neighborhood_k16`. For an actual neighborhood of size 15 or 16, these theorems give an injective template-to-host map whose image is the entire neighborhood, with a bijection onto the three remaining host colors. Their mathematical premises are host goodness and the stated neighborhood size.
+[ClassificationAdapter.lean](../formal/src/UniformK60/ClassificationAdapter.lean)
+supplies `physical_neighborhood_k15` and `physical_neighborhood_k16`. For an
+actual neighborhood of size 15 or 16, these theorems give an injective
+template-to-host map whose image is the entire neighborhood, with a bijection
+onto the three remaining host colors. Their mathematical premises are host
+goodness and the stated neighborhood size.
 
-An individual catalogue map does not by itself establish compatibility on overlaps. The marked-cover and balanced-encoding developments prove those physical transport and encoding arguments separately. They preserve all shared edges and use a single global palette. The [formal dependency map](../formal/MATHEMATICS.md) identifies the corresponding constructions.
+An individual catalogue map does not by itself establish compatibility on
+overlaps. The marked-cover and balanced-encoding developments prove those
+physical transport and encoding arguments separately. They preserve all
+shared edges and use a single global palette. The
+[formal theorem map](../proof.md#9-formal-theorem-and-computational-boundary)
+identifies the corresponding constructions.
 
-The final theorem, [`UniformK61.WholeProof.ramsey61`](../formal/src/UniformK61/WholeProof.lean), has no additional classification or mathematical coverage parameter. Its explicit external premise is unsatisfiability of 56,723 concrete formulas. The [input-binding checks](../formal/reproduce/uniform/README.md) connect these formulas to the native searches; those answers have a different verification scope from the kernel-checked classification traces.
-
-Routine CI validates manifested source/data integrity and compiles the small `UniformK61.CoreCounts` target. It does not replay the classification traces or compile the full theorem. The [reproduction guide](REPRODUCIBILITY.md) distinguishes those operations.
+The final theorem,
+[`UniformK60.ramsey60_of_exact_unsat`](../formal/src/UniformK60/FiniteBoundary.lean),
+has no additional classification or mathematical coverage parameter. Its
+explicit external premise is unsatisfiability of 296,797 concrete formulas.
+The [input-binding checks](../REPRODUCIBILITY.md#rebuild-and-bind-the-formal-definitions)
+connect these formulas to the native searches; those answers have a different
+verification scope from the kernel-checked classification traces.

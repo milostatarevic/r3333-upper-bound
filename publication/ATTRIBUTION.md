@@ -11,8 +11,12 @@ The proof was developed with extensive AI assistance. The human author directed 
 
 AI assistance extended across mathematics, implementation, experiments and formalization. The work of these systems is acknowledged as assistance, not attributed as human coauthorship.
 
-The mathematical reductions are verified in Lean, and every required SAT instance has matching UNSAT results from Kissat and CaDiCaL. These checks are recorded with their exact scopes in the repository. The work has not yet undergone independent human review.
+The verification standard combines the mathematical reduction in Lean,
+exact correspondence between its formulas and the native inputs, and direct
+Kissat evidence for every required SAT instance. These checks have distinct
+scopes, described in the repository. The work has not yet undergone independent
+human review.
 
 The author takes responsibility for the claimed result, the mathematical account, the computational artifacts, the description of the verification standard and any necessary corrections. That responsibility remains with the author regardless of the amount of AI assistance. The complete proof and its evidence are supplied for independent scrutiny.
 
-Machine-specific paths retained in source evidence are provenance identifiers, not portable commands. The [reproduction guide](REPRODUCIBILITY.md) gives the supported commands. No repository-wide redistribution license is asserted here. Existing third-party notices and licenses continue to apply.
+Machine-specific paths retained in source evidence are provenance identifiers, not portable commands. The [reproduction guide](../REPRODUCIBILITY.md) gives the supported commands. No repository-wide redistribution license is asserted here. Existing third-party notices and licenses continue to apply.
