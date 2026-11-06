@@ -922,9 +922,9 @@
       "sha256": "5adf09e50fdcc22fc2645094a1bc31905f57b826504478e0a3e7cb63d54a2756"
     },
     {
-      "bytes": 5376,
+      "bytes": 5343,
       "path": "BUILD.md",
-      "sha256": "cb152191954997cbdf8c725b731a394c7a3512c831a8ebcf4c3bf5c34cc3bc9a"
+      "sha256": "4f4cae8ee9a897f203bac83a7be9f266230dc5b9e2dc52c9ea89ef6ead876938"
     }
   ],
   "mathlib_rev": "520045ab14e26149ee970e2e617ca04b09bde5d6",
@@ -8089,6 +8089,17 @@
       "path": "src/UniformK60/BalancedC1Normalize.lean",
       "sha256": "84c9c32778d527e7ed49dcaf9e4a609359670176be277d48584649394fffe6fe"
     },
+    "UniformK60.BalancedC2Normalize": {
+      "bytes": 3951,
+      "classification_source": false,
+      "imports": [
+        "UniformK60.BalancedHost",
+        "UniformK60.HostNormalizationRoot",
+        "UniformK60.HostNormalizationTemplates"
+      ],
+      "path": "src/UniformK60/BalancedC2Normalize.lean",
+      "sha256": "f2124964fcd057cb63729c38d93a8e1a99d6f2fe09b0816212c77287c2c83a11"
+    },
     "UniformK60.BalancedEncodingAllFive": {
       "bytes": 3686,
       "classification_source": false,
@@ -8151,17 +8162,16 @@
       "sha256": "a6f6dcb80c97732693a95d64a96b9b4b1b30dad9a3adc68cb34de7ce56338d14"
     },
     "UniformK60.BalancedEncodingBalance": {
-      "bytes": 2325,
+      "bytes": 2243,
       "classification_source": false,
       "imports": [
         "UniformK60.BalancedEncodingSoundness",
-        "UniformK60.BalancedEncodingBraceCache",
         "UniformK60.BalancedEncodingAllFiveSoundness",
         "UniformK60.BalancedC1Cover",
-        "UniformK60.BalancedHostBraceCover"
+        "UniformK60.BalancedC2Normalize"
       ],
       "path": "src/UniformK60/BalancedEncodingBalance.lean",
-      "sha256": "ebe0142ad9fccd241cc64d3d7241c52fc39a05b72bd55d9d4d7504b26107732c"
+      "sha256": "4837041d7411aa80af966a9d07173bed957d3856a354b8cccbbe2a98f9bead50"
     },
     "UniformK60.BalancedEncodingBlocks": {
       "bytes": 6076,
@@ -8172,45 +8182,6 @@
       ],
       "path": "src/UniformK60/BalancedEncodingBlocks.lean",
       "sha256": "ee04c603dd23f6e9d934850fb78b29c6c61da57291d7e88733dad21f77d1e1f4"
-    },
-    "UniformK60.BalancedEncodingBraceCache": {
-      "bytes": 10488,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedEncodingBraces"
-      ],
-      "path": "src/UniformK60/BalancedEncodingBraceCache.lean",
-      "sha256": "3f7984ce34a23cdab0439b6e5b49c936970c3113d64a46f46b0fc0bd7d4da84b"
-    },
-    "UniformK60.BalancedEncodingBraceMaps": {
-      "bytes": 3049,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedEncodingBraces",
-        "UniformK60.UnitTransport"
-      ],
-      "path": "src/UniformK60/BalancedEncodingBraceMaps.lean",
-      "sha256": "82bfa783d7b861d91f8ee38c4d8f1bc73832a4ae138aecb4b7229542746f1540"
-    },
-    "UniformK60.BalancedEncodingBraceNormalization": {
-      "bytes": 10882,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedEncodingBraceMaps",
-        "UniformK60.BalancedRawRoot"
-      ],
-      "path": "src/UniformK60/BalancedEncodingBraceNormalization.lean",
-      "sha256": "303d915a49ffff3d0993d91ba2a216ad705b41945d89e8ee1857a07563162221"
-    },
-    "UniformK60.BalancedEncodingBraces": {
-      "bytes": 20114,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedData",
-        "UniformK60.BalancedEncodingData"
-      ],
-      "path": "src/UniformK60/BalancedEncodingBraces.lean",
-      "sha256": "8d8013ebdd8d51fe11ddc4d073c3bb46e49a4ffe56f3d7a8413379ab05e5e501"
     },
     "UniformK60.BalancedEncodingCache": {
       "bytes": 4944,
@@ -8388,131 +8359,6 @@
       "path": "src/UniformK60/BalancedHostAllFiveMass.lean",
       "sha256": "78234e2eef786ba0df172ca9b440607259e27c6a196115bb1ef1f2d23e5d7300"
     },
-    "UniformK60.BalancedHostBraceCoordinates": {
-      "bytes": 3131,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedHostBracePlacement",
-        "UniformK60.BalancedHostBraceMembership"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceCoordinates.lean",
-      "sha256": "d11e097493a15c77ad90d35cfecf79d0912956271a7cdc193d51605bbb1912c5"
-    },
-    "UniformK60.BalancedHostBraceCover": {
-      "bytes": 1647,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedHostBraceStart",
-        "UniformK60.BalancedHostBraceRealization",
-        "UniformK60.BalancedEncodingBraceNormalization"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceCover.lean",
-      "sha256": "5ed039f60c80926c26b2d39d6756e3d1aa5af259d84e930baeb11d8b23bc857d"
-    },
-    "UniformK60.BalancedHostBraceFacts": {
-      "bytes": 5230,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedEncodingBraces",
-        "UniformK61.BalancedEncodingLocal"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceFacts.lean",
-      "sha256": "33a1a78cecd402a3f719bca2877df57fb9b8c54f7142a317b4c91f1862c9b7d0"
-    },
-    "UniformK60.BalancedHostBraceFrame": {
-      "bytes": 11695,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedHostBraceGeometry",
-        "UniformK60.ThreeSupportFrame"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceFrame.lean",
-      "sha256": "6d85ecb4efd2f1eaa52b469ec33758f2c463ac9947fd56d964780f70fb1c9de2"
-    },
-    "UniformK60.BalancedHostBraceGeometry": {
-      "bytes": 4964,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.ClassificationFiberOrders",
-        "UniformK60.BalancedProjectedGeometry",
-        "UniformK60.HostNormalization"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceGeometry.lean",
-      "sha256": "c9169eed7ba361ee52ff77a78b355f62acc8a729d4f0095d88a74e659dc9238b"
-    },
-    "UniformK60.BalancedHostBraceMarked": {
-      "bytes": 2279,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.ClassificationMarks",
-        "UniformK60.BalancedEncodingBraceMaps"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceMarked.lean",
-      "sha256": "7d9db35b16bce6bfadbde246a38c544158a901924fb89c7eca9ff768103abaa9"
-    },
-    "UniformK60.BalancedHostBraceMembership": {
-      "bytes": 4458,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedHostBracePlacement"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceMembership.lean",
-      "sha256": "47447ea5820ef68e8cf2635cc2ab751d968c51f4d82ecbf36aba59a5229f0b5d"
-    },
-    "UniformK60.BalancedHostBracePlacement": {
-      "bytes": 5258,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedHostBraceRow",
-        "UniformK60.BalancedHostBraceFacts",
-        "UniformK60.CommonPlacement",
-        "UniformK60.BalancedRawRoot",
-        "UniformK60.BalancedEncodingBraceMaps"
-      ],
-      "path": "src/UniformK60/BalancedHostBracePlacement.lean",
-      "sha256": "94c821f0f5a720515e45f6c32109a178bd1b2c2522a312911b1c1134c5e0fb82"
-    },
-    "UniformK60.BalancedHostBraceRealSupport": {
-      "bytes": 2711,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedHostBraceRow",
-        "UniformK60.BalancedProjectedRowSupport"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceRealSupport.lean",
-      "sha256": "dcdae78f98c6465bc9ec0a0c8b219e4d0de314f0aeebf2dbe89e34565ede2ec7"
-    },
-    "UniformK60.BalancedHostBraceRealization": {
-      "bytes": 5228,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedHostBraceCoordinates",
-        "UniformK60.BalancedHostBraceRealSupport",
-        "UniformK60.BalancedHostBraceMarked"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceRealization.lean",
-      "sha256": "2e2c64359a79a93694f6cbe56a14b946cb62a0f4ce884219fda8605b7b3dfe9b"
-    },
-    "UniformK60.BalancedHostBraceRow": {
-      "bytes": 12298,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedHostBraceFrame",
-        "UniformK60.BalancedProjectedHost"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceRow.lean",
-      "sha256": "a29335216126b52bdf53f0981a07d159f51107eaf0920730bf51c0385a9adcf0"
-    },
-    "UniformK60.BalancedHostBraceStart": {
-      "bytes": 2907,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedRawRoot",
-        "UniformK60.BalancedHostBraceGeometry"
-      ],
-      "path": "src/UniformK60/BalancedHostBraceStart.lean",
-      "sha256": "4a1fad6f78f1092b04979ef67a982d35c0305c0354f0480634a81d21531a83c0"
-    },
     "UniformK60.BalancedHostGuard": {
       "bytes": 12431,
       "classification_source": false,
@@ -8542,611 +8388,6 @@
       ],
       "path": "src/UniformK60/BalancedLocal.lean",
       "sha256": "0bd6dac45d7d87bb85bbeb1de6fedb3bf4b469e3ddbaa6846ddc713907e066bc"
-    },
-    "UniformK60.BalancedProjectedChunk00": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk00.lean",
-      "sha256": "3279b672886d94e520239c4c665a1805872383a61b8fe941523e5422d3608888"
-    },
-    "UniformK60.BalancedProjectedChunk01": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk01.lean",
-      "sha256": "feba0a58219735398ba5e1ffd7657dd1665ec65a8bd4422a200b079b088e2776"
-    },
-    "UniformK60.BalancedProjectedChunk02": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk02.lean",
-      "sha256": "f0427b9d64892cb952f778b7882707fdbdefc9ff791c0549f3da8a58e5d65171"
-    },
-    "UniformK60.BalancedProjectedChunk03": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk03.lean",
-      "sha256": "7adf100c29cf003e2710fa2aae1ef4d5dfed1b72fd76b53ef9278353c3baa5e3"
-    },
-    "UniformK60.BalancedProjectedChunk04": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk04.lean",
-      "sha256": "3c7e83781843fa74142e28288909392d6e569426f39aa6ab14834e017dbc8750"
-    },
-    "UniformK60.BalancedProjectedChunk05": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk05.lean",
-      "sha256": "7688259ced1cfe116ef61fb90b279279bc444f843f820fe00335e4bf790aa74c"
-    },
-    "UniformK60.BalancedProjectedChunk10": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk10.lean",
-      "sha256": "807507c29ada5a5b32df6beec1024babedab75626cbad1f74301b9ba02a43496"
-    },
-    "UniformK60.BalancedProjectedChunk11": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk11.lean",
-      "sha256": "a518c7b6fe6bfdba80542ef2dffd2ea03dc19b31df150b701a5bc09d8ed48742"
-    },
-    "UniformK60.BalancedProjectedChunk12": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk12.lean",
-      "sha256": "26e130df714f0124630ccffd43d04c716c4a6e435bb9b9b2934d35aa4e0968cb"
-    },
-    "UniformK60.BalancedProjectedChunk13": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk13.lean",
-      "sha256": "c7717e57b081ca5537c91ca8b25fa44bc8a9510d886c34d6f818d5fde4c309d5"
-    },
-    "UniformK60.BalancedProjectedChunk14": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk14.lean",
-      "sha256": "2f1e8a7382dee5b68bce359ae441e1e0b789d526ff9372e41cfa65a4b9a00c77"
-    },
-    "UniformK60.BalancedProjectedChunk15": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk15.lean",
-      "sha256": "31cde4c8a15e955805e78915017b2af2b25e250c4bf2e6184fec5c46ea349029"
-    },
-    "UniformK60.BalancedProjectedChunk20": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk20.lean",
-      "sha256": "08652aacffdbdcb7eaa298fff2e3dd7d13496cf8dcf7c3a298fff63213382f10"
-    },
-    "UniformK60.BalancedProjectedChunk21": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk21.lean",
-      "sha256": "1dc192cd9d465896b211d04af6b028608713b1865c5b4c1e76fdc5bbcee5662b"
-    },
-    "UniformK60.BalancedProjectedChunk22": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk22.lean",
-      "sha256": "3fae7fb7bfdd85fe661a6cecb30fbdb1f10ec99744ef61c0631d02d97d18e107"
-    },
-    "UniformK60.BalancedProjectedChunk23": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk23.lean",
-      "sha256": "af752fb18cedf7773d9ba6209f8235bb901cedf5a25e800f35e903a520946986"
-    },
-    "UniformK60.BalancedProjectedChunk24": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk24.lean",
-      "sha256": "c6b663f60f5b1eeec1cfe9d3bd01635e9b91f4a909914c268536b35f167d545e"
-    },
-    "UniformK60.BalancedProjectedChunk25": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk25.lean",
-      "sha256": "076a5ac2ea00591317000ea5fa30ef600b739bf714de7959ecbbdaf54d6d8b82"
-    },
-    "UniformK60.BalancedProjectedChunk30": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk30.lean",
-      "sha256": "d7539bed1d7d5c27497d8f97f0cbe8fe70a119f8903e3a0b90b63ddbdf7a2d3d"
-    },
-    "UniformK60.BalancedProjectedChunk31": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk31.lean",
-      "sha256": "06a581f45be9667620d9a6c31a1f0bc354b3060b717d154facab4cf68e2f2cab"
-    },
-    "UniformK60.BalancedProjectedChunk32": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk32.lean",
-      "sha256": "9e971e0baf57683ef5e8bb324ea3dc845032e63c9b865bfbf6781be4c3486435"
-    },
-    "UniformK60.BalancedProjectedChunk33": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk33.lean",
-      "sha256": "0c0412a612af0f26e92e76a749426ff650ffbc1a8f3d6f9b7612cfab86277221"
-    },
-    "UniformK60.BalancedProjectedChunk34": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk34.lean",
-      "sha256": "02ac00265ec974827ee2e981911b058b82c7d21cbf0aff11209d653c6b8cc1be"
-    },
-    "UniformK60.BalancedProjectedChunk35": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk35.lean",
-      "sha256": "4c57da489e6bc5b118a84bc240242c9d4ab255e4a5e1a6955c902d09d0064611"
-    },
-    "UniformK60.BalancedProjectedChunk40": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk40.lean",
-      "sha256": "846dd86029769ae837a8d8a8894569e52efaa7b3225157d5755e709e9abfe2ff"
-    },
-    "UniformK60.BalancedProjectedChunk41": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk41.lean",
-      "sha256": "f97edfd4ae10056654fb90f4d76b07bed67542ec9fe4568b8d788d9720b964ff"
-    },
-    "UniformK60.BalancedProjectedChunk42": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk42.lean",
-      "sha256": "72331ee8220d2ef3280af2550ca1fde357beccb75e763b6b40156eb02487c630"
-    },
-    "UniformK60.BalancedProjectedChunk43": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk43.lean",
-      "sha256": "224e9888d58726c7cac8514904aa81e5e5fd9c71d5f7a7ab63b9ecbe1da55d70"
-    },
-    "UniformK60.BalancedProjectedChunk44": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk44.lean",
-      "sha256": "623483f4ab8972143777c82bf4d775dbdc8f2f51303cbdc0bfbdccaed08b43ec"
-    },
-    "UniformK60.BalancedProjectedChunk45": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk45.lean",
-      "sha256": "33fa9a0e17bb37129e9eab5f327563984bbaee8fd8c189e3ba53e4e890771211"
-    },
-    "UniformK60.BalancedProjectedChunk50": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk50.lean",
-      "sha256": "1961827e34e55906e122f6a575c7c4fac5e66e5a35469cf4fc79774337390e79"
-    },
-    "UniformK60.BalancedProjectedChunk51": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk51.lean",
-      "sha256": "176e0fe51f4be92dd8c4d112d5618d8ebb6d05f905f3d8e0fca23f5a8452c9fc"
-    },
-    "UniformK60.BalancedProjectedChunk52": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk52.lean",
-      "sha256": "f8c6c864942572ad9fc5c71ee05fb41468b9af6ed299e218feb15493e3b4cfc5"
-    },
-    "UniformK60.BalancedProjectedChunk53": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk53.lean",
-      "sha256": "79f28cd230bd36f693e36001b6dd01866d948c59eabe523d5f0ef119d55bdfac"
-    },
-    "UniformK60.BalancedProjectedChunk54": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk54.lean",
-      "sha256": "9ee4e9ad600352001b075ce6a21267ff7ea3869ec0850af38cd03e4c239418cd"
-    },
-    "UniformK60.BalancedProjectedChunk55": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk55.lean",
-      "sha256": "6f2c4e49d5a63f02444b9cafd709ea6e0a4a541d668e84b1aeaf604d828ec595"
-    },
-    "UniformK60.BalancedProjectedChunk60": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk60.lean",
-      "sha256": "ed4826261d1c136472405951d6aad522fc87ba73adaa4e8c7f0ab7208fa47401"
-    },
-    "UniformK60.BalancedProjectedChunk61": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk61.lean",
-      "sha256": "e1967cd42ed7088655b1e34c56cc0eb658b50f60d480ac400e01e45193f193c7"
-    },
-    "UniformK60.BalancedProjectedChunk62": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk62.lean",
-      "sha256": "e736e323837c284737ab1ce00ed8a6df5a7d31a1b42869f4d5d304bc4b4c449d"
-    },
-    "UniformK60.BalancedProjectedChunk63": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk63.lean",
-      "sha256": "b8f989e8ce9a6c74e4cf74fb56154a2bcafc984062a93850255215fa3b3ff2df"
-    },
-    "UniformK60.BalancedProjectedChunk64": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk64.lean",
-      "sha256": "83fe84e8fda1303a971bbeee0b20e78de36a72a20f87a39b918f68b0f63eb6d8"
-    },
-    "UniformK60.BalancedProjectedChunk65": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk65.lean",
-      "sha256": "9b6a6855c244534d6506cfa626db7a9c7d607b79e6314edbb828d6dabba05dbb"
-    },
-    "UniformK60.BalancedProjectedChunk70": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk70.lean",
-      "sha256": "1ae4c27213c99725475b1a994972a714314da3e2f0b60546668b32f705e824b8"
-    },
-    "UniformK60.BalancedProjectedChunk71": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk71.lean",
-      "sha256": "c2ecc5a733ffecdda4191d73f238c039d69ac4d0057a7740a284f3cce2b0c21a"
-    },
-    "UniformK60.BalancedProjectedChunk72": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk72.lean",
-      "sha256": "e4c625123e6e32a164f806117068b2485660ed02f82574cc287fd6e1a2eec34a"
-    },
-    "UniformK60.BalancedProjectedChunk73": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk73.lean",
-      "sha256": "ec652a088e387743ae598f006b9ed508fea601b6be9ebcee2beb6e1c35a01f63"
-    },
-    "UniformK60.BalancedProjectedChunk74": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk74.lean",
-      "sha256": "badf6cd4b69bb2b7334d6c1c983a09adf11962ac31302eb192cc015759d276bd"
-    },
-    "UniformK60.BalancedProjectedChunk75": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk75.lean",
-      "sha256": "a298cd896c2e0e0444df1d911c66459c19fbb2c67f0dab5c0229bd2fb612eb63"
-    },
-    "UniformK60.BalancedProjectedChunk80": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk80.lean",
-      "sha256": "a1c1a5f13a364a09050ced7f8882732d760afbef1b47564151953932ee558cfd"
-    },
-    "UniformK60.BalancedProjectedChunk81": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk81.lean",
-      "sha256": "4816491c7fff1824dbb073114a5d74b2578cd2795fa0fd95e1d474f318fe4ccd"
-    },
-    "UniformK60.BalancedProjectedChunk82": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk82.lean",
-      "sha256": "60c1d376db9d4fedc1c3032530dfd068c5754e9b1738c74ee63824ef95fcd53d"
-    },
-    "UniformK60.BalancedProjectedChunk83": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk83.lean",
-      "sha256": "4d380ddb70c2dcbc9f915485cbdef887a0dae3f0e8746a9607947662cf66c220"
-    },
-    "UniformK60.BalancedProjectedChunk84": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk84.lean",
-      "sha256": "f5d0e45a84824c0b3ae44b34263360d748d765ca56aceea78e22588c02bde85d"
-    },
-    "UniformK60.BalancedProjectedChunk85": {
-      "bytes": 489,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedChunk85.lean",
-      "sha256": "a6ca3c124114089004f61d9d37afe3d954c83c4bf9a5a8f65e0dcef51d1ad02f"
-    },
-    "UniformK60.BalancedProjectedData": {
-      "bytes": 252811,
-      "classification_source": false,
-      "imports": [
-        "CompletionC.NativeMatrices",
-        "R4333Lean.CriticalTemplateDeletion"
-      ],
-      "path": "src/UniformK60/BalancedProjectedData.lean",
-      "sha256": "534760ab4df27c9853955d88c68762fd6e6ec45a6d3880379f46b209cb4a2503"
-    },
-    "UniformK60.BalancedProjectedFinite": {
-      "bytes": 5375,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedChunk00",
-        "UniformK60.BalancedProjectedChunk01",
-        "UniformK60.BalancedProjectedChunk02",
-        "UniformK60.BalancedProjectedChunk03",
-        "UniformK60.BalancedProjectedChunk04",
-        "UniformK60.BalancedProjectedChunk05",
-        "UniformK60.BalancedProjectedChunk10",
-        "UniformK60.BalancedProjectedChunk11",
-        "UniformK60.BalancedProjectedChunk12",
-        "UniformK60.BalancedProjectedChunk13",
-        "UniformK60.BalancedProjectedChunk14",
-        "UniformK60.BalancedProjectedChunk15",
-        "UniformK60.BalancedProjectedChunk20",
-        "UniformK60.BalancedProjectedChunk21",
-        "UniformK60.BalancedProjectedChunk22",
-        "UniformK60.BalancedProjectedChunk23",
-        "UniformK60.BalancedProjectedChunk24",
-        "UniformK60.BalancedProjectedChunk25",
-        "UniformK60.BalancedProjectedChunk30",
-        "UniformK60.BalancedProjectedChunk31",
-        "UniformK60.BalancedProjectedChunk32",
-        "UniformK60.BalancedProjectedChunk33",
-        "UniformK60.BalancedProjectedChunk34",
-        "UniformK60.BalancedProjectedChunk35",
-        "UniformK60.BalancedProjectedChunk40",
-        "UniformK60.BalancedProjectedChunk41",
-        "UniformK60.BalancedProjectedChunk42",
-        "UniformK60.BalancedProjectedChunk43",
-        "UniformK60.BalancedProjectedChunk44",
-        "UniformK60.BalancedProjectedChunk45",
-        "UniformK60.BalancedProjectedChunk50",
-        "UniformK60.BalancedProjectedChunk51",
-        "UniformK60.BalancedProjectedChunk52",
-        "UniformK60.BalancedProjectedChunk53",
-        "UniformK60.BalancedProjectedChunk54",
-        "UniformK60.BalancedProjectedChunk55",
-        "UniformK60.BalancedProjectedChunk60",
-        "UniformK60.BalancedProjectedChunk61",
-        "UniformK60.BalancedProjectedChunk62",
-        "UniformK60.BalancedProjectedChunk63",
-        "UniformK60.BalancedProjectedChunk64",
-        "UniformK60.BalancedProjectedChunk65",
-        "UniformK60.BalancedProjectedChunk70",
-        "UniformK60.BalancedProjectedChunk71",
-        "UniformK60.BalancedProjectedChunk72",
-        "UniformK60.BalancedProjectedChunk73",
-        "UniformK60.BalancedProjectedChunk74",
-        "UniformK60.BalancedProjectedChunk75",
-        "UniformK60.BalancedProjectedChunk80",
-        "UniformK60.BalancedProjectedChunk81",
-        "UniformK60.BalancedProjectedChunk82",
-        "UniformK60.BalancedProjectedChunk83",
-        "UniformK60.BalancedProjectedChunk84",
-        "UniformK60.BalancedProjectedChunk85"
-      ],
-      "path": "src/UniformK60/BalancedProjectedFinite.lean",
-      "sha256": "5d09780bc86050664181dbf59260e0ac1a8e2fa34572e836b70af3917b3fb4fa"
-    },
-    "UniformK60.BalancedProjectedGeometry": {
-      "bytes": 2779,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude",
-        "UniformK60.ClassificationSupportConsumers"
-      ],
-      "path": "src/UniformK60/BalancedProjectedGeometry.lean",
-      "sha256": "62d780b19957bbada18d4359ee2916ea0f1dc438fae99a1a8298c2235c4d9a98"
-    },
-    "UniformK60.BalancedProjectedHost": {
-      "bytes": 3958,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedFinite",
-        "UniformK60.NativeCatalogue"
-      ],
-      "path": "src/UniformK60/BalancedProjectedHost.lean",
-      "sha256": "20e6dcb3171a253b3dac5f15632a774e7c5dae45a216c1f55a0af3625e9b20d2"
-    },
-    "UniformK60.BalancedProjectedPrelude": {
-      "bytes": 3067,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedData"
-      ],
-      "path": "src/UniformK60/BalancedProjectedPrelude.lean",
-      "sha256": "c0d1582e3bc2e75220f49f8845b048f7e33a5d85cb151829883062435f26d72c"
-    },
-    "UniformK60.BalancedProjectedRowSupport": {
-      "bytes": 844,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.BalancedProjectedPrelude"
-      ],
-      "path": "src/UniformK60/BalancedProjectedRowSupport.lean",
-      "sha256": "a0aa06bcb84a1c95388397d1a85a8b741cc9c7e20871027613c1658327b243fd"
-    },
-    "UniformK60.BalancedRawRoot": {
-      "bytes": 2030,
-      "classification_source": false,
-      "imports": [
-        "UniformK60.HostNormalizationRoot"
-      ],
-      "path": "src/UniformK60/BalancedRawRoot.lean",
-      "sha256": "4e5b619999180a1492f54205b74e4a9a6bc2269f7332c54e72bda1c5fbe2f871"
     },
     "UniformK60.BalancedStructure": {
       "bytes": 7755,
@@ -13066,19 +12307,19 @@
       "sha256": "0eaf39a1bf53661dee877c20e4c1dd8d4df2d87c9726d974b0655c1eae64e9b6"
     },
     "UniformK60.ExactInputs": {
-      "bytes": 2361,
+      "bytes": 2345,
       "classification_source": false,
       "imports": [
         "UniformK60.MarkedBounds",
         "UniformK60.CEntranceFormula",
-        "UniformK60.BalancedEncodingBraces",
+        "UniformK60.BalancedEncodingData",
         "UniformK60.BalancedEncodingAllFive"
       ],
       "path": "src/UniformK60/ExactInputs.lean",
-      "sha256": "6acba3ceaa40faf29d9fbf68041c08aa5c75c7908d180dd470ce8126dc199a2c"
+      "sha256": "091d8c71729218434c1eeb4affd5f39bf21e4375b3dee8980da46602fe61b896"
     },
     "UniformK60.FiniteBoundary": {
-      "bytes": 1050,
+      "bytes": 1058,
       "classification_source": false,
       "imports": [
         "UniformK60.ExactInputs",
@@ -13086,7 +12327,7 @@
         "UniformK60.BalancedEncodingBalance"
       ],
       "path": "src/UniformK60/FiniteBoundary.lean",
-      "sha256": "0abb8ef62d92f5b7809813988b6564977f06beed6dbaadf011533f85de8e7489"
+      "sha256": "cbcd4258c068336f7e392b5b935978ab8c6465c9f036dbf21b0921674b8d8c0f"
     },
     "UniformK60.HostNormalization": {
       "bytes": 6197,
@@ -15668,7 +14909,6 @@
     "UniformK61.CEntranceFormula",
     "UniformK61.CEntranceCatalogueData",
     "UniformK60.CEntranceFormula",
-    "UniformK60.BalancedProjectedData",
     "UniformK60.BalancedHomogeneous",
     "UniformK60.BalancedStructure",
     "UniformK60.Reduction",
@@ -15695,7 +14935,6 @@
     "UniformK60.SequentialCounter",
     "UniformK60.BalancedEncodingAuxData",
     "UniformK60.BalancedEncodingData",
-    "UniformK60.BalancedEncodingBraces",
     "UniformK60.BalancedEncodingCache",
     "UniformK60.BalancedEncodingAllFive",
     "UniformK60.ExactInputs",
@@ -16073,7 +15312,6 @@
     "UniformK60.BalancedEncodingGuardValuation",
     "UniformK60.BalancedEncodingEmbeddingValuation",
     "UniformK60.BalancedEncodingSoundness",
-    "UniformK60.BalancedEncodingBraceCache",
     "UniformK60.BalancedHostAllFive",
     "UniformK60.BalancedEncodingAllFiveLocal",
     "UniformK60.BalancedEncodingLinear",
@@ -16085,80 +15323,7 @@
     "UniformK60.BalancedC1Normalize",
     "UniformK60.BalancedC1Exchange",
     "UniformK60.BalancedC1Cover",
-    "UniformK60.BalancedRawRoot",
-    "UniformK60.BalancedProjectedPrelude",
-    "UniformK60.BalancedProjectedGeometry",
-    "UniformK60.BalancedHostBraceGeometry",
-    "UniformK60.BalancedHostBraceStart",
-    "UniformK60.BalancedHostBraceFrame",
-    "UniformK60.BalancedProjectedChunk00",
-    "UniformK60.BalancedProjectedChunk01",
-    "UniformK60.BalancedProjectedChunk02",
-    "UniformK60.BalancedProjectedChunk03",
-    "UniformK60.BalancedProjectedChunk04",
-    "UniformK60.BalancedProjectedChunk05",
-    "UniformK60.BalancedProjectedChunk10",
-    "UniformK60.BalancedProjectedChunk11",
-    "UniformK60.BalancedProjectedChunk12",
-    "UniformK60.BalancedProjectedChunk13",
-    "UniformK60.BalancedProjectedChunk14",
-    "UniformK60.BalancedProjectedChunk15",
-    "UniformK60.BalancedProjectedChunk20",
-    "UniformK60.BalancedProjectedChunk21",
-    "UniformK60.BalancedProjectedChunk22",
-    "UniformK60.BalancedProjectedChunk23",
-    "UniformK60.BalancedProjectedChunk24",
-    "UniformK60.BalancedProjectedChunk25",
-    "UniformK60.BalancedProjectedChunk30",
-    "UniformK60.BalancedProjectedChunk31",
-    "UniformK60.BalancedProjectedChunk32",
-    "UniformK60.BalancedProjectedChunk33",
-    "UniformK60.BalancedProjectedChunk34",
-    "UniformK60.BalancedProjectedChunk35",
-    "UniformK60.BalancedProjectedChunk40",
-    "UniformK60.BalancedProjectedChunk41",
-    "UniformK60.BalancedProjectedChunk42",
-    "UniformK60.BalancedProjectedChunk43",
-    "UniformK60.BalancedProjectedChunk44",
-    "UniformK60.BalancedProjectedChunk45",
-    "UniformK60.BalancedProjectedChunk50",
-    "UniformK60.BalancedProjectedChunk51",
-    "UniformK60.BalancedProjectedChunk52",
-    "UniformK60.BalancedProjectedChunk53",
-    "UniformK60.BalancedProjectedChunk54",
-    "UniformK60.BalancedProjectedChunk55",
-    "UniformK60.BalancedProjectedChunk60",
-    "UniformK60.BalancedProjectedChunk61",
-    "UniformK60.BalancedProjectedChunk62",
-    "UniformK60.BalancedProjectedChunk63",
-    "UniformK60.BalancedProjectedChunk64",
-    "UniformK60.BalancedProjectedChunk65",
-    "UniformK60.BalancedProjectedChunk70",
-    "UniformK60.BalancedProjectedChunk71",
-    "UniformK60.BalancedProjectedChunk72",
-    "UniformK60.BalancedProjectedChunk73",
-    "UniformK60.BalancedProjectedChunk74",
-    "UniformK60.BalancedProjectedChunk75",
-    "UniformK60.BalancedProjectedChunk80",
-    "UniformK60.BalancedProjectedChunk81",
-    "UniformK60.BalancedProjectedChunk82",
-    "UniformK60.BalancedProjectedChunk83",
-    "UniformK60.BalancedProjectedChunk84",
-    "UniformK60.BalancedProjectedChunk85",
-    "UniformK60.BalancedProjectedFinite",
-    "UniformK60.BalancedProjectedHost",
-    "UniformK60.BalancedHostBraceRow",
-    "UniformK60.BalancedHostBraceFacts",
-    "UniformK60.BalancedEncodingBraceMaps",
-    "UniformK60.BalancedHostBracePlacement",
-    "UniformK60.BalancedHostBraceMembership",
-    "UniformK60.BalancedHostBraceCoordinates",
-    "UniformK60.BalancedProjectedRowSupport",
-    "UniformK60.BalancedHostBraceRealSupport",
-    "UniformK60.BalancedHostBraceMarked",
-    "UniformK60.BalancedHostBraceRealization",
-    "UniformK60.BalancedEncodingBraceNormalization",
-    "UniformK60.BalancedHostBraceCover",
+    "UniformK60.BalancedC2Normalize",
     "UniformK60.BalancedEncodingBalance",
     "UniformK60.FiniteBoundary",
     "UniformK60.CoreCounts",

@@ -67,5 +67,5 @@ jobs:
           artifact directory, including embedded classification certificate replay.
           The final theorem's external premise remains ExactInputs.AllUnsat.
           This public source build does not verify the native UNSAT histories or
-          replace the four same-build exact input bindings in the canonical capsule.
+          replace the four exact input bindings in the publication capsule.
           TEXT

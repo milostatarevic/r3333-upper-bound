@@ -1,8 +1,8 @@
 # An improved upper bound for the Ramsey number R(3,3,3,3)
 
 **Current result: R(3,3,3,3) ≤ 60.** The mathematical reduction is formalized
-in Lean, and every required SAT formula has been refuted by Kissat. Independent
-verification with CaDiCaL is running.
+in Lean, and every required SAT formula has been independently refuted by
+Kissat 4.0.4 and CaDiCaL 3.0.1.
 
 **Version referenced by the K61 paper:** the [complete K61 proof, verified
 with both Kissat and CaDiCaL](https://github.com/milostatarevic/r3333-upper-bound/tree/3d6910a2ef8a36a3fa3ad78a44f9f82e1f31f1c2)
@@ -11,7 +11,9 @@ describes that version; this repository now contains the K60 result.
 
 ## Changelog
 
-- **2026-10-30:** Proved **R(3,3,3,3) ≤ 60** by extending the same marked-neighborhood and ticket-counting method to six profiles and mixed perfect balance. Formalized the mathematical reduction in Lean and checked its exact correspondence with every solver input; all **296,797 formulas** were refuted by Kissat. Independent CaDiCaL verification is running.
+- **2026-11-05:** Completed independent CaDiCaL verification of all **296,797 original production inputs**. The selected publication boundary contains **296,081 formulas**, each refuted by both solvers; complete histories and successful-run CPU timings are retained.
+- **2026-11-02:** Simplified the perfect-balance argument by replacing 720 marked cases with four direct C2 compatibility exclusions, all refuted by both Kissat and CaDiCaL. The proof now uses **296,081 formulas**.
+- **2026-10-30:** Proved **R(3,3,3,3) ≤ 60** by extending the same marked-neighborhood and ticket-counting method to six profiles and mixed perfect balance. Formalized the mathematical reduction in Lean and checked its exact correspondence with every solver input; all **296,797 formulas** were refuted by Kissat. Independent CaDiCaL verification followed and completed on 5 November.
 - **2026-10-27:** Released the complete **R(3,3,3,3) ≤ 61** proof, with all **56,723 formulas** refuted by both Kissat and CaDiCaL, and the [arXiv paper](https://arxiv.org/abs/2610.36648v1). The [repository version cited by the paper](https://github.com/milostatarevic/r3333-upper-bound/tree/3d6910a2ef8a36a3fa3ad78a44f9f82e1f31f1c2) is preserved at its exact commit.
 - **2026-10-15:** Simplified the mathematical reduction and used one full-graph encoding throughout the proof. Recomputed the complete 56,723-case boundary with both SAT solvers under the same default-option, uncapped policy. Formalized the simplified reduction in Lean and checked its exact correspondence with every solver input.
 
@@ -28,7 +30,7 @@ contains a monochromatic triangle. This improves the upper bound 62 proved
 by Fettes, Kramer and Radziszowski in 2004.
 
 The proof combines a mathematical reduction formalized in Lean with
-**296,797 explicit SAT formulas**, each refuted by **Kissat**.
+**296,081 explicit SAT formulas**, each independently refuted by **Kissat and CaDiCaL**.
 The mathematical argument, exact input reconstruction, native execution
 records and verification tools are supplied for independent review.
 
@@ -66,8 +68,8 @@ noncritical neighborhoods, with covers of 692 and 7,840 cases. In perfect
 balance, there is no entrance and every vertex receives as many tickets as
 it sends. Elementary degree and connectivity arguments then force every
 vertex to have profile C1 or C2 with the same two critical colors. Three
-auxiliary exclusions give a C2 root; its marked-neighborhood construction
-leaves 720 balanced cases.
+auxiliary exclusions give a C2 root; its four compatibility formulas are
+unsatisfiable.
 
 Every case retains one coloring of all 60 vertices. Neighborhoods and their
 overlaps are descriptions of that coloring, so shared edges cannot be
@@ -84,8 +86,8 @@ The marked cases add only signed edge facts describing the root,
 classified neighborhoods, selected supports and exact neighborhood membership.
 Their finite covers check that every normalized support-and-word
 configuration reaches a retained case by a symmetry of the complete host.
-The 720 mixed-balance cases encode template embeddings of the visible parts
-of 26 opposite-color neighborhoods and impose the global degree caps and
+The four C2 compatibility formulas encode template embeddings of the visible
+parts of 26 opposite-color neighborhoods and impose the global degree caps and
 four- or five-vertex guard conditions. The three C1 auxiliary formulas use
 32 such embeddings and forbid four-vertex guards.
 
@@ -106,21 +108,24 @@ four- or five-vertex guard conditions. The three C1 auxiliary formulas use
 | C1 entrances | 692 |
 | C2 entrances | 7,840 |
 | All-five guards | 3 |
-| Mixed marked balance | 720 |
-| **Total** | **296,797** |
+| C2 compatibility | 4 |
+| **Total** | **296,081** |
 
 U and T are the two critical neighborhood templates, defined in
 [proof.md](proof.md). The A/B/D/E exclusions establish local inequalities;
 they do not separately assert that those vertex profiles are absent.
 
-Kissat uses default search options. Cases unresolved after a five-minute
-first pass are retried with longer limits; all required cases finished UNSAT.
+Both solvers use default search options. Marked, entrance and all-five cases
+unresolved after the initial 300-second stage were retried with longer limits;
+the four C2 compatibility formulas were solved directly. Every required case
+finished UNSAT in both solvers.
 The complete attempt histories, including timeouts and interrupted attempts,
-are retained in the native evidence archive. The native executions used
-**886.75 CPU-hours** in total. The [cost table](publication/MEASURED_COSTS.md)
-gives each family's CPU time, elapsed durations, concurrency and measurement
-scope. CPU time is summed over solver processes; elapsed time also reflects
-parallelism and other work on the machine.
+are retained in the native evidence archive. Counting each formula's complete
+successful UNSAT run once gives **871.53 Kissat CPU-hours** and
+**1,535.55 CaDiCaL CPU-hours**. Earlier unsuccessful attempts are accounted for
+separately. The [cost table](publication/MEASURED_COSTS.md) gives per-family
+timings, attempt overhead, limits, concurrency and elapsed durations. Sleep
+and elapsed wall time are excluded from solver CPU totals.
 
 ## Verification method
 
@@ -128,16 +133,16 @@ This is a computer-assisted proof with a complete mathematical reduction in
 Lean and external native SAT results. The theorem
 [`UniformK60.ramsey60_of_exact_unsat`](formal/src/UniformK60/FiniteBoundary.lean)
 has one computational premise, `ExactInputs.AllUnsat`, asserting that its
-296,797 concrete formulas are unsatisfiable. Lean proves the exhaustive case
+296,081 concrete formulas are unsatisfiable. Lean proves the exhaustive case
 covers, the full-graph coordinate changes, the structural arguments and the
 encoding lemmas that turn a hypothetical counterexample into a satisfying
 assignment of one of those formulas.
 
 The [input-binding tools](REPRODUCIBILITY.md#rebuild-and-bind-the-formal-definitions)
 emit the Lean-defined formulas and compare their complete DIMACS identities
-with the native inputs. The [evidence verifier](reproduce/native_evidence.py)
+with the native inputs. The [evidence verifier](reproduce/publication_native_evidence.py)
 checks every required result against the exact input hash, solver binary,
-command, raw log and exit status. All **296,797 required UNSAT outcomes** and
+command, raw log and exit status. All **296,081 required UNSAT outcomes from each solver** and
 the complete attempt histories are included. The large UNSAT results remain
 external computational evidence; they are not replayed in the Lean kernel.
 
@@ -159,9 +164,11 @@ Fetch the Git LFS archives:
 
 ```sh
 git lfs install --local
-git lfs pull --include='archives/*.tar.gz'
+git lfs pull --include='archives/*.tar.gz*'
 ```
 
+The native archive is split into two size-limited LFS parts; the reproduction
+guide checks both parts and reads their concatenation as one unchanged archive.
 The shared base is stored once, together with compact signed-unit catalogues
 and balance prefixes. The [reproduction guide](REPRODUCIBILITY.md) gives
 commands to authenticate the evidence, verify all recorded results,

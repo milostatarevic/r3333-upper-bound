@@ -51,7 +51,7 @@ identifies the corresponding constructions.
 The final theorem,
 [`UniformK60.ramsey60_of_exact_unsat`](../formal/src/UniformK60/FiniteBoundary.lean),
 has no additional classification or mathematical coverage parameter. Its
-explicit external premise is unsatisfiability of 296,797 concrete formulas.
+explicit external premise is unsatisfiability of 296,081 concrete formulas.
 The [input-binding checks](../REPRODUCIBILITY.md#rebuild-and-bind-the-formal-definitions)
 connect these formulas to the native searches; those answers have a different
 verification scope from the kernel-checked classification traces.

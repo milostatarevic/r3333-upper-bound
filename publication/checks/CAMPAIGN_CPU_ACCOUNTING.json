@@ -1,0 +1,84 @@
+{
+  "cadical_final_result_utc": "2026-11-06T07:02:52.397037+00:00",
+  "cadical_original_start_utc": "2026-10-31T04:18:56.715684+00:00",
+  "cadical_wall_elapsed_seconds": 528235.681353,
+  "definition": "Original production = selected publication minus four direct C2 runs plus720 retired brace runs. Successful-run CPU excludes previous unsuccessful attempts; all-attempt expenditure is separate. Sleep and wall elapsed contribute no CPU.",
+  "native_manifest_sha256": "a781e5aecc1b91ae80419b3b396d3ac8439278ace527fc73859fdfaa2341537e",
+  "passed": true,
+  "retired720_raw_log_accounting": {
+    "artifact": "retired720-cpu-accounting.json",
+    "bytes": 663949,
+    "sha256": "37463349b852ffa35e36a31d7cd840bf36b69f5f571d3c1ecfaacbaabeaed3e4"
+  },
+  "schema": "K60_CAMPAIGN_CPU_ACCOUNTING_1",
+  "selected_ordered_input_sha256": "c4c5fd13fedace3f554b48a86a9c75cf8dc17173236fcca2aef54e584eea3942",
+  "selected_timing_report": {
+    "bytes": 16376,
+    "path": "publication/checks/SUCCESSFUL_RUN_TIMINGS.json",
+    "sha256": "8c3f5a9640808f09325abf9e10c79c8a17ae3a1baea65816ad277bc84f7b2e03"
+  },
+  "solver_calls": 0,
+  "solvers": {
+    "cadical": {
+      "direct_c2_cases": 4,
+      "direct_c2_cpu_seconds": "5766.821676",
+      "original_production_attempts": 297894,
+      "original_production_cases": 296797,
+      "original_production_cpu_seconds": {
+        "all_attempt_cpu_seconds": "5946932.660000",
+        "successful_cpu_seconds": "5537560.010000",
+        "unsuccessful_cpu_seconds": "409372.65"
+      },
+      "retired720_attempt_census_sha256": "0f5e427c286584b4efba459287c87db708dfb3ee1b072404a220f069bd4cbc03",
+      "retired720_cpu_seconds": "15336.43",
+      "retired720_source_database": {
+        "bytes": 2042220544,
+        "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-second-solver/campaign-cadical-3.0.1/results.sqlite3",
+        "sha256": "dbe7dbdc3412e9d966d8d6064abda2ee3b955aa1071c2f9efcadda3af4c26f99"
+      },
+      "retired720_status_counts": {
+        "UNSAT": 720
+      },
+      "retired_cases": 720,
+      "selected_original_production_cases": 296077,
+      "selected_publication_cases": 296081,
+      "selected_publication_totals": {
+        "all_attempt_cpu_seconds": "5937363.051676",
+        "all_attempts": 297178,
+        "successful_cpu_seconds": "5527990.401676",
+        "unsuccessful_cpu_seconds": "409372.65"
+      }
+    },
+    "kissat": {
+      "direct_c2_cases": 4,
+      "direct_c2_cpu_seconds": "5314.870409",
+      "original_production_attempts": 296952,
+      "original_production_cases": 296797,
+      "original_production_cpu_seconds": {
+        "all_attempt_cpu_seconds": "3192285.000000",
+        "successful_cpu_seconds": "3153019.460000",
+        "unsuccessful_cpu_seconds": "39265.54"
+      },
+      "retired720_attempt_census_sha256": "a4e01ee0b977ed7e0fcb0f127cbec8579f3b8d1aeec0bae4cf0eb4a274ab7142",
+      "retired720_cpu_seconds": "20829.35",
+      "retired720_source_database": {
+        "bytes": 53993472,
+        "path": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/native-capsule-20261031-kissat/workspace/k60-pilot/campaign-closure-kissat/results.sqlite3",
+        "sha256": "1c4040943c7957edc30fcc80a788e895a8a39b6d06f25955aab14da818229c13"
+      },
+      "retired720_status_counts": {
+        "UNSAT": 720
+      },
+      "retired_cases": 720,
+      "selected_original_production_cases": 296077,
+      "selected_publication_cases": 296081,
+      "selected_publication_totals": {
+        "all_attempt_cpu_seconds": "3176770.520409",
+        "all_attempts": 296236,
+        "successful_cpu_seconds": "3137504.980409",
+        "unsuccessful_cpu_seconds": "39265.54"
+      }
+    }
+  },
+  "wall_scope": "Calendar elapsed from original campaign start to last result; includes sleep and deliberate/diagnostic interruptions. This is not solver CPU time."
+}

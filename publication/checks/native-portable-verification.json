@@ -1,5 +1,157 @@
 {
-  "campaigns": {
+  "cadical_attempts": 297178,
+  "cadical_native_cpu_hours": "1649.267514354444444444444444",
+  "cadical_native_cpu_seconds": "5937363.051676",
+  "cadical_production": {
+    "effective_attempt_status_counts": {
+      "INTERRUPTED": 21,
+      "TIMEOUT": 1076,
+      "UNSAT": 296077
+    },
+    "native_log_bytes": 7550922850,
+    "original_history_unchanged": true,
+    "original_source_cases": 296797,
+    "owner_cpu_seconds": {
+      "A": "7058.51",
+      "B": "154215.74",
+      "BALANCE_ALL_FIVE_TT": "26.46",
+      "BALANCE_ALL_FIVE_UT": "31.06",
+      "BALANCE_ALL_FIVE_UU": "36.83",
+      "C1_ENTRANCE": "5947.64",
+      "C2_ENTRANCE": "464092.46",
+      "D_TTT": "615775.30",
+      "D_TTU": "612244.23",
+      "D_UTT": "152949.88",
+      "D_UTU": "137991.51",
+      "D_UUT": "22329.47",
+      "D_UUU": "9853.21",
+      "TTT": "2864081.58",
+      "UTT": "780814.41",
+      "UUT": "81519.73",
+      "UUU": "22628.21"
+    },
+    "passed": true,
+    "raw_attempt_status_counts": {
+      "ERROR": 1,
+      "INTERRUPTED": 21,
+      "TIMEOUT": 1075,
+      "UNSAT": 296077
+    },
+    "retired_source_cases": 720,
+    "selected_production_attempts": 297174,
+    "selected_production_cases": 296077,
+    "selected_production_cpu_seconds": "5931596.23",
+    "source_ordered_row_and_compressed_log_hash_sha256": "2e6606c13cc24ef12b24e3efd2a27c09f00fe372df428d57c47347e31d22ffe9"
+  },
+  "direct_c2": {
+    "attempts": 8,
+    "cases": 4,
+    "full_cadical_campaign_complete": false,
+    "jobs": [
+      {
+        "compressed_log_sha256": "90cb7a0fedbc321ba5e8e486e6e43316a53a084ee3d2784b3469e0c05492877a",
+        "elapsed_seconds": 1539.922555333,
+        "input_id": "C2_ROOT_UU",
+        "input_sha256": "f43951c774a7f94a8981561220063f4e9f09f2d183819a86c5d59111578b94b8",
+        "job_id": "C2_ROOT_UU_kissat",
+        "log_sha256": "faaaaf0715398cc680eb8d643b982543f05ac25aa536cb66ed517c8addaf5e31",
+        "native_cpu_seconds": 1535.526199,
+        "solver": "kissat",
+        "status": "UNSAT"
+      },
+      {
+        "compressed_log_sha256": "959a60591b1d9c992daa50f8823cc430992a634bb604cbc2218517d531b4b2cb",
+        "elapsed_seconds": 2114.978699291,
+        "input_id": "C2_ROOT_UU",
+        "input_sha256": "f43951c774a7f94a8981561220063f4e9f09f2d183819a86c5d59111578b94b8",
+        "job_id": "C2_ROOT_UU_cadical",
+        "log_sha256": "de14730c396c48b39c4be40a1e229e7c36729fe8f46dd56b9c4f7c16d4f663d2",
+        "native_cpu_seconds": 2110.371709,
+        "solver": "cadical",
+        "status": "UNSAT"
+      },
+      {
+        "compressed_log_sha256": "e5210af20559653135f8190dad7e3456fcee98553e771f1079501b004877fde1",
+        "elapsed_seconds": 1279.060125583,
+        "input_id": "C2_ROOT_UT",
+        "input_sha256": "c71344a5e4f648a28ff68ef086761a87d7c2b52c9454f70b0ea7116c74714149",
+        "job_id": "C2_ROOT_UT_kissat",
+        "log_sha256": "6642ae4ddcc1dda75a64f0776fa6ba48d15f22a93a497bfdf77b8e7e08a0cb3f",
+        "native_cpu_seconds": 1275.3425220000001,
+        "solver": "kissat",
+        "status": "UNSAT"
+      },
+      {
+        "compressed_log_sha256": "53d22b5a81a42426dfcef769ded68790a1f298a96beb1488ed66f5c4c2210208",
+        "elapsed_seconds": 1212.0510402910002,
+        "input_id": "C2_ROOT_UT",
+        "input_sha256": "c71344a5e4f648a28ff68ef086761a87d7c2b52c9454f70b0ea7116c74714149",
+        "job_id": "C2_ROOT_UT_cadical",
+        "log_sha256": "5192ab6bd04373badefed072a0dcbb807a3b7fdd9a1906afb52db6b2e6189ea8",
+        "native_cpu_seconds": 1208.618986,
+        "solver": "cadical",
+        "status": "UNSAT"
+      },
+      {
+        "compressed_log_sha256": "6b070f4ac84f7cf669656223f87920196ddb70ad2e945055ec8aaec9139f067b",
+        "elapsed_seconds": 1535.031131417,
+        "input_id": "C2_ROOT_TU",
+        "input_sha256": "100a0acbd1757b303ecd6ddbd05839a79411861f8a764b7f5e261edc3cacad9c",
+        "job_id": "C2_ROOT_TU_kissat",
+        "log_sha256": "74e476055356479b3d4efbc889224069459c40216a74994b880d67e4e6d52e5f",
+        "native_cpu_seconds": 1530.68176,
+        "solver": "kissat",
+        "status": "UNSAT"
+      },
+      {
+        "compressed_log_sha256": "e6d0c0c053a81a4c5889baa720950cf0bbabcbfc4908910581b734900a7a88ff",
+        "elapsed_seconds": 1337.112173125,
+        "input_id": "C2_ROOT_TU",
+        "input_sha256": "100a0acbd1757b303ecd6ddbd05839a79411861f8a764b7f5e261edc3cacad9c",
+        "job_id": "C2_ROOT_TU_cadical",
+        "log_sha256": "a5f851d94e4f1039b700b54b195f813f4e17f1bbd34a71382950b3fdc37a7234",
+        "native_cpu_seconds": 1333.158876,
+        "solver": "cadical",
+        "status": "UNSAT"
+      },
+      {
+        "compressed_log_sha256": "f5c789d597452fcfc303890c8fe5d579b547325e95e25a88ba74dcddb52af039",
+        "elapsed_seconds": 976.3378256670001,
+        "input_id": "C2_ROOT_TT",
+        "input_sha256": "539e9195dc74410b646bda086e86db4bbabacaf2b05d1017c769236f53df9973",
+        "job_id": "C2_ROOT_TT_kissat",
+        "log_sha256": "e1982c590f148b20182e8636353a06d513ac5f59a3bcf63ba167a906a90796d5",
+        "native_cpu_seconds": 973.319928,
+        "solver": "kissat",
+        "status": "UNSAT"
+      },
+      {
+        "compressed_log_sha256": "e2db74a1b79ca2217aa6f789b98daf13123a715e73bf7c7e80fc593a371e93c8",
+        "elapsed_seconds": 1117.8687285,
+        "input_id": "C2_ROOT_TT",
+        "input_sha256": "539e9195dc74410b646bda086e86db4bbabacaf2b05d1017c769236f53df9973",
+        "job_id": "C2_ROOT_TT_cadical",
+        "log_sha256": "4527d706f175a53242221c4fef7c89953d4309133c9dafef0aa3eb6463fadf35",
+        "native_cpu_seconds": 1114.672105,
+        "solver": "cadical",
+        "status": "UNSAT"
+      }
+    ],
+    "native_cpu_seconds": {
+      "cadical": "5766.821676",
+      "kissat": "5314.870409"
+    }
+  },
+  "full_cadical_campaign_complete": true,
+  "kissat_attempt_status_counts": {
+    "INTERRUPTED": 23,
+    "TIMEOUT": 132,
+    "UNSAT": 296081
+  },
+  "kissat_attempts": 296236,
+  "kissat_native_cpu_hours": "882.4362556691666666666666667",
+  "kissat_native_cpu_seconds": "3176770.520409",
+  "legacy_campaigns": {
     "abd": {
       "attempt_status_counts": {
         "TIMEOUT": 15,
@@ -7,17 +159,40 @@
       },
       "attempts": 56389,
       "cases": 56374,
+      "native_cpu_seconds": "597346.63",
       "native_log_bytes": 1328796958,
-      "ordered_row_and_compressed_log_hash_sha256": "1c5e450a5d374faf0e6167a6c36677f0684da3abd406d700e0efdd8cb341fbb1"
+      "ordered_row_and_compressed_log_hash_sha256": "1c5e450a5d374faf0e6167a6c36677f0684da3abd406d700e0efdd8cb341fbb1",
+      "owner_cpu_seconds": {
+        "A": "958.12",
+        "B": "23212.10",
+        "D_TTT": "217301.47",
+        "D_TTU": "215360.85",
+        "D_UTT": "65222.19",
+        "D_UTU": "63350.24",
+        "D_UUT": "6061.82",
+        "D_UUU": "5879.84"
+      }
     },
     "closure": {
       "attempt_status_counts": {
-        "UNSAT": 9255
+        "UNSAT": 8535
       },
-      "attempts": 9255,
-      "cases": 9255,
-      "native_log_bytes": 187060066,
-      "ordered_row_and_compressed_log_hash_sha256": "d32ae2362d97decba274236af40f911e1cc08588c49e1a7f68d8b65f456222c0"
+      "attempts": 8535,
+      "cases": 8535,
+      "native_cpu_seconds": "46780.70",
+      "native_log_bytes": 161279579,
+      "ordered_row_and_compressed_log_hash_sha256": "2d8561d312023b6a817a85f30b65011c47c36fc96a1a87fc7295791f3674d6fc",
+      "original_subset_proof": {
+        "omitted_attempts": 720,
+        "original_ordered_row_and_compressed_log_hash_sha256": "d32ae2362d97decba274236af40f911e1cc08588c49e1a7f68d8b65f456222c0"
+      },
+      "owner_cpu_seconds": {
+        "BALANCE_ALL_FIVE_TT": "31.49",
+        "BALANCE_ALL_FIVE_UT": "28.82",
+        "BALANCE_ALL_FIVE_UU": "36.19",
+        "C1_ENTRANCE": "1660.79",
+        "C2_ENTRANCE": "45023.41"
+      }
     },
     "e": {
       "attempt_status_counts": {
@@ -27,14 +202,23 @@
       },
       "attempts": 231308,
       "cases": 231168,
+      "native_cpu_seconds": "2527328.32",
       "native_log_bytes": 5553877495,
-      "ordered_row_and_compressed_log_hash_sha256": "9309f05c663a7d221fbf9a143a6209844f759a869bd418f06b5f99868d2bcb20"
+      "ordered_row_and_compressed_log_hash_sha256": "9309f05c663a7d221fbf9a143a6209844f759a869bd418f06b5f99868d2bcb20",
+      "owner_cpu_seconds": {
+        "TTT": "1896882.48",
+        "UTT": "561027.06",
+        "UUT": "52230.84",
+        "UUU": "17187.94"
+      }
     }
   },
-  "manifest_sha256": "089599c2c4ed17524bb73727584391f16f85272facaf283d3923e4938f770d95",
+  "manifest_sha256": "a781e5aecc1b91ae80419b3b396d3ac8439278ace527fc73859fdfaa2341537e",
   "passed": true,
-  "schema": "K60_PORTABLE_NATIVE_VERIFICATION_2",
+  "selected_ordered_input_sha256": "c4c5fd13fedace3f554b48a86a9c75cf8dc17173236fcca2aef54e584eea3942",
   "solver_executed": false,
-  "total_cases": 296797,
-  "trust": "Archived exact-input native Kissat outcomes and complete attempt/log histories. This is not an independently checked UNSAT-refutation certificate, a Lean proof, or the separate formal/input-binding release gate."
+  "total_cases": 296081,
+  "trust": "Native exact-input UNSAT outcomes and complete selected attempt/log histories. No independently checked UNSAT-refutation certificate is claimed. The conditional Lean reduction and its exact-input bindings are a separate release gate. Full CaDiCaL completion is claimed only when the separately audited completion component is present.",
+  "unique_accepted_cadical_unsat_cases": 296081,
+  "unique_accepted_kissat_unsat_cases": 296081
 }

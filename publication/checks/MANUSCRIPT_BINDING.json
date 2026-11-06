@@ -1,0 +1,69 @@
+{
+  "accepted_k60_baseline": {
+    "bytes": 63725,
+    "path": "reference/k60-reviewed-main.tex",
+    "sha256": "053f364c6904b482b79f89232cfa04ad8aa504a9d88f4634ed3a2e91dc3749eb"
+  },
+  "baseline_against_itself_no_change_markup": true,
+  "built_in_main_and_review_compile": "success",
+  "checked_utc": "2026-11-06T07:33:01.877816+00:00",
+  "committed": false,
+  "manuscript_files": {
+    "README.txt": {
+      "bytes": 2136,
+      "sha256": "76442f6bb16c3268374e22e51ec8be70aac9ad1aa327e14e3ba9f981230ac818"
+    },
+    "build-review.py": {
+      "bytes": 2119,
+      "sha256": "5f981ad153f20bc937bafb73258cb1fc963eebc8ba4aa7371cca6a7fdfffaa4c"
+    },
+    "main.pdf": {
+      "bytes": 439547,
+      "sha256": "36b2351e4e32a1e86e3c101e44ce6f3c9dda28b5a57f483f10ba3af52e602a7c"
+    },
+    "main.tex": {
+      "bytes": 63449,
+      "sha256": "8cf025a720292ddd99efd9169bb3b0b4828ee2d2226ece4112770b4ca7d45b6d"
+    },
+    "review-preamble.tex": {
+      "bytes": 477,
+      "sha256": "5d84c421c6e581d0f8d7c6f34b470554c8530fcf322d0cfa52ec7af860164333"
+    },
+    "review.pdf": {
+      "bytes": 439647,
+      "sha256": "86a5262197bdd184bfca9e3503f24cb908855bcfe9e5c749b4259de2343a8cdb"
+    },
+    "review.tex": {
+      "bytes": 66833,
+      "sha256": "d1bfd208a1f61aaf9de6763b963adb86660844749d996f5cd57fcf7f199226c5"
+    }
+  },
+  "manuscript_repository": "r3333-upper-bound-paper",
+  "mathematical_scope": "Approved manuscript mathematics and proof.md mathematical sections are unchanged. The paper timing definition/table and proof native-result status are synchronized to complete two-solver evidence.",
+  "native_manifest_sha256": "a781e5aecc1b91ae80419b3b396d3ac8439278ace527fc73859fdfaa2341537e",
+  "new_red_changes_pages": [
+    14
+  ],
+  "original_production_inputs": 296797,
+  "passed": true,
+  "pdf_pages": 15,
+  "proof": {
+    "bytes": 35211,
+    "path": "proof.md",
+    "sha256": "a487245c829ecdb1ae34cc3104499b87ced6d427de58af970a9ccdd8ccb662b9"
+  },
+  "pushed_or_published": false,
+  "schema": "K60_FINAL_MANUSCRIPT_PROOF_BINDING_1",
+  "selected_formulas": 296081,
+  "selected_ordered_input_sha256": "c4c5fd13fedace3f554b48a86a9c75cf8dc17173236fcca2aef54e584eea3942",
+  "successful_cpu_hours": {
+    "cadical": "1535.55",
+    "kissat": "871.53"
+  },
+  "table_rows_checked": 16,
+  "timing_report": {
+    "bytes": 16376,
+    "path": "publication/checks/SUCCESSFUL_RUN_TIMINGS.json",
+    "sha256": "8c3f5a9640808f09325abf9e10c79c8a17ae3a1baea65816ad277bc84f7b2e03"
+  }
+}

@@ -71,7 +71,7 @@ jobs:
       - name: State the verification boundary
         run: |
           cat >> "$GITHUB_STEP_SUMMARY" <<'TEXT'
-          All 1,390 selected mathematical modules and 110 embedded data files passed
+          All 1,314 selected mathematical modules and 110 embedded data files passed
           source/hash/import/census controls. The five-module UniformK60.CoreCounts
           target compiled and its two theorem axiom reports passed.
           This job did not rebuild the complete reduction, replay classification

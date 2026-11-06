@@ -16,7 +16,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 FORMAL = ROOT / 'formal'
 ACCEPTED_MANIFEST_PIN = ROOT / 'publication/checks/ACCEPTED_MATH_MANIFEST.sha256'
-MODULE_COUNT, DATA_COUNT = 1390, 110
+MODULE_COUNT, DATA_COUNT = 1314, 110
 ROOTS = ('UniformK60.Verification',)
 
 CONTROL_FILES = {'lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'build.py', 'BUILD.md'}

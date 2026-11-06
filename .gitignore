@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 /formal/.build/
 /formal/.lake/
+
+# Optional local reconstruction; publish only the checked LFS parts.
+/archives/k60-native-evidence.tar.gz

@@ -1,6 +1,6 @@
 import UniformK60.MarkedBounds
 import UniformK60.CEntranceFormula
-import UniformK60.BalancedEncodingBraces
+import UniformK60.BalancedEncodingData
 import UniformK60.BalancedEncodingAllFive
 
 /-! The explicit computational boundary of the K60 argument.
@@ -13,13 +13,13 @@ abbrev AllFiveCase := Fin 3
 def allFiveOwner : AllFiveCase → BalancedHost.Owner := ![(false,false),(false,true),(true,true)]
 
 abbrev Case := ABDFormula.Case ⊕ EFormula.Case ⊕ CEntranceFormula.Case ⊕
-  BalancedEncodingBraces.Case ⊕ AllFiveCase
+  BalancedHost.Owner ⊕ AllFiveCase
 
 def formula : Case → DenseCounter.CNF
   | .inl k => ABDFormula.formula k
   | .inr (.inl k) => EFormula.formula k
   | .inr (.inr (.inl k)) => CEntranceFormula.formula k
-  | .inr (.inr (.inr (.inl k))) => BalancedEncodingBraces.formula k
+  | .inr (.inr (.inr (.inl o))) => BalancedEncodingData.formula o
   | .inr (.inr (.inr (.inr k))) => BalancedEncodingAllFive.formula (allFiveOwner k)
 
 /-- Native solver outcomes are not axioms of Lean. This is the explicit
@@ -41,9 +41,9 @@ theorem entrance_excluded (h : AllUnsat) (k : CEntranceFormula.Case)
     (v : DenseCounter.Valuation) : ¬DenseCounter.FormulaSat v (CEntranceFormula.formula k) :=
   h (.inr (.inr (.inl k))) v
 
-theorem mixed_excluded (h : AllUnsat) (k : BalancedEncodingBraces.Case)
-    (v : DenseCounter.Valuation) : ¬DenseCounter.FormulaSat v (BalancedEncodingBraces.formula k) :=
-  h (.inr (.inr (.inr (.inl k)))) v
+theorem compatibility_excluded (h : AllUnsat) (o : BalancedHost.Owner)
+    (v : DenseCounter.Valuation) : ¬DenseCounter.FormulaSat v (BalancedEncodingData.formula o) :=
+  h (.inr (.inr (.inr (.inl o)))) v
 
 theorem all_five_excluded (h : AllUnsat) (o : BalancedHost.Owner)
     (ho : o=(false,false) ∨ o=(false,true) ∨ o=(true,true))

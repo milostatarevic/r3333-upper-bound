@@ -1,0 +1,476 @@
+{
+  "cpu_sources": {
+    "direct_c2": "Captured child user+system CPU resource usage, at microsecond precision; direct receipts unchanged.",
+    "production": "The unique native process-time field in each authenticated complete log."
+  },
+  "existing_all_attempt_fields_changed": false,
+  "families": [
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "1.96",
+        "all_attempt_cpu_seconds": "7058.51",
+        "all_attempts": 361,
+        "successful_cpu_hours": "1.88",
+        "successful_cpu_seconds": "6762.96",
+        "successful_runs": 360,
+        "unsuccessful_attempts": 1,
+        "unsuccessful_cpu_hours": "0.08",
+        "unsuccessful_cpu_seconds": "295.55"
+      },
+      "cases": 360,
+      "family": "A",
+      "kissat": {
+        "all_attempt_cpu_hours": "0.27",
+        "all_attempt_cpu_seconds": "958.12",
+        "all_attempts": 360,
+        "successful_cpu_hours": "0.27",
+        "successful_cpu_seconds": "958.12",
+        "successful_runs": 360,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "42.84",
+        "all_attempt_cpu_seconds": "154215.74",
+        "all_attempts": 5156,
+        "successful_cpu_hours": "37.56",
+        "successful_cpu_seconds": "135220.79",
+        "successful_runs": 5096,
+        "unsuccessful_attempts": 60,
+        "unsuccessful_cpu_hours": "5.28",
+        "unsuccessful_cpu_seconds": "18994.95"
+      },
+      "cases": 5096,
+      "family": "B",
+      "kissat": {
+        "all_attempt_cpu_hours": "6.45",
+        "all_attempt_cpu_seconds": "23212.10",
+        "all_attempts": 5096,
+        "successful_cpu_hours": "6.45",
+        "successful_cpu_seconds": "23212.10",
+        "successful_runs": 5096,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "2.74",
+        "all_attempt_cpu_seconds": "9853.21",
+        "all_attempts": 680,
+        "successful_cpu_hours": "2.65",
+        "successful_cpu_seconds": "9554.80",
+        "successful_runs": 679,
+        "unsuccessful_attempts": 1,
+        "unsuccessful_cpu_hours": "0.08",
+        "unsuccessful_cpu_seconds": "298.41"
+      },
+      "cases": 679,
+      "family": "D/UUU",
+      "kissat": {
+        "all_attempt_cpu_hours": "1.63",
+        "all_attempt_cpu_seconds": "5879.84",
+        "all_attempts": 679,
+        "successful_cpu_hours": "1.63",
+        "successful_cpu_seconds": "5879.84",
+        "successful_runs": 679,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "6.20",
+        "all_attempt_cpu_seconds": "22329.47",
+        "all_attempts": 688,
+        "successful_cpu_hours": "5.53",
+        "successful_cpu_seconds": "19900.97",
+        "successful_runs": 679,
+        "unsuccessful_attempts": 9,
+        "unsuccessful_cpu_hours": "0.67",
+        "unsuccessful_cpu_seconds": "2428.50"
+      },
+      "cases": 679,
+      "family": "D/UUT",
+      "kissat": {
+        "all_attempt_cpu_hours": "1.68",
+        "all_attempt_cpu_seconds": "6061.82",
+        "all_attempts": 679,
+        "successful_cpu_hours": "1.68",
+        "successful_cpu_seconds": "6061.82",
+        "successful_runs": 679,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "38.33",
+        "all_attempt_cpu_seconds": "137991.51",
+        "all_attempts": 6603,
+        "successful_cpu_hours": "36.12",
+        "successful_cpu_seconds": "130036.41",
+        "successful_runs": 6576,
+        "unsuccessful_attempts": 27,
+        "unsuccessful_cpu_hours": "2.21",
+        "unsuccessful_cpu_seconds": "7955.10"
+      },
+      "cases": 6576,
+      "family": "D/UTU",
+      "kissat": {
+        "all_attempt_cpu_hours": "17.60",
+        "all_attempt_cpu_seconds": "63350.24",
+        "all_attempts": 6576,
+        "successful_cpu_hours": "17.60",
+        "successful_cpu_seconds": "63350.24",
+        "successful_runs": 6576,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "42.49",
+        "all_attempt_cpu_seconds": "152949.88",
+        "all_attempts": 6598,
+        "successful_cpu_hours": "40.67",
+        "successful_cpu_seconds": "146413.14",
+        "successful_runs": 6576,
+        "unsuccessful_attempts": 22,
+        "unsuccessful_cpu_hours": "1.82",
+        "unsuccessful_cpu_seconds": "6536.74"
+      },
+      "cases": 6576,
+      "family": "D/UTT",
+      "kissat": {
+        "all_attempt_cpu_hours": "18.12",
+        "all_attempt_cpu_seconds": "65222.19",
+        "all_attempts": 6577,
+        "successful_cpu_hours": "18.03",
+        "successful_cpu_seconds": "64923.67",
+        "successful_runs": 6576,
+        "unsuccessful_attempts": 1,
+        "unsuccessful_cpu_hours": "0.08",
+        "unsuccessful_cpu_seconds": "298.52"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "170.07",
+        "all_attempt_cpu_seconds": "612244.23",
+        "all_attempts": 18380,
+        "successful_cpu_hours": "155.32",
+        "successful_cpu_seconds": "559167.61",
+        "successful_runs": 18204,
+        "unsuccessful_attempts": 176,
+        "unsuccessful_cpu_hours": "14.74",
+        "unsuccessful_cpu_seconds": "53076.62"
+      },
+      "cases": 18204,
+      "family": "D/TTU",
+      "kissat": {
+        "all_attempt_cpu_hours": "59.82",
+        "all_attempt_cpu_seconds": "215360.85",
+        "all_attempts": 18213,
+        "successful_cpu_hours": "59.09",
+        "successful_cpu_seconds": "212707.18",
+        "successful_runs": 18204,
+        "unsuccessful_attempts": 9,
+        "unsuccessful_cpu_hours": "0.74",
+        "unsuccessful_cpu_seconds": "2653.67"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "171.05",
+        "all_attempt_cpu_seconds": "615775.30",
+        "all_attempts": 18346,
+        "successful_cpu_hours": "159.63",
+        "successful_cpu_seconds": "574651.74",
+        "successful_runs": 18204,
+        "unsuccessful_attempts": 142,
+        "unsuccessful_cpu_hours": "11.42",
+        "unsuccessful_cpu_seconds": "41123.56"
+      },
+      "cases": 18204,
+      "family": "D/TTT",
+      "kissat": {
+        "all_attempt_cpu_hours": "60.36",
+        "all_attempt_cpu_seconds": "217301.47",
+        "all_attempts": 18209,
+        "successful_cpu_hours": "59.95",
+        "successful_cpu_seconds": "215819.73",
+        "successful_runs": 18204,
+        "unsuccessful_attempts": 5,
+        "unsuccessful_cpu_hours": "0.41",
+        "unsuccessful_cpu_seconds": "1481.74"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "6.29",
+        "all_attempt_cpu_seconds": "22628.21",
+        "all_attempts": 2037,
+        "successful_cpu_hours": "6.29",
+        "successful_cpu_seconds": "22628.21",
+        "successful_runs": 2037,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      },
+      "cases": 2037,
+      "family": "E/UUU",
+      "kissat": {
+        "all_attempt_cpu_hours": "4.77",
+        "all_attempt_cpu_seconds": "17187.94",
+        "all_attempts": 2037,
+        "successful_cpu_hours": "4.77",
+        "successful_cpu_seconds": "17187.94",
+        "successful_runs": 2037,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "22.64",
+        "all_attempt_cpu_seconds": "81519.73",
+        "all_attempts": 6112,
+        "successful_cpu_hours": "22.56",
+        "successful_cpu_seconds": "81220.27",
+        "successful_runs": 6111,
+        "unsuccessful_attempts": 1,
+        "unsuccessful_cpu_hours": "0.08",
+        "unsuccessful_cpu_seconds": "299.46"
+      },
+      "cases": 6111,
+      "family": "E/UUT",
+      "kissat": {
+        "all_attempt_cpu_hours": "14.51",
+        "all_attempt_cpu_seconds": "52230.84",
+        "all_attempts": 6111,
+        "successful_cpu_hours": "14.51",
+        "successful_cpu_seconds": "52230.84",
+        "successful_runs": 6111,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "216.89",
+        "all_attempt_cpu_seconds": "780814.41",
+        "all_attempts": 59258,
+        "successful_cpu_hours": "211.06",
+        "successful_cpu_seconds": "759831.82",
+        "successful_runs": 59184,
+        "unsuccessful_attempts": 74,
+        "unsuccessful_cpu_hours": "5.83",
+        "unsuccessful_cpu_seconds": "20982.59"
+      },
+      "cases": 59184,
+      "family": "E/UTT",
+      "kissat": {
+        "all_attempt_cpu_hours": "155.84",
+        "all_attempt_cpu_seconds": "561027.06",
+        "all_attempts": 59202,
+        "successful_cpu_hours": "154.69",
+        "successful_cpu_seconds": "556882.90",
+        "successful_runs": 59184,
+        "unsuccessful_attempts": 18,
+        "unsuccessful_cpu_hours": "1.15",
+        "unsuccessful_cpu_seconds": "4144.16"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "795.58",
+        "all_attempt_cpu_seconds": "2864081.58",
+        "all_attempts": 164176,
+        "successful_cpu_hours": "767.98",
+        "successful_cpu_seconds": "2764740.68",
+        "successful_runs": 163836,
+        "unsuccessful_attempts": 340,
+        "unsuccessful_cpu_hours": "27.59",
+        "unsuccessful_cpu_seconds": "99340.90"
+      },
+      "cases": 163836,
+      "family": "E/TTT",
+      "kissat": {
+        "all_attempt_cpu_hours": "526.91",
+        "all_attempt_cpu_seconds": "1896882.48",
+        "all_attempts": 163958,
+        "successful_cpu_hours": "518.39",
+        "successful_cpu_seconds": "1866195.03",
+        "successful_runs": 163836,
+        "unsuccessful_attempts": 122,
+        "unsuccessful_cpu_hours": "8.52",
+        "unsuccessful_cpu_seconds": "30687.45"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "1.65",
+        "all_attempt_cpu_seconds": "5947.64",
+        "all_attempts": 696,
+        "successful_cpu_hours": "1.32",
+        "successful_cpu_seconds": "4760.99",
+        "successful_runs": 692,
+        "unsuccessful_attempts": 4,
+        "unsuccessful_cpu_hours": "0.33",
+        "unsuccessful_cpu_seconds": "1186.65"
+      },
+      "cases": 692,
+      "family": "C1 entrance",
+      "kissat": {
+        "all_attempt_cpu_hours": "0.46",
+        "all_attempt_cpu_seconds": "1660.79",
+        "all_attempts": 692,
+        "successful_cpu_hours": "0.46",
+        "successful_cpu_seconds": "1660.79",
+        "successful_runs": 692,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "128.91",
+        "all_attempt_cpu_seconds": "464092.46",
+        "all_attempts": 8080,
+        "successful_cpu_hours": "85.34",
+        "successful_cpu_seconds": "307238.84",
+        "successful_runs": 7840,
+        "unsuccessful_attempts": 240,
+        "unsuccessful_cpu_hours": "43.57",
+        "unsuccessful_cpu_seconds": "156853.62"
+      },
+      "cases": 7840,
+      "family": "C2 entrance",
+      "kissat": {
+        "all_attempt_cpu_hours": "12.51",
+        "all_attempt_cpu_seconds": "45023.41",
+        "all_attempts": 7840,
+        "successful_cpu_hours": "12.51",
+        "successful_cpu_seconds": "45023.41",
+        "successful_runs": 7840,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "0.03",
+        "all_attempt_cpu_seconds": "94.35",
+        "all_attempts": 3,
+        "successful_cpu_hours": "0.03",
+        "successful_cpu_seconds": "94.35",
+        "successful_runs": 3,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      },
+      "cases": 3,
+      "family": "All-five formulas",
+      "kissat": {
+        "all_attempt_cpu_hours": "0.03",
+        "all_attempt_cpu_seconds": "96.50",
+        "all_attempts": 3,
+        "successful_cpu_hours": "0.03",
+        "successful_cpu_seconds": "96.50",
+        "successful_runs": 3,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    },
+    {
+      "cadical": {
+        "all_attempt_cpu_hours": "1.60",
+        "all_attempt_cpu_seconds": "5766.821676",
+        "all_attempts": 4,
+        "successful_cpu_hours": "1.60",
+        "successful_cpu_seconds": "5766.821676",
+        "successful_runs": 4,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      },
+      "cases": 4,
+      "family": "C2 compatibility",
+      "kissat": {
+        "all_attempt_cpu_hours": "1.48",
+        "all_attempt_cpu_seconds": "5314.870409",
+        "all_attempts": 4,
+        "successful_cpu_hours": "1.48",
+        "successful_cpu_seconds": "5314.870409",
+        "successful_runs": 4,
+        "unsuccessful_attempts": 0,
+        "unsuccessful_cpu_hours": "0.00",
+        "unsuccessful_cpu_seconds": "0"
+      }
+    }
+  ],
+  "hours_rounding": "Decimal seconds divided by3600, rounded to two decimals with ROUND_HALF_UP; sum seconds before rounding.",
+  "native_manifest_sha256": "a781e5aecc1b91ae80419b3b396d3ac8439278ace527fc73859fdfaa2341537e",
+  "policy": "Successful accepted terminal UNSAT execution CPU time once per selected distinct formula per solver. Previous TIMEOUT, INTERRUPTED and the preserved reviewed raw ERROR attempt are excluded from headline times and retained as unsuccessful-attempt overhead. Sleep and elapsed wall time are not CPU time. The four direct C2 successes are included exactly once per solver.",
+  "schema": "K60_SUCCESSFUL_RUN_TIMINGS_1",
+  "selected_cases": 296081,
+  "selected_ordered_input_sha256": "c4c5fd13fedace3f554b48a86a9c75cf8dc17173236fcca2aef54e584eea3942",
+  "solver_calls": 0,
+  "solvers": {
+    "cadical": {
+      "all_attempt_cpu_hours": "1649.27",
+      "all_attempt_cpu_seconds": "5937363.051676",
+      "all_attempt_timing_census_sha256": "7fc9ec46137dc2f9aaa7a9afa59fe81ea03d270b54baae022ded120f6c4665ed",
+      "all_attempts": 297178,
+      "direct_c2_successful_runs": 4,
+      "recorded_attempt_status_counts": {
+        "ERROR": 1,
+        "INTERRUPTED": 21,
+        "TIMEOUT": 1075,
+        "UNSAT": 296081
+      },
+      "selected_ordered_input_sha256": "c4c5fd13fedace3f554b48a86a9c75cf8dc17173236fcca2aef54e584eea3942",
+      "successful_cpu_hours": "1535.55",
+      "successful_cpu_seconds": "5527990.401676",
+      "successful_execution_census_sha256": "a6a1cef5d3edce786b4c440780cf73642431f32cdf9aa59bd2111b1c25f55f3f",
+      "successful_runs": 296081,
+      "unsuccessful_attempts": 1097,
+      "unsuccessful_cpu_hours": "113.71",
+      "unsuccessful_cpu_seconds": "409372.65"
+    },
+    "kissat": {
+      "all_attempt_cpu_hours": "882.44",
+      "all_attempt_cpu_seconds": "3176770.520409",
+      "all_attempt_timing_census_sha256": "7aa78c93c4286fe0427b3316d8b10db3012e2432693b86e3f540e0850aa25b1f",
+      "all_attempts": 296236,
+      "direct_c2_successful_runs": 4,
+      "recorded_attempt_status_counts": {
+        "INTERRUPTED": 23,
+        "TIMEOUT": 132,
+        "UNSAT": 296081
+      },
+      "selected_ordered_input_sha256": "c4c5fd13fedace3f554b48a86a9c75cf8dc17173236fcca2aef54e584eea3942",
+      "successful_cpu_hours": "871.53",
+      "successful_cpu_seconds": "3137504.980409",
+      "successful_execution_census_sha256": "552fc5252e1ddcb556883fff6974b1dfc88fbc9a57fb251af8fe9183ad6f2d17",
+      "successful_runs": 296081,
+      "unsuccessful_attempts": 155,
+      "unsuccessful_cpu_hours": "10.91",
+      "unsuccessful_cpu_seconds": "39265.54"
+    }
+  },
+  "timing_tool_sha256": "f23fc8831e56505131857f729e6c7cbfac7613c61e786f1bac204dc594bf1c73"
+}

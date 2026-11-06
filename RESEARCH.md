@@ -94,27 +94,24 @@ After one global color permutation, every degree vector is
 degrees equal to 16; C2 vertices have high degrees 15 and 16. The balanced
 formulas retain this mixture at other vertices.
 
-## Perfect balance supplies an actual brace
+## Compatibility excludes perfect balance
 
 Three auxiliary exclusions rule out the possibility that all vertices have
-profile C1. Choose a C2 root and any mark in its 15-vertex critical cell.
-The mark's critical neighborhood is an actual subgraph of order 15 or 16.
-It meets the other root cells in supports of sizes four or five. After
-exchanging the two low colors, the possible shapes are 455, 554 and 555.
+profile C1, so a C2 root exists.
 
 The root has one full 16-vertex template, one 15-vertex template, and two
-14-vertex cells. Only the selected five vertices of one low cell receive a
-cycle constraint; there is no full critical template on that cell. The
-brace fixes colors between these parts. Its exhaustive cover has 720
-cases: 624 with a 15-vertex brace and 96 with a 16-vertex brace.
+14-vertex cells. Its critical templates have four ordered type pairs:
+U-minus/U, U-minus/T, T-minus/U and T-minus/T.
 
-The balanced formulas also describe the visible parts of 26 actual
+The compatibility formulas describe the visible parts of 26 actual
 opposite-color neighborhoods. Each has a five-vertex anchor, so six
 normalized template tables suffice. A witness assigns distinct template
 positions to the visible members and requires all predicted edges to agree
 with the same physical coloring. The remaining four- or five-vertex support
 conditions are retained as guards. These constraints can expose incompatible
 local descriptions before a solver explores many unconstrained graph edges.
+Both Kissat and CaDiCaL refuted all four formulas. Every C2 root supplies
+the simultaneous witnesses for one of them, completing the contradiction.
 
 ## One host throughout the computation
 
@@ -123,9 +120,9 @@ marked A/B/D/E and entrance formulas add signed edge facts. The balanced
 formulas also use auxiliary variables for degree bounds, support choices
 and local template embeddings.
 
-The complete cover has 296,797 formulas: 56,374 for A/B/D, 231,168 for E,
-8,532 entrances, three all-five exclusions and 720 marked balanced cases.
-Every indexed formula requires a direct Kissat UNSAT outcome. The evidence
+The complete cover has 296,081 formulas: 56,374 for A/B/D, 231,168 for E,
+8,532 entrances, three all-five exclusions and four C2 compatibility formulas.
+Every indexed formula has direct UNSAT outcomes from both Kissat and CaDiCaL. The evidence
 retains all attempts; a timeout or interrupted attempt does not exclude a
 case, and an invalid or conflicting history blocks acceptance.
 
