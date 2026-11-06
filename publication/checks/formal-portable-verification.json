@@ -1,8 +1,11 @@
 {
+  "build_mode": "authenticated_composite",
   "conditional_reduction_only": true,
-  "modules": 1390,
-  "native_completion_claim": false,
+  "manifest_sha256": "cf2887af1aa880183d7c1e4ecf68eeacda2cb47482733654bb05e1428d735ccd",
   "passed": true,
-  "schema": "K60_FORMAL_RELEASE_1",
-  "total_formulas": 296797
+  "schema": "K60_PUBLICATION_FORMAL_1",
+  "scope": "Portable source/build provenance and four exact-input bindings; native UNSAT checked separately.",
+  "selected_modules": 1314,
+  "solver_calls": 0,
+  "total_formulas": 296081
 }

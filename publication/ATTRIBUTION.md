@@ -13,7 +13,7 @@ AI assistance extended across mathematics, implementation, experiments and forma
 
 The verification standard combines the mathematical reduction in Lean,
 exact correspondence between its formulas and the native inputs, and direct
-Kissat evidence for every required SAT instance. These checks have distinct
+Kissat and CaDiCaL evidence for every required SAT instance. These checks have distinct
 scopes, described in the repository. The work has not yet undergone independent
 human review.
 

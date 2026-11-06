@@ -1,6 +1,6 @@
 name: Passive K60 evidence verification
 
-# This workflow requires an externally pinned, finalized release index.
+# This workflow requires an externally pinned release-candidate index.
 # This job executes neither Lean nor a SAT solver.
 on:
   workflow_dispatch:
@@ -9,6 +9,11 @@ on:
         description: Independently obtained SHA256 of publication/checks/K60_RELEASE.json
         required: true
         type: string
+      require_cadical:
+        description: Require the completed second-solver evidence before publication
+        required: true
+        type: boolean
+        default: true
 
 permissions:
   contents: read
@@ -22,6 +27,7 @@ jobs:
       PYTHONDONTWRITEBYTECODE: "1"
       GIT_LFS_SKIP_SMUDGE: "1"
       K60_RELEASE_INDEX_SHA256: ${{ inputs.release_index_sha256 }}
+      K60_REQUIRE_CADICAL: ${{ inputs.require_cadical }}
     defaults:
       run:
         shell: bash
@@ -32,7 +38,7 @@ jobs:
           lfs: false
           persist-credentials: false
 
-      - name: Authenticate the release index and unchanged verification tools
+      - name: Authenticate the release index and public verification tools
         run: |
           set -euo pipefail
           mkdir verification-artifacts
@@ -48,20 +54,16 @@ jobs:
           if path.is_symlink() or hashlib.sha256(raw).hexdigest() != expected:
               raise ValueError('Release index hash mismatch')
           index = json.loads(raw)
-          if index.get('schema') != 'K60_REPOSITORY_PREPARATION_1' or index.get('preparation_only') is not False:
-              raise ValueError('The release index has not been finalized')
           if set(index.get('capsules', {})) != {'formal', 'native'}:
-              raise ValueError('Both accepted capsules are required')
-          for name in ('formal_evidence.py', 'native_evidence.py', 'materialize_input.py'):
-              tool = Path('reproduce') / name
-              record = index['tools'][name]
-              data = tool.read_bytes()
-              if tool.is_symlink() or record != index['files'][tool.as_posix()] or record != {
-                      'sha256': hashlib.sha256(data).hexdigest(), 'bytes': len(data)}:
-                  raise ValueError('Changed public tool: ' + name)
+              raise ValueError('Exactly the formal and native capsules are required')
+          checker = Path('scripts/check_publication.py')
+          data = checker.read_bytes()
+          if checker.is_symlink() or index['files'][checker.as_posix()] != {
+                  'sha256': hashlib.sha256(data).hexdigest(), 'bytes': len(data)}:
+              raise ValueError('Changed package checker')
           for label, capsule in index['capsules'].items():
               archive = 'archives/k60-' + label + '-evidence.tar.gz'
-              if capsule['archive'] != archive or capsule['archive_pin'] != index['files'][archive]:
+              if capsule['archive'] != archive:
                   raise ValueError('Inconsistent archive identity')
               if not re.fullmatch('[0-9a-f]{64}', capsule['manifest_sha256']):
                   raise ValueError('Invalid capsule manifest pin')
@@ -70,17 +72,22 @@ jobs:
           shutil.copyfile(path, 'verification-artifacts/K60_RELEASE.json')
           Path('verification-artifacts/release-index.sha256').write_text(expected + '\n')
           PY
+          args=()
+          if [[ "$K60_REQUIRE_CADICAL" == true ]]; then args+=(--require-cadical); fi
+          python3 -B scripts/check_publication.py --skip-archives \
+            --release-index-sha256 "$K60_RELEASE_INDEX_SHA256" "${args[@]}" \
+            --report verification-artifacts/index-verification.json
 
-      - name: Download only the two K60 evidence archives
+      - name: Download only the K60 archive and split native parts
         run: |
           set -euo pipefail
-          git lfs pull --include="archives/k60-formal-evidence.tar.gz,archives/k60-native-evidence.tar.gz" --exclude=""
+          git lfs pull --include="archives/k60-*.tar.gz*" --exclude=""
 
       - name: Check archive hashes and safely extract fresh capsule roots
         run: |
           set -euo pipefail
           python3 - <<'PY'
-          import hashlib, json, os, sys, tarfile
+          import hashlib, io, json, os, sys, tarfile
           from pathlib import Path
           if sys.version_info < (3, 12):
               raise RuntimeError('This CI extraction step requires Python 3.12 or newer')
@@ -88,33 +95,79 @@ jobs:
           if hashlib.sha256(raw).hexdigest() != os.environ['K60_RELEASE_INDEX_SHA256']:
               raise ValueError('Release index changed')
           index = json.loads(raw)
+
+          class PartStream(io.RawIOBase):
+              """Read ordered files as one stream without storing a second large archive."""
+              def __init__(self, paths):
+                  super().__init__()
+                  self.paths = iter(paths)
+                  self.current = None
+              def readable(self):
+                  return True
+              def readinto(self, buffer):
+                  while True:
+                      if self.current is None:
+                          path = next(self.paths, None)
+                          if path is None:
+                              return 0
+                          self.current = path.open('rb')
+                      count = self.current.readinto(buffer)
+                      if count:
+                          return count
+                      self.current.close()
+                      self.current = None
+              def close(self):
+                  if self.current is not None:
+                      self.current.close()
+                      self.current = None
+                  super().close()
+
           for label in ('formal', 'native'):
               capsule = index['capsules'][label]
-              path = Path('archives/k60-' + label + '-evidence.tar.gz')
               expected = capsule['archive_pin']
+              parts = capsule.get('parts', [{'path': capsule['archive'], **expected}])
               digest = hashlib.sha256()
-              with path.open('rb') as stream:
-                  for block in iter(lambda: stream.read(1 << 20), b''): digest.update(block)
-              if path.is_symlink() or path.stat().st_size != expected['bytes'] or digest.hexdigest() != expected['sha256']:
-                  raise ValueError('Archive hash or size mismatch: ' + label)
+              size = 0
+              paths = []
+              for part in parts:
+                  path = Path(part['path'])
+                  if path.is_symlink() or not path.is_file():
+                      raise ValueError('Invalid archive part: ' + str(path))
+                  part_digest = hashlib.sha256()
+                  part_size = 0
+                  with path.open('rb') as stream:
+                      for block in iter(lambda: stream.read(1 << 20), b''):
+                          part_digest.update(block)
+                          digest.update(block)
+                          part_size += len(block)
+                          size += len(block)
+                  if part_size != part['bytes'] or part_digest.hexdigest() != part['sha256']:
+                      raise ValueError('Archive part hash or size mismatch: ' + str(path))
+                  paths.append(path)
+              if size != expected['bytes'] or digest.hexdigest() != expected['sha256']:
+                  raise ValueError('Concatenated archive hash or size mismatch: ' + label)
               destination = Path('k60-' + label + '-capsule')
               destination.mkdir()
-              with tarfile.open(path, 'r:gz') as archive:
-                  members = archive.getmembers()
-                  if any(not item.isfile() for item in members) or len({item.name for item in members}) != len(members):
-                      raise ValueError('Archive contains nonregular or duplicate members')
-                  archive.extractall(destination, members=members, filter='data')
+              seen = set()
+              with PartStream(paths) as source, io.BufferedReader(source) as stream:
+                  with tarfile.open(fileobj=stream, mode='r|gz') as archive:
+                      for item in archive:
+                          if not item.isfile() or item.name in seen:
+                              raise ValueError('Archive contains nonregular or duplicate members')
+                          seen.add(item.name)
+                          archive.extract(item, destination, filter='data')
           PY
 
-      - name: Run the unchanged passive capsule verifiers
+      - name: Verify both capsules and their common selected formula boundary
         run: |
           set -euo pipefail
-          python3 -B reproduce/formal_evidence.py verify \
-            --root "$PWD/k60-formal-capsule" --manifest-sha256 "$K60_FORMAL_MANIFEST_SHA256" \
-            2>&1 | tee verification-artifacts/formal-verification.log
-          python3 -B reproduce/native_evidence.py verify \
-            --root "$PWD/k60-native-capsule" --manifest-sha256 "$K60_NATIVE_MANIFEST_SHA256" \
-            2>&1 | tee verification-artifacts/native-verification.log
+          args=()
+          if [[ "$K60_REQUIRE_CADICAL" == true ]]; then args+=(--require-cadical); fi
+          python3 -B scripts/check_publication.py \
+            --release-index-sha256 "$K60_RELEASE_INDEX_SHA256" "${args[@]}" \
+            --formal-capsule "$PWD/k60-formal-capsule" --native-capsule "$PWD/k60-native-capsule" \
+            --report verification-artifacts/package-verification.json \
+            2>&1 | tee verification-artifacts/package-verification.log
 
       - name: Retain index, revision and passive verification logs
         if: always()
@@ -133,4 +186,7 @@ jobs:
           native logs. It did not rerun Lean's kernel, classification certificates,
           or native solvers, and it did not check complete K60 UNSAT refutations.
           Native UNSAT remains external computational evidence for the formal reduction.
+          The retained package report states whether the complete CaDiCaL evidence
+          was present; a preparation check with require_cadical=false is not a
+          claim that the second-solver campaign has completed.
           TEXT

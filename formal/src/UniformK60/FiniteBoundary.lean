@@ -16,9 +16,9 @@ theorem ramsey60_of_exact_unsat (h : ExactInputs.AllUnsat) :
   · exact CEntranceComplete.no_exterior_of_all_unsat (ExactInputs.entrance_excluded h)
   · intro c hc hp
     apply BalancedEncodingBalance.common_pair_contradiction ?_ ?_ c hc hp
-    · intro k hv
+    · intro o hv
       obtain ⟨v,hv⟩ := hv
-      exact ExactInputs.mixed_excluded h k v hv
+      exact ExactInputs.compatibility_excluded h o v hv
     · intro o ho hv
       obtain ⟨v,hv⟩ := hv
       exact ExactInputs.all_five_excluded h o ho v hv

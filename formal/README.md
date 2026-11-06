@@ -1,6 +1,6 @@
 # Lean mathematics for R(3,3,3,3) ≤ 60
 
-This package formalizes the mathematical reduction to **296,797 explicitly
+This package formalizes the mathematical reduction to **296,081 explicitly
 defined SAT formulas**. Lean proves exhaustive case coverage, preservation of
 one physical coloring under the coordinate changes, and satisfaction of the
 corresponding formulas by any hypothetical coloring without a monochromatic
@@ -29,13 +29,18 @@ axiom audit contains only `propext`, `Classical.choice` and `Quot.sound`.
 | C1 entrances | 692 |
 | C2 entrances | 7,840 |
 | All-five guards | 3 |
-| Mixed marked balance | 720 |
-| **Total** | **296,797** |
+| C2 compatibility | 4 |
+| **Total** | **296,081** |
 
 Every formula uses the same 7,080 physical edge-color variables and the same
 149,270-clause good-coloring base on K60. Marked and entrance formulas add
 signed facts. Balanced formulas additionally describe degree bounds, supports
 and visible critical-neighborhood embeddings.
+
+The balanced argument uses the three all-five exclusions to obtain a C2
+root. [BalancedC2Normalize.lean](src/UniformK60/BalancedC2Normalize.lean)
+normalizes its two critical templates, and the shared compatibility witnesses
+satisfy one of the four C2 formulas, giving the contradiction.
 
 The public package contains every selected source module and the 110 embedded
 classification files. A complete build replays the 55 small CNF/LRAT pairs
@@ -46,14 +51,12 @@ formulas.
 [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) pins the source, configuration and
 data closure for the public build. [SOURCE_INDEX.json](SOURCE_INDEX.json)
 connects those mathematical source files to the formal evidence capsule.
-Module namespaces and source bytes are retained unchanged.
 
 Lean 4.32.1 and the Mathlib revision
 `520045ab14e26149ee970e2e617ca04b09bde5d6` are pinned. Follow [BUILD.md](BUILD.md) for a fresh source build and
 [the reproduction guide](../REPRODUCIBILITY.md) for the four exact-input
-comparisons in the canonical capsule workspace.
-The two workflows retain their own build receipts; a source-only build does
-not run the native searches or substitute for the input comparisons.
+comparisons against that build. A source-only build does not run the native
+searches or substitute for the input comparisons.
 
 The mathematical exposition and theorem map are in [proof.md](../proof.md).
 [Classification provenance](../publication/CLASSIFICATION_PROVENANCE.md)

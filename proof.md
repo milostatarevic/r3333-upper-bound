@@ -16,12 +16,12 @@ coloring to an exhaustive family of Boolean formulas. Every formula describes
 the same 60 physical vertices; overlapping neighborhoods share their actual
 edge colors.
 
-The finite boundary has **296,797 cases**: 287,542 marked A/B/D/E cases,
-8,532 entrance cases, three all-five cases and 720 mixed marked-balance
+The finite boundary has **296,081 cases**: 287,542 marked A/B/D/E cases,
+8,532 entrance cases, three all-five cases and four C2 compatibility
 cases. The mathematical reductions, finite coverage arguments, and implications
 from a host coloring to these formulas are formalized in Lean. Unsatisfiability
 of the exact formulas is the external computational premise, checked with
-Kissat. The precise division between the Lean proof and native computations
+Kissat and CaDiCaL. The precise division between the Lean proof and native computations
 is given in [Section 9](#9-formal-theorem-and-computational-boundary).
 
 The argument has three parts. First, double counting tickets converts
@@ -29,9 +29,8 @@ local bounds for A, B, D and E into a choice between an entrance at C1 or
 C2 and perfect balance. The same marked-neighborhood construction excludes
 the entrances. In perfect balance, reciprocity and two applications of
 neighborhood homogeneity force a common critical pair. Three auxiliary
-exclusions then supply a C2 root. A marked brace at that root, together
-with the visible-neighborhood compatibility conditions, gives one of the
-720 remaining formulas.
+exclusions then supply a C2 root. Its visible-neighborhood compatibility
+conditions give one of the four remaining formulas.
 
 Throughout, an **actual** vertex belongs to the hypothetical host graph. A
 **reference position** is a coordinate in a template. In particular, the
@@ -402,8 +401,9 @@ For C1 both foreign groups have size 16. The marked noncritical group may
 have size 13 or 14, giving two assignments of the low group sizes and two
 formulas per reference pattern.
 
-For C2, complete the 15-vertex foreign template by its missing reference
-position outside the support. Normalizing and ordering the two foreign
+For C2 both noncritical groups have 14 vertices. Complete the 15-vertex
+foreign template by its missing reference position outside the support.
+Normalizing and ordering the two foreign
 templates may exchange them, so the missing position can occur in either.
 Delete a position outside the support: two five-supports give 11+11=22
 choices, and a four-support and a five-support give 12+11=23 choices.
@@ -460,43 +460,37 @@ across each of its edges, hence throughout the neighborhood.
 
 ### 6.2 The same two named critical colors everywhere
 
-Write P(v) for the critical pair at v. Fix r with P(r)={i,k}, and put
-X=N_i(r). Homogeneity makes P(x) constant on X, and reciprocity makes
-that pair contain i. If it differs from P(r), it is {i,j} for a color j
-noncritical at r. Let l be the fourth color.
+Take any root r, name its critical pair 0 and 1, and put X=N0(r), Y=N1(r).
+For x in X, reciprocity makes 0 critical at x. Suppose its other critical
+color is j in {2,3}. Since j is noncritical at r, reciprocity makes j
+noncritical at every vertex of N_j(r). No color-j edge therefore joins x
+to N_j(r), and c(xr)=0.
 
-Choose x in X. Its internal color-j degree is at least four, so a vertex
-x' in X belongs to S=N_j(x). This is a critical neighborhood. Applying
-homogeneity again, every vertex of S has pair P(x')={i,j}.
+The internal color-j degree of x in X is at least four, so x has a
+color-j neighbor in X. Reciprocity gives this neighbor critical pair
+{0,j}. By homogeneity, all color-j neighbors of x have this pair, so
+none lies in Y, where 1 is critical. They lie in X and the remaining
+root group. In each group their edges avoid color j and the group's
+root color, so each contains at most five. Thus d_j(x) is at most
+5+5=10, contrary to j being critical. The pair at x is therefore {0,1},
+and likewise on Y.
 
-The set S avoids r because c(rx)=i. It avoids N_j(r), whose vertices
-have j noncritical by reciprocity, and N_k(r), whose vertices have k
-critical. Therefore
-
-```math
-S\subseteq N_i(r)\cup N_l(r).
-```
-
-Each intersection avoids color j and its different root color internally,
-so each has at most five vertices. This gives |S| at most 10, contrary
-to |S| at least 15. Thus critical neighbors have the same critical pair.
-
+Since r was arbitrary, critical neighbors have the same critical pair.
 Every vertex has at least 31 critical neighbors. Any two such sets
-intersect because 31+31>60. Their common critical neighbor shows that
-all pairs agree. After one global color permutation,
+intersect because 31+31>60, so all pairs agree. One global color
+permutation therefore makes every vertex satisfy
 
 ```math
-(d_0(v),d_1(v),d_2(v),d_3(v))=(16,16,14,14)-e_{f(v)},
-\qquad f(v)\in\{0,1,2,3\}.
+d_0(v),d_1(v)\in\{15,16\},\qquad d_2(v),d_3(v)\leq14.
 ```
 
-Here e_i is a coordinate unit vector. Both C profiles remain possible.
+Since the degrees sum to 59, every vertex has profile C1 or C2.
 The structural argument uses degree bounds, connectivity and reciprocity;
 it does not require the classification of U and T.
 
-## 7. Compatibility and marked balance
+## 7. Compatibility excludes perfect balance
 
-Assume only the common degree vectors just obtained. At a root r put
+Assume only the common degree bounds just obtained. At a root r put
 X=N0(r), Y=N1(r), P=N2(r), Q=N3(r). Order the high and low colors so
 these sizes are (16,16,13,14) at C1 and (15,16,14,14) at C2. Normalize
 X,Y to literal critical templates with palettes (1,2,3) and (0,2,3).
@@ -602,7 +596,7 @@ d_0(v),d_1(v)\leq16,\qquad d_2(v),d_3(v)\leq14
 ```
 
 at every vertex. Together with the degree sum 59, these are equivalent to
-the common degree vectors of Section 6. Both C profiles remain allowed.
+the common degree bounds of Section 6. Both C profiles remain allowed.
 
 For every center, guard selectors choose one colored path or pentagon in
 the opposite template and fix its exact physical membership. For a
@@ -618,62 +612,28 @@ actual guard at each center. Classification of the actual opposite
 neighborhood and the six-table library supply each retained embedding.
 The auxiliary variable blocks are disjoint and their physical variables
 are shared. The degree counters, guards and embeddings therefore admit
-one simultaneous satisfying assignment. The reproduction encoding's
-implied cross-edge clauses hold as well.
+one simultaneous satisfying assignment.
 
-### 7.5 A C2 root and its marked brace
+### 7.5 The all-five and compatibility exclusions
 
 For each of the three C1 template pairs, form an **all-five formula** by
-removing the degree clauses and forbidding every four-vertex guard choice.
+removing the cardinality clauses and forbidding every four-vertex guard choice.
 The three resulting formulas are unsatisfiable.
 
-If every vertex were C1, both common critical degrees would be 16
-everywhere. The three supports of a critical neighborhood containing the
-root would have total size 15, with each at most five. Every cross guard
-would have size five. The witnesses of Section 7.4 would satisfy one of
-the all-five formulas, a contradiction. Hence a C2 root exists.
+The four C2 compatibility formulas are unsatisfiable. Kissat 4.0.4 and
+CaDiCaL 3.0.1 independently refuted each of them.
 
-Choose that root and any mark p in its 15-vertex critical group. Its
-critical neighborhood has size 15 or 16. Name the marked color 3 and
-the other high color 2, giving root sizes (14,14,16,15). An exchange of
-the low colors makes the second low support have size five. The remaining
-shapes are
+Suppose a good coloring satisfies the common degree bounds. If every
+vertex were C1, both common critical degrees would be 16 everywhere.
+The three supports of a critical neighborhood containing the root would
+have total size 15, with each at most five. Every cross guard would have
+size five. The witnesses of Section 7.4 would satisfy one of the all-five
+formulas, a contradiction. Otherwise a C2 root exists, and Section 7.4
+gives a satisfying assignment to one of the four C2 compatibility formulas,
+again a contradiction.
 
-```math
-(4,5,5),\qquad(5,5,4),\qquad(5,5,5).
-```
-
-Apply the common support-and-word construction with one modification:
-only the real 16-vertex high group carries a foreign template. Give the
-second low support fixed pentagon coordinates, without putting a template
-on the rest of its 14-vertex group. The free support is a reference path
-or pentagon.
-
-The finite projected cover checks all 5,400 normalized configurations:
-nine support geometries, each with 600 words. It retains 60
-support-and-word rows. Each witness supplies color-preserving maps of
-the two low supports and an automorphism of the whole real 16-vertex
-template, preserving every internal and cross-word edge.
-
-Extend the low-support maps over their actual group complements. Together
-with the real-template map they form one physical host permutation and
-preserve both positive and negative brace membership. The marked group
-contains no support. Its independent normalization has three mark choices
-in U-minus and nine in T-minus, giving
-
-```math
-60(3+9)=720
-```
-
-cases: 624 with a 15-vertex brace and 96 with a 16-vertex brace. Each fixes
-the root edges, both actual critical root templates, support colorings,
-cross word and exact brace membership. After the common global palette
-normalization, add these facts to its C2 compatibility prefix. Section 7.4
-supplies all auxiliary witnesses for this same normalized coloring.
-Unsatisfiability of all 720 formulas gives a contradiction.
-
-Thus the three all-five exclusions and the 720 marked-balance exclusions
-rule out every good host with the common degree vectors, and hence every
+Thus the three all-five exclusions and the four C2 compatibility exclusions
+rule out every good host with the common degree bounds, and hence every
 perfectly balanced host.
 
 ## 8. Completing the proof
@@ -696,16 +656,16 @@ The full case boundary is:
 | E/TTT | 163,836 |
 | C1 entrances | 692 |
 | C2 entrances | 7,840 |
-| All-five guards | 3 |
-| Mixed marked balance | 720 |
-| **Total** | **296,797** |
+| All-five formulas | 3 |
+| C2 compatibility | 4 |
+| **Total** | **296,081** |
 
 Assume every formula in this boundary is unsatisfiable and suppose a good
 four-coloring of K60 exists. The 287,542 marked exclusions give the four
 strict ticket bounds. If there is an entrance, its 8,532-case cover gives
 a satisfying assignment to an excluded formula. Otherwise, double counting
 gives perfect balance. Section 6 gives a common critical pair, and Section 7
-gives a satisfying assignment to an excluded all-five or marked-balance
+gives a satisfying assignment to an excluded all-five or C2 compatibility
 formula. Both alternatives are impossible, proving the theorem.
 
 ## 9. Formal theorem and computational boundary
@@ -716,7 +676,7 @@ The final theorem is
 [UniformK60.ramsey60_of_exact_unsat](formal/src/UniformK60/FiniteBoundary.lean).
 Its case type in [ExactInputs.lean](formal/src/UniformK60/ExactInputs.lean)
 is the disjoint union of the A/B/D cases, E cases, C1/C2 entrance cases,
-720 mixed marked-balance cases and three all-five owners.
+four C2 compatibility owners and three all-five owners.
 
 The sole external premise is `ExactInputs.AllUnsat`, asserting
 unsatisfiability of the explicit formula for every case. The endpoint is
@@ -739,8 +699,8 @@ The main interfaces are:
 | Marked host coverage | [CommonCover.lean](formal/src/UniformK60/CommonCover.lean), [CommonCompleteD.lean](formal/src/UniformK60/CommonCompleteD.lean), [CommonCompleteE.lean](formal/src/UniformK60/CommonCompleteE.lean) |
 | Ordinary C1/C2 entrance cover | [CEntranceComplete.lean](formal/src/UniformK60/CEntranceComplete.lean), `ordinary_entrance_cover`, `no_entrance_of_all_unsat` |
 | Common critical pair | [BalancedStructure.lean](formal/src/UniformK60/BalancedStructure.lean), `synchronized_common_pair` |
-| Actual mixed host to one of 720 cases | [BalancedHostBraceCover.lean](formal/src/UniformK60/BalancedHostBraceCover.lean), `actual_C2_case` |
-| Shared compatibility witnesses | [BalancedEncodingSoundness.lean](formal/src/UniformK60/BalancedEncodingSoundness.lean), `normalized_units_satisfiable` |
+| Actual C2 root to one of four template pairs | [BalancedC2Normalize.lean](formal/src/UniformK60/BalancedC2Normalize.lean), `canonical_C2` |
+| Shared compatibility witnesses | [BalancedEncodingSoundness.lean](formal/src/UniformK60/BalancedEncodingSoundness.lean), `normalized_satisfiable` |
 | Complete balanced contradiction | [BalancedEncodingBalance.lean](formal/src/UniformK60/BalancedEncodingBalance.lean), `common_pair_contradiction` |
 | Complete composition | [FiniteBoundary.lean](formal/src/UniformK60/FiniteBoundary.lean), `ramsey60_of_exact_unsat` |
 
@@ -753,19 +713,22 @@ importer. Those traces are distinct from the large external K60 exclusions.
 
 ### Exact inputs and native results
 
+The boundary consists of 296,074 marked-case formulas, three all-five
+formulas and four compatibility formulas, 296,081 in all.
+
 The generators use the same common physical base for every case, together
 with the marked units or balanced constraints specified above. The binding
 tools checked the complete ordered content, case identities, dimensions and
-hashes of the formulas defined by the fresh Lean build against the native
-input catalog. The checks covered all 296,797 cases, including every
+hashes of the formulas defined by the checked Lean build against the native
+input catalog. The checks covered all 296,081 cases, including every
 marked position and all degree, guard and embedding clauses.
 
-We ran Kissat 4.0.4 on all 296,797 exact formulas, and every case returned
-UNSAT. An independent rerun with CaDiCaL 3.0.1 is in progress. Acceptance
+We ran Kissat 4.0.4 and CaDiCaL 3.0.1 independently on all 296,081 exact
+formulas, and every case returned UNSAT in both solvers. Acceptance
 checks the complete case census, exact input identities, frozen solver binary,
-commands, native exit codes and full output logs. The [native evidence checker](reproduce/native_evidence.py) verifies
+commands, native exit codes and full output logs. The [native evidence checker](reproduce/publication_native_evidence.py) verifies
 the complete boundary against the raw records; the
-[formal evidence checker](reproduce/formal_evidence.py) verifies the
+[formal evidence checker](reproduce/publication_formal_evidence.py) verifies the
 mathematical build and exact-input bindings.
 
 The proof standard is therefore a Lean-checked mathematical reduction
@@ -773,7 +736,7 @@ with explicit external native UNSAT results. The native refutations
 are not kernel-checked by Lean. Their trust boundary includes the
 native solver and its execution environment. Reproduction rebuilds the
 mathematical development and finite tables, checks the exact input binding,
-and reruns Kissat. A native verdict alone does not establish coverage of a
+and reruns both solvers. A native verdict alone does not establish coverage of a
 graph family; the host-to-formula theorems above supply that part of the proof.
 
 Build instructions are in [formal/BUILD.md](formal/BUILD.md), and the

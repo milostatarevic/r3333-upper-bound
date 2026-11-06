@@ -32,15 +32,14 @@ The manifest pins all project source and embedded data. The builder checks those
 
 This public build compiles the mathematical source package. To replay the four
 exact comparisons against the retained native inputs, follow the
-[canonical capsule-workspace workflow](../REPRODUCIBILITY.md#rebuild-and-bind-the-formal-definitions).
-Its unchanged build and binding drivers retain their original sibling layout
-and receipt format. Use the new `BUILD_RESULT.json` produced within that
-workflow for all four comparisons; do not substitute a public-builder receipt
-with a different format.
+[input-binding workflow](../REPRODUCIBILITY.md#rebuild-and-bind-the-formal-definitions).
+Use the `BUILD_RESULT.json` from this successful public build for all four
+comparisons. The balance comparison emits the three all-five formulas and
+four direct C2 compatibility formulas used by the current endpoint.
 
 The [source index](SOURCE_INDEX.json) binds the public mathematical source
-bytes to the formal capsule. The public manifest and capsule manifest serve
-their respective build layouts; neither changes the theorem's explicit
+bytes to the formal capsule. The public manifest and capsule manifest authenticate
+the source package and retained evidence; neither changes the theorem's explicit
 unsatisfiability premise.
 
 The public [CI workflow](../.github/workflows/verify.yml) uses the small encoding

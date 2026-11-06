@@ -1,20 +1,20 @@
 {
-  "CPU_seconds": 3.735208,
-  "LEAN_PATH": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/.build/runs/20261030T234544.773929Z_1c7637a9/lib:/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/r3333-upper-bound/formal/.lake/uniform-packages-20261013/mathlib/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/plausible/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/importGraph/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/aesop/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/Qq/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/batteries/.lake/build/lib/lean:/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/lib/lean",
+  "CPU_seconds": 4.942095,
+  "LEAN_PATH": "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/r3333-upper-bound/formal/.build/runs/20261102T233053.998636Z_c0265271/lib:/Users/milostatarevic/programming/projects/ramsey-diagonal/r77-findings/r3333-upper-bound/formal/.lake/uniform-packages-20261013/mathlib/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/plausible/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/importGraph/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/aesop/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/Qq/.lake/build/lib/lean:/Users/milostatarevic/programming/projects/ramsey-increment-theorem/lean/.lake/packages/batteries/.lake/build/lib/lean:/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/lib/lean",
   "artifact_bytes": 664616,
   "artifact_sha256": "878cd681c457d250091d888972b07e9ea84b5b5f3704db9a9309daa446faacb9",
   "command": [
     "/Users/milostatarevic/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean",
     "-j1",
     "-o",
-    "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/.build/runs/20261030T234544.773929Z_1c7637a9/modules/Ramsey61.Foundations/output.olean",
-    "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/k60-release/public-ci-test.ss2u4ug9/tree/formal/src/Ramsey61/Foundations.lean"
+    "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/r3333-upper-bound/formal/.build/runs/20261102T233053.998636Z_c0265271/modules/Ramsey61.Foundations/output.olean",
+    "/Users/milostatarevic/Documents/ChatGPT/r(3,3,3,3) _= _ (research)/r3333-upper-bound/formal/src/Ramsey61/Foundations.lean"
   ],
   "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
   "cpu_threads": 1,
-  "elapsed_seconds": 9.377070500000002,
+  "elapsed_seconds": 15.835913249999999,
   "exit_code": 0,
-  "finished_utc": "2026-10-30T23:46:02.032927+00:00",
+  "finished_utc": "2026-11-02T23:31:20.442565+00:00",
   "import_artifacts": [
     {
       "bytes": 75584,
@@ -99,8 +99,8 @@
   ],
   "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "module": "Ramsey61.Foundations",
-  "peak_RSS_bytes": 2917941248,
-  "pid": 74033,
+  "peak_RSS_bytes": 2917990400,
+  "pid": 15158,
   "resource_caps": null,
   "source": {
     "bytes": 18955,
@@ -114,6 +114,6 @@
     "path": "src/Ramsey61/Foundations.lean",
     "sha256": "ca05aa3e88b048c9b313cf645dfe7dd397e226661c780daeb81578c917bc904f"
   },
-  "started_utc": "2026-10-30T23:45:52.656127+00:00",
+  "started_utc": "2026-11-02T23:31:04.606952+00:00",
   "status": "PASS"
 }
