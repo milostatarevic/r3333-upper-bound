@@ -33,15 +33,15 @@
       ]
     }
   },
-  "created_utc": "2026-11-06T17:15:56.182351+00:00",
+  "created_utc": "2026-11-06T18:10:16.713968+00:00",
   "files": {
     ".gitattributes": {
       "bytes": 122,
       "sha256": "810c67aba0731036821fdd4dcd31b176fc47151e9fab091f3bc748a7050cf979"
     },
     ".github/workflows/evidence.yml": {
-      "bytes": 9027,
-      "sha256": "76c5d21e0101183ca044896e1c3a827d93e48a07a3c8c7e3b33d2a957be83f07"
+      "bytes": 9679,
+      "sha256": "a6c3b9c3c72d134de0019856455f8319432445e023d9f2a2e7257ed2ccc3cdbc"
     },
     ".github/workflows/full-lean.yml": {
       "bytes": 2529,
@@ -5849,7 +5849,7 @@
     },
     "publication/CLASSIFICATION_PROVENANCE.md": {
       "bytes": 3825,
-      "sha256": "ff0920904be40a0a67e72cdb4e672c46115b699a64c3d6c147b6c3af5d470bcd"
+      "sha256": "5f36a85ebc0dfb1a5deeac80b8b2419ffc8f9be58b03ff9fc1595e32dc085d47"
     },
     "publication/MEASURED_COSTS.md": {
       "bytes": 5814,

@@ -87,7 +87,7 @@ jobs:
         run: |
           set -euo pipefail
           python3 - <<'PY'
-          import hashlib, io, json, os, sys, tarfile
+          import hashlib, io, json, os, shutil, sys, tarfile
           from pathlib import Path
           if sys.version_info < (3, 12):
               raise RuntimeError('This CI extraction step requires Python 3.12 or newer')
@@ -122,6 +122,7 @@ jobs:
                       self.current = None
                   super().close()
 
+          verified_parts = {}
           for label in ('formal', 'native'):
               capsule = index['capsules'][label]
               expected = capsule['archive_pin']
@@ -146,6 +147,18 @@ jobs:
                   paths.append(path)
               if size != expected['bytes'] or digest.hexdigest() != expected['sha256']:
                   raise ValueError('Concatenated archive hash or size mismatch: ' + label)
+              verified_parts[label] = paths
+
+          # The fresh hosted checkout has a redundant Git LFS object cache.
+          # Working archive copies are now authenticated; release the cache
+          # before extraction to stay within the standard runner's disk budget.
+          cache = Path('.git/lfs/objects')
+          if any(path.is_symlink() for path in (Path('.git'), Path('.git/lfs'), cache)):
+              raise ValueError('Unexpected symlink in the disposable LFS cache path')
+          if cache.exists():
+              shutil.rmtree(cache)
+
+          for label, paths in verified_parts.items():
               destination = Path('k60-' + label + '-capsule')
               destination.mkdir()
               seen = set()
