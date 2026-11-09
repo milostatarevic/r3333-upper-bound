@@ -1,16 +1,13 @@
 # An improved upper bound for the Ramsey number R(3,3,3,3)
 
-**Current result: R(3,3,3,3) ≤ 60.** The mathematical reduction is formalized
-in Lean, and every required SAT formula has been independently refuted by
-Kissat 4.0.4 and CaDiCaL 3.0.1.
-
-**Version referenced by the K61 paper:** the [complete K61 proof, verified
-with both Kissat and CaDiCaL](https://github.com/milostatarevic/r3333-upper-bound/tree/3d6910a2ef8a36a3fa3ad78a44f9f82e1f31f1c2)
-is pinned to that commit. The [arXiv paper](https://arxiv.org/abs/2610.36648v1)
-describes that version; this repository now contains the K60 result.
+> [!NOTE]
+> **Update (November 2026):** The updated paper accompanying this repository is now on
+> arXiv:\
+> [*An upper bound of 60 for the Ramsey number R(3,3,3,3)*](https://arxiv.org/abs/2610.36648)
 
 ## Changelog
 
+- **2026-11-08:** Published the updated [arXiv paper](https://arxiv.org/abs/2610.36648v2), improving the upper bound from **61 to 60**.
 - **2026-11-05:** Completed independent CaDiCaL verification of all **296,797 original production inputs**. The selected publication boundary contains **296,081 formulas**, each refuted by both solvers; complete histories and successful-run CPU timings are retained.
 - **2026-11-02:** Simplified the perfect-balance argument by replacing 720 marked cases with four direct C2 compatibility exclusions, all refuted by both Kissat and CaDiCaL. The proof now uses **296,081 formulas**.
 - **2026-10-30:** Proved **R(3,3,3,3) ≤ 60** by extending the same marked-neighborhood and ticket-counting method to six profiles and mixed perfect balance. Formalized the mathematical reduction in Lean and checked its exact correspondence with every solver input; all **296,797 formulas** were refuted by Kissat. Independent CaDiCaL verification followed and completed on 5 November.
